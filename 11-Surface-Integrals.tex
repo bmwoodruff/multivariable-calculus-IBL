@@ -82,7 +82,7 @@ Use the pattern you've discovered to quickly compute $d\sigma$ for the surface $
 \begin{problem}\label{sphere surface area element}
  Consider the sphere $x^2+y^2+z^2=a^2$.  We'll find $d\sigma$ using two different parameterizations.
  \begin{enumerate}
-  \item If you use the rectangular parametrization $\vec r(x,y) = (x,y,\sqrt{a^2-x^2-y^2})$, what is $d\sigma$? [Hint, use the previous problem.] Why can this parametrization only be use if the surface has positive $z$-values?
+  \item If you use the rectangular parametrization $\vec r(x,y) = (x,y,\sqrt{a^2-x^2-y^2})$, what is $d\sigma$? [Hint, use the previous problem.] %Why can this parametrization only be use if the surface has positive $z$-values?
   \item \marginpar{You'll want to memorize this result.} If you use the spherical parametrization $$\vec r(\phi,\theta) = (a\sin\phi\cos\theta,a\sin\phi\sin\theta,a\cos\phi),$$ show that $$d\sigma = (a^2|\sin\phi|)d\phi d\theta= (a^2\sin\phi) d\phi d\theta,$$ where we can ignore the absolute values if we require $0\leq \phi\leq \pi$. Along the way, you'll show that 
 $$ \vec r_\phi\times \vec r_\theta = a^2\sin \phi (\sin\phi\cos\theta,\sin\phi\sin\theta,\cos\phi).$$
  \end{enumerate}
@@ -101,6 +101,7 @@ We can compute average value, centroids, center of mass, moments of inertia, and
 \end{problem}
 
 \subsection{Flux across a surface}
+\textbf{This sections is optional, and we will only come back to it after we finishe the material in chapter 12 that we need to discuss.}
 
 We now want to look at the flux of a vector field across a surface $S$.  In the line integral section, we defined the outward flux of a vector field $F$ across a curve $C$ to be the line integral $\ds \int_C \vec F\cdot \vec n ds$, where $\vec n$ is a normal vector point out of region enclosed by a curve $C$. When we want to find the flux of a vector field across a surface, we must state in which direction we want to compute the flux. We then must make sure that normal vector $\vec n$ we choose to use actually points in the desired direction. The flux of a vector field $\vec F$ across a surface $S$ is the surface integral
 $$\text{Flux}=\Phi 
@@ -108,7 +109,7 @@ $$\text{Flux}=\Phi
 .$$
 The next problem will help us simplify the computation of $\vec nd\sigma$.
 
-\begin{problem}
+\begin{problem}[Optional]
 Consider again the surface $z=9-x^2-y^2$. 
 \begin{enumerate}
  \item Using the parametrization $\vec r(x,y) =(x,y,9-x^2-y^2)$, find a unit normal vector $\vec n$ to the surface so that $\vec n$ points upwards away from the $z$-axis. State what $d\sigma$ equals, as well as $\vec n d\sigma$. 
@@ -128,7 +129,7 @@ $$\text{Flux}=\Phi
 
 
 
-\begin{problem}
+\begin{problem}[Optional]
  Consider the cone $z^2=x^2+y^2$ and vector field $\vec F = (2x+3y, x-2y, yz)$. Set up an iterated integral that would give the flux of $\vec F$ outwards (away from the $z$-axis) for the portion of the cone between $z=1$ and $z=3$. [Hint: Start by  parameterizing the cone by using a polar parametrization $$x=r\cos\theta, y=r\sin\theta, z=?.$$ You should obtain bounds for $r$ and $\theta$ that are constants.  Compute the normal vector and look at the third component to determine if it points up or down.  Then just plug everything into the formula.]
 \end{problem}
 
@@ -137,7 +138,7 @@ $$\text{Flux}=\Phi
 
 When the surface is flat, often you can determine the normal vector without having to perform any cross products.  We'll now compute a flux of a vector field outwards across the 6 faces of a cube. 
 
-\begin{problem} 
+\begin{problem} [Optional]
 
 Find the flux of $ \vec F=(x+y,y,z) $ outward across the surface of the cube in the first quadrant bounded by {$ x=2,y=3,z=5 $}. The cube has 6 surfaces, so we have to compute the flux across all 6 surfaces. Fill in the table below to complete the flux across each surface, and then compute each integral to find the total flux. 
 \begin{center}
@@ -157,7 +158,7 @@ You should be able to complete each integral by considering centroids and surfac
 
 In the double integral chapter, we learned a way to greatly simplify flux computations when working with simple closed curves.  Green's theorem stated that $\int_C \vec F\cdot \vec n\ ds = \iint_R M_x+N_y dA$.  The divergence of $\vec F$ is the quantity $\text{div}(\vec F) = M_x+N_y$.  This generalizes to higher dimensions, and is called the divergence theorem. The next problem illustrates how.  We'll study this more in the triple integral unit.
 
-\begin{problem}
+\begin{problem}[Optional]
  Consider the exact same vector field and box as the previous problem.  So  we have the vector field $\vec F=(x+y,y,z) $  and $S$ is the surface of the cube in the first quadrant bounded by {$ x=2,y=3,z=5 $}.
 \begin{enumerate}
  \item Compute the divergence of $\vec F$, which is $\text{div}(\vec F) = M_x+N_y+P_z$.
@@ -168,7 +169,7 @@ $$\iint_S\vec F\cdot \vec n\ d\sigma = \iint\int_D \text{div}(\vec F)dV.$$
 \end{problem}
 
 
-\begin{problem}
+\begin{problem}[Optional]
 In problem \ref{sphere surface area element}, we found 
 $$\vec n d\sigma = \vec r_\phi\times \vec r_\theta d\phi d\theta = a^2\sin \phi (\sin\phi\cos\theta,\sin\phi\sin\theta,\cos\phi)d\phi d\theta$$ for a sphere of radius $a$.  
 Use this to compute the outward flux of $$\ds \vec F=\frac{\left<-x,-y,-z\right>}{(x^2+y^2+z^2)^{3/2}} $$ across a sphere of radius $a$. You should get a negative number since the vector field has all arrows pointing in. [Hint: Remember that for a sphere of radius $a$ we have $a^2=x^2+y^2+z^2$. When you perform the dot product of $\vec F$ and $\vec n$, you'll save yourself a lot of time if you remember that $\vec u\cdot \vec u = |\vec u|^2$; the dot product of a vector with itself is the length squared.]
@@ -176,7 +177,7 @@ Use this to compute the outward flux of $$\ds \vec F=\frac{\left<-x,-y,-z\right>
 \end{problem}
 
 
-\begin{problem}
+\begin{problem}[Optional]
 Repeat the previous problem, but this time don't use the formula from problem \ref{sphere surface area element}. In fact, you don't even need to parametrize the surface. Instead, if you are at the point $(x,y,z)$ on a sphere of radius $a$, give a formula for the outward pointing unit normal vector $\vec n$. Give this formula by only using a geometric argument.  Then find the outward flux of {$\ds \vec F=\frac{\left<-x,-y,-z\right>}{(x^2+y^2+z^2)^{3/2}} $} across a sphere of radius $a$. You should find that $\vec F\cdot \vec n$ simplifies to a constant, so that you never actually have to compute $d\sigma$. Then you can use known facts about the surface area of a sphere.
 
 \end{problem}

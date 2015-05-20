@@ -29,7 +29,7 @@ We'll need to know how to graph by hand some basic functions. If you have not sp
 \begin{problem}
 Provide a rough sketch of the following functions, showing their basic shapes:
 $$\displaystyle x^2, x^3, x^4, \frac{1}{x}, \sin x, \cos x, \tan x, \sec x, \arctan x, e^x,\ln x.$$ 
-Then use a computer algebra system, such as \href{http://http://www.wolframalpha.com/}{Wolfram Alpha}, to verify your work. I suggest Wolfram Alpha, because it is now built into Mathematica 8.0.  If you can learn to use Wolfram Alpha, you will be able to use Mathematica.
+Then use a computer algebra system, such as \href{http://www.wolframalpha.com/}{Wolfram Alpha}, to verify your work. I suggest Wolfram Alpha, because it is now built into Mathematica 8.0.  If you can learn to use Wolfram Alpha, you will be able to use Mathematica.
 \end{problem}
 
 
@@ -96,7 +96,7 @@ We will often refer to the differential notation $dy=f'dx$ as ``a change in the 
 \end{definition}
 
 \begin{problem}\marginpar{\bmw{See 3.10:19-38.}}
-If $f(x) = x^2\ln(3x+2)$ and $g(t) = e^{2t}\tan(t^2)$ then compute $df$ and $dg$.  
+Let $f(x) = x^2\ln(3x+2)$ and $g(t) = e^{2t}\tan(t^2)$. Compute the derivatives $\frac{df}{dx}$ and $\frac{dg}{dt}$, and then state the differentials $df$ and $dg$. If you skipped the defintion of a differential, you'll find it's directly above this problem.  
 \end{problem}
 
 Most of higher dimensional calculus can quickly be developed from differential notation. Once we have the language of vectors and matrices at our command, we will develop calculus in higher dimensions by writing $d\vec y = Df(\vec x) d\vec x$.  Variables will become vectors, and the derivative will become a matrix.
@@ -106,20 +106,21 @@ This problem will help you see how the notion of differentials is used to develo
     lines}\marginpar{\bmw{See 3.11:39-44. Also see problems 3.11:1-18.}  The linearization of a function is just an equation of the tangent line where you solve for $y$.}
 Consider the function $y=f(x) = x^2$. This problem has multiple steps, but each is fairly short.
 \begin{enumerate}
-\item Find the differential of $y$ with respect to $x$.  
+\item State the derivative of $y$ with respect to $x$ and the differential of $y$.  
 \item Give an equation of the tangent line to $f(x)$ at $x=3$.
 \item Draw a graph of $f(x)$ and the tangent line on the same axes. Place a dot at the point $(3,9)$ and label it on your graph. Place another dot on the tangent line up and to the right of (3,9). Label the point $(x,y)$, as it will represent any point on the tangent line. 
-\item Using the two points $(3,9)$ and $(x,y)$, compute the slope of the line connecting these two points. Your answer should involve $x$ and $y$. What is the rise (i.e, the change in $y$ called $dy$)? What is the run (i.e, the change in $x$ called $dx$)?  
-\item We already know the slope of the tangent line is the derivative $f'(3)=6$. We also know the slope from the previous part. These two must be equal. Use this fact to give an equation of the tangent line to $f(x)$ at $x=3$. 
+\item From the point $(3,9)$ to the point $(x,y)$, the change in $x$, or run, is $dx=x-3$. The change in $y$, or rise, is what? Use this to state the slope of the line connecting $(3,9)$ and $(x,y)$.
+\item We already know the slope of the tangent line is the derivative $f'(3)=6$. We also know the slope from the previous part. Set these two slope values equal, and verify that this gives an equation of the tangent line to $f(x)$ at $x=3$. 
 \end{enumerate}
 \end{problem}
  
 \begin{problem} \marginpar{\bmw{See 3.11:45-62.}} \label{diff-sphere}
-The manufacturer of a spherical storage tank needs to create a tank with a radius of 3 m. Recall that the volume of a sphere is $V(r) = \frac{4}{3}\pi r^3$. No manufacturing process is perfect, so the resulting sphere will have a radius of 3 m, plus or minus some small amount $dr$. The actual radius will be $3+dr$. Find the differential $dV$.  Then use differentials to estimate the change in the volume of the sphere if the actual radius is 3.02 m instead of the planned 3 m.    
+The manufacturer of a spherical storage tank needs to create a tank with a radius of 5 m. Recall that the volume of a sphere is $V(r) = \frac{4}{3}\pi r^3$. No manufacturing process is perfect, so the resulting sphere will have a radius of 5 m, plus or minus some small amount $dr$. The actual radius will be $5+dr$. Find the differential $dV$.  Then use differentials to estimate the change in the volume of the sphere if the actual radius is 5.02 m instead of the planned 5 m.    
 \end{problem}
  
 \begin{problem}
 A forest ranger needs to estimate the height of a tree.  The ranger stands 50 feet from the base of tree and measures the angle of elevation to the top of the tree to be about 60$^\circ$. If this angle of 60$^\circ$ is correct, then what is the height of the tree? If the ranger's angle measurement could be off by as much as $5^\circ$, then how much could his estimate of the height be off? Use differentials to give an answer.
+%Some students will have an answer in the thousands.  This comes because they use degrees instead of radians.  This gives an excellent spot to review why we need radians, and also that the derivatives of sine and cosine dependent on using radian measures. 
 \end{problem}
 
 
@@ -319,51 +320,64 @@ Let $f(x)=e^x$.
  
 
 \begin{example}
-This example refers back to problem \ref{diff-sphere}. We wanted a spherical tank of radius 3m, but due to manufacturing error the radius was slightly off. Let's now illustrate how we can use polynomials to give a first, second, and third order approximation of the volume if the radius is 3.02m instead of 3m.  
+This example refers back to problem \ref{diff-sphere}. We wanted a spherical tank of radius 5m, but due to manufacturing error the radius was slightly off. 
+Let's now illustrate how we can use polynomials to give a first, second, and third order approximation of increase in volume if the radius is 5.02 m instead of 5 m.  
 
-We start with $V=\frac{4}{3} \pi r^3$ and then compute the derivatives $$V'=4\pi r^2, V''=8\pi r, \text{ and } V'''=8\pi.$$ Because we are approximating the increase in volume from $r=3$ to something new, we'll create our polynomial approximations centered at $r=3$. We'll consider the polynomial 
-$$P(r)=a_0+a_1(r-3)+a_2(r-3)^2+a_3(r-3)^3,$$ 
-whose derivatives are 
-$$P'=a_1+2a_2(r-3)+3a_3(r-3)^2,
-P''=2a_2+6a_3(r-3),
-P'''=6a_3.$$
-So that the derivatives of the volume function match the derivatives of the polynomial (at $r=3$), we need to satisfy the equations in the table below.
+We start with $V=\frac{4}{3} \pi r^3$ and then compute the derivatives $$V'=4\pi r^2, V''=8\pi r, \text{ and } V'''=8\pi.$$ 
+Because we are approximating the increase in volume from $r=5$ to something new, we'll create our polynomial approximations centered at $r=5$. 
+We'll consider the polynomial 
+$$P_3(r)=a_0+a_1(r-5)+a_2(r-5)^2+a_3(r-5)^3,$$ 
+whose first three derivatives are
+$$P_3'=a_1+2a_2(r-5)+3a_3(r-5)^2,
+P_3''=2a_2+6a_3(r-5),
+P_3'''=6a_3.$$
+The derivatives of the volume function must match the derivatives of the polynomial (at $r=5$).  The table below shows each derivative, its value at $r=5$, and the equation that we must satisfy.
 \begin{center}
 \begin{tabular}{|c|c|c|c|}\hline
- $k$ & Value of $V$ at the $k$th derivative & Value of $P$ at the the $k$th derivative & Equation \\ \hline
- $0$ & $V(3) = \frac{4}{3}\pi (3)^3 = 36\pi$ & $P(3) = a_0$ & $a_0=36\pi$ \\ \hline
- $1$ & $V'(3) = 4\pi (3)^2=36\pi$ & $P'(3) = a_1$ & $a_1=36\pi$ \\ \hline
- $2$ & $V''(3) = 8\pi (3)=24\pi$ & $P''(3) = 2a_2$ & $2a_2=24\pi$ \\ \hline
- $3$ & $V'''(3) = 8\pi$ & $P'''(3) = 6a_3$ & $6a_3=8\pi$ \\ \hline
+ $k$ & Value of the $k$th derivative of $V$ at $r=3$ & Value of the $k$th derivative of $P$ at $r=3$ & Equation \\ \hline
+ $0$ & $V(5) = \frac{4}{3}\pi (5)^3=\frac{500\pi}{3}$ & $P_3(5) = a_0$ & $a_0=\frac{500\pi}{3}$ \\ \hline
+ $1$ & $V'(5) = 4\pi (5)^2=100\pi$ & $P_3'(5) = a_1$ & $a_1=100\pi$ \\ \hline
+ $2$ & $V''(5) = 8\pi (5)=40\pi$ & $P_3''(5) = 2a_2$ & $2a_2=40\pi$ \\ \hline
+ $3$ & $V'''(5) = 8\pi$ & $P_3'''(5) = 6a_3$ & $6a_3=8\pi$ \\ \hline
 \end{tabular}
 \end{center}
 This tells us that the third order polynomial is 
-$$P(r)=a_0+a_1(r-3)+a_2(r-3)^2+a_3(r-3)^3
-=36\pi+36\pi(r-3)+12\pi(r-3)^2+\frac{4}{3}\pi(r-3)^3
+$$P_3(r)=a_0+a_1(r-5)+a_2(r-5)^2+a_3(r-5)^3
+=\frac{500\pi}{3}+100\pi(r-5)+20\pi(r-5)^2+\frac{4\pi}{3}(r-5)^3
 .$$ 
-We wanted to approximate the volume if $r=3.2$, so our change in $r$ is $dr=3.2-3=0.2$.  We can rewrite our polynomial as
-$$P(r)=36\pi+36\pi(dr)+12\pi(dr)^2+\frac{4}{3}\pi(dr)^3.$$
-We are now prepared to approximate the volume using a first, second, and third order approximation. 
- \begin{enumerate}
- \item A first order approximation yields $P=36\pi+ 36\pi\cdot 0.02 =36.72\pi.$ The volume increased by $0.72\pi$ m$^3$. 
- \item A second order approximation yields $$P=36\pi+ 36\pi\cdot 0.02 +12\pi (0.02)^2 =36.7248\pi.$$
- \item A third order approximation yields $$P=36\pi+36\pi\cdot 0.02 +12\pi (0.02)^2+\frac{4}{3}\pi(0.02)^3  =36.724810\bar6\pi.$$
- \end{enumerate}
-With each approximation, we add on a little more volume to get closer to the actual volume of a sphere with radius $r=3.02$. The actual volume of a sphere involves a cubic function, so when we approximate the volume with a cubic, we should get an exact approximation (and $ V(3.02) = \frac 43 \pi (3.02)^3 =(36.724810\bar6)\pi$.)
- \end{example}
+We want to approximate the volume when $r=5+dr$, so replacing $r$ with $5+dr$ gives us 
+$$P_3(5+dr)=\frac{500\pi}{3}+100\pi(dr)+20\pi(dr)^2+\frac{4\pi}{3}(dr)^3.$$
+Note that the constant $a_0=\frac{500\pi}{3}$ is just the original volumne $V(5)$. We are after how much the volume increases, which means we need to compute
+$$P_3(5+dr) - V(5)=100\pi(dr)+20\pi(dr)^2+\frac{4\pi}{3}(dr)^3.$$
+
+We are now prepared to approximate the increase in volume using a first, second, and/or third order approximation. 
+Recall that we wanted to approximate the increase in volume when $dr=0.02$.  The actual increase in volume is 
+$$V(5+dr)-V(5) = \frac{4\pi}{3}(5+dr)^3-\frac{4\pi}{3}(5)^3  = (2.008010\bar{6})\pi $$
+A third order approximation gives an increase in volume of 
+ \begin{align*}
+P_3(5+dr) - V(5)
+&=100\pi(dr)+20\pi(dr)^2+\frac{4\pi}{3}(dr)^3 \\
+&=100\pi(0.02)+20\pi(0.02)^2+\frac{4\pi}{3}(0.02)^3 = (2.008010\bar{6})\pi
+ \end{align*}
+The third order approximation gives the exact value.  This is because the formula for volume involves a cubic.  To obtain a second order approximation, we would just ingore the third order term, which gives 
+$$P_2(5+dr)-V(5)=100\pi(dr)+20\pi(dr)^2 = 100\pi(0.02)+20\pi(0.02)^2 = (2.008)\pi.$$
+The first order approximation to the increase in volume is just
+$$P_1(5+dr)-V(5)=100\pi dr =100\pi(.02) = 2\pi.$$ 
+The first order approximation adds on $2\pi$ cubic meters. The second order approximation adds on $(0.008)$ more cubic meters.  The third order approximation adds on an additional 
+$(0.000010\bar{6})\pi$ cubic meters. Most of the increase in volume was added from the first order approximation. 
+\end{example}
+
  
  We'll end this section with a problem to practice the example above.
  
- \begin{problem}
- Suppose you are constructing a cube whose side length should be $s=2$ units. The manufacturing process is not exact, but instead creates a cube with side lengths $s=2+ds$ units. (You should assume that all sides are still the same, so any error on one side is replicated on all.  We have to assume this for now, but before the semester ends we'll be able to do this with high dimensional calculus.) 
+ \begin{problem} (Read the example above. This problem has you repeat the example above.)
+ Suppose you are constructing a cube whose side lengths should all be $s=2$ units. The manufacturing process is not exact, but instead creates a cube with side lengths of $s=2+ds$ units. (Assume all sides are still the same, so any error on one side is replicated on all sides.  We have to assume this for now, but before the semester ends we'll be able to do this with high dimensional calculus.) 
  
- \marginpar{Ask me in class to draw a 3D graph which illustrates the volume added on by each successive approximation. As a challenge, try to construct this graph yourself first. If you have it before I put it up in class, let me know and I'll let you share what you have discovered with the class.} Suppose that the machine creates a cube with side length $2.3$ units instead of 2 units.  Note that the volume of the cube is $V=s^3$.  Use a first, second, and third order approximation to estimate the increase in volume caused by the .3 increase in side length.  Then compute the actual increase in volume $V(2.3)-V(2)$.   
+ \marginpar{Ask me in class to draw a 3D graph which illustrates the volume added on by each successive approximation. As a challenge, try to construct this graph yourself first. If you have it before I put it up in class, let me know and I'll let you share what you have discovered with the class.} 
+ Suppose that the machine creates a cube with side length $2.3$ units instead of 2 units (so $ds=0.3$).  
+ Note that the volume of the cube is $V=s^3$.  
+ Use a first, second, and third order approximation to estimate the increase in volume caused by the 0.3 increase in side length. If you start with the third order approximation, you can rapidly obtain the second and first by just removing the second and third order terms.   
  \end{problem}
 \note{I would include this problem above in class as a demonstration.  It allows them to see what differentials do.  You can easily see how each new piece adds more to the approximation.}
 
 
-
-%%% Local Variables: 
-%%% mode: latex
-%%% TeX-master: "215-problems"
-%%% End: 
