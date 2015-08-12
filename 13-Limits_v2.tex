@@ -1,0 +1,99 @@
+This extra unit returns to the idea of Limits.
+
+
+\section{Limits}
+In the previous chapter, we learned how to describe lots of different functions. In first-semester calculus, after reviewing functions, you learned how to compute limits of functions, and then used those ideas to develop the derivative of a function. The exact same process is used to develop calculus in high dimensions. One glitch that will prevent us from developing calculus this way in high dimensions is the epsilon-delta definition of a limit.  We'll review it briefly.  Those of you who want to pursue further mathematical study will spend much more time on this topic in future courses. 
+
+In first-semester calculus, you learned how to compute limits of functions. Here's the formal epsilon-delta definition of a limit. 
+\begin{definition}
+ Let $f:\R\to\R$ be a function.
+ We write $\ds \lim_{x\to c} f(x)=L$ if and only if for every $\epsilon>0$, there exists a $\delta>0$ such that $0<|x-c|<\delta$ implies $|f(x)-L|<\epsilon$.
+\end{definition}
+ We're looking at this formal definition here because we can compare it with the formal definition of limits in higher dimensions. The only difference is that we just put vector symbols above the input $x$ and the output $f(x)$.
+\begin{definition}
+ Let $\vec f:\R^n\to\R^m$ be a function.
+ We write $\ds \lim_{\vec x\to \vec c} \vec f(\vec x)=\vec L$ if and only if for every $\epsilon>0$, there exists a $\delta>0$ such that $0<|\vec x-\vec c|<\delta$ implies $|\vec f(\vec x)-\vec L|<\epsilon$.
+\end{definition}
+We'll find that throughout this course, the key difference between first-semester calculus and multivariate calculus is that we replace the input $x$ and output $y$ of functions with the vectors $\vec x$ and $\vec y$. 
+ 
+\begin{problem}
+ For the function $f(x,y)=z$, we can write $f$ in the vector notation $\vec y=\vec f(\vec x)$ if we let $\vec x=(x,y)$ and $\vec y=(z)$. Notice that $\vec x$ is a vector of inputs, and $\vec y$ is a vector of outputs. 
+ For each of the functions below, state what $\vec x$ and $\vec y$ should be so that the function can be written in the form $\vec y = \vec f (\vec x)$. \marginpar{The point to this problem is to help you learn to recognize the dimensions of the domain and codomain of the function.  If we write $\vec f:\R^n\to \R^m$, then $\vec x$ is a vector in $\R^n$ with $n$ components, and $\vec y$ is a vector in $\R^m$ with $m$ components.}  
+\begin{enumerate}
+ \item $f(x,y,z)=w$
+ \item $\vec r(t)=(x,y,z)$
+ \item $\vec r(u,v)=(x,y,z)$
+ \item $\vec F(x,y)=(M,N)$
+ \item $\vec F(\rho,\phi,\theta)=(x,y,z)$
+\end{enumerate}
+\end{problem}
+
+
+You learned to work with limits in first-semester calculus without needing the formal definitions above. Many of those techniques apply in higher dimensions. 
+The following problem has you review some of these technique, and apply them in higher dimensions.
+\begin{problem}\marginpar{\thomasee{See 14.2: 1-30 for more practice.} \stewarts{See 14.2:5-8 for more practice.}}%
+ Do these problems without using L'Hopital's rule.
+%, as there is not a good substitute for L'Hopital's rule in higher dimensions. \note{check this.}
+\begin{enumerate}
+ \item Compute $\ds \lim_{x\to 2} x^2-3x+5$ and then $\ds\lim_{(x,y)\to (2,1)} 9-x^2-y^2$.
+ \item Compute $\ds\lim_{x\to 3}\frac{x^2-9}{x-3}$ and then $\ds\lim_{(x,y)\to (4,4)} \frac{x-y}{x^2-y^2}$.
+ \item Explain why $\ds\lim_{x\to 0}\frac{x}{|x|}$ does not exist. [Hint: graph the function.]
+\end{enumerate}
+\end{problem}
+
+
+
+In first semester calculus, we can show that a limit does or does not exist by considering what happens from the left, and comparing it to what happens on the right.  You probably used the following theorem extensively. 
+\begin{quote}
+ If $y=f(x)$ is a function defined on some open interval containing $c$, then $\ds\lim_{x\to c}f(x)$ exists if and only if  $\ds\lim_{x\to c^-}f(x) = \ds\lim_{x\to c^+}f(x)$.
+\end{quote}
+ A limit exists precisely when the limits from every direction exists, and all directional limits are equal. In first-semester calculus, this required that you check two directions (left and right). This theorem generalizes to higher dimensions, but it becomes much more difficult to apply. 
+
+\begin{example}
+ Consider the function $\ds f(x,y)=\frac{x^2-y^2}{x^2+y^2}$.
+Our goal is to determine if the function has a limit at the origin $(0,0)$. We can approach the origin along many different lines.
+
+One line through the origin is the line $y=2x$. If we stay on this line, then we can replace each $y$ with $2x$ and then compute
+$$\ds\lim_{\text{\footnotesize $\begin{array}{c}(x,y)\to(0,0)\\ y=0\end{array}$}}\frac{x^2-y^2}{x^2+y^2} 
+= \lim_{x\to 0} \frac{x^2-(2x)^2}{x^2+(2x)^2}
+= \lim_{x\to 0} \frac{-3x^2}{5x^2}
+= \lim_{x\to 0} \frac{-3}{5}
+=\frac{-3}{5}.$$
+This means that if we approach the origin along the line $y=2x$, we will have a height of $-3/5$ when we arrive at the origin.
+\end{example}
+If the function $\ds f(x,y)=\frac{x^2-y^2}{x^2+y^2}$ has a limit at the origin, the previous example suggests that limit will be $-3/5$.
+\begin{problem}
+ Please read the previous example. Recall that we are looking for the limit of the function $\ds f(x,y)=\frac{x^2-y^2}{x^2+y^2}$ at the origin (0,0). 
+\marginpar{You may want to look at a graph in 
+\href{http://aleph.sagemath.org/?z=eJxL06jQqdS01aiIM9KtjDPS1AextEEsroKc_BLjFI00HaASXWMdY00djUoIQxMAoucONQ}{Sage}
+or \href{http://wolfr.am/ioCqzX}{Wolfram Alpha} (try using the ``contour lines'' option). %http://www.wolframalpha.com/input/?i=plot+%28x%5E2-y%5E2%29%2F%28x%5E2%2By%5E2%29
+ As you compute each limit, make sure you understand what that limit means in the graph.}
+Our goal is to determine if the function has a limit at the origin $(0,0)$.
+\begin{enumerate}
+ \item In the $xy$-plane, how many lines pass through the origin $(0,0)$? Give an equation a line other than $y=2x$ that passes through the origin.  Then compute $$\ds\lim_{\text{\footnotesize $\begin{array}{c}(x,y)\to(0,0)\\ \text{your line}\end{array}$}}\frac{x^2-y^2}{x^2+y^2}
+= \lim_{x\to 0} \frac{x^2-(?)^2}{x^2+(?)^2}=\ldots.$$
+ \item Give another equation a line that passes through the origin.  Then compute $$\ds\lim_{\text{\footnotesize $\begin{array}{c}(x,y)\to(0,0)\\ \text{your line}\end{array}$}}\frac{x^2-y^2}{x^2+y^2}.$$
+ \item Does this function have a limit at $(0,0)$? Explain. \marginpar{\thomasee{See 14.2: 41-50 for more practice.}\larsonfive{See Larson 13.2:23--36 and example 4 for more practice.} \stewarts{See 14.2: 9-12}}%
+\end{enumerate}
+\end{problem}
+
+
+The theorem from first-semester calculus generalizes as follows.
+\begin{quote}
+ If $\vec y=\vec f(\vec x)$ is a function defined on some open region containing $\vec c$, then $\ds\lim_{\vec x\to \vec c}\vec f(\vec x)$ exists if and only if the limit exists along every possible approach to $\vec c$ and all these limits are equal.
+\end{quote}
+There's a fundamental problem with using this theorem to check if a limit exists. Once the domain is 2-dimensional or higher, there are infinitely many ways to approach a point. There is no longer just a left and right side. To prove a limit exists, you must check infinitely many cases --- that takes a really long time.  The real power to this theorem is it allows to show that a limit does not exist.  All we have to do is find two approaches with different limits.
+
+
+
+\begin{problem}
+\marginpar{See \href{http://aleph.sagemath.org/?z=eJyVVF1r2zAUfc-vuKQFy7PS2QndoCBY2dtgMFjfShtubLnW6lhCUlqrv37XlvOxtdtYEoKlc3TOufcKn50BfNFNBzcWn5Tj8FU5N_yMUfBZt618kBy-G6u6B1jmRTGbPaFlSc9Dks4-qc5Li6WfVbKGNauF6szOrze6Z7SDu9YL1r8L6XvW3y-zcL9MUz6D8WP8W-Sc5ymHFjeyFfNvmvSv4JyRWyrO5xyeVeUbUeQHFTTGaiyb4g2xRX9Qup5oUJBc-LvU8g0pSv9aa_laa5JKr8aHPuchF8aPi6GFHhq_bVlyDW5naywl7eoNbtoADTpAaNVWeUAPviFsKB9UPSysBOWg0wTS2aqSHZQNdg-0TU-61TayLpJ0MIv2diDQAHifLwr6y4oYMExAoHgEhAOwTyVIsvN6Z9em1Z7VPErx6SQvt2hE8kP6hI_eG7Tixu4IiMecuJx6MRa0jpWIWBFjY1_SeFQkVlYJd-pFilXOX7StpBWreLqmsnCokB3mzI9zmrp8EjwTamtaVQ6WQ_CwwH30ffLouWmxfEymohv9zE5yZpNYRLGXTqC1xGFR6ra44-M13a-XcZ1mEy2fzEYi3ebjxsA85eV8UURCzov0aJgJL3u_qti8p9t19Mkuislqj4f5r_oj4wR_me_lCZkcjBiaQ2j9W3NAG6TeBZFffOADJzbEiY-XFJpy_d9QTCYMWtxKb1UZB0J3EXnNgkB6EcDhVm1VJ449ozX24tgy36jysZPOidUf52f-qYLOyNKvLXqlxW3B6XuXzn4C8NyNiQ}{Sage}.}%
+\marginpar{\thomasee{See 14.2: 41-50 for more practice.}\larsonfive{See Larson 13.2:9--36 for more practice.}\stewarts{See 14.2: 13-22 for a mix of functions with limits and without}}%
+ Consider the function $\ds f(x,y) = \frac{xy}{x^2+y^2}$.  Does this function have a limit at $(0,0)$?  Examine the function at $(0,0)$ by considering the limit as you approach the origin along several lines. 
+\end{problem}
+
+In all the examples above, we considered approaching a point by traveling along a line. Even if a function has a consistent limit along EVERY line, that is not enough to guarantee the function has a limit. The theorem requires EVERY approach, which includes parabolic approaches, spiraling approaches, and more. For our purposes, checking along straight lines will do.  If you are interested in seeing an example of a function $f(x,y)$ so that the limit at $(0,0)$ along every straight line $y=mx$ exists and equals 0, but the function has no limit at $(0,0)$, then please ask.  Alternately, if this interests you, try coming up with an example yourself, and then come show me when you get it. This is a fun challenge.
+
+\begin{problem*}[Challenge]
+ Give an example of a function $f(x,y)$ so that the limit at $(0,0)$ along every straight line $y=mx$ exists and equals 0.  However, show that the function has no limit at $(0,0)$ by considering an approach that is not a straight line.
+\end{problem*}

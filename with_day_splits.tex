@@ -1,0 +1,433 @@
+
+\documentclass[letterpaper,oneside]{book}%
+
+%Several If statements. These control various comments:
+%  True/False -> if true is uncommented, these are INCLUDED.
+% instructor -> notes for instructor
+% notes -> Footnotes
+% thomas -> Problems/References to Thomas's Calculus 11th edition
+% larson -> Problem/References to Larson's Calculus, 5th edition
+% stewart -> Problems/References to Stewart's Calculus: Early Transcendentals, 7th edition
+% bmw -> Comments & Hints from Ben Woodruff
+% valpo -> Comments specifically for Valparaiso University Students
+
+\newif\ifinstructor
+%\instructortrue
+\instructorfalse
+
+\newif\ifnotes
+%\notestrue
+\notesfalse
+
+\newif\ifthomas
+%\thomastrue
+\thomasfalse
+
+\newif\iflarson
+%\larsontrue
+\larsonfalse
+
+\newif\ifstewart
+\stewarttrue
+%\stewartfalse
+
+\newif\ifbmw
+%\bmwtrue
+\bmwfalse
+
+\newif\ifvalpo
+\valpotrue
+%\valpofalse
+
+
+\usepackage[left=1in,right=2.75in,top=1in,bottom=1in]{geometry}
+\marginparwidth 1.75in
+
+\usepackage{tabls}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{color}
+\definecolor{darkblue}{rgb}{0, 0, .6}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=darkblue,
+	anchorcolor=darkblue,
+	citecolor=darkblue,
+	urlcolor=darkblue,
+}
+
+\usepackage{minitoc}
+
+\newcommand{\wrapup}{
+\bmw{\section{Wrap Up}
+Once you have finished the problems in the section and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+
+%I liked Ben's wrapup for his Diff-Eq book better. So I just stole it and modified a little!
+\valpo{\section{Wrap Up}
+This concludes the chapter.  Look at the objectives at the beginning of the chapter. Can you now do all the things you were promised? \\
+\textbf{Lesson Plan Creation\\}
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your one-page lesson plan. You may use both sides. The objectives at the beginning of the chapter give you a list of the key concepts. Once you finish your lesson plan, scan it into a PDF document (use any scanner on campus), and then upload the document to Blackboard.
+
+As you create this lesson plan, consider the following:
+\begin{itemize}
+ \item On the class period after making this plan, you'll have 20 minutes in class where you will get to teach a peer your examples. If you keep the examples simple, you'll be able to fully review the entire chapter.
+ \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+ \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 10 pages, you can have the entire course summarized and easy for you to recall.
+\end{itemize}
+} %endvalpo
+} %end wrapup
+
+\newcommand{\myscale}{1}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dfdx}[1]{\frac{d#1}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+
+
+\let\oldmarginpar\marginpar
+\renewcommand\marginpar[1]{\-\oldmarginpar{\raggedright\footnotesize #1}}
+%\renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\footnotesize #1]{\raggedright\footnotesize #1}}
+
+
+%\usepackage[12hr]{datetime}
+%\newdateformat{draftdate}{%
+%\shortdayofweekname{\THEDAY}{\THEMONTH}{\THEYEAR}, %
+%\THEDAY\ \shortmonthname[\THEMONTH] \THEYEAR}
+%\draftdate
+%\usepackage{eso-pic}
+%\AddToShipoutPicture{\put(10,10){\small Draft: \today\ at \currenttime }}%--- version: \MakeUppercase{\svnInfoRevision}}}
+
+%Note Both of the instructor and 'notes' appear in colors (blue, red respectively) to make them stand out more in the digital copy.
+
+% Instructor-specific material (answers, helps, etc.)
+\ifinstructor
+  \newcommand{\instructor}[1]{\marginpar{\textcolor{blue}{\textbf{Instructor: }#1}}}
+\else
+  \newcommand{\instructor}[1]{}
+\fi
+
+%These are notes between authors of the text, primarily Ben Woodruff and Jason Grout
+\ifnotes
+\renewcommand{\thefootnote}{\roman{footnote}}
+\newcommand{\note}[1]{\footnote{#1}\marginpar{\fbox{\textbf{\thefootnote}}}}
+\else
+\newcommand{\note}[1]{}
+\fi
+
+%Specific comments, problems, etc relevant to Ben Woodruff's Class
+\ifbmw
+	\newcommand{\bmw}[1]{#1}
+	\newcommand{\marginparbmw}[1]{\bmw{\marginpar{#1}}}
+\else
+	\newcommand{\bmw}[1]{}
+	\newcommand{\marginparbmw}[1]{}
+\fi
+	
+%Notes for Students @ Valparaiso University
+\ifvalpo
+	\newcommand{\valpo}[1]{\textbf{To Valpo Students:} #1}
+\else
+	\newcommand{\valpo}[1]{}
+\fi	
+
+%The next three (or more) are adding refences to specific, copyrighted textbooks for additional problems.
+% Notes for Thomas, 11th edition
+\ifthomas
+	\newcommand{\thomasee}[1]{Thomas: #1}
+\else
+	\newcommand{\thomasee}[1]{}
+\fi
+
+%Notes for Larson, 5th Edition
+\iflarson
+	\newcommand{\larsonfive}[1]{Larson: #1}
+\else
+	\newcommand{\larsonfive}[1]{}
+\fi
+
+%Notes for Stewart, 7th Edition
+\ifstewart
+	\newcommand{\stewarts}[1]{Stewart: #1}
+\else
+	\newcommand{\stewarts}[1]{}
+\fi
+
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\renewcommand{\chaptername}{Unit}
+\setcounter{chapter}{-1}
+\newcounter{unitday}[chapter]
+\newcommand{\uday}{\newpage \LARGE \center  Day \theunitday \normalsize \flushleft \stepcounter{unitday} \vskip0.1in}
+
+
+\newtheoremstyle{box}%
+{}{}% standard spacing before and after
+{}% Body style
+{}{\bfseries}{.}% Heading indent, font, and punctuation
+{ }% space after heading
+{\thmname{#1}\thmnumber{ #2}\thmnote{: #3}}% head spec
+
+\newtheoremstyle{problem}%
+{}{}% standard spacing before and after
+{}% Body style
+{}{\bfseries}{}% Heading indent, font, and punctuation
+{1em}% space after heading
+{\fbox{\thmname{#1}\thmnumber{ #2}\thmnote{: #3}}}% head spec
+
+\theoremstyle{box}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{dfn}[theorem]{Definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}[theorem]{Question}
+\newtheorem*{prep-problems}{Preparation Problems}
+
+%\newtheorem{problem}[theorem]{Problem}
+\theoremstyle{problem}
+\newtheorem{problemnum}{Problem}[chapter]
+\newtheorem*{problemnum*}{Problem}
+\newtheorem*{reviewnum*}{Review}
+\newenvironment{problem}[1][]{\begin{problemnum}[#1]}{\end{problemnum}\nopagebreak\hrule\bigskip}
+\newenvironment{problem*}[1][]{\begin{problemnum*}[#1]}{\end{problemnum*}\nopagebreak\hrule\bigskip}
+\newenvironment{review*}[1][]{\begin{reviewnum*}[#1]}{\end{reviewnum*}\nopagebreak\hrule\bigskip}
+
+
+% Abbreviations
+\newcommand{\ii}{\ensuremath{\vec \imath}}
+\newcommand{\jj}{\ensuremath{\vec \jmath}}
+\newcommand{\kk}{\ensuremath{\vec k}}
+\newcommand{\vv}{\ensuremath{\mathbf{v}}}
+\newcommand{\colvec}[1]{\ensuremath{\begin{bmatrix}#1\end{bmatrix}}}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\rref}{rref}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\RR}{\ensuremath{\mathbb{R}}}
+% \vp is "vector prime" and corrects spacing when doing something like
+% $\vec r'$ (which has the vector and prime almost touching).
+% Instead, do something like $\vec r\vp$
+\newcommand{\vp}{\ensuremath{^{\,\prime}}}
+
+%Shorthand code for a link to generic wolfphram alpha
+\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha}}
+
+%The purpose of this code is to allow me to put lines in matrices so that I can create augmented matrices.
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newcommand{\cl}[1]{  \begin{matrix}  #1  \end{matrix}  }
+\newcommand{\bm}[1]{  \begin{bmatrix}  #1  \end{bmatrix}  }
+\newcommand{\inv}{^{-1}}
+\newcommand{\im}{\ensuremath{\text{im }}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\blank}[1]{\raisebox{0pt}[14pt]{\rule{#1}{1pt}}}
+
+%------------------------------------------------------------------------------------------------------------
+
+
+\begin{document}
+\frontmatter
+\title{Multivariable Calculus}
+\author{Ben Woodruff\thanks{Mathematics Faculty at Brigham Young
+    University--Idaho, \url{woodruffb@byui.edu}}\\
+		\valpo{Modified by Karl Schmitt\thanks{Valparaiso University -- Indiana, \url{karl.schmitt@valpo.edu}}}}
+\date{Typeset on \today\\
+\vfill
+\includegraphics[height=1.3cm]{by-sa.eps}
+\vfill
+\larsonfive{With references to \emph{Calculus, Early Transcendental
+    Functions}, 5th edition, by Larson and Edwards}
+\thomasee{With references to \emph{Calculus}, 11th Edition by Weir, Hass, and Giordano}
+\stewarts{With references to \emph{Calculus Early Transcendentals}, 7th Edition, by Stewart}}
+\maketitle
+\thispagestyle{empty}
+\noindent\copyright{ Original 2012 Ben Woodruff.  Some Rights Reserved.\\
+Modifications 2014 Karl Schmitt. Some Rights Reserved.
+
+\bigskip
+
+\noindent This work is licensed under the Creative Commons Attribution-Share Alike 3.0 United States License.  You may copy, distribute, display, and perform this copyrighted work, but only if you give credit to Ben Woodruff, and all derivative works based upon it must be published under the Creative Commons Attribution-Share Alike 3.0 United States License. Please attribute this work to Ben Woodruff, Mathematics Faculty at Brigham Young University--Idaho, \url{woodruffb@byui.edu}. To view a copy of this license, visit
+\begin{center}
+  \url{http://creativecommons.org/licenses/by-sa/3.0/us/}
+\end{center}
+or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.}
+
+%\chapter*{Introduction}
+%This course may be like no other course in mathematics you have ever taken.  We'll discuss in class some of the key differences, and eventually this section will contain a complete description of how this course works. For now, it's just a skeleton.
+%
+%I received the following email about 6 months after a student took the course:
+%
+%\begin{quote}
+%Hey Brother Woodruff,
+%
+%I was reading {\it Knowledge of Spiritual Things} by Elder Scott.
+%I thought the following quote would be awesome to share with your
+%students, especially those in Math 215 :)
+%
+%\begin{quote}
+%Profound [spiritual] truth cannot simply be poured
+%from one mind and heart to another. It takes faith
+%and diligent effort. Precious truth comes a small
+%piece at a time through faith, with great exertion,
+%and at times wrenching struggles.
+%\end{quote}
+%\end{quote}
+%Elder Scott's words perfectly describe how we acquire mathematical truth, as well as spiritual truth. 
+%
+%\section*{Teaching philosophy} Over time, I've come to view
+%teaching and learning as a shared journey on which my students and I
+%embark each semester. I am the subject matter expert responsible for
+%providing information and guidance, setting expectations, and
+%assessing how well students meet those expectations. My students are
+%responsible for much hard work, including preparing in advance for
+%class, participating in class activities, and doing out-of-class
+%assignments, regardless of whether or not they are graded. There is
+%only so much that can be conveyed in $50$ minutes, and my own personal
+%experience and educational research agree that students get far less
+%out of a $50$-minute lecture than their professors hope. Thus, I have
+%chosen to take an approach that is more work both for you and for me
+%but has been shown to produce better results. During class you
+%will work on a carefully chosen series of problems designed to build
+%the mathematical knowledge and experience you need to succeed. These
+%problems will be done in a collaborative, small group setting where 
+%you can grapple with and truly understand the material. I'll be there to support, guide, and correct
+%misconceptions. Sure, I could expect you to do this alone outside of
+%class, but over time I've realized a few things about working in
+%groups. As a student, I usually understood something better when I
+%went over it with classmates, even if I was the one who thought I
+%understood it completely and explained it to a peer. As a researcher,
+%I am more productive and effective when I collaborate. Friends in
+%industry report that teams are increasingly used to produce the best
+%results. Furthermore, having me there to help in the early stages
+%ensures that we're traveling together on this journey.\\
+%
+%-Dr. Karl Schmitt\\
+%Modified from Dr. Mitchel Keller at Washington \& Lee University
+%
+%\section*{Modification Notes}
+%This work is based almost entirely off of Ben Woodruff's IBL textbook (see copyright information on previous pages). Some modifications have been made by Dr. Karl Schmitt at Valparaiso University to more closely match the teaching and content for Valparaiso's Calculus III course (Math 253). Planned Modifications (as of 7/22/14) include:
+%\begin{itemize}
+%\item Include section references for Stewart's \emph{Calculus: Early Transcendentals, 7th edition} \\
+%\indent Note: Problems were relabeled (or turned off) with Thomas 11th in Chap 3 \& 4, but no Stewart entered, since it is skipped at Valpo.
+%\item Include topical course objectives as defined by Valparaiso's Mathematics Dept. (these are supplemental to the previous chapter objectives)
+%\item Modify introductory text to some chapters
+%%\item Exclusion of the two chapters: Polar coordinates (Chapter 4) and Motion (Chapter 7). Files are included in source, but not in compiled version.
+%%\item (Longterm Planned) Inclusion of additional chapter on Stokes's Theorem and Gauss's Theorem. 
+%\item (Longterm Planned) Inclusion of some instructor notes/suggestions for demonstrations or examples.
+%\item (Longterm Planned) Inclusion of Maple (or other software) labs/explorations. Either to supplement or replace included Sage/Wolfram
+%\end{itemize}
+ %
+%\tableofcontents
+
+\dominitoc \tableofcontents
+
+\mainmatter
+
+\chapter{Review}
+\minitoc \mtcskip
+\input{01-Review-215_ks_v2}
+%wrapup
+
+
+\chapter{Vectors}
+\minitoc \mtcskip
+\input{02-Vectors_ks_v2}
+%\wrapup
+%
+%
+\chapter{Optional Review: Conic Sections}
+\minitoc \mtcskip
+\input{03-Curves_ks}
+%\wrapup
+%
+%
+\chapter{Optional Review: Polar Coordinates}
+\minitoc \mtcskip
+\input{04-New-Coordinates_ks_v2}
+%\wrapup
+%
+\chapter{Parametric Eqns. and New Coordinate Systems}
+\minitoc \mtcskip
+\input{03-04-ALT-Parametric-Other-Coordinates_ks_v1}
+
+\chapter{Functions}
+\minitoc \mtcskip
+\input{05-Functions_ks_v2}
+%\wrapup
+%
+%
+%
+\chapter{Derivatives}
+%\input{06-Derivatives}
+\minitoc \mtcskip
+\input{06-Derivatives-new_ks_v2}
+%\wrapup
+%
+\chapter{Motion}
+\vspace{-1.25cm}
+\minitoc \mtcskip
+\input{07-Motion_ks_v2}
+%\wrapup
+%
+\chapter{Line Integrals}
+\minitoc \mtcskip
+\input{08-Line-Integrals_ks_v2}
+%\wrapup
+%
+%
+%
+\chapter{Optimization}
+\minitoc \mtcskip
+\input{09-Optimization_ks_v2}
+%\wrapup
+%
+%
+\chapter{Double Integrals}
+\minitoc \mtcskip
+\input{10-Double-Integrals_ks_v2}
+%\wrapup
+%
+%%\end{document}
+%
+%
+\chapter{Surface Integrals}
+\minitoc \mtcskip
+\input{11-Surface-Integrals_ks_v2}
+%\wrapup
+%
+\chapter{Triple Integrals}
+\minitoc \mtcskip
+\input{12-Triple-Integrals_ks_v2}
+%\wrapup
+
+\begin{comment}
+\end{comment}
+\end{document}
