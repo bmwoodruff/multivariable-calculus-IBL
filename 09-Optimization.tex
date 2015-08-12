@@ -8,6 +8,14 @@ This unit covers the following ideas. In preparation for the quiz and exam, make
 \item Use Lagrange multipliers to optimize a function subject to constraints. %Explain why Lagrange multipliers works by considering the gradients of the function and the constraint at a maximum.
 \end{enumerate}
 You'll have a chance to teach your examples to your peers prior to the exam.
+
+\valpo{ This chapter addresses the following topical objectives:
+\begin{enumerate}
+\item compute directional derivatives and gradients
+\item identify local extreme points of real-valued functions of two variables
+\item use Lagrange multipliers to find solutions to constrained optimization problems
+\end{enumerate}
+}
 \bmw{The following homework problems line up with the topics we will discuss in class.
 
 {\noindent \footnotesize 
@@ -44,18 +52,16 @@ Recall from the previous unit that the derivative $Df$ of a function $f:\mathbb{
 $f(x,y)=9-x^2-y^2$, 
 $g(x,y)=2x-y$, and 
 $h(x,y)=\sin x\cos y$. 
- \marginparbmw{You'll want a computer to help you construct the graphs, particularly $h$. Please use the Mathematica introduction in Brainhoney. You could use Wolfram Alpha (use the links in the function chapter if you forgot how to graph).}
-\begin{enumerate}
- \item\marginpar{See \href{https://sagecell.sagemath.org/?z=eJxljLEOwiAURXe-oltBHybSyeFtjV_gXIIIEYM-QqmWvxejm8vNyc3J8XyFKvAg10nJOik2-u_Dpdqs0LWtgrGElh6FlqxTpMI9NEkOMAjg9Qc-xIhHE2cH9m4S9jdXerAUKZ9NxlNenGBpi5-AfjpbKGsfXLzw0UP312vubr7Si5s5NVlnUwLhXrwBPnA2AQ}{Sage}.  You can modify these commands to help in the plots below too.}%
- Compute $\vec \nabla f(x,y)$.  Then draw both $\vec \nabla f$ and several level curves of $f$ on the same axes.
- \item\instructor{\href{https://sagecell.sagemath.org/?z=eJxljDEOwjAMAPe-gq0OuJWgs1dewB6FNBZBAUdOCs3vKRIb20mnO4YVm6HTfh1al8nLs8qiNiepwLjJYcLJILQfcEyJzi6VgP7hMvX3UHv0kkSvTumiSzBdPtB3YF_BV1HLMaQZeJwjMxjc_V23Yiw3eYMreUusuhqFjuYDVjExog}{Sage}}%
- Compute $\vec \nabla g(x,y)$.  Then draw both $\vec \nabla g$ and several level curves of $g$ on the same axes.
- \item\instructor{\href{https://sagecell.sagemath.org/?z=eJxlzDEOwjAMheGdU7DVAVMJdfbKCdijkMYiKNSRk0Jze4LExvaG938MGzZDJS6wmYOXAs3sMnlZqqxqc5IKjP10mnAyCO03OKZEF5dKQP90mYZHqAN6SaI3p3TVNXTnSF_AvoKvopZjSDPwOEdmMLj_U3sxlru8wZXcE6uuRqGz-QAbgzR0}{Sage}}%
- Compute $\vec \nabla h(x,y)$.  Then draw both $\vec \nabla h$ and several level curves of $h$ on the same axes. 
- \item What relationships do you see between the gradient vector field and level curves? 
+ \marginpar{You'll want a computer to help you construct the graphs, particularly $h$. \bmw{Please use the Mathematica introduction in Brainhoney.} You could use Wolfram Alpha (use the links in the function chapter if you forgot how to graph).}
+\begin{enumerate} 
+	\item Compute $\vec \nabla f(x,y)$.  Then draw both $\vec \nabla f$ and several level curves of $f$ on the same axes. \marginpar{See \href{http://aleph.sagemath.org/?z=eJxljLEOwiAURXe-oltBHybSyeFtjV_gXIIIEYM-QqmWvxejm8vNyc3J8XyFKvAg10nJOik2-u_Dpdqs0LWtgrGElh6FlqxTpMI9NEkOMAjg9Qc-xIhHE2cH9m4S9jdXerAUKZ9NxlNenGBpi5-AfjpbKGsfXLzw0UP312vubr7Si5s5NVlnUwLhXrwBPnA2AQ}{Sage}.  You can modify these commands to help in the plots below too.}%
+	\item Compute $\vec \nabla g(x,y)$.  Then draw both $\vec \nabla g$ and several level curves of $g$ on the same axes. \instructor{\href{http://aleph.sagemath.org/?z=eJxljDEOwjAMAPe-gq0OuJWgs1dewB6FNBZBAUdOCs3vKRIb20mnO4YVm6HTfh1al8nLs8qiNiepwLjJYcLJILQfcEyJzi6VgP7hMvX3UHv0kkSvTumiSzBdPtB3YF_BV1HLMaQZeJwjMxjc_V23Yiw3eYMreUusuhqFjuYDVjExog}{Sage}}%
+	\item Compute $\vec \nabla h(x,y)$.  Then draw both $\vec \nabla h$ and several level curves of $h$ on the same axes. \instructor{\href{http://aleph.sagemath.org/?z=eJxlzDEOwjAMheGdU7DVAVMJdfbKCdijkMYiKNSRk0Jze4LExvaG938MGzZDJS6wmYOXAs3sMnlZqqxqc5IKjP10mnAyCO03OKZEF5dKQP90mYZHqAN6SaI3p3TVNXTnSF_AvoKvopZjSDPwOEdmMLj_U3sxlru8wZXcE6uuRqGz-QAbgzR0}{Sage}}%
+	\item What relationships do you see between the gradient vector field and level curves? 
 \end{enumerate}
-When you present in class, be prepared to provide rough sketches of the level curves and gradients of each function.
+\bmw{When you present in class, be prepared to provide rough sketches of the level curves and gradients of each function.}
 \end{problem}
+
 The next few problems will focus on explaining why the relationships you saw are always true.
 
 \begin{problem}
@@ -102,7 +108,7 @@ This definition extends to higher dimensions.
 
 Note that in the definition above, we require the vector $\vec u$ to be a unit vector.  If you are asked to find a directional derivative in some direction, make sure you start by finding a unit vector in that direction. We want to deal with unit vectors because when we say something has a slope of $m$ units, we want to say ``The function rises $m$ units if we run $1$ unit.''  
 
-\begin{problem}\instructor{\href{https://sagecell.sagemath.org/?z=eJytzz0OgkAQBeB-T2HHbpxF-Wks5hZ2RgjCEkmQ2QwDAqcXA4UHsHvFe_nyaj3BbPBipyy2cxYrjyV1QgPnviXRNawFm0JqQM97KKklfhSMVx6cUcoL6hgio0YcXSnE-pZAejfKH9FT04n2so0wYFcFsBBXjjGCvlkcpuet-eXG0xh2xC9t4NBLwYJedsHGkPwSEdjor0bYP-mti96vQM6FNITrpw-tYFrb}{Sage}.}%
+\begin{problem}\instructor{\href{http://aleph.sagemath.org/?z=eJytzz0OgkAQBeB-T2HHbpxF-Wks5hZ2RgjCEkmQ2QwDAqcXA4UHsHvFe_nyaj3BbPBipyy2cxYrjyV1QgPnviXRNawFm0JqQM97KKklfhSMVx6cUcoL6hgio0YcXSnE-pZAejfKH9FT04n2so0wYFcFsBBXjjGCvlkcpuet-eXG0xh2xC9t4NBLwYJedsHGkPwSEdjor0bYP-mti96vQM6FNITrpw-tYFrb}{Sage}.}%
  Consider the function $f(x,y) = 9-x^2-y^2$.
  \begin{enumerate}
   \item Draw several level curves of $f$. 
@@ -132,7 +138,7 @@ In this problem, you'll explain why the gradient points in the direction of grea
  Where is the slope of the terrain larger, in the section with closely packed contour lines, or the section with contour lines that are spread out. In which section will the gradient be a longer vector?
  \item At the very top of a mountain, or the very bottom of a valley, will the gradient be a long vector or a small vector? How do you locate a peak in a topographical map?
  \item \marginpar{If you're stuck, look at a contour plot of $f(x,y) = (x+1)^3-3(x+1)^2-y^2+2$ in   
-\href{https://sagecell.sagemath.org/?z=eJxL06jQqdS01ajQNtSMM9Y11oKwjHQr44y0jbiS8_NK8kuL4gty8ks00nSAinWNdIw0dRQ0KqGs5Pyc_KKkxCLbkKLSVE0AbVIWvQ}{Sage}. Then make your own example.}%
+\href{http://aleph.sagemath.org/?z=eJxL06jQqdS01ajQNtSMM9Y11oKwjHQr44y0jbiS8_NK8kuL4gty8ks00nSAinWNdIw0dRQ0KqGs5Pyc_KKkxCLbkKLSVE0AbVIWvQ}{Sage}. Then make your own example.}%
 Create you own topographical map to illustrate the ideas above. Just make sure your map has a section with some contours that are closely packed together, and some that are far apart, as well as a contour that intersects itself. Then on your topographical map, please add a few gradient vectors, where you emphasize which ones are long, and which ones are short. Show us how to find a peak, as well as what the gradient vector would be at the peak.  
 \end{enumerate}
 \end{problem}
@@ -259,8 +265,8 @@ Suppose $(a,b)$ is a critical point of $f$, meaning $Df(a,b) = \begin{bmatrix}0&
  D^2f = \begin{bmatrix}2&1 \\1&2\end{bmatrix}.$$ 
 The first derivative is zero (the zero matrix) when both $2x-2+y=0$ and $x+2y=0$. We need to solve the system of equations $2x+y=2$ and $x+2y=0$. Double the second equation, and then subtract it from the first to obtain $0x-3y=2$, or $y=-2/3$.  The second equation says that $x=-2y$, or that $x=4/3$.  So the only critical point is $(4/3,-2/3)$.
  
-\marginpar{In this example, the second derivative is constant, so the point $(4/3,-2/3)$ did not change the matrix. In general, the point will affect your matrix. See \href{https://sagecell.sagemath.org/?q=775b0c4a-fc2c-4d39-8c30-ac5256cfb68a}{Sage} 
-%https://sagecell.sagemath.org/?z=eJy1Vl1r5DYUfZ9fIQLFckbjTjLsy4Ieym4KhbaEdBcKxmsUWx6LyLJXkrP2_vpeSfZ47AbaPnQeJqOrq3PPPfeDVHggY0yHL_eH-9thP9yO-_HL_W5X8goJKXtjNbM8t9xYXBFUvTJpKD68I-9igux0OpFTHL_fIfjc3Nz4v0_c9lohhix7lhy1FSq0sKJgEnWtUNYQxMWZK0DoORyYKicDL2yrwdJBcHh_-ojOmnX1wkaoM7I1R0WvXxlE4YhZxFlRb0Iknoj_-uX3x8-f_ggMEarQ4QDIVa8KK1qVIPTZ9EzKEWCFQaZue1miZ8BFACZ9ArMzQaCMULxEUryA-SKfkw30aTXiA2s6yZM5mhMJYXjGemlR0C52FBqhRNM3PveGDf530MPjuBznsKBGaydAuwX08v9LwI5p1nDLNRLqoiLcvy3hzod8-POn3x5_fbjoh5BhZ_4eoDWOIP8o3lxMqhwmWTa3viNIqCr9W49tsToNPMKbzQ3U6Rv2KMub_8gQ2v2WDx3GjuoBqMY_nrau_xfdeVIkdFMOjVe8KG4MPXmj6XXFCp4XrWw1jZ6hhtHi7a2IojTSvIxIuM78PaRFLJ3zJnbK3EJrwLxCU8Az30DeXHlzFczVYs6nNtGigIswkjh1gEG4LKB2ovDzR317nkrYEHDtQR1mTPB4fUJtxwphR3pMTmST4uoU0GuQQzBFQ8hkOuJwaVqpDIXvV45T_lWFetJjmMCvyrV3lYDcpeDK4jgjjn5G3MPeTVReAnn6Sfc8Dl3ua0bTNPrgKICqH-ZReHSjEBEUPVw21nLy2kRZdi2IoWk4C3oMggKpObBjloaBNO63zwSJCpl0yJzh6ckPsEnH6ZhdDR44g9yOO07xCx_J08efMVCCBeAQnQVOE66PlwjLG4PnmrnPPOS5H3JX-quCYxdj8Z1kz5m9eM-V8I5JUTN15jn0_RkDmeUld_1EOChk6BYl8bu-YRBwgKfn2uLl4dxWexq2EDTWmnEiBcweNNQ0HmfNuYKSGPGd07vjguSbAWh4Fk6U76LDV7wSAOgbBerEi8buUwrN_eLNXWdDzs49cb_xN1Hamq6nlgQiy3Cm4of7LE6msYgTWBnKSFgbm0zi1dLytXH7OAfiTS_ZtjSD63gFfbK3t45ReszIGGzjxXZ3VekLopvRC45PCq8iEYQt8VvC-ll9MyGyrKl1_uuAU_321EfYr7V8y9O4UqfeO1vd-5lMWNdxVeJ0y2YtJQmVRtiJEG80EHt6F8Zch39Mpq0-Edjt_mnL17aRiXfCwbXmrOR6WiBXu_0vkdXv9w%3D%3D
+\marginpar{In this example, the second derivative is constant, so the point $(4/3,-2/3)$ did not change the matrix. In general, the point will affect your matrix. See \href{http://aleph.sagemath.org/?q=775b0c4a-fc2c-4d39-8c30-ac5256cfb68a}{Sage} 
+%http://aleph.sagemath.org/?z=eJy1Vl1r5DYUfZ9fIQLFckbjTjLsy4Ieym4KhbaEdBcKxmsUWx6LyLJXkrP2_vpeSfZ47AbaPnQeJqOrq3PPPfeDVHggY0yHL_eH-9thP9yO-_HL_W5X8goJKXtjNbM8t9xYXBFUvTJpKD68I-9igux0OpFTHL_fIfjc3Nz4v0_c9lohhix7lhy1FSq0sKJgEnWtUNYQxMWZK0DoORyYKicDL2yrwdJBcHh_-ojOmnX1wkaoM7I1R0WvXxlE4YhZxFlRb0Iknoj_-uX3x8-f_ggMEarQ4QDIVa8KK1qVIPTZ9EzKEWCFQaZue1miZ8BFACZ9ArMzQaCMULxEUryA-SKfkw30aTXiA2s6yZM5mhMJYXjGemlR0C52FBqhRNM3PveGDf530MPjuBznsKBGaydAuwX08v9LwI5p1nDLNRLqoiLcvy3hzod8-POn3x5_fbjoh5BhZ_4eoDWOIP8o3lxMqhwmWTa3viNIqCr9W49tsToNPMKbzQ3U6Rv2KMub_8gQ2v2WDx3GjuoBqMY_nrau_xfdeVIkdFMOjVe8KG4MPXmj6XXFCp4XrWw1jZ6hhtHi7a2IojTSvIxIuM78PaRFLJ3zJnbK3EJrwLxCU8Az30DeXHlzFczVYs6nNtGigIswkjh1gEG4LKB2ovDzR317nkrYEHDtQR1mTPB4fUJtxwphR3pMTmST4uoU0GuQQzBFQ8hkOuJwaVqpDIXvV45T_lWFetJjmMCvyrV3lYDcpeDK4jgjjn5G3MPeTVReAnn6Sfc8Dl3ua0bTNPrgKICqH-ZReHSjEBEUPVw21nLy2kRZdi2IoWk4C3oMggKpObBjloaBNO63zwSJCpl0yJzh6ckPsEnH6ZhdDR44g9yOO07xCx_J08efMVCCBeAQnQVOE66PlwjLG4PnmrnPPOS5H3JX-quCYxdj8Z1kz5m9eM-V8I5JUTN15jn0_RkDmeUld_1EOChk6BYl8bu-YRBwgKfn2uLl4dxWexq2EDTWmnEiBcweNNQ0HmfNuYKSGPGd07vjguSbAWh4Fk6U76LDV7wSAOgbBerEi8buUwrN_eLNXWdDzs49cb_xN1Hamq6nlgQiy3Cm4of7LE6msYgTWBnKSFgbm0zi1dLytXH7OAfiTS_ZtjSD63gFfbK3t45ReszIGGzjxXZ3VekLopvRC45PCq8iEYQt8VvC-ll9MyGyrKl1_uuAU_321EfYr7V8y9O4UqfeO1vd-5lMWNdxVeJ0y2YtJQmVRtiJEG80EHt6F8Zch39Mpq0-Edjt_mnL17aRiXfCwbXmrOR6WiBXu_0vkdXv9w%3D%3D
 to see a graph which shows the eigenvectors in which the largest and smallest second derivatives occur.
 %\includegraphics[width=\marginparwidth]{2nd-der-test}
 }
@@ -268,13 +274,16 @@ We find the eigenvalues of $D^2 f(4/3,-2/3)$ by solving the equation
 $$\begin{vmatrix}2-\lambda&1 \\1&2-\lambda\end{vmatrix} = (2-\lambda)(2-\lambda)-1=0.$$ 
  Expanding the left hand side gives us {$4-4\lambda + \lambda^2 -1 = 0$}. Simplifying and factoring gives us $\lambda^2-4\lambda +3 = (\lambda-3)(\lambda -1) = 0$. This means the eigenvalues are $\lambda = 1$ and $\lambda=3$. Since both numbers are positive, the function is concave upwards in every direction.  The critical point $(4/3,-2/3)$ corresponds to a local minimum of the function. The local minimum is the output $f(4/3,-2/3) = (4/3)^2-2(4/3)+(4/3)(-2/3)+(-2/3)^2$.
 
-A graph of $f$ is provided on the right. 
+A link to the graph of $f$ is provided on the right. 
 The red vector $(1,1)$ points in the direction in which the second derivative is the largest value 3. 
-The red vector $(-1,1)$ points in the direction in which the second derivative is the smallest value 1.
+The blue vector $(-1,1)$ points in the direction in which the second derivative is the smallest value 1.
 These vectors are called eigenvectors, and you can learn much more about them, in particular how to find them, in a linear algebra course. For this course, we just need to be able to find eigenvalues.
 \end{example}
  
-\begin{problem}\marginparbmw{See 14.7 for more practice. }
+\begin{problem}
+\marginpar{
+\bmw{See 14.7 for more practice. }
+}%
 Consider the function $f(x,y)=x^2+4xy+y^2$.  
 \begin{enumerate}
  \item Find the critical points of $f$ by finding when $Df(x,y)$ is the zero matrix.
@@ -366,15 +375,18 @@ Find the gradient of $f$ and the gradient of $g$.  Then solve the system of equa
  \end{enumerate}
 \end{problem}
 
-\begin{problem}\marginparbmw{See 14.8 for more practice.}
+\begin{problem}
+\marginpar{
+\bmw{See 14.8 for more practice.}
+}%
  Consider the curve $xy^2=54$ (draw it). The distance from each point on this curve to the origin is a function that must have a minimum value. Find a point $(a,b)$ on the curve that is closest to the origin.  
 
-[The distance to the origin is $d(x,y)=\sqrt{x^2+y^2}.$ This distance is minimized when $f(x,y) = x^2+y^2$ is minimized. So use $f(x,y)=x^2+y^2$ as the function you wish to minimize. What's the constraint $g(x,y)=c$?]
+[Hint: The distance to the origin is $d(x,y)=\sqrt{x^2+y^2}.$ This distance is minimized when $f(x,y) = x^2+y^2$ is minimized. So use $f(x,y)=x^2+y^2$ as the function you wish to minimize. What's the constraint $g(x,y)=c$?]
 \end{problem}
 
 \begin{problem}
  Find the dimensions of the rectangular box with maximum volume that can be inscribed inside the ellipsoid $$\frac{x^2}{2^2}+\frac{y^2}{3^2}+\frac{z^2}{5^2}=1.$$
-[What is the function $f$ you wish to optimize? What is the constraint $g=c$? Try solving each equation for $\lambda$ so you can eliminate it from the problem.]
+[Hint: What is the function $f$ you wish to optimize? What is the constraint $g=c$? Try solving each equation for $\lambda$ so you can eliminate it from the problem.]
 \end{problem}
 
 \begin{problem}
@@ -387,6 +399,8 @@ Find the dimensions of the rectangular box of maximum volume that fits underneat
 \note{This would be an appropriate place to put Taylor series in high dimensions, if your school wants the students to see those ideas.  You can introduce it all using matrix derivatives.  You could then actually prove the second derivative test, as well as define positive definite matrices.}
 
 \note{We finished all the problems in this unit in 4 days of time (really only 3 and a half, as the line integral unit overlapped on the first day.}
+
+\clearpage
 
 %%% Local Variables: 
 %%% mode: latex

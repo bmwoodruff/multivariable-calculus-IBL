@@ -4,12 +4,21 @@
 \noindent 
 This unit covers the following ideas. In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.  
 \begin{enumerate}
-\item Explain how to setup and compute a double integral. Show how to interchange the bounds of integration.
+\item Explain how to setup and compute a double integral. Show how to interchange the bounds of integration. \valpo{Topical Objective \# 15}
 \item For planar regions, find area, mass, centroids, center of mass, moments of inertia, and radii of gyration.
-\item Explain how to change coordinate systems in integration, in particular to polar coordinates. Explain what the Jacobian is, and show how to use it.
-\item Explain how to use Green's theorem to compute flow along and flux across a curve.
+\item Explain how to change coordinate systems in integration, in particular to polar coordinates. \valpo{Topical Objective \# 16}
+\item Explain what the Jacobian is, and show how to use it.
+\item Explain how to use Green's theorem to compute flow along and flux across a curve. \valpo{Topical Objective \# 18}
 \end{enumerate}
 You'll have a chance to teach your examples to your peers prior to the exam.
+
+%\valpo{ This chapter covers the following course objectives:}
+%\begin{enumerate}
+%\item perform double integrals in standard coordinate systems
+%\item understand Fubini's Theorem and change the order of integration when appropriate
+%\item apply Green's Theorem to evaluate line integrals over simple closed curves in the plane
+%\end{enumerate}
+%}
 
 \bmw{The following homework problems line up with the topics in class. 
 
@@ -42,7 +51,7 @@ Green's Theorem & 16.4&1-24 &25-38, 42 &39-41 &43-46  \\\hline
 
 \section{Double Integrals and Applications}
 \note{
-I still am not happy with this.  I think I want to have them draw more regions from inequalities, before I have them give inequalities. They struggled with 1.  I need more like #1.  With the inclass practice I'm giving them now, they are doing great, but I still think this could be improved. I might just give them a double integral, and tell them that the bounds describe a region.  Draw the region.  This might help them put a disconnect between the integrand and the bounds. I'll examine this again next time.
+I still am not happy with this.  I think I want to have them draw more regions from inequalities, before I have them give inequalities. They struggled with 1.  I need more like \#1.  With the inclass practice I'm giving them now, they are doing great, but I still think this could be improved. I might just give them a double integral, and tell them that the bounds describe a region.  Draw the region.  This might help them put a disconnect between the integrand and the bounds. I'll examine this again next time.
 }
 
 Before we introduce integration, let's practice using inequalities to describe regions in the plane.  In first semester calculus, we often use the inequalities $a\leq x\leq b$ and $g(x)\leq y\leq f(x)$ to describe the region above $g$ below $f$ for $x$ between $a$ and $b$.  We trapped $x$ between two constants, and $y$ between two functions.  Sometimes we wrote $c\leq y\leq d$ where $g(y)\leq x\leq f(y)$ to describe the region to the right of $g$ and left of $f$ for $y$ between $c$ and $d$. We need to practice writing inequalities in this form, as these inequalities provide us the bounds of integration for double integrals.
@@ -58,7 +67,7 @@ The symbols $\{$ and $\}$ are used to enclose sets, and the symbol $|$ stands fo
 $$R=\{(x,y)\ | \ c\leq y\leq d, a(y)\leq x\leq b(y)\}.$$
 % \item Set up two different iterated integrals that would find the volume under some function $f(x,y)$, above the region $R$. 
 \end{enumerate}
-[Hint:  If you're struggling, then draw the 4 curves given by $0=x$, $x= 5$, $2=y$ and $y= x+2$.  Then shade either above, below, left, or right of the line (as appropriate).]
+[Hint:  If your struggling, then draw the 4 curves given by $0=x$, $x= 5$, $2=y$ and $y= x+2$.  Then shade either above, below, left, or right of the line (as appropriate).]
 \end{problem}
 
 \begin{problem}
@@ -93,7 +102,7 @@ Let's now consider the exact same solid, but instead of cutting horizontally, le
 
 
 
-\begin{problem}%\marginpar{See \href{https://sagecell.sagemath.org/?z=eJx9kMtugzAQRfd8BVIXjN0xJbDKgi-pGmQZUiwR7I7dBvj6mpca0aobWx5Z59y5X5IgmdC3jZdICYuuMOCIEyvXm8NZDJdcjJecsciZTteVsd6VtVYelOkMlcnYdJ25J2isVNqPZZYW-993krYtrSR5azxpVdnO-KIGIK6Mg8XLkLjT_f44CwoyjIEww4LhOkdh9UuO88GQ858kLHp6UD0fXQDZvseyQ-COKIoFPAXB6Uj7HxZK4e6D_FoLw2wGDlvQAD79BkaKjHOVa5TXpt8acZ83OMLn6nWofiNuGr2k3rKy-Goo1rHu41eRp2n-FviuNXd4jP2HkEXfK9SeNw}{Sage}.}%
+\begin{problem}%\marginpar{See \href{http://aleph.sagemath.org/?z=eJx9kMtugzAQRfd8BVIXjN0xJbDKgi-pGmQZUiwR7I7dBvj6mpca0aobWx5Z59y5X5IgmdC3jZdICYuuMOCIEyvXm8NZDJdcjJecsciZTteVsd6VtVYelOkMlcnYdJ25J2isVNqPZZYW-993krYtrSR5azxpVdnO-KIGIK6Mg8XLkLjT_f44CwoyjIEww4LhOkdh9UuO88GQ858kLHp6UD0fXQDZvseyQ-COKIoFPAXB6Uj7HxZK4e6D_FoLw2wGDlvQAD79BkaKjHOVa5TXpt8acZ83OMLn6nWofiNuGr2k3rKy-Goo1rHu41eRp2n-FviuNXd4jP2HkEXfK9SeNw}{Sage}.}%
 Consider the solid domain $D$ in space that is beneath the surface $f(x,y)=9-x^2-y^2$ and above the $xy$-plane, where the $x$ values satisfy $x\geq 0$.  The region is half of a parabolic solid.  Our goal in this problem is to find the volume of the solid $D$.
 \begin{enumerate}
  \item Please \href{http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_of_solid_by_letting_y_equal_a_constant}{click on this sage link.} In this picture, you'll see the solid $D$ drawn.  You'll also see several cross sections of the surface (half parabolas), each one obtained by letting $y$ equal a constant ($y=-2, -1,0,1,2$).  
@@ -120,7 +129,7 @@ describe a region $R$ in the plane, namely $$-3\leq y\leq 3 \quad\text{and}\quad
 
 %Ask me in class to show you how the answer to the previous problem could have been obtained by considering cross sections of the original solid
 
-%\begin{problem}\marginpar{See \href{https://sagecell.sagemath.org/?z=eJx9kMtugzAQRfd8BVIXjJ2BElAWWfAlVYOQgWKJYHfsNsDX17xaRKtu_JJ1zp37WRAEI9qmsgVSwLwaehxwZNmyc7iG_S0Jh1vCmGdUK8tcaWuyUgoLQrWKsmCo2lY9AlS6ENIOWRyl2983KnST6YKKe2VJily3yqYlAHGhDMxehsSN7LbLNSQnQx8IY0wZLu8Yavmc4LQw5PwnCfOedqrT0QUQb3PMMzjugGE6g0cnOB9p_8NcKdy8k11qYRhPwH4N6sDn30BPkDImN5WwUnVrI-bjDkd4DXKufom4WuRk2Z2_YzO_VuRLX3b-S4zRBaMIk-jy6oSmUQ_Yz_FHAuZ9Aa-ooss}{Sage}.}%
+%\begin{problem}\marginpar{See \href{http://aleph.sagemath.org/?z=eJx9kMtugzAQRfd8BVIXjJ2BElAWWfAlVYOQgWKJYHfsNsDX17xaRKtu_JJ1zp37WRAEI9qmsgVSwLwaehxwZNmyc7iG_S0Jh1vCmGdUK8tcaWuyUgoLQrWKsmCo2lY9AlS6ENIOWRyl2983KnST6YKKe2VJily3yqYlAHGhDMxehsSN7LbLNSQnQx8IY0wZLu8Yavmc4LQw5PwnCfOedqrT0QUQb3PMMzjugGE6g0cnOB9p_8NcKdy8k11qYRhPwH4N6sDn30BPkDImN5WwUnVrI-bjDkd4DXKufom4WuRk2Z2_YzO_VuRLX3b-S4zRBaMIk-jy6oSmUQ_Yz_FHAuZ9Aa-ooss}{Sage}.}%
 %Consider the solid domain $D$ in space that is beneath the surface $f(x,y)=9-x^2-y^2$ and above the $xy$-plane, where the $x$ values satisfy $x\geq 0$.  The region is half of a parabolic solid.  Our goal in this problem is to find the volume of the solid $D$. This is the same solid referred to in the previous two problems. 
 %\begin{enumerate}
 % \item Draw the solid $D$. 
@@ -224,6 +233,7 @@ $$
 
 
 
+%From Karl: I repeated some of this section (the moment of inertia) but not all. Partly because I want to be able to 'turn off' Ben's stuff, and not lose this.
 
 \bmw{%I talk about inertial and radii of gyration in my course.  Jason, I think you leave it out.  That's why I commented out this portion.  I decided to more this from the line integral to the double integral chapter.  Here it is. 
 
@@ -317,10 +327,63 @@ R_z = \sqrt{\frac{\iint_R (x^2+y^2)dm}{\iint_R dm}}.
 $$
 where $dm=\delta(x,y) dA$.  Note that in 2 dimensions, we have $z=0$, so the formulas for $R_x$ and $R_y$ are simpler.
 
+\hrule
+\hrule
+
 }%ends the part that involves the radius of gyration.
 
 
 
+\valpo{ %This is a repeate of the first problem in the moment of inertia/gryation section.
+
+%Note from Ben Woodruff
+\note{I used the variable $d$ to stand for radius of rotation.  I DO NOT use $r$ because too many students replace it with the polar coordinate $r$, especially when we get to double integrals.  I tried $d$, but now students were thinking it was a differential.  I need a different variable.  I've used $(rad)^2$ before, and it works, it's just awkward.  Jason, if you have a good idea, email me.  I would like to discuss this. We could use $(\text{dist})^2$ or $(\text{radius of rotation})^2$. Maybe the last is the best.  However, I would really like to write $I=\int ?^2 dm$ without it taking up half a board.  A variable would be good.  Capital $R$ doesn't work. }
+
+One of the main reasons we are studying mass, center of mass, centroids, etc., is so that we can understand energy. 
+The transfer of energy (for example from kinetic to electrical and then back from electrical to kinetic) is one of the most important ideas in modern innovations. 
+
+Some of you may have already had a physics class, in which you learned that the kinetic energy of an object with mass $m$ moving at speed $v$ is $$KE = \frac{1}{2}mv^2.$$ If an object has a large mass, it takes a lot of work (transfer of energy) to get the object moving. Mass is an object's resistance to straight line motion. 
+
+When something rotates, we need a handy way to compute its kinetic energy. 
+We'll show that the kinetic energy of an object that is rotating about a line $L$, and has an angular velocity of $\omega$ radians per second about the line, is precisely 
+\marginpar{Compare the two formulas $KE = \frac{1}{2}mv^2$ and $KE = \frac{1}{2}I\omega^2$.  If we replace speed with angular speed, then we replace mass with inertia.  Heavy objects are hard to push. Objects with large inertia are hard to rotate.  Just as mass is an objects resistance to being moved, inertia is an objects resistance to being rotated.  Engineers build I-beams so that a large portion of the mass is far from the axis of rotation. This causes a large inertia, which prevents I-beams from rotating.
+}  
+$$KE = \frac{1}{2}I \omega^2,$$
+where $I$ is the (second) moment of inertia. 
+If an object has a large inertia, it takes a lot of work (transfer of energy) to get the object rotating.  Inertia is like an object's  resistance to rotational motion.
+
+\begin{definition}[Moment of Inertia]
+We can obtain the moment of inertia by integrating $I=\iint_R (d)^2 dm$ where $d$ is the radius of rotation about the axis $L$ of rotation, which means that $d$  is distance from a point $(x,y,z)$ to the axis of rotation $L$. If the line $L$ is one of the coordinate axes, then we obtain the key formulas 
+$$
+I_x = \iint_R (y^2)dm,\quad
+I_y = \iint_R (x^2)dm,\quad
+I_z = \iint_R (x^2+y^2)dm
+.$$
+\end{definition}
+
+If you have never worked with kinetic energy before, you may skip the next problem and then just practice using these formulas.
+
+
+
+\begin{problem}
+\marginpar{\href{http://www.youtube.com/watch?v=Zyqk9SWlTyQ&list=PL04DF68E73B7ECD54&index=7&feature=plpp_video}{Watch a YouTube video.}}%
+\instructor{One student asked if this had to do with figure skating.  OF course.  I spun around in a circle with my arms out, and then quickly brought them in. I also like to pick up a table/desk, and show them how easy it is to rotate the object if I use an axis near the center.  Then I try to grab the edge of the desk and rotate it, it doesn't work.  The only real thing I want them to master is that the inertia gets really large (grows quadratically) with distance to an axis.  So I do something memorable to help them remember that.  We just did the normal acceleration problem in the motion unit, so I try to connect it to that.}%
+ Suppose that an object, whose mass is $m$, is attached to a string (whose mass is so small we'll ignore it). We rotate the object about a point, where the angular velocity is $\omega$ radians per second. The length of the string (distance from the point to the center of rotation) is $d$.
+ \begin{enumerate}
+ \item Explain why the speed of the object $v=\omega d$.  
+ \item We know an object's kinetic energy $KE=\frac{1}{2}mv^2$. 
+\marginpar{The quantity $I=d^2m$ is called the moment of inertia. However, this formula assumes that all the mass is located at a single point.} 
+Explain why the kinetic energy of the rotating object is $KE = \frac{1}{2}d^2m\omega^2$. 
+  \item Let's take our object, located at the point $P(x,y)$, and rotate it about the $x$-axis, still with angular velocity $\omega$. Find the kinetic energy of this point. [All you need is the distance $d$ from the point $P(x,y)$ to the $x$-axis.]
+  \item We can think of a region $R$ in the plane as thousands of points $P(x,y)$, each with mass $dm=\delta dA$. As we rotate an entire object about the $x$-axis with angular velocity $\omega$, each little piece contributes a small amount of kinetic energy. Explain why the total kinetic energy of the region $R$, when rotated about the $x$ axis at angular speed $\omega$, is
+\marginpar{The inertia about the $x$ axis is $I_x = \ds \iint_R (y^2)dm = \iint_R (y^2)\delta dA$.}
+$$KE= \frac{1}{2}\left(\iint_R (y^2)dm\right)\omega^2$$.  
+  \item How does the formula above change if we instead rotate about the $y$-axis? What if we rotate about the origin?
+\marginpar{Feel free to ask in class about how this connects to figure skating.}
+ \end{enumerate}
+\end{problem}
+
+} %End of Valpo addition of moment of inertia.
 
 
 
@@ -378,40 +441,6 @@ Set up an iterated integral formula to compute $\bar x$ for the centroid. By com
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \section{Switching Coordinates: The Jacobian}
 
 We now want to explore how to perform $u$-substitution in high dimensions. Let's start with a review from first semester calculus.
@@ -443,13 +472,12 @@ The determinant you found above is called the Jacobian of the polar coordinate t
 \begin{theorem}\marginpar{Ask me in class to give you an informal picture approach that explains why 
 $dxdy=rdrd\theta$.  
 }%
+\instructor{ ?? }%What is this picture?
+\note{ Add a description of this picture in the instructor notes?}
  If we use the polar coordinate transformation $x=r\cos\theta, y=r\sin\theta$, then we can switch from $(x,y)$ coordinates to $(r,\theta)$ coordinates if we use $$dxdy=|r|drd\theta.$$  The number $|r|$ is called the Jacobian of $x$ and $y$ with respect to $r$ and $\theta$. If we require all bounds for $r$ to be nonnegative, we can ignore the absolute value.  If $R_{xy}$ is a region in the $xy$ plane that corresponds to the region $R_{r\theta}$ in the $r\theta$ plane (where $r\geq 0$), then we can write $$\iint_{R_{xy}} f(x,y) dxdy = \iint_{R_{r\theta}} f(r\cos\theta,r\sin\theta) r\ drd\theta.$$ 
 \end{theorem}
 
 We need some practice using this idea. We'll start by describing regions using inequalities on $r$ and $\theta$.  
-
-
-
 
 
 % Some day I would like to have them draw this picture themselves, but for now I'll do it. They are getting tired (it's near the end of the semester).  I'll just give this one to them.
@@ -468,8 +496,8 @@ For each region $R$ below, draw the region in the $xy$-plane. Then give a set of
 \end{problem}
 
 
-\begin{problem}\marginpar{See \href{https://sagecell.sagemath.org/?q=60eb3051-6680-4031-afba-893277d1ec90}{Sage.}
-%https://sagecell.sagemath.org/?z=eJytVsuSozYU3fMVKo-7ELbM0F3TSdVk6Eq2WSazc3lcMgi3EhkRISmQr89FAgyO3e5U4oXR45577hssVTg0yIZR8AFVUlCFMilVzkuqWR3ghrRRis0qkzW2ETGrmpewiH5A2OwVLY-MWP8EsW0Sx9_tSPd4WlWc1JpVacU_Pj7tAKD3J16miVvQJu0kAiD9k3GVI9bQUyVY8GFg_Pa0sd-egNCuO2543iLdPMfxM7D65y0i_cqz30tW1-mnoP7DUMX2gpVH_ZrGyXMQFEqeUE2PLGaNjgta6z2zVCB-qqTSyB0UQlLtJQtTZlpKUQ8CFVWaUxH8yEvNFM10kLMCaTCyxk3Ky8ro_UE24B0S9MBEumgWRLcVS3_9JSIBGn7tRLYdZdursmZfMZWxUqe14DlTOCGPJAF3SA_7UshSQz6FVGmoWB6-mC8fu7OXBUFgHzVCp_H3U532X-k8CMPCF3tPaZ-0iWtDGgcHDRIckrOYm3KJshcoO6Ciz4HDgWJio7Rxm9Zv2sCb0GUzRVAZA3m0xlAe424zvYpWY3ADb8sZbmdwO4XbEW5ncGMrISGk5oS3UCn0xLTi2b47xJiDlQRhS1zdEle0cDBJG6ENq_fO6TrdhiYkoQ13pODHmv_F0u0zgbpHhVSII14O4d5FE-71DXJDeEdurpO7_F5nn_DZq3xXqFwUr9Gp48EzQrlBwcGJS6xuBUvDTUjOzTuu7pF1VARdi-yZDCqbJO8nq3RqGbS9wluv3vnTu52b8RI7oo0jjVazYUOSQdyO4gl5A3AZVCnaoywhkZpUep1b92_GxY70mauMgnEKuRPVK00T6MeZns7j-0qOirES3gwO-tW3k5vPvtmMhY44T0a46YvD37eX9-38vrHmH3gbdjI9_vK-nd837RtN1c9jDEZ2FT5sW7e9125oXvENkLbv7jdv1q1-G-2yZmaX297rxJs9N3C-GQbju28aCn8UkctozILxzu64b4MdJ8DUbdvbcGcIvdeM32gmD5yWKT3U-Guc86LAUZwzjaMoruFtLXjR7gsjBPYA3fFDmuGj5dF_sczbMU4ed_4dwMDojIEobvAqi0jb_fucZF1OoJ_WepVbd6K7E697N8ev31SQ206H-U868ONGR2DI-v_Rc0vJmPF-KA1K78ygAeZm0CVmGDmd4Ks-CbxY9oPnoV4uHrCAz9IG-yP4TeR-7hP_GS2dqJccyqEHTOR_6oLQovpEhUCKHbksOw-XTbtElaAlQ7xGtKqUbPgJdIkWPSTxpyPS_MRqpF8Z6qYBkoVbZ1IpVleyhE_n40Rfd7c0tte5eDgbdH6FRHGJJ7bFmh4EjOetn9bEB2y3i_4G6ObLfg%3D%3D
+\begin{problem}\marginpar{See \href{http://aleph.sagemath.org/?q=60eb3051-6680-4031-afba-893277d1ec90}{Sage.}
+%http://aleph.sagemath.org/?z=eJytVsuSozYU3fMVKo-7ELbM0F3TSdVk6Eq2WSazc3lcMgi3EhkRISmQr89FAgyO3e5U4oXR45577hssVTg0yIZR8AFVUlCFMilVzkuqWR3ghrRRis0qkzW2ETGrmpewiH5A2OwVLY-MWP8EsW0Sx9_tSPd4WlWc1JpVacU_Pj7tAKD3J16miVvQJu0kAiD9k3GVI9bQUyVY8GFg_Pa0sd-egNCuO2543iLdPMfxM7D65y0i_cqz30tW1-mnoP7DUMX2gpVH_ZrGyXMQFEqeUE2PLGaNjgta6z2zVCB-qqTSyB0UQlLtJQtTZlpKUQ8CFVWaUxH8yEvNFM10kLMCaTCyxk3Ky8ro_UE24B0S9MBEumgWRLcVS3_9JSIBGn7tRLYdZdursmZfMZWxUqe14DlTOCGPJAF3SA_7UshSQz6FVGmoWB6-mC8fu7OXBUFgHzVCp_H3U532X-k8CMPCF3tPaZ-0iWtDGgcHDRIckrOYm3KJshcoO6Ciz4HDgWJio7Rxm9Zv2sCb0GUzRVAZA3m0xlAe424zvYpWY3ADb8sZbmdwO4XbEW5ncGMrISGk5oS3UCn0xLTi2b47xJiDlQRhS1zdEle0cDBJG6ENq_fO6TrdhiYkoQ13pODHmv_F0u0zgbpHhVSII14O4d5FE-71DXJDeEdurpO7_F5nn_DZq3xXqFwUr9Gp48EzQrlBwcGJS6xuBUvDTUjOzTuu7pF1VARdi-yZDCqbJO8nq3RqGbS9wluv3vnTu52b8RI7oo0jjVazYUOSQdyO4gl5A3AZVCnaoywhkZpUep1b92_GxY70mauMgnEKuRPVK00T6MeZns7j-0qOirES3gwO-tW3k5vPvtmMhY44T0a46YvD37eX9-38vrHmH3gbdjI9_vK-nd837RtN1c9jDEZ2FT5sW7e9125oXvENkLbv7jdv1q1-G-2yZmaX297rxJs9N3C-GQbju28aCn8UkctozILxzu64b4MdJ8DUbdvbcGcIvdeM32gmD5yWKT3U-Guc86LAUZwzjaMoruFtLXjR7gsjBPYA3fFDmuGj5dF_sczbMU4ed_4dwMDojIEobvAqi0jb_fucZF1OoJ_WepVbd6K7E697N8ev31SQ206H-U868ONGR2DI-v_Rc0vJmPF-KA1K78ygAeZm0CVmGDmd4Ks-CbxY9oPnoV4uHrCAz9IG-yP4TeR-7hP_GS2dqJccyqEHTOR_6oLQovpEhUCKHbksOw-XTbtElaAlQ7xGtKqUbPgJdIkWPSTxpyPS_MRqpF8Z6qYBkoVbZ1IpVleyhE_n40Rfd7c0tte5eDgbdH6FRHGJJ7bFmh4EjOetn9bEB2y3i_4G6ObLfg%3D%3D
 }%
 Consider the opening problem for this unit.  We want to find the volume under $f(x,y)=9-x^2-y^2$ where $x\geq0$ and $z\geq 0$.  We obtained the integral formula 
 $$\iint_R f dA = \ds\int_{y=-3}^{y=3} \int_{x=0}^{x=\sqrt{9-y^2}}9-x^2-y^2 dx dy.$$
@@ -485,10 +513,10 @@ $$\iint_R f dA = \ds\int_{y=-3}^{y=3} \int_{x=0}^{x=\sqrt{9-y^2}}9-x^2-y^2 dx dy
 
 \begin{problem}
 Find the centroid of a semicircular disc of radius $a$ ($y\geq 0$). Actually compute any integrals.  
-\bmw{
 
-After doing this, in class we'll set up the integral formulas needed to find $R_y$, the radius of gyration about the $y$-axis, assuming the density is $\delta(x,y)=x^2+y^2$.}
-\note{This is a great place to comment in class about the ability to do the integrals separately.} 
+\bmw{After doing this, in class we'll set up the integral formulas needed to find $R_y$, the radius of gyration about the $y$-axis, assuming the density is $\delta(x,y)=x^2+y^2$.}
+\instructor{This is a great place to comment in class about the ability to do the integrals separately.} 
+
 \end{problem}
 
 \begin{problem}
@@ -547,51 +575,12 @@ Let $R$ be the region in the plane bounded by the curves $x+2y=1$, $x+2y=4$, $2x
 \end{problem}
 
 
-\begin{problem}\bmw{\marginpar{This is problem 7 in section 15.8.}}
+\begin{problem}
+\marginpar{
+\bmw{This is problem 7 in section 15.8.}
+}%
  Use the transformation $u=3x+2y$ and $v=x+4y$ to evaluate the integral $$\iint_R (3x^2+14xy+8y^2)dxdy =\iint_R (3x+2y)(x+4y)dxdy $$ for the region $R$ that is bounded by the lines $y=-(3/2)x+1$, $y=-(3/2)x+3$, $y=-(1/4)x$, and  $y=(-1/4)x+1$.
 \end{problem}
-
-\begin{comment}
-\note{Here are some polar double integrals:
-
-\begin{problem}\marginpar{\bmw{See page 653.}}
-In this problem, you will develop a formula for finding area inside a polar curve.
-\begin{enumerate}
-\item 
-Consider a circle of radius $r$. The area inside the circle is $\pi r^2$. This is the area inside when you traverse around the circle for a full $2\pi$ radians.  Fill in the following table by finding the pattern that connects angle traversed to area inside.
-\begin{center}
-\begin{tabular}{c|c}
-Angle traversed& Area inside\\ \hline
-$2\pi$ & $A=\pi r^2$\\
-$\pi$ & \\
-$\pi/2$ & \\
-$\pi/4$ & \\
-$d\theta$ & $dA=\quad\quad$
-\end{tabular}
-\end{center}
-\item Explain why the area inside a polar curve $r=f(\theta)$ for $\alpha\leq \theta\leq \beta$ is $$A = \int dA = \int_\alpha^\beta \frac{1}{2}r^2d\theta.$$
-What must be true about the curve $r=f(\theta)$ for this formula to be valid?
-\end{enumerate}
-\end{problem}
-
-\begin{problem} \marginpar{\bmw{See 11.5: 1-20.}}
-Find the area inside of the polar curve $r=\sin\theta$. [Hint: Construct a graph to determine the appropriate bounds for the integral. When you integrate, you'll need to use the half angle identity.] 
-\end{problem}
-
-
-\begin{problem}
-Set up (do not evaluate) an integral to compute the area 
-\begin{enumerate}
-\item inside the cardioid $r=2+2\sin\theta$, and 
-\item inside the circle $r=3\cos\theta$.
-\end{enumerate}
-\end{problem}
-
-\begin{problem}
-Set up (do not evaluate) an integral formula to compute the area that lies inside both $r=2-2\cos\theta$ and $r=\cos\theta$. Sketch both curves. 
-\end{problem}
-}
-\end{comment}
 
 \section{Green's Theorem}
 Now that we have double integrals, it's time to make some of our circulation and flux problems from the line integral section get extremely simple. We'll start by defining the circulation density and flux density for a vector field $\vec F(x,y)=\left<M,N\right>$ in the plane.
@@ -621,7 +610,7 @@ To understand what the circulation and flux density mean in a physical sense, th
 
 
 We are now ready to state Green's Theorem.  Ask me in class to give an informal proof as to why this theorem is valid.
-\note{I draw a curve.  I then cut the interior up into little rectangular pieces, and ask them to consider the sum of the flux along every single little rectangular piece inside.  I show them how the circulation (or flux) along any interior edge is computed twice but with opposite signs.  This means that the integrals along every interior edge vanish.  We then have the circulation along the entire edge equal to the sum of a bunch of tiny circulations. Multipy and divide by the area inside each rectangle. Taking a limit as the size of the rectangles shrinks to zero gives us a double integral of the circulation per area. This is Green's theorem}
+\instructor{I draw a curve.  I then cut the interior up into little rectangular pieces, and ask them to consider the sum of the flux along every single little rectangular piece inside.  I show them how the circulation (or flux) along any interior edge is computed twice but with opposite signs.  This means that the integrals along every interior edge vanish.  We then have the circulation along the entire edge equal to the sum of a bunch of tiny circulations. Multipy and divide by the area inside each rectangle. Taking a limit as the size of the rectangles shrinks to zero gives us a double integral of the circulation per area. This is Green's theorem}
 \begin{theorem}[Green's Theorem]
  Let $\vec F(x,y)=(M,N)$ be a continuously differentiable vector field, which is defined on an open region in the plane that contains a simple closed curve $C$ and the region $R$ inside the curve $C$.  Then we can compute the counterclockwise circulation of $\vec F$ along $C$, and the outward flux of $\vec F$ across $C$ by using the double integrals
 $$ \oint_{C} \vec F \cdot \vec T ds=\iint_R N_x-M_y dA 
@@ -632,7 +621,10 @@ $$ \oint_{C} \vec F \cdot \vec T ds=\iint_R N_x-M_y dA
 Let's now use this theorem to rapidly find circulation (work) and flux.
 
 
-\begin{problem}\marginpar{See 16.4 for more practice.  Try doing a bunch of these, as they get really fast.}
+\begin{problem}
+\marginpar{
+\bmw{See 16.4 for more practice.  Try doing a bunch of these, as they get really fast.}
+}%
  Consider the vector field $\vec F=(2x+3y,4x+5y)$. Start by computing $N_x-M_y$ and $M_x+N_y$. 
  If $C$ is the boundary of the rectangle $2\leq x\leq 7$ and $0\leq y\leq 3$, find both the circulation and flux of $\vec F$ along $C$. You should be able to reduce the integrals to facts about area. [If you tried doing this without Green's theorem, you would have to parametrize 4 line segments, compute 4 integrals, and then sum the results.]
 \end{problem}
@@ -671,6 +663,9 @@ Repeat the previous problem, but change the curve $C$ to the boundary of the tri
 % As this vector field is purely radial, the circulation along any curve is zero.  Without doing any computations, what should $N_x-M_y$ equal? Explain.  Then actually compute $N_x-M_y$.
 % \end{enumerate}
 % \end{problem}
+
+\clearpage
+
 
 %%% Local Variables: 
 %%% mode: latex

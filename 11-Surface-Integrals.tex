@@ -2,11 +2,12 @@
 \noindent 
 This unit covers the following ideas. In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.  
 \begin{enumerate}
-\item Explain how to setup surface integrals, and use them to compute surface area, average value, centroids, center of mass, moments of inertia, and radii of gyration.
-\item Use surface integrals to compute flux across a surface, in a given direction. 
-\item Explain how to use Stokes's theorem to compute circulation. 
+\item Explain how to setup surface integrals, and use them to compute surface area, average value, centroids, center of mass, moments of inertia, \bmw{and radii of gyration.}
+\item Use surface integrals to compute flux across a surface, in a given direction. \valpo{Topical Objective \# 19}
+\item Explain how to use Stokes's theorem to compute circulation. \valpo{Topical Objective \# 20}
 \end{enumerate}
 You'll have a chance to teach your examples to your peers prior to the exam.
+
 
 
 \section{Surface Area and Surface Integrals}
@@ -19,7 +20,7 @@ In the double integral unit we learned how to compute double integrals $\iint_R 
 \begin{problem}
  Consider the surface $S$ given by $z=9-x^2-y^2$ (we've seen this surface many times). A parametrization of this surface is $$\vec r(x,y) = (x,y,9-x^2-y^2).$$
 \begin{enumerate}
- \item \instructor{See \href{https://sagecell.sagemath.org/?z=eJx1jkEKwjAQRfc5RXadqVMXzUohJylWYtrY0NqEJGBze1MFF4KzGD7M-7wxsFFGuW86NVvfNrlvkXnpF5fEAKZrL1SujSCBBPkTkDmfohysTqDd4oKsbovSc0VpsnpexxilQGZc4JbblQe13kd4V8-Ml_EH6VVQjzEFq6-7C0yxWCT-ldX1LsH_vC2fFz7_8P4YJ_cEfAHkUEDa}{Sage}.}%
+ \item \instructor{See \href{http://aleph.sagemath.org/?z=eJx1jkEKwjAQRfc5RXadqVMXzUohJylWYtrY0NqEJGBze1MFF4KzGD7M-7wxsFFGuW86NVvfNrlvkXnpF5fEAKZrL1SujSCBBPkTkDmfohysTqDd4oKsbovSc0VpsnpexxilQGZc4JbblQe13kd4V8-Ml_EH6VVQjzEFq6-7C0yxWCT-ldX1LsH_vC2fFz7_8P4YJ_cEfAHkUEDa}{Sage}.}%
 Draw the surface $S$. Add to your surface plot the parabolas given by $\vec r(x,0)$, $\vec r(x,1)$, and $\vec r(x,2)$, as well as the parabolas given by $\vec r(0,y)$, $\vec r(1,y)$, and $\vec r(2,y)$. You should have an upside down paraboloid, with at least 6 different parabolas drawn on the surface.  These parabolas should divide the surface up into a bunch of different patches. Our goal is to find the area of each patch, where each patch is almost like a parallelogram. 
  \item Find $\ds \frac{\partial \vec r}{\partial x}$ and $\ds\frac{\partial \vec r}{\partial y}$. At the point $(2,1)$, draw both vectors. These vectors form the edges of a parallelogram. Add that parallelogram to your picture.
  \item Show that the area of a parallelogram whose edges are the vectors $\ds\frac{\partial \vec r}{\partial x}(x,y)$ and $\ds\frac{\partial \vec r}{\partial y}$ is $\sqrt{1+4x^2+4y^2}$. [Hint: think about the cross product.]
@@ -184,7 +185,8 @@ Repeat the previous problem, but this time don't use the formula from problem \r
 
 \note{A sizeable amount of text for Stokes' Theorem is commented out in the source. It is not polished up yet, as I have not yet had time to visit the topic in our course.  It is an optional topic, that I hope to get to soon.}
 
-\begin{comment}
+\note{Karl turned this back on for Valpo}
+%\begin{comment}
 
 \section{Circulation Density and Stokes' Theorem}
 
@@ -277,7 +279,7 @@ Being creative in your choice of surface can sometimes make a problem trivial.
  Let $\vec F(x,y,z)=(M,N,P)$ be a continuously differentiable vector field. Suppose that $\vec F$ has a potential (so that $D\vec F$ is symmetric).  Compute the derivative of $F$ as a square matrix. Explain which partial derivatives must be equal. Use this information to find the curl of $\vec F$ if $\vec F$ has a potential. According to Stokes' Theorem, what is the circulation of $\vec F$ along any closed path, provided $\vec F$ has a potential?
 \end{problem}
 
-\end{comment}
+%\end{comment}
 
 %%% Local Variables: 
 %%% mode: latex

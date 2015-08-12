@@ -1,11 +1,11 @@
 
 \noindent 
-This unit covers the following ideas. In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.  
+This unit covers the following ideas. Make sure you have a lesson plan containing examples that explain and illustrate the following concepts.  
 \begin{enumerate}
-\item Define, draw, and explain what a vector is in 2 and 3 dimensions.
-\item Add, subtract, multiply (scalar, dot product, cross product) vectors. Be able to illustrate each operation geometrically.
+\item Define, draw, and explain what a vector is in 2 and 3 dimensions. \valpo{Topical Objective \# 3}
+\item Add, subtract, multiply (scalar, dot product, cross product) vectors. Be able to illustrate each operation geometrically. \valpo{Topical Objective \# 4}
 \item Use vector products to find angles, length, area, projections, and work.
-\item Use vectors to give equations of lines and planes, and be able to draw lines and planes in 3D.
+\item Use vectors to give equations of lines and planes, and be able to draw lines and planes in 3D. \valpo{Topical Objective \#2}
 
 \end{enumerate}
 You'll have a chance to teach your examples to your peers prior to the exam.
@@ -20,12 +20,21 @@ To find the distance between two points $(x_1,y_1)$ and $(x_2,y_2)$ in the plane
 Show that the distance between two points $(x_1,y_1,z_1)$ and $(x_2,y_2,z_2)$ in 3-dimensions is $\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$.
 \end{problem}
 
-\begin{problem}\marginpar{\bmw{See 12.1:41-58.}}
-Find the distance between the two points $P=(2,3,-4)$ and $Q=(0,-1,1)$. Then find an equation of the sphere passing though point $Q$ whose center is at $P$.
+
+\begin{problem}
+\marginpar{
+	\thomasee{See 12.1:41-58.} 
+	\stewarts{See 12.1:11-18}
+	}%end margin
+Find the distance between the two points $P=(2,3,-4)$ and $Q=(0,-1,1)$. Then find an equation of the sphere passing though point $Q$ whose center is at $P$. \valpo{Hint: Each point on the surface of a sphere is $r$ distance away from the center.}
 \end{problem}
 
 
-\begin{problem}\marginpar{\bmw{See 12.1:1-40.}}
+\begin{problem}
+\marginpar{
+	\thomasee{See 12.1:1-40.} 
+	\stewarts{12.1:23-34}
+	}
 For each of the following, construct a rough sketch of the set of points in space (3D) satisfying:
 \begin{enumerate}
 \item $2\leq z\leq 5$
@@ -45,7 +54,7 @@ $$\vec v = \vec{OV}=\left<v_1,v_2,v_3\right>
 .$$
 The entries of the vector are called the $x$, $y$, and $z$ components of the vector. 
 \end{definition}
-
+\instructor{There are no problems actually exploring the idea of vectors NOT from the origin, i.e. between several points. This should be added or tweaked into the existing problems}
 Note that $(v_1,v_2,v_3)$ could refer to either the point $V$ or the vector $\vec v$. The context of the problem we are working on will help us know if we are dealing with a point or a vector.
 
 \begin{definition}
@@ -71,28 +80,46 @@ Suppose $\vec x=\left<x_1,x_2,x_3\right>$ and $\vec y=\left<y_1,y_2,y_3\right>$ 
 \end{definition}
 
 
-\begin{problem}\marginpar{\bmw{See 12.2:23-24.}}
+\begin{problem}
+\marginpar{
+	\thomasee{See 12.2:23-24.} 
+	\stewarts{See 12.2:5-6}
+	}
 Consider the vectors $\vec u=(1,2)$ and $\vec v=\left<3,1\right>$.  Draw $\vec u$, $\vec v$, $\vec u+\vec v$, and $\vec u-\vec v$ with their tail placed at the origin.  Then draw $\vec v$ with its tail at the head of $\vec u$. 
 \end{problem}
 
-\begin{problem}\marginpar{\bmw{See 11.1: 3,4.}}
+\begin{problem}
+\marginpar{
+	\thomasee{See 11.1: 3,4.}
+	}
 Consider the vector $\vec v=(3,-1)$.  Draw $\vec v$, $-\vec v$, and $3\vec v$. 
 Suppose a donkey travels along the path given by $(x,y)=\vec v t = (3t,-t)$, where $t$ represents time. Draw the path followed by the donkey. Where is the donkey at time $t=0,1,2$? Put markers on your graph to show the donkey's location. Then determine how fast the donkey is traveling.
 \end{problem}
 
 In the previous problem you encountered $(x,y)=(3t,-t)$.  This is an example of a function where the input is $t$ and the output is a vector $(x,y)$.  For each input $t$, you get a single vector output $(x,y)$. Such a function is called a parametrization of the donkey's path. Because the output is a vector, we call the function a vector-valued function. Often, we'll use the variable $\vec r$ to represent the radial vector $(x,y)$, or $(x,y,z)$ in 3D.  So we could rewrite the position of the donkey as $\vec r(t)=(3,-1)t$. We use $\vec r$ instead of $r$ to remind us that the output is a vector.
 
-\begin{problem}\label{horse line}\marginpar{\bmw{See 12.2: 1.}}
+\begin{problem}\label{horse line}
+\marginpar{
+	\thomasee{See 12.2: 1.}
+	}
 Suppose a horse races down a path given by the vector-valued function $\vec r(t) = (1,2)t+(3,4)$. (Remember this is the same as writing $(x,y) =  (1,2)t+(3,4)$ or similarly  $(x,y)=(1t+3,2t+4)$.)
 Where is the horse at time $t=0,1,2$? Put markers on your graph to show the horse's location. Draw the path followed by the horse. Give a unit vector that tells the horse's direction. Then determine how fast the horse is traveling.
 \end{problem}
 
-\begin{problem}\marginpar{\bmw{See 12.2: 9,17,25,33 and surrounding.}}
+\begin{problem}
+\marginpar{
+	\thomasee{See 12.2: 9,17,25,33 and surrounding.} 
+	\stewarts{See 12.2: 23-26, 41, 42}
+	}%
 Consider the two points $P=(1,2,3)$ and $Q=(2,-1,0)$. Write the vector $\vec {PQ}$ in component form $(a,b,c)$. Find the length of vector $\vec {PQ}$. Then find a unit vector in the same direction as $\vec{PQ}$. Finally, find a vector of length 7 units that points in the same direction as $\vec{PQ}$. 
 \end{problem}
 
 
-\begin{problem}\marginpar{\bmw{See 12.5: 1-12.}}
+\begin{problem}
+\marginpar{
+	\thomasee{See 12.5: 1-12.} 
+	\stewarts{Look at 12.2:34-40}
+	}%
 A raccoon is sitting at point $P=(0,2,3)$.  It starts to climb in the direction $\vec v=\left<1,-1,2\right>$.  
 Write a vector equation $(x,y,z)=(?,?,?)$ for the line that passes through the point $P$ and is parallel to $\vec v$. [Hint, study problem \ref{horse line}, and base your work off of what you saw there. It's almost identical.]
 
@@ -101,7 +128,11 @@ Then generalize your work to give an equation of the line that passes through th
 
 Make sure you ask me in class to show you how to connect the equation developed above to what you have been doing since middle school. If you can remember $y=mx+b$, then you can quickly remember the equation of a line.  If I don't show you in class, make sure you ask me (or feel free to come by early and ask before class).
 
-\begin{problem}\marginpar{\bmw{See 12.5: 13-20.}}\label{first line between two points}%
+\begin{problem}\label{first line between two points}%
+\marginpar{
+	\thomasee{See 12.5: 13-20.} 
+	\stewarts{12.5: 6-15}
+	}
 Let $P=(3,1)$ and $Q=(-1,4)$.  
 \begin{itemize}
 \item Write a vector equation $\vec r(t)=(x,y)$ for (i.e, give a parametrization of) the line that passes through $P$ and $Q$, with $\vec r(0)=P$ and $\vec r(1)=Q$.
@@ -126,17 +157,28 @@ $\vec u\cdot \vec v = u_1 v_1+ u_2 v_2+\cdots+ u_n v_n.$
 You just multiply corresponding components together and then add. It is the same process used in matrix multiplication.
 \end{definition}
 
-\begin{problem}\label{dot prep} \marginpar{\bmw{Page 693 has the solution if you are struggling.}}
+\begin{problem}\label{dot prep} 
+\marginpar{
+	\thomasee{Page 693 has the solution if you are struggling.} 
+	}
 If $\vec u = (u_1,u_2,u_3)$ and $\vec v= (v_1,v_2,v_3)$ are vectors in $\mathbb{R}^3$ (which is often written $\vec u,\vec v\in\mathbb{R}^3$), then show that 
 $$|\vec u-\vec v|^2 = |\vec u|^2-2\vec u\cdot \vec v +|\vec v|^2.$$
 \end{problem}
 
-\begin{problem} \marginpar{\bmw{See 12.3: 9-12.}}
+\begin{problem} 
+\marginpar{
+	\thomasee{See 12.3: 9-12.} 
+	\stewarts{See 12.3:15-20}
+	}%
 Sketch in $\mathbb{R}^2$ the vectors $\left<1,2\right>$ and $\left<3,5\right>$.  Use the law of cosines to find the angle between the vectors.
 \end{problem}
 
 
-\begin{problem}\label{dot angle formula}  \marginpar{\bmw{See page 693.}}
+\begin{problem}\label{dot angle formula}  
+\marginpar{
+	\thomasee{See page 693.} 
+	\stewarts{See pages 801-802 if you are struggling}
+	}%
 Let $\vec u,\vec v\in\mathbb{R}^3$. Let $\theta$ be the angle between $\vec u$ and $\vec v$. 
 \begin{enumerate}
 \item Use the law of cosines to explain why $|\vec u-\vec v|^2=|\vec u|^2+|\vec v|^2-2|\vec u||\vec v|\cos\theta$.
@@ -144,7 +186,11 @@ Let $\vec u,\vec v\in\mathbb{R}^3$. Let $\theta$ be the angle between $\vec u$ a
 \end{enumerate}
 \end{problem}
 
-\begin{problem}\label{dot angle practice}  \marginpar{\bmw{See 12.3: 9-12.}}
+\begin{problem}\label{dot angle practice}  
+\marginpar{
+	\thomasee{See 12.3: 9-12.} 
+	\stewarts{See 12.3:15-20}
+	}%
 Sketch in $\mathbb{R}^3$ the vectors $\left<1,2,3\right>$ and $\left<-2,1,0\right>$.  Use the law of cosines to find the angle between the vectors. Then use the formula $\vec u\cdot \vec v=|\vec u||\vec v|\cos\theta$ to find the angle between them. Which was easier?
 \end{problem}
 
@@ -168,12 +214,16 @@ Mark each statement true or false. Explain. You can assume that $\vec u,\vec v,\
 \end{enumerate}
 \end{problem}
 
-\begin{problem} \marginpar{\bmw{See page 694.}}
+\begin{problem} 
+\marginpar{
+	\thomasee{See page 694.} 
+	\stewarts{See page 804}
+	}%
 Show that if two nonzero vectors $\vec u$ and $\vec v$ are orthogonal, then the angle between them is 90$^\circ$. Then show that if the angle between them is 90$^\circ$, then the vectors are orthogonal.
 \end{problem}
 The dot product provides a really easy way to find when two vectors meet at a right angle. The dot product is precisely zero when this happens.
 
-\subsection{Projections and Work}\label{work section}
+\subsection{Projections and Work}
 Suppose a heavy box needs to be lowered down a ramp.  
 The box exerts a downward force of 200 Newtons, which we will write in vector notation as $\vec F=\left<0,-200\right>$. 
 The ramp was placed so that the box needs to be moved right 6 m, and down 3 m, so we need to get from the origin $(0,0)$ to the point $(6,-3)$.  This displacement can be written as $\vec d=\left<6,-3\right>$. The force $F$ acts straight down, which means the ramp takes some of the force. Our goal is to find out how much of the 200N the ramp takes, and how much force must be applied to prevent the box from sliding down the ramp (neglecting friction). We are going to break the force $\vec F$ into two components, one component in the direction of $\vec d$, and another component orthogonal to $\vec d$. 
@@ -188,7 +238,11 @@ The solution to the previous problem gives us the definition of a projection.
 The projection of $\vec F$ onto $\vec d$, written $\proj_{\vec d}\vec F$, is defined as $$\proj_{\vec d}\vec F = \left(\frac{\vec F\cdot \vec d}{\vec d\cdot \vec d}\right)\vec d.$$
 \end{definition}
 
-\begin{problem} \marginpar{\bmw{See 12.3:1-8 (part d).}}
+\begin{problem} 
+\marginpar{
+	\thomasee{See 12.3:1-8 (part d).} 
+	\stewarts{See 12.3: 39-44}
+	}%
 Let $\vec u=(-1,2)$ and $\vec v=(3,4)$. Draw $\vec u,$ $\vec v$, and $\proj_{\vec v}\vec u$. Then draw a line segment from the head of $\vec u$ to the head of the projection.
 
 Now let $\vec u=(-2,0)$ and keep $\vec v=(3,4)$. Draw $\vec u,$ $\vec v$, and $\proj_{\vec v}\vec u$. Then draw a line segment from the head of $\vec u$ to the head of the projection.
@@ -205,7 +259,11 @@ Before the semester ends, we will be able to remove all 3 of these assumptions. 
 
 Recall the set up to problem \ref{force intro}.  We want to lower a box down a ramp (which we will assume is frictionless). Gravity exerts a force of $\vec F=\left<0,-200\right>$ N. If we apply no other forces to this system, then gravity will do work on the box through a displacement of $\left<6,-3\right>$ m. The work done by gravity will transfer the potential energy of the box into kinetic energy (remember that work is a transfer of energy).  How much energy is transferred?
 
-\begin{problem} \marginpar{\bmw{See 12.3: 24, 41-44.}}\label{first work problem}
+\begin{problem}\label{first work problem}
+\marginpar{
+	\thomasee{See 12.3: 24, 41-44.} 
+	\stewarts{See 12.3:49-52}
+	}% 
 Find the amount of work done by the force $\vec F=\left<0,-200\right>$ through the displacement $\vec d=\left<6,-3\right>$. Find this by doing the following:
 \begin{enumerate}
 \item Find the projection of $\vec F$ onto $\vec d$. This tells you how much force acts in the direction of the displacement. Find the magnitude of this projection.
@@ -230,7 +288,11 @@ The dot product gave us a way of multiplying two vectors together, but the resul
 The cross product of two vectors $\vec u = \left<u_1,u_2,u_3\right>$ and $\vec v = \left<v_1,v_2,v_3\right>$ is a new vector $\vec u\times \vec v$. This new vector is (1) orthogonal to both $\vec u$ and $\vec v$, (2) has a length equal to the area of the parallelogram whose sides are these two vectors, and (3) points in the direction your thumb points as you curl the base of your right hand from $\vec u$ to $\vec v$. The formula for the cross product is $$\vec u\times \vec v = \left<u_2v_3-u_3v_2,-(u_1v_3-u_3v_1),u_1v_2-u_2v_1\right> = \det\begin{bmatrix}\vec i & \vec j&\vec k\\ u_1&u_2&u_3\\ v_1&v_2&v_3\\\end{bmatrix}.$$
 \end{definition}
 
-\begin{problem}  \marginpar{\bmw{See 12.4: 1-8.}}
+\begin{problem}  
+\marginpar{
+	\thomasee{See 12.4: 1-8.} 
+	\stewarts{See 12.4:1-7}
+	}%
 Let $\vec u=(1,-2,3)$ and $\vec v=(2,0,-1)$.  
 \begin{itemize}
 \item Compute $\vec u\times \vec v$ and $\vec v\times \vec u$.  How are they related?
@@ -240,11 +302,18 @@ Let $\vec u=(1,-2,3)$ and $\vec v=(2,0,-1)$.
 \end{itemize}
 \end{problem}
 
-\begin{problem}  \marginpar{\bmw{See 12.4: 15-18.}}
+\begin{problem}  
+\marginpar{
+	\thomasee{See 12.4: 15-18.} 
+	\stewarts{See 12.4: 29-32}
+	}%
 Let $P=(2,0,0)$, $Q=(0,3,0)$, and $R=(0,0,4)$. Find a vector that orthogonal to both $\vec {PQ}$ and $\vec {PR}$. Then find the area of the triangle $PQR$. Construct a 3D graph of this triangle.
 \end{problem}
 
-\begin{problem} \marginpar{\bmw{See 12.3: 9-14.}}
+\begin{problem} 
+\marginpar{
+	\thomasee{See 12.4: 9-14.} 
+	}%
 Consider the vectors ${\ii}=(1,0,0)$, ${2\jj}=(0,2,0)$, and ${3\kk}=(0,0,3)$.
 \begin{itemize}
 \item Compute $\ii\times {2\jj}$ and ${2\jj}\times {\ii}$.
@@ -265,19 +334,37 @@ Suppose the point $P=(1,2)$ lies on line $L$. Suppose that the angle between the
 
 \note{Add a problem about the equation of a plane containing two vectors.}
 
-\begin{problem}\label{plane equation three points}\marginpar{\bmw{See page 709.}\larsonfive{See Larson 11.5.}}%
+\begin{problem}\label{plane equation three points}
+\marginpar{
+	\thomasee{See page 709.}
+	\larsonfive{See Larson 11.5.} 
+	\stewarts{See pages 819-822}
+	}%
 Let $P=(a,b,c)$ be a point on a plane in 3D. Let $\vec n=(A,B,C)$ be a normal vector to the plane (so the angle between the plane and and $\vec n$ is 90$^\circ$).  Let $Q=(x,y,z)$ be another point on the plane.  Show that an equation of the plane through point $P$ with normal vector $\vec n$ is $$A(x-a)+B(y-b)+C(z-c)=0.$$
 \end{problem}
 
-\begin{problem}  \marginpar{\bmw{See 12.5: 21-28.}\larsonfive{See Larson 11.5:47--58 for more practice.}}%
+\begin{problem}  
+\marginpar{
+	\thomasee{See 12.5: 21-28.}
+	\larsonfive{See Larson 11.5:47--58 for more practice.} 
+	\stewarts{See 12.5: 23-40}
+	}%
 Consider the three points $P=(1,0,0), Q=(2,0,-1), R=(0,1,3)$. Find an equation of the plane which passes through these three points.  [Hint: first find a normal vector to the plane.]
 \end{problem}
 
-\begin{problem}  \marginpar{\bmw{See 12.5: 57-60.}\larsonfive{See Larson 11.5:91--92 for more practice.}}%
+\begin{problem}  
+\marginpar{
+	\thomasee{See 12.5: 57-60.}
+	\larsonfive{See Larson 11.5:91--92 for more practice.} 
+	\stewarts{See 12.5: 23-40, 45-47}
+	}%
 Consider the two planes $x+2y+3z=4$ and $2x-y+z=0$.  These planes meet in a line.  Find a vector that is parallel to this line.  Then find a vector equation of the line.
 \end{problem}
 
-\begin{problem}\label{plane equation 2 lines}\marginpar{\larsonfive{See Larson 11.5:47--58 for more practice.}}%
+\begin{problem}\label{plane equation 2 lines}
+\marginpar{
+	\larsonfive{See Larson 11.5:47--58 for more practice.}
+	}%
 Find an equation of the plane containing the lines $\vec r_1(t)=(1,3,0)t+(1,0,2)$ and $\vec r_2(t)=(2,0,-1)t+(2,3,2)$.
 \end{problem}
 
@@ -291,7 +378,10 @@ Find an equation of the plane containing the lines $\vec r_1(t)=(1,3,0)t+(1,0,2)
 \end{enumerate}
 \end{problem}
 
-\begin{problem}
+\begin{problem} 
+\marginpar{
+	\stewarts{See 12.5:69-72}
+	}%
  Consider the points $P=(2,4,5)$, $Q=(1,5,7)$, and $R=(-1,6,8)$.
 \begin{enumerate}
  \item What is the area of the triangle $PQR$. 
@@ -302,15 +392,14 @@ Find an equation of the plane containing the lines $\vec r_1(t)=(1,3,0)t+(1,0,2)
  
 \end{problem}
 
-\note{ Here are two problems that are good problems, but something has to go...
-\begin{problem}
-   Show that the distance from a point $Q$ to a plane (with normal vector {$\vec n$} and a point $P$) is given by $|\proj_{\vec n}\overrightarrow {PQ}|$. Draw a diagram illustrating your reasoning.
- \end{problem}
 
- \begin{problem}
-   Show that the distance from a line (with direction vector $\vec v_1$ passing through $P_1$) to a line (with direction vector $\vec v_2$ passing through $P_2$) is $|\proj_{\vec v_1\times\vec v_2}\overrightarrow {P_1P_2}|$. Draw a diagram illustrating your reasoning.
- \end{problem}
-}
+% \begin{problem}
+%   Show that the distance from a point $Q$ to a plane (with normal vector {$\vec n$} and a point $P$) is given by $|\proj_{\vec n}\overrightarrow {PQ}|$. Draw a diagram illustrating your reasoning.
+% \end{problem}
+
+% \begin{problem}
+%   Show that the distance from a line (with direction vector $\vec v_1$ passing through $P_1$) to a line (with direction vector $\vec v_2$ passing through $P_2$) is $|\proj_{\vec v_1\times\vec v_2}\overrightarrow {P_1P_2}|$. Draw a diagram illustrating your reasoning.
+% \end{problem}
 
 \note{Here are two more problems about dot and cross product, but they aren't central to the course.  Maybe these could be good problems for advanced students.  I saw these in Larson:
 
@@ -321,6 +410,9 @@ Find an equation of the plane containing the lines $\vec r_1(t)=(1,3,0)t+(1,0,2)
     \end{enumerate}
   \end{problem}
 }
+
+\clearpage
+
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "215-problems"

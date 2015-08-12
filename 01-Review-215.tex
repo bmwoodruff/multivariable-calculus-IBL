@@ -1,11 +1,11 @@
 This unit covers the following ideas. In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.  \begin{enumerate}
-\item Give a summary of the ideas you learned in 112, including graphing, derivatives (product, quotient, power, chain, trig, exponential, and logarithm rules), and integration ($u$-sub and integration by parts).
+\item Give a summary of the ideas you learned in \valpo{Math 131 and 132}\bmw{112}, including graphing, derivatives (product, quotient, power, chain, trig, exponential, and logarithm rules), and integration ($u$-sub and integration by parts).
 \item Compute the differential $dy$ of a function and use it to approximate the change in a function. 
-\item Explain how to perform matrix multiplication and compute determinants of square matrices.
+\item Explain how to perform matrix multiplication and compute determinants of square matrices. \\
+\valpo{This is in Math 264/260, so might be new to a few of you.}
 \item Illustrate how to solve systems of linear equations, including how to express a solution parametrically (in terms of $t$) when there are infinitely solutions.
 \item Extend the idea of differentials to approximate functions using parabolas, cubics, and polynomials of any degree.
 \end{enumerate}
-You'll have a chance to teach your examples to your peers prior to the exam.
 
 %\section{Preparation and Suggested Homework}
 %
@@ -29,7 +29,7 @@ We'll need to know how to graph by hand some basic functions. If you have not sp
 \begin{problem}
 Provide a rough sketch of the following functions, showing their basic shapes:
 $$\displaystyle x^2, x^3, x^4, \frac{1}{x}, \sin x, \cos x, \tan x, \sec x, \arctan x, e^x,\ln x.$$ 
-Then use a computer algebra system, such as \href{http://http://www.wolframalpha.com/}{Wolfram Alpha}, to verify your work. I suggest Wolfram Alpha, because it is now built into Mathematica 8.0.  If you can learn to use Wolfram Alpha, you will be able to use Mathematica.
+Then use a computer algebra system, such as \href{http://http://www.wolframalpha.com/}{Wolfram Alpha}, to verify your work. I suggest Wolfram Alpha, because it is now built into Mathematica 8.0.  If you can learn to use Wolfram Alpha, you will be able to use Mathematica. \marginpar{\valpo{You are also welcome to use Maple. On the surface both Mathematica and Maple are very similar.}}
 \end{problem}
 
 
@@ -44,7 +44,10 @@ The following rules are crucial.
 \end{itemize}
 
 \begin{problem}
-\marginpar{\bmw{See sections 3.2-3.6 for more practice with derivatives. The later problems in 3.6 review of most of the entire differentiation chapter.}}
+\marginpar{
+	\thomasee{See sections 3.2-3.6 for more practice with derivatives. The later problems in 3.6 review of most of the entire differentiation chapter.}
+	\stewarts{See sections 3.1-3.6 for more practice with derivatives.}
+	}
 Compute the derivative of $e^{\sec x}\cos(\tan(x)+\ln(x^2+4))$. Show each step in your computation, making sure to show what rules you used. 
 \end{problem}
 
@@ -55,7 +58,10 @@ If $y(p) = \ds \frac{e^{p^3}\cot(4p+7)}{\tan^{-1}(p^4)}$ find $dy/dp$. Again, sh
 The following problem will help you review some of your trigonometry, inverse functions, as well as implicit differentiation.
 
 \begin{problem}
-\marginpar{\bmw{See sections 3.7-3.9 for more examples involving inverse trig functions and implicit differentiation.}}
+\marginpar{
+	\thomasee{See sections 3.7-3.9 for more examples involving inverse trig functions and implicit differentiation.}
+	\stewarts{See section 3.5 for more examples involving inverse trig functions and implicit differentiation.}
+	}
 Use implicit differentiation to explain why the derivative of $y=\arcsin x$ is $\ds y'=\frac{1}{\sqrt{1-x^2}}$.  [Rewrite $y=\arcsin x$ as $x=\sin y$, differentiate both sides, solve for $y'$, and then write the answer in terms of $x$].  
 \end{problem}
 
@@ -68,7 +74,10 @@ Each derivative rule from the front cover of your calculus text is also an integ
 There are many other integration techniques, but we will not focus on them. If you are trying to compute an integral to get a number while on the job, then software will almost always be the tool you use.  As we develop new ideas in this and future classes (in engineering, physics, statistics, math), you'll find that $u$-substitution and integrations-by-parts show up so frequently that knowing when and how to apply them becomes crucial.
 
 \begin{problem}
-\marginpar{\bmw{For practice with $u$-substitution, see section 5.5 and 5.6.  \\ For practice with integration by parts, see section 8.1.}}
+\marginpar{
+	\thomasee{For practice with $u$-substitution, see section 5.5 and 5.6.  \\ For practice with integration by parts, see section 8.2.}
+	\stewarts{For practice with $u$-substitution, see sections 5.5. \\ For practice with integration by parts, see section 7.1}
+	}
 Compute $\ds\int x\sqrt{x^2+4}dx$.
 \end{problem}
 
@@ -95,7 +104,11 @@ We call $dx$ the differential of $x$.  If $f$ is a function of $x$, then the dif
 We will often refer to the differential notation $dy=f'dx$ as ``a change in the output $y$ equals the derivative times a change in the input $x$.'' 
 \end{definition}
 
-\begin{problem}\marginpar{\bmw{See 3.10:19-38.}}
+\begin{problem}
+\marginpar{
+	\thomasee{See 3.10:19-38.}
+	\stewarts{See 3.10:11-22}
+	}
 If $f(x) = x^2\ln(3x+2)$ and $g(t) = e^{2t}\tan(t^2)$ then compute $df$ and $dg$.  
 \end{problem}
 
@@ -103,18 +116,24 @@ Most of higher dimensional calculus can quickly be developed from differential n
  
 This problem will help you see how the notion of differentials is used to develop equations of tangent lines. We'll use this same idea to develop tangent planes to surfaces in 3D and more.
 \begin{problem} \label{differentials give tangent
-    lines}\marginpar{\bmw{See 3.11:39-44. Also see problems 3.11:1-18.}  The linearization of a function is just an equation of the tangent line where you solve for $y$.}
+    lines}
+		\marginpar{
+			\thomasee{See 3.11:39-44. Also see problems 3.11:1-18.}
+			\stewarts{See 3.10:1-10 and 3.10:23-31.} \\
+			\bmw{The linearization of a function is just an equation of the tangent line where you solve for $y$.}}
 Consider the function $y=f(x) = x^2$. This problem has multiple steps, but each is fairly short.
 \begin{enumerate}
 \item Find the differential of $y$ with respect to $x$.  
-\item Give an equation of the tangent line to $f(x)$ at $x=3$.
+%\item Give an equation of the tangent line to $f(x)$ at $x=3$.  %This seems completely unnecessary given the rest of the problem, since you do it on the last part again!
 \item Draw a graph of $f(x)$ and the tangent line on the same axes. Place a dot at the point $(3,9)$ and label it on your graph. Place another dot on the tangent line up and to the right of (3,9). Label the point $(x,y)$, as it will represent any point on the tangent line. 
 \item Using the two points $(3,9)$ and $(x,y)$, compute the slope of the line connecting these two points. Your answer should involve $x$ and $y$. What is the rise (i.e, the change in $y$ called $dy$)? What is the run (i.e, the change in $x$ called $dx$)?  
 \item We already know the slope of the tangent line is the derivative $f'(3)=6$. We also know the slope from the previous part. These two must be equal. Use this fact to give an equation of the tangent line to $f(x)$ at $x=3$. 
 \end{enumerate}
 \end{problem}
  
-\begin{problem} \marginpar{\bmw{See 3.11:45-62.}} \label{diff-sphere}
+\begin{problem} 
+	\marginpar{\thomasee{See 3.11:45-62.} \stewarts{See 3.10}} 
+	\label{diff-sphere}
 The manufacturer of a spherical storage tank needs to create a tank with a radius of 3 m. Recall that the volume of a sphere is $V(r) = \frac{4}{3}\pi r^3$. No manufacturing process is perfect, so the resulting sphere will have a radius of 3 m, plus or minus some small amount $dr$. The actual radius will be $3+dr$. Find the differential $dV$.  Then use differentials to estimate the change in the volume of the sphere if the actual radius is 3.02 m instead of the planned 3 m.    
 \end{problem}
  
@@ -127,16 +146,24 @@ A forest ranger needs to estimate the height of a tree.  The ranger stands 50 fe
 \section{Matrices}\label{review matrices}
 We will soon discover that matrices represent derivatives in high dimensions. When you use matrices to represent derivatives, the chain rule is precisely matrix multiplication. For now, we just need to become comfortable with matrix multiplication.
 
-We perform matrix multiplication ``row by column''.  Wikipedia has an excellent visual illustration of how to do this. See \marginpar{The links will open your browser and take you to the web.}
+We perform matrix multiplication ``row by column''.  Wikipedia has an excellent visual illustration of how to do this. See \marginpar{ \bmw{The links will open your browser and take you to the web.} \valpo{The links will open your browser and take you to the web.}}
 \href{http://en.wikipedia.org/wiki/Matrix\_multiplication}{Wikipedia} for an explanation. See \href{http://www.texample.net/tikz/examples/matrix-multiplication/}{texample.net} for a visualization of the idea.
 
-\begin{problem} \marginpar{For extra practice, make up two small
-    matrices and multiply them.  Use 
-\href{https://sagecell.sagemath.org/?z=eJxztM1NLCnKrNCIjjbUMdYxiY3V5HJCiJnrGMXqKICkQJSukY4BSIGjlhMA16EPQw}{Sage}
+\begin{problem} 
+	\marginpar{ 
+	\bmw{For extra practice, make up two small matrices and multiply them.  Use 
+\href{http://aleph.sagemath.org/?z=eJxztM1NLCnKrNCIjjbUMdYxiY3V5HJCiJnrGMXqKICkQJSukY4BSIGjlhMA16EPQw}{Sage}
 or
 \href{http://www.wolframalpha.com/input/?i=\%281\%2C3\%2C4\%29+*\%28\%287\%2C2\%29\%2C\%281\%2C3\%29\%2C\%28-2\%2C0\%29\%29}{Wolfram
   Alpha} to see if you are correct (click the links to see how to do
 matrix multiplication in each system).}
+	\valpo{For extra practice, make up two small matrices and multiply them.  Use 
+\href{http://aleph.sagemath.org/?z=eJxztM1NLCnKrNCIjjbUMdYxiY3V5HJCiJnrGMXqKICkQJSukY4BSIGjlhMA16EPQw}{Sage}
+or
+\href{http://www.wolframalpha.com/input/?i=\%281\%2C3\%2C4\%29+*\%28\%287\%2C2\%29\%2C\%281\%2C3\%29\%2C\%28-2\%2C0\%29\%29}{Wolfram
+  Alpha} to see if you are correct (click the links to see how to do
+matrix multiplication in each system).}
+}% end marginnote
 Compute the following matrix products.
 \begin{itemize}
 \item $\begin{bmatrix}
@@ -175,12 +202,12 @@ Determinants measure area, volume, length, and higher dimensional versions of th
 Associated with every square matrix is a number, called the determinant, which is related to length, area, and volume, and we use the determinant to generalize volume to higher dimensions. Determinants are only defined for square matrices.
 \begin{definition}
 The determinant of a {$2\times 2$} matrix is the number 
-\marginpar{We use vertical bars next to a matrix to state we want the determinant, so $\det A = |A|$. } 
+	\marginpar{We use vertical bars next to a matrix to state we want the determinant, so $\det A = |A|$. } 
 \begin{align*}
 \det\begin{bmatrix}a&b\\c&d\end{bmatrix} &=\begin{vmatrix}a&b\\c&d\end{vmatrix} = ad-bc.
 \end{align*}
 The determinant of a {$3\times 3$} matrix is the number 
-\marginpar{Notice the negative sign on the middle term of the {$3 \times 3$} determinant. Also, notice that we had to compute three determinants of 2 by 2 matrices in order to find the determinant of a 3 by 3.} 
+	\marginpar{Notice the negative sign on the middle term of the {$3 \times 3$} determinant. Also, notice that we had to compute three determinants of 2 by 2 matrices in order to find the determinant of a 3 by 3.} 
 \begin{align*}
 \begin{vmatrix}a&b&c\\d&e&f\\g&h&i\end{vmatrix} &= a\det\begin{vmatrix}e&f\\h&i\end{vmatrix} -b\det\begin{vmatrix}d&f\\g&i\end{vmatrix} +c\det\begin{vmatrix}d&e\\g&h\end{vmatrix}\\
 &=a(ei-hf)-b(di-gf)+c(dh-ge).
@@ -188,7 +215,7 @@ The determinant of a {$3\times 3$} matrix is the number
 \end{definition}
 
 \begin{problem}
-\marginpar{For extra practice, create your own square matrix (2 by 2 or 3 by 3) and compute the determinant by hand. Then use Wolfram Alpha to check your work.  Do this until you feel comfortable taking determinants.}
+	\marginpar{For extra practice, create your own square matrix (2 by 2 or 3 by 3) and compute the determinant by hand. Then use \href{http://www.wolframalpha.com}{Wolfram Alpha} to check your work.  Do this until you feel comfortable taking determinants.}
 Compute 
 $\begin{vmatrix}
 1&2\\
@@ -251,8 +278,8 @@ $B = \begin{bmatrix} \cl{0\\2\\0}&\cl{1\\0\\0}&\cl{0\\0\\3}\end{bmatrix}$, then 
 
 
 \begin{problem}
-\marginpar{For additional practice, make up your own systems of equations. Use Wolfram Alpha to check your work.}
-Solve the following linear systems of equations.
+	\marginpar{For additional practice, make up your own systems of equations. Use \wolfA to check your work.}
+		Solve the following linear systems of equations.
 \begin{itemize}
 \item $\begin{cases}x+y&=3\\2x-y&=4\end{cases}$
 \item $\begin{cases}-x + 4y&=8\\3x - 12y&=2\end{cases}$
@@ -260,9 +287,9 @@ Solve the following linear systems of equations.
 \end{problem}
 
 \begin{problem}
-\marginpar{This 
-\href{http://www.wolframalpha.com/input/?i=Solve+x\%2B2y\%3D3+and+4x-y\%2Bz\%3D7+and+x\%3Dt}{link} 
-will show you how to specify which variable is $t$ when using Wolfram Alpha.}
+	\marginpar{This 
+		\href{http://www.wolframalpha.com/input/?i=Solve+x\%2B2y\%3D3+and+4x-y\%2Bz\%3D7+and+x\%3Dt}{link} 
+		will show you how to specify which variable is $t$ when using Wolfram Alpha.}
 Find all solutions to the linear system 
 $\begin{cases}x+y+z&=3\\2x-y&=4\end{cases}$.  
 Since there are more variables than equations, this suggests there is probably not just one solution, but perhaps infinitely many.  One common way to deal with solving such a system is to let one variable equal $t$, and then solve for the other variables in terms of $t$. Do this three different ways.
@@ -290,8 +317,9 @@ Let $f(x)=e^x$. You should find that your work on each step can be reused to do 
 
 
 
-\begin{problem} \marginpar{The polynomial you are creating is often called a Taylor polynomial. (I'm giving you the name so that you can search online for more information if you are interested.)}
- Now let $f(x)=\sin x$. Find a 7th degree polynomial so that the function and the polynomial have the same value and same first seven derivatives when evaluated at $x=0$. Evaluate the polynomial at $x=0.3$. How close is this value to your calculator's estimate of $\sin(0.3)$?  You may find it valuable to use the notation $$P(x) = a_0+a_1x+a_2x^2+a_3x^3 +\cdots+a_7 x^7.$$
+\begin{problem} 
+	\marginpar{The polynomial you are creating is often called a Taylor polynomial. (I'm giving you the name so that you can search online for more information if you are interested.)}
+Now let $f(x)=\sin x$. Find a 7th degree polynomial so that the function and the polynomial have the same value and same first seven derivatives when evaluated at $x=0$. Evaluate the polynomial at $x=0.3$. How close is this value to your calculator's estimate of $\sin(0.3)$?  You may find it valuable to use the notation $$P(x) = a_0+a_1x+a_2x^2+a_3x^3 +\cdots+a_7 x^7.$$
 \end{problem}
 
 
@@ -302,7 +330,8 @@ The previous two problems involved finding polynomial approximations to the func
 Let $f(x)=e^x$.
 \begin{itemize}
 \item Find a second degree polynomial $$T(x)=a+bx+cx^2$$ so that $T(1)=f(1)$, $T'(1)=f'(1)$, and $T''(1)=f''(1)$. In other words, give me a parabola that passes through the same point, has the same slope, and the same concavity as $f(x)=e^x$ does at $x=1$. 
-\item Find a second degree polynomial written in the form $$S(x)=a+b(x-1)+c(x-1)^2$$ \marginpar{Notice that we just replaced $x$ with $x-1$. This centers, or shifts, the approximation to be at $x=1$. The first part will be much simpler now when you let $x=1$.} so that $S(1)=f(1)$, $S'(1)=f'(1)$, and $S''(1)=f''(1)$. In other words, find a quadratric that passes through the same point, has the same slope, and the same concavity as $f(x)=e^x$ does at $x=1$. 
+\item Find a second degree polynomial written in the form $$S(x)=a+b(x-1)+c(x-1)^2$$ 
+	\marginpar{Notice that we just replaced $x$ with $x-1$. This centers, or shifts, the approximation to be at $x=1$. The first part will be much simpler now when you let $x=1$.} so that $S(1)=f(1)$, $S'(1)=f'(1)$, and $S''(1)=f''(1)$. In other words, find a quadratric that passes through the same point, has the same slope, and the same concavity as $f(x)=e^x$ does at $x=1$. 
 \item Find a third degree polynomial written in the form $$P(x)=a+b(x-1)+c(x-1)^2+d(x-1)^3$$ so that $P(1)=f(1)$, $P'(1)=f'(1)$, $P''(1)=f''(1)$, and $P'''(1)=f'''(1)$. In other words, give me a cubic that passes through the same point, has the same slope, the same concavity, and the same third derivative as $f(x)=e^x$ does at $x=1$. 
 \end{itemize}
 \end{problem} 
@@ -330,7 +359,7 @@ P'''=6a_3.$$
 So that the derivatives of the volume function match the derivatives of the polynomial (at $r=3$), we need to satisfy the equations in the table below.
 \begin{center}
 \begin{tabular}{|c|c|c|c|}\hline
- $k$ & Value of $V$ at the $k$th derivative & Value of $P$ at the $k$th derivative & Equation \\ \hline
+ $k$ & Value of $V$ at the $k$th derivative & Value of $P$ at the the $k$th derivative & Equation \\ \hline
  $0$ & $V(3) = \frac{4}{3}\pi (3)^3 = 36\pi$ & $P(3) = a_0$ & $a_0=36\pi$ \\ \hline
  $1$ & $V'(3) = 4\pi (3)^2=36\pi$ & $P'(3) = a_1$ & $a_1=36\pi$ \\ \hline
  $2$ & $V''(3) = 8\pi (3)=24\pi$ & $P''(3) = 2a_2$ & $2a_2=24\pi$ \\ \hline
@@ -357,12 +386,25 @@ With each approximation, we add on a little more volume to get closer to the act
  \begin{problem}
  Suppose you are constructing a cube whose side length should be $s=2$ units. The manufacturing process is not exact, but instead creates a cube with side lengths $s=2+ds$ units. (You should assume that all sides are still the same, so any error on one side is replicated on all.  We have to assume this for now, but before the semester ends we'll be able to do this with high dimensional calculus.) 
  
- \marginpar{Ask me in class to draw a 3D graph which illustrates the volume added on by each successive approximation. As a challenge, try to construct this graph yourself first. If you have it before I put it up in class, let me know and I'll let you share what you have discovered with the class.} Suppose that the machine creates a cube with side length $2.3$ units instead of 2 units.  Note that the volume of the cube is $V=s^3$.  Use a first, second, and third order approximation to estimate the increase in volume caused by the .3 increase in side length.  Then compute the actual increase in volume $V(2.3)-V(2)$.   
+ \marginpar{As a challenge, try to draw a 3D graph which illustrates the volume added on by each successive approximation. If you have it before we get here as a class, let me know and I'll let you share what you have discovered with the class.} Suppose that the machine creates a cube with side length $2.3$ units instead of 2 units.  Note that the volume of the cube is $V=s^3$.  Use a first, second, and third order approximation to estimate the increase in volume caused by the .3 increase in side length.  Then compute the actual increase in volume $V(2.3)-V(2)$.   
  \end{problem}
 \note{I would include this problem above in class as a demonstration.  It allows them to see what differentials do.  You can easily see how each new piece adds more to the approximation.}
 
+\section{Wrap Up}
+This concludes the chapter.  Look at the objectives at the beginning of the chapter. Can you now do all the things you were promised? \\
+\textbf{Lesson Plan Creation\\}
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your one-page lesson plan. You may use both sides. The objectives at the beginning of the chapter give you a list of the key concepts. Once you finish your lesson plan, scan it into a PDF document (use any scanner on campus), and then upload the document to Blackboard.
+
+As you create this lesson plan, consider the following:
+\begin{itemize}
+ \item On the class period after making this plan, you'll have 20 minutes in class where you will get to teach a peer your examples. If you keep the examples simple, you'll be able to fully review the entire chapter.\\
+\textbf{Note: For this review chapter only, we will NOT have a 20 minute in-class session}
+ \item Before each celebration of knowledge we will devote a class period to review. With well created lesson plans, you will have 4-8 (for 2-4 Chapters) to review for each, instead of 50-100 problems.
+ \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 10 pages, you can have the entire course summarized and easy for you to recall.
+\end{itemize}
 
 
+\clearpage
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "215-problems"

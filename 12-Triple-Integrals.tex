@@ -2,10 +2,10 @@
 \noindent 
 This unit covers the following ideas. In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.  
 \begin{enumerate}
-\item Explain how to setup and compute triple integrals, as well as how to interchange the bounds of integration. Use these ideas to find area and volume.
-\item Explain how to change coordinate systems in integration, with an emphasis on cylindrical, and spherical coordinates. Explain what the Jacobian of a transformation is, and how to use it.
+\item Explain how to setup and compute triple integrals, as well as how to interchange the bounds of integration. Use these ideas to find area and volume. \valpo{Topical Objective \# 15}
+\item Explain how to change coordinate systems in integration, with an emphasis on cylindrical, and spherical coordinates. Explain what the Jacobian of a transformation is, and how to use it. \valpo{Topical Objective \# 16}
 \item Use triple integrals to find physical quantities such as center of mass, radii of gyration, etc. for solid regions.
-\item Explain how to use the Divergence theorem to compute the flux of a vector fields out of a closed surface.
+\item Explain how to use the Divergence theorem to compute the flux of a vector fields out of a closed surface. \valpo{Topical Objective \# 14 \& \# 19}
 \end{enumerate}
 You'll have a chance to teach your examples to your peers prior to the exam.
 
@@ -19,7 +19,7 @@ Consider the iterated integral $$\ds \int_{-3}^3 \int_0^{\sqrt{9-y^2}}\int_0^{9-
 When working with double integrals, there were two different ways to set up the bounds for our integrals, as $dA=dxdy=dydx$.  When working with triple integrals, there are six different ways to set up the bounds for our integrals, as $$dV=dxdydz = dxdzdy = dydxdz=dydzdx=dzdxdy=dzdydx.$$ 
 
 \begin{problem}
-Consider again the iterated integral $$\ds \int_{-3}^3 \int_0^{\sqrt{9-y^2}}\int_0^{9-x^2-y^2} dzdxdy.$$ There are 5 other iterated integrals that are equal to this integral, by switching the order of the bounds. One of the integrals is $\int_0^9\int_0^{\sqrt{9-z}}\int_{-\sqrt{9-x^2-z}}^{\sqrt{9-x^2-z}} dydxdz$. Set up the equivalent integrals using the bound $dydzdx$ and $dxdzdy$.  We'll look at the remaining 2 in class (though you're welcome to finish them and present them with your work). 
+Consider again the iterated integral $$\ds \int_{-3}^3 \int_0^{\sqrt{9-y^2}}\int_0^{9-x^2-y^2} dzdxdy.$$ There are 5 other iterated integrals that are equal to this integral, by switching the order of the bounds. One of the integrals is $\int_0^9\int_0^{\sqrt{9-z}}\int_{-\sqrt{9-x^2-z}}^{\sqrt{9-x^2-z}} dydxdz$. Set up the equivalent integrals using the bound $dydzdx$ and $dxdzdy$.  \bmw{We'll look at the remaining 2 in class (though you're welcome to finish them and present them with your work). } \instructor{The are 2 others not directly included. It may be beneficial to cover them in class.}
 \end{problem}
 
 \begin{problem}
@@ -27,7 +27,7 @@ Consider the iterated integral $$\int_{-1}^1\int_0^{1-x^2}\int_0^{y} dzdydx.$$
 The bounds for this integral describe a region in space which satisfies the 3 inequalities $-1\leq x\leq 1$, $0\leq y\leq 1-x^2$, and $0\leq z\leq y$.
 \begin{enumerate}
  \item Draw the solid domain $D$ in space described by the bounds of the iterated integral.
- \item There are 5 other iterated integrals equivalent to this one. Set up the integrals that use the bounds $dydxdz$ and $dxdzdy$.  We'll create the other 3 in class (though you are welcome to include them as part of your presentation).
+ \item There are 5 other iterated integrals equivalent to this one. Set up the integrals that use the bounds $dydxdz$ and $dxdzdy$.  \bmw{We'll create the other 3 in class (though you are welcome to include them as part of your presentation).} \instructor{The are 3 others not directly included. It may be beneficial to cover them in class.}
 \end{enumerate}
 \end{problem}
 
@@ -84,16 +84,18 @@ provided we require $r\geq0$ and $0\leq \phi\leq \pi$.
 Cylindrical coordinates are extremely useful for problems which involve cylinders, paraboloids, and cones. 
 Problems which involve cones and spheres often have simple integrals in spherical coordinates.
 
-\begin{problem}\marginpar{See \href{https://sagecell.sagemath.org/?z=eJytjkEOgjAQRfecojvaMBKsYIxhOEpNFaNNgDZItO3pRaguSExcuJo_8_Jf5i57Gltw4GMW9eeL0h02sj3WkkzXPfElWsETJziRXU18hdkcBP-Q0OSLaqAV5lMjrCWut5FB1ZpGndRwMI0eNjUNFEcK1MKqgIIBde_gIYOcQXhxHqCNHA0Os3THIpN8d-Z_U_qXLnh_lfKFNb1d9YOyJ0VbdCM}{Sage}.}%
+\begin{problem}\marginpar{See \href{http://aleph.sagemath.org/?z=eJytjkEOgjAQRfecojvaMBKsYIxhOEpNFaNNgDZItO3pRaguSExcuJo_8_Jf5i57Gltw4GMW9eeL0h02sj3WkkzXPfElWsETJziRXU18hdkcBP-Q0OSLaqAV5lMjrCWut5FB1ZpGndRwMI0eNjUNFEcK1MKqgIIBde_gIYOcQXhxHqCNHA0Os3THIpN8d-Z_U_qXLnh_lfKFNb1d9YOyJ0VbdCM}{Sage}.}%
  The double cone $z^2=x^2+y^2$ has two halves.  Each half is called a nappe. Set up an integral in the coordinate system of your choice that would give the volume of the region that is between the $xy$ plane and the upper nappe of the double cone $z^2=x^2+y^2$, and between the cylinders $x^2+y^2=4$ and $x^2+y^2=16$.  Then evaluate the integral.
 \end{problem}
 
 \begin{problem}
- Set up an integral in the coordinate system of your choice that would give the volume of the solid ball that is inside the sphere $a^2=x^2+y^2+z^2$. Compute the integral to give a formula for the volume of a sphere of radius $a$.  \bmw{Then set up (don't evaluate) an iterated integral that would give the moment of inertia $I_x$ about the $x$-axis, if the density is a constant, so $\delta =c$.}
+ Set up an integral in the coordinate system of your choice that would give the volume of the solid ball that is inside the sphere $a^2=x^2+y^2+z^2$. Compute the integral to give a formula for the volume of a sphere of radius $a$.  
+\bmw{Then set up (don't evaluate) an iterated integral that would give the moment of inertia $I_x$ about the $x$-axis, if the density is a constant, so $\delta =c$.}
+\valpo{Then set up (don't evaluate) an iterated integral that would give the moment of inertia $I_x$ about the $x$-axis, if the density is a constant, so $\delta =c$.}
 \end{problem}
 
 
-\begin{problem}\marginpar{See \href{https://sagecell.sagemath.org/?z=eJxty00OgyAQQOF9L-IQB6PSnxUnMWqImpTEBgqTFji900V35m3e5vuYAFXCjKUSF6_ty-92sTT73ZFaoWgd34EgTX2dp14gJJQKFU_-T8EWr4J1fcbvkq1ke0675oaPH27i033BRL8tNAdD1umhQ24UB9CiL84}{Sage}.}%
+\begin{problem}\marginpar{See \href{http://aleph.sagemath.org/?z=eJxty00OgyAQQOF9L-IQB6PSnxUnMWqImpTEBgqTFji900V35m3e5vuYAFXCjKUSF6_ty-92sTT73ZFaoWgd34EgTX2dp14gJJQKFU_-T8EWr4J1fcbvkq1ke0675oaPH27i033BRL8tNAdD1umhQ24UB9CiL84}{Sage}.}%
 Find the volume of the solid domain $D$ in space which is above the cone $z=\sqrt{x^2+y^2}$ and below the paraboloid $z=6-x^2-y^2$. Use cylindrical coordinates to set up and then evaluate your integral.  You'll need to find where the surface intersect, as their intersection will help you determine the appropriate bounds.
 \end{problem}
 
@@ -122,12 +124,6 @@ The integral $\ds\int_{0}^{\pi}\int_{0}^{1}\int_{\sqrt{3}r}^{\sqrt{4-r^2}}rdzdrd
 \begin{problem}
 The temperature at each point in space of a solid occupying the region {$D$}, which is the upper portion of the ball of radius 4 centered at the origin, is given by $T(x,y,z) = \sin(xy+z)$.  Set up an iterated integral formula that would give the average temperature.   
 \end{problem}
-
-
-
-
-
-
 
 
 
