@@ -29,18 +29,33 @@ This unit covers the following ideas. In preparation for the quiz and exam, make
 \item Compute the work (flow, circulation) and flux of a vector field along and across piecewise smooth curves.
 \item Determine if a field is a gradient field (hence conservative), and use the fundamental theorem of line integrals to simplify work calculations.
 \end{enumerate}
-You'll have a chance to teach your examples to your peers prior to the exam. 
+You'll have a chance to teach your examples to your peers prior to the exam. Table \ref{line integral summary} contains a summary of the key ideas for this chapter. 
+\bmw{Here are some extra homework problems which line up with the text.
 
-\valpo{ The topical course objectives you will learn in this chapter are:
-\begin{enumerate}
-\item perform line integrals
-\item recognize conservative vector fields
-\end{enumerate}
+{\noindent %\footnotesize 
+\begin{tabular}{|l|c|l|l|l|l|}\hline
+Topic (11th ed.) &Sec &Basic Practice &Good Problems &Thy/App &Comp \\\hline
+Line integrals & 16.1&1-8, 9-22, 23-32  & & &33-36 \\\hline
+Work, Flow, Circulation, Flux & 16.2&7-16, 25-28, 37-40 &17-24, 29-30, 41-44 &45-46 &47-52   \\\hline
+Gradient Fields & 16.2&1-6 & & &   \\\hline
+Gradient Fields & 14.5&1-8 & & &   \\\hline
+Potentials & 16.3&1-12,13-24 & 25-33 & 34-38&  \\\hline 
+\end{tabular}
+
 }
 
-\newpage
+{\noindent %\footnotesize 
+\begin{tabular}{|l|c|l|l|l|l|}\hline
+Topic (12th ed.) &Sec &Basic Practice &Good Problems &Thy/App &Comp \\\hline
+Line integrals & 16.1&1-8, 9-26, 33-42 &27-32 & &43-46 \\\hline
+Work, Flow, Circulation, Flux & 16.2&7-12, 19-24, 31-36, 47-50 &13-18, 25-30, 37-38,  & 51-54 &55-60    \\\hline
+Gradient Fields & 16.2&1-6 & & &   \\\hline
+Gradient Fields & 14.5&1-10 & & &   \\\hline
+Potentials & 16.3&1-12,13-24 & 25-33 & 34-38&  \\\hline 
+\end{tabular}
+}
+}%end \bmw
 
-Table \ref{line integral summary} contains a summary of the key ideas for this chapter. 
 
 \begin{table}[h]
  \begin{center}
@@ -92,7 +107,7 @@ Table \ref{line integral summary} contains a summary of the key ideas for this c
 \end{table}
 
 
-Dr. Ben Woodruff has created a YouTube playlist to go along with this chapter. Each video is about 4-6 minutes long.
+I have created a YouTube playlist to go along with this chapter. Each video is about 4-6 minutes long.
 \begin{itemize}
  \item \href{http://www.youtube.com/playlist?list=PL04DF68E73B7ECD54}{YouTube playlist for 08 - Line Integrals}.
  \item \href{http://db.tt/dAFBcMB7}{A PDF copy of the finished product} (so you can follow along on paper).
@@ -152,14 +167,6 @@ Problems 8.1 and 8.2 have to be shrunk.  They cannot be that long. They really a
 
 }
 
-\newpage
-\stepcounter{unitday}
-\uday
-\normalsize
-\begin{itemize}
-\item Define and practice a more general calculation for Work
-\item Practice applications of vector calculus
-\end{itemize}
 
 \section{Work, Flow, Circulation, and Flux}
 
@@ -252,16 +259,7 @@ $$W = \int_C \vec F\cdot d\vec r= \int_C (M,N)\cdot (dx,dy) = \int_C Mdx+Ndy.$$
 
 The examples above showed us that we can compute work along any closed curve.  All we have to do is parametrize the curve, take a derivative, and then compute $dW = \vec F \cdot d\vec r$. This gives us a little bit of work along a curve, and we sum up the little bits of work (integrate) to find the total work. 
 
-\newpage
-\uday
-\normalsize
-\begin{itemize}
-\item Define and practice how to find `flux'
-\item Practice applications of vector calculus
-\item Motivate Line-Integrals
-\end{itemize}
-
-In the problems for Day 1, the vector fields represented forces. However, vector fields can represent much more than just forces. The vector field might represent the flow of water down a river, or the flow of air across an airplane wing.  When we think of the vector field as a velocity field, then we mights ask the question, how much of the fluid flows along our curve. Alternately, we might ask how much of the fluid flows across our curve.  These two problems lead to flow along a curve, and flux across a curve. Flow along a curve is directly related to the lift of an airplane wing (which occurs when the flow along the top of the wing is different than the flow below the wing).  The flux across a curve will quickly take us to powering a wind mill as wind flows across the surface of a blade (once we hit 3D integrals).
+In the examples above, the vector fields represented forces. However, vector fields can represent much more than just forces. The vector field might represent the flow of water down a river, or the flow of air across an airplane wing.  When we think of the vector field as a velocity field, then we mights ask the question, how much of the fluid flows along our curve. Alternately, we might ask how much of the fluid flows across our curve.  These two problems lead to flow along a curve, and flux across a curve. Flow along a curve is directly related to the lift of an airplane wing (which occurs when the flow along the top of the wing is different than the flow below the wing).  The flux across a curve will quickly take us to powering a wind mill as wind flows across the surface of a blade (once we hit 3D integrals).
 
 
 \begin{review*}
@@ -342,7 +340,19 @@ $$\text{Flux} = \Phi = \int_C(M,N)\cdot (dy,-dx) =\int_C Mdy-Ndx .$$
 We'll tackle more work, flow, circulation, and flux problems, as we proceed through this chapter.
 
 
-\section{Area and the Line-Integral}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Area and Average Value}
 
 \note{From Jason. 
 I use a physical model.  I cut out the 
@@ -405,20 +415,12 @@ Integrate the product from the previous step. Practice doing this by hand on eve
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%IMPORTANT. SEE THE NOTE BELOW.
 \note{There are 3 problems below that I used the first semester, but not the second.  I think it went way better when I included these problems.  They are really fast (just plug in numbers and compute), but they help the students get the hand of line integrals.  I suggest including them next time. I'll probably include these in the exact same problem, just have parts a,b,c.}
 
-\begin{problem}
-\marginpar{
-\thomasee{See 16.1: 9-32.  Some problems give you a parametrization, some expect you to come up with one on your own.}
-\stewarts{See 16.2: 1-16, 19-22 for more practice}
-}%
+\begin{problem}\marginparbmw{See 16.1: 9-32.  Some problems give you a parametrization, some expect you to come up with one on your own.}%
 \marginpar{\href{\sagelineintegral}{Check your answer with Sage.}}%
   Let $f(x,y,z)=x^2+y^2-2z$ and let $C$ be two coils of the helix $\vec r(t)=(3\cos t, 3\sin t, 4t)$, starting at $t=0$. Remember that the parameterization means $x=3\cos t$, $y=3\sin t$, and $z=4t$.  Compute $\int_Cf ds$. [You will have to find the end bound yourself. How much time passes to go around two coils?]
 \end{problem}
 
-\begin{problem}
-\marginpar{
-\thomasee{To practice matching parameterizations to curves, try 16.1:1-8.}
-\stewarts{To practice matching parameterizations to curves, try 16.6:13-18}
-}%
+\begin{problem}\marginparbmw{To practice matching parameterizations to curves, try 16.1:1-8.}%
 \marginpar{\href{\sagelineintegral}{Check your answer with Sage.}}%
  Consider the function $f(x,y)=3xy+2$. Let $C$ be a circle of radius 4 centered at the origin.  Compute $\int_C fds$.  [You'll have to come up with your own parameterization.]
 \end{problem}
@@ -544,15 +546,11 @@ Ask me in class about the ``ant farm'' approach to average value.
  Consider the elliptical curve $C$ given by the parametrization $\vec r(t) = (2\cos t, 3\sin t)$.  Let $f$ be the function $f(x,y)=9-x^2-y^2$.    \begin{enumerate}
   \item Draw the surface $f$ in 3D.  Add to your drawing the curve $C$ in the $xy$ plane. Then draw the sheet whose area is given by the integral $\int_C f ds$. 
   \item What's the maximum height and minimum height of the sheet? \marginpar{See problem \ref{horse track chain rule introduction}.}
-  \item We'd like to find a consta nt height $\bar f$ so that the area under $f$, above $C$, is the same as area under $\bar f$, above $C$. This height $\bar f$ is called the average value of $f$ along $C$. 
+  \item We'd like to find a constant height $\bar f$ so that the area under $f$, above $C$, is the same as area under $\bar f$, above $C$. This height $\bar f$ is called the average value of $f$ along $C$. 
 %  \item 
-\marginpar{
-\bmw{Please read 
+\marginparbmw{Please read 
 \href{https://www.lds.org/scriptures/ot/isa/40.4?lang=eng\#3}{Isaiah 40:4} and
-\href{https://www.lds.org/scriptures/nt/luke/3.5?lang=eng\#4}{Luke 3:5}. These scriptures should help you remember how to find average value. }
-\valpo{ Please read 
-\href{https://www.lds.org/scriptures/ot/isa/40.4?lang=eng\#3}{Isaiah 40:4} and
-\href{https://www.lds.org/scriptures/nt/luke/3.5?lang=eng\#4}{Luke 3:5}. These scriptures should help you remember how to find average value. }
+\href{https://www.lds.org/scriptures/nt/luke/3.5?lang=eng\#4}{Luke 3:5}. These scriptures should help you remember how to find average value.
 }%
 \instructor{Again, I emphasize how this relates to the ways of computing averages from Problem~\ref{average value methods}.}
 Explain why the average value of $f$ along $C$ is 
@@ -866,5 +864,5 @@ $$
 \end{problem}
 
 
-\clearpage
+
 
