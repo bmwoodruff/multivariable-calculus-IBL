@@ -85,21 +85,34 @@
 	urlcolor=darkblue,
 }
 
-%=====================================================================
-% Define two large macros for end of chapters. 
-% Currently inside if-stuff to allow either to be picked.
+%================================================================================================
+% Define some chapter related macros.
+% Wrap-Ups -- called at the end. Currently inside if-stuff to allow either to be picked.
+% Namings
 %-----------------------------------------------------------
+
+\renewcommand{\chaptername}{Unit} %Because I like 'unit' better than chapter. --KS
+%When possible I've used \chaptername when the term unit or chapter should occur, so this can be removed and it'll
+% go back to reading as 'chapters'. -- KS
+\newcommand{\chpname}{unit} % Since I'm not exactly sure what '\chaptername' will actually return. Will use this, and test when I compile.
+\setcounter{chapter}{-1} %So the Review chapter is chapter 0.
+
+
+%The next two commands are retain for compatibility issues. I'm planning to remove this explicit split in the Fall-2016 version.
+\newcounter{unitday}[chapter]
+\newcommand{\uday}{\newpage \LARGE \center  Day \theunitday \normalsize \flushleft \stepcounter{unitday} \vskip0.1in}
+
 \newcommand{\wrapup}{
 \bmw{\section{Wrap Up}
-Once you have finished the problems in the section and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
 
 %I liked Ben's wrapup for his Diff-Eq book better. So I just stole it and modified it a bit!
 \valpo{\section{Wrap Up}
-This concludes the chapter.  Look at the objectives at the beginning of the chapter. Can you now do all the things you were promised? \\
+This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
 \instructor{TeX files for these are included in a separate folder in the GitHub Project}
 \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
 \textbf{Review Guide Creation\\}
-Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit review guide. I'll provide you with a template which includes the chapter's key concepts from the objectives at the beginning of the chapter. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Grade-Scope.
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Grade-Scope.
 
 As you create this review guide, consider the following:
 \begin{itemize}
@@ -192,14 +205,6 @@ As you create this review guide, consider the following:
 \fi
 
 %******************************************************************************************************************
-
-
-\renewcommand{\chaptername}{Unit} %Because I like 'unit' better than chapter. --KS
-\setcounter{chapter}{-1}
-
-%The next two commands are retain for compatibility issues. I'm planning to remove this explicit split in the Fall-2016 version.
-\newcounter{unitday}[chapter]
-\newcommand{\uday}{\newpage \LARGE \center  Day \theunitday \normalsize \flushleft \stepcounter{unitday} \vskip0.1in}
 
 
 %--------------------------------------------------------------------------------------------------
@@ -318,7 +323,7 @@ As you create this review guide, consider the following:
 \newcommand{\vp}{\ensuremath{^{\,\prime}}}
 
 %Shorthand code for a link to generic wolfphram alpha
-\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha}}
+\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha} }
 
 %------------------------------------------------------------------------------------------------------------
 
@@ -447,7 +452,7 @@ Modified with permission from Dr. Mitchel Keller at Washington \& Lee University
 
 \chapter{Review}
 \minitoc \mtcskip
-\input{01-Review-215_v2}
+\input{01-Review-v3}
 %wrapup
 
 
