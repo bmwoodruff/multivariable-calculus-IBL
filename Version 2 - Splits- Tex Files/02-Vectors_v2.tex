@@ -1,51 +1,39 @@
 \stepcounter{unitday}
 
 \noindent 
-In this unit you will learn how to...
+This unit covers the following ideas. 
 \begin{enumerate}
-\item Define, draw, and explain what a vector is in 2 and 3 dimensions.
-\item Add, subtract, multiply (scalar, dot product, cross product) vectors. Be able to illustrate each operation geometrically.
+\item Define, draw, and explain what a vector is in 2 and 3 dimensions.\\ \valpo{Topical Objective \# 3}
+\item Add, subtract, multiply (scalar, dot product, cross product) vectors. Be able to illustrate each operation geometrically.\\ \valpo{Topical Objective \# 4}
 \item Use vector products to find angles, length, area, projections, and work.
-\item Use vectors to give equations of lines and planes, and be able to draw lines and planes in 3D.
+\item Use vectors to give equations of lines and planes, and be able to draw lines and planes in 3D.\\ \valpo{Topical Objective \#2}
+
 \end{enumerate}
 
+\uday
 \normalsize
 \section{Vectors and Lines}
-\textbf{Topical Objectives:}
-\begin{itemize}
-\item understand vectors as quantities having length and direction, independent of position
-\item express curves with parametric (vector) equations
-\end{itemize}
-
+\textbf{Topical Objectives:}\\
+\indent $\bullet$ understand vectors as quantities having length and direction, independent of position\\
+\indent $\bullet$ express curves with parametric (vector) equations\\
+\indent $\bullet$ perform addition and scalar multiplication of vectors\\
+\vskip0.2in
 Learning to work with vectors will be key tool we need for our work in high dimensions.  Let's start with some problems related to finding distance in 3D, drawing in 3D, and then we'll be ready to work with vectors.
 
 
 \begin{problem}
-\instructor{\\Pre-Class Recommended\\}
-To find the distance between two points $(x_1,y_1)$ and $(x_2,y_2)$ in the plane, we create a triangle connecting the two points.  The base of the triangle has length $\Delta x=(x_2-x_1)$ and the vertical side has length $\Delta y=(y_2-y_1)$. The Pythagorean theorem gives us the distance between the two points as $\sqrt{\Delta x^2+\Delta y^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$.\\
+To find the distance between two points $(x_1,y_1)$ and $(x_2,y_2)$ in the plane, we create a triangle connecting the two points.  The base of the triangle has length $\Delta x=(x_2-x_1)$ and the vertical side has length $\Delta y=(y_2-y_1)$. The Pythagorean theorem gives us the distance between the two points as $\sqrt{\Delta x^2+\Delta y^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$.
 
-\begin{enumerate}
-\item Draw a 3-D axis then plot the points $(1,5)$ and $(2,3)$
-\item Sketch the triangle that connects these two points and the origin -- $(0,0)$
-\item Find $\Delta x$ and $\Delta y$
-\item Now extend your picture into 3 and use it to show that the distance between two points $(x_1,y_1,z_1)$ and $(x_2,y_2,z_2)$ in 3-dimensions is $\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$.
-\item Use this formula to find the distance between the points $(1,5,2)$ and $(2,3,3)$
-\end{enumerate}
+Show that the distance between two points $(x_1,y_1,z_1)$ and $(x_2,y_2,z_2)$ in 3-dimensions is $\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$.
 \end{problem}
 
 
 \begin{problem}
-\instructor{\\Pre-Class Recommended\\}
 \marginpar{
 	\thomasee{See 12.1:41-58.} 
 	\stewarts{See 12.1:11-18}
 	}%end margin
-Recall that a circle (or sphere in 3-D) is just a collection of points which are all equal distance away from a center point.
-\begin{enumerate}
-\item If the center of a circle is the point $(1,5)$ what is the equation for a circle which passes through the point $(2,3)$?
-\item Find the distance between the two points $P=(2,3,-4)$ and $Q=(0,-1,1)$. 
-\item Now find an equation of the sphere passing though point $Q$ whose center is at $P$. \\
-Hint: Each point on the surface of a sphere is $r$ distance away from the center.
+Find the distance between the two points $P=(2,3,-4)$ and $Q=(0,-1,1)$. Then find an equation of the sphere passing though point $Q$ whose center is at $P$. \\Hint: Each point on the surface of a sphere is $r$ distance away from the center. Hint 2: What is the equation for a circle, centered at the origin? What is the equation for a sphere, centered at the origin?
 \end{problem}
 
 
@@ -71,14 +59,14 @@ $$\vec v = \vec{OV}=\left<v_1,v_2,v_3\right>
 = (v_1,v_2,v_3) 
 = \begin{pmatrix}v_1\\ v_2\\ v_3\end{pmatrix}
 .$$
-The entries of the vector are called the $x$, $y$, and $z$ (or i, j, k) components of the vector. 
+The entries of the vector are called the $x$, $y$, and $z$ components of the vector. 
 \end{definition}
 \instructor{There are no problems actually exploring the idea of vectors NOT from the origin, i.e. between several points. This should be added or tweaked into the existing problems}
 Note that $(v_1,v_2,v_3)$ could refer to either the point $V$ or the vector $\vec v$. The context of the problem we are working on will help us know if we are dealing with a point or a vector.
 
 \begin{definition}
-Let $\mathbb{R}$ represent the set real numbers. Real numbers are actually 1D vectors.\\
-Let $\mathbb{R}^2$ represent the set of vectors $(x_1,x_2)$ in the plane.\\
+Let $\mathbb{R}$ represent the set real numbers. Real numbers are actually 1D vectors.  
+Let $\mathbb{R}^2$ represent the set of vectors $(x_1,x_2)$ in the plane.
 Let $\mathbb{R}^3$ represent the set of vectors $(x_1,x_2,x_3)$ in space. There's no reason to stop at 3, so let $\mathbb{R}^n$ represent the set of vectors $(x_1,x_2,\ldots,x_n)$ in $n$ dimensions.
 \end{definition}
 In first semester calculus and before, most of our work dealt with problem in $\mathbb{R}$ and $\mathbb{R}^2$. Most of our work now will involve problems in $\mathbb{R}^2$ and $\mathbb{R}^3$. We've got to learn to visualize in $\mathbb{R}^3$.
@@ -90,16 +78,16 @@ Note that in 1D, the length of the vector $\left<-2\right>$ is simply $|-2|=\sqr
 
 \end{definition}
 
+\begin{definition} A unit vector is a vector whose length is one unit. The notation for a unit vector is generally a ``$\hat{\ }$'' or \textbf{bold face}. Equivalently, the unit vector of a vector $\vec{v}$ is: $\hat{v}=\frac{\vec{v}}{|\vec{v}|}$\\
+The standard unit vectors are ${\bf i}=\left<1,0,0\right>$, ${\bf j}=\left<0,1,0\right>$, ${\bf k}=\left<0,0,1\right>$. 
+\end{definition}
+
 \begin{definition}
 Suppose $\vec x=\left<x_1,x_2,x_3\right>$ and $\vec y=\left<y_1,y_2,y_3\right>$ are two vectors in 3D, and $c$ is a real number. We define vector addition and scalar multiplication as follows:
 \begin{itemize}
 \item Vector addition: $\vec x+\vec y = (x_1+y_1,x_2+y_2,x_3+y_3)$ (add component-wise).
 \item Scalar multiplication: $c\vec x = (cx_1,cx_2,cx_3)$.
 \end{itemize}
-\end{definition}
-
-\begin{definition} A unit vector is a vector whose length is one unit. The notation for a unit vector is generally a ``$\hat{\ }$'' or \textbf{bold face}. Equivalently, the unit vector of a vector $\vec{v}$ is: $\hat{v}=\frac{\vec{v}}{|\vec{v}|}$\\
-The standard unit vectors are ${\bf i}=\left<1,0,0\right>$, ${\bf j}=\left<0,1,0\right>$, ${\bf k}=\left<0,0,1\right>$. 
 \end{definition}
 
 
@@ -115,27 +103,16 @@ Consider the vectors $\vec u=\langle 1,2 \rangle$ and $\vec v=\left<3,1\right>$.
 \marginpar{
 	\thomasee{See 11.1: 3,4.}
 	}
-Consider the vector $\vec v=\langle 3,-1 \rangle $.\\
-\begin{enumerate}
-\item Draw $\vec v$, $-\vec v$, and $3\vec v$. \\
-\noinent Suppose a donkey travels along the path given by $(x,y)=\vec v t = (3t,-t)$, where $t$ represents time.
-\item At the following times, where is the donkey?
-\begin{enumerate}
-\item $t=0$ ?
-\item $t=1$ ?
-\item $t=2$ ?
-\end{enumerate}
-\item Draw an axis, then sketch the path followed by the donkey. Where is the donkey at time $t=0,1,2$? Put markers with labels on your graph to show the donkey's location.
-\item Determine how fast the donkey is traveling.
-\end{enumerate}
+Consider the vector $\vec v=\langle 3,-1 \rangle $.  Draw $\vec v$, $-\vec v$, and $3\vec v$. 
+Suppose a donkey travels along the path given by $(x,y)=\vec v t = (3t,-t)$, where $t$ represents time. Draw the path followed by the donkey. Where is the donkey at time $t=0,1,2$? Put markers on your graph to show the donkey's location. Then determine how fast the donkey is traveling.
 \end{problem}
 
 %Day two of vectors
-%\uday
-%\large Topical Objectives: \normalsize \\
-%\indent $\bullet$ understand vectors as quantities having length and direction, independent of position\\
-%\indent $\bullet$ express curves with parametric (vector) equations\\
-%\indent $\bullet$ perform addition and scalar multiplication of vectors
+\uday
+\large Topical Objectives: \normalsize \\
+\indent $\bullet$ understand vectors as quantities having length and direction, independent of position\\
+\indent $\bullet$ express curves with parametric (vector) equations\\
+\indent $\bullet$ perform addition and scalar multiplication of vectors
 
 \vskip0.2in
 
