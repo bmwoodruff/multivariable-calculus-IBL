@@ -73,7 +73,7 @@ To emphasize that the domain and range are both two dimensional systems, we coul
 
 The following problem will show you how to graph a coordinate transformation.  When you're done, you should essentially have polar graph paper.
 
-\begin{problem} \label{polar coordinate transformation graph}\bmw{\marginpar{For this problem, you are just drawing many parametric curves.  This is what we did in the previous chapter.}}
+\begin{problem} \label{polar coordinate transformation graph}\marginpar{For this problem, you are just drawing many parametric curves.  \bmw{This is what we did in the previous chapter.}}
 Consider the coordinate transformation $$\vec T(r,\theta) = (r\cos\theta,r\sin\theta).$$ 
 \begin{enumerate}
 \item Let $r=3$ and then graph $\vec T(3,\theta)=(3\cos\theta,3\sin\theta)$ for $\theta\in[0,2\pi]$.
@@ -150,7 +150,7 @@ Find the points of intersection of $r=2\cos 2\theta $ and $r=\sqrt 3$.
 
 \subsection{Calculus with Polar Coordinates}
 
-Recall that for parametric curves $\vec r(t) = (x(t),y(t))$, to find the slope of the curve we just compute $$\frac{dy}{dx}=\frac{dy/dt}{dx/dt}.$$ A polar curve of the form $r=f(\theta)$ can be thought of as just the parametric curve $(x,y) = (f(\theta)\cos\theta,f(\theta)\sin\theta)$. So you can find the slope by computing
+Recall that for parametric curves $\vec r(t) = (x(t),y(t))$, to find the slope of the curve we compute $$\frac{dy}{dx}=\frac{dy/dt}{dx/dt}.$$ A polar curve of the form $r=f(\theta)$ can be thought of as the parametric curve $(x,y) = (f(\theta)\cos\theta,f(\theta)\sin\theta)$. So you can find the slope by computing
 $$\frac{dy}{dx}=\frac{dy/d\theta}{dx/d\theta}.$$
 
 \begin{problem}
@@ -165,8 +165,10 @@ Consider the polar curve $r=1+2\cos \theta$. (It wouldn't hurt to provide a quic
 \end{enumerate}
 \end{problem}
 
-We showed in the curves section that you can find arc length for parametric curves using the formula 
+You can find arc length for parametric curves using the formula: 
 $$s=\int_a^b\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}.$$ If we replace $t$ with $\theta$, this becomes a formula for arc length in polar coordinates.  However, the formula can be simplified.
+
+\hrule
 
 \begin{problem}
 \marginpar{
@@ -184,7 +186,7 @@ s=\int_{\alpha}^{\beta}\sqrt{\left(\frac{dx}{d\theta}\right)^2+\left(\frac{dy}{d
 \marginpar{
 	\thomasee{See 11.5: 21-28.}
 	}%
-Set up (do not evaluate) an integral formula to compute the length of 
+Set up \textbf{(do not evaluate)} an integral formula to compute the length of 
 \begin{enumerate}
 \item the rose $r=2\cos 3\theta$, and
 \item the rose $r=3\sin 2\theta$.
@@ -192,52 +194,48 @@ Set up (do not evaluate) an integral formula to compute the length of
 \end{problem}
 
 
-\begin{problem}
-\marginpar{
-	\thomasee{See page 653.}
-	}%
-In this problem, you will develop a formula for finding area inside a polar curve.
-\begin{enumerate}
-\item 
-Consider a circle of radius $r$. The area inside the circle is $\pi r^2$. This is the area inside when you traverse around the circle for a full $2\pi$ radians.  Fill in the following table by finding the pattern that connects angle traversed to area inside.
-\begin{center}
-\begin{tabular}{c|c}
-Angle traversed& Area inside\\ \hline
-$2\pi$ & $A=\pi r^2$\\
-$\pi$ & \\
-$\pi/2$ & \\
-$\pi/4$ & \\
-$d\theta$ & $dA=\quad\quad$
-\end{tabular}
-\end{center}
-\item Explain why the area inside a polar curve $r=f(\theta)$ for $\alpha\leq \theta\leq \beta$ is $$A = \int dA = \int_\alpha^\beta \frac{1}{2}r^2d\theta.$$
-What must be true about the curve $r=f(\theta)$ for this formula to be valid?
-\end{enumerate}
-\end{problem}
+%\begin{problem}
+%\marginpar{
+	%\thomasee{See page 653.}
+	%}%
+%In this problem, you will develop a formula for finding area inside a polar curve.
+%\begin{enumerate}
+%\item 
+%Consider a circle of radius $r$. The area inside the circle is $\pi r^2$. This is the area inside when you traverse around the circle for a full $2\pi$ radians.  Fill in the following table by finding the pattern that connects angle traversed to area inside.
+%\begin{center}
+%\begin{tabular}{c|c}
+%Angle traversed& Area inside\\ \hline
+%$2\pi$ & $A=\pi r^2$\\
+%$\pi$ & \\
+%$\pi/2$ & \\
+%$\pi/4$ & \\
+%$d\theta$ & $dA=\quad\quad$
+%\end{tabular}
+%\end{center}
+%\item Explain why the area inside a polar curve $r=f(\theta)$ for $\alpha\leq \theta\leq \beta$ is $$A = \int dA = \int_\alpha^\beta \frac{1}{2}r^2d\theta.$$
+%What must be true about the curve $r=f(\theta)$ for this formula to be valid?
+%\end{enumerate}
+%\end{problem}
 
-\begin{problem} 
-\marginpar{
-	\thomasee{See 11.5: 1-20.}
-	}%
-Find the area inside of the polar curve $r=\sin\theta$. [Hint: Construct a graph to determine the appropriate bounds for the integral. When you integrate, you'll need to use the half angle identity.] 
-\end{problem}
-
-
-\begin{problem}
-Set up (do not evaluate) an integral to compute the area 
-\begin{enumerate}
-\item inside the cardioid $r=2+2\sin\theta$, and 
-\item inside the circle $r=3\cos\theta$.
-\end{enumerate}
-\end{problem}
-
-\begin{problem}
-Set up (do not evaluate) an integral formula to compute the area that lies inside both $r=2-2\cos\theta$ and $r=\cos\theta$. Sketch both curves. 
-\end{problem}
+%\begin{problem} 
+%\marginpar{
+	%\thomasee{See 11.5: 1-20.}
+	%}%
+%Find the area inside of the polar curve $r=\sin\theta$. [Hint: Construct a graph to determine the appropriate bounds for the integral. When you integrate, you'll need to use the half angle identity.] 
+%\end{problem}
+%
+%
+%\begin{problem}
+%Set up (do not evaluate) an integral to compute the area 
+%\begin{enumerate}
+%\item inside the cardioid $r=2+2\sin\theta$, and 
+%\item inside the circle $r=3\cos\theta$.
+%\end{enumerate}
+%\end{problem}
+%
+%\begin{problem}
+%Set up (do not evaluate) an integral formula to compute the area that lies inside both $r=2-2\cos\theta$ and $r=\cos\theta$. Sketch both curves. 
+%\end{problem}
+%
 
 \clearpage
-
-%%% Local Variables: 
-%%% mode: latex
-%%% TeX-master: "215-problems"
-%%% End: 
