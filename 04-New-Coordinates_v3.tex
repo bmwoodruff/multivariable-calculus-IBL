@@ -193,6 +193,146 @@ Set up \textbf{(do not evaluate)} an integral formula to compute the length of
 \end{enumerate}
 \end{problem}
 
+\section{Other Coordinate Systems}
+Sometimes a problem can't be solved until the correct coordinate system is chosen. You have previously done problems which showed you how to graph the coordinate transformation given by polar coordinates.  The following problem shows you how to graph in a different coordinate system.
+
+\begin{problem}\label{prob:transform1}
+Consider the coordinate transformation $T(a,\omega)=(a\cos\omega,a^2\sin \omega)$.
+\begin{enumerate}
+\item\marginpar{See
+    \href{http://aleph.sagemath.org/?z=eJwti7sKwCAMAHe_IjglkqHY2b9wbgkiJVAfqP9PB7vdHVxE4VbyIxRQXGoTtzHI5d3U-juZPrQusBElnAQ6LcNm02VIyWtouvvbFu7MsFeGg8G7rkQfMv4giA}{Sage}.
+  Click on the link to see how to check your answer in Sage.}%
+ Let $a=3$ and then graph the curve $\vec T(3,\omega)=(3\cos\omega,9\sin\omega)$ for $\omega\in[0,2\pi]$. [Hint: You can start by making a $\omega,x,y$ table.]
+\item\marginpar{See
+    \href{http://aleph.sagemath.org/?z=eJxlzEEKg0AMBdC9pwiukmmgRd3OLVxbgkgJqBNm5v5UTGmF7vKT9zOicNqWl1BECXMq6IlBpi4U3T-ZGsu6V2hHlNgTaGkZfP5dThpN78MXXFaNSZZtqVnnp62potcZHDE8GLpgSgQ3-LeXT0fF-UD0BkVHOdw}{Sage}. Notice that you can add the two plots together to superimpose them on each other.}%
+ Let $\omega=\frac{\pi}{4}$ and then, on the same axes as above, add the graph of 
+$\vec T\left(a,\frac{\pi}{4}\right)=\left(a\frac{\sqrt 2}{2},a^2 \frac{\sqrt 2}{2}\right)$ for $a\in[0,4]$.
+\item\marginpar{Use Sage to check your answer.}To the same axes as above, add the graphs of:
+\begin{enumerate} 
+	\item $\vec T(1,\omega), \vec T(2,\omega), \vec T(4,\omega)$  for $\omega\in[0,2\pi]$
+	\item $\vec T(a,0), \vec T(a,\pi/2), \vec T(a,-\pi/6)$ for $a\in[0,4]$. 
+\end{enumerate}
+\end{enumerate}
+[Hint: when you're done, you should have a bunch of parabolas and ellipses.]
+\end{problem}
+
+In 3 dimensions, the most common coordinate systems are cylindrical and spherical.  The equations for these coordinate systems are in the table below. 
+\bmw{
+\begin{center}
+\begin{tabular}{cc}
+Cylindrical Coordinates & Spherical Coordinates\\
+\hline
+$\begin{array}{l}
+x=r\cos\theta\\
+y=r\sin\theta\\
+z=z
+\end{array}$
+&
+$\begin{array}{l}
+x=\rho\sin\phi\cos\theta\\
+y=\rho\sin\phi\sin\theta\\
+z=\rho\cos\phi
+\end{array}$
+\end{tabular}
+\end{center}
+}
+
+\valpo{
+\begin{center}
+\begin{tabular}{ccc}
+Cylindrical Coordinates & Spherical Coordinates(Math) & Spherical (Physics/Engineering)\\
+\hline
+$\begin{array}{l}
+x=r\cos\theta\\
+y=r\sin\theta\\
+z=z
+\end{array}$
+&
+$\begin{array}{l}
+x=\rho\sin\theta\cos\phi\\
+y=\rho\sin\theta\sin\phi\\
+z=\rho\cos\theta
+\end{array}$
+&
+$\begin{array}{l}
+x=r\sin\phi\cos\theta\\
+y=r\sin\phi\sin\theta\\
+z=r\cos\phi
+\end{array}$ %\\
+%\ 
+%& \includegraphics{157px-3D_Spherical.eps} \footnote{\ }
+%
+%& \includegraphics{157px-3D_Spherical_2.eps} \footnote{\ }
+\end{tabular}
+\end{center}
+
+%
+%
+%1-\small{`3D Spherical 2' by Dmcq - Own work. Licensed under Creative Commons Attribution-Share Alike 3.0 via Wikimedia Commons - \href{http://commons.wikimedia.org/wiki/File:3D_Spherical_2.svg\#mediaviewer/File:3D_Spherical_2.svg}{Wikipedia File} } 
+%\vskip0.1in
+%2- \small{`3D Spherical' by Andeggs - Own work. Licensed under Public domain via Wikimedia Commons - \href{http://commons.wikimedia.org/wiki/File:3D_Spherical.svg\#mediaviewer/File:3D_Spherical.svg}{Wikipedia File} }
+}
+
+\hrule
+\vskip0.1in
+
+\begin{problem} 
+\marginpar{
+	\thomasee{See page 893.} 
+	\stewarts{See pages 827-833} 
+	\larsonfive{See Larson 11.7.}
+	}%
+Let $P=(x,y,z)$ be a point in space. This point lies on a cylinder of radius $r$, where the cylinder has the $z$ axis as its axis of symmetry.  The height of the point is $z$ units up from the $xy$ plane. The point casts a shadow in the $xy$ plane at $Q=(x,y,0)$.  The angle between the ray $\vec{OQ}$ and the $x$-axis is $\theta$. Construct a graph in 3D of this information, and use it to develop the equations for cylindrical coordinates given above.
+\end{problem}
+
+\begin{problem}\label{derive spherical coordinates} Let 
+\marginpar{
+	\thomasee{See page 897.}
+	\larsonfive{See Larson 11.7.}
+	}% 
+  $P=(x,y,z)$ be a point in space. This point lies on a sphere of
+  radius $\rho$ (``rho''), where the sphere's center is at the origin
+  $O=(0,0,0)$. The point casts a shadow in the $xy$ plane at
+  $Q=(x,y,0)$.  The angle between the ray $\vec{OQ}$ and the $x$-axis
+  is $\theta$, and is called the azimuth angle. The angle between
+  the ray $\vec{OP}$ and the $z$ axis is $\phi$ (``phi''), and is
+  called the inclination angle, polar angle, or zenith angle.  Construct
+  a graph in 3D of this information, and use it to develop the
+  equations for spherical coordinates given above.
+\end{problem}
+
+\marginpar{See the
+  \href{http://en.wikipedia.org/wiki/Spherical_coordinate_system}{Wikipedia}
+  or
+  \href{http://mathworld.wolfram.com/SphericalCoordinates.html}{MathWorld}
+  for a discussion of conventions in different disciplines.}%
+	
+There is some disagreement between different fields about the notation
+for spherical coordinates.  In some fields (like physics), $\phi$
+represents the azimuth angle and $\theta$ represents the inclination
+angle.  In some fields, like geography, instead of the inclination angle, the
+\emph{elevation} angle is given---the angle from the $xy$-plane (lines
+of lattitude are from the elevation angle).
+Additionally, sometimes the coordinates are written in a different
+order.  You should always check the notation for spherical coordinates
+before communicating using them.
+\vskip0.1in
+\hrule
+\vskip0.1in
+
+
+\valpo{
+\begin{problem}
+If you have never worked in Maple, you will want to spend some time familiarizing yourself with the program before our Lab day (keep reading if you are!). The link here takes you to a set of modules which will review several of the vector concepts we learned last week, but also introduce you to Maple. The Vector exploration contains a very nice visual on vector projections, which you should look at even if you are comfortable in Maple.
+\vskip0.1in
+The Connected Curriculum Project:\\
+\href{https://www.math.duke.edu/education/ccp/resources/learn/index.html}{Introduction to Modules}
+\vskip0.1in
+\href{https://www.math.duke.edu/education/ccp/materials/mvcalc/javamaptutor/contents.html}{Maple Tutorial}
+\vskip0.1in
+\href{https://www.math.duke.edu/education/ccp/materials/mvcalc/vectors/index.html}{Vectors Exploration}
+\end{problem}
+}
 
 %\begin{problem}
 %\marginpar{
