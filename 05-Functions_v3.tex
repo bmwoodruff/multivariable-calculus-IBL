@@ -6,9 +6,10 @@ When you have finished this unit you should be able to...
 \item Describe uses for, and construct equations or graphs of, space curves and parametric surfaces. 
 \item Find derivatives of space curves, and use this to find velocity, acceleration, and find equations of tangent lines.
 \item Describe uses for, construct graphs of, and find the domain or range of functions of several variables. 
-\begin{itemize}
+\begin{enumerate}
 	\item For functions of the form $z=f(x,y)$, this includes both 3D surface plots and 2D level curve plots.
 	\item For functions of the form $w=f(x,y,z)$, construct plots of level surfaces.
+\end{enumerate}
 \item Describe uses for, and construct graphs of, vector fields and transformations.
 \item Explain how to obtain a function for a vector field, or a parametrization for a curve or surface if you are given a description of the vector field, curve, or surface (instead of a function or parametrization), 
 \end{enumerate}
@@ -50,7 +51,7 @@ A pebble falls from a 64 ft tall building.  Its height (in ft) above the ground 
 
 The next several sections will explore different sorts of functions with a variety of $n$ and $m$ combinations. We will start with these same questions as we work to understand the functions. Later on in the semester, you can use these questions to help understand what sort of function you are studying.
 
-\section{Parametric Curves: %$\vec f\colon \RR \to \RR^m$}
+\section{Parametric Curves:} %$\vec f\colon \RR \to \RR^m$}
 \note{I commented out the `function' form, with the hope/intent for students to discover this themselves in the problems. This might not work so well...}
 In this section you will learn how to:
 \begin{itemize}
@@ -112,7 +113,7 @@ On a separate piece of paper (you'll be expanding this later) create a table wit
 Go back over the previous problems in this unit and fill in the table.
 \end{problem}
 
-\section{Parametric Surfaces: %$\vec f\colon  \RR^2 \to \RR^3$}
+\section{Parametric Surfaces:} %$\vec f\colon  \RR^2 \to \RR^3$}
 \note{I commented out the `function' form, with the hope/intent for students to discover this themselves in the problems. This might not work so well...}
 We now increase the number of inputs from 1 to 2.  This will allow us to graph many space curves at the same time.
 
@@ -147,7 +148,7 @@ The position of two of the many other jets is given by $\vec r_3(t)=(3\cos t, 3\
 \vskip0.1in
 
 \begin{problem}
-\marginpar{See Section~\ref{differentialtangentline} and Definition~\ref{definition velocity acceleration}.}%
+\marginpar{See Section~\ref{differentialtangentline} and Definition~\ref{def:velocity acceleration}.}%
 \marginpar{
 	\thomasee{The text has more practice in 13.1: 19-22.}
 	\larsonfive{More practice in Larson 12.2:23--30.} 
@@ -170,12 +171,12 @@ See \href{http://aleph.sagemath.org/?z=eJwNxksKgCAUBdB5q3Dmh2eQfWZuJXmIgpAodtt_D
 	\larsonfive{See also Larson 12.3.}
 	\stewarts{The text has more practice in 13.4:3-6}
 	}%
-Consider the pebble from problem \ref{prob:pebbles}. The pebble's height was given by $y=64-16t^2$.  The pebble also has some horizontal velocity (it's moving at 3 ft/s to the right).  If we let the origin be the base of the 64 ft building, then the position of the pebble at time $t$ is given by $\vec r(t) = (3t, 64-16t^2)$.
+Consider the pebble from problem \ref{prob:pebble}. The pebble's height was given by $y=64-16t^2$.  The pebble also has some horizontal velocity (it's moving at 3 ft/s to the right).  If we let the origin be the base of the 64 ft building, then the position of the pebble at time $t$ is given by $\vec r(t) = (3t, 64-16t^2)$.
  \begin{enumerate}
   \item What are $n$ and $m$ when we write this function in the form  $\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m$?
   \item At what time does the pebble hit the ground (the height reaches zero)?
 	\item Construct a graph of the pebble's path from when it leaves the top of the building until it hits the ground.
-  \item\marginpar{See Section~\ref{differentialtangentline} and Definition~\ref{definition velocity acceleration}.}%
+  \item\marginpar{See Section~\ref{differentialtangentline} and Definition~\ref{def:velocity acceleration}.}%
  Find the pebble's velocity and acceleration vectors at $t=1$? Draw these vectors on your graph with their base at the pebble's position at $t=1$. 
   \item At what speed is the pebble moving when it hits the ground?
  \end{enumerate}
@@ -203,7 +204,7 @@ In all the problems above, you should have noticed that in order to draw a funct
 %\uday
 %\normalsize
 
-\section{Functions of Several Variables: %$f\colon \RR^n \to \RR$}
+\section{Functions of Several Variables:} %$f\colon \RR^n \to \RR$}
 Section Objectives:
 \begin{itemize}
 \item identify the domain and range of a multivariable or vector-valued function
@@ -370,7 +371,7 @@ Consider the function $w=f(x,y,z)=x^2-y^2+z^2$.\marginparbmw{We'll have a few pe
 %\uday
 %\normalsize
 
-\subsection{Vector Fields and Transformations: % $\vec f\colon \RR^n\to\RR^n$}
+\subsection{Vector Fields and Transformations:} % $\vec f\colon \RR^n\to\RR^n$}
 
 We will finish this section by considering vector fields and transformations. 
 \begin{itemize}
@@ -389,14 +390,14 @@ In this section you will...
 
  We've already seen examples of transformations with polar, cylindrical, and spherical coordinates.
 
-\begin{review}
+\begin{review*}
 Consider the coordinate transformation $$\vec T(r,\theta) = (r\cos\theta,r\sin\theta).$$ 
 \begin{enumerate}
 \item Let $r=3$ and then graph $\vec T(3,\theta)=(3\cos\theta,3\sin\theta)$ for $\theta\in[0,2\pi]$.
 \item Let $\theta=\frac{\pi}{4}$ and then, on the same axes as above, add the graph of 
 $\vec T\left(r,\frac{\pi}{4}\right)=\left(r\frac{\sqrt 2}{2},r \frac{\sqrt 2}{2}\right)$ for $r\in[0,5]$.
 \end{enumerate}
-\end{review}
+\end{review*}
 
 \begin{problem}\label{graphing spherical coordinates}%
 \marginpar{Recall that $\phi$ (``phi'') is the angle down from the $z$ axis, $\theta$ (``theta'') is the angle counterclockwise from the $x$-axis in the $xy$-plane, and $\rho$ (``rho'') is the distance from the origin. Review problem \ref{derive spherical coordinates} if you need a refresher.}%
@@ -509,7 +510,7 @@ If someone gives us parametric equations for a curve in the plane, we know how t
 \begin{problem}
  Give a parametrization of the straight line from $(a,0)$ to $(0,b)$. 
  You can write your parametrization in the vector form $\vec r(t)=(?,?)$, or in the parametric form $x=?,\ y=?$. 
- Remember to include bounds for $t$. [Hint: Review \ref{first line between two points} and \ref{line equation to refer to}.]
+ Remember to include bounds for $t$. \[Hint: Review \ref{prob:line equation practice}.\] % (???) and \ref{line equation to refer to}.\]
 \end{problem}
 
 %\hrule
@@ -546,7 +547,7 @@ If someone gives us parametric equations for a curve in the plane, we know how t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 If someone gives us parametric equations for a surface, we can draw the surface. This is what we did in problems \ref{prob:parametric surface example} and \ref{second parametric surface example}. 
 How do we work backwards and obtain parametric equations for a given surface?
-This requires that we write an equation for $x$, $y$, and $z$ in terms of two input variables (see \ref{parametric surface example} and \ref{second parametric surface example} for examples). 
+This requires that we write an equation for $x$, $y$, and $z$ in terms of two input variables (see \ref{prob:parametric surface example} and \ref{second parametric surface example} for examples). 
 In vector form, we need a function $\vec r\colon \mathbb{R}^2\to\mathbb{R}^3$. 
 We can often use a coordinate transformation $\vec T\colon \mathbb{R}^3\to\mathbb{R}^3$ to obtain a parametrization of a surface.\\
  
@@ -565,7 +566,7 @@ to plot your parametrization.
 	\larsonfive{See Larson 15.5:21--30 and 15.5, Example 3.}
 	\stewarts{See section 16.6 for more examples}
 	}%
- Consider the surface $z=9-x^2-y^2$ plotted in problem \ref{surface graph for a function of two variables}.
+ Consider the surface $z=9-x^2-y^2$ plotted in problem \ref{prob:3dsurface plot}.
 \begin{enumerate}
  \item 
 Using the rectangular coordinate transformation $\vec T(x,y,z)=(x,y,z)$, give a parametrization $\vec r\colon \mathbb{R}^2\to\mathbb{R}^3$ of the surface. 
@@ -659,7 +660,7 @@ In this unit we've covered a lot of different function types. Be sure you can re
 	\item $\vec F(x,y,z)=(M,N,P)$ or $f\colon \mathbb{R}^3\to\mathbb{R}^3$ (vector fields in space) 
 \end{itemize}
 
-\clearpage
+%\clearpage
 
 %%% Local Variables: 
 %%% mode: latex

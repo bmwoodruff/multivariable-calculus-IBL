@@ -62,14 +62,12 @@
 \usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{multicol}
-\usepackage{enumitem}
+\usepackage[shortlabels]{enumitem}
 \usepackage{microtype}
 \usepackage{multirow}
 \usepackage{comment}
 \usepackage{graphicx}
 \usepackage{wrapfig}
-\usepackage{minitoc}
-
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 
@@ -84,6 +82,8 @@
 	citecolor=darkblue,
 	urlcolor=darkblue,
 }
+
+\usepackage{minitoc}
 
 %================================================================================================
 % Define some chapter related macros.
@@ -111,8 +111,10 @@ Once you have finished the problems in this \chaptername and feel comfortable wi
 This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
 \instructor{TeX files for these are included in a separate folder in the GitHub Project}
 \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
-\textbf{Review Guide Creation\\}
-Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Grade-Scope.
+
+\textbf{Review Guide Creation}\\
+
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname\ review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } \\
 
 As you create this review guide, consider the following:
 \begin{itemize}
@@ -198,10 +200,10 @@ As you create this review guide, consider the following:
 %Notes for Stewart, 7th Edition
 \ifstewart
 	\newcommand{\stewarts}[1]{Stewart: #1}
-	\newcommand{\stewartsbrief}[1]{#1}
+	\newcommand{\stewartsshort}[1]{#1}
 \else
 	\newcommand{\stewarts}[1]{}
-	\newcommand{\stewartsbrief}[1]{}
+	\newcommand{\stewartsshort}[1]{}
 \fi
 
 %******************************************************************************************************************
@@ -247,9 +249,8 @@ As you create this review guide, consider the following:
 %Attempting to Comment out some of this, and see what can actually be trimmed from the code.
 % Done on 7/31/16
 \theoremstyle{box}
-%\newtheorem{definition}[theorem]{Definition}
-%7/31/16
-\newtheorem{dfn}[theorem]{Definition}[chapter]
+\newtheorem{definition}[theorem]{Definition}
+%\newtheorem{dfn}[theorem]{Definition}[chapter]
 \newtheorem*{definition*}{Definition}
 \newtheorem{observation}[theorem]{Observation}
 \newtheorem{remark}[theorem]{Remark}
@@ -260,9 +261,9 @@ As you create this review guide, consider the following:
 %\newtheorem{problem}[theorem]{Problem}
 
 \theoremstyle{problem}
-\newtheorem{problemnum}{Problem}[chapter]
-\newtheorem{challengenum}{Challenge Problem}[chapter]
-\newtheorem*{problemnum*}{Problem}
+\newtheorem{problemnum}{Exercise}[chapter]
+\newtheorem{challengenum}{Challenge Exercise}[chapter]
+\newtheorem*{problemnum*}{Exercise}
 \newtheorem*{reviewnum*}{Review}
 \newenvironment{problem}[1][]{\begin{problemnum}[#1]}{\end{problemnum}\nopagebreak\hrule\bigskip}
 \newenvironment{problem*}[1][]{\begin{problemnum*}[#1]}{\end{problemnum*}\nopagebreak\hrule\bigskip}
@@ -329,29 +330,34 @@ As you create this review guide, consider the following:
 
 
 \begin{document}
+
 \frontmatter
 \title{Multivariable Calculus}
-\author{Ben Woodruff\thanks{Mathematics Faculty at Brigham Young
-    University--Idaho, \url{woodruffb@byui.edu}}\\
-		Modified by Karl Schmitt\thanks{Valparaiso University -- Indiana, \url{karl.schmitt@valpo.edu}}}
+\author{Ben Woodruff
+				\thanks{Mathematics Faculty at Brigham Young University--Idaho, \url{woodruffb@byui.edu}}\\
+				Modified by Karl R. B. Schmitt
+				\thanks{Valparaiso University -- Indiana, \url{karl.schmitt@valpo.edu} }
+				}
 \date{Typeset on \today\\
-\vfill
-\includegraphics[height=1.3cm]{by-sa.eps}
-\vfill
-\larsonfiveshort{With references to \emph{Calculus, Early Transcendental
-    Functions}, 5th edition, by Larson and Edwards\\}
-\thomaseeshort{With references to \emph{Calculus}, 11th Edition by Weir, Hass, and Giordano\\}
-\stewartsshort{With references to \emph{Calculus Early Transcendentals}, 7th Edition, by Stewart\\}}
+	\vfill
+	\includegraphics[height=1.3cm]{by-sa.eps}
+	\vfill
+	\larsonfiveshort{With references to \emph{Calculus, Early Transcendental Functions}, 5th edition, by Larson and Edwards\\}
+	\thomaseeshort{With references to \emph{Calculus}, 11th Edition by Weir, Hass, and Giordano\\}
+	\stewartsshort{With references to \emph{Calculus Early Transcendentals}, 7th Edition, by Stewart\\}
+	}
+
 \maketitle
+
 \thispagestyle{empty}
-\noindent\copyright{ Original 2012- Ben Woodruff.  Some Rights Reserved.}
-\noindent\copyright{ Modifications 2014- Karl Schmitt. Some Rights Reserved.}
+
+\noindent\copyright{ Original 2012- Ben Woodruff.  Some Rights Reserved. Modifications 2014- Karl Schmitt. Some Rights Reserved.\\
 
 \bigskip
 
 \noindent This work is licensed under the Creative Commons Attribution-Share Alike 3.0 United States License.  You may copy, distribute, display, and perform this copyrighted work, but only if you give credit to Ben Woodruff, and all derivative works based upon it must be published under the Creative Commons Attribution-Share Alike 3.0 United States License. Please attribute this work to Ben Woodruff, Mathematics Faculty at Brigham Young University--Idaho, \url{woodruffb@byui.edu}. 
 
-\noindent Furthermore, this deriviative with edits and modifications by Karl Schmitt similarly requires that you give additional editing/modification credit to Karl Schmitt. Please attribute these modifications and edits to Karl R. B. Schmitt, Mathematics and Statistics Faculty at Valparaiso University--Indiana, \url{karl.schmitt@valpo.edu}
+\noindent Furthermore, this deriviative with edits and modifications by Karl R. B. Schmitt similarly requires that you give additional editing/modification credit to Karl R. B. Schmitt. Please attribute these modifications and edits to Karl R. B. Schmitt, Mathematics and Statistics Faculty at Valparaiso University--Indiana, \url{karl.schmitt@valpo.edu}
 
 To view a copy of this license, visit
 \begin{center}
@@ -453,13 +459,13 @@ This work is based almost entirely off of Ben Woodruff's IBL textbook (see copyr
 \chapter{Review: Calculus I \& II}
 \minitoc \mtcskip
 \input{01-Review-v3}
-%wrapup
+%\wrapup
 
 
 \chapter{Vectors}
 \minitoc \mtcskip
 \input{02-Vectors_v3}
-%\wrapup
+\wrapup
 %
 %
 
@@ -467,7 +473,7 @@ This work is based almost entirely off of Ben Woodruff's IBL textbook (see copyr
 
 \chapter{Review: Conic Sections}
 \minitoc \mtcskip
-\input{03a-Curves Only}
+\input{03a-Curves-Only}
 
 %This split out the parametric equations from Woodruff's original "conic sections" chapter. I have found that the students could use a quick primer on parametric equations to see more success later at Valpo.
 
@@ -478,72 +484,70 @@ This work is based almost entirely off of Ben Woodruff's IBL textbook (see copyr
 %Polar coordinates before Calc III, but needs to learn the others. So
 %polar moved to a review chapter. Basically I just moved things from 
 %Woodruff's original Chap 3+4 to 'New at Valpo' and 'Review at Valpo' chapters.
-\chapter{Review: Polar Coordinates}
+\chapter{Parametric Equations}
 \minitoc \mtcskip
-\input{04-New-Coordinates_v2}
-%\wrapup
+\input{03b-Parametric_Equations_v3}
+\wrapup
+
+\chapter{Polar and New Coordinate Systems}
+\minitoc \mtcskip
+\input{04-New-Coordinates_v3}
+\wrapup
 %
-\chapter{Parametric Eqns. and New Coordinate Systems}
-\minitoc \mtcskip
-\input{03-04-ALT-Parametric-Other-Coordinates_v1}
 
 \chapter{Functions}
 \minitoc \mtcskip
-\input{05-Functions_v2}
-%\wrapup
-%
-%
-%
+\input{05-Functions_v3}
+\wrapup
+
 \chapter{Derivatives}
-%\input{06-Derivatives}
+\input{06-Derivatives_v3}
 \minitoc \mtcskip
-\input{06-Derivatives-new_v2}
+\wrapup
+
+%
+%\chapter{Motion}
+%\vspace{-1.25cm}
+%\minitoc \mtcskip
+%\input{07-Motion_v2}
 %\wrapup
 %
-\chapter{Motion}
-\vspace{-1.25cm}
-\minitoc \mtcskip
-\input{07-Motion_v2}
-%\wrapup
-%
-\chapter{Line Integrals}
-\minitoc \mtcskip
-\input{08-Line-Integrals_v2}
-%\wrapup
-%
-%
-%
-\chapter{Optimization}
-\minitoc \mtcskip
-\input{09-Optimization_v2}
+%\chapter{Line Integrals}
+%\minitoc \mtcskip
+%\input{08-Line-Integrals_v2}
 %\wrapup
 %
 %
-\chapter{Double Integrals}
-\minitoc \mtcskip
-\input{10-Double-Integrals_v2}
+%
+%\chapter{Optimization}
+%\minitoc \mtcskip
+%\input{09-Optimization_v2}
+%\wrapup
+%
+%
+%\chapter{Double Integrals}
+%\minitoc \mtcskip
+%\input{10-Double-Integrals_v2}
 %\wrapup
 %
 %%\end{document}
 %
 %
-\chapter{Surface Integrals}
-\minitoc \mtcskip
-\input{11-Surface-Integrals_v2}
+%\chapter{Surface Integrals}
+%\minitoc \mtcskip
+%\input{11-Surface-Integrals_v2}
 %\wrapup
 %
-\chapter{Triple Integrals}
-\minitoc \mtcskip
-\input{12-Triple-Integrals_v2}
+%\chapter{Triple Integrals}
+%\minitoc \mtcskip
+%\input{12-Triple-Integrals_v2}
 
-%This moves the limits from an earlier chapter to their
-%own chapter for coverage at the end of the semester, if 
-%there's time. 
-\chapter{Limits}
-\minitoc \mtcskip
-\input{13-Limits_v2}
+%%This moves the limits from an earlier chapter to their
+%%own chapter for coverage at the end of the semester, if 
+%%there's time. 
+%\chapter{Limits}
+%\minitoc \mtcskip
+%\input{13-Limits_v2}
 %\wrapup
 
-\begin{comment}
-\end{comment}
 \end{document}

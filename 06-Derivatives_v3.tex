@@ -161,7 +161,7 @@ To get the derivative in all dimensions, we just substitute in vectors to obtain
 
 
 Let's now examine some problems you have seen before. 
-\begin{problem}\label{prob:differential for volume of a cylinder}%
+\begin{problem}\label{prob:differential volume of a cylinder}%
 \marginpar{\thomasee{See 3.10 for more practice.}\larsonfive{See Larson ?.} \stewarts{??} }%
  The volume of a right circular cylinder is $V(r,h)= \pi r^2 h$.  Imagine that each of $V$, $r$, and $h$ depends on $t$ (we might be collecting rain water in a can, or crushing a cylindrical concentrated juice can, etc.).  
 \begin{enumerate}
@@ -245,7 +245,7 @@ Problem \ref{unit6_content} is precisely the content to this chapter.  We just n
  \item Remember, the derivative of $f$ is a matrix. The columns of the matrix are the partial derivatives with respect to the input variables. 
 \end{itemize}
 
-\begin{dfn}[Derivatives and Partial Derivatives]
+\begin{definition}[Derivatives and Partial Derivatives]
  Let $f$ be a function. 
 \begin{itemize}
  \item The partial derivative of $f$ with respect to $x$ is the regular derivative of $f$, provided we hold every every input variable constant except $x$. (This is what we did in the first parts of problems \ref{prob:differential volume of a cylinder} and \ref{prob:volumebox}.  We'll use the notations
@@ -263,7 +263,7 @@ to mean the partial of $f$ with respect to $x$.
  $DV(x,y,z) = \begin{bmatrix}\frac{\partial V}{\partial x}&\frac{\partial V}{\partial y}&\frac{\partial V}{\partial z}\end{bmatrix}.$
  
 \end{itemize}
-\end{dfn}
+\end{definition}
 
 It's time to practice these new words on some problems.  Remember, we're doing the exact same thing as before the definitions above. Now we just have some vocabulary which makes it much easier to talk about differentiation.
 
@@ -311,7 +311,7 @@ Let's now explain geometrically what a partial derivative is. The next two probl
 \begin{enumerate}
 	\item Compute the partial derivatives $\ds\frac{\partial \vec T}{\partial r}$ and $\ds\frac{\partial \vec T}{\partial \theta}$
 	\item State the derivative $D\vec T(r,\theta)$. \\
-	[Hint: If you get a 2 by 2 matrix, then you're on the right track. Each partial derivative is a vector.  (This one is in the \derivativehomeworklink{handwritten file} with extra practice.)]
+	\[Hint: If you get a 2 by 2 matrix, then you're on the right track. Each partial derivative is a vector.  (This one is in the \derivativehomeworklink{handwritten file} with extra practice.)\]
 	\item Consider the polar point $(r,\theta) = (4,\pi/2)$. 
 	\begin{enumerate}
 		\item Compute $T(4,\pi/2)$ (the Cartesian coordinate)
@@ -502,7 +502,7 @@ Some people remember the theorem above as ``the derivative of a composition is t
 We now generalize to higher dimensions. If I want to write $\vec f(\vec g(\vec x))$, then $\vec x$ must be a vector in the domain of $g$.  After computing $\vec g(\vec x)$, we must get a vector that is in the domain of $f$.  Since the chain rule in first semester calculus states $(f(g(x))'=f'(g(x))g'(x)$, then in high dimension it should state $D(f(g(x)) = Df(g(x))Dg(x)$, the product of two matrices. 
 
 \begin{problem}\label{chain rule two}
- In problem \ref{differential for volume of a cylinder}, we showed that for a circular cylinder with volume $V=\pi r^2 h$, the derivative is 
+ In problem \ref{prob:differential volume of a cylinder}, we showed that for a circular cylinder with volume $V=\pi r^2 h$, the derivative is 
 $$DV(r,h)=\begin{bmatrix}
 2\pi rh & \pi r^2
 \end{bmatrix}.$$  
