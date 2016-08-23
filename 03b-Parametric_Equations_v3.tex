@@ -7,6 +7,8 @@
 
 \note{I split this out as I found many students really could use a quick review of parametric equations, even though `officially' at Valpo they learned it in Calc I or Calc II}
 
+\clearpage
+
 \section{Parametric Equations}
 In middle school, you learned to write an equation of a line as $y=mx+b$.  In the vector unit, we learned to write this in vector form as:
  $$(x,y)=(1,m)t+(0,b)$$
@@ -20,13 +22,16 @@ If each of $f$ and $g$ are continuous functions, then the curve in the plane def
 
 You can generalize this definition to 3D and beyond by just adding more variables.
 
+\vspace{0.1in}
+
 \hrule
 
-\begin{problem}\instructor{Recommended Pre-Class} 
+\begin{problem}
+By plotting points, construct graphs of the three parametric curves given below (just make a $t,x,y$ table, and then plot the $(x,y)$ coordinates).  Place an arrow on your graph to show the direction of motion.
+\instructor{Recommended Pre-Class} 
 \marginpar{
 	\thomasee{See 11.1: 1-18. This is the same for all the problems below.}
-	}%
-By plotting points, construct graphs of the three parametric curves given below (just make a $t,x,y$ table, and then plot the $(x,y)$ coordinates).  Place an arrow on your graph to show the direction of motion.
+	}
 \begin{enumerate}
 \item $x=\cos t, y=\sin t$, for $0\leq t\leq 2\pi$.
 \item $x=\sin t, y=\cos t$, for $0\leq t\leq 2\pi$.
@@ -35,20 +40,22 @@ By plotting points, construct graphs of the three parametric curves given below 
 \end{problem}
 
 \begin{problem}\instructor{Recommended Pre-Class}
+For the parametric curve $x=1+2\cos t, y=3+5\sin t$:
 \begin{enumerate}
-	\item Plot the path traced out by the parametric curve $x=1+2\cos t, y=3+5\sin t$.  
+	\item Plot the path traced out by the curve.
 	\item Use the trig identity $\cos^2t+\sin^2t=1$ to give a Cartesian equation of the curve (an equation that only involves $x$ and $y$). 
 	\item What are the foci of the resulting object (it's a conic section)?
 \end{enumerate}
 \end{problem}
 
-\begin{problem}\label{prob:line equation practice}  \marginpar{What we did in the previous chapter should help here.}  
+\begin{problem}\label{prob:line equation practice}\marginpar{What we did in the vector unit should help here.}
 Find parametric equations for a line that passes through the points $(0,1,2)$ and $(3,-2,4)$.
 \end{problem}
 
 \begin{problem}
+For the parametric curve $\vec r(t)= (t^2+1, 2t-3)$: 
 \begin{enumerate}
-	\item Plot the path traced out by the parametric curve $\vec r(t)= (t^2+1, 2t-3).$ 
+	\item Plot the path traced out by the curve.
 	\item Give a Cartesian equation of the curve (eliminate the parameter $t$)
 	\item Now find the focus of the resulting curve.
 \end{enumerate}
@@ -71,9 +78,9 @@ The subtraction above requires vector subtraction.  The following problem will p
 \marginpar{
 	\thomasee{See page 728.}
 	}%
-Show that if $\vec r(t) = (f(t),g(t))$, then the derivative is just $\frac{d\vec r}{dt} = (f'(t),g'(t))$.  
+Show that if $\vec r(t) = (f(t),g(t))$, then the derivative is just $\frac{d\vec r}{dt} = (f'(t),g'(t))$. \\ 
 
-[The definition above says that $\frac{d\vec r}{dt}=\ds\lim_{h\to 0}\frac{\vec r(t+h)-\vec r(t)}{h}$. We were told $\vec r(t) = (f(t),g(t))$, so use this in the derivative definition.  Then try to modify the equation to obtain $\frac{d\vec r}{dt} = (f'(t),g'(t))$.]
+\noindent [The definition above says that $\frac{d\vec r}{dt}=\ds\lim_{h\to 0}\frac{\vec r(t+h)-\vec r(t)}{h}$. We were told $\vec r(t) = (f(t),g(t))$, so use this in the derivative definition.  Then try to modify the equation to obtain $\frac{d\vec r}{dt} = (f'(t),g'(t))$.]
 \end{problem}
 The previous problem shows you can take the derivative of a vector valued function by just differentiating each component separately. The next problem shows you that velocity and acceleration are still connected to the first and second derivatives. 
 
@@ -133,17 +140,17 @@ This section covers:
 	\item finding rates of change along space curves
 \end{itemize}
 
-If an object moves at a constant speed, then the distance travelled is 
+\noindent If an object moves at a constant speed, then the distance travelled is 
 $$\text{distance} = \text{speed}\times\text{time}.$$
 This requires that the speed be constant.  What if the speed is not constant? Over a really small time interval $dt$, the speed is almost constant, so we can still use the idea above. The following problem will help you develop the key formula for arc length.
 
 \begin{problem}[Derivation of the arc length formula] 
-Suppose an object moves along the path given by $\vec r(t)=(x(t),y(t))$ for $a\leq t\leq b$. 
+Suppose an object moves along the path given by:  $$\vec r(t)=(x(t),y(t))$ for $a\leq t\leq b$$. 
 \begin{enumerate}
 \item Show that the object's speed at any time $t$ is 
 $\ds\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}$.
 \item If you move over a really small time interval, say of length $dt$, then the speed is almost constant. If you move at a constant speed of $\ds\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}$ for a time length of $dt$, what's the distance $ds$ you have traveled.\\
-\[Hint: This should be really fast to write down\] 
+[Hint: This should be really fast to write down]
 \item  Explain why the length of the path given by $\vec r(t)$ for $a\leq t\leq b$ is  \marginpar{This is the arc length formula. Ask me in class for an alternate way to derive this formula.}
 $$\text{Arc Length}=s=\int ds=\int_a^b \left|\frac{d\vec r}{dt}\right| dt=\int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt.$$\label{arc length formula}
 %\item \marginpar{\bmw{See page 639.}} Draw a small curve.  Pick two points close together.  Construct a straight line segment between them (call this $ds$).  Then draw a right triangle that shows the change in $x$ and change in $y$ (written $dx$ and $dy$).  Use the Pythagorean theorem to show that $ds=\sqrt{dx^2+dy^2}=\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt$.  

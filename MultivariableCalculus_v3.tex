@@ -107,7 +107,7 @@
 Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
 
 %I liked Ben's wrapup for his Diff-Eq book better. So I just stole it and modified it a bit!
-\valpo{\section{Wrap Up}
+\valposhort{\section{Wrap Up}
 This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
 \instructor{TeX files for these are included in a separate folder in the GitHub Project}
 \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
@@ -227,7 +227,7 @@ As you create this review guide, consider the following:
 {}{}% standard spacing before and after
 {}% Body style
 {}{\bfseries}{}% Heading indent, font, and punctuation
-{1em}% space after heading
+{\newline}% space after heading
 {\fbox{\thmname{#1}\thmnumber{ #2}\thmnote{: #3}}}% head spec
 
 %========================================================================================
@@ -259,6 +259,14 @@ As you create this review guide, consider the following:
 %\newtheorem{question}[theorem]{Question}
 %\newtheorem*{prep-problems}{Preparation Problems}
 %\newtheorem{problem}[theorem]{Problem}
+
+%=====
+% On a suggestion from a recent conference on pedagogy, it was suggested that we really shouldn't call what we do ``problems'', but rather
+% 'exercises' since we are practicing what we are learning to get better. So... even though all the actual pages have \begin{problem}
+% I've adjusted the macro here to make them read as 'exercise' 
+% In a similar vein, rather than have 'optional' exercises, I have 'challenge' exercises. 
+% Karl
+%=====
 
 \theoremstyle{problem}
 \newtheorem{problemnum}{Exercise}[chapter]
