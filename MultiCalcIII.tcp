@@ -3,7 +3,7 @@ Type=TeXnicCenterProjectInformation
 Version=4
 
 [ProjectInfo]
-MainFile=..\MultivariableCalculus_v3.tex
+MainFile=MultivariableCalculus_v3.tex
 UseBibTeX=0
 UseMakeIndex=0
 ActiveProfile=XeLaTeX ⇨ PDF
