@@ -530,7 +530,7 @@ Let's prove one of the facts above, namely that $\vec T$ and its derivative will
  If a vector valued function $\vec r(t)$ has constant length, then the vector $\vec r$ and its derivative $\ds\frac{d\vec r}{dt}$ are always orthogonal. Vector valued functions of constant length are orthogonal to their derivative.  
 \end{theorem}
 
-\begin{problem}[Optional Proof of Theorem \ref{vector valued functions of constant length}]\marginpar{Watch a \href{http://www.youtube.com/watch?v=08Ygw_M-4yM&list=PL30EE81142B1ED1F0&index=6&feature=plpp_video}{YouTube Video}.  }%
+\begin{problem}[Optional Proof of Theorem \ref{vector valued functions of constant length}]\marginpar{Watch a \href{http://www.youtube.com/watch?v=08Ygw_M-4yM&list=PL30EE81142B1ED1F0&index=6&feature=plpp_video}{YouTube Video} for the answer.  }%
  Prove the theorem above. Here are some hints [as an alternative to watching the YouTube video].
 \begin{itemize}
  \item We know that $\vec r(t)$ has constant length, so we write $|\vec r|=c$ for some constant $c$. 
@@ -546,8 +546,12 @@ If the vector $\vec v(t)$ has constant length, then the vector and its derivativ
 
 
 \begin{problem}\label{T and N are orthogonal}\marginpar{Watch a \href{http://www.youtube.com/watch?v=aJttU3kS_p8&list=PL30EE81142B1ED1F0&index=7&feature=plpp_video}{YouTube Video}.  }%
- Let $\vec r$ be a smooth parametrization of a curve.  How long is the {\it unit} tangent vector $\vec T(t)$? Explain why $\vec T$ is orthogonal to $\dfrac{d\vec T}{dt}$.
- Then give a formula for computing a unit vector that is orthogonal to $\vec T(t)$. 
+ Let $\vec r$ be a smooth parametrization of a curve.
+\begin{enumerate}
+	\item How long is the {\it unit} tangent vector $\vec T(t)$? 
+	\item Explain why $\vec T$ is orthogonal to $\dfrac{d\vec T}{dt}$.
+	\item Then give a formula for computing a unit vector that is orthogonal to $\vec T(t)$. 
+\end{enumerate}
 \end{problem}
 
 
@@ -585,9 +589,10 @@ $(1,0,2)\times
 \begin{problem}
 Answer the following questions (this will review your knowledge of the dot and cross products).
 \begin{enumerate}
- \item What is $\vec T\cdot \vec N$? Explain. Then explain why $\vec T\cdot \vec B=0$ and $\vec N\cdot \vec B=0$.
- \item Both $\vec T$ and $\vec N$ are unit vectors. They are also orthogonal. Why is $\vec B$ is a unit vector? [What's the connection between the cross product and area.] 
- \item We defined $\vec B=\vec T\times \vec N$. This means that $\vec N\times \vec T=-\vec B$.  Do we have $\vec T\times \vec B$ equal to $\vec N$ or $-\vec N$? Explain. [Hint: What does the right hand rule say? Compare to $\hat i\times \hat k$. ]
+	\item What is $\vec T\cdot \vec N$? Explain. 
+	\item Now explain why $\vec T\cdot \vec B=0$ and $\vec N\cdot \vec B=0$.
+	\item Both $\vec T$ and $\vec N$ are unit vectors. They are also orthogonal. Why is $\vec B$ is a unit vector? [What's the connection between the cross product and area.] 
+	\item We defined $\vec B=\vec T\times \vec N$. This means that $\vec N\times \vec T=-\vec B$.  Do we have $\vec T\times \vec B$ equal to $\vec N$ or $-\vec N$? Explain. [Hint: What does the right hand rule say? Compare to $\hat i\times \hat k$. ]
 \end{enumerate}
 \end{problem}
 
@@ -677,22 +682,31 @@ Consider the helix $\vec r(t) = (3\cos t,3\sin t, 4t)$.  Find the unit tangent v
 \end{review*}
 
 \begin{problem}[Extra Practice] \marginpar{Use this \href{\sageurlforcurvature}{Sage link} to check your work, and see if your picture is correct. You'll have to type the appropriate function in, so use ``[t,sin(t),cos(t)]'' and ``point=pi/2.''}%
- Consider the helix $\vec r(t)=(t,\sin t,\cos t)$. Find the curvature and radius of curvature $t=\pi/2$. Then draw the curve, and draw the circle of curvature at $t=\pi/2$. Finally, find the center of curvature at $t=\pi/2$. Guess the center of curvature at $t=\pi$? [Hint: If you're struggling with how to get from the curve to the center of curvature, please do the review problem above.]
+ Consider the helix $\vec r(t)=(t,\sin t,\cos t)$. 
+\begin{enumerate}
+	\item Find the curvature and radius of curvature $t=\pi/2$. 
+	\item Draw the curve, and draw the circle of curvature at $t=\pi/2$. 
+	\item Finally, find the center of curvature at $t=\pi/2$. 
+	\item Take a guess at the center of curvature at $t=\pi$? [Hint: If you're struggling with how to get from the curve to the center of curvature, please do the review problem above.]
+\end{enumerate}
+\instructor{This may not have all the background/support needed for students to succeed.}
 \end{problem}
+
 
 \indent When a civil engineering team builds a road, they have to pay attention to the curvature of the road.  If the curvature of the road is too large, accidents will happen and the civil engineering team will be liable. How do they make sure the curvature never gets to large?  They use the circle of curvature. When they want to cause a road to turn, they'll find the center of curvature, send a surveyor out to the center, and then have the surveyor make sure that the road follows the circle of curvature for a short distance. They actually pace out the circle of curvature and then build the road along this circle for a hundred feet or so.  Then, they recompute the radius of curvature (if they need the direction to change again), and pace out another circle.  In this way, they can guarantee that the curvature never gets large. In the next section we'll see how curvature is directly related to normal acceleration (which is what causes semis to tip, and vehicles to slide off icy roads.)
 
 
-\newpage
+%\newpage
 
-\uday
-\normalsize
+%\uday
+%\normalsize
+
+
+\section{Tangential And Normal Components}
 \begin{itemize}
 \item Applications of multi-variable calculus (Tangential and Normal Components) 
 \end{itemize}
 
-
-\section{Tangential And Normal Components}
 
 \indent The unit tangent vector $\vec T$ provides us with a unit vector in the direction of motion. We can obtain the direction of motion from the velocity. If we stay on a straight course, then our acceleration is in the same direction as our motion, and would only cause us to speed up or slow down. We'll call this tangential acceleration.
 
@@ -707,6 +721,7 @@ $\vec F_{\perp \text{ to }\vec d} = \vec F -\vec F_{|| \text{ to }\vec d} = (0,-
 We now write 
 $$\vec F = (4,-2) + (-4,-8).$$
 }. 
+\marginpar{This is a good time to look back over the projection section from Unit 1: \ref{prob:force intro}}
 \end{review*}
 
 
@@ -725,9 +740,10 @@ If we throw a pebble from a 64 ft tall cliff, then we could parameterize the pat
 \begin{problem}
 Consider the parameterization $\vec r(t) = (t,9-t^2)$ (it's a simplified version of tossing a pebble off a building). Our goal, at time $t=1$, is to write $\vec a$ in the form $\vec a = a_T\vec T+a_N\vec N.$ Follow the steps below.
 \begin{enumerate}
- \item Compute $\vec v$, $\vec a$, and $\vec T$ at time $t$, and then at time $t=1$. Then at $t=1$, compute the projection of $\vec a$ onto $\vec T$, i.e. compute $\proj_{\vec T(1)}\vec a(1)$.
- \item State $\vec N(t)$ (remember you can flip the order and change a sign), and then at $t=1$ compute $\text{proj}_{\vec N(1)}\vec a(1)$. 
- \item If we write $\vec a = a_T\vec T +a_N\vec N$, then what are $a_T$ and $a_N$?
+	\item Compute $\vec v$, $\vec a$, and $\vec T$ at time $t$, and then at time $t=1$. 
+	\item At $t=1$, compute the projection of $\vec a$ onto $\vec T$, i.e. compute $\proj_{\vec T(1)}\vec a(1)$.
+	\item State $\vec N(t)$ (remember you can flip the order and change a sign), and then at $t=1$ compute $\text{proj}_{\vec N(1)}\vec a(1)$. 
+	\item If we write $\vec a = a_T\vec T +a_N\vec N$, then what are $a_T$ and $a_N$?
 \end{enumerate}
   
 \end{problem}
@@ -749,7 +765,7 @@ Let's return to the example of Sammy on a merry-go-round.  From this example, we
 \end{enumerate}
 \end{problem*}
 
-In the problem above, all of the acceleration is in the normal direction. The interesting thing to note is that the normal acceleration is ALWAY $a_T =  \frac{|\vec v|^2}{\rho}$.  That's what we'll now show.
+In the problem above, all of the acceleration is in the normal direction. The interesting thing to note is that the normal acceleration is ALWAY $a_N =  \frac{|\vec v|^2}{\rho}=\kappa |\vec v|^2$.  That's what we'll now show.
 We'll show that the acceleration of an object moving along a curve $\vec r(t)$ with velocity $\vec v(t)$ is the sum
 $$\vec a(t) = a_T\vec T+a_N\vec N=\frac{d}{dt}|\vec v(t)| \vec T + \kappa |\vec v|^2 \vec N.$$
 The scalars $a_T=\dfrac{d}{dt}|\vec v(t)|$ and $a_N=\kappa |\vec v|^2$ 
@@ -782,7 +798,7 @@ Before we decompose the acceleration into its tangential and normal components, 
 \begin{problem}
  Imagine that you are riding as a passenger on a road and encounter a series of switchbacks (so the road starts to zigzag up the mountain). Right before each bend in the road, you see a yellow sign that tells you a U-turn is coming up, and that you should reduce your speed from 45 mi/hr to 15 mi/hr.  Assume the largest curvature along the turn is $\kappa$. Recall that $a_N=\kappa |\vec v|^2$. The engineers of the road designed the road so that if you are moving at 15 mi/hr, then the normal acceleration will be at most $A$ units. 
 \begin{enumerate}
- \item Suppose that your driver (Ben) ignores the suggestion to slow down to 15 mi/hr.  He keeps going 45 mi/hr through the turn. Had he slowed down, the max acceleration would be $A$.  You're traveling 3 times faster than suggested.  What will your maximum normal acceleration be? [It's more than $3A$.]
+ \item Suppose that your driver (Ben) ignores the suggestion to slow down to 15 mi/hr.  He keeps going 45 mi/hr through the turn. Had he slowed down, the max acceleration would be $A$.  You're traveling 3 times faster than suggested.  What will your maximum normal acceleration be? [Hint: It's more than $3A$.]
  \item You yell at Ben to slow down (you don't want to die). So Ben decides to only slow to 30 mi/hr. He figures this means you'll only feel twice as much acceleration as $A$.  Explain why this line of reasoning is flawed.
  \item Ben gets frustrated by the fact that he has to slow down. He complains about the engineers who designed the road, and says, ``they should have just built a larger corner so I could keep going 45.''  How much larger should the radius of the circle be so that you can travel 45 mi/hr instead of 15 mi/hr, and still feel the same acceleration $A$?
  \item Which will cause the normal acceleration to decrease more, halving your speed or halving the curvature (doubling the radius)?
@@ -794,7 +810,7 @@ Before we decompose the acceleration into its tangential and normal components, 
 % \end{problem}
 
 
-\begin{problem}\marginpar{Watch a \href{http://www.youtube.com/watch?v=cSh2Bdd-yTg&feature=bf_next&list=PL30EE81142B1ED1F0&lf=plpp_video}{YouTube Video}.  }%
+\begin{challenge}\marginpar{Watch a \href{http://www.youtube.com/watch?v=cSh2Bdd-yTg&feature=bf_next&list=PL30EE81142B1ED1F0&lf=plpp_video}{YouTube Video}.  }%
  Prove that $\ds \vec a(t) = a_T\vec T+a_N\vec N=\frac{d}{dt}|\vec v| \vec T + \kappa |\vec v|^2 \vec N.$ Here's some hints.
 \begin{itemize}
  \item Rewrite the velocity $\vec v$ as a magnitude $|\vec v|$ times a direction $\vec T$, so $\vec v = |v|\vec T$.  
@@ -806,7 +822,7 @@ Before we decompose the acceleration into its tangential and normal components, 
 
 Let's now use the fact above to get an extremely useful formula for the curvature. 
 
-\begin{problem*}[Optional]
+\begin{challenge}
 Show that $$\kappa = \frac{|\vec v\times \vec a|}{|\vec v|^3} = \frac{|\vec r'\times \vec r''|}{|\vec r'|^3}.$$
 
 [Hint: We know that $\ds \vec a = a_T\vec T+a_N\vec N=\frac{d}{dt}|\vec v| \vec T + \kappa |\vec v|^2 \vec N.$  
@@ -815,7 +831,7 @@ Cross both sides with $\vec v$. You should be able to cancel $\vec v\times \vec 
 
 We can use the above formula for curvature to get a quick way to compute the curvature of a function $y=f(x)$. If you use the previous problem, this formula falls out almost instantly. You'd see this formula in dynamics\bmw{, and it shows up on the Fundamentals of Engineering exam (where you just have to use the formula, not prove where it comes from)}. This is the culminating idea from this chapter that you'll use again and again in engineering courses.
 
-\begin{problem*}[Optional]\label{formula for curvature}
+\begin{challenge}\label{formula for curvature}
 \marginparbmw{See 13.4: 5.}%
  The function $y=f(x)$ can be given the parametrization  $\vec r(x) = (x,f(x))$.  Use this parametrization (and the previous problem) to show that the curvature is 
 $$\kappa(x) = \frac{|f''(x)|}{(1+(f')^2)^{3/2}},$$ 
