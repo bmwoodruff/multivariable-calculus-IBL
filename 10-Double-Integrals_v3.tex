@@ -489,6 +489,7 @@ $$KE= \frac{1}{2}\left(\iint_R (y^2)dm\right)\omega^2$$.
 %\uday
 %\normalsize
 \section{Switching Coordinates: Cartesian to Polar}
+\instructor{Old Day Split here}
 After completing this section you should... 
 \begin{itemize}
 \item Be able to change coordinates of a double integral between Cartesian and polar coordinates
@@ -512,9 +513,13 @@ In the exercise above, we used a change of coordinates $u=-3x$, or $x=-1/3 u$.  
 
 \begin{problem}
  Consider the polar change of coordinates $x=r\cos\theta$ and $y=r\sin\theta$, which we could just write as $$\vec T(r,\theta)=(r\cos\theta,r\sin\theta).$$
+\marginpar{If you need a reminder of how to compute determinants, refer to Section \ref{sec:Determinants}
 \begin{enumerate}
  \item Compute the derivative $D\vec T(r,\theta)$.  You should have a 2 by 2 matrix.
- \item We need a single number from this matrix that tells us something about area.  Determinants are connected to area.  Compute the determinant of $D\vec T(r,\theta)$ and simplify.  
+\end{enumerate}
+ We need a single number from this matrix that tells us something about area.  Determinants are connected to area.  
+\begin{enumerate}[resume]
+	\item Compute the determinant of $D\vec T(r,\theta)$ and simplify.  
 \end{enumerate}
 \end{problem}
 
@@ -548,9 +553,9 @@ For each region $R$ below, draw the region in the $xy$-plane. Then give a set of
 \end{enumerate}
 \end{problem}
 
-\newpage
-\Large \textbf{In-Class/After Class}
-\normalsize
+%\newpage
+%\Large \textbf{In-Class/After Class}
+%\normalsize
 
 \begin{problem}\marginpar{See \href{http://aleph.sagemath.org/?q=60eb3051-6680-4031-afba-893277d1ec90}{Sage.}
 %http://aleph.sagemath.org/?z=eJytVsuSozYU3fMVKo-7ELbM0F3TSdVk6Eq2WSazc3lcMgi3EhkRISmQr89FAgyO3e5U4oXR45577hssVTg0yIZR8AFVUlCFMilVzkuqWR3ghrRRis0qkzW2ETGrmpewiH5A2OwVLY-MWP8EsW0Sx9_tSPd4WlWc1JpVacU_Pj7tAKD3J16miVvQJu0kAiD9k3GVI9bQUyVY8GFg_Pa0sd-egNCuO2543iLdPMfxM7D65y0i_cqz30tW1-mnoP7DUMX2gpVH_ZrGyXMQFEqeUE2PLGaNjgta6z2zVCB-qqTSyB0UQlLtJQtTZlpKUQ8CFVWaUxH8yEvNFM10kLMCaTCyxk3Ky8ro_UE24B0S9MBEumgWRLcVS3_9JSIBGn7tRLYdZdursmZfMZWxUqe14DlTOCGPJAF3SA_7UshSQz6FVGmoWB6-mC8fu7OXBUFgHzVCp_H3U532X-k8CMPCF3tPaZ-0iWtDGgcHDRIckrOYm3KJshcoO6Ciz4HDgWJio7Rxm9Zv2sCb0GUzRVAZA3m0xlAe424zvYpWY3ADb8sZbmdwO4XbEW5ncGMrISGk5oS3UCn0xLTi2b47xJiDlQRhS1zdEle0cDBJG6ENq_fO6TrdhiYkoQ13pODHmv_F0u0zgbpHhVSII14O4d5FE-71DXJDeEdurpO7_F5nn_DZq3xXqFwUr9Gp48EzQrlBwcGJS6xuBUvDTUjOzTuu7pF1VARdi-yZDCqbJO8nq3RqGbS9wluv3vnTu52b8RI7oo0jjVazYUOSQdyO4gl5A3AZVCnaoywhkZpUep1b92_GxY70mauMgnEKuRPVK00T6MeZns7j-0qOirES3gwO-tW3k5vPvtmMhY44T0a46YvD37eX9-38vrHmH3gbdjI9_vK-nd837RtN1c9jDEZ2FT5sW7e9125oXvENkLbv7jdv1q1-G-2yZmaX297rxJs9N3C-GQbju28aCn8UkctozILxzu64b4MdJ8DUbdvbcGcIvdeM32gmD5yWKT3U-Guc86LAUZwzjaMoruFtLXjR7gsjBPYA3fFDmuGj5dF_sczbMU4ed_4dwMDojIEobvAqi0jb_fucZF1OoJ_WepVbd6K7E697N8ev31SQ206H-U868ONGR2DI-v_Rc0vJmPF-KA1K78ygAeZm0CVmGDmd4Ks-CbxY9oPnoV4uHrCAz9IG-yP4TeR-7hP_GS2dqJccyqEHTOR_6oLQovpEhUCKHbksOw-XTbtElaAlQ7xGtKqUbPgJdIkWPSTxpyPS_MRqpF8Z6qYBkoVbZ1IpVleyhE_n40Rfd7c0tte5eDgbdH6FRHGJJ7bFmh4EjOetn9bEB2y3i_4G6ObLfg%3D%3D
@@ -559,7 +564,7 @@ Consider the opening exercise for this unit.  We want to find the volume under $
 $$\iint_R f dA = \ds\int_{y=-3}^{y=3} \int_{x=0}^{x=\sqrt{9-y^2}}9-x^2-y^2 dx dy.$$
 \begin{enumerate}
  \item Write bounds for the region $R$ by giving bounds for $r$ and $\theta$.
- \item Rewrite the double integral as an iterated integral with bounds for $r$ and $\theta$. Don't forget the Jacobian (as $dxdy=rdrd\theta$). 
+ \item Rewrite the double integral as an iterated integral using the bounds for $r$ and $\theta$. Don't forget the Jacobian (as $dxdy=rdrd\theta$). 
 %Your integral should look something like 
 %$$\iint_R f dA = \ds\int_{\theta=?}^{\theta=?} \int_{r=?}^{r=?} (9-x^2-y^2) r\ dr\right) d\theta.$$
  \item Compute the integral in the previous part by hand. [Suggestion: you'll want to simplify $9-x^2-y^2$ to $9-r^2$ before integrating.]
@@ -588,18 +593,20 @@ The exercise about integrating $e^{-x^2}$ from 0 to infinity.  Make it optional,
 }
 We're now ready to define the Jacobian of any transformation.
 
-\uday
-\normalsize
+%\uday
+%\normalsize
 \section{Switching Coordinates: The Generalized Jacobian}
-
+\instructor{Old day split here}
+In this section you will learn how to...
 \begin{itemize}
-\item learn to switch coordinate systems for integration ($u$-substitution for higher dimensions)
+\item switch coordinate systems for integration ($u$-substitution for higher dimensions)
 \end{itemize}
 
 \vskip0.2cm
 
+ To find the Jacobian of the transformation $\vec T(u,v)=(x(u,v), y(u,v))$, we first find the derivative of $\vec T$.  This is a square matrix, so it has a determinant, which should give us information about area. As the determinant may be positive or negative, we then take the absolute value to obtain the Jacobian. Formally:
 \begin{definition}
- Suppose $\vec T(u,v)=(x(u,v),y(u,v))$ is a differentiable coordinate transformation. To find the Jacobian of this transformation, we first find the derivative of $\vec T$.  This is a square matrix, so it has a determinant, which should give us information about area. As the determinant may be positive or negative, we then take the absolute value to obtain the Jacobian.  So the Jacobian of the transformation $\vec T$ is the absolute value of the determinant of the derivative. \marginpar{For a tongue twister, say ``the absolute value of the determinant of the derivative'' ten times really fast.}
+ Suppose $\vec T(u,v)=(x(u,v),y(u,v))$ is a differentiable coordinate transformation. The Jacobian of the transformation $\vec T$ is the absolute value of the determinant of the derivative. \marginpar{For a tongue twister, say ``the absolute value of the determinant of the derivative'' ten times really fast.}
  Notationally we write 
 $$J(u,v) = \frac{\partial (x,y)}{\partial (u,v)} = |\det(D\vec T(u,v))|.$$
 \end{definition}
@@ -608,9 +615,10 @@ $$J(u,v) = \frac{\partial (x,y)}{\partial (u,v)} = |\det(D\vec T(u,v))|.$$
 \begin{problem}
 Consider the transformation $u=x+2y$ and $v=2x-y$.  
 \begin{enumerate}
- \item Solve for $x$ and $y$ in terms of $u$ and $v$. Then compute the Jacobian $\frac{\partial (x,y)}{\partial (u,v)}$.
- \item We were give $u$ and $v$ in terms of $x$ and $y$, so we could have directly computed $\frac{\partial (u,v)}{\partial (x,y)}$. Do so now.
- \item Make a conjecture about the relationship between $\frac{\partial (x,y)}{\partial (u,v)}$ and $\frac{\partial (u,v)}{\partial (x,y)}$. 
+	\item Solve for $x$ and $y$ in terms of $u$ and $v$. 
+	\item Next compute the Jacobian $\frac{\partial (x,y)}{\partial (u,v)}$.
+	\item We were give $u$ and $v$ in terms of $x$ and $y$, so we could have directly computed $\frac{\partial (u,v)}{\partial (x,y)}$. Do so now.
+	\item Make a conjecture about the relationship between $\frac{\partial (x,y)}{\partial (u,v)}$ and $\frac{\partial (u,v)}{\partial (x,y)}$. 
 \end{enumerate}
 \note{There are a lot of different uses of the word Jacobian. It sometimes includes the absolute value, sometimes does not. Sometimes you stop at the derivative, sometimes you take the determinant.  Which one is correct?  I'm going with the one that includes the absolute values as well.  That way I can say $r$ is the Jacobian for polar, and for spherical we have $\rho^2\phi$ (not $-\rho^2\phi$).  If we want to address this in general, it should be in an appendix, with maybe a marginpar or footnote.}
 \end{problem}
@@ -627,17 +635,27 @@ Let's use this to rapidly find the area inside of an ellipse.
 \begin{problem}
  Consider the region $R$ inside the ellipse $\left(\dfrac{x}{a}\right)^2+\left(\dfrac{y}{b}\right)^2=1$.  We'll consider the change of coordinates given by $u=(x/a)$ and $v=(y/b)$.
 \begin{enumerate}
- \item Draw the region $R$ in the $xy$-plane.  After substituting $u=x/a$ and $v=y/b$, draw the region $R_{uv}$ in the $uv$-plane.  You should have a circle.  What is the area inside this circle in the $uv$-plane?
- \item Solve for $x$ and $y$, and then compute the Jacobian  $\dfrac{\partial (x,y)}{\partial (u,v)}$. Show how to get the same result from directly computing $\dfrac{\partial (u,v)}{\partial (x,y)}$.
- \item We know the area in the $xy$-plane of the ellipse is $\iint_{R_{xy}} dxdy$. Use the previous theorem to switch to an integral over the region $R_{uv}$.  Then evaluate this integral by using facts about area so prove that the area in the $xy$ plane is $\pi a b$. [Hint: you don't actually have to set up any bounds, rather just reduce this to an area integral over the region $R_{uv}$.] 
+	\item Draw the region $R$ in the $xy$-plane.  
+	\item After substituting $u=x/a$ and $v=y/b$, draw the region $R_{uv}$ in the $uv$-plane.  You should have a circle.  
+	\item What is the area inside this circle in the $uv$-plane?
+	\item Solve for $x$ and $y$, and then compute the Jacobian  $\dfrac{\partial (x,y)}{\partial (u,v)}$. 
+	\item Show how to get the same result from directly computing $\dfrac{\partial (u,v)}{\partial (x,y)}$.
+	\item We know the area in the $xy$-plane of the ellipse is $\iint_{R_{xy}} dxdy$. Use the previous theorem to switch to an integral over the region $R_{uv}$.  Then evaluate this integral by using facts about area to prove that the area in the $xy$ plane is $\pi a b$. [Hint: you don't actually have to set up any bounds, rather just reduce this to an area integral over the region $R_{uv}$.] 
 \end{enumerate}
 
 \end{problem}
 
 
 \begin{problem}
-Let $R$ be the region in the plane bounded by the curves $x+2y=1$, $x+2y=4$, $2x-y=0$, and $2x-y=8$.  We want to compute the integral $\iint_R xdxdy$. Draw the region $R$ in the $xy$-plane. Use the change of coordinates $u=x+2y$ and $v=2x-y$ to evaluate this integral. Make sure you provide a sketch of the region $R_{uv}$ in the $uv$-plane (it should be a rectangle).  
-[Hints: what are the bounds for $u$ and $v$?  You'll want to solve for $x$ and $y$ in terms of $u$ and $v$, and then you'll need a Jacobian.]
+Let $R$ be the region in the plane bounded by the curves: $$x+2y=1\\x+2y=4\\2x-y=0\\2x-y=8$$.  We want to compute the integral $\iint_R xdxdy$ using a change of coordinates. [Challenge: Try doing this without looking at the steps in the next paragraph]\\
+
+\begin{enumerate}
+	\item Draw the region $R$ in the $xy$-plane. 
+	\item Use the change of coordinates $u=x+2y$ and $v=2x-y$ to evaluate this integral. 
+	\item What are the bounds for $u$ and $v$?  You'll want to solve for $x$ and $y$ in terms of $u$ and $v$, and then you'll need a Jacobian.
+	\item Make sure you provide a sketch of the region $R_{uv}$ in the $uv$-plane (it should be a rectangle). 
+\end{enumerate}
+	
 \end{problem}
 
 
@@ -648,11 +666,13 @@ Let $R$ be the region in the plane bounded by the curves $x+2y=1$, $x+2y=4$, $2x
  Use the transformation $u=3x+2y$ and $v=x+4y$ to evaluate the integral $$\iint_R (3x^2+14xy+8y^2)dxdy =\iint_R (3x+2y)(x+4y)dxdy $$ for the region $R$ that is bounded by the lines $y=-(3/2)x+1$, $y=-(3/2)x+3$, $y=-(1/4)x$, and  $y=(-1/4)x+1$.
 \end{problem}
 
-\uday
-\normalsize
+%\uday
+%\normalsize
 \section{Green's Theorem}
+\instructor{Old Day Split here}
+In this section you will...
 \begin{itemize}
-\item Applications of double integrals: Circulation Density and Flux Density
+\item See applications of double integrals: Circulation Density and Flux Density
 \item Learn to use Green's Theorem to compute circulation/work and flux
 \end{itemize}
 
@@ -700,14 +720,30 @@ Let's now use this theorem to rapidly find circulation (work) and flux.
 \marginpar{
 \bmw{See 16.4 for more practice.  Try doing a bunch of these, as they get really fast.}
 }%
- Consider the vector field $\vec F=(2x+3y,4x+5y)$. Start by computing $N_x-M_y$ and $M_x+N_y$. 
- If $C$ is the boundary of the rectangle $2\leq x\leq 7$ and $0\leq y\leq 3$, find both the circulation and flux of $\vec F$ along $C$. You should be able to reduce the integrals to facts about area. [If you tried doing this without Green's theorem, you would have to parametrize 4 line segments, compute 4 integrals, and then sum the results.]
+ Consider a rectangle $C$ where the boundary of the rectangle are $2\leq x\leq 7$ and $0\leq y\leq 3$. The rectangle is subject to a vector field $\vec F=(2x+3y,4x+5y)$. 
+\begin{enumerate}
+	\item Compute $N_x-M_y$
+	\item Compute $M_x+N_y$.
+	\item Find the circulation of $\vec F$ along $C$
+	\item Find the flux of $\vec F$ along $C$
+\end{enumerate}
+[Hint: The last two should reduce to facts about area. ]\\
+Note: If you tried doing this without Green's theorem, you would have to parametrize 4 line segments, compute 4 integrals, and then sum the results.
 \end{problem}
 
 \begin{problem}
- Consider the vector field $\vec F=(x^2+y^2,3x+5y)$. Start by computing $N_x-M_y$ and $M_x+N_y$. 
- If $C$ is the circle $(x-3)^2+(y+1)^2=4$ (oriented counterclockwise), then find both the circulation and flux of $\vec F$ along $C$. You should be able to reduce the integrals to facts about the area and centroid.
+ Consider the vector field $\vec F=(x^2+y^2,3x+5y)$ and $C$, the circle $(x-3)^2+(y+1)^2=4$ (oriented counterclockwise).
+\begin{enumerate}
+	\item Start by computing $N_x-M_y$ and $M_x+N_y$. 
+	\item Now find both the circulation and flux of $\vec F$ along $C$. 
+\end{enumerate}
+[Hint: You should be able to reduce the integrals to facts about the area and centroid.]
 \end{problem}
+
+\begin{problem*}[Understanding Question]
+Explain why you need or can use a centroid to reduce the integrals. This will help you in the next exercise.
+\end{problem*}
+
 
 \begin{problem}
 Repeat the previous exercise, but change the curve $C$ to the boundary of the triangular region $R$ with vertexes at $(0,0)$, $(3,0)$, and $(3,6)$.  You can complete this exercise without having to set up the bounds on any integrals, if you reduce the integrals to facts about area and centroids. You are welcome to look up the centroid of a triangular region without computing it.
