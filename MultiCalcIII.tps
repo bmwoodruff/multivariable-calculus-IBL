@@ -32,13 +32,31 @@ NormalPos.top=26
 NormalPos.right=1729
 NormalPos.bottom=894
 Class=LaTeXView
-Document=10-Double-Integrals_v3.tex
+Document=11-Surface-Integrals_v3.tex
 
 [Frame1_View0,0]
-TopLine=527
-Cursor=42129
+TopLine=474
+Cursor=33992
+
+[Frame2]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1729
+NormalPos.bottom=894
+Class=LaTeXView
+Document=05-Functions_v3.tex
+
+[Frame2_View0,0]
+TopLine=441
+Cursor=32582
 
 [SessionInfo]
-FrameCount=2
+FrameCount=3
 ActiveFrame=1
 
