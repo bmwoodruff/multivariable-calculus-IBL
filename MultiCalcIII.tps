@@ -11,8 +11,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1729
-NormalPos.bottom=750
+NormalPos.right=1196
+NormalPos.bottom=1528
 Class=LaTeXView
 Document=MultivariableCalculus_v3.tex
 
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1729
-NormalPos.bottom=750
+NormalPos.right=1196
+NormalPos.bottom=1528
 Class=LaTeXView
-Document=12-Triple-Integrals_v3.tex
+Document=07-Motion_v3.tex
 
 [Frame1_View0,0]
-TopLine=0
-Cursor=832
+TopLine=989
+Cursor=40277
 
 [Frame2]
 Flags=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1729
-NormalPos.bottom=750
+NormalPos.right=1196
+NormalPos.bottom=1528
 Class=LaTeXView
-Document=07-Motion_v3.tex
+Document=09-Optimization_v3.tex
 
 [Frame2_View0,0]
-TopLine=911
-Cursor=64743
+TopLine=474
+Cursor=30110
 
 [Frame3]
 Flags=0
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1729
-NormalPos.bottom=750
+NormalPos.right=1196
+NormalPos.bottom=1528
 Class=LaTeXView
-Document=09-Optimization_v3.tex
+Document=12-Triple-Integrals_v3.tex
 
 [Frame3_View0,0]
-TopLine=360
-Cursor=30110
+TopLine=0
+Cursor=832
 
 [Frame4]
 Flags=0
@@ -83,8 +83,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1729
-NormalPos.bottom=750
+NormalPos.right=1196
+NormalPos.bottom=1528
 Class=LaTeXView
 Document=11-Surface-Integrals_v3.tex
 
@@ -101,8 +101,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1729
-NormalPos.bottom=750
+NormalPos.right=1196
+NormalPos.bottom=1528
 Class=LaTeXView
 Document=06-Derivatives_v3.tex
 
@@ -119,16 +119,16 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1729
-NormalPos.bottom=750
+NormalPos.right=1196
+NormalPos.bottom=1528
 Class=LaTeXView
 Document=10-Double-Integrals_v3.tex
 
 [Frame6_View0,0]
-TopLine=18
+TopLine=12
 Cursor=2671
 
 [SessionInfo]
 FrameCount=7
-ActiveFrame=3
+ActiveFrame=0
 
