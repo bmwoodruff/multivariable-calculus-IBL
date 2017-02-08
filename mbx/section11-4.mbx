@@ -1,0 +1,161 @@
+
+<section>
+  <title>Switching Coordinates: The Generalized Jacobian</title>
+  <p>
+  In this section you will learn how to...
+
+  <ul>
+    <li><p>
+        switch coordinate systems for integration (<m>u</m>-substitution for higher dimensions)
+      </p></li>
+  </ul>
+  </p>
+
+  <p>
+    To find the Jacobian of the transformation <m>\vec T(u,v)=(x(u,v), y(u,v))</m>, we first find the derivative of <m>\vec T</m>. This is a square matrix, so it has a determinant, which should give us information about area. As the determinant may be positive or negative, we then take the absolute value to obtain the Jacobian. Formally:
+  </p>
+
+  <definition>
+    <statement>
+      <p>
+        Suppose <m>\vec T(u,v)=(x(u,v),y(u,v))</m> is a differentiable coordinate transformation. The Jacobian of the transformation <m>\vec T</m> is the absolute value of the determinant of the derivative. EXTRA<fn>For a tongue twister, say <q>the absolute value of the determinant of the derivative</q> ten times really fast.</fn>
+        Notationally we write
+        <me>
+          J(u,v) = \frac{\partial (x,y)}{\partial (u,v)} = |\det(D\vec T(u,v))|.
+        </me>
+      </p>
+    </statement>
+  </definition>
+
+  <problem>
+    <p>
+    Consider the transformation <m>u=x+2y</m> and <m>v=2x-y</m>.
+
+    <ol>
+      <li><p>
+          Solve for <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m>.
+        </p></li>
+
+      <li><p>
+          Next compute the Jacobian <m>\frac{\partial (x,y)}{\partial (u,v)}</m>.
+        </p></li>
+
+      <li><p>
+          We were give <m>u</m> and <m>v</m> in terms of <m>x</m> and <m>y</m>, so we could have directly computed <m>\frac{\partial (u,v)}{\partial (x,y)}</m>. Do so now.
+        </p></li>
+
+      <li><p>
+          Make a conjecture about the relationship between <m>\frac{\partial (x,y)}{\partial (u,v)}</m> and <m>\frac{\partial (u,v)}{\partial (x,y)}</m>.
+        </p></li>
+    </ol>
+    </p>
+  </problem>
+
+  <theorem>
+    <statement>
+      <p>
+        Suppose that <m>f</m> is integrable over a region <m>R_{xy}</m> in the <m>xy</m> plane. Suppose that <m>\vec T(u,v)=(x(u,v),y(u,v))</m> is a coordinate transformation that has the Jacobian <m>\ds \frac{\partial (x,y)}{\partial (u,v)}</m>. Suppose the region <m>R_{uv}</m> in the <m>uv</m>-plane corresponds to the region <m>R_{xy}</m> in the <m>xy</m>-plane. Provided the Jacobian is nonzero except possibly on regions with zero area, we can then write
+        <me>
+          \iint_{R_{xy}} f(x,y) dxdy = \iint_{R_{uv}} f(x(u,v),y(u,v)) \frac{\partial (x,y)}{\partial (u,v)} dudv.
+        </me>
+      </p>
+
+      <p>
+        We can remember this in differential form as
+        <me>
+          dxdy = \frac{\partial (x,y)}{\partial (u,v)} dudv.
+        </me>
+      </p>
+    </statement>
+  </theorem>
+
+  <p>
+    Let's use this to rapidly find the area inside of an ellipse.
+  </p>
+
+  <problem>
+    <p>
+    Consider the region <m>R</m> inside the ellipse <m>\left(\dfrac{x}{a}\right)^2+\left(\dfrac{y}{b}\right)^2=1</m>. We'll consider the change of coordinates given by <m>u=(x/a)</m> and <m>v=(y/b)</m>.
+
+    <ol>
+      <li><p>
+          Draw the region <m>R</m> in the <m>xy</m>-plane.
+        </p></li>
+
+      <li><p>
+          After substituting <m>u=x/a</m> and <m>v=y/b</m>, draw the region <m>R_{uv}</m> in the <m>uv</m>-plane.  You should have a circle.
+        </p></li>
+
+      <li><p>
+          What is the area inside this circle in the <m>uv</m>-plane?
+        </p></li>
+
+      <li><p>
+          Solve for <m>x</m> and <m>y</m>, and then compute the Jacobian  <m>\dfrac{\partial (x,y)}{\partial (u,v)}</m>.
+        </p></li>
+
+      <li><p>
+          Show how to get the same result from directly computing <m>\dfrac{\partial (u,v)}{\partial (x,y)}</m>.
+        </p></li>
+
+      <li><p>
+        We know the area in the <m>xy</m>-plane of the ellipse is <m>\iint_{R_{xy}} dxdy</m>. Use the previous theorem to switch to an integral over the region <m>R_{uv}</m>.  Then evaluate this integral by using facts about area to prove that the area in the <m>xy</m> plane is <m>\pi a b</m>.
+        <hint>
+          <p>
+            you don't actually have to set up any bounds, rather just reduce this to an area integral over the region <m>R_{uv}</m>.
+          </p>
+        </hint>
+        </p></li>
+    </ol>
+    </p>
+  </problem>
+
+  <problem>
+    <p>
+      Let <m>R</m> be the region in the plane bounded by the curves:
+      <md>
+        <mrow>x+2y\amp =1</mrow>
+        <mrow>x+2y\amp =4</mrow>
+        <mrow>2x-y\amp =0</mrow>
+        <mrow>2x-y\amp =8</mrow>
+      </md>
+    </p>
+
+    <p>
+    We want to compute the integral <m>\iint_R xdxdy</m> using a change of coordinates. [Challenge: Try doing this without looking at the steps in the next paragraph]
+
+    <ol>
+      <li><p>
+          Draw the region <m>R</m> in the <m>xy</m>-plane.
+        </p></li>
+
+      <li><p>
+          Use the change of coordinates <m>u=x+2y</m> and <m>v=2x-y</m> to evaluate this integral.
+        </p></li>
+
+      <li><p>
+          What are the bounds for <m>u</m> and <m>v</m>?  You'll want to solve for <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m>, and then you'll need a Jacobian.
+        </p></li>
+
+      <li><p>
+          Make sure you provide a sketch of the region <m>R_{uv}</m> in the <m>uv</m>-plane (it should be a rectangle).
+        </p></li>
+    </ol>
+    </p>
+  </problem>
+
+  <problem>
+    <p>
+      EXTRA<fn>
+      BMW: This is problem 7 in section 15.8.
+
+
+      </fn>
+      Use the transformation <m>u=3x+2y</m> and <m>v=x+4y</m> to evaluate the integral
+      <me>
+        \iint_R (3x^2+14xy+8y^2)dxdy =\iint_R (3x+2y)(x+4y)dxdy
+      </me>
+      for the region <m>R</m> that is bounded by the lines <m>y=-(3/2)x+1</m>, <m>y=-(3/2)x+3</m>, <m>y=-(1/4)x</m>, and <m>y=(-1/4)x+1</m>.
+    </p>
+  </problem>
+</section>

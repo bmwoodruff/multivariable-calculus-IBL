@@ -1,0 +1,284 @@
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Double Integrals</title>
+  <introduction>
+    <p>
+    This unit covers the following ideas. \valposhort{In preparation for the concept checks and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts.} BMW: In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.
+
+    <ol>
+      <li><p>
+          Explain how to setup and compute a double integral. Show how to interchange the bounds of integration.
+        </p></li>
+
+      <li><p>
+          For planar regions, find area, mass, centroids, center of mass, moments of inertia, and radii of gyration.
+        </p></li>
+
+      <li><p>
+          Explain how to change coordinate systems in integration, in particular to polar coordinates.
+        </p></li>
+
+      <li><p>
+          Explain what the Jacobian is, and show how to use it.
+        </p></li>
+
+      <li><p>
+          Explain how to use Green's theorem to compute flow along and flux across a curve.
+        </p></li>
+    </ol>
+    </p>
+
+    <p>
+      BMW: The following homework problems line up with the topics in class.
+    </p>
+    <tabular>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Topic (11th ed)</cell>
+        <cell>Sec</cell>
+        <cell>Basic Practice</cell>
+        <cell>Good Problems</cell>
+        <cell>Thy/App</cell>
+        <cell>Comp</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Double Integrals</cell>
+        <cell>15.1</cell>
+        <cell>1-16, 21-50</cell>
+        <cell>17-20, 51-54, 57-66</cell>
+        <cell>55-56</cell>
+        <cell>67-76</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Double Integral Applications</cell>
+        <cell>15.2</cell>
+        <cell>1-12, 15-18, 19-40</cell>
+        <cell>13, 14, 41-48, 53-56</cell>
+        <cell>49-52</cell>
+        <cell></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Polar Coordinates</cell>
+        <cell>15.3</cell>
+        <cell>1-22,23-32</cell>
+        <cell>33-42 (do 37 and 40 for sure)</cell>
+        <cell></cell>
+        <cell>43-46</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Jacobian</cell>
+        <cell>15.7</cell>
+        <cell>1-8, 15-17</cell>
+        <cell>9-10,12-14, 19-22</cell>
+        <cell>18, 24</cell>
+        <cell></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Green's Theorem</cell>
+        <cell>16.4</cell>
+        <cell>1-20</cell>
+        <cell>21-34, 39-40</cell>
+        <cell>35-38</cell>
+        <cell>41-44</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    <tabular>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Topic {12th ed}</cell>
+        <cell>Sec</cell>
+        <cell>Basic Practice</cell>
+        <cell>Good Problems</cell>
+        <cell>Thy/App</cell>
+        <cell>Comp</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Double Integrals (rect.)</cell>
+        <cell>15.1</cell>
+        <cell>1-28</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Double Integrals</cell>
+        <cell>15.2</cell>
+        <cell>1-24,33-46</cell>
+        <cell>19-32, 47-56,57-68</cell>
+        <cell>69-84</cell>
+        <cell>85-94</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Area, Average Value</cell>
+        <cell>15.3</cell>
+        <cell>1-22</cell>
+        <cell>23-25</cell>
+        <cell>26</cell>
+        <cell></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Polar Integrals</cell>
+        <cell>15.4</cell>
+        <cell>1-16</cell>
+        <cell>17-26, 27-36,41</cell>
+        <cell>37-40, 42-46</cell>
+        <cell>47-50</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Double Integral Applications</cell>
+        <cell>15.6</cell>
+        <cell>1-20</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Jacobian</cell>
+        <cell>15.8</cell>
+        <cell>1-8, 17-19</cell>
+        <cell>9-10,12-16, 21-24</cell>
+        <cell>20, 26</cell>
+        <cell></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Green's Theorem</cell>
+        <cell>16.4</cell>
+        <cell>1-24</cell>
+        <cell>25-38, 42</cell>
+        <cell>39-41</cell>
+        <cell>43-46</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+  </introduction>
+  <xi:include  href="section11-1.mbx" />
+  <xi:include  href="section11-2.mbx" />
+  <xi:include  href="section11-3.mbx" />
+  <xi:include  href="section11-4.mbx" />
+  <xi:include  href="section11-5.mbx" />
+</chapter>
