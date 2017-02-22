@@ -1,0 +1,214 @@
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Optimization</title>
+  <introduction>
+    <p>
+    This unit covers the following ideas. \valposhort{In preparation for the quiz and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts. }BMW: In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.
+
+    <ol>
+      <li><p>
+          Explain the properties of the gradient, its relation to level curves and level surfaces, and how it can be used to find directional derivatives.
+        </p></li>
+
+      <li><p>
+          Find equations of tangent planes using the gradient and level surfaces. Use the derivative (tangent planes) to approximate functions, and use this in real world application problems.
+        </p></li>
+
+      <li><p>
+          Explain the second derivative test in terms of eigenvalues. Use the second derivative test to optimize functions of several variables.
+        </p></li>
+
+      <li><p>
+          Use Lagrange multipliers to optimize a function subject to constraints.
+        </p></li>
+    </ol>
+    </p>
+
+    <p>
+      BMW: The following homework exercises line up with the topics we will discuss in class.
+    </p>
+    <tabular>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Topic (11th ed.)</cell>
+        <cell>Sec</cell>
+        <cell>Basic Practice</cell>
+        <cell>Good Problems</cell>
+        <cell>Thy/App</cell>
+        <cell>Comp</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Directional Derivatives and the Gradient</cell>
+        <cell>14.5</cell>
+        <cell>1-22</cell>
+        <cell>23-32</cell>
+        <cell>33-36</cell>
+        <cell></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Tangent Planes and approximation</cell>
+        <cell>14.6</cell>
+        <cell>1-22</cell>
+        <cell>23-24, 47-58, 60-63</cell>
+        <cell>59</cell>
+        <cell></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>2nd Derivative Test (use eigenvalues)</cell>
+        <cell>14.7</cell>
+        <cell>1-38</cell>
+        <cell>39-44, 49-52,</cell>
+        <cell>45-48, 53-64</cell>
+        <cell>65-70</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Lagrange Multipliers</cell>
+        <cell>14.8</cell>
+        <cell>1-32</cell>
+        <cell>33-40</cell>
+        <cell>41-44</cell>
+        <cell>45-50</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    <tabular>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Topic (12th ed.)</cell>
+        <cell>Sec</cell>
+        <cell>Basic Practice</cell>
+        <cell>Good Problems</cell>
+        <cell>Thy/App</cell>
+        <cell>Comp</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Directional Derivatives and the Gradient</cell>
+        <cell>14.5</cell>
+        <cell>1-24</cell>
+        <cell>25-36</cell>
+        <cell>37-40</cell>
+        <cell></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Tangent Planes and approximation</cell>
+        <cell>14.6</cell>
+        <cell>1-22</cell>
+        <cell>23-24, 31-32, 49-62, 64-67</cell>
+        <cell>63</cell>
+        <cell></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>2nd Derivative Test (use eigenvalues)</cell>
+        <cell>14.7</cell>
+        <cell>1-38</cell>
+        <cell>39-44, 49-60,</cell>
+        <cell>45-48, 61-68</cell>
+        <cell>69-74</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Lagrange Multipliers</cell>
+        <cell>14.8</cell>
+        <cell>1-32</cell>
+        <cell>33-40</cell>
+        <cell>41-44</cell>
+        <cell>45-50</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+  </introduction>
+  <xi:include  href="section10-1.mbx" />
+  <xi:include  href="section10-2.mbx" />
+  <xi:include  href="section10-3.mbx" />
+</chapter>

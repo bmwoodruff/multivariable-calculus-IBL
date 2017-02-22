@@ -1,0 +1,160 @@
+
+<section>
+  <title>Circulation Density and Stokes' Theorem</title>
+  <p>
+  After completing this sectoin you should...
+
+  <ul>
+    <li><p>
+        Be able to apply Stokes' Theorem to evaluate work integrals over simple closed curves.
+      </p></li>
+  </ul>
+  </p>
+
+  <p>
+    As a final application of surface integrals, we now generalize the circulation version of Green's theorem to surfaces. With the curl defined earlier, we are prepared to explain Stokes' Theorem.
+  </p>
+
+  <p>
+    Let's start by showing how Green's theorem extends to 3D. A vector field in the plane <m>\vec F = \left(M,N\right)</m> can be extended to 3D by writing <m>\vec F = \left(M,N,0\right)</m>. The curl is <m>\text{ curl } \vec F = \left\lt 0,0,N_x-M_y\right></m>. A normal vector to a surface <m>S</m> in the <m>xy</m> plane is <m>\vec n = \left\lt 0,0,1\right></m>. We can then write Green's theorem as
+    <me>
+      \oint_C\vec F\cdot d\vec r = \oint_C Mdx+Ndy = \iint_S \text{ curl } \cdot \vec n d\sigma = \iint_R \left(N_x-M_y\right) dA,
+    </me>
+    where <m>C</m> is a simple closed curve in the plane and <m>S=R</m> is the planar region that is inside <m>C</m>.
+  </p>
+
+  <theorem>
+    <title>Stokes' Theorem</title>
+    <statement>
+      <p>
+        Suppose <m>\vec F(x,y,z) = (M,N,P)</m>. Suppose that <m>S</m> is a surface in the plane, whose boundary is the simple closed curve <m>C</m>. Suppose that <m>\vec n</m> is a continuous unit normal vector to <m>S</m> along the entire surface, where the orientation of <m>\vec n</m> matches the orientation of <m>C</m> according to the right hand rule (meaning that if you curl your right hand around <m>\vec n</m> with your thumb pointing along <m>\vec n</m>, then your fingers will follow the orientation of <m>\vec C</m>). Then Stokes' theorem states that
+        <me>
+          \int_C\vec F\cdot d\vec r = \iint_S \text{ curl } \cdot \vec n d\sigma .
+        </me>
+      </p>
+    </statement>
+  </theorem>
+
+  <problem>
+    <p>
+    Consider the vector field <m>\vec F = (2z,3y,-4x)</m>. Let <m>C</m> be the disc <m>x^2+z^2\leq 9</m> in the plane <m>y=2</m>. Let <m>C</m> be the boundary of this disc, so the circle <m>x^2+z^2=9</m> in the plane <m>y=2</m>. The curve <m>C</m> is oriented in the counterclockwise direction when looked at from the origin.
+
+    <ol>
+      <li><p>
+          Compute the curl of <m>\vec F</m>, and state the unit normal vector <m>\vec n</m> to <m>S</m> that is oriented compatibly with <m>C</m>.
+        </p></li>
+
+      <li><p>
+          Give a parametrization <m>\vec r(t)</m> of the curve <m>C</m>.
+        </p></li>
+
+      <li><p>
+          Verify Stokes' theorem by computing both sides of the equation:
+          <me>
+            \int_C\vec F\cdot d\vec r = \iint_S \text{ curl } \cdot \vec n d\sigma.
+          </me>
+          The left side will require you to set up and evaluate a line integral.  The right side will require you to evaluate a surface integral (though you should be able to reduce this integral to a known quantity).
+        </p></li>
+    </ol>
+    </p>
+  </problem>
+
+  <problem>
+    <p>
+      Consider the vector field <m>\vec F = \left(x+y, y+z, x+z\right)</m>.
+    </p>
+
+    <p>
+    Let <m>C</m> be the space curve which travels around a triangle in <m>\mathbb{R}^3</m> and hits the vertexes <m>(2,0,0)</m>, <m>(0,3,0)</m>, and <m>(0,0,6)</m>, in this order.
+    This triangle lies in the plane <m>S</m> given by <m>\ds \frac x2+\frac y3 +\frac z6=1</m>, or equivalently <m>z=6-3x-2y</m>.
+
+    <ol>
+      <li><p>
+          Give bounds for <m>x</m> and <m>y</m> so that <m>\vec r(x,y)=(x,y,6-3x-2y)</m> is a parametrization of <m>S</m>.
+        </p></li>
+
+      <li><p>
+          Show that the circulation of <m>\vec F</m> along <m>C</m> is <m>-18</m>, by using Stokes' theorem.
+        </p></li>
+    </ol>
+    </p>
+  </problem>
+
+  <problem>
+    <p>
+    Let <m>\vec F = \left\lt z,y^2,x^2\right></m>. The surface <m>S</m>, parametrized by <m>\vec r(u,v) = \left\lt u\cos v,u\sin v, u\right></m> for <m>0\leq u\leq 1</m> and <m>0\leq v\leq 2\pi</m> is a cone. The boundary of <m>S</m> is the curve <m>C</m> is a circle of radius one at height <m>z=1</m>. If we choose as our normal vector to <m>S</m> the outward normal (away from the <m>z</m>-axis), then to use Stokes' theorem we must orient <m>C</m> counterclockwise as seen from below the surface.
+
+    <ol>
+      <li><p>
+          Find <m>\vec n d\sigma</m> (the product should allow you to ignore magnitudes).
+        </p></li>
+
+      <li><p>
+          Give a parameterization of <m>C</m> that is oriented compatibly with <m>\vec n</m>.
+        </p></li>
+
+      <li><p>
+          Set up both integrals in Stokes' theorem. Don't evaluate either.
+        </p></li>
+
+      <li><p>
+          Note that the surface <m>S_2</m>, which is the disc <m>x^2+y^2\leq 1</m> at height <m>z=1</m>, has the same boundary <m>C</m> as surface <m>S</m>. The normal vectors to <m>S_2</m> are <m>(0,0,\pm 1)</m>. Use Stokes' theorem to compute both integrals above.
+        </p></li>
+    </ol>
+    </p>
+
+    <p>
+      Being creative in your choice of surface can sometimes make a problem trivial.
+    </p>
+  </problem>
+
+  <problem>
+    <p>
+    Let <m>\vec F(x,y,z)=(M,N,P)</m> be a continuously differentiable vector field. Suppose that <m>\vec F</m> has a potential (so that <m>D\vec F</m> is symmetric).
+
+    <ol>
+      <li><p>
+          Compute the derivative of <m>F</m> as a square matrix.
+        </p></li>
+
+      <li><p>
+          Explain which partial derivatives must be equal.
+        </p></li>
+
+      <li><p>
+          Use this information to find the curl of <m>\vec F</m> if <m>\vec F</m> has a potential.
+        </p></li>
+
+      <li><p>
+          According to Stokes' Theorem, what is the circulation of <m>\vec F</m> along any closed path, provided <m>\vec F</m> has a potential?
+        </p></li>
+    </ol>
+    </p>
+  </problem>
+
+  <p>
+    BMW: \section{Wrap Up}
+    Once you have finished the problems in this Unit and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.
+
+
+
+    \valposhort{\section{Wrap Up}
+    This concludes the Unit .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
+
+    \instructor{TeX files for these are included in a separate folder in the GitHub Project}
+    \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+    <em>Review Guide Creation</em>
+
+
+    Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+
+
+    As you create this review guide, consider the following:
+    \begin{itemize}
+     \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+     \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+    \end{itemize}
+    }
+  </p>
+</section>
