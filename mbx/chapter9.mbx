@@ -3,25 +3,32 @@
   <title>Line Integrals</title>
   <introduction>
     <p>
-    This unit covers the following ideas. \valposhort{In preparation for the concept checks and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts.} BMW: In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.
+      This unit covers the following ideas. \valposhort{In preparation for the concept checks and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts.} \bmw{In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.}
+      <ol>
+        <li>
+          <p>
+            Describe how to integrate a function along a curve. Use line integrals to find the area of a sheet of metal with height <m>z=f(x,y)</m> above a curve <m>\vec r(t)=\left(x,y\right)</m> and the average value of a function along a curve.
+          </p>
+        </li>
 
-    <ol>
-      <li><p>
-          Describe how to integrate a function along a curve. Use line integrals to find the area of a sheet of metal with height <m>z=f(x,y)</m> above a curve <m>\vec r(t)=\left(x,y\right)</m> and the average value of a function along a curve.
-        </p></li>
+        <li>
+          <p>
+            Find the following geometric properties of a curve: centroid, mass, center of mass, inertia, and radii of gyration.
+          </p>
+        </li>
 
-      <li><p>
-          Find the following geometric properties of a curve: centroid, mass, center of mass, inertia, and radii of gyration.
-        </p></li>
+        <li>
+          <p>
+            Compute the work (flow, circulation) and flux of a vector field along and across piecewise smooth curves.
+          </p>
+        </li>
 
-      <li><p>
-          Compute the work (flow, circulation) and flux of a vector field along and across piecewise smooth curves.
-        </p></li>
-
-      <li><p>
-          Determine if a field is a gradient field (hence conservative), and use the fundamental theorem of line integrals to simplify work calculations.
-        </p></li>
-    </ol>
+        <li>
+          <p>
+            Determine if a field is a gradient field (hence conservative), and use the fundamental theorem of line integrals to simplify work calculations.
+          </p>
+        </li>
+      </ol>
     </p>
 
     <p>
@@ -103,35 +110,41 @@
     </table>
 
     <p>
-    Dr. Ben Woodruff has created a YouTube playlist to go along with this chapter. Each video is about 4-6 minutes long.
+      Dr. Ben Woodruff has created a YouTube playlist to go along with this chapter. Each video is about 4-6 minutes long.
+      <ul>
+        <li>
+          <p>
+            <url href="http://www.youtube.com/playlist?list=PL04DF68E73B7ECD54">YouTube playlist for 08 - Line Integrals</url>.
+          </p>
+        </li>
 
-    <ul>
-      <li><p>
-          <url href="http://www.youtube.com/playlist?list=PL04DF68E73B7ECD54">YouTube playlist for 08 - Line Integrals</url>.
-        </p></li>
-
-      <li><p>
-          <url href="http://db.tt/dAFBcMB7">A PDF copy of the finished product</url> (so you can follow along on paper).
-        </p></li>
-    </ul>
+        <li>
+          <p>
+            <url href="http://db.tt/dAFBcMB7">A PDF copy of the finished product</url> (so you can follow along on paper).
+          </p>
+        </li>
+      </ul>
     </p>
 
     <p>
-    You'll also find the following links to Sage can help you speed up your time spent on homework. Dr. Woodruff would like to thank Dr. Jason Grout (formerly) at Drake University for contributing many of these (as well as being a constant help with editing, rewriting, and giving me great feedback).
+      You'll also find the following links to Sage can help you speed up your time spent on homework. Dr. Woodruff would like to thank Dr. Jason Grout (formerly) at Drake University for contributing many of these (as well as being a constant help with editing, rewriting, and giving me great feedback).
+      <ul>
+        <li>
+          <p>
+            <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=sage_links">Sage Links</url>
+          </p>
+        </li>
 
-    <ul>
-      <li><p>
-          <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=sage_links">Sage Links</url>
-        </p></li>
-
-      <li><p>
-          <url href="https://content.byui.edu/file/3e8d885f-db47-4e74-9e04-c3d72627c835/1/_zips/215-Tech-Introduction.zip">Mathematica Notebook</url> (If you have installed Mathematica)
-        </p></li>
-    </ul>
+        <li>
+          <p>
+            <url href="https://content.byui.edu/file/3e8d885f-db47-4e74-9e04-c3d72627c835/1/_zips/215-Tech-Introduction.zip">Mathematica Notebook</url> (If you have installed Mathematica)
+          </p>
+        </li>
+      </ul>
     </p>
 
     <p>
-      BMW: If you would like homework exercises from the text that line up with the ideas we are studying, please use the following tables.
+      \bmw{If you would like homework exercises from the text that line up with the ideas we are studying, please use the following tables.
     </p>
     <tabular>
       <row bottom="minor">

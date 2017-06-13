@@ -2,17 +2,20 @@
 <section>
   <title>Green's Theorem</title>
   <p>
-  In this section you will...
+    In this section you will...
+    <ul>
+      <li>
+        <p>
+          See applications of double integrals: Circulation Density and Flux Density
+        </p>
+      </li>
 
-  <ul>
-    <li><p>
-        See applications of double integrals: Circulation Density and Flux Density
-      </p></li>
-
-    <li><p>
-        Learn to use Green's Theorem to compute circulation/work and flux
-      </p></li>
-  </ul>
+      <li>
+        <p>
+          Learn to use Green's Theorem to compute circulation/work and flux
+        </p>
+      </li>
+    </ul>
   </p>
 
   <p>
@@ -23,26 +26,29 @@
     <title>Circulation Density and Flux Density (Divergence)</title>
     <statement>
       <p>
-      Let <m>\vec F(x,y)=\left\lt M,N\right></m> be a continuously differentiable vector field.
-      At the point <m>(x,y)</m> in the plane, create a circle <m>C_a</m> of radius <m>a</m> centered at <m>(x,y)</m>, where the area inside of <m>C_a</m> is <m>A_a=\pi a^2</m>. The quotient <m>\ds \frac{1}{A_a}\oint_{C_a} \vec F \cdot \vec T ds</m> is a circulation per area. The quotient <m>\ds \frac{1}{A_a}\oint_{C_a} \vec F \cdot \vec n ds</m> is a flux per area.
+        Let <m>\vec F(x,y)=\left\lt M,N\right></m> be a continuously differentiable vector field.
+        At the point <m>(x,y)</m> in the plane, create a circle <m>C_a</m> of radius <m>a</m> centered at <m>(x,y)</m>, where the area inside of <m>C_a</m> is <m>A_a=\pi a^2</m>. The quotient <m>\ds \frac{1}{A_a}\oint_{C_a} \vec F \cdot \vec T ds</m> is a circulation per area. The quotient <m>\ds \frac{1}{A_a}\oint_{C_a} \vec F \cdot \vec n ds</m> is a flux per area.
+        <ul>
+          <li>
+            <p>
+              EXTRA<fn>We will not prove that the partial derivative expressions <m>N_x-M_y</m> and <m>M_x+N_y</m> are actually equal to the limits given here. That is best left to an advanced course.</fn>The circulation density of <m>\vec F</m> at <m>(x,y)</m> we define to be
+              <me>
+                \frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}=N_x-M_y = \lim_{a\to 0} \frac{1}{A_a}\oint_{C_a} \vec F \cdot  d\vec r = 
+                \lim_{a\to 0} \frac{1}{A_a}\oint_{C_a} Mdx+Ndy.
+              </me>
+            </p>
+          </li>
 
-      <ul>
-        <li><p>
-            EXTRA<fn>We will not prove that the partial derivative expressions <m>N_x-M_y</m> and <m>M_x+N_y</m> are actually equal to the limits given here. That is best left to an advanced course.</fn>The circulation density of <m>\vec F</m> at <m>(x,y)</m> we define to be
-            <me>
-              \frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}=N_x-M_y = \lim_{a\to 0} \frac{1}{A_a}\oint_{C_a} \vec F \cdot  d\vec r = 
-              \lim_{a\to 0} \frac{1}{A_a}\oint_{C_a} Mdx+Ndy.
-            </me>
-          </p></li>
-
-        <li><p>
-            The divergence, or flux density, of <m>\vec F</m> at <m>(x,y)</m> we define to be
-            <me>
-              \frac{\partial M}{\partial x}+\frac{\partial N}{\partial y}=M_x+N_y=\lim_{a\to 0} \frac{1}{A_a}\oint_{C_a} \vec F \cdot \vec n ds = 
-              \lim_{a\to 0} \frac{1}{A_a}\oint_{C_a} Mdy-Ndx.
-            </me>
-          </p></li>
-      </ul>
+          <li>
+            <p>
+              The divergence, or flux density, of <m>\vec F</m> at <m>(x,y)</m> we define to be
+              <me>
+                \frac{\partial M}{\partial x}+\frac{\partial N}{\partial y}=M_x+N_y=\lim_{a\to 0} \frac{1}{A_a}\oint_{C_a} \vec F \cdot \vec n ds = 
+                \lim_{a\to 0} \frac{1}{A_a}\oint_{C_a} Mdy-Ndx.
+              </me>
+            </p>
+          </li>
+        </ul>
       </p>
     </statement>
   </definition>
@@ -55,17 +61,20 @@
   </p>
 
   <p>
-  To understand what the circulation and flux density mean in a physical sense, think of <m>\vec F</m> as the velocity field of some gas.
+    To understand what the circulation and flux density mean in a physical sense, think of <m>\vec F</m> as the velocity field of some gas.
+    <ul>
+      <li>
+        <p>
+          The circulation density tells us the rate at which the vector field <m>\vec F</m> causes objects to rotate around points.  If circulation density is positive, then particles near <m>(x,y)</m> would tend to circulate around the point in a counterclockwise direction. The larger the circulation density, the faster the rotation. The velocity field of a gas could have some regions where the gas is swirling clockwise, and some regions where the gas is swirling counterclockwise.
+        </p>
+      </li>
 
-  <ul>
-    <li><p>
-        The circulation density tells us the rate at which the vector field <m>\vec F</m> causes objects to rotate around points.  If circulation density is positive, then particles near <m>(x,y)</m> would tend to circulate around the point in a counterclockwise direction. The larger the circulation density, the faster the rotation. The velocity field of a gas could have some regions where the gas is swirling clockwise, and some regions where the gas is swirling counterclockwise.
-      </p></li>
-
-    <li><p>
-        The divergence, or flux density, tells us the rate at which the vector field causes object to either flee from <m>(x,y)</m> or come towards <m>(x,y)</m>. For the velocity field of a gas, the gas is expanding at points where the divergence is positive, and contracting at points where the divergence is negative.
-      </p></li>
-  </ul>
+      <li>
+        <p>
+          The divergence, or flux density, tells us the rate at which the vector field causes object to either flee from <m>(x,y)</m> or come towards <m>(x,y)</m>. For the velocity field of a gas, the gas is expanding at points where the divergence is positive, and contracting at points where the divergence is negative.
+        </p>
+      </li>
+    </ul>
   </p>
 
   <p>
@@ -89,86 +98,95 @@
   <p>
     Let's now use this theorem to rapidly find circulation (work) and flux.
   </p>
+  <exercise>
+    <statement>
+      <p>
+        EXTRA<fn>
+        \bmw{See 16.4 for more practice.  Try doing a bunch of these, as they get really fast.}
+        </fn>
+        Consider a rectangle <m>C</m> where the boundary of the rectangle are <m>2\leq x\leq 7</m> and <m>0\leq y\leq 3</m>. The rectangle is subject to a vector field <m>\vec F=(2x+3y,4x+5y)</m>.
+        <ol>
+          <li>
+            <p>
+              Compute <m>N_x-M_y</m>
+            </p>
+          </li>
 
-  <problem>
-    <p>
-    EXTRA<fn>
-    BMW: See 16.4 for more practice.  Try doing a bunch of these, as they get really fast.
+          <li>
+            <p>
+              Compute <m>M_x+N_y</m>.
+            </p>
+          </li>
 
+          <li>
+            <p>
+              Find the circulation of <m>\vec F</m> along <m>C</m>
+            </p>
+          </li>
 
-    </fn>
-    Consider a rectangle <m>C</m> where the boundary of the rectangle are <m>2\leq x\leq 7</m> and <m>0\leq y\leq 3</m>. The rectangle is subject to a vector field <m>\vec F=(2x+3y,4x+5y)</m>.
-
-    <ol>
-      <li><p>
-          Compute <m>N_x-M_y</m>
-        </p></li>
-
-      <li><p>
-          Compute <m>M_x+N_y</m>.
-        </p></li>
-
-      <li><p>
-          Find the circulation of <m>\vec F</m> along <m>C</m>
-        </p></li>
-
-      <li><p>
-          Find the flux of <m>\vec F</m> along <m>C</m>
-        </p></li>
-    </ol>
-    </p>
-    <hint>
+          <li>
+            <p>
+              Find the flux of <m>\vec F</m> along <m>C</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+      <hint>
       <p>
         The last two should reduce to facts about area.
       </p>
-    </hint>
-    <p>
-      Note: If you tried doing this without Green's theorem, you would have to parametrize 4 line segments, compute 4 integrals, and then sum the results.
-    </p>
-  </problem>
+      </hint>
+      <p>
+        Note: If you tried doing this without Green's theorem, you would have to parametrize 4 line segments, compute 4 integrals, and then sum the results.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider the vector field <m>\vec F=(x^2+y^2,3x+5y)</m> and <m>C</m>, the circle <m>(x-3)^2+(y+1)^2=4</m> (oriented counterclockwise).
+        <ol>
+          <li>
+            <p>
+              Start by computing <m>N_x-M_y</m> and <m>M_x+N_y</m>.
+            </p>
+          </li>
 
-  <problem>
-    <p>
-    Consider the vector field <m>\vec F=(x^2+y^2,3x+5y)</m> and <m>C</m>, the circle <m>(x-3)^2+(y+1)^2=4</m> (oriented counterclockwise).
-
-    <ol>
-      <li><p>
-          Start by computing <m>N_x-M_y</m> and <m>M_x+N_y</m>.
-        </p></li>
-
-      <li><p>
-          Now find both the circulation and flux of <m>\vec F</m> along <m>C</m>.
-        </p></li>
-    </ol>
-    </p>
+          <li>
+            <p>
+              Now find both the circulation and flux of <m>\vec F</m> along <m>C</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
     <hint>
       <p>
         You should be able to reduce the integrals to facts about the area and centroid.
       </p>
     </hint>
-  </problem>
-
-  <problem>
+  </exercise>
+  <exercise>
     <title>Understanding Question</title>
-    <p>
-      Explain why you need or can use a centroid to reduce the integrals. This will help you in the next exercise.
-    </p>
-  </problem>
-
-  <problem>
-    <p>
-      Repeat the previous exercise, but change the curve <m>C</m> to the boundary of the triangular region <m>R</m> with vertexes at <m>(0,0)</m>, <m>(3,0)</m>, and <m>(3,6)</m>. You can complete this exercise without having to set up the bounds on any integrals, if you reduce the integrals to facts about area and centroids. You are welcome to look up the centroid of a triangular region without computing it.
-    </p>
-  </problem>
-
+    <statement>
+      <p>
+        Explain why you need or can use a centroid to reduce the integrals. This will help you in the next exercise.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Repeat the previous exercise, but change the curve <m>C</m> to the boundary of the triangular region <m>R</m> with vertexes at <m>(0,0)</m>, <m>(3,0)</m>, and <m>(3,6)</m>. You can complete this exercise without having to set up the bounds on any integrals, if you reduce the integrals to facts about area and centroids. You are welcome to look up the centroid of a triangular region without computing it.
+      </p>
+    </statement>
+  </exercise>
   <p>
-    BMW: \section{Wrap Up}
-    Once you have finished the problems in this Unit and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.
-
-
+    \bmw{\section{Wrap Up}
+    Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
 
     \valposhort{\section{Wrap Up}
-    This concludes the Unit .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
+    This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
     \instructor{TeX files for these are included in a separate folder in the GitHub Project}
     \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}

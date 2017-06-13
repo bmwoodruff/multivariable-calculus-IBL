@@ -3,33 +3,42 @@
   <title>Double Integrals</title>
   <introduction>
     <p>
-    This unit covers the following ideas. \valposhort{In preparation for the concept checks and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts.} BMW: In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.
+      This unit covers the following ideas. \valposhort{In preparation for the concept checks and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts.} \bmw{In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.}
+      <ol>
+        <li>
+          <p>
+            Explain how to setup and compute a double integral. Show how to interchange the bounds of integration.
+          </p>
+        </li>
 
-    <ol>
-      <li><p>
-          Explain how to setup and compute a double integral. Show how to interchange the bounds of integration.
-        </p></li>
+        <li>
+          <p>
+            For planar regions, find area, mass, centroids, center of mass, moments of inertia, and radii of gyration.
+          </p>
+        </li>
 
-      <li><p>
-          For planar regions, find area, mass, centroids, center of mass, moments of inertia, and radii of gyration.
-        </p></li>
+        <li>
+          <p>
+            Explain how to change coordinate systems in integration, in particular to polar coordinates.
+          </p>
+        </li>
 
-      <li><p>
-          Explain how to change coordinate systems in integration, in particular to polar coordinates.
-        </p></li>
+        <li>
+          <p>
+            Explain what the Jacobian is, and show how to use it.
+          </p>
+        </li>
 
-      <li><p>
-          Explain what the Jacobian is, and show how to use it.
-        </p></li>
-
-      <li><p>
-          Explain how to use Green's theorem to compute flow along and flux across a curve.
-        </p></li>
-    </ol>
+        <li>
+          <p>
+            Explain how to use Green's theorem to compute flow along and flux across a curve.
+          </p>
+        </li>
+      </ol>
     </p>
 
     <p>
-      BMW: The following homework problems line up with the topics in class.
+      \bmw{The following homework problems line up with the topics in class.
     </p>
     <tabular>
       <row bottom="minor">

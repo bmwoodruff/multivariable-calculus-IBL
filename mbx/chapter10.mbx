@@ -3,29 +3,36 @@
   <title>Optimization</title>
   <introduction>
     <p>
-    This unit covers the following ideas. \valposhort{In preparation for the quiz and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts. }BMW: In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.
+      This unit covers the following ideas. \valposhort{In preparation for the quiz and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts. }\bmw{In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.}
+      <ol>
+        <li>
+          <p>
+            Explain the properties of the gradient, its relation to level curves and level surfaces, and how it can be used to find directional derivatives.
+          </p>
+        </li>
 
-    <ol>
-      <li><p>
-          Explain the properties of the gradient, its relation to level curves and level surfaces, and how it can be used to find directional derivatives.
-        </p></li>
+        <li>
+          <p>
+            Find equations of tangent planes using the gradient and level surfaces. Use the derivative (tangent planes) to approximate functions, and use this in real world application problems.
+          </p>
+        </li>
 
-      <li><p>
-          Find equations of tangent planes using the gradient and level surfaces. Use the derivative (tangent planes) to approximate functions, and use this in real world application problems.
-        </p></li>
+        <li>
+          <p>
+            Explain the second derivative test in terms of eigenvalues. Use the second derivative test to optimize functions of several variables.
+          </p>
+        </li>
 
-      <li><p>
-          Explain the second derivative test in terms of eigenvalues. Use the second derivative test to optimize functions of several variables.
-        </p></li>
-
-      <li><p>
-          Use Lagrange multipliers to optimize a function subject to constraints.
-        </p></li>
-    </ol>
+        <li>
+          <p>
+            Use Lagrange multipliers to optimize a function subject to constraints.
+          </p>
+        </li>
+      </ol>
     </p>
 
     <p>
-      BMW: The following homework exercises line up with the topics we will discuss in class.
+      \bmw{The following homework exercises line up with the topics we will discuss in class.
     </p>
     <tabular>
       <row bottom="minor">
