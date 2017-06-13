@@ -3,30 +3,39 @@
   <title>Review: Calculus I <ampersand /> II</title>
   <introduction>
     <p>
-    When you complete this unit you should be able to:
+      When you complete this unit you should be able to:
+      <ol>
+        <li>
+          <p>
+            Summarize the ideas you learned in Calculus I and II \valposhort{Math 131 and 132}, including graphing, derivatives (product, quotient, power, chain, trig, exponential, and logarithm rules), and integration (<m>u</m>-sub and integration by parts).
+          </p>
+        </li>
 
-    <ol>
-      <li><p>
-          Summarize the ideas you learned in Calculus I and II \valposhort{Math 131 and 132}, including graphing, derivatives (product, quotient, power, chain, trig, exponential, and logarithm rules), and integration (<m>u</m>-sub and integration by parts).
-        </p></li>
+        <li>
+          <p>
+            Compute the differential <m>dy</m> of a function and use it to approximate the change in a function. 
+            \bmw{
+          </p>
+        </li>
 
-      <li><p>
-          Compute the differential <m>dy</m> of a function and use it to approximate the change in a function. 
-          BMW:
-        </p></li>
+        <li>
+          <p>
+            Explain how to perform matrix multiplication and compute determinants of square matrices. }
+          </p>
+        </li>
 
-      <li><p>
-          Explain how to perform matrix multiplication and compute determinants of square matrices.
-        </p></li>
+        <li>
+          <p>
+            Illustrate how to solve systems of linear equations, including how to express a solution parametrically (in terms of <m>t</m>) when there are infinitely many solutions.
+          </p>
+        </li>
 
-      <li><p>
-          Illustrate how to solve systems of linear equations, including how to express a solution parametrically (in terms of <m>t</m>) when there are infinitely many solutions.
-        </p></li>
-
-      <li><p>
-          Extend the idea of differentials to approximate functions using parabolas, cubics, and polynomials of any degree.
-        </p></li>
-    </ol>
+        <li>
+          <p>
+            Extend the idea of differentials to approximate functions using parabolas, cubics, and polynomials of any degree.
+          </p>
+        </li>
+      </ol>
     </p>
   </introduction>
   <xi:include  href="section1-1.mbx" />
