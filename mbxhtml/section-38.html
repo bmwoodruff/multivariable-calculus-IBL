@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:31:47-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Gradient</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(\renewcommand{\chaptername}{Unit}
+\newcommand{\derivativehomeworklink}[1]{\href{http://db.tt/cSeKG8XO}{#1}}
+\newcommand{\chpname}{unit}
+\newcommand{\sageurlforcurvature}{http://bmw.byuimath.com/dokuwiki/doku.php?id=curvature_calculator}
+\newcommand{\uday}{ \LARGE Day \theunitday \normalsize \flushleft \stepcounter{unitday} }
+\newcommand{\sageworkurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=work_calculator}
+\newcommand{\wrapup}{
+\bmw{\section{Wrap Up}
+Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+
+\valposhort{\section{Wrap Up}
+This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
+\instructor{TeX files for these are included in a separate folder in the GitHub Project}
+\note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+\textbf{Review Guide Creation}\\
+
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname\ review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } \\
+
+As you create this review guide, consider the following:
+\begin{itemize}
+ \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+ \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+\end{itemize}
+} 
+}
+\newcommand{\sagefluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=flux_calculator}
+\newcommand{\instructor}[1]{ EXTRA\footnote{\textcolor{blue}{\textbf{Instructor: }#1}}}
+\newcommand{\sageworkfluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=both_flux_and_work}
+\newcommand{\instructor}[1]{}
+\newcommand{\sagelineintegral}{http://bmw.byuimath.com/dokuwiki/doku.php?id=line_integral_calculator}
+\renewcommand{\thefootnote}{\roman{footnote}}
+\newcommand{\sagephysicalpropertiestwod}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_2d}
+\newcommand{\note}[1]{\footnote{#1} EXTRA\footnote{\fbox{\textbf{\thefootnote}}}}
+\newcommand{\sagephysicalpropertiesthreed}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_3d}
+\newcommand{\note}[1]{}
+\newcommand{\sageDoubleIntegralCheckerURL}{http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator}
+\newcommand{\myscale}{1}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dfdx}[1]{\frac{d#1}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\ii}{\vec \imath}
+\newcommand{\jj}{\vec \jmath}
+\newcommand{\kk}{\vec k}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\R}{ \mathbb{R}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\im}{\text{im }}
+\newcommand{\colvec}[1]{\begin{bmatrix}#1\end{bmatrix}    }
+\newcommand{\cl}[1]{ \begin{matrix}  #1  \end{matrix}    }
+\newcommand{\bm}[1]{ \begin{bmatrix}  #1  \end{bmatrix}  }
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\rref}{rref}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\blank}[1]{[14pt]{\rule{#1}{1pt}}}
+\newcommand{\vp}{^{\,\prime}}
+\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha} }
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Multivariable Calculus</span></a></h1>
+<p class="byline">Ben Woodruff</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-11.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-11.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-39.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-11.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-11.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-39.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Introduction</span></a></h2>
+<ul>
+<li><a href="section-1.html" data-scroll="section-1">Mathematical Truths</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Teaching philosophy</a></li>
+<li><a href="section-3.html" data-scroll="section-3">Modification Notes</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Review: Calculus I &amp; II</span></a></h2>
+<ul>
+<li><a href="section-4.html" data-scroll="section-4">Review of First Semester Calculus</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Differentials</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-7.html" data-scroll="section-7">Solving Systems of equations</a></li>
+<li><a href="section-8.html" data-scroll="section-8">Optional: Higher Order Approximations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span><span class="title">Vectors</span></a></h2>
+<ul>
+<li><a href="section-9.html" data-scroll="section-9">Vectors and Lines</a></li>
+<li><a href="section-10.html" data-scroll="section-10">The Dot Product</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-12.html" data-scroll="section-12">The Cross Product</a></li>
+<li><a href="section-13.html" data-scroll="section-13">The Cross Product and Planes</a></li>
+<li><a href="section-14.html" data-scroll="section-14">Projections and Their Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Review: Conic Sections</span></a></h2>
+<ul><li><a href="section-15.html" data-scroll="section-15">Conic Sections</a></li></ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Parametric Equations</span></a></h2>
+<ul><li><a href="section-16.html" data-scroll="section-16">Parametric Equations</a></li></ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span><span class="title">Polar and New Coordinate Systems</span></a></h2>
+<ul><li><a href="section-17.html" data-scroll="section-17">Polar Coordinates</a></li></ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span><span class="title">Functions</span></a></h2>
+<ul>
+<li><a href="section-18.html" data-scroll="section-18">Function Terminology</a></li>
+<li><a href="section-19.html" data-scroll="section-19">Parametric Curves:</a></li>
+<li><a href="section-20.html" data-scroll="section-20">Parametric Surfaces:</a></li>
+<li><a href="section-21.html" data-scroll="section-21">Functions of Several Variables:</a></li>
+<li><a href="section-22.html" data-scroll="section-22">Constructing Functions</a></li>
+<li><a href="sec_functionlist.html" data-scroll="sec_functionlist">Summary of Functions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span><span class="title">Derivatives</span></a></h2>
+<ul>
+<li><a href="section-24.html" data-scroll="section-24">Introduction</a></li>
+<li><a href="section-25.html" data-scroll="section-25">The (multi-dimensional) Derivative</a></li>
+<li><a href="section-26.html" data-scroll="section-26">Tangent Planes</a></li>
+<li><a href="section-27.html" data-scroll="section-27">The Chain Rule</a></li>
+</ul>
+<h2 class="link"><a href="chapter-9.html" data-scroll="chapter-9"><span class="codenumber">9</span><span class="title">Motion</span></a></h2>
+<ul>
+<li><a href="section-28.html" data-scroll="section-28">Optional: Projectile Motion</a></li>
+<li><a href="section-29.html" data-scroll="section-29">Arc Length and the Unit Tangent Vector</a></li>
+<li><a href="section-30.html" data-scroll="section-30">Some Examples and The TNB Frame</a></li>
+<li><a href="section-31.html" data-scroll="section-31">More Practice</a></li>
+<li><a href="section-32.html" data-scroll="section-32">Tangential And Normal Components</a></li>
+</ul>
+<h2 class="link"><a href="chapter-10.html" data-scroll="chapter-10"><span class="codenumber">10</span><span class="title">Line Integrals</span></a></h2>
+<ul>
+<li><a href="section-33.html" data-scroll="section-33">Work, Flow, Circulation, and Flux</a></li>
+<li><a href="section-34.html" data-scroll="section-34">Area and the Line-Integral</a></li>
+<li><a href="section-35.html" data-scroll="section-35">The Fundamental Theorem of Line Integrals</a></li>
+<li><a href="section-36.html" data-scroll="section-36">Applications: Average Value</a></li>
+<li><a href="section-37.html" data-scroll="section-37">Applications: Physical Properties</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-11.html" data-scroll="chapter-11"><span class="codenumber">11</span><span class="title">Optimization</span></a></h2>
+<ul>
+<li><a href="section-38.html" data-scroll="section-38" class="active">The Gradient</a></li>
+<li><a href="section-39.html" data-scroll="section-39">The Second Derivative Test</a></li>
+<li><a href="section-40.html" data-scroll="section-40">Lagrange Multipliers</a></li>
+</ul>
+<h2 class="link"><a href="chapter-12.html" data-scroll="chapter-12"><span class="codenumber">12</span><span class="title">Double Integrals</span></a></h2>
+<ul>
+<li><a href="section-41.html" data-scroll="section-41">Double Integrals and Applications</a></li>
+<li><a href="section-42.html" data-scroll="section-42">Applications of Double Integrals</a></li>
+<li><a href="section-43.html" data-scroll="section-43">Switching Coordinates: Cartesian to Polar</a></li>
+<li><a href="section-44.html" data-scroll="section-44">Switching Coordinates: The Generalized Jacobian</a></li>
+<li><a href="section-45.html" data-scroll="section-45">Green's Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-13.html" data-scroll="chapter-13"><span class="codenumber">13</span><span class="title">Surface Integrals</span></a></h2>
+<ul>
+<li><a href="section-46.html" data-scroll="section-46">Surface Area and Surface Integrals</a></li>
+<li><a href="section-47.html" data-scroll="section-47">Two Vector Operators: Curl and Div</a></li>
+<li><a href="section-48.html" data-scroll="section-48">Circulation Density and Stokes' Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-14.html" data-scroll="chapter-14"><span class="codenumber">14</span><span class="title">Triple Integrals</span></a></h2>
+<ul>
+<li><a href="section-49.html" data-scroll="section-49">Triple Integral Definition and Applications</a></li>
+<li><a href="section-50.html" data-scroll="section-50">Changing Coordinate Systems: The Jacobian</a></li>
+<li><a href="section-51.html" data-scroll="section-51">The Divergence Theorem</a></li>
+</ul>
+<h2 class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></h2>
+<ul><li><a href="references-1.html" data-scroll="references-1">Bibliography</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-38"><header title="Section 11.1 The Gradient"><h1 class="heading hide-type" alt="Section 11.1 The Gradient">
+<span class="type">Section</span><span class="codenumber">11.1</span><span class="title">The Gradient</span>
+</h1></header><section class="introduction" id="introduction-22"><ul id="ul-52" style="list-style-type: disc;"><li id="li-730"><p id="p-1426">compute directional derivatives and gradients</p></li></ul>
+<p id="p-1427">Recall from the previous unit that the derivative \(Df\) of a function \(f:\mathbb{R}^n\to\mathbb{R}\) (one output dimension) is called the gradient of \(f\text{,}\) and written \(\vec \nabla f\text{,}\) when we want to emphasize that the derivative is a vector field.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-207" id="exercise-207"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">11.1.1</span>
+</h5></article></a></div>
+<div id="hk-exercise-207" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1428">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-242" id="fn-242"><span class="footnote"><sup> 1 </sup></span></a></span><span id="hk-fn-242" style="display: none;" class="tex2jax_ignore"><span class="footnote">You'll want a computer to help you construct the graphs, particularly \(h\text{.}\) \bmw{Please use the Mathematica introduction in Brainhoney.} You could use Wolfram Alpha (use the links in the function chapter if you forgot how to graph).</span></span> Consider three functions: </p>
+<ul id="ul-53" style="list-style-type: disc;">
+<li id="li-731"><p id="p-1429">\(f(x,y)=9-x^2-y^2\)</p></li>
+<li id="li-732"><p id="p-1430">\(g(x,y)=2x-y\)</p></li>
+<li id="li-733"><p id="p-1431">\(h(x,y)=\sin x\cos y\)</p></li>
+</ul>
+<p></p>
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-63" id="hint-63"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-63" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-1432">If you need a reminder of how to draw level curves look back at <a knowl="./knowl/prob_intro_to_contour_plots.html" knowl-id="xref-prob_intro_to_contour_plots" alt="Exercise 7.4.2 " title="Exercise 7.4.2 ">exercise 7.4.2</a></p></span></span><ol id="ol-186" style="list-style-type: decimal;">
+<li id="li-734"><p id="p-1433">Compute \(\vec \nabla f(x,y)\text{.}\)  Then draw both \(\vec \nabla f\) and several level curves of \(f\) on the same axes.  EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-243" id="fn-243"><span class="footnote"><sup> 2 </sup></span></a></span><span id="hk-fn-243" style="display: none;" class="tex2jax_ignore"><span class="footnote">See <a class="external-url" href="http://aleph.sagemath.org/?z=eJxljLEOwiAURXe-oltBHybSyeFtjV_gXIIIEYM-QqmWvxejm8vNyc3J8XyFKvAg10nJOik2-u_Dpdqs0LWtgrGElh6FlqxTpMI9NEkOMAjg9Qc-xIhHE2cH9m4S9jdXerAUKZ9NxlNenGBpi5-AfjpbKGsfXLzw0UP312vubr7Si5s5NVlnUwLhXrwBPnA2AQ" target="_blank">Sage</a>.  You can modify these commands to help in the plots below too.</span></span></p></li>
+<li id="li-735"><p id="p-1434">Compute \(\vec \nabla g(x,y)\text{.}\)  Then draw both \(\vec \nabla g\) and several level curves of \(g\) on the same axes.</p></li>
+<li id="li-736"><p id="p-1435">Compute \(\vec \nabla h(x,y)\text{.}\)  \valpo{You do not need to plot this one, I'll show you the plot.} \bmw{Then draw both \(\vec \nabla h\) and several level curves of \(h\) on the same axes.}</p></li>
+<li id="li-737"><p id="p-1436">What relationships do you see between the gradient vector field and level curves?</p></li>
+</ol>
+<p id="p-1437">\bmw{When you present in class, be prepared to provide rough sketches of the level curves and gradients of each function.}</p></article></div>
+<p id="p-1438">The next few exercises will focus on explaining why the relationships you saw are always true.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-208" id="exercise-208"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">11.1.2</span>
+</h5></article></a></div>
+<div id="hk-exercise-208" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1439">Suppose \(\vec r(t)\) is a level curve of \(f(x,y)\text{.}\) </p>
+<ol id="ol-187" style="list-style-type: decimal;">
+<li id="li-738"><p id="p-1440">Suppose you know that at \(t=0\text{,}\) the value of \(f\) at \(\vec r(0)\) is 7.  What is the value of \(f\) at \(\vec r(1)\text{?}\) <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-64" id="hint-64"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-64" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-1441">What does it mean to be on a level curve?</p></span></span></p></li>
+<li id="li-739"><p id="p-1442">As you move along the level curve \(\vec r\text{,}\) how much does \(f\) change?  What must \(\ds\frac{df}{dt}\) equal?</p></li>
+<li id="li-740"><p id="p-1443">At points along the level curve \(\vec r\text{,}\) we have the composite function \(f(\vec r(t))\text{.}\)  Compute the derivative \(\ds\frac{df}{dt}\) using the chain rule.</p></li>
+<li id="li-741"><p id="p-1444">Use your work from the previous parts to explain why the gradient always meets the level curve at a 90\(^\circ\) angle.</p></li>
+</ol>
+<p></p>
+<p id="p-1445">We say that the gradient is <!--Style me with CSS--><em>normal</em> to level curves (i.e., a gradient vector is orthogonal to the tangent vector of the curve).</p></article></div>
+<p id="p-1446">In the derivative chapter, we extended differential notation from \(dy=f' dx\) to \(d\vec y = D\vec f d\vec x\text{.}\) The key idea is that a small change in the output variables is approximated by the product of the derivative and a small change in the input variables. As a quick refresher, if we have the function \(z=f(x,y)\text{,}\) then differential notation states that
+\begin{equation*}
+dz = \begin{bmatrix}f_x\amp f_y
+\end{bmatrix}  \begin{bmatrix}dx\\dy
+\end{bmatrix} .
+\end{equation*}
+</p>
+<p id="p-1447">Compute a unit vector in the direction \(\vec{d}=\langle 1,3 \rangle\) See <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-244" id="fn-244"><span class="footnote"><sup> 3 </sup></span></a></span><span id="hk-fn-244" style="display: none;" class="tex2jax_ignore"><span class="footnote">\(\hat{u}=\frac{\vec{d}}{|\vec{d}|}=\frac{\langle 1,3 \rangle}{\sqrt{1^2+3^2}}=\langle \frac{1}{\sqrt{10}}, \frac{3}{\sqrt{10}} \rangle\)</span></span></p> <p id="p-1448">If you move 1 unit in the \(\vec{d}\) direction from \((x,y)=(0,1)\) what is the new point? See <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-245" id="fn-245"><span class="footnote"><sup> 4 </sup></span></a></span><span id="hk-fn-245" style="display: none;" class="tex2jax_ignore"><span class="footnote">\((x,y)+\hat{u}=\langle \frac{1}{\sqrt{10}}, 1+\frac{3}{\sqrt{10}} \rangle\)</span></span></p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-209" id="exercise-209"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">11.1.3</span>
+</h5></article></a></div>
+<div id="hk-exercise-209" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1449">Suppose the temperature at a point in the plane is given by the function {\(T(x,y)=x^2-xy-y^2\)} degrees Fahrenheit. A particle is at \(P=(2,3)\text{.}\)</p>
+<ol id="ol-188" style="list-style-type: decimal;">
+<li id="li-742">
+<p id="p-1450">Use differentials to estimate the change in temperature if the particle moves 1 unit in the direction of \(\vec u=\left(3,4\right)\text{.}\)</p>
+<ol id="ol-189" style="list-style-type: lower-alpha;">
+<li id="li-743"><p id="p-1451">Find the unit vector \(\hat{u}\text{.}\) If the particle moves 1 unit in the direction of \(\vec{u}\) what is \(dx\) and \(dy\text{?}\)</p></li>
+<li id="li-744"><p id="p-1452">Find \(D\vec{T}(x,y)\)</p></li>
+<li id="li-745"><p id="p-1453">Estimate the change using differential notation (set-up the exercise, then compute).</p></li>
+</ol>
+</li>
+<li id="li-746">
+<p id="p-1454">What is the actual change in temperature if the particle moves 1 unit in the direction of \(\vec u=\left(3,4\right)\text{?}\) </p>
+<ol id="ol-190" style="list-style-type: lower-alpha;">
+<li id="li-747"><p id="p-1455">What is the particle's new position?</p></li>
+<li id="li-748"><p id="p-1456">What is the particle's new temperature?</p></li>
+<li id="li-749"><p id="p-1457">What is \(\Delta T\text{?}\)</p></li>
+</ol>
+<p></p>
+</li>
+<li id="li-750"><p id="p-1458">Use differentials to estimate the change in temperature if the particle moves about .2 units in the direction of \(\vec u=\left(3,4\right)\text{.}\) <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-65" id="hint-65"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-65" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-1459">Use the previous parts as guides</p></span></span></p></li>
+</ol></article></div>
+<p id="p-1460">We can define partial derivatives solely in terms of differential notation. We can define derivatives in any direction in terms of differential notation.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-210" id="exercise-210"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">11.1.4</span>
+</h5></article></a></div>
+<div id="hk-exercise-210" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1461">Suppose that \(z=f(x,y)\) is a differentiable function (so the derivative is the matrix \(\begin{bmatrix}f_x\amp f_y
+\end{bmatrix}\)). Remember to use differential notation in this exercise. </p>
+<ol id="ol-191" style="list-style-type: decimal;">
+<li id="li-751"><p id="p-1462">If \((dx,dy)=(1,0)\text{,}\) which means we've moved one unit in the \(x\) direction while holding \(y\) constant, what is \(dz\text{?}\)</p></li>
+<li id="li-752"><p id="p-1463">If \((dx,dy)=(0,1)\text{,}\) which means we've moved one unit in the \(y\) direction while holding \(x\) constant, what is \(dz\text{?}\)</p></li>
+<li id="li-753"><p id="p-1464">Consider the direction \(\vec u=(2,3)\text{.}\)  Find a unit vector in the direction of \(\vec u\text{.}\)  If we move one unit in the direction of \(\vec u\text{,}\) what is \(dz\text{?}\) [It's all right to leave you answer as a dot product.]</p></li>
+</ol>
+<p></p></article></div></section><section class="subsection" id="subsection-23"><header title="Subsection 11.1.1 The Directional Derivative"><h1 class="heading hide-type" alt="Subsection 11.1.1 The Directional Derivative">
+<span class="type">Subsection</span><span class="codenumber">11.1.1</span><span class="title">The Directional Derivative</span>
+</h1></header><p id="p-1465">Covered in this sub-section: </p>
+<ul id="ul-54" style="list-style-type: disc;"><li id="li-754"><p id="p-1466">computing the directional derivative</p></li></ul>
+<p></p>
+<article class="definition-like" id="definition-39"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">11.1.5</span>
+</h5>
+<p id="p-1467">The directional derivative of \(f\) in the direction of the unit vector \(\vec u\) at a point \(P\) is defined to be
+\begin{equation*}
+D_{\vec u} f(P) = Df(P) \hat u = \vec \nabla f \cdot \hat u.
+\end{equation*}
+</p>
+<p id="p-1468">Here are the steps to compute the direction derivative: </p>
+<ol id="ol-192" style="list-style-type: decimal;">
+<li id="li-755"><p id="p-1469">If \(\vec{d}\) is not a unit vector, compute \(\hat{u}=\frac{\vec{d}}{|\vec{d}|}\)</p></li>
+<li id="li-756"><p id="p-1470">Find \(Df=\vec{\nabla} f\)</p></li>
+<li id="li-757"><p id="p-1471">Evaluate \(\vec{\nabla} f\) at point \(P\)</p></li>
+<li id="li-758"><p id="p-1472">Find the dot product:  \(\vec \nabla f \cdot \hat u\)</p></li>
+</ol>
+<p></p>
+<p id="p-1473">The partial derivative of \(f\) with respect to \(x\) is precisely the directional derivative of \(f\) in the \((1,0)\) direction.</p>
+<p id="p-1474">Similarly, the partial derivative of \(f\) with respect to \(y\) is precisely the directional derivative of \(f\) in the \((0,1)\) direction. This definition extends to higher dimensions.</p></article><p id="p-1475">Note that in the definition above, we require the vector \(\vec u\) to be a unit vector. If you are asked to find a directional derivative in some direction, make sure you start by finding a unit vector in that direction. We want to deal with unit vectors because when we say something has a slope of \(m\) units, we want to say “The function `rises' \(m\) units if we `run' \(1\) unit.”</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-211" id="exercise-211"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">11.1.6</span>
+</h5></article></a></div>
+<div id="hk-exercise-211" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1476">Consider the function \(f(x,y) = 9-x^2-y^2\text{.}\) </p>
+<ol id="ol-193" style="list-style-type: decimal;">
+<li id="li-759"><p id="p-1477">Draw several level curves of \(f\text{.}\)</p></li>
+<li id="li-760"><p id="p-1478">At the point \(P=(2,1)\text{,}\) place a dot on your graph. Then draw a unit vector based at \(P\) that points in the direction \(\vec u=(3,4)\) [not to the point \((3,4)\text{,}\) but in the direction \(\vec u=(3,4)\)]. If you were to move in the direction \((3,4)\text{,}\) starting from the point \((2,1)\text{,}\) would the value of \(f\) increase or decrease?</p></li>
+<li id="li-761"><p id="p-1479">Find the slope of \(f\) at \(P=(2,1)\) in the direction \(\vec u=(3,4)\) by finding the directional derivative. This should agree with your previous answer.</p></li>
+<li id="li-762"><p id="p-1480">If you stand at \(Q=(-2,3)\) and move in the direction \(\vec v= (1,-1)\text{,}\) will \(f\) increase or decrease?  Find the directional derivative of \(f\) in the direction \(\vec v=(1,-1)\) at the point \(Q=(-2,3)\text{.}\)</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-212" id="exercise-212"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">11.1.7</span>
+</h5></article></a></div>
+<div id="hk-exercise-212" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1481">Recall that the dot product can be computed using \(\vec{v} \cdot \vec{u} = |\vec{v}||\vec{u}|\cos \theta\text{.}\) In this exercise, you'll explain why the gradient points in the direction of greatest increase. </p>
+<ol id="ol-194" style="list-style-type: decimal;">
+<li id="li-763"><p id="p-1482">Rewrite the dot product formula using the vectors/variables used to compute the directional derivative. (I.E. give an alternate formula for the directional derivative)</p></li>
+<li id="li-764"><p id="p-1483">Why is the directional derivative of \(\vec f\) the largest when \(\vec u\) points in the exact same direction as \(\vec \nabla f\text{?}\) <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-66" id="hint-66"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-66" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-1484">What angle maximizes the cosine function?</p></span></span></p></li>
+<li id="li-765"><p id="p-1485">When \(\vec u\) points in the same direction as \(\vec \nabla f\text{,}\) show that \(D_{\vec u}f = |\vec \nabla f|\text{.}\) In other words, explain why the length of the gradient is precisely the slope of \(f\) in the direction of greatest increase (the slope in the steepest direction). <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-67" id="hint-67"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-67" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-1486">What do you know about \(\vec{u}\) and \(\theta\text{?}\)</p></span></span></p></li>
+<li id="li-766"><p id="p-1487">Which direction points in the direction of greatest decrease?</p></li>
+</ol>
+<p></p></article></div>
+<article class="example-like" id="exploration-18"><h5 class="heading">
+<span class="type">Challenge</span><span class="codenumber">11.1.1</span>
+</h5>
+<p id="p-1488">Suppose you are looking at a topographical map (see <a class="external-url" href="http://en.wikipedia.org/wiki/Topographic_map" target="_blank">Wikipedia</a> for an example). On this topographical map, each contour line represents 100 ft in elevation. You notice in one section of the map that the contour lines are really close together, and they start to form circles around a spot on the graph. You notice in another section of the map that the contour lines are spaced quite far apart. Let \(f(x,y)\) be the elevation of the land, so that the topographical map is just a contour plot of \(f\text{.}\) </p>
+<ol id="ol-195" style="list-style-type: decimal;">
+<li id="li-767"><p id="p-1489">Where is the slope of the terrain larger, in the section with closely packed contour lines, or the section with contour lines that are spread out. In which section will the gradient be a longer vector?</p></li>
+<li id="li-768"><p id="p-1490">At the very top of a mountain, or the very bottom of a valley, will the gradient be a long vector or a small vector? How do you locate a peak in a topographical map?</p></li>
+<li id="li-769"><p id="p-1491">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-246" id="fn-246"><span class="footnote"><sup> 5 </sup></span></a></span><span id="hk-fn-246" style="display: none;" class="tex2jax_ignore"><span class="footnote">If you're stuck, look at a contour plot of \(f(x,y) = (x+1)^3-3(x+1)^2-y^2+2\) in <a class="external-url" href="http://aleph.sagemath.org/?z=eJxL06jQqdS01ajQNtSMM9Y11oKwjHQr44y0jbiS8_NK8kuL4gty8ks00nSAinWNdIw0dRQ0KqGs5Pyc_KKkxCLbkKLSVE0AbVIWvQ" target="_blank">Sage</a>. Then make your own example.</span></span>Create you own topographical map to illustrate the ideas above. Just make sure your map has a section with some contours that are closely packed together, and some that are far apart, as well as a contour that intersects itself. Then on your topographical map, please add a few gradient vectors, where you emphasize which ones are long, and which ones are short. Show us how to find a peak, as well as what the gradient vector would be at the peak.</p></li>
+</ol>
+<p></p></article><article class="theorem-like" id="theorem-7"><h5 class="heading">
+<span class="type">Theorem</span><span class="codenumber">11.1.8</span>
+</h5>
+<p id="p-1492">Let \(f\) be a continuously differentiable function, with \(\vec r\) a level curve of the function. </p>
+<ul id="ul-55" style="list-style-type: disc;">
+<li id="li-770"><p id="p-1493">The gradient is always normal to level curves, meaning \(\vec \nabla f\cdot \dfrac{d\vec r}{dt}=0\text{.}\)</p></li>
+<li id="li-771"><p id="p-1494">The gradient points in the direction of greatest increase.</p></li>
+<li id="li-772"><p id="p-1495">The directional derivative of \(f\) in the direction of the gradient is the length of the gradient. Symbolically, we write \(D_{\vec \nabla f}f = |\vec \nabla f|\text{.}\)</p></li>
+<li id="li-773"><p id="p-1496">At a maximum or minimum, the gradient is the zero vector.</p></li>
+</ul>
+<p></p></article><p id="p-1497">The next few exercises have you practice using differentials, and then obtain tangent lines and planes to curves and surfaces using differentials.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-213" id="exercise-213"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">11.1.9</span>
+</h5></article></a></div>
+<div id="hk-exercise-213" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1498">The volume of a cylindrical can is \(V(r,h)=\pi r^2 h\text{.}\) Any manufacturing process has imperfections, and so building a cylindrical can with designed dimensions \((r,h)\) will result in a can with dimensions \((r+dr,h+dh)\text{.}\) </p>
+<ol id="ol-196" style="list-style-type: decimal;">
+<li id="li-774"><p id="p-1499">Compute both \(DV\) (the derivative of \(V\)) and \(dV\) (the differential of \(V\)).</p></li>
+<li id="li-775"><p id="p-1500">If the can is tall and slender (\(h\) is big, \(r\) is small), which will cause a larger change in volume: an error in \(r\) or an error in \(h\text{?}\) Use \(dV\) to explain your answer.</p></li>
+<li id="li-776"><p id="p-1501">If the can is short and wide (like a tuna can), which will cause a larger change in volume: an error in \(r\) or an error in \(h\text{?}\) Use \(dV\) to explain your answer.</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-214" id="exercise-214"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">11.1.10</span>
+</h5></article></a></div>
+<div id="hk-exercise-214" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1502">Consider the function \(f(x,y)=x^2+y^2\text{.}\) Consider the level curve \(C\) given by \(f(x,y)=25\text{.}\) Our goal is to find an equation of the tangent line to \(C\) at \(P=(3,-4)\text{.}\) </p>
+<ol id="ol-197" style="list-style-type: decimal;">
+<li id="li-777"><p id="p-1503">Draw \(C\text{.}\)</p></li>
+<li id="li-778"><p id="p-1504">Compute \(\vec \nabla f\) and add to your graph the vector \(\vec \nabla f(P)\text{.}\)</p></li>
+</ol>
+<p></p>
+<p id="p-1505">We know the point \(P=(3,-4)\) is on the tangent line. Let \(Q=(x,y)\) represent another point on the tangent line. </p>
+<ol id="ol-198" style="list-style-type: decimal;">
+<li id="li-779"><p id="p-1506">Add to your graph the point \(Q\) and the vector \(\vec {PQ} = (x-3,y+4)\text{.}\)</p></li>
+<li id="li-780"><p id="p-1507">Why does the dot product \(\vec \nabla f(P)\cdot\vec{PQ}\) equal zero?</p></li>
+<li id="li-781"><p id="p-1508">Compute this dot product and explain why this an equation of the tangent line?</p></li>
+<li id="li-782"><p id="p-1509">What is a normal vector to the line?</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1510">The previous exercise had you give an equation of the tangent line to a level curve, by using differential notation. The next exercises asks you to repeat this idea and give an equation of a tangent plane to a level surface.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-prob_gradient_to_tangent_practice" id="prob_gradient_to_tangent_practice"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">11.1.11</span>
+</h5></article></a></div>
+<div id="hk-prob_gradient_to_tangent_practice" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1511">Consider the function \(f(x,y,z)=x^2+y^2+z^2\text{.}\) Consider the level surface \(S\) given by \(f(x,y,z)=9\text{.}\) Our goal is to find an equation of the tangent plane to \(S\) at \(P=(1,2,-2)\text{.}\) </p>
+<ol id="ol-199" style="list-style-type: decimal;">
+<li id="li-783"><p id="p-1512">Draw \(S\text{.}\)</p></li>
+<li id="li-784"><p id="p-1513">Compute \(\vec \nabla f\text{.}\) Add to your graph the vector \(\vec \nabla f(P)\text{,}\) with its base at \(P\text{.}\)</p></li>
+<li id="li-785"><p id="p-1514">We know the point \(P=(1,2,-2)\) is on the tangent plane. Let \(Q=(x,y,z)\) be any other point on the tangent plane.  What is the component form of the vector \(\vec {PQ}\text{?}\)</p></li>
+<li id="li-786"><p id="p-1515">Why are  \(\vec \nabla f(P)\) and \(\vec{PQ}\) orthogonal? Use this fact to write an equation of the tangent plane.</p></li>
+<li id="li-787"><p id="p-1516">What is a normal vector to the plane?</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-216" id="exercise-216"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">11.1.12</span>
+</h5></article></a></div>
+<div id="hk-exercise-216" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1517">Use the process from <a knowl="./knowl/prob_gradient_to_tangent_practice.html" knowl-id="xref-prob_gradient_to_tangent_practice" alt="Exercise 11.1.11 " title="Exercise 11.1.11 ">11.1.11</a> to find an equation of the tangent plane to the hyperboloid of one sheet \(1=x^2-y^2+z^2\) at the point \((-3,3,1)\text{.}\)</p>
+<p id="p-1518">Also give an equation of the normal line (the line that sticks straight up out of the surface). FYI, the normal line is used in computer graphics to know how to shade an object.</p></article></div>
+<article class="example-like" id="exploration-19"><h5 class="heading">
+<span class="type">Challenge</span><span class="codenumber">11.1.2</span>
+</h5>
+<p id="p-1519">The two surfaces \(x^2+y^2+z^2=14\) and \(3x+4y-z=-1\) intersect in a curve \(C\text{.}\) Draw both surfaces, and show us the curve \(C\text{.}\) Then, at the point \((2,-1,3)\text{,}\) find an equation of the tangent line to this curve.</p></article></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:31:51-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">2.5.4</span>
+</h5>
+<p id="p-88">This example refers back to <a knowl="./knowl/diff-sphere.html" knowl-id="xref-diff-sphere" alt="Exercise 2.2.4 " title="Exercise 2.2.4 ">problem 2.2.4</a>. We wanted a spherical tank of radius 3m, but due to manufacturing error the radius was slightly off. Let's now illustrate how we can use polynomials to give a first, second, and third order approximation of the volume if the radius is 3.02m instead of 3m.</p>
+<p id="p-89">We start with \(V=\frac{4}{3} \pi r^3\) and then compute the derivatives
+\begin{equation*}
+V'=4\pi r^2, V''=8\pi r, \text{ and }  V'''=8\pi.
+\end{equation*}
+</p>
+<p id="p-90">Because we are approximating the increase in volume from \(r=3\) to something new, we'll create our polynomial approximations centered at \(r=3\text{.}\) We'll consider the polynomial
+\begin{equation*}
+P(r)=a_0+a_1(r-3)+a_2(r-3)^2+a_3(r-3)^3,
+\end{equation*}
+whose derivatives are
+\begin{equation*}
+P'=a_1+2a_2(r-3)+3a_3(r-3)^2,
+P''=2a_2+6a_3(r-3),
+P'''=6a_3.
+\end{equation*}
+</p>
+<p id="p-91">So that the derivatives of the volume function match the derivatives of the polynomial (at \(r=3\)), we need to satisfy the equations in the table below.</p>
+<table>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(k\)</td>
+<td class="l m b0 r0 l0 t0 lines">Value of \(V\) at the \(k\)th derivative</td>
+<td class="l m b0 r0 l0 t0 lines">Value of \(P\) at the the \(k\)th derivative</td>
+<td class="l m b0 r0 l0 t0 lines">Equation</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(0\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(V(3) = \frac{4}{3}\pi (3)^3 = 36\pi\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(P(3) = a_0\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(a_0=36\pi\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(1\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(V'(3) = 4\pi (3)^2=36\pi\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(P'(3) = a_1\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(a_1=36\pi\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(2\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(V''(3) = 8\pi (3)=24\pi\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(P''(3) = 2a_2\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(2a_2=24\pi\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(3\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(V'''(3) = 8\pi\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(P'''(3) = 6a_3\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(6a_3=8\pi\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+</table>
+<p id="p-92">This tells us that the third order polynomial is
+\begin{equation*}
+P(r)=a_0+a_1(r-3)+a_2(r-3)^2+a_3(r-3)^3
+=36\pi+36\pi(r-3)+12\pi(r-3)^2+\frac{4}{3}\pi(r-3)^3
+.
+\end{equation*}
+</p>
+<p id="p-93">We wanted to approximate the volume if \(r=3.2\text{,}\) so our change in \(r\) is \(dr=3.2-3=0.2\text{.}\) We can rewrite our polynomial as
+\begin{equation*}
+P(r)=36\pi+36\pi(dr)+12\pi(dr)^2+\frac{4}{3}\pi(dr)^3.
+\end{equation*}
+</p>
+<p id="p-94">We are now prepared to approximate the volume using a first, second, and third order approximation. </p>
+<ol id="ol-6" style="list-style-type: decimal;">
+<li id="li-36"><p id="p-95">A first order approximation yields \(P=36\pi+ 36\pi\cdot 0.02 =36.72\pi.\) The volume increased by \(0.72\pi\) m\(^3\text{.}\)</p></li>
+<li id="li-37"><p id="p-96">A second order approximation yields
+\begin{equation*}
+P=36\pi+ 36\pi\cdot 0.02 +12\pi (0.02)^2 =36.7248\pi.
+\end{equation*}
+</p></li>
+<li id="li-38"><p id="p-97">A third order approximation yields
+\begin{equation*}
+P=36\pi+36\pi\cdot 0.02 +12\pi (0.02)^2+\frac{4}{3}\pi(0.02)^3  =36.724810\bar6\pi.
+\end{equation*}
+</p></li>
+</ol>
+<p></p>
+<p id="p-98">With each approximation, we add on a little more volume to get closer to the actual volume of a sphere with radius \(r=3.02\text{.}\) The actual volume of a sphere involves a cubic function, so when we approximate the volume with a cubic, we should get an exact approximation (and \(V(3.02) = \frac 43 \pi (3.02)^3 =(36.724810\bar6)\pi\text{.}\))</p></article><span class="incontext"><a href="section-8.html#example-1">in-context</a></span>
+</body>
+</html>

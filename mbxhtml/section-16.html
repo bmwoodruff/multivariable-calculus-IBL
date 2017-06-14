@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:31:42-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Parametric Equations</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(\renewcommand{\chaptername}{Unit}
+\newcommand{\derivativehomeworklink}[1]{\href{http://db.tt/cSeKG8XO}{#1}}
+\newcommand{\chpname}{unit}
+\newcommand{\sageurlforcurvature}{http://bmw.byuimath.com/dokuwiki/doku.php?id=curvature_calculator}
+\newcommand{\uday}{ \LARGE Day \theunitday \normalsize \flushleft \stepcounter{unitday} }
+\newcommand{\sageworkurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=work_calculator}
+\newcommand{\wrapup}{
+\bmw{\section{Wrap Up}
+Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+
+\valposhort{\section{Wrap Up}
+This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
+\instructor{TeX files for these are included in a separate folder in the GitHub Project}
+\note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+\textbf{Review Guide Creation}\\
+
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname\ review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } \\
+
+As you create this review guide, consider the following:
+\begin{itemize}
+ \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+ \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+\end{itemize}
+} 
+}
+\newcommand{\sagefluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=flux_calculator}
+\newcommand{\instructor}[1]{ EXTRA\footnote{\textcolor{blue}{\textbf{Instructor: }#1}}}
+\newcommand{\sageworkfluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=both_flux_and_work}
+\newcommand{\instructor}[1]{}
+\newcommand{\sagelineintegral}{http://bmw.byuimath.com/dokuwiki/doku.php?id=line_integral_calculator}
+\renewcommand{\thefootnote}{\roman{footnote}}
+\newcommand{\sagephysicalpropertiestwod}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_2d}
+\newcommand{\note}[1]{\footnote{#1} EXTRA\footnote{\fbox{\textbf{\thefootnote}}}}
+\newcommand{\sagephysicalpropertiesthreed}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_3d}
+\newcommand{\note}[1]{}
+\newcommand{\sageDoubleIntegralCheckerURL}{http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator}
+\newcommand{\myscale}{1}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dfdx}[1]{\frac{d#1}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\ii}{\vec \imath}
+\newcommand{\jj}{\vec \jmath}
+\newcommand{\kk}{\vec k}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\R}{ \mathbb{R}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\im}{\text{im }}
+\newcommand{\colvec}[1]{\begin{bmatrix}#1\end{bmatrix}    }
+\newcommand{\cl}[1]{ \begin{matrix}  #1  \end{matrix}    }
+\newcommand{\bm}[1]{ \begin{bmatrix}  #1  \end{bmatrix}  }
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\rref}{rref}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\blank}[1]{[14pt]{\rule{#1}{1pt}}}
+\newcommand{\vp}{^{\,\prime}}
+\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha} }
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Multivariable Calculus</span></a></h1>
+<p class="byline">Ben Woodruff</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-5.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-5.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter-6.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-5.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-5.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="chapter-6.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Introduction</span></a></h2>
+<ul>
+<li><a href="section-1.html" data-scroll="section-1">Mathematical Truths</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Teaching philosophy</a></li>
+<li><a href="section-3.html" data-scroll="section-3">Modification Notes</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Review: Calculus I &amp; II</span></a></h2>
+<ul>
+<li><a href="section-4.html" data-scroll="section-4">Review of First Semester Calculus</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Differentials</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-7.html" data-scroll="section-7">Solving Systems of equations</a></li>
+<li><a href="section-8.html" data-scroll="section-8">Optional: Higher Order Approximations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span><span class="title">Vectors</span></a></h2>
+<ul>
+<li><a href="section-9.html" data-scroll="section-9">Vectors and Lines</a></li>
+<li><a href="section-10.html" data-scroll="section-10">The Dot Product</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-12.html" data-scroll="section-12">The Cross Product</a></li>
+<li><a href="section-13.html" data-scroll="section-13">The Cross Product and Planes</a></li>
+<li><a href="section-14.html" data-scroll="section-14">Projections and Their Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Review: Conic Sections</span></a></h2>
+<ul><li><a href="section-15.html" data-scroll="section-15">Conic Sections</a></li></ul>
+<h2 class="link active"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Parametric Equations</span></a></h2>
+<ul><li><a href="section-16.html" data-scroll="section-16" class="active">Parametric Equations</a></li></ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span><span class="title">Polar and New Coordinate Systems</span></a></h2>
+<ul><li><a href="section-17.html" data-scroll="section-17">Polar Coordinates</a></li></ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span><span class="title">Functions</span></a></h2>
+<ul>
+<li><a href="section-18.html" data-scroll="section-18">Function Terminology</a></li>
+<li><a href="section-19.html" data-scroll="section-19">Parametric Curves:</a></li>
+<li><a href="section-20.html" data-scroll="section-20">Parametric Surfaces:</a></li>
+<li><a href="section-21.html" data-scroll="section-21">Functions of Several Variables:</a></li>
+<li><a href="section-22.html" data-scroll="section-22">Constructing Functions</a></li>
+<li><a href="sec_functionlist.html" data-scroll="sec_functionlist">Summary of Functions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span><span class="title">Derivatives</span></a></h2>
+<ul>
+<li><a href="section-24.html" data-scroll="section-24">Introduction</a></li>
+<li><a href="section-25.html" data-scroll="section-25">The (multi-dimensional) Derivative</a></li>
+<li><a href="section-26.html" data-scroll="section-26">Tangent Planes</a></li>
+<li><a href="section-27.html" data-scroll="section-27">The Chain Rule</a></li>
+</ul>
+<h2 class="link"><a href="chapter-9.html" data-scroll="chapter-9"><span class="codenumber">9</span><span class="title">Motion</span></a></h2>
+<ul>
+<li><a href="section-28.html" data-scroll="section-28">Optional: Projectile Motion</a></li>
+<li><a href="section-29.html" data-scroll="section-29">Arc Length and the Unit Tangent Vector</a></li>
+<li><a href="section-30.html" data-scroll="section-30">Some Examples and The TNB Frame</a></li>
+<li><a href="section-31.html" data-scroll="section-31">More Practice</a></li>
+<li><a href="section-32.html" data-scroll="section-32">Tangential And Normal Components</a></li>
+</ul>
+<h2 class="link"><a href="chapter-10.html" data-scroll="chapter-10"><span class="codenumber">10</span><span class="title">Line Integrals</span></a></h2>
+<ul>
+<li><a href="section-33.html" data-scroll="section-33">Work, Flow, Circulation, and Flux</a></li>
+<li><a href="section-34.html" data-scroll="section-34">Area and the Line-Integral</a></li>
+<li><a href="section-35.html" data-scroll="section-35">The Fundamental Theorem of Line Integrals</a></li>
+<li><a href="section-36.html" data-scroll="section-36">Applications: Average Value</a></li>
+<li><a href="section-37.html" data-scroll="section-37">Applications: Physical Properties</a></li>
+</ul>
+<h2 class="link"><a href="chapter-11.html" data-scroll="chapter-11"><span class="codenumber">11</span><span class="title">Optimization</span></a></h2>
+<ul>
+<li><a href="section-38.html" data-scroll="section-38">The Gradient</a></li>
+<li><a href="section-39.html" data-scroll="section-39">The Second Derivative Test</a></li>
+<li><a href="section-40.html" data-scroll="section-40">Lagrange Multipliers</a></li>
+</ul>
+<h2 class="link"><a href="chapter-12.html" data-scroll="chapter-12"><span class="codenumber">12</span><span class="title">Double Integrals</span></a></h2>
+<ul>
+<li><a href="section-41.html" data-scroll="section-41">Double Integrals and Applications</a></li>
+<li><a href="section-42.html" data-scroll="section-42">Applications of Double Integrals</a></li>
+<li><a href="section-43.html" data-scroll="section-43">Switching Coordinates: Cartesian to Polar</a></li>
+<li><a href="section-44.html" data-scroll="section-44">Switching Coordinates: The Generalized Jacobian</a></li>
+<li><a href="section-45.html" data-scroll="section-45">Green's Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-13.html" data-scroll="chapter-13"><span class="codenumber">13</span><span class="title">Surface Integrals</span></a></h2>
+<ul>
+<li><a href="section-46.html" data-scroll="section-46">Surface Area and Surface Integrals</a></li>
+<li><a href="section-47.html" data-scroll="section-47">Two Vector Operators: Curl and Div</a></li>
+<li><a href="section-48.html" data-scroll="section-48">Circulation Density and Stokes' Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-14.html" data-scroll="chapter-14"><span class="codenumber">14</span><span class="title">Triple Integrals</span></a></h2>
+<ul>
+<li><a href="section-49.html" data-scroll="section-49">Triple Integral Definition and Applications</a></li>
+<li><a href="section-50.html" data-scroll="section-50">Changing Coordinate Systems: The Jacobian</a></li>
+<li><a href="section-51.html" data-scroll="section-51">The Divergence Theorem</a></li>
+</ul>
+<h2 class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></h2>
+<ul><li><a href="references-1.html" data-scroll="references-1">Bibliography</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-16"><header title="Section 5.1 Parametric Equations"><h1 class="heading hide-type" alt="Section 5.1 Parametric Equations">
+<span class="type">Section</span><span class="codenumber">5.1</span><span class="title">Parametric Equations</span>
+</h1></header><section class="introduction" id="introduction-8"><p id="p-354">In middle school, you learned to write an equation of a line as \(y=mx+b\text{.}\) In the vector unit, we learned to write this in vector form as:
+\begin{equation*}
+(x,y)=(1,m)t+(0,b)
+\end{equation*}
+</p>
+<p id="p-355">This style of equation is called a vector equation. It is equivalent to writing the two equations
+\begin{equation*}
+x=1t+0,y=mt+b,
+\end{equation*}
+which we call the parametric equations of the line. We were able to quickly develop equations of lines in space, by just adding a third equation for \(z\text{.}\)</p>
+<p id="p-356">Parametric equations provide us with a way of specifying the location \((x,y,z)\) of an object by giving an equation for each coordinate. We will use these equations to model motion in the plane and in space. In this section we'll focus mostly on planar curves.</p>
+<article class="definition-like" id="definition-19"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">5.1.1</span>
+</h5>
+<p id="p-357">If each of \(f\) and \(g\) are continuous functions, then the curve in the plane defined by \(x=f(t),y=g(t)\) is called a parametric curve, and the equations \(x=f(t),y=g(t)\) are called parametric equations for the curve.</p></article><p id="p-358">You can generalize this definition to 3D and beyond by just adding more variables.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-76" id="exercise-76"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">5.1.2</span>
+</h5></article></a></div>
+<div id="hk-exercise-76" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-359">By plotting points, construct graphs of the three parametric curves given below (just make a \(t,x,y\) table, and then plot the \((x,y)\) coordinates). Place an arrow on your graph to show the direction of motion.</p>
+<p id="p-360">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-54" id="fn-54"><span class="footnote"><sup> 1 </sup></span></a></span><span id="hk-fn-54" style="display: none;" class="tex2jax_ignore"><span class="footnote">\thomasee{See 11.1: 1-18. This is the same for all the problems below.}</span></span> </p>
+<ol id="ol-42" style="list-style-type: decimal;">
+<li id="li-147"><p id="p-361">\(x=\cos t, y=\sin t\text{,}\) for \(0\leq t\leq 2\pi\text{.}\)</p></li>
+<li id="li-148"><p id="p-362">\(x=\sin t, y=\cos t\text{,}\) for \(0\leq t\leq 2\pi\text{.}\)</p></li>
+<li id="li-149"><p id="p-363">\(x=\cos t, y=\sin t, z=t\text{,}\) for \(0\leq t\leq 4\pi\text{.}\)</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-77" id="exercise-77"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">5.1.3</span>
+</h5></article></a></div>
+<div id="hk-exercise-77" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-364">For the parametric curve \(x=1+2\cos t, y=3+5\sin t\text{:}\) </p>
+<ol id="ol-43" style="list-style-type: decimal;">
+<li id="li-150"><p id="p-365">Plot the path traced out by the curve.</p></li>
+<li id="li-151"><p id="p-366">Use the trig identity \(\cos^2t+\sin^2t=1\) to give a Cartesian equation of the curve (an equation that only involves \(x\) and \(y\)).</p></li>
+<li id="li-152"><p id="p-367">What are the foci of the resulting object (it's a conic section)?</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-prob_line_equation_practice" id="prob_line_equation_practice"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">5.1.4</span>
+</h5></article></a></div>
+<div id="hk-prob_line_equation_practice" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-368">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-55" id="fn-55"><span class="footnote"><sup> 2 </sup></span></a></span><span id="hk-fn-55" style="display: none;" class="tex2jax_ignore"><span class="footnote">What we did in the vector unit should help here.</span></span> Find parametric equations for a line that passes through the points \((0,1,2)\) and \((3,-2,4)\text{.}\)</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-79" id="exercise-79"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">5.1.5</span>
+</h5></article></a></div>
+<div id="hk-exercise-79" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-369">For the parametric curve \(\vec r(t)= (t^2+1, 2t-3)\text{:}\) </p>
+<ol id="ol-44" style="list-style-type: decimal;">
+<li id="li-153"><p id="p-370">Plot the path traced out by the curve.</p></li>
+<li id="li-154"><p id="p-371">Give a Cartesian equation of the curve (eliminate the parameter \(t\))</p></li>
+<li id="li-155"><p id="p-372">Now find the focus of the resulting curve.</p></li>
+</ol>
+<p></p>
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-7" id="hint-7"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-7" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-373">Set up a system of equations then use substitution.</p></span></span> </article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-80" id="exercise-80"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">5.1.6</span>
+</h5></article></a></div>
+<div id="hk-exercise-80" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-374">Consider the parametric curve given by \(x=\tan t, y=\sec t\text{.}\) Plot the curve for \(-\pi/2\lt t\lt \pi/2\text{.}\) Give a Cartesian equation of the curve (a trig identity will help). Then find the foci of the resulting conic section.</p>
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-8" id="hint-8"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-8" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-375">this problem will probably be easier to draw if you first find the Cartesian equation, and then plot the curve.</p></span></span> </article></div></section><section class="subsection" id="sec_derivatives_and_tangent_lines"><header title="Subsection 5.1.1 Derivatives and Tangent lines"><h1 class="heading hide-type" alt="Subsection 5.1.1 Derivatives and Tangent lines">
+<span class="type">Subsection</span><span class="codenumber">5.1.1</span><span class="title">Derivatives and Tangent lines</span>
+</h1></header><p id="p-376">We're now ready to discuss calculus on parametric curves. The derivative of a vector valued function is defined using the same definition as first semester calculus.</p>
+<article class="definition-like" id="definition-20"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">5.1.7</span>
+</h5>
+<p id="p-377">If \(\vec r(t)\) is a vector equation of a curve (or in parametric form just \(x=f(t), y=g(t)\)), then the derivative is defined as:
+\begin{equation*}
+\frac{d\vec r}{dt}=\ds\lim_{h\to 0}\frac{\vec r(t+h)-\vec r(t)}{h}.
+\end{equation*}
+</p></article><p id="p-378">The subtraction above requires vector subtraction. The following problem will provide a simple way to take derivatives which we will use all semester long.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-81" id="exercise-81"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">5.1.8</span>
+</h5></article></a></div>
+<div id="hk-exercise-81" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-379">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-56" id="fn-56"><span class="footnote"><sup> 3 </sup></span></a></span><span id="hk-fn-56" style="display: none;" class="tex2jax_ignore"><span class="footnote">\thomasee{See page 728.}</span></span>Show that if \(\vec r(t) = (f(t),g(t))\text{,}\) then the derivative is just \(\frac{d\vec r}{dt} = (f'(t),g'(t))\text{.}\)</p>
+<p id="p-380">[The definition above says that \(\frac{d\vec r}{dt}=\ds\lim_{h\to 0}\frac{\vec r(t+h)-\vec r(t)}{h}\text{.}\) We were told \(\vec r(t) = (f(t),g(t))\text{,}\) so use this in the derivative definition. Then try to modify the equation to obtain \(\frac{d\vec r}{dt} = (f'(t),g'(t))\text{.}\)]</p></article></div>
+<p id="p-381">The previous problem shows you can take the derivative of a vector valued function by just differentiating each component separately. The next problem shows you that velocity and acceleration are still connected to the first and second derivatives.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-82" id="exercise-82"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">5.1.9</span>
+</h5></article></a></div>
+<div id="hk-exercise-82" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-382">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-57" id="fn-57"><span class="footnote"><sup> 4 </sup></span></a></span><span id="hk-fn-57" style="display: none;" class="tex2jax_ignore"><span class="footnote">\thomasee{See 13.1:5-8 and 13.1:19-20}</span></span>Consider the parametric curve given by \(\vec r(t)=( 3\cos t, 3\sin t )\text{.}\) </p>
+<ol id="ol-45" style="list-style-type: decimal;">
+<li id="li-156"><p id="p-383">Graph the curve \(\vec r\text{,}\) and compute \(\frac{d\vec r}{dt}\) and \(\frac{d^2\vec r}{dt^2}\text{.}\)</p></li>
+<li id="li-157"><p id="p-384">On your graph, draw the vectors \(\frac{d\vec r}{dt}\left(\frac{\pi}{4}\right)\) and \(\frac{d^2\vec r}{dt^2}\left(\frac{\pi}{4}\right)\) with their tail placed on the curve at \(\vec r\left(\frac{\pi}{4}\right)\text{.}\) These vectors represent the velocity and acceleration vectors.</p></li>
+<li id="li-158"><p id="p-385">Give a vector equation of the tangent line to this curve at \(t=\frac{\pi}{4}\text{.}\) (You know a point and a direction vector.)</p></li>
+</ol>
+<p></p></article></div>
+<article class="definition-like" id="def_velocity_acceleration"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">5.1.10</span>
+</h5>
+<p id="p-386">If an object moves along a path \(\vec r(t)\text{,}\) we can find the velocity and acceleration by just computing the first and second derivatives. The velocity is \(\frac{d\vec r}{dt}\text{,}\) and the acceleration is \(\frac{d^2\vec r}{dt^2}\text{.}\) Speed is a scalar, not a vector. The speed of an object is just the length (or magnitude) of the velocity vector.</p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-83" id="exercise-83"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">5.1.11</span>
+</h5></article></a></div>
+<div id="hk-exercise-83" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-387">Consider the curve \(\vec r(t) = (2t+3, 4(2t-1)^2)\text{.}\) </p>
+<ol id="ol-46" style="list-style-type: decimal;">
+<li id="li-159"><p id="p-388">Construct a graph of \(\vec r\) for \(0\leq t\leq 2\text{.}\)</p></li>
+<li id="li-160"><p id="p-389">If this curve represented the path of a horse running through a pasture, find the velocity of the horse at any time \(t\text{,}\) and then specifically at \(t=1\text{.}\) What is the horse's speed at \(t=1\text{?}\)</p></li>
+<li id="li-161"><p id="p-390">Find a vector equation of the tangent line to \(\vec r\) at \(t=1\text{.}\)  Include this on your graph.</p></li>
+<li id="li-162"><p id="p-391">Show that the slope of the line is
+\begin{equation*}
+\ds \frac{dy}{dx}\big|_{x=5} 
+= 
+\frac{
+(dy/dt)\big|_{t=1}
+}{
+(dx/dt)\big|_{t=1}
+}.
+\end{equation*}
+[How can you turn the direction vector, which involves \((dx/dt)\) and \((dy/dt)\) into a slope \((dy/dx)\text{?}\)]</p></li>
+</ol>
+<p></p></article></div></section><section class="subsection" id="arc_length"><header title="Subsection 5.1.2 Arc Length"><h1 class="heading hide-type" alt="Subsection 5.1.2 Arc Length">
+<span class="type">Subsection</span><span class="codenumber">5.1.2</span><span class="title">Arc Length</span>
+</h1></header><p id="p-392">This section covers: </p>
+<ul id="ul-12" style="list-style-type: disc;"><li id="li-163"><p id="p-393">finding rates of change along space curves</p></li></ul>
+<p></p>
+<p id="p-394">If an object moves at a constant speed, then the distance travelled is
+\begin{equation*}
+\text{ distance }  = \text{ speed } \times\text{ time } .
+\end{equation*}
+</p>
+<p id="p-395">This requires that the speed be constant. What if the speed is not constant? Over a really small time interval \(dt\text{,}\) the speed is almost constant, so we can still use the idea above. The following problem will help you develop the key formula for arc length.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-84" id="exercise-84"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">5.1.12</span><span class="title">Derivation of the arc length formula</span>
+</h5></article></a></div>
+<div id="hk-exercise-84" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-396">Suppose an object moves along the path given by:
+\begin{equation*}
+\vec r(t)=(x(t),y(t))
+\end{equation*}
+for
+\begin{equation*}
+a\leq t\leq b
+\end{equation*}
+</p>
+<ol id="ol-47" style="list-style-type: decimal;">
+<li id="li-164"><p id="p-397">Show that the object's speed at any time \(t\) is \(\ds\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\text{.}\)</p></li>
+<li id="li-165"><p id="p-398">If you move over a really small time interval, say of length \(dt\text{,}\) then the speed is almost constant. If you move at a constant speed of \(\ds\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\) for a time length of \(dt\text{,}\) what's the distance \(ds\) you have traveled. <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-9" id="hint-9"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-9" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-399">This should be really fast to write down</p></span></span></p></li>
+<li id="arc_length_formula"><p id="p-400">Explain why the length of the path given by \(\vec r(t)\) for \(a\leq t\leq b\) is   EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-58" id="fn-58"><span class="footnote"><sup> 5 </sup></span></a></span><span id="hk-fn-58" style="display: none;" class="tex2jax_ignore"><span class="footnote">This is the arc length formula. Ask me in class for an alternate way to derive this formula.</span></span>
+\begin{equation*}
+\text{ Arc Length } =s=\int ds=\int_a^b \left|\frac{d\vec r}{dt}\right| dt=\int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt.
+\end{equation*}
+</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-85" id="exercise-85"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">5.1.13</span>
+</h5></article></a></div>
+<div id="hk-exercise-85" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-401">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-59" id="fn-59"><span class="footnote"><sup> 6 </sup></span></a></span><span id="hk-fn-59" style="display: none;" class="tex2jax_ignore"><span class="footnote">\thomasee{See 11.2: 25-30}</span></span> Use the equation from <a knowl="./knowl/arc_length_formula.html" knowl-id="xref-arc_length_formula" alt="Item 5.1.12.3 " title="Item 5.1.12.3 ">5.1.12.3</a> to find the length of the curve \(\ds \vec r(t) = \left(t^3,\frac{3t^2}{2}\right)\) for \(t\in[1,3]\text{.}\) The notation \(t\in[1,3]\) means \(1\leq t\leq 3\text{.}\) Be prepared to show us your integration steps in class (you'll need a \(u\)-substitution).</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-86" id="exercise-86"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">5.1.14</span>
+</h5></article></a></div>
+<div id="hk-exercise-86" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-402">For each curve below, set up an integral formula which would give the length, and sketch the curve. Do not worry about integrating them. EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-60" id="fn-60"><span class="footnote"><sup> 7 </sup></span></a></span><span id="hk-fn-60" style="display: none;" class="tex2jax_ignore"><span class="footnote">The reason I don't want you to actually compute the integrals is that they will get ugly really fast. Try doing one in Wolfram Alpha and see what the computer gives.</span></span> </p>
+<ol id="ol-48" style="list-style-type: decimal;">
+<li id="li-167"><p id="p-403">The parabola \(\vec p(t) = (t,t^2)\) for \(t\in[0,3]\text{.}\)</p></li>
+<li id="li-168"><p id="p-404">The ellipse \(\vec e(t) = (4\cos t,5\sin t)\) for \(t\in[0,2\pi]\text{.}\)</p></li>
+<li id="li-169"><p id="p-405">The hyperbola \(\vec h(t) = (\tan t,\sec t)\) for \(t\in[-\pi/ 4,\pi/4]\text{.}\)</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-406">To actually compute the integrals above and find the lengths, we would use a numerical technique to approximate the integral (something akin to adding up the areas of lots and lots of rectangles as you did in first semester calculus). \bmw{\section{Wrap Up} Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.} \valposhort{\section{Wrap Up} This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? \instructor{TeX files for these are included in a separate folder in the GitHub Project} \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all} <!--Style me with CSS--><em>Review Guide Creation</em> Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } As you create this review guide, consider the following: \begin{itemize} \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems. \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall. \end{itemize} }</p></section></section></div></main>
+</div>
+</body>
+</html>

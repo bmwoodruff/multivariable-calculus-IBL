@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:31:46-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Work, Flow, Circulation, and Flux</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(\renewcommand{\chaptername}{Unit}
+\newcommand{\derivativehomeworklink}[1]{\href{http://db.tt/cSeKG8XO}{#1}}
+\newcommand{\chpname}{unit}
+\newcommand{\sageurlforcurvature}{http://bmw.byuimath.com/dokuwiki/doku.php?id=curvature_calculator}
+\newcommand{\uday}{ \LARGE Day \theunitday \normalsize \flushleft \stepcounter{unitday} }
+\newcommand{\sageworkurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=work_calculator}
+\newcommand{\wrapup}{
+\bmw{\section{Wrap Up}
+Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+
+\valposhort{\section{Wrap Up}
+This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
+\instructor{TeX files for these are included in a separate folder in the GitHub Project}
+\note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+\textbf{Review Guide Creation}\\
+
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname\ review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } \\
+
+As you create this review guide, consider the following:
+\begin{itemize}
+ \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+ \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+\end{itemize}
+} 
+}
+\newcommand{\sagefluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=flux_calculator}
+\newcommand{\instructor}[1]{ EXTRA\footnote{\textcolor{blue}{\textbf{Instructor: }#1}}}
+\newcommand{\sageworkfluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=both_flux_and_work}
+\newcommand{\instructor}[1]{}
+\newcommand{\sagelineintegral}{http://bmw.byuimath.com/dokuwiki/doku.php?id=line_integral_calculator}
+\renewcommand{\thefootnote}{\roman{footnote}}
+\newcommand{\sagephysicalpropertiestwod}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_2d}
+\newcommand{\note}[1]{\footnote{#1} EXTRA\footnote{\fbox{\textbf{\thefootnote}}}}
+\newcommand{\sagephysicalpropertiesthreed}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_3d}
+\newcommand{\note}[1]{}
+\newcommand{\sageDoubleIntegralCheckerURL}{http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator}
+\newcommand{\myscale}{1}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dfdx}[1]{\frac{d#1}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\ii}{\vec \imath}
+\newcommand{\jj}{\vec \jmath}
+\newcommand{\kk}{\vec k}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\R}{ \mathbb{R}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\im}{\text{im }}
+\newcommand{\colvec}[1]{\begin{bmatrix}#1\end{bmatrix}    }
+\newcommand{\cl}[1]{ \begin{matrix}  #1  \end{matrix}    }
+\newcommand{\bm}[1]{ \begin{bmatrix}  #1  \end{bmatrix}  }
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\rref}{rref}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\blank}[1]{[14pt]{\rule{#1}{1pt}}}
+\newcommand{\vp}{^{\,\prime}}
+\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha} }
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Multivariable Calculus</span></a></h1>
+<p class="byline">Ben Woodruff</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-10.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-10.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-34.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-10.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-10.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-34.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Introduction</span></a></h2>
+<ul>
+<li><a href="section-1.html" data-scroll="section-1">Mathematical Truths</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Teaching philosophy</a></li>
+<li><a href="section-3.html" data-scroll="section-3">Modification Notes</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Review: Calculus I &amp; II</span></a></h2>
+<ul>
+<li><a href="section-4.html" data-scroll="section-4">Review of First Semester Calculus</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Differentials</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-7.html" data-scroll="section-7">Solving Systems of equations</a></li>
+<li><a href="section-8.html" data-scroll="section-8">Optional: Higher Order Approximations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span><span class="title">Vectors</span></a></h2>
+<ul>
+<li><a href="section-9.html" data-scroll="section-9">Vectors and Lines</a></li>
+<li><a href="section-10.html" data-scroll="section-10">The Dot Product</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-12.html" data-scroll="section-12">The Cross Product</a></li>
+<li><a href="section-13.html" data-scroll="section-13">The Cross Product and Planes</a></li>
+<li><a href="section-14.html" data-scroll="section-14">Projections and Their Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Review: Conic Sections</span></a></h2>
+<ul><li><a href="section-15.html" data-scroll="section-15">Conic Sections</a></li></ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Parametric Equations</span></a></h2>
+<ul><li><a href="section-16.html" data-scroll="section-16">Parametric Equations</a></li></ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span><span class="title">Polar and New Coordinate Systems</span></a></h2>
+<ul><li><a href="section-17.html" data-scroll="section-17">Polar Coordinates</a></li></ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span><span class="title">Functions</span></a></h2>
+<ul>
+<li><a href="section-18.html" data-scroll="section-18">Function Terminology</a></li>
+<li><a href="section-19.html" data-scroll="section-19">Parametric Curves:</a></li>
+<li><a href="section-20.html" data-scroll="section-20">Parametric Surfaces:</a></li>
+<li><a href="section-21.html" data-scroll="section-21">Functions of Several Variables:</a></li>
+<li><a href="section-22.html" data-scroll="section-22">Constructing Functions</a></li>
+<li><a href="sec_functionlist.html" data-scroll="sec_functionlist">Summary of Functions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span><span class="title">Derivatives</span></a></h2>
+<ul>
+<li><a href="section-24.html" data-scroll="section-24">Introduction</a></li>
+<li><a href="section-25.html" data-scroll="section-25">The (multi-dimensional) Derivative</a></li>
+<li><a href="section-26.html" data-scroll="section-26">Tangent Planes</a></li>
+<li><a href="section-27.html" data-scroll="section-27">The Chain Rule</a></li>
+</ul>
+<h2 class="link"><a href="chapter-9.html" data-scroll="chapter-9"><span class="codenumber">9</span><span class="title">Motion</span></a></h2>
+<ul>
+<li><a href="section-28.html" data-scroll="section-28">Optional: Projectile Motion</a></li>
+<li><a href="section-29.html" data-scroll="section-29">Arc Length and the Unit Tangent Vector</a></li>
+<li><a href="section-30.html" data-scroll="section-30">Some Examples and The TNB Frame</a></li>
+<li><a href="section-31.html" data-scroll="section-31">More Practice</a></li>
+<li><a href="section-32.html" data-scroll="section-32">Tangential And Normal Components</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-10.html" data-scroll="chapter-10"><span class="codenumber">10</span><span class="title">Line Integrals</span></a></h2>
+<ul>
+<li><a href="section-33.html" data-scroll="section-33" class="active">Work, Flow, Circulation, and Flux</a></li>
+<li><a href="section-34.html" data-scroll="section-34">Area and the Line-Integral</a></li>
+<li><a href="section-35.html" data-scroll="section-35">The Fundamental Theorem of Line Integrals</a></li>
+<li><a href="section-36.html" data-scroll="section-36">Applications: Average Value</a></li>
+<li><a href="section-37.html" data-scroll="section-37">Applications: Physical Properties</a></li>
+</ul>
+<h2 class="link"><a href="chapter-11.html" data-scroll="chapter-11"><span class="codenumber">11</span><span class="title">Optimization</span></a></h2>
+<ul>
+<li><a href="section-38.html" data-scroll="section-38">The Gradient</a></li>
+<li><a href="section-39.html" data-scroll="section-39">The Second Derivative Test</a></li>
+<li><a href="section-40.html" data-scroll="section-40">Lagrange Multipliers</a></li>
+</ul>
+<h2 class="link"><a href="chapter-12.html" data-scroll="chapter-12"><span class="codenumber">12</span><span class="title">Double Integrals</span></a></h2>
+<ul>
+<li><a href="section-41.html" data-scroll="section-41">Double Integrals and Applications</a></li>
+<li><a href="section-42.html" data-scroll="section-42">Applications of Double Integrals</a></li>
+<li><a href="section-43.html" data-scroll="section-43">Switching Coordinates: Cartesian to Polar</a></li>
+<li><a href="section-44.html" data-scroll="section-44">Switching Coordinates: The Generalized Jacobian</a></li>
+<li><a href="section-45.html" data-scroll="section-45">Green's Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-13.html" data-scroll="chapter-13"><span class="codenumber">13</span><span class="title">Surface Integrals</span></a></h2>
+<ul>
+<li><a href="section-46.html" data-scroll="section-46">Surface Area and Surface Integrals</a></li>
+<li><a href="section-47.html" data-scroll="section-47">Two Vector Operators: Curl and Div</a></li>
+<li><a href="section-48.html" data-scroll="section-48">Circulation Density and Stokes' Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-14.html" data-scroll="chapter-14"><span class="codenumber">14</span><span class="title">Triple Integrals</span></a></h2>
+<ul>
+<li><a href="section-49.html" data-scroll="section-49">Triple Integral Definition and Applications</a></li>
+<li><a href="section-50.html" data-scroll="section-50">Changing Coordinate Systems: The Jacobian</a></li>
+<li><a href="section-51.html" data-scroll="section-51">The Divergence Theorem</a></li>
+</ul>
+<h2 class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></h2>
+<ul><li><a href="references-1.html" data-scroll="references-1">Bibliography</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-33"><header title="Section 10.1 Work, Flow, Circulation, and Flux"><h1 class="heading hide-type" alt="Section 10.1 Work, Flow, Circulation, and Flux">
+<span class="type">Section</span><span class="codenumber">10.1</span><span class="title">Work, Flow, Circulation, and Flux</span>
+</h1></header><section class="introduction" id="introduction-19"><ul id="ul-43" style="list-style-type: disc;">
+<li id="li-578"><p id="p-1165">Define and practice a more general calculation for Work</p></li>
+<li id="li-579"><p id="p-1166">Practice applications of vector calculus</p></li>
+</ul>
+<p id="p-1167">Now that we can describe motion, let's turn our attention to the work done by a vector field as we move through the field. Work is a transfer of energy. </p>
+<ul id="ul-44" style="list-style-type: disc;">
+<li id="li-580"><p id="p-1168">A tornado picks might pick up a couch, and applies forces to the couch as the couch swirls around the center. Work transfers the energy from the tornado to then couch, giving the cough it's kinetic energy.</p></li>
+<li id="li-581"><p id="p-1169">When an object falls, gravity does work on the object. The work done by gravity converts potential energy to kinetic energy.</p></li>
+<li id="li-582"><p id="p-1170">If we consider the flow of water down a river, it's gravity that gives the water its kinetic energy. We can place a hydro electric dam next to river to capture a lot of this kinetic energy.  Work transfers the kinetic energy of the river to rotational energy of the turbine, which eventually ends up as electrical energy available in our homes.</p></li>
+</ul>
+<p></p>
+<p id="p-1171">When we study work, we are really studying how energy is transferred. This is one of the key components of modern life.</p>
+<p id="p-1172">Let's start with simple review. Recall that the work done by a vector field \(\vec F\) through a displacement \(\vec d\) is the dot product \(\vec F\cdot \vec d\text{.}\) We saw this in <a knowl="./knowl/first_work_problem.html" knowl-id="xref-first_work_problem" alt="Exercise 3.6.4 Projection Application: Work" title="Exercise 3.6.4 Projection Application: Work">Exercise 3.6.4</a>.</p>
+<p id="p-1173">An object moves from \(A=(6,0)\) to \(B=(0,3)\text{.}\) Along the way, it encounters the constant force \(\vec F = (2,5)\text{.}\) How much work is done by \(\vec F\) as the object moves from \(A\) to \(B\text{?}\) See <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-180" id="fn-180"><span class="footnote"><sup> 1 </sup></span></a></span><span id="hk-fn-180" style="display: none;" class="tex2jax_ignore"><span class="footnote">The displacement is \(B-A=(-6,3)\text{.}\) The work is \(\vec F\cdot \vec d = (2,5)\cdot(-6,3) = -12+15=3\text{.}\)</span></span>.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-177" id="exercise-177"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">10.1.1</span>
+</h5></article></a></div>
+<div id="hk-exercise-177" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1174">An object moves from \(A=(6,0)\) to \(B=(0,3)\text{.}\) A parametrization of the objects path is \(\vec r(t) = (-6,3)t+(6,0)\) for \(0\leq t\leq 1\text{.}\) We are going to investigate what happens under a non-constant force.</p>
+<ol id="ol-147" style="list-style-type: decimal;">
+<li id="li-583"><p id="p-1175">For \(0\leq t\leq .5\text{,}\) what is the displacement vector \(\vec{d}\) from \(\vec{r}(0) \rightarrow \vec{r}(0.5)\text{?}\) If the force encountered over this section is \(\vec F = (2,5)\) how much work is done?</p></li>
+<li id="li-584"><p id="p-1176">For \(.5\leq t\leq 1\text{,}\) what is the displacement vector \(\vec{d}\) from \(\vec{r}(0.5) \rightarrow \vec{r}(1)\text{?}\) If the force encountered over this section is \(\vec F = (2,6)\) how much work is done?</p></li>
+<li id="li-585"><p id="p-1177">How much total work was done?</p></li>
+<li id="li-586">
+<p id="p-1178">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-181" id="fn-181"><span class="footnote"><sup> 2 </sup></span></a></span><span id="hk-fn-181" style="display: none;" class="tex2jax_ignore"><span class="footnote">You can visualize what's happening in this exercise as follows.  Attach a clothesline between the points (maybe representing two trees in your backyard).  Put a cub scout space derby ship on the clothesline.  Then the wind starts to blow.  As the ship moves along the clothesline, the wind changes direction.</span></span>Suppose that the force constantly changes as we move along the curve. At \(t\text{,}\) we'll assume we encountered the force \(F(t) = (2,5+2t)\text{.}\)</p>
+<ol id="ol-148" style="list-style-type: lower-alpha;">
+<li id="li-587"><p id="p-1179">Find \(\ds W=\int \vec F\cdot d\vec r = \int_0^{0.5} (2,5+2t)\cdot (-6,3)dt.\) How does this compare to part (1)?</p></li>
+<li id="li-588"><p id="p-1180">Find \(\ds W=\int \vec F\cdot d\vec r = \int_0^1 (2,5+2t)\cdot (-6,3)dt.\) How does this compare to part (3)?</p></li>
+</ol>
+</li>
+<li id="li-589"><p id="p-1181">Explain why the total work done by this force along the path is \(\ds W=\int \vec F\cdot d\vec r\text{.}\) [What does \(\vec{F} \cdot d\vec{r}\) represent?]</p></li>
+</ol></article></div>
+<p id="p-1182">We know how to compute work when we move along a straight line. Prior to <a knowl="./knowl/first_work_problem.html" knowl-id="xref-first_work_problem" alt="Exercise 3.6.4 Projection Application: Work" title="Exercise 3.6.4 Projection Application: Work">exercise 3.6.4</a> on <a knowl="./knowl/first_work_problem.html" knowl-id="xref-first_work_problem" alt="Exercise 3.6.4 Projection Application: Work" title="Exercise 3.6.4 Projection Application: Work">page 3.6.4</a>, we made the following statements.</p>
+<blockquote>If a force \(F\) acts through a displacement \(d\text{,}\) then the most basic definition of work is \(W=Fd\text{,}\) the product of the force and the displacement.  This basic definition has a few assumptions. <ul id="ul-45" style="list-style-type: disc;">
+<li id="li-590"><p id="p-1183">The force \(F\) must act in the same direction as the displacement.</p></li>
+<li id="li-591"><p id="p-1184">The force \(F\) must be constant throughout the  displacement.</p></li>
+<li id="li-592"><p id="p-1185">The displacement must be in a straight line.</p></li>
+</ul>
+</blockquote>
+<p id="p-1186">We used the dot product to remove the first assumption, and we showed in <a knowl="./knowl/first_work_problem.html" knowl-id="xref-first_work_problem" alt="Exercise 3.6.4 Projection Application: Work" title="Exercise 3.6.4 Projection Application: Work">exercise 3.6.4</a> that the work is simply the dot product
+\begin{equation*}
+W=\vec F\cdot \vec r,
+\end{equation*}
+where \(\vec F\) is a force acting through a displacement \(\vec r\text{.}\) The previous exercise showed that we can remove the assumption that \(\vec F\) is constant, by integrating to obtain
+\begin{equation*}
+W=\int \vec F \cdot d\vec r = \int_a^b F\cdot \frac{d\vec r}{dt}dt,
+\end{equation*}
+provided we have a parametrization of \(\vec r\) with \(a\leq t\leq b\text{.}\) The next exercise gets rid of the assumption that \(\vec r\) is a straight line.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-178" id="exercise-178"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">10.1.2</span>
+</h5></article></a></div>
+<div id="hk-exercise-178" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1187">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-182" id="fn-182"><span class="footnote"><sup> 3 </sup></span></a></span><span id="hk-fn-182" style="display: none;" class="tex2jax_ignore"><span class="footnote"><a class="external-url" href="http://www.youtube.com/watch?v=9TGZIIpEaHw&amp;list=PL04DF68E73B7ECD54&amp;index=2&amp;feature=plpp_video" target="_blank">Watch a YouTube video</a> about work.</span></span> Suppose that we move along the circle \(\vec r(t) = (3\cos t,3\sin t)\text{.}\) As we move along this circle, we encounter a rotation force \(\vec F(x,y) = (-2y,2x)\text{.}\) </p>
+<ol id="ol-149" style="list-style-type: decimal;">
+<li id="li-593"><p id="p-1188">Draw the curve \(\vec r(t)\text{.}\) Then at several points on the curve, draw the vector field \(\vec F(x,y)\text{.}\)  For example, at the point \((3,0)\) you should have the vector \(\vec F(3,0)=(-2(0),2(3))=(0,6)\text{,}\) a vector sticking straight up 6 units. Are we moving with the vector field, or against the vector field?</p></li>
+<li id="li-594"><p id="p-1189">Explain why we can state that a little bit of work done over a small displacement is \(dW = \vec F\cdot d\vec r\text{.}\) Why does it not matter that \(\vec r\) moves in a straight line?</p></li>
+<li id="li-595"><p id="p-1190">Explain why the work done by \(\vec F\) along the circle \(C\)  EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-183" id="fn-183"><span class="footnote"><sup> 4 </sup></span></a></span><span id="hk-fn-183" style="display: none;" class="tex2jax_ignore"><span class="footnote">We put the \(C\) under the integral \(\int_C\) to remind us that we are integrating along the curve \(C\text{.}\)  This means we need to get a parametrization of the curve \(C\text{,}\) and give bounds before we can integrate with respect to \(t\text{.}\)</span></span>is
+\begin{equation*}
+W = \int_C\left(-2y,2x\right)\cdot d\vec r
+= \int_0^{2\pi}\left(-2(3\sin t),2(3\cos t)\right)\cdot(-3\sin t, 3\cos t)dt.
+\end{equation*}
+Then integrate to show that the work done by \(\vec F\) along this circle is \(36\pi\text{.}\)</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1191">It's time for a definition.</p>
+<article class="definition-like" id="definition-33"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">10.1.3</span>
+</h5>
+<p id="p-1192">The work done by a vector field \(\vec F\text{,}\) along a curve \(C\) with parametrization \(\vec r(t)\) for \(a\leq t\leq b\) is
+\begin{equation*}
+W = \int_C \vec F\cdot d\vec r= \int_a^b \vec F\cdot \frac{d\vec r}{dt}dt.
+\end{equation*}
+</p>
+<p id="p-1193">If we let \(\vec F = (M,N)\) and we let \(\vec r(t)=(x,y)\text{,}\) so that \(d\vec r = (dx,dy)\text{,}\) then we can write work in the differential form
+\begin{equation*}
+W = \int_C \vec F\cdot d\vec r= \int_C (M,N)\cdot (dx,dy) = \int_C Mdx+Ndy.
+\end{equation*}
+</p></article><p id="p-1194">Consider the curve \(y=3x^2-5x\) for \(-2\leq x\leq 1\text{.}\) Give a parametrization of this curve. See <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-184" id="fn-184"><span class="footnote"><sup> 5 </sup></span></a></span><span id="hk-fn-184" style="display: none;" class="tex2jax_ignore"><span class="footnote">Whenever you have a function of the form \(y=f(x)\text{,}\) you can always use \(x=t\) and \(y=f(t)\) to parametrize the curve.  So we can use \(\vec r(t) = (t, 3t^2-5t)\) for \(-2\leq t\leq 1\) as a parametrization.</span></span>.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-179" id="exercise-179"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">10.1.4</span>
+</h5></article></a></div>
+<div id="hk-exercise-179" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1195">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-185" id="fn-185"><span class="footnote"><sup> 6 </sup></span></a></span><span id="hk-fn-185" style="display: none;" class="tex2jax_ignore"><span class="footnote">Please use this <a class="external-url" href="%5Csageworkurl" target="_blank">Sage link</a> to check your work.</span></span> Consider the parabolic curve \(y=4-x^2\) for \(-1\leq x\leq 2\text{,}\) and the vector field \(\vec F(x,y) = (2x+y,-x)\text{.}\) </p>
+<ol id="ol-150" style="list-style-type: decimal;">
+<li id="li-596"><p id="p-1196">Give a parametrization \(\vec r(t)\) of the parabolic curve that starts at \((-1,3)\) and ends at \((2,0)\text{.}\)  See the review exercise above if you need a hint.</p></li>
+<li id="li-597"><p id="p-1197">Compute \(d\vec r\) and state \(dx\) and \(dy\text{.}\)</p></li>
+<li id="li-598"><p id="p-1198">What are \(M\) and \(N\) in terms of \(t\text{?}\) <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-45" id="hint-45"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-45" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-1199">Use \(\vec r (t)\) and substitution</p></span></span></p></li>
+<li id="li-599"><p id="p-1200">Compute the work done by \(\vec F\) to move an object along the parabola from \((-1,3)\) to \((2,0)\) (i.e. compute \(\int _C Mdx+Ndy\)). Check your answer with <a class="external-url" href="%5Csageworkurl" target="_blank">Sage</a>.</p></li>
+<li id="li-600"><p id="p-1201">How much work is done by \(\vec F\) to move an object along the parabola from \((2,0)\) to \((-1,3)\text{.}\)</p></li>
+<li id="li-601"><p id="p-1202">In general, if you traverse along a path backwards, how much work is done?</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-180" id="exercise-180"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">10.1.5</span>
+</h5></article></a></div>
+<div id="hk-exercise-180" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1203">Again consider the vector field \(\vec F(x,y) = (2x+y,-x)\text{.}\) In the previous exercise we considered how much work was done by \(\vec F\) as an object moved along the the parabolic curve \(y=4-x^2\) for \(-1\leq x\leq 2\text{.}\) We now want to know how much work is done to move an object along a straight line from \((-1,3)\) to \((2,0)\text{.}\) </p>
+<ol id="ol-151" style="list-style-type: decimal;">
+<li id="li-602"><p id="p-1204">Give a parametrization \(\vec r(t)\) of the straight line curve that starts at \((-1,3)\) and ends at \((2,0)\text{.}\) The opening exercise of this chapter shows you the key to parameterizing a straight line segment.  Make sure you give bounds for \(t\text{.}\)</p></li>
+<li id="li-603"><p id="p-1205">Compute \(d\vec r\) and state \(dx\) and \(dy\text{.}\) What are \(M\) and \(N\) in terms of \(t\text{?}\)</p></li>
+<li id="li-604"><p id="p-1206">Compute the work done by \(\vec F\) to move an object along the straight line path from \((-1,3)\) to \((2,0)\text{.}\) Check your answer with <a class="external-url" href="%5Csageworkurl" target="_blank">Sage</a>.  EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-186" id="fn-186"><span class="footnote"><sup> 7 </sup></span></a></span><span id="hk-fn-186" style="display: none;" class="tex2jax_ignore"><span class="footnote">When you enter your curve in Sage, remember to type the times symbol in “(3*t-1, ...)”.  Otherwise, you'll get an error.</span></span></p></li>
+<li id="li-605"><p id="p-1207">Optional (we'll discuss this in class if you don't have it).  How much work does it take to go along the closed path that starts at \((2,0)\text{,}\) follows the parabola \(y=4-x^2\) to \((-3,1)\text{,}\) and then returns to \((2,0)\) along a straight line. Show that this total work is \(W=-9\text{.}\)</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1208">The examples above showed us that we can compute work along any closed curve. All we have to do is parametrize the curve, take a derivative, and then compute \(dW = \vec F \cdot d\vec r\text{.}\) This gives us a little bit of work along a curve, and we sum up the little bits of work (integrate) to find the total work.</p></section><section class="subsection" id="subsection-19"><header title="Subsection 10.1.1 Flow &amp; Flux"><h1 class="heading hide-type" alt="Subsection 10.1.1 Flow &amp; Flux">
+<span class="type">Subsection</span><span class="codenumber">10.1.1</span><span class="title">Flow &amp; Flux</span>
+</h1></header><ul id="ul-46" style="list-style-type: disc;">
+<li id="li-606"><p id="p-1209">Define and practice how to find `flux'</p></li>
+<li id="li-607"><p id="p-1210">Practice applications of vector calculus</p></li>
+</ul>
+<p id="p-1211">In the exercises for the previous sections, the vector fields represented forces. However, vector fields can represent much more than just forces. The vector field might represent the flow of water down a river, or the flow of air across an airplane wing. When we think of the vector field as a velocity field, then we mights ask the question, how much of the fluid flows along our curve. Alternately, we might ask how much of the fluid flows across our curve. These two exercises lead to flow along a curve, and flux across a curve. Flow along a curve is directly related to the lift of an airplane wing (which occurs when the flow along the top of the wing is different than the flow below the wing). The flux across a curve will quickly take us to powering a wind mill as wind flows across the surface of a blade (once we hit 3D integrals).</p>
+<p id="p-1212">If the unit tangent vector is \(\vec T = \dfrac{(3,4)}{5}\text{,}\) give two unit vectors that are orthogonal to \(\vec T\text{.}\) See <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-187" id="fn-187"><span class="footnote"><sup> 8 </sup></span></a></span><span id="hk-fn-187" style="display: none;" class="tex2jax_ignore"><span class="footnote">We just reverse the order and change a sign to get \(\vec N_1 = \dfrac{(-4,3)}{5}\) and \(\vec N_1 = \dfrac{(4,-3)}{5}\) as the orthogonal vectors.</span></span>.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-181" id="exercise-181"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">10.1.6</span>
+</h5></article></a></div>
+<div id="hk-exercise-181" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1213">We used the formulas
+\begin{equation*}
+W = \int_C \vec F\cdot d\vec r  = \int_C (M,N)\cdot(dx,dy)
+\end{equation*}
+to compute the work done by \(\vec F\) along a curve \(C\) parametrized by \(\vec r = (x,y)\text{.}\) </p>
+<ol id="ol-152" style="list-style-type: decimal;">
+<li id="li-608"><p id="p-1214">Explain why \(W = \int_C \vec F\cdot \vec T ds\text{.}\) [Why does \(\vec T ds = d\vec r\text{?}\)  Look up \(\vec T\) in the last chapter.] EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-188" id="fn-188"><span class="footnote"><sup> 9 </sup></span></a></span><span id="hk-fn-188" style="display: none;" class="tex2jax_ignore"><span class="footnote">Watch a <a class="external-url" href="http://www.youtube.com/watch?v=6WcN36FbeWc&amp;list=PL04DF68E73B7ECD54" target="_blank">YouTube video</a> about flow and circulation.</span></span></p></li>
+<li id="li-609"><p id="p-1215">Show that \(\vec F\cdot \vec T\) is the projection of \(\vec F\) onto the vector \(T\) (the amount of work in the tangential direction). [Just write down the formula for a projection.  How long is \(\vec T\text{?}\)  This should be really fast.]</p></li>
+<li id="li-610"><p id="p-1216">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-189" id="fn-189"><span class="footnote"><sup> 10 </sup></span></a></span><span id="hk-fn-189" style="display: none;" class="tex2jax_ignore"><span class="footnote">Watch a  <a class="external-url" href="http://www.youtube.com/watch?v=5DNdI72XEYY&amp;list=PL04DF68E73B7ECD54&amp;index=4&amp;feature=plpp_video" target="_blank">YouTube video</a> about flux.</span></span>We know that \(\vec T = \dfrac{(dx, dy)}{\sqrt{(dx)^2+(dy)^2}}\text{.}\)  Suppose \(\vec n\) is a unit normal vector to the curve. Give two options for \(\vec n\text{.}\) <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-46" id="hint-46"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-46" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-1217">Look at the review exercise.</p></span></span></p></li>
+<li id="li-611"><p id="p-1218">We know  \(\vec T ds = (dx,dy)\text{.}\) Why does \(\vec n ds\) equal \((dy,-dx)\) or \((-dy,dx)\text{?}\)</p></li>
+<li id="li-612"><p id="p-1219">The integral \(W = \int_C \vec F\cdot \vec T ds\) measures how much of the vector field flows along the curve.  What does the integral \(\Phi = \int_C \vec F\cdot \vec n ds\) measure?</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-182" id="exercise-182"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">10.1.7</span><span class="title">Intro to Flux</span>
+</h5></article></a></div>
+<div id="hk-exercise-182" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1220">Consider the curve \(\vec r(t) = (5\cos t, 5\sin t)\text{,}\) and the vector field \(\vec F(x,y) = (3x, 3y)\text{.}\) This is a radial field that pushes things straight outwards (away from the origin). </p>
+<ol id="ol-153" style="list-style-type: decimal;">
+<li id="li-613"><p id="p-1221">Sketch a picture of the curve and vector field. Feel free to use Sage or WolframAlpha to help visualize it.</p></li>
+<li id="li-614"><p id="p-1222">Compute the work \(\ds W= \int_C (M,N)\cdot (dx,dy)\) and show that is equals zero. (Can you give a reason why it should be zero?)  EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-190" id="fn-190"><span class="footnote"><sup> 11 </sup></span></a></span><span id="hk-fn-190" style="display: none;" class="tex2jax_ignore"><span class="footnote">See <a class="external-url" href="%5Csageworkurl" target="_blank">Sage</a> for the work calculation.</span></span></p></li>
+<li id="li-615"><p id="p-1223">To get a normal vector, we could change \((dx,dy)\) to \((dy,-dx)\) or to \((-dy,dx)\text{.}\) Compute both \(\ds \int_C (M,N)\cdot (dy,-dx)\) and \(\ds \int_C (M,N)\cdot (-dy,dx)\text{.}\) (They should differ by a sign.) Both integrals measure the flow of the field across the curve, instead of along the curve.</p></li>
+<li id="li-616"><p id="p-1224">If we want flux to measure the flow of a vector field outwards across a curve, then the flux of this vector field should be positive.  Which vector, \((dy,-dx)\) or \((-dy,dx)\text{,}\)  should we choose above for \(n\text{.}\)  EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-191" id="fn-191"><span class="footnote"><sup> 12 </sup></span></a></span><span id="hk-fn-191" style="display: none;" class="tex2jax_ignore"><span class="footnote">See <a class="external-url" href="%5Csagefluxurl" target="_blank">Sage</a> for the flux computation</span></span></p></li>
+<li id="li-617"><p id="p-1225">(Challenge, we'll discuss in class.) Suppose \(\vec r\) is a counterclockwise parametrization of a closed curve.  The outward normal vector would always point to the right as you move along the curve.  Prove that \((dy,-dx)\) always points to the right of the curve. <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-47" id="hint-47"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-47" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-1226">If you want a right pointing vector, what should \(\vec B=\vec T\times \vec n\) always equal (either \((0,0,1)\) or \((0,0,-1)\)). Use the fact that \(\vec B\times \vec T = \vec n\) to get \(\vec n\text{.}\)</p></span></span></p></li>
+</ol>
+<p></p></article></div>
+<article class="definition-like" id="definition-34"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">10.1.8</span><span class="title">Flow, Circulation, and Flux</span>
+</h5>
+<p id="p-1227">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-192" id="fn-192"><span class="footnote"><sup> 13 </sup></span></a></span><span id="hk-fn-192" style="display: none;" class="tex2jax_ignore"><span class="footnote"><ul id="ul-47" style="list-style-type: disc;">
+<li id="li-618"><p id="p-1228">Watch a YouTube video about <a class="external-url" href="http://www.youtube.com/watch?v=6WcN36FbeWc&amp;list=PL04DF68E73B7ECD54" target="_blank">flow and circulation.</a></p></li>
+<li id="li-619"><p id="p-1229">Watch a <a class="external-url" href="http://www.youtube.com/watch?v=5DNdI72XEYY&amp;list=PL04DF68E73B7ECD54&amp;index=4&amp;feature=plpp_video" target="_blank">YouTube video</a> about flux.</p></li>
+</ul></span></span> Suppose \(C\) is a smooth curve with parametrization \(\vec r(t)=(x,y)\text{.}\) Suppose that \(\vec F(x,y)\) is a vector field that represents the velocity of some fluid (like water or air). </p>
+<ul id="ul-48" style="list-style-type: disc;">
+<li id="li-620"><p id="p-1230">We say that \(C\) is closed curve if \(C\) begins and ends at the same point.</p></li>
+<li id="li-621"><p id="p-1231">We say that \(C\) is a simple curve if \(C\) does not cross itself.</p></li>
+<li id="li-622"><p id="p-1232">The flow of \(\vec F\) along \(C\) is the integral
+\begin{equation*}
+\text{ Flow }  = \int_C (M,N)\cdot (dx,dy) = \int_C Mdx+Ndy.
+\end{equation*}
+</p></li>
+<li id="li-623"><p id="p-1233">If \(C\) is a simple closed curve parametrized counter clockwise, then the flow of \(\vec F\) along \(C\) is called circulation, and we write \(\text{ Circulation }  = \oint_C Mdx+Ndy\)</p></li>
+<li id="li-624"><p id="p-1234">The flux of \(\vec F\) across \(C\) is the flow of the fluid across the curve (an area/second). If \(C\) is a simple closed curve parametrized <!--Style me with CSS--><em>counter clockwise</em>, then the outward flux is the integral
+\begin{equation*}
+\text{ Flux }  = \Phi = \int_C(M,N)\cdot (dy,-dx) =\int_C Mdy-Ndx .
+\end{equation*}
+</p></li>
+</ul>
+<p></p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-183" id="exercise-183"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">10.1.9</span>
+</h5></article></a></div>
+<div id="hk-exercise-183" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1235">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-193" id="fn-193"><span class="footnote"><sup> 14 </sup></span></a></span><span id="hk-fn-193" style="display: none;" class="tex2jax_ignore"><span class="footnote">If you haven't yet, please watch the YouTube videos for <ul id="ul-49" style="list-style-type: disc;">
+<li id="li-625"><p id="p-1236"><a class="external-url" href="http://www.youtube.com/watch?v=9TGZIIpEaHw&amp;list=PL04DF68E73B7ECD54&amp;index=2&amp;feature=plpp_video" target="_blank">work</a>,</p></li>
+<li id="li-626"><p id="p-1237"><a class="external-url" href="http://www.youtube.com/watch?v=6WcN36FbeWc&amp;list=PL04DF68E73B7ECD54" target="_blank">flow and circulation</a>, and</p></li>
+<li id="li-627"><p id="p-1238"><a class="external-url" href="http://www.youtube.com/watch?v=5DNdI72XEYY&amp;list=PL04DF68E73B7ECD54&amp;index=4&amp;feature=plpp_video" target="_blank">flux</a>.</p></li>
+</ul></span></span> Consider the vector field \(\vec F(x,y) = (2x+y,-x+2y)\text{.}\) </p>
+<ol id="ol-154" style="list-style-type: decimal;"><li id="li-628"><p id="p-1239">Use Sage or WolframAlpha to construct a plot of \(\vec F\text{.}\)</p></li></ol>
+<p></p>
+<p id="p-1240">When you construct a plot of this vector field, you should notice that it causes objects to spin outwards in the clockwise direction. Suppose an object moves counterclockwise around a circle \(C\) of radius 3 that is centered at the origin. (You'll need to parametrize the curve.) </p>
+<ol id="ol-155" style="list-style-type: decimal;">
+<li id="li-629"><p id="p-1241">Should the circulation of \(\vec F\) along \(C\) be positive or negative?  Make a guess, and then compute the circulation \(\oint_C Mdx+Ndy\text{.}\)</p></li>
+<li id="li-630"><p id="p-1242">Whether your guess was right or wrong, explain why you made the guess.</p></li>
+<li id="li-631"><p id="p-1243">Should the flux of \(\vec F\) across \(C\) be positive or negative? Make a guess, and then actually compute the flux \(\oint_C Mdy-Ndx\text{.}\)</p></li>
+<li id="li-632"><p id="p-1244">Whether your guess was right or wrong, explain why you made the guess.</p></li>
+<li id="li-633"><p id="p-1245">Please use this <a class="external-url" href="%5Csageworkfluxurl" target="_blank">Sage link</a> to check both computations.</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1246">We'll tackle more work, flow, circulation, and flux exercises, as we proceed through this unit.</p></section></section></div></main>
+</div>
+</body>
+</html>

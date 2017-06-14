@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:32:55-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">11.2.3</span>
+</h5>
+<p id="p-1535">Consider the function \(f(x,y)=x^2-2x+xy+y^2\text{.}\) The first and second derivatives are
+\begin{equation*}
+Df(x,y)=\begin{bmatrix}2x-2+y,x+2y
+\end{bmatrix} 
+\text{ and }  
+D^2f = \begin{bmatrix}2\amp 1 \\1\amp 2
+\end{bmatrix} .
+\end{equation*}
+</p>
+<p id="p-1536">The first derivative is zero (the zero matrix) when both \(2x-2+y=0\) and \(x+2y=0\text{.}\) We need to solve the system of equations \(2x+y=2\) and \(x+2y=0\text{.}\) Double the second equation, and then subtract it from the first to obtain \(0x-3y=2\text{,}\) or \(y=-2/3\text{.}\) The second equation says that \(x=-2y\text{,}\) or that \(x=4/3\text{.}\) So the only critical point is \((4/3,-2/3)\text{.}\)</p>
+<p id="p-1537">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-247" id="fn-247"><span class="footnote"><sup> 1 </sup></span></a></span><span id="hk-fn-247" style="display: none;" class="tex2jax_ignore"><span class="footnote">In this example, the second derivative is constant, so the point \((4/3,-2/3)\) did not change the matrix. In general, the point will affect your matrix. See <a class="external-url" href="http://aleph.sagemath.org/?q=775b0c4a-fc2c-4d39-8c30-ac5256cfb68a" target="_blank">Sage</a> to see a graph which shows the eigenvectors in which the largest and smallest second derivatives occur.</span></span> We find the eigenvalues of \(D^2 f(4/3,-2/3)\) by solving the equation
+\begin{align*}
+\end{align*}
+</p>
+<p id="p-1538">Expanding the left hand side gives us {\(4-4\lambda + \lambda^2 -1 = 0\)}. Simplifying and factoring gives us \(\lambda^2-4\lambda +3 = (\lambda-3)(\lambda -1) = 0\text{.}\) This means the eigenvalues are \(\lambda = 1\) and \(\lambda=3\text{.}\) Since both numbers are positive, the function is concave upwards in every direction. The critical point \((4/3,-2/3)\) corresponds to a local minimum of the function. The local minimum is the output \(f(4/3,-2/3) = (4/3)^2-2(4/3)+(4/3)(-2/3)+(-2/3)^2\text{.}\)</p>
+<p id="p-1539">A link to the graph of \(f\) is provided on the right. The red vector \((1,1)\) points in the direction in which the second derivative is the largest value 3. The blue vector \((-1,1)\) points in the direction in which the second derivative is the smallest value 1. These vectors are called eigenvectors, and you can learn much more about them, in particular how to find them, in a linear algebra course. For this course, we just need to be able to find eigenvalues.</p></article><span class="incontext"><a href="section-39.html#example-2">in-context</a></span>
+</body>
+</html>

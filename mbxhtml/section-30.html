@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:31:45-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Some Examples and The TNB Frame</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(\renewcommand{\chaptername}{Unit}
+\newcommand{\derivativehomeworklink}[1]{\href{http://db.tt/cSeKG8XO}{#1}}
+\newcommand{\chpname}{unit}
+\newcommand{\sageurlforcurvature}{http://bmw.byuimath.com/dokuwiki/doku.php?id=curvature_calculator}
+\newcommand{\uday}{ \LARGE Day \theunitday \normalsize \flushleft \stepcounter{unitday} }
+\newcommand{\sageworkurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=work_calculator}
+\newcommand{\wrapup}{
+\bmw{\section{Wrap Up}
+Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+
+\valposhort{\section{Wrap Up}
+This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
+\instructor{TeX files for these are included in a separate folder in the GitHub Project}
+\note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+\textbf{Review Guide Creation}\\
+
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname\ review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } \\
+
+As you create this review guide, consider the following:
+\begin{itemize}
+ \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+ \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+\end{itemize}
+} 
+}
+\newcommand{\sagefluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=flux_calculator}
+\newcommand{\instructor}[1]{ EXTRA\footnote{\textcolor{blue}{\textbf{Instructor: }#1}}}
+\newcommand{\sageworkfluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=both_flux_and_work}
+\newcommand{\instructor}[1]{}
+\newcommand{\sagelineintegral}{http://bmw.byuimath.com/dokuwiki/doku.php?id=line_integral_calculator}
+\renewcommand{\thefootnote}{\roman{footnote}}
+\newcommand{\sagephysicalpropertiestwod}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_2d}
+\newcommand{\note}[1]{\footnote{#1} EXTRA\footnote{\fbox{\textbf{\thefootnote}}}}
+\newcommand{\sagephysicalpropertiesthreed}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_3d}
+\newcommand{\note}[1]{}
+\newcommand{\sageDoubleIntegralCheckerURL}{http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator}
+\newcommand{\myscale}{1}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dfdx}[1]{\frac{d#1}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\ii}{\vec \imath}
+\newcommand{\jj}{\vec \jmath}
+\newcommand{\kk}{\vec k}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\R}{ \mathbb{R}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\im}{\text{im }}
+\newcommand{\colvec}[1]{\begin{bmatrix}#1\end{bmatrix}    }
+\newcommand{\cl}[1]{ \begin{matrix}  #1  \end{matrix}    }
+\newcommand{\bm}[1]{ \begin{bmatrix}  #1  \end{bmatrix}  }
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\rref}{rref}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\blank}[1]{[14pt]{\rule{#1}{1pt}}}
+\newcommand{\vp}{^{\,\prime}}
+\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha} }
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Multivariable Calculus</span></a></h1>
+<p class="byline">Ben Woodruff</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-29.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-9.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-31.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-29.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-9.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-31.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Introduction</span></a></h2>
+<ul>
+<li><a href="section-1.html" data-scroll="section-1">Mathematical Truths</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Teaching philosophy</a></li>
+<li><a href="section-3.html" data-scroll="section-3">Modification Notes</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Review: Calculus I &amp; II</span></a></h2>
+<ul>
+<li><a href="section-4.html" data-scroll="section-4">Review of First Semester Calculus</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Differentials</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-7.html" data-scroll="section-7">Solving Systems of equations</a></li>
+<li><a href="section-8.html" data-scroll="section-8">Optional: Higher Order Approximations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span><span class="title">Vectors</span></a></h2>
+<ul>
+<li><a href="section-9.html" data-scroll="section-9">Vectors and Lines</a></li>
+<li><a href="section-10.html" data-scroll="section-10">The Dot Product</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-12.html" data-scroll="section-12">The Cross Product</a></li>
+<li><a href="section-13.html" data-scroll="section-13">The Cross Product and Planes</a></li>
+<li><a href="section-14.html" data-scroll="section-14">Projections and Their Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Review: Conic Sections</span></a></h2>
+<ul><li><a href="section-15.html" data-scroll="section-15">Conic Sections</a></li></ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Parametric Equations</span></a></h2>
+<ul><li><a href="section-16.html" data-scroll="section-16">Parametric Equations</a></li></ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span><span class="title">Polar and New Coordinate Systems</span></a></h2>
+<ul><li><a href="section-17.html" data-scroll="section-17">Polar Coordinates</a></li></ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span><span class="title">Functions</span></a></h2>
+<ul>
+<li><a href="section-18.html" data-scroll="section-18">Function Terminology</a></li>
+<li><a href="section-19.html" data-scroll="section-19">Parametric Curves:</a></li>
+<li><a href="section-20.html" data-scroll="section-20">Parametric Surfaces:</a></li>
+<li><a href="section-21.html" data-scroll="section-21">Functions of Several Variables:</a></li>
+<li><a href="section-22.html" data-scroll="section-22">Constructing Functions</a></li>
+<li><a href="sec_functionlist.html" data-scroll="sec_functionlist">Summary of Functions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span><span class="title">Derivatives</span></a></h2>
+<ul>
+<li><a href="section-24.html" data-scroll="section-24">Introduction</a></li>
+<li><a href="section-25.html" data-scroll="section-25">The (multi-dimensional) Derivative</a></li>
+<li><a href="section-26.html" data-scroll="section-26">Tangent Planes</a></li>
+<li><a href="section-27.html" data-scroll="section-27">The Chain Rule</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-9.html" data-scroll="chapter-9"><span class="codenumber">9</span><span class="title">Motion</span></a></h2>
+<ul>
+<li><a href="section-28.html" data-scroll="section-28">Optional: Projectile Motion</a></li>
+<li><a href="section-29.html" data-scroll="section-29">Arc Length and the Unit Tangent Vector</a></li>
+<li><a href="section-30.html" data-scroll="section-30" class="active">Some Examples and The TNB Frame</a></li>
+<li><a href="section-31.html" data-scroll="section-31">More Practice</a></li>
+<li><a href="section-32.html" data-scroll="section-32">Tangential And Normal Components</a></li>
+</ul>
+<h2 class="link"><a href="chapter-10.html" data-scroll="chapter-10"><span class="codenumber">10</span><span class="title">Line Integrals</span></a></h2>
+<ul>
+<li><a href="section-33.html" data-scroll="section-33">Work, Flow, Circulation, and Flux</a></li>
+<li><a href="section-34.html" data-scroll="section-34">Area and the Line-Integral</a></li>
+<li><a href="section-35.html" data-scroll="section-35">The Fundamental Theorem of Line Integrals</a></li>
+<li><a href="section-36.html" data-scroll="section-36">Applications: Average Value</a></li>
+<li><a href="section-37.html" data-scroll="section-37">Applications: Physical Properties</a></li>
+</ul>
+<h2 class="link"><a href="chapter-11.html" data-scroll="chapter-11"><span class="codenumber">11</span><span class="title">Optimization</span></a></h2>
+<ul>
+<li><a href="section-38.html" data-scroll="section-38">The Gradient</a></li>
+<li><a href="section-39.html" data-scroll="section-39">The Second Derivative Test</a></li>
+<li><a href="section-40.html" data-scroll="section-40">Lagrange Multipliers</a></li>
+</ul>
+<h2 class="link"><a href="chapter-12.html" data-scroll="chapter-12"><span class="codenumber">12</span><span class="title">Double Integrals</span></a></h2>
+<ul>
+<li><a href="section-41.html" data-scroll="section-41">Double Integrals and Applications</a></li>
+<li><a href="section-42.html" data-scroll="section-42">Applications of Double Integrals</a></li>
+<li><a href="section-43.html" data-scroll="section-43">Switching Coordinates: Cartesian to Polar</a></li>
+<li><a href="section-44.html" data-scroll="section-44">Switching Coordinates: The Generalized Jacobian</a></li>
+<li><a href="section-45.html" data-scroll="section-45">Green's Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-13.html" data-scroll="chapter-13"><span class="codenumber">13</span><span class="title">Surface Integrals</span></a></h2>
+<ul>
+<li><a href="section-46.html" data-scroll="section-46">Surface Area and Surface Integrals</a></li>
+<li><a href="section-47.html" data-scroll="section-47">Two Vector Operators: Curl and Div</a></li>
+<li><a href="section-48.html" data-scroll="section-48">Circulation Density and Stokes' Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-14.html" data-scroll="chapter-14"><span class="codenumber">14</span><span class="title">Triple Integrals</span></a></h2>
+<ul>
+<li><a href="section-49.html" data-scroll="section-49">Triple Integral Definition and Applications</a></li>
+<li><a href="section-50.html" data-scroll="section-50">Changing Coordinate Systems: The Jacobian</a></li>
+<li><a href="section-51.html" data-scroll="section-51">The Divergence Theorem</a></li>
+</ul>
+<h2 class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></h2>
+<ul><li><a href="references-1.html" data-scroll="references-1">Bibliography</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-30"><header title="Section 9.3 Some Examples and The TNB Frame"><h1 class="heading hide-type" alt="Section 9.3 Some Examples and The TNB Frame">
+<span class="type">Section</span><span class="codenumber">9.3</span><span class="title">Some Examples and The TNB Frame</span>
+</h1></header><p id="p-1002">In this section you will... </p>
+<ul id="ul-33" style="list-style-type: disc;"><li id="li-498"><p id="p-1003">develop the notion of `curvature' and the associated scalar/vector values.</p></li></ul>
+<p></p>
+<p id="p-1004">Imagine that you are at a park with some kids (a nephew, a daughter, etc.). The park has a merry-go-round where the kids can sit down, hold on, and then spin in circles. As the spinning speed increases, they'll feel a greater force trying to throw them outwards. To stay on the merry-go-round, they have to counteract this outward acceleration with their own inward acceleration. For the next few examples, let's examine the connections between \(\vec v\text{,}\) \(\vec a\text{,}\) \(\vec T\text{,}\) \(d\vec T/dt\text{,}\) \(d\vec T/ds\text{,}\) and \(|d\vec T/ds|\) in the context of spinning around on a merry-go-round. These few examples are enough to develop just about the entire chapter.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-160" id="exercise-160"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.3.1</span>
+</h5></article></a></div>
+<div id="hk-exercise-160" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1005">Sammy sits on a merry go round. He sits 3 feet from the center of the merry ground, and lets his big sister spin him around. We can parameterize Sammy's path with the vector equation \(\vec r(t) = (3\cos t, 3\sin t)\text{,}\) where \(t\) is in seconds. The point \((0,3)\) corresponds to the time \(t=\pi/2\text{.}\) </p>
+<ol id="ol-132" style="list-style-type: decimal;">
+<li id="li-499"><p id="p-1006">Draw the curve for \(0\leq t\leq 2\pi\text{.}\)</p></li>
+<li id="li-500"><p id="p-1007">Compute \(\vec v\) and \(\vec a\text{.}\)</p></li>
+<li id="li-501"><p id="p-1008">At \((0,3)\) (so \(t=\pi/2\)), draw these two vectors. Are these two vectors orthogonal?</p></li>
+<li id="li-502"><p id="p-1009">Compute \(\vec T\) and \(\dfrac{d\vec T}{dt}\text{.}\)</p></li>
+<li id="li-503"><p id="p-1010">At \((0,3)\text{,}\) draw these two vectors. Are these two vectors orthogonal?</p></li>
+<li id="li-504"><p id="p-1011">Compute \(\dfrac{d\vec T}{ds}\) and \(\left|\dfrac{d\vec T}{ds}\right|\text{.}\)</p></li>
+<li id="li-505"><p id="p-1012">How is the length of \(\dfrac{d\vec T}{ds}\) related to the circle?</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-161" id="exercise-161"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.3.2</span>
+</h5></article></a></div>
+<div id="hk-exercise-161" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1013">We started with the parameterization \(\vec r(t) = (3\cos t, 3\sin t)\text{,}\) now we'll replace \(t\) with \(5t\) and \(\omega t\) to understand which values can be used as descriptors of the curve vs. the motion. </p>
+<ol id="ol-133" style="list-style-type: decimal;">
+<li id="li-506"><p id="p-1014">Replace \(t\) with \(5t\) and compute \(\vec v\text{,}\) \(\vec a\text{,}\) \(\vec T\text{,}\) \(\dfrac{d\vec T}{dt}\text{,}\) \(\dfrac{d\vec T}{ds}\text{,}\) and \(\left|\dfrac{d\vec T}{ds}\right|\text{.}\)</p></li>
+<li id="li-507"><p id="p-1015">If we still want to evaluate at the time corresponding to the point \((0,3)\text{,}\) what is \(t=\text{?.}\) \begin{hint}It should be smaller than \(\frac{\pi}{2}\)</p></li>
+<li id="li-508"><p id="p-1016">Replace \(t\) with \(\omega t\) and find \(\vec v\text{,}\) \(\vec a\text{,}\) \(\vec T\text{,}\) \(\dfrac{d\vec T}{dt}\text{,}\) \(\dfrac{d\vec T}{ds}\text{,}\) and \(\left|\dfrac{d\vec T}{ds}\right|\text{.}\)</p></li>
+<li id="li-509"><p id="p-1017">Explain why we should evaluate at \(t=\frac{\pi}{2\omega}\) for the point \((0,3)\text{.}\)</p></li>
+<li id="li-510"><p id="p-1018">Evaluate each at \(t=\frac{\pi}{2\omega}\text{,}\) the time corresponding to point \((0,3)\text{.}\)</p></li>
+<li id="li-511"><p id="p-1019">At \((0,3)\text{,}\) which of these 6 quantities remain the same?</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1020">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-159" id="fn-159"><span class="footnote"><sup> 1 </sup></span></a></span><span id="hk-fn-159" style="display: none;" class="tex2jax_ignore"><span class="footnote">Gauss developed and expanded many of the ideas in this section while on a map making mission for a king.  He wanted to create extremely high quality 2D images of the 3D world we are in.</span></span></p>
+<p id="p-1021">We started with motion on a circle with a relatively simple speed. We then multiplied the speed by 5, and then chose a variable speed. You should have noticed that at the same point on the curve, regardless of speed, the quantities \(\vec T\text{,}\) \(\dfrac{d\vec T}{ds}\text{,}\) and \(\left|\dfrac{d\vec T}{ds}\right|\) remained the same. Will this pattern continue if we were to change from constant speeds to variable speeds? What if we left the path of a circle, and moved to any smooth curve? How far can we take this pattern? Is it true always? If so, then the quantities \(\vec T\text{,}\) \(\dfrac{d\vec T}{ds}\text{,}\) and \(\left|\dfrac{d\vec T}{ds}\right|\) are pretty important quantities that describe the curve we're on.</p>
+<p id="p-1022">Because \(\dfrac{d\vec T}{ds}\) and \(\left|\dfrac{d\vec T}{ds}\right|\) show up a lot, let's give them a definition.</p>
+<article class="definition-like" id="def_curvature"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">9.3.3</span>
+</h5>
+<p id="p-1023">Curvature \(\kappa\) and The Curvature Vector \(\vec \kappa\)\end{hint} Let \(\vec r(t)\) be a smooth curve (so that \(\vec v\) is never zero). </p>
+<ul id="ul-34" style="list-style-type: disc;">
+<li id="li-512"><p id="p-1024">The vector \(\vec \kappa = \dfrac{d\vec T}{ds}\) we'll call the curvature vector. It measures how quickly the unit tangent vectors changes as we increase in length (not time).</p></li>
+<li id="li-513"><p id="p-1025">The number \(\kappa = \left|\dfrac{d\vec T}{ds}\right|\) we'll call the curvature.</p></li>
+</ul>
+<p></p></article><p id="p-1026">Let's apply this new definition to a circle of any radius. We'll quickly see that the curvature and radius of a circle are related. The curvature vector \(d\vec T/ds\) tells us how quickly \(\vec T\) changes as we increase in length, which is a measure of how sharply we turn a corner. If our curve is a circle of radius \(3\text{,}\) then the curvature is \(1/3\text{.}\) <!--Style me with CSS--><em>A larger circle should result in smaller curvature.</em></p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-162" id="exercise-162"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.3.4</span>
+</h5></article></a></div>
+<div id="hk-exercise-162" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1027">Consider the curve \(\vec r(t)=(a\cos t, a\sin t)\text{.}\) </p>
+<ol id="ol-134" style="list-style-type: decimal;">
+<li id="li-514"><p id="p-1028">Draw the curve, and state the radius \(\rho\) of the best approximating circle.</p></li>
+<li id="li-515"><p id="p-1029">Find the curvature vector \(\vec \kappa\) by performing a computation.</p></li>
+<li id="li-516"><p id="p-1030">What relationship exists between \(\rho\) and \(\kappa\text{?}\)  If the radius \(\rho\) were to increase, what would happen to \(\kappa\text{?}\)</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1031">For any curve, we could approximate how rapidly the curve turns at a point by drawing a circle that best approximates the curve (kind of like a Taylor polynomial, only now we'll use a circle.) We want the circle to meet the curve \(\vec r\) tangentially, and we want the curvature of the circle to match the curvature of the curve. Since the curvature of the circle must match the curvature of the curve, we know they are inverse related. This gives the following definition.</p>
+<article class="definition-like" id="definition-28"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">9.3.5</span><span class="title">Radius of Curvature</span>
+</h5>
+<p id="p-1032">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-160" id="fn-160"><span class="footnote"><sup> 2 </sup></span></a></span><span id="hk-fn-160" style="display: none;" class="tex2jax_ignore"><span class="footnote">Watch a <a class="external-url" href="http://www.youtube.com/watch?v=cHez5K1EWPs&amp;list=PL30EE81142B1ED1F0&amp;index=8&amp;feature=plpp_video" target="_blank">YouTube Video</a>.</span></span>When the curvature \(\kappa\) of a smooth curve is nonzero, we'll define the radius of curvature, written \(\rho\text{,}\) to be the reciprocal \(\rho = \dfrac{1}{\kappa}\text{.}\) The curvature and radius of curvature are inversely related.</p></article><p id="p-1033">Now let's look at what happens if we change the speed in a nonlinear way. For simplicity, let's replace \(t\) with \(t^2\text{.}\) You could pick any other change. If you aren`t confident with your product rule, then please do the first review exercise. If you need to remember how to show vectors are orthogonal, do the second.</p>
+<p id="p-1034">Suppose \(f(x) = \sin(x^2)\text{.}\) Compute \(f'(x)\) and \(f''(x)\text{.}\) See <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-161" id="fn-161"><span class="footnote"><sup> 3 </sup></span></a></span><span id="hk-fn-161" style="display: none;" class="tex2jax_ignore"><span class="footnote">We have \(f'(x) = 2x\cos(x^2)\) and \(f''(x) = -4x^2\sin(x^2)+2\cos(x^2)\text{.}\)</span></span>.</p>
+<p id="p-1035">Show that \((-2,3,1)\) and \((4,2,2)\) are orthogonal. See <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-162" id="fn-162"><span class="footnote"><sup> 4 </sup></span></a></span><span id="hk-fn-162" style="display: none;" class="tex2jax_ignore"><span class="footnote">The dot product of these two vectors is \((-2,3,1)\cdot(4,2,2) = -8+6+2=0\text{.}\) Because the dot product is zero, the vectors are orthogonal.</span></span>.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-163" id="exercise-163"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.3.6</span>
+</h5></article></a></div>
+<div id="hk-exercise-163" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1036">The big kids pushing Sammy on the merry-go-round decide to constantly increase the spinning rate. To parametrize Sammy's path, let's replace \(t\) with \(t^2\) in the original parametrization to obtain \(\vec r(t) = (3\cos t^2, 3\sin t^2)\text{.}\) Fill in the missing values below, and then answer the questions that follow.
+\begin{equation*}
+\begin{array}{|c|c|}\hline
+\vec v \amp  ( -6 t \sin \left(t^2\right),6 t \cos \left(t^2\right) ) \\\hline
+ds/dt \amp  6 t \\\hline
+\vec a \amp  
+\\\hline
+\vec T \amp  \left(-\sin \left(t^2\right),\cos \left(t^2\right)\right) 
+\\\hline
+d\vec T/dt \amp  \left(-2 t \cos \left(t^2\right),-2 t \sin \left(t^2\right)\right)\\\hline
+\vec \kappa = d\vec T/ds \amp  
+\\\hline
+\kappa =|d\vec T/ds| \amp  \frac{1}{3} \\\hline
+\end{array}
+\end{equation*}
+</p>
+<ol id="ol-135" style="list-style-type: decimal;"><li id="li-517"><p id="p-1037">Show that \(\vec v\) and \(\vec a\) are not orthogonal, but that \(\vec T\) and \(d\vec T/dt\) are.</p></li></ol>
+<p></p>
+<p id="p-1038">Because \(\vec r (t)\) includes periodic trig functinos at \((0,3)\) we could have \(t^2 = \frac{\pi}{2}\text{,}\) \(t^2=2\pi+frac{\pi}{2}\) or \(t^2=2\pi k + \frac{\pi}{2}\) for any integer \(k\text{.}\)</p>
+<ol id="ol-136" style="list-style-type: decimal;">
+<li id="li-518"><p id="p-1039">Show that \(\vec T\) is the same at \((0,3)\text{,}\) regardless of what time we pass through \((0,3)\text{.}\)</p></li>
+<li id="li-519"><p id="p-1040">Show the same is true for \(d\vec T/ds\text{.}\)</p></li>
+<li id="li-520">
+<p id="p-1041">When the speed is \(\frac{ds}{dt}=6\) (so \(t=1\)), how long are \(d\vec T/dt\) and \(d\vec T/ds\text{?}\)</p>
+<ol id="ol-137" style="list-style-type: lower-alpha;">
+<li id="li-521"><p id="p-1042">When the speed is \(\frac{ds}{dt}=12\) (so \(t=2\)), how long are \(d\vec T/dt\) and \(d\vec T/ds\text{?}\)</p></li>
+<li id="li-522"><p id="p-1043">When the speed is \(\frac{ds}{dt}=30\) (so \(t=5\)), how long are \(d\vec T/dt\) and \(d\vec T/ds\text{?}\)</p></li>
+<li id="li-523"><p id="p-1044">If the speed were some random number \(v\text{,}\) how long are \(d\vec T/dt\) and \(d\vec T/ds\text{?}\)</p></li>
+</ol>
+</li>
+</ol></article></div>
+<article class="remark-like" id="curvature_observations"><h5 class="heading">
+<span class="type">Observation</span><span class="codenumber">9.3.7</span>
+</h5>
+<p id="p-1045">The previous exercise showed the following patterns. </p>
+<ul id="ul-35" style="list-style-type: disc;">
+<li id="li-524"><p id="p-1046">The vectors \(\vec v\) and \(\vec a\) are not always orthogonal.</p></li>
+<li id="li-525"><p id="p-1047">The vectors \(\vec T\) and \(\dfrac{d\vec T}{dt}\) are always orthogonal.</p></li>
+<li id="li-526"><p id="p-1048">The vectors \(\vec T\) and \(\dfrac{d\vec T}{ds}\) are independent of speed. They depend only on the shape of the curve, not the speed at which you traverse the curve.</p></li>
+<li id="li-527"><p id="p-1049">If we multiply \(\dfrac{d\vec T}{ds}\) by \(\dfrac{ds}{dt}\text{,}\) we'll get \(\dfrac{d\vec T}{dt}\text{.}\) The two vectors point in the same direction, which from here on out we'll call \(\vec N\text{,}\) the direction normal to the motion.</p></li>
+</ul>
+<p></p></article><p id="p-1050">Let's see if this pattern continues when we swap to a different curve. Rather than try to connect the curve to some physical real world example, let's look at a curve we are familiar with, a parabola. If the pattern holds there as well, then we may have found a key pattern that works with all curves. Then we can take our new knowledge and apply it to ANYTHING (like space flight, roller coasters, missiles, and anything that moves).</p>
+<p id="p-1051">If you want to perform the computations below by hand, you must master the product, quotient, and chain rule, as well as working with rational exponents in algebra. Feel free to try the computations by hand (if you can get them, then well done). You may also simply use Sage to do the computations below.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-164" id="exercise-164"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.3.8</span>
+</h5></article></a></div>
+<div id="hk-exercise-164" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1052">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-163" id="fn-163"><span class="footnote"><sup> 5 </sup></span></a></span><span id="hk-fn-163" style="display: none;" class="tex2jax_ignore"><span class="footnote">Use the <a class="external-url" href="%5Csageurlforcurvature" target="_blank">Sage link</a>.</span></span> Consider the curve \(\vec r(t) = (t, t^2)\text{.}\) The computations get intense, so let's use a computer algebra system, such as Sage (<a class="external-url" href="%5Csageurlforcurvature" target="_blank">follow this link</a>) to help us. If we don't use a computer, we could spend hours on this exercise. The computer will do all the computations, and give graphs, in seconds. </p>
+<ol id="ol-138" style="list-style-type: decimal;">
+<li id="li-528"><p id="p-1053">Use this <a class="external-url" href="%5Csageurlforcurvature" target="_blank">Sage link</a> to compute \(\vec v\text{,}\) \(\vec a\text{,}\) \(\dfrac{ds}{dt}\text{,}\) \(\vec T\text{,}\) \(\dfrac{d\vec T}{dt}\text{,}\) \(\dfrac{d\vec T}{ds}\text{,}\) \(\left|\dfrac{d\vec T}{ds}\right|\text{,}\) and the unit vector \(\vec N\) that is orthogonal to \(\vec T\text{.}\) Evaluate each at \(t=1\) and \(t=\sqrt{3}/2\) (use “sqrt(3)/2”). Record your answers in the provided table.</p></li>
+<li id="li-529"><p id="p-1054">Let's now double the speed at which we traverse along the curve. Replace \(t\) with \(2t\text{,}\) and then repeat the exercise above. However, instead of putting in \(t=1\) and \(t=\sqrt{3}/2\text{,}\) we now need to use \(t=1/2\) and \(t=?\text{.}\) Use Sage to record your answers in the provided table.</p></li>
+<li id="li-530"><p id="p-1055">After completing the table, does <a knowl="./knowl/curvature_observations.html" knowl-id="xref-curvature_observations" alt="Observation 9.3.7 " title="Observation 9.3.7 ">Observation 9.3.7</a> still hold?</p></li>
+<li id="li-531"><p id="p-1056">How are \(\vec T\) and \(\vec N\) related?  Conjecture a pattern. <table>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\multirow{2}{*}{Value}</td>
+<td class="l m b0 r0 l0 t0 lines">\(\vec r(t)=(t,t^2)\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\vec r(t)=(2t,(2t)^2)\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">      at \(t=1\)      </td>
+<td class="l m b0 r0 l0 t0 lines">   at \(t=\sqrt3/2\)     </td>
+<td class="l m b0 r0 l0 t0 lines">      at \(t=1/2\)     </td>
+<td class="l m b0 r0 l0 t0 lines">   at \(t=?\)         </td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\vec r\)</td>
+<td class="l m b0 r0 l0 t0 lines">\((1,1)\)</td>
+<td class="l m b0 r0 l0 t0 lines">\((3/4,3/4)\)</td>
+<td class="l m b0 r0 l0 t0 lines">\((1,1)\)</td>
+<td class="l m b0 r0 l0 t0 lines">\((3/4,3/4)\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\vec v\)</td>
+<td class="l m b0 r0 l0 t0 lines">\((1,2)\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\vec a\)</td>
+<td class="l m b0 r0 l0 t0 lines">\((0,2)\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\frac{ds}{dt}\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\sqrt{5}\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\vec T\)</td>
+<td class="l m b0 r0 l0 t0 lines">\((\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5})\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\frac{d\vec T}{dt}\)</td>
+<td class="l m b0 r0 l0 t0 lines">\((-\frac{4\sqrt{5}}{25},\frac{2\sqrt{5}}{25})\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\vec\kappa=\frac{d\vec T}{ds}\)</td>
+<td class="l m b0 r0 l0 t0 lines">\((-\frac{4}{25},\frac{2}{25})\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\kappa=\left|\frac{d\vec T}{ds}\right|\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\frac{2\sqrt{5}}{25}\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\vec N\)</td>
+<td class="l m b0 r0 l0 t0 lines">\((-\frac{2\sqrt{5}}{5},\frac{1\sqrt{5}}{5})\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+</table></p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1057">Our observation still holds. Let's try it on one more curve in 3D by hand.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-165" id="exercise-165"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.3.9</span>
+</h5></article></a></div>
+<div id="hk-exercise-165" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1058">Consider the helix \(\vec r(t)=(4\cos t,4\sin t, 3t)\text{.}\) EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-164" id="fn-164"><span class="footnote"><sup> 6 </sup></span></a></span><span id="hk-fn-164" style="display: none;" class="tex2jax_ignore"><span class="footnote">Because the speed is constant, many of the computations are simplified. You can use the <a class="external-url" href="%5Csageurlforcurvature" target="_blank">Sage link</a> to check your work.</span></span> Compute \(\vec v\text{,}\) \(\vec T\text{,}\) \(\dfrac{d\vec T}{dt}\text{,}\) and \(\dfrac{d\vec T}{ds}\text{.}\) Then do the following: </p>
+<ol id="ol-139" style="list-style-type: decimal;">
+<li id="li-532"><p id="p-1059">Show that \(\vec T\) and \(\dfrac{d\vec T}{dt}\) are orthogonal. (Do this for any time \(t\text{.}\))</p></li>
+<li id="li-533"><p id="p-1060">At \(t=2\pi\text{,}\) compute \(ds/dt\text{,}\) \(\vec T\text{,}\) \(\dfrac{d\vec T}{dt}\text{,}\) and \(\dfrac{d\vec T}{ds}\text{.}\)</p></li>
+<li id="li-534"><p id="p-1061">Let's slow down how quickly we travel along the curve.  Replace \(t\) with \(t/5\text{.}\)  Then at \(t=10\pi\text{,}\) give \(ds/dt\text{,}\) \(\vec T\text{,}\) \(\dfrac{d\vec T}{dt}\text{,}\) and \(\dfrac{d\vec T}{ds}\) for the new curve \(\vec r_2(t) =(4\cos(\frac{t}{5}),4\sin(\frac{t}{5}), 3(\frac{t}{5}))\text{.}\)</p></li>
+<li id="li-535"><p id="p-1062">Give a unit vector that points in the same direction as \(\dfrac{d\vec T}{dt}\) or \(\dfrac{d\vec T}{ds}\text{.}\)</p></li>
+</ol>
+<p></p></article></div></section></div></main>
+</div>
+</body>
+</html>

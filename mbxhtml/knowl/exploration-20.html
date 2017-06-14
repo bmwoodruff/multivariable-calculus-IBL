@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:32:56-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="example-like"><h5 class="heading">
+<span class="type">Challenge</span><span class="codenumber">12.1.1</span>
+</h5>
+<p id="p-1628">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-254" id="fn-254"><span class="footnote"><sup> 3 </sup></span></a></span><span id="hk-fn-254" style="display: none;" class="tex2jax_ignore"><span class="footnote">See <a class="external-url" href="http://aleph.sagemath.org/?z=eJx9kMtugzAQRfd8BVIXjJ2BElAWWfAlVYOQgWKJYHfsNsDX17xaRKtu_JJ1zp37WRAEI9qmsgVSwLwaehxwZNmyc7iG_S0Jh1vCmGdUK8tcaWuyUgoLQrWKsmCo2lY9AlS6ENIOWRyl2983KnST6YKKe2VJily3yqYlAHGhDMxehsSN7LbLNSQnQx8IY0wZLu8Yavmc4LQw5PwnCfOedqrT0QUQb3PMMzjugGE6g0cnOB9p_8NcKdy8k11qYRhPwH4N6sDn30BPkDImN5WwUnVrI-bjDkd4DXKufom4WuRk2Z2_YzO_VuRLX3b-S4zRBaMIk-jy6oSmUQ_Yz_FHAuZ9Aa-ooss" target="_blank">Sage</a>.</span></span>Consider the solid domain \(D\) in space that is beneath the surface \(f(x,y)=9-x^2-y^2\) and above the \(xy\)-plane, where the \(x\) values satisfy \(x\geq 0\text{.}\) The region is half of a parabolic solid. Our goal in this exercise is to find the volume of the solid \(D\text{.}\) This is the same solid referred to in the previous two exercises.</p>
+<ol id="ol-213" style="list-style-type: decimal;">
+<li id="li-843"><p id="p-1629">Draw the solid \(D\text{.}\)</p></li>
+<li id="li-844"><p id="p-1630">The plane \(x=0\) intersects the solid in a parabola \(z=9-y^2\text{.}\) Sketch this parabola in your 3D drawing. The area under this parabola is \(A_{x=0} = \int_{-3}^3 9-(0)^2-(y)^2 \ dy\text{.}\)</p></li>
+<li id="li-845">
+<p id="p-1631">Similarly, the plane \(x=1\) intersects the solid in half a parabola \(z=9-1^2-y^2\text{.}\) Sketch this parabola in your 3D drawing.</p>
+<ol id="ol-214" style="list-style-type: lower-alpha;"><li id="li-846"><p id="p-1632">Find a values \(c\) and \(d\) so that the area under this parabola is given by the formula \(A_x(1)=\int_c^{d} 9-(1)^2-(y)^2 \ dy\text{.}\)</p></li></ol>
+</li>
+<li id="li-847"><p id="p-1633">The plane \(x=2\) intersects the solid in half a parabola (draw this parabola). Find the values \(c\) and \(d\) so that the area under this parabola is \(A_x(2)=\int_c^d 9-(2)^2-(y)^2 \ dx\text{.}\)</p></li>
+<li id="li-848"><p id="p-1634">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-255" id="fn-255"><span class="footnote"><sup> 4 </sup></span></a></span><span id="hk-fn-255" style="display: none;" class="tex2jax_ignore"><span class="footnote">You should obtain an inequality \(a\leq x\leq b\) where \(a\) and \(b\) are constants. For \(c\leq y\leq d\text{,}\) you should have functions of \(x\) for both \(c\) and \(d\text{.}\) If both involve square roots, you're on the right track.</span></span> For which \(x\)-values \(x_0\) does the plane \(x=x_0\) intersect the paraboloid.</p></li>
+<li id="li-849"><p id="p-1635">For each of these values, what should \(c\) and \(d\) equal so that \(A_x(x_0) = \int_c^d 9-x_0^2-y^2 dy\) gives the area under the half parabola obtained when the plane \(x=x_0\) intersects the surface.</p></li>
+</ol>
+<p id="p-1636">Imagine now that you cut the surface into 6 pieces, using the plane \(x=x_0\) for each \(x_0\) in \(\{0,0.5,1,1.5,2, 2.5,3\}\text{.}\) Let \(x_0=0\text{,}\) \(x_1=0.5\text{,}\) \(\ldots\text{,}\) \(x_{6}=3\text{.}\) The change in \(x\) between each point is \(dx=0.5\text{.}\) In the plane \(x=x_i\text{,}\) we know the area under the surface is \(A_x(x_i) = \int_{c_i}^{d_i} 9-(x_i)^2-y^2 dy\) (where you found \(c_i\) and \(d_i\) in the last part). If we multiply this area by the thickness \(dx=0.5\text{,}\) we obtain the volume of a solid (think \(dV=(A_x)dx\)). </p>
+<ol id="ol-215" style="list-style-type: decimal;">
+<li id="li-850"><p id="p-1637">Draw this solid in your picture for \(x_i = 1\text{.}\)</p></li>
+<li id="li-851"><p id="p-1638">Explain why the volume of \(D\) equals \(\ds\int_{0}^{3} \left(\int_{-\sqrt{9-x^2}}^{\sqrt{9-x^2}}9-x^2-y^2 dy\right) dx\text{.}\)</p></li>
+<li id="li-852"><p id="p-1639">Use a computer to first compute the inside integral (you should have \(x\) values left after you integrate the inside), and then compute the outside integral (which should leave you with a single number). This number is the volume of \(D\text{.}\)</p></li>
+</ol>
+<p></p></article><span class="incontext"><a href="section-41.html#exploration-20">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:31:45-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Arc Length and the Unit Tangent Vector</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(\renewcommand{\chaptername}{Unit}
+\newcommand{\derivativehomeworklink}[1]{\href{http://db.tt/cSeKG8XO}{#1}}
+\newcommand{\chpname}{unit}
+\newcommand{\sageurlforcurvature}{http://bmw.byuimath.com/dokuwiki/doku.php?id=curvature_calculator}
+\newcommand{\uday}{ \LARGE Day \theunitday \normalsize \flushleft \stepcounter{unitday} }
+\newcommand{\sageworkurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=work_calculator}
+\newcommand{\wrapup}{
+\bmw{\section{Wrap Up}
+Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+
+\valposhort{\section{Wrap Up}
+This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
+\instructor{TeX files for these are included in a separate folder in the GitHub Project}
+\note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+\textbf{Review Guide Creation}\\
+
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname\ review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } \\
+
+As you create this review guide, consider the following:
+\begin{itemize}
+ \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+ \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+\end{itemize}
+} 
+}
+\newcommand{\sagefluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=flux_calculator}
+\newcommand{\instructor}[1]{ EXTRA\footnote{\textcolor{blue}{\textbf{Instructor: }#1}}}
+\newcommand{\sageworkfluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=both_flux_and_work}
+\newcommand{\instructor}[1]{}
+\newcommand{\sagelineintegral}{http://bmw.byuimath.com/dokuwiki/doku.php?id=line_integral_calculator}
+\renewcommand{\thefootnote}{\roman{footnote}}
+\newcommand{\sagephysicalpropertiestwod}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_2d}
+\newcommand{\note}[1]{\footnote{#1} EXTRA\footnote{\fbox{\textbf{\thefootnote}}}}
+\newcommand{\sagephysicalpropertiesthreed}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_3d}
+\newcommand{\note}[1]{}
+\newcommand{\sageDoubleIntegralCheckerURL}{http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator}
+\newcommand{\myscale}{1}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dfdx}[1]{\frac{d#1}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\ii}{\vec \imath}
+\newcommand{\jj}{\vec \jmath}
+\newcommand{\kk}{\vec k}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\R}{ \mathbb{R}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\im}{\text{im }}
+\newcommand{\colvec}[1]{\begin{bmatrix}#1\end{bmatrix}    }
+\newcommand{\cl}[1]{ \begin{matrix}  #1  \end{matrix}    }
+\newcommand{\bm}[1]{ \begin{bmatrix}  #1  \end{bmatrix}  }
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\rref}{rref}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\blank}[1]{[14pt]{\rule{#1}{1pt}}}
+\newcommand{\vp}{^{\,\prime}}
+\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha} }
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Multivariable Calculus</span></a></h1>
+<p class="byline">Ben Woodruff</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-28.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-9.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-30.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-28.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-9.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-30.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Introduction</span></a></h2>
+<ul>
+<li><a href="section-1.html" data-scroll="section-1">Mathematical Truths</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Teaching philosophy</a></li>
+<li><a href="section-3.html" data-scroll="section-3">Modification Notes</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Review: Calculus I &amp; II</span></a></h2>
+<ul>
+<li><a href="section-4.html" data-scroll="section-4">Review of First Semester Calculus</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Differentials</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-7.html" data-scroll="section-7">Solving Systems of equations</a></li>
+<li><a href="section-8.html" data-scroll="section-8">Optional: Higher Order Approximations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span><span class="title">Vectors</span></a></h2>
+<ul>
+<li><a href="section-9.html" data-scroll="section-9">Vectors and Lines</a></li>
+<li><a href="section-10.html" data-scroll="section-10">The Dot Product</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-12.html" data-scroll="section-12">The Cross Product</a></li>
+<li><a href="section-13.html" data-scroll="section-13">The Cross Product and Planes</a></li>
+<li><a href="section-14.html" data-scroll="section-14">Projections and Their Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Review: Conic Sections</span></a></h2>
+<ul><li><a href="section-15.html" data-scroll="section-15">Conic Sections</a></li></ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Parametric Equations</span></a></h2>
+<ul><li><a href="section-16.html" data-scroll="section-16">Parametric Equations</a></li></ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span><span class="title">Polar and New Coordinate Systems</span></a></h2>
+<ul><li><a href="section-17.html" data-scroll="section-17">Polar Coordinates</a></li></ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span><span class="title">Functions</span></a></h2>
+<ul>
+<li><a href="section-18.html" data-scroll="section-18">Function Terminology</a></li>
+<li><a href="section-19.html" data-scroll="section-19">Parametric Curves:</a></li>
+<li><a href="section-20.html" data-scroll="section-20">Parametric Surfaces:</a></li>
+<li><a href="section-21.html" data-scroll="section-21">Functions of Several Variables:</a></li>
+<li><a href="section-22.html" data-scroll="section-22">Constructing Functions</a></li>
+<li><a href="sec_functionlist.html" data-scroll="sec_functionlist">Summary of Functions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span><span class="title">Derivatives</span></a></h2>
+<ul>
+<li><a href="section-24.html" data-scroll="section-24">Introduction</a></li>
+<li><a href="section-25.html" data-scroll="section-25">The (multi-dimensional) Derivative</a></li>
+<li><a href="section-26.html" data-scroll="section-26">Tangent Planes</a></li>
+<li><a href="section-27.html" data-scroll="section-27">The Chain Rule</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-9.html" data-scroll="chapter-9"><span class="codenumber">9</span><span class="title">Motion</span></a></h2>
+<ul>
+<li><a href="section-28.html" data-scroll="section-28">Optional: Projectile Motion</a></li>
+<li><a href="section-29.html" data-scroll="section-29" class="active">Arc Length and the Unit Tangent Vector</a></li>
+<li><a href="section-30.html" data-scroll="section-30">Some Examples and The TNB Frame</a></li>
+<li><a href="section-31.html" data-scroll="section-31">More Practice</a></li>
+<li><a href="section-32.html" data-scroll="section-32">Tangential And Normal Components</a></li>
+</ul>
+<h2 class="link"><a href="chapter-10.html" data-scroll="chapter-10"><span class="codenumber">10</span><span class="title">Line Integrals</span></a></h2>
+<ul>
+<li><a href="section-33.html" data-scroll="section-33">Work, Flow, Circulation, and Flux</a></li>
+<li><a href="section-34.html" data-scroll="section-34">Area and the Line-Integral</a></li>
+<li><a href="section-35.html" data-scroll="section-35">The Fundamental Theorem of Line Integrals</a></li>
+<li><a href="section-36.html" data-scroll="section-36">Applications: Average Value</a></li>
+<li><a href="section-37.html" data-scroll="section-37">Applications: Physical Properties</a></li>
+</ul>
+<h2 class="link"><a href="chapter-11.html" data-scroll="chapter-11"><span class="codenumber">11</span><span class="title">Optimization</span></a></h2>
+<ul>
+<li><a href="section-38.html" data-scroll="section-38">The Gradient</a></li>
+<li><a href="section-39.html" data-scroll="section-39">The Second Derivative Test</a></li>
+<li><a href="section-40.html" data-scroll="section-40">Lagrange Multipliers</a></li>
+</ul>
+<h2 class="link"><a href="chapter-12.html" data-scroll="chapter-12"><span class="codenumber">12</span><span class="title">Double Integrals</span></a></h2>
+<ul>
+<li><a href="section-41.html" data-scroll="section-41">Double Integrals and Applications</a></li>
+<li><a href="section-42.html" data-scroll="section-42">Applications of Double Integrals</a></li>
+<li><a href="section-43.html" data-scroll="section-43">Switching Coordinates: Cartesian to Polar</a></li>
+<li><a href="section-44.html" data-scroll="section-44">Switching Coordinates: The Generalized Jacobian</a></li>
+<li><a href="section-45.html" data-scroll="section-45">Green's Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-13.html" data-scroll="chapter-13"><span class="codenumber">13</span><span class="title">Surface Integrals</span></a></h2>
+<ul>
+<li><a href="section-46.html" data-scroll="section-46">Surface Area and Surface Integrals</a></li>
+<li><a href="section-47.html" data-scroll="section-47">Two Vector Operators: Curl and Div</a></li>
+<li><a href="section-48.html" data-scroll="section-48">Circulation Density and Stokes' Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-14.html" data-scroll="chapter-14"><span class="codenumber">14</span><span class="title">Triple Integrals</span></a></h2>
+<ul>
+<li><a href="section-49.html" data-scroll="section-49">Triple Integral Definition and Applications</a></li>
+<li><a href="section-50.html" data-scroll="section-50">Changing Coordinate Systems: The Jacobian</a></li>
+<li><a href="section-51.html" data-scroll="section-51">The Divergence Theorem</a></li>
+</ul>
+<h2 class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></h2>
+<ul><li><a href="references-1.html" data-scroll="references-1">Bibliography</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-29"><header title="Section 9.2 Arc Length and the Unit Tangent Vector"><h1 class="heading hide-type" alt="Section 9.2 Arc Length and the Unit Tangent Vector">
+<span class="type">Section</span><span class="codenumber">9.2</span><span class="title">Arc Length and the Unit Tangent Vector</span>
+</h1></header><p id="p-953">This section will... </p>
+<ul id="ul-32" style="list-style-type: disc;"><li id="li-475"><p id="p-954">Motivate and define the <!--Style me with CSS--><em>Unit Tanget Vector</em></p></li></ul>
+<p></p>
+<p id="p-955">The previous section developed a way to predict position and velocity from acceleration, let's look more in depth at the actual path taken by a projectile. We'll need to be able to compute the actual distance an object travels (not the displacement, but the distance). This requires that we study arc length. This was covered for curves in the plane in chapter's 3 and 4. (<a knowl="./knowl/arc_length_formula.html" knowl-id="xref-arc_length_formula" alt="Item 5.1.12.3 " title="Item 5.1.12.3 ">See 5.1.12.3</a>)</p>
+<p id="p-956">A horse runs once around an elliptical track, which is parametrized by \(\vec r(t) = (3\cos t,4\sin t)\text{.}\) Set up, do not solve, an integral formula that tells us the distance the horse traveled. What's the displacement? See <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-149" id="fn-149"><span class="footnote"><sup> 1 </sup></span></a></span><span id="hk-fn-149" style="display: none;" class="tex2jax_ignore"><span class="footnote">The velocity is \(\vec v(t) = (3\sin t, -4\cos t)\text{.}\) The speed is \(v(t) = \sqrt{9\sin^2t+16\cos^2t}\text{.}\) The distance traveled is the arc length \(\ds s=\int_0^{2\pi} \left(\sqrt{9\sin^2t+16\cos^2t}\right)dt\text{.}\) Since the horse's initial and final position are equal, the displacement is zero. Arc length does not equal displacement.</span></span> for an answer.</p>
+<p id="p-957">Let's now develop a formula for the arc length of a space curve, a curve in 3D. We can always parameterize a space curve with \(\vec r(t) = (x,y,z)\) (one input, 3 outputs).</p>
+<p id="p-958">Remember: When we talk about speed and velocity it is importation to recognize their differences. Velocity has direction and (often components) while speed is the total movement or the magnitude of the velocity.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-154" id="exercise-154"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.2.1</span>
+</h5></article></a></div>
+<div id="hk-exercise-154" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-959">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-150" id="fn-150"><span class="footnote"><sup> 2 </sup></span></a></span><span id="hk-fn-150" style="display: none;" class="tex2jax_ignore"><span class="footnote">Watch a <a class="external-url" href="http://www.youtube.com/watch?v=jZpAU2T6iI4&amp;list=PL30EE81142B1ED1F0&amp;index=3&amp;feature=plpp_video" target="_blank">YouTube video</a>.</span></span> A space ship travels through the galaxy. Let \(\vec r(t) = (x,y,z)\) EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-151" id="fn-151"><span class="footnote"><sup> 3 </sup></span></a></span><span id="hk-fn-151" style="display: none;" class="tex2jax_ignore"><span class="footnote">Technically, we should write \(\vec r(t) = (x(t),y(t),z(t))\text{.}\) However, we already know that \(x\text{,}\) \(y\text{,}\) and \(z\) depend on \(t\text{,}\) hence we'll just leave the dependence on \(t\) off.</span></span>be the position of the space ship at time \(t\text{,}\) with the earth at the origin \((0,0,0)\text{.}\) </p>
+<ol id="ol-125" style="list-style-type: decimal;">
+<li id="li-476"><p id="p-960">What are the velocity and speed of the space ship at time \(t\text{?}\) You answers should involve some derivatives (such as \(\frac{dx}{dt}\)).</p></li>
+<li id="li-477"><p id="p-961">If the space ship travels for a really small time \(dt\text{,}\) then the speed is about constant. Since distance is speed times time, about how much distance (we'll call it \(ds\)) will the space ship travel in this short amount of time?</p></li>
+<li id="arc_length2"><p id="p-962">As the ship travels from time \(t=a\) to time \(t=b\text{,}\) explain why the distance traveled (the arc length of the path followed) is
+\begin{equation*}
+s=\int_a^b |\vec r '(t)|\ dt = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2+\left(\frac{dz}{dt}\right)^2}\ dt .
+\end{equation*}
+</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-963">In all our work that follows, we want to consider space curves that have nice smooth paths. What does this mean? We want to be able to compute tangent vectors at any point, so we will require that a parametrization \(\vec r\) be differentiable. However, this isn't enough.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-155" id="exercise-155"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.2.2</span>
+</h5></article></a></div>
+<div id="hk-exercise-155" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-964">We've encountered the polar curve \(r = 1-\sin\theta\) before (we called it a cardioid, and it looked like heart). Recall that we can switch from polar to Cartesian using the coordinate transformation \(x=r\cos\theta\) and \(y=r\sin\theta\text{.}\) </p>
+<ol id="ol-126" style="list-style-type: decimal;">
+<li id="li-479"><p id="p-965">Draw the curve.</p></li>
+<li id="li-480"><p id="p-966">Give the parametrization of this curve: \(\vec r(\theta) = ((1-\sin\theta)\cos\theta, ?)\text{.}\)</p></li>
+</ol>
+<p></p>
+<p id="p-967">The parametrization is completely differentiable. </p>
+<ol id="ol-127" style="list-style-type: decimal;">
+<li id="li-481"><p id="p-968">Find \(\dfrac{d\vec r}{d\theta}\text{.}\)</p></li>
+<li id="li-482"><p id="p-969">You should notice a sharp cusp in the graph. At what \(\theta\) does this cusp occur?  What is the value of the derivative \(\dfrac{d\vec r}{d\theta}\) at this value of \(\theta\text{.}\)</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-970">We'd like to avoid paths that contain a cusp, because at a cusp the direction of motion changes rather abruptly. This can happen physically, but it requires the speed of an object to reach zero, the object stops moving, and then the path changes direction. The fact that the speed reaches zero will mean we can't divide by it in our work that follows. To avoid this, we make a definition that requires the path is differentiable, and the velocity is never zero.</p>
+<article class="definition-like" id="def_smooth_curve"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">9.2.3</span><span class="title">Smooth Curves</span>
+</h5>
+<p id="p-971">Let \(\vec r(t)=(x,y,z)\) be a parametrization of a space curve \(C\text{.}\) We say that \(\vec r\) is smooth if \(\vec r\) is differentiable, and the derivative is never the zero vector. If \(\vec r\) is a smooth parameterization, then we call \(C\) a smooth curve.</p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-prob_basic_helix" id="prob_basic_helix"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.2.4</span>
+</h5></article></a></div>
+<div id="hk-prob_basic_helix" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-972">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-152" id="fn-152"><span class="footnote"><sup> 4 </sup></span></a></span><span id="hk-fn-152" style="display: none;" class="tex2jax_ignore"><span class="footnote">Watch TWO <a class="external-url" href="http://www.youtube.com/watch?v=m25oxYTfXfU&amp;list=PL30EE81142B1ED1F0&amp;index=4&amp;feature=plpp_video" target="_blank">YouTube Videos</a> (Arc-Length Parameter and Unit Tangent Vector).</span></span> EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-153" id="fn-153"><span class="footnote"><sup> 5 </sup></span></a></span><span id="hk-fn-153" style="display: none;" class="tex2jax_ignore"><span class="footnote">\thomasee{See 13.3: 1-10 for more practice.} \stewarts{See 13.3:1-6 (finding length) and 13.3:17-20 (finding a unit tangent) for more practice. For 17-20, just find the unit tangent vector (for now)}</span></span> Consider the helical space curve \(C\) with parameterization \(\vec r(t)=(\cos t, \sin t, t)\text{.}\) </p>
+<ol id="ol-128" style="list-style-type: decimal;">
+<li id="li-483"><p id="p-973">Is C a smooth curve?</p></li>
+<li id="li-484"><p id="p-974">Find the length of this space curve for \(t\in[0,2\pi]\) using the formula in <a knowl="./knowl/arc_length2.html" knowl-id="xref-arc_length2" alt="Item 9.2.1.3 " title="Item 9.2.1.3 ">9.2.1.3</a>. Compute any integrals.</p></li>
+<li id="li-485"><p id="p-975">Now find the length of the space curve from \(t=0\) to time \(t=t\text{.}\)</p></li>
+<li id="li-486"><p id="p-976">Give a vector tangent to the curve at \(t=2\pi\text{.}\)</p></li>
+<li id="li-487"><p id="p-977">Now give a vector of length 1 that is tangent to the curve at \(t=2\pi\text{.}\)</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-978">In the previous exercise, you developed two big ideas. You showed how to obtain a unit tangent vector to a curve. You also developed a formula for the length of a curve from time \(t=0\) to any time \(t=t\text{.}\) This gives us a function \(s(t)\) that tells us how far we have traveled after \(t\) seconds. We can now predict distance traveled from time. Predicting the future is powerful. Before moving on, let's examine the derivative of \(s(t)\text{,}\) because it's a quantity we already know.</p>
+<p id="p-979">Compute \(\ds \int_0^t 3x^2 dx\) and \(\ds \int_0^t 3p^2 dp\) and \(\ds \int_0^t 3\tau^2 d\tau\text{.}\) Does it matter what you call the variable inside the integral? Then compute \(\ds\frac{d}{dt} \int_0^t 3\tau^2 d\tau\text{.}\) See <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-154" id="fn-154"><span class="footnote"><sup> 6 </sup></span></a></span><span id="hk-fn-154" style="display: none;" class="tex2jax_ignore"><span class="footnote">The first integral is \(x^3|_0^t = t^3\text{.}\) The other two are the same. You can change the variable inside the integral whenever you want.  For this reason, some people call it a dummy variable. The last part is \(\ds\frac{d}{dt} \int_0^t 3\tau^2 d\tau = \frac{d}{dt} t^3 = 3t^2\text{,}\) we just replaced \(\tau\) with \(t\) in \(3\tau^2\text{.}\)</span></span> for an answer.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fundamental_theorem_of_calculus_as_it_applies_to_arc_length_parameter" id="fundamental_theorem_of_calculus_as_it_applies_to_arc_length_parameter"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.2.5</span>
+</h5></article></a></div>
+<div id="hk-fundamental_theorem_of_calculus_as_it_applies_to_arc_length_parameter" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-980">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-155" id="fn-155"><span class="footnote"><sup> 7 </sup></span></a></span><span id="hk-fn-155" style="display: none;" class="tex2jax_ignore"><span class="footnote">You can remember \(\ds\frac{ds}{dt} = \left|\frac {d\vec r}{dt} \right|\) as follows. We use the differential \(ds\) to represents a change in distance, and \(dt\) represents a change in time. So the speed of an object is the change in distance \(ds\) over the change in time \(dt\text{.}\)</span></span> Let \(\vec r(t)=(x,y,z)\) be a parametrization of a smooth space curve. Let \(\ds s(t)=\int_0^t \left|\frac {d\vec r}{d\tau} \right|\ d\tau\text{.}\) </p>
+<ol id="ol-129" style="list-style-type: decimal;">
+<li id="li-488"><p id="p-981">Explain why \(\ds\frac{ds}{dt} = \left|\frac {d\vec r}{dt} \right|\text{,}\) the speed.</p></li>
+<li id="li-489"><p id="p-982">Now explain why \(s(t)\) is an increasing function.</p></li>
+</ol>
+<p></p>
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-38" id="hint-38"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-38" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-983">Look up the fundamental theorem of calculus. To answer why is \(s\) increasing, what does “smooth” mean?</p></span></span> </article></div>
+<p id="p-984">We'll call \(\ds s(t)=\int_0^t \left|\frac {d\vec r}{d\tau}\right|\ d\tau\) the arc length parameter. It tells us how far we've have traveled after \(t\) seconds. We can now predict distance traveled from time elapsed. Because \(s(t)\) is an increasing function, we can also invert this process and give time elapsed from distance traveled. This means we could compute derivatives with respect to \(s\) instead of \(t\text{.}\) When we take a derivative with respect to \(s\text{,}\) we ask how much a curve changes if we increase length by 1 unit, instead of increasing time by 1 unit. We'll write
+\begin{equation*}
+\ds\frac{d\vec r}{ds} =\ds\frac{d\vec r/dt}{ds/dt} = \frac{d\vec r/dt}{|d\vec r/dt|} = \frac{\vec v}{|\vec{v}|}.
+\end{equation*}
+</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-158" id="exercise-158"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.2.6</span>
+</h5></article></a></div>
+<div id="hk-exercise-158" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-985">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-156" id="fn-156"><span class="footnote"><sup> 8 </sup></span></a></span><span id="hk-fn-156" style="display: none;" class="tex2jax_ignore"><span class="footnote">\thomasee{See 13.3: 11-14 for more practice.} \stewarts{TBD?}</span></span>Consider again the helical space curve \(\vec r(t)=(\cos t, \sin t, t)\text{.}\) We've shown that \(s(t) = t\sqrt{2}\) in <a knowl="./knowl/prob_basic_helix.html" knowl-id="xref-prob_basic_helix" alt="Exercise 9.2.4 " title="Exercise 9.2.4 ">9.2.4</a>. </p>
+<ol id="ol-130" style="list-style-type: decimal;">
+<li id="li-490"><p id="p-986">Solve for \(t\) in terms of \(s\) (so find the inverse of \(s(t)\)).</p></li>
+<li id="li-491"><p id="p-987">Use your answer to determine how much time has elapsed if you've travelled 4 units of distance.</p></li>
+<li id="li-492"><p id="p-988">Compute \(D\vec r(t)\) and \(Dt(s)\text{.}\)  You should have a 2 by 1 matrix, and a 1 by 1 matrix.</p></li>
+<li id="li-493"><p id="p-989">Use the chain rule to compute the derivative of \(\vec r(t(s))\text{.}\)</p></li>
+<li id="li-494"><p id="p-990">Compute the length \(\left|\ds\frac{d\vec r}{ds}\right|\text{.}\)</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-991">The previous exercise motivates the following definition.</p>
+<article class="definition-like" id="def_unit_tangent_vector"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">9.2.7</span><span class="title">Unit Tangent Vector</span>
+</h5>
+<p id="p-992">Let \(\vec r(t)\) be a parametrization of a smooth space curve. We define the unit tangent vector \(\vec T(t)\) to be the derivative of \(\vec r\) with respect to arc length, which means
+\begin{equation*}
+\vec T = \ds\frac{d\vec r}{ds}=\ds\frac{d\vec r/dt}{ds/dt} = \frac{d\vec r/dt}{|d \vec r/dt|} = \frac{\vec v}{|\vec v|}.
+\end{equation*}
+</p>
+<p id="p-993">This is exactly the same as a unit vector in the same direction as the velocity.</p></article><p id="p-994">As we progress through this unit, one of our key goals is to learn new notation. We've got position \(\vec r\text{,}\) velocity \(\vec v\text{,}\) speed \(v\) or \(ds/dt\text{,}\) acceleration \(\vec a\text{,}\) the unit tangent vector \(\vec T\text{,}\) and the derivative of position with respect to arc length \(d\vec r/ds\text{.}\) The last two are the exact same since \(\vec T = d\vec r/ds\text{.}\) Did you also notice that \(ds/dt\) and \(v\) are both the speed? We'll need to start realizing that the same quantity can be developed in many ways.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-159" id="exercise-159"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">9.2.8</span>
+</h5></article></a></div>
+<div id="hk-exercise-159" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-995">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-157" id="fn-157"><span class="footnote"><sup> 9 </sup></span></a></span><span id="hk-fn-157" style="display: none;" class="tex2jax_ignore"><span class="footnote">\thomasee{See 13.3: 1-10 for more practice.} \stewarts{TBD?}</span></span> Suppose an object moves along the space curve given by \(\vec r(t)=(a\cos t,a\sin t,b t)\text{.}\) </p>
+<ol id="ol-131" style="list-style-type: decimal;">
+<li id="li-495"><p id="p-996">Find the object's velocity and speed. What is \(ds/dt\text{?}\)</p></li>
+<li id="li-496"><p id="p-997">Compute \(\frac{d\vec r}{ds}\text{,}\) the derivative of \(\vec r\) with respect to arc length. Leave your answer in terms of \(t\text{.}\) <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-39" id="hint-39"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-39" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-998">Divide the top and bottom by \(dt\) and then compute \(d\vec r/dt\) and \(ds/dt\text{.}\)</p></span></span></p></li>
+<li id="li-497"><p id="p-999">State the unit tangent vector \(\vec T(t)\text{.}\)</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1000">As we progress in this chapter, we'll be computing more derivatives with respect to \(s\text{,}\) instead of \(t\text{.}\) Did you notice in the previous exercise that to compute a derivative with respect to \(s\text{,}\) you just compute the regular derivative with respect to \(t\text{,}\) and then divide by the speed. Please do the following review exercise to make sure you've got down what \(\frac{d}{ds}\) means.</p>
+<p id="p-1001">Suppose \(\vec r(t)=(3\cos t,3\sin t,4t)\text{.}\) Compute \(v\text{,}\) \(ds/dt\text{,}\) \(d\vec r/ds\text{,}\) \(\vec T\text{,}\) and \(d\vec T/ds\text{.}\) See <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-158" id="fn-158"><span class="footnote"><sup> 10 </sup></span></a></span><span id="hk-fn-158" style="display: none;" class="tex2jax_ignore"><span class="footnote">We have \(\vec v = \dfrac{d\vec r}{dt} = (-3\sin t, 3\cos t, 4)\text{.}\) The speed is \(\dfrac{ds}{dt}=|\vec v| = \sqrt{9\sin^2t+9\cos^2t+16}=5\text{.}\) We then compute \(\dfrac{d\vec r}{ds}=\dfrac{d\vec r/dt}{ds/dt} = \dfrac{1}{5}(-3\sin t, 3\cos t, 4)\text{,}\) which equals \(\vec T\text{.}\) We finally compute
+\begin{equation*}
+\dfrac{d\vec T}{ds}=\dfrac{d\vec T/dt}{ds/dt}=\left(\dfrac{1}{ds/dt}\right)\dfrac{d\vec T}{dt} = \left(\dfrac{1}{5}\right)\dfrac{1}{5}(-3\cos t, -3\sin t, 0) =  \dfrac{1}{25}(-3\cos t, -3\sin t, 0).
+\end{equation*}
+</span></span> for an answer.</p></section></div></main>
+</div>
+</body>
+</html>

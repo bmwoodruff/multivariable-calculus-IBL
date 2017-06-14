@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:31:49-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Two Vector Operators: Curl and Div</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(\renewcommand{\chaptername}{Unit}
+\newcommand{\derivativehomeworklink}[1]{\href{http://db.tt/cSeKG8XO}{#1}}
+\newcommand{\chpname}{unit}
+\newcommand{\sageurlforcurvature}{http://bmw.byuimath.com/dokuwiki/doku.php?id=curvature_calculator}
+\newcommand{\uday}{ \LARGE Day \theunitday \normalsize \flushleft \stepcounter{unitday} }
+\newcommand{\sageworkurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=work_calculator}
+\newcommand{\wrapup}{
+\bmw{\section{Wrap Up}
+Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+
+\valposhort{\section{Wrap Up}
+This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
+\instructor{TeX files for these are included in a separate folder in the GitHub Project}
+\note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+\textbf{Review Guide Creation}\\
+
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname\ review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } \\
+
+As you create this review guide, consider the following:
+\begin{itemize}
+ \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+ \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+\end{itemize}
+} 
+}
+\newcommand{\sagefluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=flux_calculator}
+\newcommand{\instructor}[1]{ EXTRA\footnote{\textcolor{blue}{\textbf{Instructor: }#1}}}
+\newcommand{\sageworkfluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=both_flux_and_work}
+\newcommand{\instructor}[1]{}
+\newcommand{\sagelineintegral}{http://bmw.byuimath.com/dokuwiki/doku.php?id=line_integral_calculator}
+\renewcommand{\thefootnote}{\roman{footnote}}
+\newcommand{\sagephysicalpropertiestwod}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_2d}
+\newcommand{\note}[1]{\footnote{#1} EXTRA\footnote{\fbox{\textbf{\thefootnote}}}}
+\newcommand{\sagephysicalpropertiesthreed}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_3d}
+\newcommand{\note}[1]{}
+\newcommand{\sageDoubleIntegralCheckerURL}{http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator}
+\newcommand{\myscale}{1}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dfdx}[1]{\frac{d#1}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\ii}{\vec \imath}
+\newcommand{\jj}{\vec \jmath}
+\newcommand{\kk}{\vec k}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\R}{ \mathbb{R}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\im}{\text{im }}
+\newcommand{\colvec}[1]{\begin{bmatrix}#1\end{bmatrix}    }
+\newcommand{\cl}[1]{ \begin{matrix}  #1  \end{matrix}    }
+\newcommand{\bm}[1]{ \begin{bmatrix}  #1  \end{bmatrix}  }
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\rref}{rref}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\blank}[1]{[14pt]{\rule{#1}{1pt}}}
+\newcommand{\vp}{^{\,\prime}}
+\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha} }
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Multivariable Calculus</span></a></h1>
+<p class="byline">Ben Woodruff</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-46.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-13.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-48.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-46.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-13.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-48.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Introduction</span></a></h2>
+<ul>
+<li><a href="section-1.html" data-scroll="section-1">Mathematical Truths</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Teaching philosophy</a></li>
+<li><a href="section-3.html" data-scroll="section-3">Modification Notes</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Review: Calculus I &amp; II</span></a></h2>
+<ul>
+<li><a href="section-4.html" data-scroll="section-4">Review of First Semester Calculus</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Differentials</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-7.html" data-scroll="section-7">Solving Systems of equations</a></li>
+<li><a href="section-8.html" data-scroll="section-8">Optional: Higher Order Approximations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span><span class="title">Vectors</span></a></h2>
+<ul>
+<li><a href="section-9.html" data-scroll="section-9">Vectors and Lines</a></li>
+<li><a href="section-10.html" data-scroll="section-10">The Dot Product</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-12.html" data-scroll="section-12">The Cross Product</a></li>
+<li><a href="section-13.html" data-scroll="section-13">The Cross Product and Planes</a></li>
+<li><a href="section-14.html" data-scroll="section-14">Projections and Their Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Review: Conic Sections</span></a></h2>
+<ul><li><a href="section-15.html" data-scroll="section-15">Conic Sections</a></li></ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Parametric Equations</span></a></h2>
+<ul><li><a href="section-16.html" data-scroll="section-16">Parametric Equations</a></li></ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span><span class="title">Polar and New Coordinate Systems</span></a></h2>
+<ul><li><a href="section-17.html" data-scroll="section-17">Polar Coordinates</a></li></ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span><span class="title">Functions</span></a></h2>
+<ul>
+<li><a href="section-18.html" data-scroll="section-18">Function Terminology</a></li>
+<li><a href="section-19.html" data-scroll="section-19">Parametric Curves:</a></li>
+<li><a href="section-20.html" data-scroll="section-20">Parametric Surfaces:</a></li>
+<li><a href="section-21.html" data-scroll="section-21">Functions of Several Variables:</a></li>
+<li><a href="section-22.html" data-scroll="section-22">Constructing Functions</a></li>
+<li><a href="sec_functionlist.html" data-scroll="sec_functionlist">Summary of Functions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span><span class="title">Derivatives</span></a></h2>
+<ul>
+<li><a href="section-24.html" data-scroll="section-24">Introduction</a></li>
+<li><a href="section-25.html" data-scroll="section-25">The (multi-dimensional) Derivative</a></li>
+<li><a href="section-26.html" data-scroll="section-26">Tangent Planes</a></li>
+<li><a href="section-27.html" data-scroll="section-27">The Chain Rule</a></li>
+</ul>
+<h2 class="link"><a href="chapter-9.html" data-scroll="chapter-9"><span class="codenumber">9</span><span class="title">Motion</span></a></h2>
+<ul>
+<li><a href="section-28.html" data-scroll="section-28">Optional: Projectile Motion</a></li>
+<li><a href="section-29.html" data-scroll="section-29">Arc Length and the Unit Tangent Vector</a></li>
+<li><a href="section-30.html" data-scroll="section-30">Some Examples and The TNB Frame</a></li>
+<li><a href="section-31.html" data-scroll="section-31">More Practice</a></li>
+<li><a href="section-32.html" data-scroll="section-32">Tangential And Normal Components</a></li>
+</ul>
+<h2 class="link"><a href="chapter-10.html" data-scroll="chapter-10"><span class="codenumber">10</span><span class="title">Line Integrals</span></a></h2>
+<ul>
+<li><a href="section-33.html" data-scroll="section-33">Work, Flow, Circulation, and Flux</a></li>
+<li><a href="section-34.html" data-scroll="section-34">Area and the Line-Integral</a></li>
+<li><a href="section-35.html" data-scroll="section-35">The Fundamental Theorem of Line Integrals</a></li>
+<li><a href="section-36.html" data-scroll="section-36">Applications: Average Value</a></li>
+<li><a href="section-37.html" data-scroll="section-37">Applications: Physical Properties</a></li>
+</ul>
+<h2 class="link"><a href="chapter-11.html" data-scroll="chapter-11"><span class="codenumber">11</span><span class="title">Optimization</span></a></h2>
+<ul>
+<li><a href="section-38.html" data-scroll="section-38">The Gradient</a></li>
+<li><a href="section-39.html" data-scroll="section-39">The Second Derivative Test</a></li>
+<li><a href="section-40.html" data-scroll="section-40">Lagrange Multipliers</a></li>
+</ul>
+<h2 class="link"><a href="chapter-12.html" data-scroll="chapter-12"><span class="codenumber">12</span><span class="title">Double Integrals</span></a></h2>
+<ul>
+<li><a href="section-41.html" data-scroll="section-41">Double Integrals and Applications</a></li>
+<li><a href="section-42.html" data-scroll="section-42">Applications of Double Integrals</a></li>
+<li><a href="section-43.html" data-scroll="section-43">Switching Coordinates: Cartesian to Polar</a></li>
+<li><a href="section-44.html" data-scroll="section-44">Switching Coordinates: The Generalized Jacobian</a></li>
+<li><a href="section-45.html" data-scroll="section-45">Green's Theorem</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-13.html" data-scroll="chapter-13"><span class="codenumber">13</span><span class="title">Surface Integrals</span></a></h2>
+<ul>
+<li><a href="section-46.html" data-scroll="section-46">Surface Area and Surface Integrals</a></li>
+<li><a href="section-47.html" data-scroll="section-47" class="active">Two Vector Operators: Curl and Div</a></li>
+<li><a href="section-48.html" data-scroll="section-48">Circulation Density and Stokes' Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-14.html" data-scroll="chapter-14"><span class="codenumber">14</span><span class="title">Triple Integrals</span></a></h2>
+<ul>
+<li><a href="section-49.html" data-scroll="section-49">Triple Integral Definition and Applications</a></li>
+<li><a href="section-50.html" data-scroll="section-50">Changing Coordinate Systems: The Jacobian</a></li>
+<li><a href="section-51.html" data-scroll="section-51">The Divergence Theorem</a></li>
+</ul>
+<h2 class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></h2>
+<ul><li><a href="references-1.html" data-scroll="references-1">Bibliography</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-47"><header title="Section 13.2 Two Vector Operators: Curl and Div"><h1 class="heading hide-type" alt="Section 13.2 Two Vector Operators: Curl and Div">
+<span class="type">Section</span><span class="codenumber">13.2</span><span class="title">Two Vector Operators: Curl and Div</span>
+</h1></header><section class="introduction" id="introduction-27"><p id="p-1885">After completing this section you should... </p>
+<ul id="ul-69" style="list-style-type: disc;">
+<li id="li-972"><p id="p-1886">Be able to compute the curl and divergence for 2-D and 3-D vector-functions</p></li>
+<li id="li-973"><p id="p-1887">Be able to visualize and sketch vector fields with these properties.</p></li>
+</ul>
+<p></p>
+<p id="p-1888">We are going to take a short aside now to define two operators: the curl and the divergence. These operators provide insight into how vector fields are behaving and have direct applications to understanding circulation, flux and flow. We'll come back to those applications once we are comfortable with computing each operation.</p>
+<p id="p-1889">Before we define them though, we need a bit of notation. We've been writing \(\vec \nabla f\) for the gradient. This gives us a vector of partial derivatives: \(\vec \nabla f= \left[ \frac{\partial f}{\partial x},\frac{\partial f}{\partial y},\frac{\partial f}{\partial z}\right]\text{.}\) We want to now separate out \(\vec \nabla\) which we'll call the `del' operator. We define `del' as \(\langle \frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\rangle\text{.}\) If we treat this as a vector in its own right, we can perform vector operations (dot and cross product) between \(\vec \nabla\) and vector fields \(\vec{F}(x,y,z)\text{.}\) This will give us the tools to define the curl and divergence.</p></section><section class="subsection" id="subsection-26"><header title="Subsection 13.2.1 The Divergence"><h1 class="heading hide-type" alt="Subsection 13.2.1 The Divergence">
+<span class="type">Subsection</span><span class="codenumber">13.2.1</span><span class="title">The Divergence</span>
+</h1></header><p id="p-1890">The first vector operation we learned was the dot product. We now use the dot product between \(\vec \nabla\) and a vector field to define the divergence:
+\begin{align*}
+\text{ div } \vec F(x,y,z) 
+\amp = \vec \nabla\cdot \vec F 
+= \left(\frac{\partial }{\partial x},\frac{\partial }{\partial y},\frac{\partial }{\partial z} \right)\cdot (M,N,P)\\
+\amp = \frac{\partial M}{\partial x}+\frac{\partial N}{\partial y}+\frac{\partial P}{\partial z} 
+= M_x+N_y+P_z 
+.
+\end{align*}
+</p>
+<p id="p-1891">Let's practice finding the divergence before looking at some applications.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-x2d_div" id="x2d_div"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">13.2.1</span>
+</h5></article></a></div>
+<div id="hk-x2d_div" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1892">For each vector field: </p>
+<ol id="ol-249" style="list-style-type: decimal;">
+<li id="li-974"><p id="p-1893">sketch a plot (you can graph it in Sage or WolframAlpha first)  EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-282" id="fn-282"><span class="footnote"><sup> 1 </sup></span></a></span><span id="hk-fn-282" style="display: none;" class="tex2jax_ignore"><span class="footnote">See <a class="external-url" href="http://aleph.sagemath.org/?z=eJxz06jQqdRUsFXQMNKq0K7UqdA20qrU5CrIyS-JL0tNLskvik_LTM1J0XDTUQAq1TU00DE00ASyK2FsTQCKaxIN" target="_blank">Sage</a> or <a class="external-url" href="http://wolfr.am/y4gIgX" target="_blank">Wolfram Alpha</a> to plot the vector fields</span></span></p></li>
+<li id="li-975"><p id="p-1894">find the divergence</p></li>
+</ol>
+<p></p>
+<p id="p-1895">[Suggestion: Leave space after each sub-exercise for another computation (the curl).] </p>
+<ol id="ol-250" style="list-style-type: decimal;">
+<li id="li-976"><p id="p-1896">\(\vec{F}(x,y)=(x,y)\)</p></li>
+<li id="li-977"><p id="p-1897">\(\vec{F}(x,y)=(y,x)\)</p></li>
+<li id="li-978"><p id="p-1898">\(\vec{F}(x,y)=(x,x+y)\)</p></li>
+<li id="li-979"><p id="p-1899">\(\vec{F}(x,y)=(x-y^2+2, xy+y)\)</p></li>
+</ol>
+<p></p>
+<p id="p-1900">Can you make a general statement about how a 2-D vector field looks for it to have non-zero divergence?</p></article></div>
+<p id="p-1901">Now let's take a look at some 3-D fields. You should still plot them in Sage or Wolfram-Alpha, but don't worry about sketching a plot (unless you want to).</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-x3d_div" id="x3d_div"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">13.2.2</span>
+</h5></article></a></div>
+<div id="hk-x3d_div" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1902">Compute the divergence for each of the following vector fields. [Suggestion: Again leave space] </p>
+<ol id="ol-251" style="list-style-type: decimal;">
+<li id="li-980"><p id="p-1903">\(\vec F(x,y,z) = \left(z,x,y \right)\)</p></li>
+<li id="li-981"><p id="p-1904">\(\vec F(x,y,z) = \left(-y+x,x,z \right)\)</p></li>
+<li id="li-982"><p id="p-1905">\(\vec F(x,y,z) = \left(x^2+y^2,x^2+z^2,y^2+z^2 \right)\)</p></li>
+<li id="li-983"><p id="p-1906">\(\vec F(x,y,z) = \left(x^3+y,\tan^{-1}(1+y^2) + z^2,e^{z^2+\sin z} -2x\right)\)</p></li>
+</ol>
+<p></p></article></div></section><section class="subsection" id="subsection-27"><header title="Subsection 13.2.2 The Curl"><h1 class="heading hide-type" alt="Subsection 13.2.2 The Curl">
+<span class="type">Subsection</span><span class="codenumber">13.2.2</span><span class="title">The Curl</span>
+</h1></header><p id="p-1907">Instead of computing the dot product between \(\vec \nabla\) and \(\vec F\) we could compute the cross product. This gives us the curl of a vector field.</p>
+<p id="p-1908">We call the vector \(\left\lt P_y-N_z,M_z-P_x,N_x-M_y\right&gt;\) the curl of \(\vec F\) and we write
+\begin{align*}
+\text{ curl } (\vec F) 
+\amp = \vec \nabla \times \vec F\\
+\amp = \left(\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right) \times (M,N,P)\\
+\amp = \left(\frac{\partial P}{\partial y}-\frac{\partial N}{\partial z}, \frac{\partial M}{\partial z}-\frac{\partial P}{\partial x},\frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}\right)\\
+\amp =  \left(P_y-N_z,M_z-P_x,N_x-M_y\right)
+\end{align*}
+</p>
+<p id="p-1909">The notation \(\vec \nabla \times \vec F\) gives a convenient way to remember the formula, as
+\begin{align*}
+\text{ curl } (\vec F)=\vec \nabla \times \vec F 
+\amp =\det \begin{bmatrix}
+\vec i \amp  \vec j \amp  \vec k\\
+\frac{\partial}{\partial x}\amp \frac{\partial}{\partial y}\amp \frac{\partial}{\partial z}\\
+M\amp N\amp P
+\end{bmatrix}\\
+\amp = \left(\frac{\partial}{\partial y}P-\frac{\partial}{\partial z}N,\frac{\partial}{\partial z}M-\frac{\partial}{\partial x}P,\frac{\partial}{\partial x}N-\frac{\partial}{\partial y}M\right)
+\end{align*}
+</p>
+<article class="theorem-like" id="theorem-13"><h5 class="heading">
+<span class="type">Theorem</span><span class="codenumber">13.2.3</span>
+</h5>
+<p id="p-1910">The curl of a vector field is the direction of the greatest circulation density, and the magnitude of the curl is the circulation density in that direction. If a vector field causes a large amount of circulation in one direction, then the curl will be a long vector. The circulation density of \(\vec F\) at \((x,y,z)\) about \(\vec u\text{,}\) written \(\text{ curl } (\vec F)\cdot \vec u\) is largest when \(\vec u\) points in the same direction as \(\text{ curl }  F\text{.}\)</p></article><p id="p-1911">Let's take a look now at several vector fields, to get intuition about what curl is really telling us.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-x2dcurl" id="x2dcurl"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">13.2.4</span>
+</h5></article></a></div>
+<div id="hk-x2dcurl" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1912">These are the same vector fields from <a knowl="./knowl/x2d_div.html" knowl-id="xref-x2d_div" alt="Exercise 13.2.1 " title="Exercise 13.2.1 ">Exercise 13.2.1</a>.</p>
+<p id="p-1913">Find the curl</p>
+<p id="p-1914">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-283" id="fn-283"><span class="footnote"><sup> 2 </sup></span></a></span><span id="hk-fn-283" style="display: none;" class="tex2jax_ignore"><span class="footnote">See <a class="external-url" href="http://mathinsight.org/curl_components" target="_blank">MathInsight.org</a> for a really nice animation of the curl of a vector field.</span></span> for each vector field: </p>
+<ol id="ol-252" style="list-style-type: decimal;">
+<li id="li-984"><p id="p-1915">\(\vec{F}(x,y)=(x,y)\)</p></li>
+<li id="li-985"><p id="p-1916">\(\vec{F}(x,y)=(y,x)\)</p></li>
+<li id="li-986"><p id="p-1917">\(\vec{F}(x,y)=(x,x+y)\)</p></li>
+<li id="li-987"><p id="p-1918">\(\vec{F}(x,y)=(x-y^2+2, xy+y)\)</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1919">You should have noticed that for all of the above vector-fields, the curl was only in the \(z\)-direction. Let's do a quick problem to explore this.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-show2dcurl" id="show2dcurl"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">13.2.5</span>
+</h5></article></a></div>
+<div id="hk-show2dcurl" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1920">For a vector field \(\vec{F}= ( M(x,y), N(x,y), 0 )\text{,}\) compute \(curl( \vec{F})\text{.}\) That is, assume that \(P(x,y,z)=0\)</p></article></div>
+<p id="p-1921">One common way to quickly decide if a 2-D field has a curl at a point is to imagine placing a paddle-wheel (like on an old-fashion water mill or steamboat) in the vector-field. If the paddle would spin, then there's a curl. If it spins counter-clockwise then the curl is positive. You can see this idea illustrated by visiting <a class="external-url" href="http://www.math.harvard.edu/~knill/pitf/2dcurldiv.html" target="_blank">this site</a>.</p>
+<p id="p-1922">We will use this 2-D version to rewrite Green's Theorem in the following section. Let's get a little more practice computing curl. This time, the vector fields are all three-dimensional. You should still plot them in Sage or Wolfram-Alpha, but don't worry about sketching a plot (unless you want to).</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-x3dcurl" id="x3dcurl"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">13.2.6</span>
+</h5></article></a></div>
+<div id="hk-x3dcurl" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1923">Compute the curl for each of the following vector fields. You can add these in the spaces after <a knowl="./knowl/x3d_div.html" knowl-id="xref-x3d_div" alt="Exercise 13.2.2 " title="Exercise 13.2.2 ">Exercise 13.2.2</a>. </p>
+<ol id="ol-253" style="list-style-type: decimal;">
+<li id="li-988"><p id="p-1924">\(\vec F(x,y,z) = \left(z,x,y \right)\)</p></li>
+<li id="li-989"><p id="p-1925">\(\vec F(x,y,z) = \left(-y+x,x,z \right)\)</p></li>
+<li id="li-990"><p id="p-1926">\(\vec F(x,y,z) = \left(x^2+y^2,x^2+z^2,y^2+z^2 \right)\)</p></li>
+<li id="li-991"><p id="p-1927">\(\vec F(x,y,z) = \left(x^3+y,\tan^{-1}(1+y^2) + z^2,e^{z^2+\sin z} -2x\right)\)</p></li>
+</ol>
+<p></p></article></div></section></section></div></main>
+</div>
+</body>
+</html>

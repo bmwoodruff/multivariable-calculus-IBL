@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:31:50-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Triple Integral Definition and Applications</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(\renewcommand{\chaptername}{Unit}
+\newcommand{\derivativehomeworklink}[1]{\href{http://db.tt/cSeKG8XO}{#1}}
+\newcommand{\chpname}{unit}
+\newcommand{\sageurlforcurvature}{http://bmw.byuimath.com/dokuwiki/doku.php?id=curvature_calculator}
+\newcommand{\uday}{ \LARGE Day \theunitday \normalsize \flushleft \stepcounter{unitday} }
+\newcommand{\sageworkurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=work_calculator}
+\newcommand{\wrapup}{
+\bmw{\section{Wrap Up}
+Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+
+\valposhort{\section{Wrap Up}
+This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
+\instructor{TeX files for these are included in a separate folder in the GitHub Project}
+\note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+\textbf{Review Guide Creation}\\
+
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname\ review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } \\
+
+As you create this review guide, consider the following:
+\begin{itemize}
+ \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+ \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+\end{itemize}
+} 
+}
+\newcommand{\sagefluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=flux_calculator}
+\newcommand{\instructor}[1]{ EXTRA\footnote{\textcolor{blue}{\textbf{Instructor: }#1}}}
+\newcommand{\sageworkfluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=both_flux_and_work}
+\newcommand{\instructor}[1]{}
+\newcommand{\sagelineintegral}{http://bmw.byuimath.com/dokuwiki/doku.php?id=line_integral_calculator}
+\renewcommand{\thefootnote}{\roman{footnote}}
+\newcommand{\sagephysicalpropertiestwod}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_2d}
+\newcommand{\note}[1]{\footnote{#1} EXTRA\footnote{\fbox{\textbf{\thefootnote}}}}
+\newcommand{\sagephysicalpropertiesthreed}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_3d}
+\newcommand{\note}[1]{}
+\newcommand{\sageDoubleIntegralCheckerURL}{http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator}
+\newcommand{\myscale}{1}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dfdx}[1]{\frac{d#1}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\ii}{\vec \imath}
+\newcommand{\jj}{\vec \jmath}
+\newcommand{\kk}{\vec k}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\R}{ \mathbb{R}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\im}{\text{im }}
+\newcommand{\colvec}[1]{\begin{bmatrix}#1\end{bmatrix}    }
+\newcommand{\cl}[1]{ \begin{matrix}  #1  \end{matrix}    }
+\newcommand{\bm}[1]{ \begin{bmatrix}  #1  \end{bmatrix}  }
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\rref}{rref}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\blank}[1]{[14pt]{\rule{#1}{1pt}}}
+\newcommand{\vp}{^{\,\prime}}
+\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha} }
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Multivariable Calculus</span></a></h1>
+<p class="byline">Ben Woodruff</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-14.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-14.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-50.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-14.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-14.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-50.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Introduction</span></a></h2>
+<ul>
+<li><a href="section-1.html" data-scroll="section-1">Mathematical Truths</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Teaching philosophy</a></li>
+<li><a href="section-3.html" data-scroll="section-3">Modification Notes</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Review: Calculus I &amp; II</span></a></h2>
+<ul>
+<li><a href="section-4.html" data-scroll="section-4">Review of First Semester Calculus</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Differentials</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-7.html" data-scroll="section-7">Solving Systems of equations</a></li>
+<li><a href="section-8.html" data-scroll="section-8">Optional: Higher Order Approximations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span><span class="title">Vectors</span></a></h2>
+<ul>
+<li><a href="section-9.html" data-scroll="section-9">Vectors and Lines</a></li>
+<li><a href="section-10.html" data-scroll="section-10">The Dot Product</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-12.html" data-scroll="section-12">The Cross Product</a></li>
+<li><a href="section-13.html" data-scroll="section-13">The Cross Product and Planes</a></li>
+<li><a href="section-14.html" data-scroll="section-14">Projections and Their Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Review: Conic Sections</span></a></h2>
+<ul><li><a href="section-15.html" data-scroll="section-15">Conic Sections</a></li></ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Parametric Equations</span></a></h2>
+<ul><li><a href="section-16.html" data-scroll="section-16">Parametric Equations</a></li></ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span><span class="title">Polar and New Coordinate Systems</span></a></h2>
+<ul><li><a href="section-17.html" data-scroll="section-17">Polar Coordinates</a></li></ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span><span class="title">Functions</span></a></h2>
+<ul>
+<li><a href="section-18.html" data-scroll="section-18">Function Terminology</a></li>
+<li><a href="section-19.html" data-scroll="section-19">Parametric Curves:</a></li>
+<li><a href="section-20.html" data-scroll="section-20">Parametric Surfaces:</a></li>
+<li><a href="section-21.html" data-scroll="section-21">Functions of Several Variables:</a></li>
+<li><a href="section-22.html" data-scroll="section-22">Constructing Functions</a></li>
+<li><a href="sec_functionlist.html" data-scroll="sec_functionlist">Summary of Functions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span><span class="title">Derivatives</span></a></h2>
+<ul>
+<li><a href="section-24.html" data-scroll="section-24">Introduction</a></li>
+<li><a href="section-25.html" data-scroll="section-25">The (multi-dimensional) Derivative</a></li>
+<li><a href="section-26.html" data-scroll="section-26">Tangent Planes</a></li>
+<li><a href="section-27.html" data-scroll="section-27">The Chain Rule</a></li>
+</ul>
+<h2 class="link"><a href="chapter-9.html" data-scroll="chapter-9"><span class="codenumber">9</span><span class="title">Motion</span></a></h2>
+<ul>
+<li><a href="section-28.html" data-scroll="section-28">Optional: Projectile Motion</a></li>
+<li><a href="section-29.html" data-scroll="section-29">Arc Length and the Unit Tangent Vector</a></li>
+<li><a href="section-30.html" data-scroll="section-30">Some Examples and The TNB Frame</a></li>
+<li><a href="section-31.html" data-scroll="section-31">More Practice</a></li>
+<li><a href="section-32.html" data-scroll="section-32">Tangential And Normal Components</a></li>
+</ul>
+<h2 class="link"><a href="chapter-10.html" data-scroll="chapter-10"><span class="codenumber">10</span><span class="title">Line Integrals</span></a></h2>
+<ul>
+<li><a href="section-33.html" data-scroll="section-33">Work, Flow, Circulation, and Flux</a></li>
+<li><a href="section-34.html" data-scroll="section-34">Area and the Line-Integral</a></li>
+<li><a href="section-35.html" data-scroll="section-35">The Fundamental Theorem of Line Integrals</a></li>
+<li><a href="section-36.html" data-scroll="section-36">Applications: Average Value</a></li>
+<li><a href="section-37.html" data-scroll="section-37">Applications: Physical Properties</a></li>
+</ul>
+<h2 class="link"><a href="chapter-11.html" data-scroll="chapter-11"><span class="codenumber">11</span><span class="title">Optimization</span></a></h2>
+<ul>
+<li><a href="section-38.html" data-scroll="section-38">The Gradient</a></li>
+<li><a href="section-39.html" data-scroll="section-39">The Second Derivative Test</a></li>
+<li><a href="section-40.html" data-scroll="section-40">Lagrange Multipliers</a></li>
+</ul>
+<h2 class="link"><a href="chapter-12.html" data-scroll="chapter-12"><span class="codenumber">12</span><span class="title">Double Integrals</span></a></h2>
+<ul>
+<li><a href="section-41.html" data-scroll="section-41">Double Integrals and Applications</a></li>
+<li><a href="section-42.html" data-scroll="section-42">Applications of Double Integrals</a></li>
+<li><a href="section-43.html" data-scroll="section-43">Switching Coordinates: Cartesian to Polar</a></li>
+<li><a href="section-44.html" data-scroll="section-44">Switching Coordinates: The Generalized Jacobian</a></li>
+<li><a href="section-45.html" data-scroll="section-45">Green's Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-13.html" data-scroll="chapter-13"><span class="codenumber">13</span><span class="title">Surface Integrals</span></a></h2>
+<ul>
+<li><a href="section-46.html" data-scroll="section-46">Surface Area and Surface Integrals</a></li>
+<li><a href="section-47.html" data-scroll="section-47">Two Vector Operators: Curl and Div</a></li>
+<li><a href="section-48.html" data-scroll="section-48">Circulation Density and Stokes' Theorem</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-14.html" data-scroll="chapter-14"><span class="codenumber">14</span><span class="title">Triple Integrals</span></a></h2>
+<ul>
+<li><a href="section-49.html" data-scroll="section-49" class="active">Triple Integral Definition and Applications</a></li>
+<li><a href="section-50.html" data-scroll="section-50">Changing Coordinate Systems: The Jacobian</a></li>
+<li><a href="section-51.html" data-scroll="section-51">The Divergence Theorem</a></li>
+</ul>
+<h2 class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></h2>
+<ul><li><a href="references-1.html" data-scroll="references-1">Bibliography</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-49"><header title="Section 14.1 Triple Integral Definition and Applications"><h1 class="heading hide-type" alt="Section 14.1 Triple Integral Definition and Applications">
+<span class="type">Section</span><span class="codenumber">14.1</span><span class="title">Triple Integral Definition and Applications</span>
+</h1></header><p id="p-1958">After completing this section you will: </p>
+<ul id="ul-71" style="list-style-type: disc;">
+<li id="li-1010"><p id="p-1959">Be comfortable setting up triple integrals for a solid region (domain)</p></li>
+<li id="li-1011"><p id="p-1960">Be able to switch the order of integration for a triple integral</p></li>
+</ul>
+<p></p>
+<p id="p-1961">Consider the iterated integral
+\begin{equation*}
+\ds \int_{-3}^3 \int_0^{\sqrt{9-y^2}}\int_0^{9-x^2-y^2} 1dzdxdy.
+\end{equation*}
+</p>
+<p id="p-1962">This is an integral of the form \(\iiint_D dV\text{,}\) which means along some solid region \(D\) in the plane, we are adding up little bits of volume. This integral will give the volume of a very familiar solid region in space. Not every triple integral will correspond to an easily drawn or visualized (even with a computer) space. However, this one does.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-274" id="exercise-274"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">14.1.1</span>
+</h5></article></a></div>
+<div id="hk-exercise-274" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1963">Before we compute this integral, let's visualize it. The parenthesis have been added to help you parse this first example.
+\begin{equation*}
+\ds \int_{-3}^3 (\int_0^{\sqrt{9-y^2}} (\int_0^{9-x^2-y^2} 1dz) dx ) dy.
+\end{equation*}
+</p>
+<ol id="ol-259" style="list-style-type: decimal;">
+<li id="li-1012"><p id="p-1964">State the bounds for each variable as inequalities.</p></li>
+<li id="li-1013"><p id="p-1965">Sketch the region \(D\) in space.</p></li>
+<li id="li-1014"><p id="p-1966">Compute the innermost integral, and compare the resulting/remaining double integral to the first exercise in the double integral unit.</p></li>
+<li id="li-1015"><p id="p-1967">Now evaluate the remaining integrals (though you might want to change coordinate systems before doing so).</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1968">When working with double integrals, there were two different ways to set up the bounds for our integrals, as \(dA=dxdy=dydx\text{.}\) When working with triple integrals, there are six different ways to order the differentials, and therefore set up bounds for our integrals.
+\begin{equation*}
+dV=dxdydz = dxdzdy = dydxdz=dydzdx=dzdxdy=dzdydx
+\end{equation*}
+</p>
+<p id="p-1969">Consider again the iterated integral
+\begin{equation*}
+\ds \int_{-3}^3 \int_0^{\sqrt{9-y^2}}\int_0^{9-x^2-y^2} dzdxdy = \int_0^9\int_0^{\sqrt{9-z}}\int_{-\sqrt{9-x^2-z}}^{\sqrt{9-x^2-z}} dydxdz
+\end{equation*}
+</p>
+<p id="p-1970">These two integrals are equal, but required switching the order of the bounds. There are 4 other iterated integrals that are equal to these integral which can also be found by switching the order of the bounds.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-275" id="exercise-275"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">14.1.2</span>
+</h5></article></a></div>
+<div id="hk-exercise-275" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1971">Set up the equivalent integrals using the differential orderings: \(dydzdx\) and \(dxdzdy\text{.}\) We'll look at the remaining 2 in class (though you're welcome to finish them and present them with your work).</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-276" id="exercise-276"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">14.1.3</span>
+</h5></article></a></div>
+<div id="hk-exercise-276" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1972">Consider the iterated integral
+\begin{equation*}
+\int_{-1}^1\int_0^{1-x^2}\int_0^{y} dzdydx.
+\end{equation*}
+</p>
+<p id="p-1973">The bounds for this integral describe a region in space which satisfies the 3 inequalities \(-1\leq x\leq 1\text{,}\) \(0\leq y\leq 1-x^2\text{,}\) and \(0\leq z\leq y\text{.}\) </p>
+<ol id="ol-260" style="list-style-type: decimal;"><li id="li-1016"><p id="p-1974">Draw the solid domain \(D\) in space described by the bounds of the iterated integral.</p></li></ol>
+<p></p>
+<p id="p-1975">There are 5 other iterated integrals equivalent to this one. </p>
+<ol id="ol-261" style="list-style-type: decimal;">
+<li id="li-1017"><p id="p-1976">Set up the integral that use the differential ordering: \(dydxdz\)</p></li>
+<li id="li-1018"><p id="p-1977">Set up the integral that use the differential ordering: \(dxdzdy\text{.}\)</p></li>
+</ol>
+<p></p>
+<p id="p-1978">We'll create the other 3 in class (though you are welcome to include them as part of your presentation)</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-277" id="exercise-277"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">14.1.4</span>
+</h5></article></a></div>
+<div id="hk-exercise-277" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1979">In each exercise below, you'll be given enough information to determine a solid domain \(D\) in space. </p>
+<ol id="ol-262" style="list-style-type: decimal;">
+<li id="li-1019"><p id="p-1980">Draw the solid \(D\) and</p></li>
+<li id="li-1020"><p id="p-1981">then set up an iterated integral (pick any order you want) that would give the volume of \(D\text{.}\)</p></li>
+</ol>
+<p></p>
+<p id="p-1982">Note: You don't need to evaluate the integral, rather you just need to set them up. </p>
+<ol id="ol-263" style="list-style-type: decimal;">
+<li id="li-1021"><p id="p-1983">The region \(D\) under the surface \(z=y^2\text{,}\) above the \(xy\)-plane, and bounded by the planes \(y=-1\text{,}\) \(y=1\text{,}\) \(x=0\text{,}\) and \(x=4\text{.}\)</p></li>
+<li id="li-1022"><p id="p-1984">The region \(D\) in the first octant that is bounded by the coordinate planes, the plane \(y+z=2\text{,}\) and the surface \(x=4-y^2\text{.}\)</p></li>
+<li id="li-1023"><p id="p-1985">The pyramid \(D\) in the first octant that is below the planes \(\ds\frac{x}{3}+\frac{z}{2}=1\) and \(\ds\frac{y}{5}+\frac{z}{2}=1\text{.}\) <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-82" id="hint-82"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-82" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-1986">Don't let \(z\) be the inside bound.</p></span></span></p></li>
+<li id="li-1024"><p id="p-1987">The region \(D\) that is inside both right circular cylinders \(x^2+z^2=1\) and \(y^2+z^2=1\text{.}\)</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1988">We can find average value, centroids, centers of mass, moments of inertia, and radii of gyration exactly as before. We just now need to integrate using three integrals, and replace \(ds\text{,}\) \(dA\) or \(d\sigma\text{,}\) with \(dV\text{.}\)</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-278" id="exercise-278"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">14.1.5</span>
+</h5></article></a></div>
+<div id="hk-exercise-278" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1989">Consider the triangular wedge \(D\) that is in the first octant, bounded by the planes \(\ds\frac{y}{7}+\frac{z}{5}=1\) and \(x=12\text{.}\) In the \(yz\) plane, the wedge forms a triangle that passes through the points \((0,0,0)\text{,}\) \((0,7,0)\text{,}\) and \((0,0,5)\text{.}\)</p>
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-83" id="hint-83"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-83" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-1990">It may help to sketch a picture first</p></span></span><ol id="ol-264" style="list-style-type: decimal;">
+<li id="li-1025"><p id="p-1991">Set up integral formulas that would give the centroid \((\bar x,\bar y, \bar z)\) of \(D\text{.}\)</p></li>
+<li id="li-1026"><p id="p-1992">Actually compute the integrals for \(\bar y\text{.}\)</p></li>
+<li id="li-1027"><p id="p-1993">Now state \(\bar x\) and \(\bar z\) by using symmetry arguments.</p></li>
+</ol></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-279" id="exercise-279"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">14.1.6</span>
+</h5></article></a></div>
+<div id="hk-exercise-279" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1994">Consider the tetrahedron \(D\) in the first octant that is underneath the plane that intersects the coordinate axes in the three point \((a,0,0)\text{,}\) \((0,b,0)\) and \((0,0,c)\text{,}\) where you can assume that \(a,b,c&gt;0\text{.}\) </p>
+<ol id="ol-265" style="list-style-type: decimal;">
+<li id="li-1028"><p id="p-1995">An equation of an ellipse that passes through \((a,0)\) and \((0,b)\) is \(\ds\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\text{.}\)</p></li>
+<li id="li-1029"><p id="p-1996">An equation of a line through these same two points is \(\ds\frac{x}{a}+\frac{y}{b}=1\text{.}\)</p></li>
+<li id="li-1030"><p id="p-1997">An equation of an ellipsoid through the three points \((a,0,0)\text{,}\) \((0,b,0)\text{,}\) and \((0,0,c)\) is \(\ds\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1\text{.}\)</p></li>
+<li id="li-1031"><p id="p-1998">Guess an equation of the plane through these same three points, and then verify that your guess is correct by plugging the 3 points into your equation. This will provide you with an extremely fast way to get an equation of a plane.</p></li>
+<li id="li-1032"><p id="p-1999">Set up an iterated integral that would give the volume of \(D\text{.}\)</p></li>
+<li id="li-1033"><p id="p-2000">If the density is \(\delta(x,y,z) = 3x+2yz\text{,}\) set up iterated integrals that would give the mass \(m\)\bmw{ and moment of inertia \(I_y\) about the \(y\)-axis}.</p></li>
+</ol>
+<p></p></article></div></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:31:44-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Constructing Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(\renewcommand{\chaptername}{Unit}
+\newcommand{\derivativehomeworklink}[1]{\href{http://db.tt/cSeKG8XO}{#1}}
+\newcommand{\chpname}{unit}
+\newcommand{\sageurlforcurvature}{http://bmw.byuimath.com/dokuwiki/doku.php?id=curvature_calculator}
+\newcommand{\uday}{ \LARGE Day \theunitday \normalsize \flushleft \stepcounter{unitday} }
+\newcommand{\sageworkurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=work_calculator}
+\newcommand{\wrapup}{
+\bmw{\section{Wrap Up}
+Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+
+\valposhort{\section{Wrap Up}
+This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
+\instructor{TeX files for these are included in a separate folder in the GitHub Project}
+\note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+\textbf{Review Guide Creation}\\
+
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname\ review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } \\
+
+As you create this review guide, consider the following:
+\begin{itemize}
+ \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+ \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+\end{itemize}
+} 
+}
+\newcommand{\sagefluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=flux_calculator}
+\newcommand{\instructor}[1]{ EXTRA\footnote{\textcolor{blue}{\textbf{Instructor: }#1}}}
+\newcommand{\sageworkfluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=both_flux_and_work}
+\newcommand{\instructor}[1]{}
+\newcommand{\sagelineintegral}{http://bmw.byuimath.com/dokuwiki/doku.php?id=line_integral_calculator}
+\renewcommand{\thefootnote}{\roman{footnote}}
+\newcommand{\sagephysicalpropertiestwod}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_2d}
+\newcommand{\note}[1]{\footnote{#1} EXTRA\footnote{\fbox{\textbf{\thefootnote}}}}
+\newcommand{\sagephysicalpropertiesthreed}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_3d}
+\newcommand{\note}[1]{}
+\newcommand{\sageDoubleIntegralCheckerURL}{http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator}
+\newcommand{\myscale}{1}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dfdx}[1]{\frac{d#1}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\ii}{\vec \imath}
+\newcommand{\jj}{\vec \jmath}
+\newcommand{\kk}{\vec k}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\R}{ \mathbb{R}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\im}{\text{im }}
+\newcommand{\colvec}[1]{\begin{bmatrix}#1\end{bmatrix}    }
+\newcommand{\cl}[1]{ \begin{matrix}  #1  \end{matrix}    }
+\newcommand{\bm}[1]{ \begin{bmatrix}  #1  \end{bmatrix}  }
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\rref}{rref}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\blank}[1]{[14pt]{\rule{#1}{1pt}}}
+\newcommand{\vp}{^{\,\prime}}
+\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha} }
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Multivariable Calculus</span></a></h1>
+<p class="byline">Ben Woodruff</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-21.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-7.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_functionlist.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-21.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-7.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="sec_functionlist.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Introduction</span></a></h2>
+<ul>
+<li><a href="section-1.html" data-scroll="section-1">Mathematical Truths</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Teaching philosophy</a></li>
+<li><a href="section-3.html" data-scroll="section-3">Modification Notes</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Review: Calculus I &amp; II</span></a></h2>
+<ul>
+<li><a href="section-4.html" data-scroll="section-4">Review of First Semester Calculus</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Differentials</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-7.html" data-scroll="section-7">Solving Systems of equations</a></li>
+<li><a href="section-8.html" data-scroll="section-8">Optional: Higher Order Approximations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span><span class="title">Vectors</span></a></h2>
+<ul>
+<li><a href="section-9.html" data-scroll="section-9">Vectors and Lines</a></li>
+<li><a href="section-10.html" data-scroll="section-10">The Dot Product</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-12.html" data-scroll="section-12">The Cross Product</a></li>
+<li><a href="section-13.html" data-scroll="section-13">The Cross Product and Planes</a></li>
+<li><a href="section-14.html" data-scroll="section-14">Projections and Their Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Review: Conic Sections</span></a></h2>
+<ul><li><a href="section-15.html" data-scroll="section-15">Conic Sections</a></li></ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Parametric Equations</span></a></h2>
+<ul><li><a href="section-16.html" data-scroll="section-16">Parametric Equations</a></li></ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span><span class="title">Polar and New Coordinate Systems</span></a></h2>
+<ul><li><a href="section-17.html" data-scroll="section-17">Polar Coordinates</a></li></ul>
+<h2 class="link active"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span><span class="title">Functions</span></a></h2>
+<ul>
+<li><a href="section-18.html" data-scroll="section-18">Function Terminology</a></li>
+<li><a href="section-19.html" data-scroll="section-19">Parametric Curves:</a></li>
+<li><a href="section-20.html" data-scroll="section-20">Parametric Surfaces:</a></li>
+<li><a href="section-21.html" data-scroll="section-21">Functions of Several Variables:</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="active">Constructing Functions</a></li>
+<li><a href="sec_functionlist.html" data-scroll="sec_functionlist">Summary of Functions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span><span class="title">Derivatives</span></a></h2>
+<ul>
+<li><a href="section-24.html" data-scroll="section-24">Introduction</a></li>
+<li><a href="section-25.html" data-scroll="section-25">The (multi-dimensional) Derivative</a></li>
+<li><a href="section-26.html" data-scroll="section-26">Tangent Planes</a></li>
+<li><a href="section-27.html" data-scroll="section-27">The Chain Rule</a></li>
+</ul>
+<h2 class="link"><a href="chapter-9.html" data-scroll="chapter-9"><span class="codenumber">9</span><span class="title">Motion</span></a></h2>
+<ul>
+<li><a href="section-28.html" data-scroll="section-28">Optional: Projectile Motion</a></li>
+<li><a href="section-29.html" data-scroll="section-29">Arc Length and the Unit Tangent Vector</a></li>
+<li><a href="section-30.html" data-scroll="section-30">Some Examples and The TNB Frame</a></li>
+<li><a href="section-31.html" data-scroll="section-31">More Practice</a></li>
+<li><a href="section-32.html" data-scroll="section-32">Tangential And Normal Components</a></li>
+</ul>
+<h2 class="link"><a href="chapter-10.html" data-scroll="chapter-10"><span class="codenumber">10</span><span class="title">Line Integrals</span></a></h2>
+<ul>
+<li><a href="section-33.html" data-scroll="section-33">Work, Flow, Circulation, and Flux</a></li>
+<li><a href="section-34.html" data-scroll="section-34">Area and the Line-Integral</a></li>
+<li><a href="section-35.html" data-scroll="section-35">The Fundamental Theorem of Line Integrals</a></li>
+<li><a href="section-36.html" data-scroll="section-36">Applications: Average Value</a></li>
+<li><a href="section-37.html" data-scroll="section-37">Applications: Physical Properties</a></li>
+</ul>
+<h2 class="link"><a href="chapter-11.html" data-scroll="chapter-11"><span class="codenumber">11</span><span class="title">Optimization</span></a></h2>
+<ul>
+<li><a href="section-38.html" data-scroll="section-38">The Gradient</a></li>
+<li><a href="section-39.html" data-scroll="section-39">The Second Derivative Test</a></li>
+<li><a href="section-40.html" data-scroll="section-40">Lagrange Multipliers</a></li>
+</ul>
+<h2 class="link"><a href="chapter-12.html" data-scroll="chapter-12"><span class="codenumber">12</span><span class="title">Double Integrals</span></a></h2>
+<ul>
+<li><a href="section-41.html" data-scroll="section-41">Double Integrals and Applications</a></li>
+<li><a href="section-42.html" data-scroll="section-42">Applications of Double Integrals</a></li>
+<li><a href="section-43.html" data-scroll="section-43">Switching Coordinates: Cartesian to Polar</a></li>
+<li><a href="section-44.html" data-scroll="section-44">Switching Coordinates: The Generalized Jacobian</a></li>
+<li><a href="section-45.html" data-scroll="section-45">Green's Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-13.html" data-scroll="chapter-13"><span class="codenumber">13</span><span class="title">Surface Integrals</span></a></h2>
+<ul>
+<li><a href="section-46.html" data-scroll="section-46">Surface Area and Surface Integrals</a></li>
+<li><a href="section-47.html" data-scroll="section-47">Two Vector Operators: Curl and Div</a></li>
+<li><a href="section-48.html" data-scroll="section-48">Circulation Density and Stokes' Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-14.html" data-scroll="chapter-14"><span class="codenumber">14</span><span class="title">Triple Integrals</span></a></h2>
+<ul>
+<li><a href="section-49.html" data-scroll="section-49">Triple Integral Definition and Applications</a></li>
+<li><a href="section-50.html" data-scroll="section-50">Changing Coordinate Systems: The Jacobian</a></li>
+<li><a href="section-51.html" data-scroll="section-51">The Divergence Theorem</a></li>
+</ul>
+<h2 class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></h2>
+<ul><li><a href="references-1.html" data-scroll="references-1">Bibliography</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-22"><header title="Section 7.5 Constructing Functions"><h1 class="heading hide-type" alt="Section 7.5 Constructing Functions">
+<span class="type">Section</span><span class="codenumber">7.5</span><span class="title">Constructing Functions</span>
+</h1></header><p id="p-622">We now know how to draw a vector field provided someone tells us the equation. How do we obtain an equation of a vector field? The following problem will help you develop the gravitational vector field.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-119" id="exercise-119"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">7.5.1</span><span class="title">Radial fields</span>
+</h5></article></a></div>
+<div id="hk-exercise-119" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-623">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-104" id="fn-104"><span class="footnote"><sup> 1 </sup></span></a></span><span id="hk-fn-104" style="display: none;" class="tex2jax_ignore"><span class="footnote">Use <a class="external-url" href="http://aleph.sagemath.org/?z=eJxz06jQqdSp0lSwVdAA0joVmlwFOfkl8WWpySX5RfFpmak5KcYpGm46CkCFusY6xpo6IIUQlkYVhKEJAOGFExs" target="_blank">Sage</a> to plot your vector fields. \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1–19.}</span></span>Do the following: </p>
+<ol id="ol-80" style="list-style-type: decimal;">
+<li id="li-295"><p id="p-624">Let \(P=(x,y,z)\) be a point in space. At that point, what is the \(x\text{,}\) \(y\text{,}\) and \(z\) distance to the origin?</p></li>
+<li id="li-296"><p id="p-625">At the point \(P\text{,}\) let \(\vec F(x,y,z)\) be the vector which points from \(P\) to the origin.  Give a formula for \(\vec F(x,y,z)\) <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-18" id="hint-18"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-18" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-626">An object following this vector would travel from the point to the origin</p></span></span> .</p></li>
+<li id="li-297"><p id="p-627">Give an equation of the vector field where at each point \(P\) in the plane, the vector \(\vec F_2(P)\) is a unit vector that points towards the origin.</p></li>
+<li id="li-298"><p id="p-628">Give an equation of the vector field where at each point \(P\) in the plane, the vector \(\vec F_3(P)\) is a vector of length 7 that points towards the origin.</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-629">If someone gives us parametric equations for a curve in the plane, we know how to draw the curve. How do we obtain parametric equations of a given curve? In <a knowl="./knowl/prob_parametric_curve_in_plane.html" knowl-id="xref-prob_parametric_curve_in_plane" alt="Exercise 7.2.1 " title="Exercise 7.2.1 ">problem 7.2.1</a>, we were given the parametric equation for the path of a horse, namely \(x=2\cos t, y=3 \sin t\) or \(\vec r(t)=(2\cos t,3\sin t)\text{.}\) From those equations, we drew the path of the horse, and could have written a Cartesian equation for the path. How do we work this in reverse, namely if we had only been given the ellipse \(\ds\frac{x^2}{4}+\frac{y^2}{9}=1\text{,}\) could we have obtained parametric equations \(\vec r(t)=(x(t),y(t))\) for the curve?</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-120" id="exercise-120"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">7.5.2</span>
+</h5></article></a></div>
+<div id="hk-exercise-120" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-630">Give a parametrization of the straight line from \((a,0)\) to \((0,b)\text{.}\) You can write your parametrization in the vector form \(\vec r(t)=(?,?)\text{,}\) or in the parametric form \(x=?,\ y=?\text{.}\) Remember to include bounds for \(t\text{.}\)</p>
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-19" id="hint-19"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-19" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-631"><a knowl="./knowl/prob_line_equation_practice.html" knowl-id="xref-prob_line_equation_practice" alt="Exercise 5.1.4 " title="Exercise 5.1.4 ">Review 5.1.4</a>.</p></span></span> </article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-121" id="exercise-121"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">7.5.3</span>
+</h5></article></a></div>
+<div id="hk-exercise-121" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-632">Give a parametrization of the parabola \(y=x^2\) from \((-1,1)\) to \((2,4)\text{.}\) Remember the bounds for \(t\text{.}\)</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-122" id="exercise-122"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">7.5.4</span>
+</h5></article></a></div>
+<div id="hk-exercise-122" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-633">Give a parametrization of the function \(y=f(x)\) for \(x\in[a,b]\text{.}\) You can write your parametrization in the vector form \(\vec r(t)=(?,?)\text{,}\) or in the parametric form \(x=?,\ y=?\text{.}\) Include bounds for \(t\text{.}\)</p></article></div>
+<p id="p-634">If someone gives us parametric equations for a surface, we can draw the surface. This is what we did in <a knowl="./knowl/prob_parametric_surface_example.html" knowl-id="xref-prob_parametric_surface_example" alt="Exercise 7.3.1 " title="Exercise 7.3.1 ">problems 7.3.1</a> and <a knowl="./knowl/second_parametric_surface_example.html" knowl-id="xref-second_parametric_surface_example" alt="Challenge 7.3.1 More Parametric Surfaces" title="Challenge 7.3.1 More Parametric Surfaces">7.3.1</a>. How do we work backwards and obtain parametric equations for a given surface? This requires that we write an equation for \(x\text{,}\) \(y\text{,}\) and \(z\) in terms of two input variables (<a knowl="./knowl/prob_parametric_surface_example.html" knowl-id="xref-prob_parametric_surface_example" alt="Exercise 7.3.1 " title="Exercise 7.3.1 ">see 7.3.1</a> and <a knowl="./knowl/second_parametric_surface_example.html" knowl-id="xref-second_parametric_surface_example" alt="Challenge 7.3.1 More Parametric Surfaces" title="Challenge 7.3.1 More Parametric Surfaces">7.3.1</a> for examples). In vector form, we need a function \(\vec r\colon \mathbb{R}^2\to\mathbb{R}^3\text{.}\) We can often use a coordinate transformation \(\vec T\colon \mathbb{R}^3\to\mathbb{R}^3\) to obtain a parametrization of a surface.</p>
+<p id="p-635">The next three problems show how to do this.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-x3d_parametric_plot" id="x3d_parametric_plot"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">7.5.5</span>
+</h5></article></a></div>
+<div id="hk-x3d_parametric_plot" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-636">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-105" id="fn-105"><span class="footnote"><sup> 2 </sup></span></a></span><span id="hk-fn-105" style="display: none;" class="tex2jax_ignore"><span class="footnote">Use <a class="external-url" href="http://aleph.sagemath.org/?z=eJwL0ajQqdSp0lSwVYCyuAqKMvNKFJRCNKpsK7QrNRUyi5V0FGA8roLEosTc1JKizOT4gpz8Eg2YhA5Iv66xjjGIVQlhaQIALhka5w" target="_blank">Sage</a> or <a class="external-url" href="http://wolfr.am/zk2KTu" target="_blank">Wolfram Alpha</a> to plot your parametrization. \thomasee{See 16.5: 1-16 for more practice.} \larsonfive{See Larson 15.5:21–30 and 15.5, Example 3.} \stewarts{See section 16.6 for more examples}</span></span> Consider the surface \(z=9-x^2-y^2\) plotted in <a knowl="./knowl/prob_3dsurface_plot.html" knowl-id="xref-prob_3dsurface_plot" alt="Exercise 7.4.1 " title="Exercise 7.4.1 ">problem 7.4.1</a>. </p>
+<ol id="ol-81" style="list-style-type: decimal;">
+<li id="li-299"><p id="p-637">Using the rectangular coordinate transformation \(\vec T(x,y,z)=(x,y,z)\text{,}\) give a parametrization \(\vec r\colon \mathbb{R}^2\to\mathbb{R}^3\) of the surface. This is the same as saying
+\begin{equation*}
+x=x, y=y, z=?.
+\end{equation*}
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-20" id="hint-20"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-20" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-638">Use the surface equation to eliminate the input variable \(z\) in \(T\text{.}\)</p></span></span></p></li>
+<li id="li-300"><p id="p-639">What bounds must you place on \(x\) and \(y\) to obtain the portion of the surface above the plane \(z=0\text{?}\)</p></li>
+<li id="li-301"><p id="p-640">If \(z=f(x,y)\) is any surface, give a parametrization of the surface (i.e., \(x=?, y=?, z=?\) or \(\vec r (?,?)=(?,?,?)\text{.}\))</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-124" id="exercise-124"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">7.5.6</span>
+</h5></article></a></div>
+<div id="hk-exercise-124" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-641">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-106" id="fn-106"><span class="footnote"><sup> 3 </sup></span></a></span><span id="hk-fn-106" style="display: none;" class="tex2jax_ignore"><span class="footnote">Use <a class="external-url" href="http://aleph.sagemath.org" target="_blank">Sage</a> or <a class="external-url" href="http://wolframalpha.com" target="_blank">Wolfram Alpha</a> to plot your parametrization with your bounds (<a knowl="./knowl/x3d_parametric_plot.html" knowl-id="xref-x3d_parametric_plot" alt="Exercise 7.5.5 " title="Exercise 7.5.5 ">see 7.5.5</a> for examples). \thomasee{See 16.5: 1-16 for more practice.} \larsonfive{See Larson 15.5:1–10}</span></span> Again consider the surface \(z=9-x^2-y^2\text{.}\) </p>
+<ol id="ol-82" style="list-style-type: decimal;">
+<li id="li-302"><p id="p-642">Using cylindrical coordinates, \(\vec T(r,\theta,z) = (r\cos \theta, r\sin\theta, z)\text{,}\) obtain a parametrization \(\vec r(r,\theta)=(?,?,?)\) of the surface using the input variables \(r\) and \(\theta\text{.}\) In other words, if we let \(x=r\cos \theta, y=r\sin\theta, z=z\text{,}\) write \(z=9-x^2-y^2\) in terms of \(r\) and \(\theta\text{.}\)</p></li>
+<li id="li-303"><p id="p-643">What bounds must you place on \(r\) and \(\theta\) to obtain the portion of the surface above the plane \(z=0\text{?}\)</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-125" id="exercise-125"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">7.5.7</span>
+</h5></article></a></div>
+<div id="hk-exercise-125" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-644">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-107" id="fn-107"><span class="footnote"><sup> 4 </sup></span></a></span><span id="hk-fn-107" style="display: none;" class="tex2jax_ignore"><span class="footnote">We did very similar things in <a knowl="./knowl/graphing_spherical_coordinates.html" knowl-id="xref-graphing_spherical_coordinates" alt="Exercise 7.4.8 " title="Exercise 7.4.8 ">problem 7.4.8</a>. \thomasee{See 16.5: 1-16 for more practice.} \larsonfive{See Larson 15.5:1–10}</span></span></p>
+<p id="p-645">Recall the spherical coordinate transformation as given in \stewarts{
+\begin{equation*}
+\vec T(\rho,\phi,\theta) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
+\end{equation*}
+</p>
+<p id="p-646">} \bmw{
+\begin{equation*}
+\vec T(\rho,\phi,\theta) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
+\end{equation*}
+</p>
+<p id="p-647">}\larsonfive{
+\begin{equation*}
+\vec T(\rho,\theta, \phi) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
+\end{equation*}
+</p>
+<p id="p-648">}This is a function of the form \(\vec T\colon \mathbb{R}^3\to\mathbb{R}^3\text{.}\) If we hold one of the three inputs constant, then we have a function of the form \(\vec r\colon \mathbb{R}^2\to\mathbb{R}^3\text{,}\) which is a parametric surface. </p>
+<ol id="ol-83" style="list-style-type: decimal;">
+<li id="li-304"><p id="p-649">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-108" id="fn-108"><span class="footnote"><sup> 5 </sup></span></a></span><span id="hk-fn-108" style="display: none;" class="tex2jax_ignore"><span class="footnote">Use <a class="external-url" href="http://aleph.sagemath.org" target="_blank">Sage</a> or <a class="external-url" href="http://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a> to plot each parametrization (<a knowl="./knowl/x3d_parametric_plot.html" knowl-id="xref-x3d_parametric_plot" alt="Exercise 7.5.5 " title="Exercise 7.5.5 ">see 7.5.5</a> for examples).</span></span>Give a parametrization of the sphere of radius 2, using \(\phi\) and \(\theta\) as your input variables.</p></li>
+<li id="li-305"><p id="p-650">What bounds should you place on \(\phi\) and \(\theta\) if you want to hit each point on the sphere exactly once? <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-21" id="hint-21"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-21" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-651">There are two possible answers here</p></span></span></p></li>
+<li id="li-306"><p id="p-652">What bounds should you place on \(\phi\) and \(\theta\) if you only want the portion of the sphere above the plane \(z=1\text{?}\) <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-22" id="hint-22"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-22" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-653">There are also two possible answers here</p></span></span></p></li>
+</ol>
+<p></p></article></div>
+<p id="p-654">Sometimes you'll have to invent your own coordinate system when constructing parametric equations for a surface. If you notice that there are lots of circles parallel to one of the coordinate planes, try using a modified version of cylindrical coordinates. Instead of circles in the \(xy\) plane (\(x=r\cos\theta,y=r\sin\theta,z=z\)), maybe you need circles in the \(yz\)-plane (\(x=x,y=r\sin\theta,z=r\sin\theta\)) or the \(xz\) plane. Just look for lots of circles, and then construct your parametrization accordingly.</p>
+<article class="example-like" id="exploration-3"><h5 class="heading">
+<span class="type">Challenge</span><span class="codenumber">7.5.1</span>
+</h5>
+<p id="p-655">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-109" id="fn-109"><span class="footnote"><sup> 6 </sup></span></a></span><span id="hk-fn-109" style="display: none;" class="tex2jax_ignore"><span class="footnote">\larsonfive{See Larson 15.5:21–30.}</span></span>Find parametric equations for the surface \(x^2+z^2=9\text{.}\)</p>
+<ol id="ol-84" style="list-style-type: decimal;">
+<li id="li-307"><p id="p-657">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-110" id="fn-110"><span class="footnote"><sup> 7 </sup></span></a></span><span id="hk-fn-110" style="display: none;" class="tex2jax_ignore"><span class="footnote">Use <a class="external-url" href="http://aleph.sagemath.org" target="_blank">Sage</a> or <a class="external-url" href="http://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a> to plot each parametrization  (<a knowl="./knowl/x3d_parametric_plot.html" knowl-id="xref-x3d_parametric_plot" alt="Exercise 7.5.5 " title="Exercise 7.5.5 ">see 7.5.5</a> for examples).</span></span> What bounds should you use to obtain the portion of the surface between \(y=-2\) and \(y=3\text{?}\)</p></li>
+<li id="li-308"><p id="p-658">What bounds should you use to obtain the portion of the surface above \(z=0\text{?}\)</p></li>
+<li id="li-309"><p id="p-659">What bounds should you use to obtain the portion of the surface with \(x\geq 0\) and \(y\in[2,5]\text{?}\)</p></li>
+</ol></article><article class="example-like" id="exploration-4"><h5 class="heading">
+<span class="type">Challenge</span><span class="codenumber">7.5.2</span>
+</h5>
+<p id="p-660">Construct a graph of the surface \(z = x^2-y^2\text{.}\) Do so in 2 ways. (1) Construct a 3D surface plot. (2) Construct a contour plot, which is a graph with several level curves. Which level curve passes through the point \((3,4)\text{?}\) Use Wolfram Alpha to know if you're right. Just type “plot z=x\^2-y\^2.”</p></article><article class="example-like" id="exploration-5"><h5 class="heading">
+<span class="type">Challenge</span><span class="codenumber">7.5.3</span>
+</h5>
+<p id="p-661">Construct a plot of the vector field
+\begin{equation*}
+\vec F(x,y) = (x+y, -x+1)
+\end{equation*}
+by graphing the field at many integer points around the origin (I generally like to get the 8 integer points around the origin, and then a few more). Then explain how to modify your graph to obtain a plot of the vector field
+\begin{equation*}
+\hat F(x,y) = \frac{(x+y, -x+1)}{\sqrt{(x+y)^2+(1-x)^2}}.
+\end{equation*}
+</p></article></section></div></main>
+</div>
+</body>
+</html>

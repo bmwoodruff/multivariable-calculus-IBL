@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-06-13T20:31:48-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Double Integrals and Applications</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(\renewcommand{\chaptername}{Unit}
+\newcommand{\derivativehomeworklink}[1]{\href{http://db.tt/cSeKG8XO}{#1}}
+\newcommand{\chpname}{unit}
+\newcommand{\sageurlforcurvature}{http://bmw.byuimath.com/dokuwiki/doku.php?id=curvature_calculator}
+\newcommand{\uday}{ \LARGE Day \theunitday \normalsize \flushleft \stepcounter{unitday} }
+\newcommand{\sageworkurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=work_calculator}
+\newcommand{\wrapup}{
+\bmw{\section{Wrap Up}
+Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+
+\valposhort{\section{Wrap Up}
+This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
+\instructor{TeX files for these are included in a separate folder in the GitHub Project}
+\note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+\textbf{Review Guide Creation}\\
+
+Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your \chpname\ review guide. I'll provide you with a template which includes the \chpname's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } \\
+
+As you create this review guide, consider the following:
+\begin{itemize}
+ \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+ \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+\end{itemize}
+} 
+}
+\newcommand{\sagefluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=flux_calculator}
+\newcommand{\instructor}[1]{ EXTRA\footnote{\textcolor{blue}{\textbf{Instructor: }#1}}}
+\newcommand{\sageworkfluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=both_flux_and_work}
+\newcommand{\instructor}[1]{}
+\newcommand{\sagelineintegral}{http://bmw.byuimath.com/dokuwiki/doku.php?id=line_integral_calculator}
+\renewcommand{\thefootnote}{\roman{footnote}}
+\newcommand{\sagephysicalpropertiestwod}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_2d}
+\newcommand{\note}[1]{\footnote{#1} EXTRA\footnote{\fbox{\textbf{\thefootnote}}}}
+\newcommand{\sagephysicalpropertiesthreed}{http://bmw.byuimath.com/dokuwiki/doku.php?id=physical_properties_in_3d}
+\newcommand{\note}[1]{}
+\newcommand{\sageDoubleIntegralCheckerURL}{http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator}
+\newcommand{\myscale}{1}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dfdx}[1]{\frac{d#1}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\ii}{\vec \imath}
+\newcommand{\jj}{\vec \jmath}
+\newcommand{\kk}{\vec k}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\R}{ \mathbb{R}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\im}{\text{im }}
+\newcommand{\colvec}[1]{\begin{bmatrix}#1\end{bmatrix}    }
+\newcommand{\cl}[1]{ \begin{matrix}  #1  \end{matrix}    }
+\newcommand{\bm}[1]{ \begin{bmatrix}  #1  \end{bmatrix}  }
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\rref}{rref}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\blank}[1]{[14pt]{\rule{#1}{1pt}}}
+\newcommand{\vp}{^{\,\prime}}
+\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha} }
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Multivariable Calculus</span></a></h1>
+<p class="byline">Ben Woodruff</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-12.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-12.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-42.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-12.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-12.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-42.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Introduction</span></a></h2>
+<ul>
+<li><a href="section-1.html" data-scroll="section-1">Mathematical Truths</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Teaching philosophy</a></li>
+<li><a href="section-3.html" data-scroll="section-3">Modification Notes</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Review: Calculus I &amp; II</span></a></h2>
+<ul>
+<li><a href="section-4.html" data-scroll="section-4">Review of First Semester Calculus</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Differentials</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-7.html" data-scroll="section-7">Solving Systems of equations</a></li>
+<li><a href="section-8.html" data-scroll="section-8">Optional: Higher Order Approximations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span><span class="title">Vectors</span></a></h2>
+<ul>
+<li><a href="section-9.html" data-scroll="section-9">Vectors and Lines</a></li>
+<li><a href="section-10.html" data-scroll="section-10">The Dot Product</a></li>
+<li><a href="review_matrices.html" data-scroll="review_matrices">Interlude:Matrices</a></li>
+<li><a href="section-12.html" data-scroll="section-12">The Cross Product</a></li>
+<li><a href="section-13.html" data-scroll="section-13">The Cross Product and Planes</a></li>
+<li><a href="section-14.html" data-scroll="section-14">Projections and Their Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Review: Conic Sections</span></a></h2>
+<ul><li><a href="section-15.html" data-scroll="section-15">Conic Sections</a></li></ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Parametric Equations</span></a></h2>
+<ul><li><a href="section-16.html" data-scroll="section-16">Parametric Equations</a></li></ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span><span class="title">Polar and New Coordinate Systems</span></a></h2>
+<ul><li><a href="section-17.html" data-scroll="section-17">Polar Coordinates</a></li></ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span><span class="title">Functions</span></a></h2>
+<ul>
+<li><a href="section-18.html" data-scroll="section-18">Function Terminology</a></li>
+<li><a href="section-19.html" data-scroll="section-19">Parametric Curves:</a></li>
+<li><a href="section-20.html" data-scroll="section-20">Parametric Surfaces:</a></li>
+<li><a href="section-21.html" data-scroll="section-21">Functions of Several Variables:</a></li>
+<li><a href="section-22.html" data-scroll="section-22">Constructing Functions</a></li>
+<li><a href="sec_functionlist.html" data-scroll="sec_functionlist">Summary of Functions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span><span class="title">Derivatives</span></a></h2>
+<ul>
+<li><a href="section-24.html" data-scroll="section-24">Introduction</a></li>
+<li><a href="section-25.html" data-scroll="section-25">The (multi-dimensional) Derivative</a></li>
+<li><a href="section-26.html" data-scroll="section-26">Tangent Planes</a></li>
+<li><a href="section-27.html" data-scroll="section-27">The Chain Rule</a></li>
+</ul>
+<h2 class="link"><a href="chapter-9.html" data-scroll="chapter-9"><span class="codenumber">9</span><span class="title">Motion</span></a></h2>
+<ul>
+<li><a href="section-28.html" data-scroll="section-28">Optional: Projectile Motion</a></li>
+<li><a href="section-29.html" data-scroll="section-29">Arc Length and the Unit Tangent Vector</a></li>
+<li><a href="section-30.html" data-scroll="section-30">Some Examples and The TNB Frame</a></li>
+<li><a href="section-31.html" data-scroll="section-31">More Practice</a></li>
+<li><a href="section-32.html" data-scroll="section-32">Tangential And Normal Components</a></li>
+</ul>
+<h2 class="link"><a href="chapter-10.html" data-scroll="chapter-10"><span class="codenumber">10</span><span class="title">Line Integrals</span></a></h2>
+<ul>
+<li><a href="section-33.html" data-scroll="section-33">Work, Flow, Circulation, and Flux</a></li>
+<li><a href="section-34.html" data-scroll="section-34">Area and the Line-Integral</a></li>
+<li><a href="section-35.html" data-scroll="section-35">The Fundamental Theorem of Line Integrals</a></li>
+<li><a href="section-36.html" data-scroll="section-36">Applications: Average Value</a></li>
+<li><a href="section-37.html" data-scroll="section-37">Applications: Physical Properties</a></li>
+</ul>
+<h2 class="link"><a href="chapter-11.html" data-scroll="chapter-11"><span class="codenumber">11</span><span class="title">Optimization</span></a></h2>
+<ul>
+<li><a href="section-38.html" data-scroll="section-38">The Gradient</a></li>
+<li><a href="section-39.html" data-scroll="section-39">The Second Derivative Test</a></li>
+<li><a href="section-40.html" data-scroll="section-40">Lagrange Multipliers</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-12.html" data-scroll="chapter-12"><span class="codenumber">12</span><span class="title">Double Integrals</span></a></h2>
+<ul>
+<li><a href="section-41.html" data-scroll="section-41" class="active">Double Integrals and Applications</a></li>
+<li><a href="section-42.html" data-scroll="section-42">Applications of Double Integrals</a></li>
+<li><a href="section-43.html" data-scroll="section-43">Switching Coordinates: Cartesian to Polar</a></li>
+<li><a href="section-44.html" data-scroll="section-44">Switching Coordinates: The Generalized Jacobian</a></li>
+<li><a href="section-45.html" data-scroll="section-45">Green's Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-13.html" data-scroll="chapter-13"><span class="codenumber">13</span><span class="title">Surface Integrals</span></a></h2>
+<ul>
+<li><a href="section-46.html" data-scroll="section-46">Surface Area and Surface Integrals</a></li>
+<li><a href="section-47.html" data-scroll="section-47">Two Vector Operators: Curl and Div</a></li>
+<li><a href="section-48.html" data-scroll="section-48">Circulation Density and Stokes' Theorem</a></li>
+</ul>
+<h2 class="link"><a href="chapter-14.html" data-scroll="chapter-14"><span class="codenumber">14</span><span class="title">Triple Integrals</span></a></h2>
+<ul>
+<li><a href="section-49.html" data-scroll="section-49">Triple Integral Definition and Applications</a></li>
+<li><a href="section-50.html" data-scroll="section-50">Changing Coordinate Systems: The Jacobian</a></li>
+<li><a href="section-51.html" data-scroll="section-51">The Divergence Theorem</a></li>
+</ul>
+<h2 class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></h2>
+<ul><li><a href="references-1.html" data-scroll="references-1">Bibliography</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-41"><header title="Section 12.1 Double Integrals and Applications"><h1 class="heading hide-type" alt="Section 12.1 Double Integrals and Applications">
+<span class="type">Section</span><span class="codenumber">12.1</span><span class="title">Double Integrals and Applications</span>
+</h1></header><p id="p-1601">In this section you will... </p>
+<ul id="ul-60" style="list-style-type: disc;">
+<li id="li-830"><p id="p-1602">practice setting up bounds and regions for double integrals.</p></li>
+<li id="li-831"><p id="p-1603">compute basic double integrals.</p></li>
+<li id="li-832"><p id="p-1604">understand how and why to switch the order of integration.</p></li>
+</ul>
+<p></p>
+<p id="p-1605">Before we introduce integration, let's practice using inequalities to describe regions in the plane. In first semester calculus, we often use the inequalities \(a\leq x\leq b\) and \(g(x)\leq y\leq f(x)\) to describe the region above \(g\) below \(f\) for \(x\) between \(a\) and \(b\text{.}\) We trapped \(x\) between two constants, and \(y\) between two functions. Sometimes we wrote \(c\leq y\leq d\) where \(g(y)\leq x\leq f(y)\) to describe the region to the right of \(g\) and left of \(f\) for \(y\) between \(c\) and \(d\text{.}\) We need to practice writing inequalities in this form, as these inequalities provide us the bounds of integration for double integrals.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-227" id="exercise-227"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">12.1.1</span>
+</h5></article></a></div>
+<div id="hk-exercise-227" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1606">Consider the region \(R\) in the \(xy\)-plane that is below the line \(y=x+2\text{,}\) above the line \(y=2\text{,}\) and left of the line \(x=5\text{.}\) We can describe this region by saying for each \(x\) with \(0\leq x\leq 5\text{,}\) we want \(y\) to satisfy \(2\leq y\leq x+2\text{.}\) In set builder notation, we would write
+\begin{equation*}
+R=\{(x,y)\ | \ 0\leq x\leq 5, 2\leq y\leq x+2\}.
+\end{equation*}
+</p>
+<p id="p-1607">The symbols \(\{\) and \(\}\) are used to enclose sets, and the symbol \(|\) stands for “such that”. We read the above line as “\(R\) equals the set of \((x,y)\) such that zero is less than \(x\) which is less than 5, and 2 is less than \(y\) which is less than \(x+2\text{.}\)” </p>
+<ol id="ol-208" style="list-style-type: decimal;">
+<li id="li-833"><p id="p-1608">Describe the region \(R\) by saying for each \(y\) with \(c\leq y\leq d\text{,}\) we want \(x\) to satisfy \(a(y)\leq x\leq b(y)\text{.}\) In other words, find constants \(c\) and \(d\text{,}\) and functions \(a(y)\) and \(b(y)\text{,}\) so that for each \(y\) between \(c\) and \(d\text{,}\) the \(x\) values must be between the functions \(a(y)\) and \(b(y)\text{.}\)</p></li>
+<li id="li-834"><p id="p-1609">Write your last answer in the set builder notation
+\begin{equation*}
+R=\{(x,y)\ | \ c\leq y\leq d, a(y)\leq x\leq b(y)\}.
+\end{equation*}
+</p></li>
+</ol>
+<p></p>
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-73" id="hint-73"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-73" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-1610">If your struggling, then draw the 4 curves given by \(0=x\text{,}\) \(x= 5\text{,}\) \(2=y\) and \(y= x+2\text{.}\) Then shade either above, below, left, or right of the line (as appropriate).</p></span></span> </article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-228" id="exercise-228"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">12.1.2</span>
+</h5></article></a></div>
+<div id="hk-exercise-228" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1611">For each region \(R\) below, draw the region and give a set of inequalities of the form \(a\leq x\leq b, c(x)\leq y\leq d(x)\) or in the form \(c\lt y\lt d, a(y)\leq x\leq b(y)\text{.}\) In class, we'll give whichever one you did not. </p>
+<ol id="ol-209" style="list-style-type: decimal;">
+<li id="li-835"><p id="p-1612">The region \(R\) is above the line \(x+y=1\) and inside the circle \(x^2+y^2=1\text{.}\)</p></li>
+<li id="li-836"><p id="p-1613">The region \(R\) is below the line \(y=8\text{,}\) above the curve \(y=x^2\text{,}\) and to the right of the \(y\)-axis.</p></li>
+<li id="li-837"><p id="p-1614">The region \(R\) is bounded by \(2x+y=3\text{,}\) \(y=x\text{,}\) and \(x=0\text{.}\)</p></li>
+</ol>
+<p></p></article></div>
+<p id="p-1615">We're now ready to discuss double integrals. Just as single integrals gave us the area under a function over an interval, double integrals will give us the volume under a function, above a region in the plane. We'll introduce double integrals by looking at cross sections of a solid. You did this in first semester calculus, but you always used geometric shapes, for which we know the area, to create the cross sections. Let's start with a review of this idea, and then jump into double integrals.</p>
+<p id="p-1616">Consider the parabola \(z=9-x^2\) for \(0\leq x\leq 3\text{.}\) Revolve this parabola half way around the \(z\)-axis, and compute the volume of the solid that is inside the paraboloid and above the \(xy\)-plane. Do so by considering horizontal semicircular cross sections. See <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-252" id="fn-252"><span class="footnote"><sup> 1 </sup></span></a></span><span id="hk-fn-252" style="display: none;" class="tex2jax_ignore"><span class="footnote">The area of each cross section is the area of a semicircle, which is \(A=\frac{1}{2}\pi r^2 = \frac12 \pi x^2\) as the radius is \(x\text{.}\) We thicken each cross section up by multiplying by \(dz\text{,}\) the height of each circular disc. Since the height has a \(dz\text{,}\) we replace \(x\) with \(x=\sqrt{9-z}\) in the area formula to get a little bit of volume as \(dV = \frac{1}{2}\pi (\sqrt{9-z})^2 dz\text{.}\)  The \(z\) values range from \(0\) to \(9\text{,}\) which means the volume of the solid is the integral
+\begin{equation*}
+V
+=\int_0^9 \frac{1}{2}\pi (\sqrt{9-z})^2 dz
+=\frac{\pi}{2}\int_0^9  9-z dz
+=\frac{\pi}{2}  \left(9z-\frac{z^2}{2}\right)\bigg|_0^9
+=\frac{81\pi}{4}
+\end{equation*}
+</span></span>.</p>
+<p id="p-1617">Let's now consider the exact same solid, but instead of cutting horizontally, let's cut the object vertically. The first exercise has you cut the solid up using slices that are parallel to the \(x\)-axis (so keeping \(y\) constant). The next has you repeat the exercise, but this time using vertical slices that are parallel to the \(y\)-axis (so keeping \(x\) constant). The idea is exactly the same. Just find the area of a slice, thicken it up (using \(dx\) or \(dy\)), and then integrate.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-prob_double-int_half_parabolic" id="prob_double-int_half_parabolic"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">12.1.3</span>
+</h5></article></a></div>
+<div id="hk-prob_double-int_half_parabolic" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1618">Please <a class="external-url" href="http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_of_solid_by_letting_y_equal_a_constant" target="_blank">click on this Sage link.</a> In this picture, you'll see the solid \(D\) drawn. You'll also see several cross sections of the surface (half parabolas), each one obtained by letting \(y\) equal a constant (\(y=-2, -1,0,1,2\)). When \(y_i=0\text{,}\) the half parabola has area \(\int_0^3 9-x^2dx\text{.}\) When \(y_i=2\text{,}\) the half parabola has area \(\int_0^? 5-x^2dx\text{.}\) </p>
+<ol id="ol-210" style="list-style-type: decimal;"><li id="li-838"><p id="p-1619">When \(y=y_i\text{,}\) explain why the area of each of the cross sections from the first part is
+\begin{equation*}
+A_{y=y_i}=\ds \int_0^{\sqrt{9-y_i^2}} (9-x^2-y_i^2) dx.
+\end{equation*}
+</p></li></ol>
+<p></p>
+<p id="p-1620">In the first Sage picture above, we cut the solid into 6 pieces. We could cut the solid into more pieces. <a class="external-url" href="http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_multiplied_by_dy" target="_blank">Click on this Sage link</a> to see what happens if we cut the solid into 12 pieces, and then fatten up each cross section by \(dy=1/2\) units, obtaining 12 tiny bits of volume \(dV\text{.}\) </p>
+<ol id="ol-211" style="list-style-type: decimal;"><li id="li-839"><p id="p-1621">Explain why the total volume of the solid \(D\) equals
+\begin{equation*}
+\ds\int_{-3}^{3} \left(\int_0^{\sqrt{9-y^2}}(9-x^2-y^2) dx\right) dy.
+\end{equation*}
+</p></li></ol>
+<p></p></article></div>
+<p id="p-1622">The integral above is called an iterated integral because you first compute the inside integral and then you compute the outside integral (you iteratively integrate). Often the parenthesis are not written because we know that the inside integral should be performed first without writing the parenthesis. We could also explicitly emphasize which variables go with each bound by writing
+\begin{equation*}
+\ds\int_{y=-3}^{y=3} \left(\int_{x=0}^{x=\sqrt{9-y^2}}9-x^2-y^2 dx\right) dy.
+\end{equation*}
+</p>
+<p id="p-1623">This latter approach is not commonly used, but can save a beginner from making simple errors.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-230" id="exercise-230"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">12.1.4</span>
+</h5></article></a></div>
+<div id="hk-exercise-230" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1624">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-253" id="fn-253"><span class="footnote"><sup> 2 </sup></span></a></span><span id="hk-fn-253" style="display: none;" class="tex2jax_ignore"><span class="footnote"><a class="external-url" href="http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_of_solid_by_letting_x_equal_a_constant" target="_blank">Click on this Sage link</a> to see a picture of how you could obtain this answer by considering cross sections.</span></span> The bounds of the integral
+\begin{equation*}
+\ds\int_{-3}^{3} \left(\int_0^{\sqrt{9-y^2}}(9-x^2-y^2) dx\right) dy
+\end{equation*}
+describe a region \(R\) in the plane, namely
+\begin{equation*}
+-3\leq y\leq 3 \text{ and }  0\leq x\leq \sqrt{9-y^2}.
+\end{equation*}
+</p>
+<ol id="ol-212" style="list-style-type: decimal;">
+<li id="li-840"><p id="p-1625">Draw this region \(R\) in the \(xy\)-plane.</p></li>
+<li id="li-841"><p id="p-1626">Then give bounds to describe the region alternately by first stating constants which trap \(x\) (so \(a\leq x\leq b\)) and then functions which trap \(y\) (so \(c(x)\leq y \leq d(x)\)).</p></li>
+<li id="li-842"><p id="p-1627">Use these new bounds to write an iterated integral
+\begin{equation*}
+\ds\int_{x=a}^{x=b} \left(\int_{y=c(x)}^{y=d(x)}9-x^2-y^2 dy\right) dx
+\end{equation*}
+that gives the exact same volume of the solid \(D\) from the previous problem.</p></li>
+</ol>
+<p></p></article></div>
+<article class="example-like" id="exploration-20"><h5 class="heading">
+<span class="type">Challenge</span><span class="codenumber">12.1.1</span>
+</h5>
+<p id="p-1628">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-254" id="fn-254"><span class="footnote"><sup> 3 </sup></span></a></span><span id="hk-fn-254" style="display: none;" class="tex2jax_ignore"><span class="footnote">See <a class="external-url" href="http://aleph.sagemath.org/?z=eJx9kMtugzAQRfd8BVIXjJ2BElAWWfAlVYOQgWKJYHfsNsDX17xaRKtu_JJ1zp37WRAEI9qmsgVSwLwaehxwZNmyc7iG_S0Jh1vCmGdUK8tcaWuyUgoLQrWKsmCo2lY9AlS6ENIOWRyl2983KnST6YKKe2VJily3yqYlAHGhDMxehsSN7LbLNSQnQx8IY0wZLu8Yavmc4LQw5PwnCfOedqrT0QUQb3PMMzjugGE6g0cnOB9p_8NcKdy8k11qYRhPwH4N6sDn30BPkDImN5WwUnVrI-bjDkd4DXKufom4WuRk2Z2_YzO_VuRLX3b-S4zRBaMIk-jy6oSmUQ_Yz_FHAuZ9Aa-ooss" target="_blank">Sage</a>.</span></span>Consider the solid domain \(D\) in space that is beneath the surface \(f(x,y)=9-x^2-y^2\) and above the \(xy\)-plane, where the \(x\) values satisfy \(x\geq 0\text{.}\) The region is half of a parabolic solid. Our goal in this exercise is to find the volume of the solid \(D\text{.}\) This is the same solid referred to in the previous two exercises.</p>
+<ol id="ol-213" style="list-style-type: decimal;">
+<li id="li-843"><p id="p-1629">Draw the solid \(D\text{.}\)</p></li>
+<li id="li-844"><p id="p-1630">The plane \(x=0\) intersects the solid in a parabola \(z=9-y^2\text{.}\) Sketch this parabola in your 3D drawing. The area under this parabola is \(A_{x=0} = \int_{-3}^3 9-(0)^2-(y)^2 \ dy\text{.}\)</p></li>
+<li id="li-845">
+<p id="p-1631">Similarly, the plane \(x=1\) intersects the solid in half a parabola \(z=9-1^2-y^2\text{.}\) Sketch this parabola in your 3D drawing.</p>
+<ol id="ol-214" style="list-style-type: lower-alpha;"><li id="li-846"><p id="p-1632">Find a values \(c\) and \(d\) so that the area under this parabola is given by the formula \(A_x(1)=\int_c^{d} 9-(1)^2-(y)^2 \ dy\text{.}\)</p></li></ol>
+</li>
+<li id="li-847"><p id="p-1633">The plane \(x=2\) intersects the solid in half a parabola (draw this parabola). Find the values \(c\) and \(d\) so that the area under this parabola is \(A_x(2)=\int_c^d 9-(2)^2-(y)^2 \ dx\text{.}\)</p></li>
+<li id="li-848"><p id="p-1634">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-255" id="fn-255"><span class="footnote"><sup> 4 </sup></span></a></span><span id="hk-fn-255" style="display: none;" class="tex2jax_ignore"><span class="footnote">You should obtain an inequality \(a\leq x\leq b\) where \(a\) and \(b\) are constants. For \(c\leq y\leq d\text{,}\) you should have functions of \(x\) for both \(c\) and \(d\text{.}\) If both involve square roots, you're on the right track.</span></span> For which \(x\)-values \(x_0\) does the plane \(x=x_0\) intersect the paraboloid.</p></li>
+<li id="li-849"><p id="p-1635">For each of these values, what should \(c\) and \(d\) equal so that \(A_x(x_0) = \int_c^d 9-x_0^2-y^2 dy\) gives the area under the half parabola obtained when the plane \(x=x_0\) intersects the surface.</p></li>
+</ol>
+<p id="p-1636">Imagine now that you cut the surface into 6 pieces, using the plane \(x=x_0\) for each \(x_0\) in \(\{0,0.5,1,1.5,2, 2.5,3\}\text{.}\) Let \(x_0=0\text{,}\) \(x_1=0.5\text{,}\) \(\ldots\text{,}\) \(x_{6}=3\text{.}\) The change in \(x\) between each point is \(dx=0.5\text{.}\) In the plane \(x=x_i\text{,}\) we know the area under the surface is \(A_x(x_i) = \int_{c_i}^{d_i} 9-(x_i)^2-y^2 dy\) (where you found \(c_i\) and \(d_i\) in the last part). If we multiply this area by the thickness \(dx=0.5\text{,}\) we obtain the volume of a solid (think \(dV=(A_x)dx\)). </p>
+<ol id="ol-215" style="list-style-type: decimal;">
+<li id="li-850"><p id="p-1637">Draw this solid in your picture for \(x_i = 1\text{.}\)</p></li>
+<li id="li-851"><p id="p-1638">Explain why the volume of \(D\) equals \(\ds\int_{0}^{3} \left(\int_{-\sqrt{9-x^2}}^{\sqrt{9-x^2}}9-x^2-y^2 dy\right) dx\text{.}\)</p></li>
+<li id="li-852"><p id="p-1639">Use a computer to first compute the inside integral (you should have \(x\) values left after you integrate the inside), and then compute the outside integral (which should leave you with a single number). This number is the volume of \(D\text{.}\)</p></li>
+</ol>
+<p></p></article><p id="p-1640">The first two exercises show that the volume of \(D\) can be given by
+\begin{equation*}
+V=\ds\int_{-3}^{3} \left(\int_0^{\sqrt{9-y^2}}9-x^2-y^2 dx\right) dy = \ds\int_{0}^{3} \left(\int_{-\sqrt{9-x^2}}^{\sqrt{9-x^2}}9-x^2-y^2 dy\right) dx.
+\end{equation*}
+</p>
+<p id="p-1641">We have two completely different iterated integrals that result in the exact same volume. In both integrals, the bounds on \(x\) and \(y\) describe a semicircular region \(R\) in the \(xy\) plane. The region \(R\) is fully described by using the inequalities \(-3\leq y\leq 3\) and \(0\leq x\leq \sqrt{9-y^2}\) from the first integral, or using the inequalities \(0\leq x\leq 3\) and \(-\sqrt{9-x^2}\leq y\leq \sqrt{9-x^2}\) from the second integral.</p>
+<p id="p-1642">In the previous exercises, we computed the volume of solid by considering cross sections of the solid. We could also cut the solid up in both the \(x\) and \(y\) dimensions. This would result in tiny rectangles in the \(xy\) plane with area \(dA=dxdy=dydx\text{,}\) and the solid would have height \(f(x,y)\) above these rectangles. This means we would have a little bit of volume written as
+\begin{equation*}
+dV=fdA=fdxdy=fdydx.
+\end{equation*}
+</p>
+<p id="p-1643">Adding up these little bits of volume gives us the double integral
+\begin{equation*}
+V = \iint_R fdA=\iint_R fdydx=\iint_R fdxdy.
+\end{equation*}
+</p>
+<p id="p-1644">We can either set up the bounds with \(x\) on the inside, or \(y\) on the inside. We'll get the same answer. When we set up the integral with bounds, we call it an iterated integral, and write.
+\begin{equation*}
+\ds \int_a^b \int_{c(x)}^{d(x)}f(x,y)dydx  \text{ or }  
+\ds \int_c^d \int_{a(y)}^{b(y)}f(x,y)dxdxy.
+\end{equation*}
+</p>
+<article class="definition-like" id="definition-41"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">12.1.5</span><span class="title">Double and Iterated Integrals</span>
+</h5>
+<p id="p-1645">A double integral is written \(\ds \iint_R f(x,y)dA\text{.}\) We just have to state what the region \(R\) is to talk about a double integral. The formal definition of a double integrals involves slicing the region \(R\) up into tiny rectangles of area \(dxdy\text{,}\) multiplying each rectangle by a height \(f\text{,}\) and then summing over all rectangles. This process is repeated as the length and width of the rectangles shrinks to zero at similar rates, with the double integral being the limit of this process.</p>
+<p id="p-1646">An iterated integral is a double integral where we have actually set up the bounds as either
+\begin{equation*}
+\ds \int_a^b \int_{c(x)}^{d(x)}f(x,y)dydx  \text{ or }  
+\ds \int_c^d \int_{a(y)}^{b(y)}f(x,y)dxdxy.
+\end{equation*}
+</p>
+<p id="p-1647">We'll focus mostly on setting up iterated integrals in this course.</p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-231" id="exercise-231"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">12.1.6</span>
+</h5></article></a></div>
+<div id="hk-exercise-231" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1648">Consider the region \(R\) in the plane that is bounded by the line \(y=x+2\) and the parabola \(y=x^2-4\text{.}\) Distances are measured in \(cm\text{.}\) </p>
+<ol id="ol-216" style="list-style-type: decimal;"><li id="li-853"><p id="p-1649">Draw the region \(R\text{,}\) and give bounds of the form \(a\leq x\leq b\text{,}\) \(c(x)\leq y\leq d(x)\) to describe the region.</p></li></ol>
+<p></p>
+<p id="p-1650">Check your work with the link in the margin. You can use this Sage link to check any double integral. If you think you have the bounds right, use this Sage link to draw the region your bounds describe. If it doesn't the draw the region you thought, then your bounds are off. Trial and error is a powerful tool here. You've got to try, and fail, and then make adjustments. This is the key to mastering double integrals.</p>
+<p id="p-1651">Suppose a metal plate occupies the region \(R\text{.}\) The metal plate was constructed to have a density of \(\delta (x,y)=(y+4)\) g/\(cm^2\text{.}\) </p>
+<ol id="ol-217" style="list-style-type: decimal;">
+<li id="li-854"><p id="p-1652">Explain why the mass of the plate is the double integral \(\ds\iint_R \delta dA\text{.}\)</p></li>
+<li id="li-855"><p id="p-1653">EXTRA<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-fn-256" id="fn-256"><span class="footnote"><sup> 5 </sup></span></a></span><span id="hk-fn-256" style="display: none;" class="tex2jax_ignore"><span class="footnote">Check your work with this <a class="external-url" href="http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator" target="_blank">Double Integral Checker written in Sage</a>.</span></span> Set up an iterated integral (use the bounds from part 1) to compute the double integral \(\ds\iint_R (y+4) dA\text{.}\)</p></li>
+<li id="li-856"><p id="p-1654">Now compute the integral starting with the inside integral, followed by the outside integral.</p></li>
+</ol>
+<p></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-exercise-232" id="exercise-232"><article class="exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="codenumber">12.1.7</span>
+</h5></article></a></div>
+<div id="hk-exercise-232" style="display: none;" class="tex2jax_ignore"><article class="exercise-like"><p id="p-1655">Consider the iterated integral \(\ds \int_0^3\int_x^3 e^{y^2}dydx\text{.}\) This integral as written cannot (easily) be computed by hand. However, with a little math magic, we can... </p>
+<ol id="ol-218" style="list-style-type: decimal;"><li id="li-857"><p id="p-1656">Write the bounds as two inequalities (\(0\leq x\leq 3\) and \(?\leq y\leq ?\)). Then draw and shade the region \(R\) described by these two inequalities.</p></li></ol>
+<p></p>
+<p id="p-1657">We want to swap the order of integration from \(dydx\) to \(dxdy\text{.}\) This requires you to describe new bounds for the integrals. The new bounds will define \(x\) as a function of \(y\text{.}\) This is the key to swapping the order of integration. </p>
+<ol id="ol-219" style="list-style-type: decimal;">
+<li id="li-858"><p id="p-1658">Write new bounds to describe the region using two inequalities of the form \(c\leq y\leq d\) and \(a(y)\leq x\leq b(y)\text{.}\)</p></li>
+<li id="li-859"><p id="p-1659">Use your new bounds to compute the integral by hand (you'll need a \(u\)-substitution \(u=y^2\) on the outer integral).</p></li>
+<li id="li-860"><p id="p-1660">Now use <a class="external-url" href="http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator" target="_blank">Sage</a> to check your work.</p></li>
+<li id="li-861"><p id="p-1661">Then also use Sage to compute the original the original integral \(\ds \int_0^3\int_x^3 e^{y^2}dydx\text{,}\) and tell us what the inner integral equals (if you see \(i\text{,}\) \(\sqrt{\pi}\text{,}\) and erf, then you did this correctly).</p></li>
+</ol>
+<p></p></article></div>
+<article class="example-like" id="exploration-21"><h5 class="heading">
+<span class="type">Challenge</span><span class="codenumber">12.1.2</span><span class="title">Extra Practice</span>
+</h5>
+<p id="p-1662">Consider the region \(R\) in the plane that is trapped between the curves \(x=2y\) and \(x=y^2\text{.}\) We would like to compute \(\iint_R (-y) dA\) over this region \(R\text{.}\) Set up both iterated integrals (i.e. with both \(dxdy\) and \(dydx\)). Then compute one of them. Explain why your answer is negative.</p></article></section></div></main>
+</div>
+</body>
+</html>
