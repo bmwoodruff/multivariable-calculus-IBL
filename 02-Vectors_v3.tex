@@ -18,7 +18,6 @@ In this unit you will learn how to...
 \end{itemize}
 
 Learning to work with vectors will be key tool we need for our work in high dimensions.  Let's start with some problems related to finding distance in 3D, drawing in 3D, and then we'll be ready to work with vectors.
-`
 
 \begin{problem}
 \instructor{\\Pre-Class Recommended\\}
@@ -44,8 +43,7 @@ Recall that a circle (or sphere in 3-D) is just a collection of points which are
 \begin{enumerate}
 \item If the center of a circle is the point $(1,5)$ what is the equation for a circle which passes through the point $(2,3)$?
 \item Find the distance between the two points $P=(2,3,-4)$ and $Q=(0,-1,1)$. 
-\item Now find an equation of the sphere passing though point $Q$ whose center is at $P$. \\
-Hint: Each point on the surface of a sphere is $r$ distance away from the center.
+\item Now find an equation of the sphere passing though point $Q$ whose center is at $P$. [Hint: Each point on the surface of a sphere is $r$ distance away from the center.]
 \end{enumerate}
 \end{problem}
 
@@ -123,7 +121,7 @@ Consider the vector $\vec v=\langle 3,-1 \rangle $.\\
 
 \vskip0.2in
 
-In a previous problem (\ref{prob:donkey}) you encountered $(x,y)=(3t,-t)$.  This is an example of a function where the input is $t$ and the output is a vector $(x,y)$.  For each input $t$, you get a single vector output $(x,y)$. Such a function is called a parametrization of the donkey's path. Because the output is a vector, we call the function a vector-valued function. Often, we'll use the variable $\vec r$ to represent the radial vector $(x,y)$, or $(x,y,z)$ in 3D.  So we could rewrite the position of the donkey as $\vec r(t)=(3,-1)t$. We use $\vec r$ instead of $r$ to remind us that the output is a vector.
+In the previous problem (\ref{prob:donkey}) you encountered $(x,y)=(3t,-t)$.  This is an example of a function where the input is $t$ and the output is a vector $(x,y)$.  For each input $t$, you get a single vector output $(x,y)$. Such a function is called a parametrization of the donkey's path. Because the output is a vector, we call the function a vector-valued function. Often, we'll use the variable $\vec r$ to represent the radial vector $(x,y)$, or $(x,y,z)$ in 3D.  So we could rewrite the position of the donkey as $\vec r(t)=(3,-1)t$. We use $\vec r$ instead of $r$ to remind us that the output is a vector.
 
 Let's look at another, similar problem.
 
@@ -211,7 +209,7 @@ Let's return to problems \ref{prob:donkey} and \ref{prob:horseline}. We now have
 	\stewarts{Look at 12.2:34-40}
 	}%
 A raccoon is sitting at point $P=(0,2,3)$.  It starts to climb in the direction $\vec v=\left<1,-1,2\right>$.\\
-Write a vector equation $(x,y,z)=(?,?,?)$ for the line that passes through the point $P$ and is parallel to $\vec v$. [Hint, study problem \ref{prob:horseline}, and base your work off of what you saw there. It's almost identical.] \\
+Write a vector equation $(x,y,z)=(?,?,?)$ for the line that passes through the point $P$ and is parallel to $\vec v$. [Hint: study problem \ref{prob:horseline}, and base your work off of what you saw there. It's almost identical.] \\
 Generalize your work to give an equation of the line that passes through the point $P=(x_1,y_1,z_1)$ and is parallel to the vector $\vec v=\langle v_1,v_2,v_3 \rangle$. 
 \end{problem}
 
@@ -347,8 +345,149 @@ The dot product provides a really easy way to find when two vectors meet at a ri
 \section{Interlude:Matrices}\label{review:matrices}
 We will soon discover that matrices represent derivatives in high dimensions. When you use matrices to represent derivatives, the chain rule is precisely matrix multiplication. For now, we just need to become comfortable with matrix multiplication.
 
-We perform matrix multiplication ``row by column''.  Wikipedia has an excellent visual illustration of how to do this. See \marginpar{ \bmw{The electronic version has links that will open your browser and take you to the web.} \valpo{The electronic version has links that will open your browser and take you to the web.}}
-\href{http://en.wikipedia.org/wiki/Matrix\_multiplication}{Wikipedia} for an explanation. Alternatively see \href{http://www.texample.net/tikz/examples/matrix-multiplication/}{texample.net} for a visualization of the idea.
+We perform matrix multiplication ``row by column''.  Wikipedia has an excellent visual illustration of how to do this. See %\marginpar{ \bmw{The electronic version has links that will open your browser and take you to the web.} \valpo{The electronic version has links that will open your browser and take you to the web.}}
+\href{http://en.wikipedia.org/wiki/Matrix\_multiplication}{Wikipedia} for an explanation. Alternatively see below for a visualization of the idea.
+
+% l' unite
+\newcommand{\myunit}{1 cm}
+\tikzset{
+    node style sp/.style={draw,circle,minimum size=\myunit},
+    node style ge/.style={circle,minimum size=\myunit},
+    arrow style mul/.style={draw,sloped,midway,fill=white},
+    arrow style plus/.style={midway,sloped,fill=white},
+}
+
+\begin{tikzpicture}[>=latex]
+% les matrices
+\matrix (A) [matrix of math nodes,%
+             nodes = {node style ge},%
+             left delimiter  = (,%
+             right delimiter = )] at (0,0)
+{%
+  a_{11} & a_{12} & \ldots & a_{1p}  \\
+  \node[node style sp] {a_{21}};%
+         & \node[node style sp] {a_{22}};%
+                  & \ldots%
+                           & \node[node style sp] {a_{2p}}; \\
+  \vdots & \vdots & \ddots & \vdots  \\
+  a_{n1} & a_{n2} & \ldots & a_{np}  \\
+};
+\node [draw,below=10pt] at (A.south) 
+    { $A$ : \textcolor{red}{$n$ rows} $p$ columns};
+
+\matrix (B) [matrix of math nodes,%
+             nodes = {node style ge},%
+             left delimiter  = (,%
+             right delimiter =)] at (6*\myunit,6*\myunit)
+{%
+  b_{11} & \node[node style sp] {b_{12}};%
+                  & \ldots & b_{1q}  \\
+  b_{21} & \node[node style sp] {b_{22}};%
+                  & \ldots & b_{2q}  \\
+  \vdots & \vdots & \ddots & \vdots  \\
+  b_{p1} & \node[node style sp] {b_{p2}};%
+                  & \ldots & b_{pq}  \\
+};
+\node [draw,above=10pt] at (B.north) 
+    { $B$ : $p$ rows \textcolor{red}{$q$ columns}};
+% matrice rÃƒÂ©sultat
+\matrix (C) [matrix of math nodes,%
+             nodes = {node style ge},%
+             left delimiter  = (,%
+             right delimiter = )] at (6*\myunit,0)
+{%
+  c_{11} & c_{12} & \ldots & c_{1q} \\
+  c_{21} & \node[node style sp,red] {c_{22}};%
+                  & \ldots & c_{2q} \\
+  \vdots & \vdots & \ddots & \vdots \\
+  c_{n1} & c_{n2} & \ldots & c_{nq} \\
+};
+% les fleches
+\draw[blue] (A-2-1.north) -- (C-2-2.north);
+\draw[blue] (A-2-1.south) -- (C-2-2.south);
+\draw[blue] (B-1-2.west)  -- (C-2-2.west);
+\draw[blue] (B-1-2.east)  -- (C-2-2.east);
+\draw[<->,red](A-2-1) to[in=180,out=90]
+	node[arrow style mul] (x) {$a_{21}\times b_{12}$} (B-1-2);
+\draw[<->,red](A-2-2) to[in=180,out=90]
+	node[arrow style mul] (y) {$a_{22}\times b_{22}$} (B-2-2);
+\draw[<->,red](A-2-4) to[in=180,out=90]
+	node[arrow style mul] (z) {$a_{2p}\times b_{p2}$} (B-4-2);
+\draw[red,->] (x) to node[arrow style plus] {$+$} (y)%
+                  to node[arrow style plus] {$+\raisebox{.5ex}{\ldots}+$} (z)%
+                  to (C-2-2.north west);
+
+
+\node [draw,below=10pt] at (C.south) 
+    {$ C=A\times B$ : \textcolor{red}{$n$ rows}  \textcolor{red}{$q$ columns}};
+
+\end{tikzpicture}
+
+\begin{tikzpicture}[>=latex]
+% unit
+% defintion of matrices
+\matrix (A) [matrix of math nodes,%
+             nodes = {node style ge},%
+             left delimiter  = (,%
+             right delimiter = )] at (0,0)
+{%
+  a_{11} &\ldots & a_{1k} & \ldots & a_{1p}  \\
+    \vdots & \ddots & \vdots & \vdots & \vdots \\
+  \node[node style sp] {a_{i1}};& \ldots%
+         & \node[node style sp] {a_{ik}};%
+                  & \ldots%
+                           & \node[node style sp] {a_{ip}}; \\
+  \vdots & \vdots& \vdots & \ddots & \vdots  \\
+  a_{n1}& \ldots & a_{nk} & \ldots & a_{np}  \\
+};
+\node [draw,below] at (A.south) { $A$ : \textcolor{red}{$n$ rows} $p$ columns};
+\matrix (B) [matrix of math nodes,%
+             nodes = {node style ge},%
+             left delimiter  = (,%
+             right delimiter =)] at (7*\myunit,7*\myunit)
+{%
+  b_{11} &  \ldots& \node[node style sp] {b_{1j}};%
+                  & \ldots & b_{1q}  \\
+  \vdots& \ddots & \vdots & \vdots & \vdots \\
+  b_{k1} &  \ldots& \node[node style sp] {b_{kj}};%
+                  & \ldots & b_{kq}  \\
+  \vdots& \vdots & \vdots & \ddots & \vdots \\
+  b_{p1} &  \ldots& \node[node style sp] {b_{pj}};%
+                  & \ldots & b_{pq}  \\
+};
+\node [draw,above] at (B.north) { $B$ : $p$ rows \textcolor{red}{$q$ columns}};
+% matrice resultat
+\matrix (C) [matrix of math nodes,%
+             nodes = {node style ge},%
+             left delimiter  = (,%
+             right delimiter = )] at (7*\myunit,0)
+{%
+  c_{11} & \ldots& c_{1j} & \ldots & c_{1q} \\
+  \vdots& \ddots & \vdots & \vdots & \vdots \\
+    c_{i1}& \ldots & \node[node style sp,red] {c_{ij}};%
+                  & \ldots & c_{iq} \\
+  \vdots& \vdots & \vdots & \ddots & \vdots \\
+  c_{n1}& \ldots & c_{nk} & \ldots & c_{nq} \\
+};
+\node [draw,below] at (C.south) 
+    {$ C=A\times B$ : \textcolor{red}{$n$ rows}  \textcolor{red}{$q$ columns}};
+% arrows
+\draw[blue] (A-3-1.north) -- (C-3-3.north);
+\draw[blue] (A-3-1.south) -- (C-3-3.south);
+\draw[blue] (B-1-3.west)  -- (C-3-3.west);
+\draw[blue] (B-1-3.east)  -- (C-3-3.east);
+\draw[<->,red](A-3-1) to[in=180,out=90] 
+    node[arrow style mul] (x) {$a_{i1}\times b_{1j}$} (B-1-3);
+\draw[<->,red](A-3-3) to[in=180,out=90] 
+    node[arrow style mul] (y) {$a_{ik}\times b_{kj}$}(B-3-3);
+\draw[<->,red](A-3-5) to[in=180,out=90] 
+    node[arrow style mul] (z) {$a_{ip}\times b_{pj}$}(B-5-3);
+\draw[red,->] (x) to node[arrow style plus] {$+\raisebox{.5ex}{\ldots}+$} (y)%
+                  to node[arrow style plus] {$+\raisebox{.5ex}{\ldots}+$} (z);
+                  %
+                  % to (C-3-3.north west);
+\draw[->,red,decorate,decoration=zigzag] (z) -- (C-3-3.north west);
+\end{tikzpicture}
 
 \begin{problem} 
 	\marginpar{ 
@@ -457,12 +596,12 @@ $\begin{vmatrix}{3}&{1}\\{0}&{2}\end{vmatrix}=6$ and $\begin{vmatrix}{1}&{3}\\{2
 %    }}
 
 For a 3 by 3 matrix, the columns give the edges of a three dimensional parallelepiped and the determinant produces the volume of this object. The sign of the determinant is related to orientation. If you can use your right hand and place your index finger on the first vector, middle finger on the second vector, and thumb on the third vector, then the determinant is positive. 
-For example, consider the matrix $A = \begin{bmatrix}\cl{1\\0\\0}&\cl{0\\2\\0}&\cl{0\\0\\3}\end{bmatrix}$.  Starting from the origin, each column represents an edge of the rectangular box 
+For example, consider the matrix $A = \begin{bmatrix}1&0&0\\0&2&0\\0&0&3}\end{bmatrix}$.  Starting from the origin, each column represents an edge of the rectangular box 
 $0\leq x\leq 1$, 
 $0\leq y\leq 2$, 
 $0\leq z\leq 3$ with volume (and determinant) $V=lwh=(1)(2)(3)=6$. The sign of the determinant is positive because if you place your index finger pointing in the direction (1,0,0) and your middle finger in the direction (0,2,0), then your thumb points upwards in the direction (0,0,3). 
 If you interchange two of the columns, for example 
-$B = \begin{bmatrix} \cl{0\\2\\0}&\cl{1\\0\\0}&\cl{0\\0\\3}\end{bmatrix}$, then the volume doesn't change since the shape is still the same. However, the sign of the determinant is negative because if you point your index finger in the direction (0,2,0) and your middle finger in the direction (1,0,0), then your thumb points down in the direction (0,0,-3). If you repeat this with your left hand instead of right hand, then your thumb points up.
+$B = \begin{bmatrix}0&1&0\\2&0&0\\0&0&3}\end{bmatrix}$, then the volume doesn't change since the shape is still the same. However, the sign of the determinant is negative because if you point your index finger in the direction (0,2,0) and your middle finger in the direction (1,0,0), then your thumb points down in the direction (0,0,-3). If you repeat this with your left hand instead of right hand, then your thumb points up.
 
 \begin{problem}
 \begin{enumerate}
