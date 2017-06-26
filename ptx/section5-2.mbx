@@ -1,0 +1,222 @@
+
+<section>
+  <title>Other Coordinate Systems</title>
+  <p>
+    Sometimes a problem can't be solved until the correct coordinate system is chosen. You have previously done problems which showed you how to graph the coordinate transformation given by polar coordinates. The following problem shows you how to graph in a different coordinate system.
+  </p>
+
+  <exploration xml:id="prob_transform1">
+    <p>
+      Consider the coordinate transformation <m>T(a,\omega)=(a\cos\omega,a^2\sin \omega)</m>.
+    </p>
+    <ol>
+    <li>
+      <p>
+        EXTRA<fn>See
+            <url href="http://aleph.sagemath.org/?z=eJwti7sKwCAMAHe_IjglkqHY2b9wbgkiJVAfqP9PB7vdHVxE4VbyIxRQXGoTtzHI5d3U-juZPrQusBElnAQ6LcNm02VIyWtouvvbFu7MsFeGg8G7rkQfMv4giA">Sage</url>.
+          Click on the link to see how to check your answer in Sage.</fn>
+         Let <m>a=3</m> and then graph the curve <m>\vec T(3,\omega)=(3\cos\omega,9\sin\omega)</m> for <m>\omega\in[0,2\pi]</m>.
+        <hint>
+          <p>
+            You can start by making a <m>\omega,x,y</m> table.
+          </p>
+        </hint>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        EXTRA<fn>See
+            <url href="http://aleph.sagemath.org/?z=eJxlzEEKg0AMBdC9pwiukmmgRd3OLVxbgkgJqBNm5v5UTGmF7vKT9zOicNqWl1BECXMq6IlBpi4U3T-ZGsu6V2hHlNgTaGkZfP5dThpN78MXXFaNSZZtqVnnp62potcZHDE8GLpgSgQ3-LeXT0fF-UD0BkVHOdw">Sage</url>. Notice that you can add the two plots together to superimpose them on each other.</fn>
+         Let <m>\omega=\frac{\pi}{4}</m> and then, on the same axes as above, add the graph of 
+        <m>\vec T\left(a,\frac{\pi}{4}\right)=\left(a\frac{\sqrt 2}{2},a^2 \frac{\sqrt 2}{2}\right)</m> for <m>a\in[0,4]</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        EXTRA<fn>Use Sage to check your answer.</fn>To the same axes as above, add the graphs of:
+      </p>
+      <ol>
+        <li>
+          <p>
+            <m>\vec T(1,\omega), \vec T(2,\omega), \vec T(4,\omega)</m>  for <m>\omega\in[0,2\pi]</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\vec T(a,0), \vec T(a,\pi/2), \vec T(a,-\pi/6)</m> for <m>a\in[0,4]</m>.
+          </p>
+        </li>
+      </ol>
+    </li>
+    </ol>
+    <hint>
+      <p>
+        when you're done, you should have a bunch of parabolas and ellipses.
+      </p>
+    </hint>
+  </exploration>
+
+  <p>
+    In 3 dimensions, the most common coordinate systems are cylindrical and spherical. The equations for these coordinate systems are in the table below.
+    \bmw{
+  </p>
+  <tabular>
+    <row>
+      <cell>Cylindrical Coordinates</cell>
+      <cell>Spherical Coordinates</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell><m>\begin{array}{l}
+      x=r\cos\theta\\
+      y=r\sin\theta\\
+      z=z
+      \end{array}</m></cell>
+      <cell><m>\begin{array}{l}
+      x=\rho\sin\phi\cos\theta\\
+      y=\rho\sin\phi\sin\theta\\
+      z=\rho\cos\phi
+      \end{array}</m></cell>
+    </row>
+  </tabular>
+  <p>
+    \valposhort{
+  </p>
+  <tabular>
+    <row>
+      <cell>Cylindrical Coordinates</cell>
+      <cell>Spherical Coordinates(Math)</cell>
+      <cell>Spherical (Physics/Engineering)</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell><m>\begin{array}{l}
+      x=r\cos\theta\\
+      y=r\sin\theta\\
+      z=z
+      \end{array}</m></cell>
+      <cell><m>\begin{array}{l}
+      x=\rho\sin\theta\cos\phi\\
+      y=\rho\sin\theta\sin\phi\\
+      z=\rho\cos\theta
+      \end{array}</m></cell>
+      <cell><m>\begin{array}{l}
+      x=r\sin\phi\cos\theta\\
+      y=r\sin\phi\sin\theta\\
+      z=r\cos\phi
+      \end{array}</m></cell>
+    </row>
+  </tabular>
+  <p>
+    in
+  </p>
+
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See page 893.} 
+        \stewarts{See pages 827-833} 
+        \larsonfive{See Larson 11.7.}
+        </fn>Let <m>P=(x,y,z)</m> be a point in space. This point lies on a cylinder of radius <m>r</m>, where the cylinder has the <m>z</m> axis as its axis of symmetry. The height of the point is <m>z</m> units up from the <m>xy</m> plane. The point casts a shadow in the <m>xy</m> plane at <m>Q=(x,y,0)</m>. The angle between the ray <m>\vec{OQ}</m> and the <m>x</m>-axis is <m>\theta</m>. Construct a graph in 3D of this information, and use it to develop the equations for cylindrical coordinates given above.
+    </p>
+  </exploration>
+
+  <exploration xml:id="derive_spherical_coordinates">
+    <p>
+      Let
+      EXTRA<fn>
+        \thomasee{See page 897.}
+        \larsonfive{See Larson 11.7.}
+        </fn>
+      <m>P=(x,y,z)</m> be a point in space. This point lies on a sphere of
+      radius <m>\rho</m> (<q>rho</q>), where the sphere's center is at the origin
+      <m>O=(0,0,0)</m>. The point casts a shadow in the <m>xy</m> plane at
+      <m>Q=(x,y,0)</m>. The angle between the ray <m>\vec{OQ}</m> and the <m>x</m>-axis
+      is <m>\theta</m>, and is called the azimuth angle. The angle between
+      the ray <m>\vec{OP}</m> and the <m>z</m> axis is <m>\phi</m> (<q>phi</q>), and is
+      called the inclination angle, polar angle, or zenith angle. Construct
+      a graph in 3D of this information, and use it to develop the
+      equations for spherical coordinates given above.
+    </p>
+  </exploration>
+
+  <p>
+    EXTRA<fn>See the
+      <url href="http://en.wikipedia.org/wiki/Spherical_coordinate_system">Wikipedia</url>
+      or
+      <url href="http://mathworld.wolfram.com/SphericalCoordinates.html">MathWorld</url>
+      for a discussion of conventions in different disciplines.</fn>
+  </p>
+
+  <p>
+    There is some disagreement between different fields about the notation
+    for spherical coordinates. In some fields (like physics), <m>\phi</m>
+    represents the azimuth angle and <m>\theta</m> represents the inclination
+    angle. In some fields, like geography, instead of the inclination angle, the
+    <em>elevation</em> angle is given<mdash />the angle from the <m>xy</m>-plane (lines
+    of lattitude are from the elevation angle).
+    Additionally, sometimes the coordinates are written in a different
+    order. You should always check the notation for spherical coordinates
+    before communicating using them.
+  </p>
+
+  <p>
+    \valpo{
+  </p>
+
+  <exploration>
+    <p>
+      If you have never worked in Maple, you will want to spend some time familiarizing yourself with the program before our Lab day (keep reading if you are!). The link here takes you to a set of modules which will review several of the vector concepts we learned last week, but also introduce you to Maple. The Vector exploration contains a very nice visual on vector projections, which you should look at even if you are comfortable in Maple.
+    </p>
+
+    <p>
+      The Connected Curriculum Project:
+    </p>
+
+    <p>
+      <url href="https://www.math.duke.edu/education/ccp/resources/learn/index.html">Introduction to Modules</url>
+    </p>
+
+    <p>
+      <url href="https://www.math.duke.edu/education/ccp/materials/mvcalc/javamaptutor/contents.html">Maple Tutorial</url>
+    </p>
+
+    <p>
+      <url href="https://www.math.duke.edu/education/ccp/materials/mvcalc/vectors/index.html">Vectors Exploration</url>
+    </p>
+  </exploration>
+
+  <p>
+    \bmw{\section{Wrap Up}
+    Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+
+    \valposhort{\section{Wrap Up}
+    This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
+
+    \instructor{TeX files for these are included in a separate folder in the GitHub Project}
+    \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+    <em>Review Guide Creation</em>
+
+
+    Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+
+
+    As you create this review guide, consider the following:
+    \begin{itemize}
+     \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+     \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+    \end{itemize}
+    }
+  </p>
+</section>

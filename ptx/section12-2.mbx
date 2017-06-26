@@ -1,0 +1,269 @@
+
+<section>
+  <title>Two Vector Operators: Curl and Div</title>
+  <introduction>
+    <p>
+      After completing this section you should...
+      <ul>
+        <li>
+          <p>
+            Be able to compute the curl and divergence for 2-D and 3-D vector-functions
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Be able to visualize and sketch vector fields with these properties.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      We are going to take a short aside now to define two operators: the curl and the divergence. These operators provide insight into how vector fields are behaving and have direct applications to understanding circulation, flux and flow. We'll come back to those applications once we are comfortable with computing each operation.
+    </p>
+
+    <p>
+      Before we define them though, we need a bit of notation. We've been writing <m>\vec \nabla f</m> for the gradient. This gives us a vector of partial derivatives: <m>\vec \nabla f= \left[ \frac{\partial f}{\partial x},\frac{\partial f}{\partial y},\frac{\partial f}{\partial z}\right]</m>. We want to now separate out <m>\vec \nabla</m> which we'll call the `del' operator. We define `del' as <m>\langle \frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\rangle</m>. If we treat this as a vector in its own right, we can perform vector operations (dot and cross product) between <m>\vec \nabla</m> and vector fields <m>\vec{F}(x,y,z)</m>. This will give us the tools to define the curl and divergence.
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>The Divergence</title>
+    <p>
+      The first vector operation we learned was the dot product. We now use the dot product between <m>\vec \nabla</m> and a vector field to define the divergence:
+      <md>
+        <mrow>\text{ div } \vec F(x,y,z) 
+        \amp = \vec \nabla\cdot \vec F 
+        = \left(\frac{\partial }{\partial x},\frac{\partial }{\partial y},\frac{\partial }{\partial z} \right)\cdot (M,N,P)</mrow>
+        <mrow>\amp = \frac{\partial M}{\partial x}+\frac{\partial N}{\partial y}+\frac{\partial P}{\partial z} 
+        = M_x+N_y+P_z 
+        .</mrow>
+      </md>
+    </p>
+
+    <p>
+      Let's practice finding the divergence before looking at some applications.
+    </p>
+
+    <exploration xml:id="x2d_div">
+      <p>
+        For each vector field:
+        <ol type="a">
+          <li>
+            <p>
+              sketch a plot (you can graph it in Sage or WolframAlpha first)  EXTRA<fn>See 
+              <url href="http://aleph.sagemath.org/?z=eJxz06jQqdRUsFXQMNKq0K7UqdA20qrU5CrIyS-JL0tNLskvik_LTM1J0XDTUQAq1TU00DE00ASyK2FsTQCKaxIN">Sage</url> or
+              <url href="http://wolfr.am/y4gIgX">Wolfram Alpha</url> to plot the vector fields</fn>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              find the divergence
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        [Suggestion: Leave space after each sub-exercise for another computation (the curl).]
+        <ol>
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x,y)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(y,x)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x,x+y)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x-y^2+2, xy+y)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        Can you make a general statement about how a 2-D vector field looks for it to have non-zero divergence?
+      </p>
+    </exploration>
+
+    <p>
+      Now let's take a look at some 3-D fields. You should still plot them in Sage or Wolfram-Alpha, but don't worry about sketching a plot (unless you want to).
+    </p>
+
+    <exploration xml:id="x3d_div">
+      <p>
+        Compute the divergence for each of the following vector fields. [Suggestion: Again leave space]
+        <ol>
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(z,x,y \right)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(-y+x,x,z \right)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(x^2+y^2,x^2+z^2,y^2+z^2 \right)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(x^3+y,\tan^{-1}(1+y^2) + z^2,e^{z^2+\sin z} -2x\right)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+  </subsection>
+
+  <subsection>
+    <title>The Curl</title>
+    <p>
+      Instead of computing the dot product between <m>\vec \nabla</m> and <m>\vec F</m> we could compute the cross product. This gives us the curl of a vector field.
+    </p>
+
+    <p>
+      We call the vector <m>\left\lt P_y-N_z,M_z-P_x,N_x-M_y\right></m> the curl of <m>\vec F</m> and we write
+      <md>
+        <mrow>\text{ curl } (\vec F) 
+        \amp = \vec \nabla \times \vec F</mrow>
+        <mrow>\amp = \left(\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right) \times (M,N,P)</mrow>
+        <mrow>\amp = \left(\frac{\partial P}{\partial y}-\frac{\partial N}{\partial z}, \frac{\partial M}{\partial z}-\frac{\partial P}{\partial x},\frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}\right)</mrow>
+        <mrow>\amp =  \left(P_y-N_z,M_z-P_x,N_x-M_y\right)</mrow>
+      </md>
+    </p>
+
+    <p>
+      The notation <m>\vec \nabla \times \vec F</m> gives a convenient way to remember the formula, as
+      <md>
+        <mrow>\text{ curl } (\vec F)=\vec \nabla \times \vec F 
+        \amp =\det \begin{bmatrix}
+        \vec i \amp  \vec j \amp  \vec k</mrow>
+        <mrow>\frac{\partial}{\partial x}\amp \frac{\partial}{\partial y}\amp \frac{\partial}{\partial z}</mrow>
+        <mrow>M\amp N\amp P
+        \end{bmatrix}</mrow>
+        <mrow>\amp = \left(\frac{\partial}{\partial y}P-\frac{\partial}{\partial z}N,\frac{\partial}{\partial z}M-\frac{\partial}{\partial x}P,\frac{\partial}{\partial x}N-\frac{\partial}{\partial y}M\right)</mrow>
+      </md>
+    </p>
+
+    <theorem>
+      <statement>
+        <p>
+          The curl of a vector field is the direction of the greatest circulation density, and the magnitude of the curl is the circulation density in that direction. If a vector field causes a large amount of circulation in one direction, then the curl will be a long vector. The circulation density of <m>\vec F</m> at <m>(x,y,z)</m> about <m>\vec u</m>, written <m>\text{ curl } (\vec F)\cdot \vec u</m> is largest when <m>\vec u</m> points in the same direction as <m>\text{ curl }  F</m>.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      Let's take a look now at several vector fields, to get intuition about what curl is really telling us.
+    </p>
+
+    <exploration xml:id="x2dcurl">
+      <p>
+        These are the same vector fields from <xref ref="x2d_div">Exercise</xref>.
+      </p>
+
+      <p>
+        Find the curl
+      </p>
+
+      <p>
+        EXTRA<fn>See <url href="http://mathinsight.org/curl_components">MathInsight.org</url> for a really nice animation of the curl of a vector field.</fn> for each vector field:
+        <ol>
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x,y)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(y,x)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x,x+y)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x-y^2+2, xy+y)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <p>
+      You should have noticed that for all of the above vector-fields, the curl was only in the <m>z</m>-direction. Let's do a quick problem to explore this.
+    </p>
+
+    <exploration xml:id="show2dcurl">
+      <p>
+        For a vector field <m>\vec{F}= ( M(x,y), N(x,y), 0 )</m>, compute <m>curl( \vec{F})</m>. That is, assume that <m>P(x,y,z)=0</m>
+      </p>
+    </exploration>
+
+    <p>
+      One common way to quickly decide if a 2-D field has a curl at a point is to imagine placing a paddle-wheel (like on an old-fashion water mill or steamboat) in the vector-field. If the paddle would spin, then there's a curl. If it spins counter-clockwise then the curl is positive. You can see this idea illustrated by visiting <url href="http://www.math.harvard.edu/~knill/pitf/2dcurldiv.html">this site</url>.
+    </p>
+
+    <p>
+      We will use this 2-D version to rewrite Green's Theorem in the following section. Let's get a little more practice computing curl. This time, the vector fields are all three-dimensional. You should still plot them in Sage or Wolfram-Alpha, but don't worry about sketching a plot (unless you want to).
+    </p>
+
+    <exploration xml:id="x3dcurl">
+      <p>
+        Compute the curl for each of the following vector fields. You can add these in the spaces after <xref ref="x3d_div">Exercise</xref>.
+        <ol>
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(z,x,y \right)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(-y+x,x,z \right)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(x^2+y^2,x^2+z^2,y^2+z^2 \right)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(x^3+y,\tan^{-1}(1+y^2) + z^2,e^{z^2+\sin z} -2x\right)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+  </subsection>
+</section>

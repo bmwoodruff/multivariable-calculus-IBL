@@ -1,0 +1,75 @@
+
+<section>
+  <title>The Divergence Theorem</title>
+  <p>
+    After completing this section you should be able to...
+    <ul>
+      <li>
+        <p>
+          Use the Divergence Theorem to compute flux across a surface
+        </p>
+      </li>
+    </ul>
+  </p>
+
+  <p>
+    In the double integral chapter, we learned a way to greatly simplify flux computations when working with simple closed curves. Green's theorem stated that <m>\int_C \vec F\cdot \vec n\ ds = \iint_R (M_x+N_y) dA</m>. The divergence of <m>\vec F</m> is the quantity <m>\text{ div } (\vec F) = M_x+N_y</m>. We saw this in <xref ref="definition_of_flux_density_in_2D">definition</xref> on <xref ref="definition_of_flux_density_in_2D">page</xref>, when we defined the divergence, or flux density, of a vector field <m>\vec F</m> at a point <m>P</m> to be the flux per unit area. We then stated that <m>\text{ div } (\vec F)=M_x+N_y</m>. We more generally defined the divergence in the previous unit. This generalizes the simplification to higher dimensions, and is called the divergence theorem. We'll repeat the definition of divergence, with its theorem, for reference.
+  </p>
+
+  <theorem>
+    <title>Divergence Theorem</title>
+    <statement>
+      <p>
+        Let <m>S</m> be a closed surface whose interior is the solid domain <m>D</m>. Let <m>\vec n</m> be an outward pointing unit normal vector to <m>S</m>. Suppose that <m>\vec F(x,y,z)</m> is a continuously differentiable vector field on some open region that contains <m>D</m>. Then the outward flux of <m>\vec F</m> across <m>S</m> can be computed by adding up, along the entire solid <m>D</m>, the flux per unit volume (divergence). Symbolically, the divergence theorem states
+        <me>
+          \iint_S\vec F\cdot \vec n d\sigma =  \iiint_D \vec \nabla \cdot \vec F dV = \iiint_D \left(M_x+N_y+P_z\right) dV
+        </me>
+        for <m>S</m> a closed surface with interior <m>D</m> and outward normal <m>\vec n</m>.
+      </p>
+    </statement>
+  </theorem>
+
+  <exploration>
+    <p>
+      Consider the exact same vector field and box as <xref ref="boxflux">exercise</xref>. We then have the vector field <m>\vec F=(x+y,y,z)</m> and <m>S</m> is the surface of the cube in the first quadrant bounded by {<m>x=2,y=3,z=5</m>}.
+      <ol>
+        <li>
+          <p>
+            Compute the divergence of <m>\vec F</m>. I.E find <m>\text{ div } (\vec F) = M_x+N_y+P_z</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      The divergence theorem states that if <m>S</m> is a closed surface (has an inside and an outside), and the inside of the surface is the solid domain <m>D</m>, then the flux of <m>\vec F</m> outward across <m>S</m> equals the triple integral
+      <me>
+        \iint_S\vec F\cdot \vec n\ d\sigma = \iint\int_D \text{ div } (\vec F)dV.
+      </me>
+      <ol type="resume">
+        <li>
+          <p>
+            Use the divergence theorem to compute the flux of <m>\vec F</m> across <m>S</m>.
+            <hint>
+              <p>
+                Just as the area is found by adding up little bits of area, which is what we mean by <m>A=\iint_R dA</m>, the volume is found by adding up little bits of volume.
+              </p>
+            </hint>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      Let <m>S</m> be the surface of the wedge in the first octant bounded by the planes <m>x=1</m> and <m>\ds\frac{y}{2}+\frac{z}{3}=1</m>. Let <m>\vec F</m> be the vector field <m>\left\lt x+3y^2,y^2-4x,2z+xy\right></m>. Use the divergence theorem to compute the outward flux of <m>\vec F</m> across <m>S</m>. Make sure you draw the wedge (you may find centroids and volume help complete this exercise rapidly).
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      Consider the vector field <m>\vec F = \left\lt yz,-xz,3xz\right></m>. Let <m>D</m> be the solid region in space inside the cylinder of radius 4, above the plane <m>z=0</m>, and below the paraboloid <m>z=x^2+y^2</m>. The surface <m>S</m> consists of 3 portions, so computing the flux would require a rather time consuming process of parameterizing these 3 surfaces. Instead, use the divergence theorem to compute the outward flux of <m>\vec F</m> across the surface <m>S</m>.
+    </p>
+  </exploration>
+</section>
