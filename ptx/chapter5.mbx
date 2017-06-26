@@ -1,0 +1,36 @@
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Polar and New Coordinate Systems</title>
+  <introduction>
+    <p>
+      After completing this unit you will be able to...
+      <ol>
+        <li>
+          <p>
+            Convert between rectangular and polar coordinates in 2D. Convert between rectangular and cylindrical or spherical in 3D.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Graph polar functions in the plane. Find intersections of polar equations, and illustrate that not every intersection can be obtained algebraically (you may have to graph the curves).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find derivatives and tangent lines in polar coordinates.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find area and arc length using polar equations.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </introduction>
+  <xi:include  href="section5-1.mbx" />
+  <xi:include  href="section5-2.mbx" />
+</chapter>

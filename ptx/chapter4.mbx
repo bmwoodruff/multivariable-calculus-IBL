@@ -1,0 +1,29 @@
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Parametric Equations</title>
+  <introduction>
+    <p>
+      After completing this unit you will be able to...
+      <ol>
+        <li>
+          <p>
+            Model motion in the plane using parametric equations. In particular, describe conic sections using parametric equations.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find derivatives and tangent lines for parametric equations. Explain how to find velocity, speed, and acceleration from parametric equations.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Use integrals to find the lengths of parametric curves.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </introduction>
+  <xi:include  href="section4-1.mbx" />
+</chapter>
