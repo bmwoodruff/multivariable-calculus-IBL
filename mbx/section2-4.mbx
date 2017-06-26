@@ -27,83 +27,79 @@
     </statement>
   </definition>
 
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.4: 1-8.} 
-          \stewarts{See 12.4:1-7}
-          </fn>Let <m>\vec u=\langle 1,-2,3\rangle</m> and <m>\vec v=\langle 2,0,-1\rangle</m>.
-        <ol>
-          <li>
-            <p>
-              Compute <m>\vec u\times \vec v</m> and <m>\vec v\times \vec u</m>.  How are they related?
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.4: 1-8.} 
+        \stewarts{See 12.4:1-7}
+        </fn>Let <m>\vec u=\langle 1,-2,3\rangle</m> and <m>\vec v=\langle 2,0,-1\rangle</m>.
+      <ol>
+        <li>
+          <p>
+            Compute <m>\vec u\times \vec v</m> and <m>\vec v\times \vec u</m>.  How are they related?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Compute <m>\vec u \cdot (\vec u\times \vec v)</m> and <m>\vec v \cdot (\vec u\times \vec v)</m>. Why did you get the answer you got?
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute <m>\vec u \cdot (\vec u\times \vec v)</m> and <m>\vec v \cdot (\vec u\times \vec v)</m>. Why did you get the answer you got?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Compute <m>\vec u \times (2\vec u)</m>.  Why did you get the answer you got?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.4: 9-14.} 
-          </fn>Consider the vectors <m>{\ii}=(1,0,0)</m>, <m>{2\jj}=(0,2,0)</m>, and <m>{3\kk}=(0,0,3)</m>.
-        <ol>
-          <li>
-            <p>
-              Compute <m>\ii\times {2\jj}</m> and <m>{2\jj}\times {\ii}</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute <m>\vec u \times (2\vec u)</m>.  Why did you get the answer you got?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              Compute <m>{\ii}\times {3\kk}</m> and <m>{3\kk}\times {\ii}</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.4: 9-14.} 
+        </fn>Consider the vectors <m>{\ii}=(1,0,0)</m>, <m>{2\jj}=(0,2,0)</m>, and <m>{3\kk}=(0,0,3)</m>.
+      <ol>
+        <li>
+          <p>
+            Compute <m>\ii\times {2\jj}</m> and <m>{2\jj}\times {\ii}</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Compute <m>{2\jj}\times {3\kk}</m> and <m>{3\kk}\times {2\jj}</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
+        <li>
+          <p>
+            Compute <m>{\ii}\times {3\kk}</m> and <m>{3\kk}\times {\ii}</m>.
+          </p>
+        </li>
 
-      <p>
-        Give a geometric reason as to why some vectors above have a plus sign, and some have a minus sign.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.4: 15-18.} 
-          \stewarts{See 12.4: 29-32}
-          </fn>Let <m>P=(2,0,0)</m>, <m>Q=(0,3,0)</m>, and <m>R=(0,0,4)</m>. Find a vector that orthogonal to both <m>\vec {PQ}</m> and <m>\vec {PR}</m>. Then find the area of the triangle <m>PQR</m>
-      </p>
-      <hint>
+        <li>
+          <p>
+            Compute <m>{2\jj}\times {3\kk}</m> and <m>{3\kk}\times {2\jj}</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      Give a geometric reason as to why some vectors above have a plus sign, and some have a minus sign.
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.4: 15-18.} 
+        \stewarts{See 12.4: 29-32}
+        </fn>Let <m>P=(2,0,0)</m>, <m>Q=(0,3,0)</m>, and <m>R=(0,0,4)</m>. Find a vector that orthogonal to both <m>\vec {PQ}</m> and <m>\vec {PR}</m>. Then find the area of the triangle <m>PQR</m>
+    </p>
+    <hint>
       <p>
         What shape does two triangles side-by-side make?
       </p>
-      </hint>
-      <p>
-        . Construct a 3D graph of this triangle.
-      </p>
-    </statement>
-  </exercise>
+    </hint>
+    <p>
+      . Construct a 3D graph of this triangle.
+    </p>
+  </exploration>
 </section>

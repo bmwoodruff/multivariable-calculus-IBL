@@ -26,145 +26,141 @@
 
   <subsection>
     <title>3-D Surface Plots</title>
-    <exercise xml:id="prob_3dsurface_plot">
-      <statement>
+    <exploration xml:id="prob_3dsurface_plot">
+      <p>
+        EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxL06jQqdS0tdStiDPSrYwz4irIyS8xTtFI01EAyuga6xhrAlmVEJYmADAVC84">Sage</url> or 
+        <url href="http://wolfr.am/wny0IF">Wolfram Alpha</url>.
+        </fn>\larsonfive{ EXTRA<fn>See Larson 13.1:33<ndash />40.</fn>}
+        A computer chip has been disconnected from electricity and sitting in cold storage for quite some time. The chip is connected to power, and a few moments later the temperature (in Celsius) at various points <m>(x,y)</m> on the chip is measured. From these measurements, statistics is used to create a temperature function <m>T=z=f(x,y)</m> to model the temperature at any point on the chip. Suppose that this chip's temperature function is given by the equation <m>T=z=f(x,y)=9-x^2-y^2</m>. Eventually we'll be creating a 3D model of this function in this problem, so you'll need to place all your graphs on the same <m>x,y,z</m> axes. However, to begin with you may find it easier to start with several 2-D plots.
+      </p>
+      <ol>
+      <li>
         <p>
-          EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxL06jQqdS0tdStiDPSrYwz4irIyS8xTtFI01EAyuga6xhrAlmVEJYmADAVC84">Sage</url> or 
-          <url href="http://wolfr.am/wny0IF">Wolfram Alpha</url>.
-          </fn>\larsonfive{ EXTRA<fn>See Larson 13.1:33<ndash />40.</fn>}
-          A computer chip has been disconnected from electricity and sitting in cold storage for quite some time. The chip is connected to power, and a few moments later the temperature (in Celsius) at various points <m>(x,y)</m> on the chip is measured. From these measurements, statistics is used to create a temperature function <m>T=z=f(x,y)</m> to model the temperature at any point on the chip. Suppose that this chip's temperature function is given by the equation <m>T=z=f(x,y)=9-x^2-y^2</m>. Eventually we'll be creating a 3D model of this function in this problem, so you'll need to place all your graphs on the same <m>x,y,z</m> axes. However, to begin with you may find it easier to start with several 2-D plots.
+          What is the temperature at <m>(0,0)</m>, <m>(1,2)</m>, and <m>(-4,3)</m>?  EXTRA<fn>\thomasee{See 14.1: 1-4.} \stewarts{See 14.1: 2, 7}</fn>
         </p>
-        <ol>
-        <li>
-          <p>
-            What is the temperature at <m>(0,0)</m>, <m>(1,2)</m>, and <m>(-4,3)</m>?  EXTRA<fn>\thomasee{See 14.1: 1-4.} \stewarts{See 14.1: 2, 7}</fn>
-          </p>
-        </li>
+      </li>
 
-        <li>
-          <p>
-            Let <m>y=0</m>, Substitute this value into the temperature function <m>T=z=f(x,y)=9-x^2-y^2</m>. Plot the resulting function in the <m>xz</m>-plane.
-            <hint>
+      <li>
+        <p>
+          Let <m>y=0</m>, Substitute this value into the temperature function <m>T=z=f(x,y)=9-x^2-y^2</m>. Plot the resulting function in the <m>xz</m>-plane.
+          <hint>
             <p>
               Treat <m>z</m> as <q>y</q>. It should be a (upside-down) parabola
             </p>
-            </hint>
-          </p>
-        </li>
+          </hint>
+        </p>
+      </li>
 
-        <li>
-          <p>
-            Now let <m>x=0</m>. Substitute this value into the temperature function and simplify. Plot the result. This plot should appear in the <m>yz</m> plane and be another parabola.
-          </p>
-        </li>
+      <li>
+        <p>
+          Now let <m>x=0</m>. Substitute this value into the temperature function and simplify. Plot the result. This plot should appear in the <m>yz</m> plane and be another parabola.
+        </p>
+      </li>
 
-        <li>
-          <p>
-            Now let <m>z=0</m>. Draw the resulting curve in the <m>xy</m> plane.
+      <li>
+        <p>
+          Now let <m>z=0</m>. Draw the resulting curve in the <m>xy</m> plane.
 
-              If you drew the above curves in 2-D it is time to combine them. You should end up with 3 lines or a basic wire frame. To make a more complete wireframe we need to add more curves.
-          </p>
-        </li>
+            If you drew the above curves in 2-D it is time to combine them. You should end up with 3 lines or a basic wire frame. To make a more complete wireframe we need to add more curves.
+        </p>
+      </li>
 
-        <li>
-          <p>
-            State the simplified equation, then plot and label the curves for:
-          </p>
-          <ol>
-            <li>
-              <p>
-                <m>x=-2</m>
-              </p>
-            </li>
+      <li>
+        <p>
+          State the simplified equation, then plot and label the curves for:
+        </p>
+        <ol>
+          <li>
+            <p>
+              <m>x=-2</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>x=-1</m>
-              </p>
-            </li>
+          <li>
+            <p>
+              <m>x=-1</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>x=1</m>
-              </p>
-            </li>
+          <li>
+            <p>
+              <m>x=1</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>x=2</m>
-              </p>
-            </li>
-          </ol>
-          Note: You could have done this with <m>y</m> also.</li>
-
-        <li>
-          <p>
-            Describe the shape. Add any extra features to your graph to convey the 3D image you are constructing.  EXTRA<fn>\thomasee{See 14.1: 37-48.}\stewarts{See 14.1: 23-31}</fn>
-          </p>
-        </li>
+          <li>
+            <p>
+              <m>x=2</m>
+            </p>
+          </li>
         </ol>
-      </statement>
-    </exercise>
+        Note: You could have done this with <m>y</m> also.</li>
+
+      <li>
+        <p>
+          Describe the shape. Add any extra features to your graph to convey the 3D image you are constructing.  EXTRA<fn>\thomasee{See 14.1: 37-48.}\stewarts{See 14.1: 23-31}</fn>
+        </p>
+      </li>
+      </ol>
+    </exploration>
   </subsection>
 
   <subsection>
     <title>2-D Contour Plots</title>
-    <exercise xml:id="prob_intro_to_contour_plots">
-      <statement>
-        <p>
-          EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJydj81qwzAQhO9-iiWXWCCHJqbQHHTtExR6KI1RnBVWWWuNVibR21fOH_Ta2-7M7PCtqy86K7NvLoddkw-7aiJO7al2GorTtLpVZcq3SW1k4HOtqiGNVK8-EZY0pDPDyTuHEUMCSZlQgB30HBLP8RoSEIbMM_Q2gCCWdcQllAb8EwSekucgm5Wq7nq36IXoCfTg0Y9LMV8veqtf9Zvefy8qcTzaaD7ijLof7WTWP5jWT_7_FpM9IsmtFpwnMu-WBPVV73wgH_DuWpmwT1205RuzVdUvSwN0NA">Sage</url> or 
-          <url href="http://wolfr.am/wny0IF">Wolfram Alpha</url>.
-          </fn>\larsonfive{ EXTRA<fn>See Larson 13.1:45<ndash />56.</fn>}We'll be using the same function <m>T=z=f(x,y)=9-x^2-y^2</m> as the previous problem. However, this time we'll construct a graph of the function by only studying places where the temperature is constant. We'll do this by creating a graph in 2D of the surface (similar to a topographical map). EXTRA<fn>
-            \thomasee{See 14.1: 13-16 and 31-36.}
-            \stewarts{See 14.1: Examples 9-13, for more practice problems 14.1:43-50}
-            </fn>
-          <ol>
-            <li>
-              <p>
-                How can we find all the points which have zero temperature?
-                <hint>
+    <exploration xml:id="prob_intro_to_contour_plots">
+      <p>
+        EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJydj81qwzAQhO9-iiWXWCCHJqbQHHTtExR6KI1RnBVWWWuNVibR21fOH_Ta2-7M7PCtqy86K7NvLoddkw-7aiJO7al2GorTtLpVZcq3SW1k4HOtqiGNVK8-EZY0pDPDyTuHEUMCSZlQgB30HBLP8RoSEIbMM_Q2gCCWdcQllAb8EwSekucgm5Wq7nq36IXoCfTg0Y9LMV8veqtf9Zvefy8qcTzaaD7ijLof7WTWP5jWT_7_FpM9IsmtFpwnMu-WBPVV73wgH_DuWpmwT1205RuzVdUvSwN0NA">Sage</url> or 
+        <url href="http://wolfr.am/wny0IF">Wolfram Alpha</url>.
+        </fn>\larsonfive{ EXTRA<fn>See Larson 13.1:45<ndash />56.</fn>}We'll be using the same function <m>T=z=f(x,y)=9-x^2-y^2</m> as the previous problem. However, this time we'll construct a graph of the function by only studying places where the temperature is constant. We'll do this by creating a graph in 2D of the surface (similar to a topographical map). EXTRA<fn>
+          \thomasee{See 14.1: 13-16 and 31-36.}
+          \stewarts{See 14.1: Examples 9-13, for more practice problems 14.1:43-50}
+          </fn>
+        <ol>
+          <li>
+            <p>
+              How can we find all the points which have zero temperature?
+              <hint>
                 <p>
                   Think about what a temperature of zero means in the function
                 </p>
-                </hint>
-              </p>
-            </li>
+              </hint>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Use your process to find the curve corresponding to a temperature of zero. Plot this curve in the <m>xy</m>-plane. Be sure to label it with <m>T=0</m>
+          <li>
+            <p>
+              Use your process to find the curve corresponding to a temperature of zero. Plot this curve in the <m>xy</m>-plane. Be sure to label it with <m>T=0</m>
 
-                  This curve is called a level curve. As long as you stay on this curve, your temperature will remain level, it will not increase nor decrease.
-              </p>
-            </li>
+                This curve is called a level curve. As long as you stay on this curve, your temperature will remain level, it will not increase nor decrease.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Which points in the plane have temperature <m>z=5</m>?  Add this level curve to your 2D plot and write <m>z=5</m> next to it.
-              </p>
-            </li>
+          <li>
+            <p>
+              Which points in the plane have temperature <m>z=5</m>?  Add this level curve to your 2D plot and write <m>z=5</m> next to it.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Repeat the above for <m>z=8</m>, <m>z=9</m>, and <m>z=1</m>.  EXTRA<fn>\thomasee{See 14.1: 37-48.}</fn>
-              </p>
-            </li>
+          <li>
+            <p>
+              Repeat the above for <m>z=8</m>, <m>z=9</m>, and <m>z=1</m>.  EXTRA<fn>\thomasee{See 14.1: 37-48.}</fn>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                What's wrong with letting <m>z=10</m>?
-              </p>
-            </li>
+          <li>
+            <p>
+              What's wrong with letting <m>z=10</m>?
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Using your 2D plot, construct a 3D image of the function by lifting each level curve to its corresponding height.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Using your 2D plot, construct a 3D image of the function by lifting each level curve to its corresponding height.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
     <definition>
       <statement>
@@ -177,38 +173,37 @@
 
   <subsection>
     <title>Parametric Surfaces Continued</title>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxL06jQqdS0rdCtjDPiKs7IL9coyMkvMU7RSNNRAErpGusYawJZlRCWpiZETXJ-Xkl-aVE8SC12lToKybmJBbbqWakl6kB2fk5-UVJikW1IUWmqTk5iUmpOMZitqQkAhh0mmg">Sage</url> or 
-          <url href="http://wolfr.am/wBOk1b">Wolfram Alpha</url>.</fn>
-          EXTRA<fn>
-              \thomasee{More practice is in 14.1: 37-48.}
-              \larsonfive{See Larson 13.1:45<ndash />56.}
-              \stewarts{More practice is in 14.1:51-52, 55-58}</fn>
-          Consider the function <m>f(x,y)=x-y^2</m>.
-          <ol>
-            <li>
-              <p>
-                Use the same process as <xref ref="prob_3dsurface_plot">problem</xref> to construct a 3D surface plot of <m>f</m>. [So just graph in 3D the curves given by <m>x=0</m> and <m>y=0</m> and then try setting <m>x</m> or <m>y</m> equal to some other constants, like <m>x=1</m>, <m>x=2</m>, <m>y=1</m>, <m>y=2</m>, etc.]
-              </p>
-            </li>
+    <exploration>
+      <p>
+        EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxL06jQqdS0rdCtjDPiKs7IL9coyMkvMU7RSNNRAErpGusYawJZlRCWpiZETXJ-Xkl-aVE8SC12lToKybmJBbbqWakl6kB2fk5-UVJikW1IUWmqTk5iUmpOMZitqQkAhh0mmg">Sage</url> or 
+        <url href="http://wolfr.am/wBOk1b">Wolfram Alpha</url>.</fn>
+        EXTRA<fn>
+            \thomasee{More practice is in 14.1: 37-48.}
+            \larsonfive{See Larson 13.1:45<ndash />56.}
+            \stewarts{More practice is in 14.1:51-52, 55-58}</fn>
+        Consider the function <m>f(x,y)=x-y^2</m>.
+        <ol>
+          <li>
+            <p>
+              Use the same process as <xref ref="prob_3dsurface_plot">problem</xref> to construct a 3D surface plot of <m>f</m>. [So just graph in 3D the curves given by <m>x=0</m> and <m>y=0</m> and then try setting <m>x</m> or <m>y</m> equal to some other constants, like <m>x=1</m>, <m>x=2</m>, <m>y=1</m>, <m>y=2</m>, etc.]
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Use the same process as <xref ref="prob_intro_to_contour_plots">problem</xref> to construct a contour plot of <m>f</m>. [So just graph in 2D the curves given by setting <m>z</m> equal to a few constants, like <m>z=0</m>, <m>z=1</m>, <m>z=-4</m>, etc.]
-              </p>
-            </li>
+          <li>
+            <p>
+              Use the same process as <xref ref="prob_intro_to_contour_plots">problem</xref> to construct a contour plot of <m>f</m>. [So just graph in 2D the curves given by setting <m>z</m> equal to a few constants, like <m>z=0</m>, <m>z=1</m>, <m>z=-4</m>, etc.]
+            </p>
+          </li>
 
-            <li>
-              <p>
-                EXTRA<fn>\thomasee{See 14.1: 49-52.}</fn>Which level curve passes through the point <m>(2,2)</m>?  Draw this level curve on your contour plot.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              EXTRA<fn>\thomasee{See 14.1: 49-52.}</fn>Which level curve passes through the point <m>(2,2)</m>?  Draw this level curve on your contour plot.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       Notice that when we graphed the previous two functions (of the form <m>z=f(x,y)</m>) we could either construct a 3D surface plot, or we could reduce the dimension by 1 and construct a 2D contour plot by letting the output <m>z</m> equal various constants.
     </p>
@@ -216,115 +211,113 @@
     <p>
       The next function is of the form <m>w=f(x,y,z)</m>, so it has 3 inputs and 1 output. We could write <m>f\colon \mathbb{R}^3\to\mathbb{R}^1</m>. We would need 4 dimensions to graph this function, but graphing in 4D is not an easy task. Instead, we'll reduce the dimension and create plots in 3D to describe the level surfaces of the function.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJwrSyzSUK_QqdSpUtfkCtEAszRtDQ0MdCvijHQrgbgqzogrM7cgJzM5syS-ICe_xDhFA67Q1tJSRwHIUdA11lEw1gSyK8FsMLMKytRUAADtWRrw">Sage</url>.  
 
-          Wolfram Alpha currently does not support drawing level surfaces.  You could also use Mathematica or <url href="http://demonstrations.wolfram.com/LevelSurfacesAndQuadraticSurfaces/">Wolfram Demonstrations</url>.</fn>
-          EXTRA<fn>
-              \thomasee{You can access more problems on drawing level surfaces in 12.6:1-44 or 14.1:53-60.}
-              \larsonfive{See Larson 11.6 and 13.1:69<ndash />74, as well as 13.1, Example 6.}
-              \stewarts{For more practice see 14.1:65-68 }</fn>Suppose that an explosion occurs at the origin <m>(0,0,0)</m>. Heat from the explosion starts to radiate outwards. Now suppose that a few moments after the explosion, the temperature at any point in space is given by <m>w=T(x,y,z)=100-x^2-y^2-z^2.</m>
-          <ol>
-            <li>
-              <p>
-                Which points in space have a temperature of 99? Use algebra to simplify this to <m>x^2+y^2+z^2=1</m>.
-                <hint>
+    <exploration>
+      <p>
+        EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJwrSyzSUK_QqdSpUtfkCtEAszRtDQ0MdCvijHQrgbgqzogrM7cgJzM5syS-ICe_xDhFA67Q1tJSRwHIUdA11lEw1gSyK8FsMLMKytRUAADtWRrw">Sage</url>.  
+
+        Wolfram Alpha currently does not support drawing level surfaces.  You could also use Mathematica or <url href="http://demonstrations.wolfram.com/LevelSurfacesAndQuadraticSurfaces/">Wolfram Demonstrations</url>.</fn>
+        EXTRA<fn>
+            \thomasee{You can access more problems on drawing level surfaces in 12.6:1-44 or 14.1:53-60.}
+            \larsonfive{See Larson 11.6 and 13.1:69<ndash />74, as well as 13.1, Example 6.}
+            \stewarts{For more practice see 14.1:65-68 }</fn>Suppose that an explosion occurs at the origin <m>(0,0,0)</m>. Heat from the explosion starts to radiate outwards. Now suppose that a few moments after the explosion, the temperature at any point in space is given by <m>w=T(x,y,z)=100-x^2-y^2-z^2.</m>
+        <ol>
+          <li>
+            <p>
+              Which points in space have a temperature of 99? Use algebra to simplify this to <m>x^2+y^2+z^2=1</m>.
+              <hint>
                 <p>
                   What does the 99 replace in your function?
                 </p>
-                </hint>
-              </p>
-            </li>
+              </hint>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Draw the resulting object/function.
-              </p>
-            </li>
+          <li>
+            <p>
+              Draw the resulting object/function.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Which points in space have a temperature of 96? of 84? Draw the surfaces.
-              </p>
-            </li>
+          <li>
+            <p>
+              Which points in space have a temperature of 96? of 84? Draw the surfaces.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                What is your temperature at <m>(3,0,-4)</m>? Draw the level surface that passes through <m>(3,0,-4)</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              What is your temperature at <m>(3,0,-4)</m>? Draw the level surface that passes through <m>(3,0,-4)</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                The 4 surfaces you drew above are called level surfaces. If you walk along a level surface, what happens to your temperature?
-              </p>
-            </li>
+          <li>
+            <p>
+              The 4 surfaces you drew above are called level surfaces. If you walk along a level surface, what happens to your temperature?
+            </p>
+          </li>
 
-            <li>
-              <p>
-                As you move outwards, away from the origin, what happens to your temperature?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJwrSyzSUK_QqdSpUtfkStMAszRtK-KMtKvijLgycwtyMpMzS-ILcvJLjFM04ApsTXQUgGwFXWMdBWNNILsSzAYzq6BMTQUAEvYY4A">Sage</url>.</fn>
-          EXTRA<fn> \larsonfive{See Larson 11.6:7<ndash />16.}</fn>Consider the function <m>w=f(x,y,z)=x^2+z^2</m>. This function has an input <m>y</m>, but notice that changing the input <m>y</m> does not change the output of the function. This means that when <m>y=0</m> you can draw one curve. When <m>y=1</m>, you should draw the same curve. When <m>y=2</m>, again you draw the same curve, etc.
-          <ol>
-            <li>
-              <p>
-                Draw a graph of the level surface <m>w=4</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              As you move outwards, away from the origin, what happens to your temperature?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
-            <li>
-              <p>
-                Graph the surface <m>9=x^2+z^2</m> (so the level surface <m>w=9</m>).
-              </p>
-            </li>
+    <exploration>
+      <p>
+        EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJwrSyzSUK_QqdSpUtfkStMAszRtK-KMtKvijLgycwtyMpMzS-ILcvJLjFM04ApsTXQUgGwFXWMdBWNNILsSzAYzq6BMTQUAEvYY4A">Sage</url>.</fn>
+        EXTRA<fn> \larsonfive{See Larson 11.6:7<ndash />16.}</fn>Consider the function <m>w=f(x,y,z)=x^2+z^2</m>. This function has an input <m>y</m>, but notice that changing the input <m>y</m> does not change the output of the function. This means that when <m>y=0</m> you can draw one curve. When <m>y=1</m>, you should draw the same curve. When <m>y=2</m>, again you draw the same curve, etc.
+        <ol>
+          <li>
+            <p>
+              Draw a graph of the level surface <m>w=4</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Graph the surface <m>16=x^2+z^2</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
+          <li>
+            <p>
+              Graph the surface <m>9=x^2+z^2</m> (so the level surface <m>w=9</m>).
+            </p>
+          </li>
 
-        <p>
-          This kind of graph is called a cylinder, and is important in manufacturing where you extrude an object through a hole.
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Graph the surface <m>16=x^2+z^2</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        This kind of graph is called a cylinder, and is important in manufacturing where you extrude an object through a hole.
+      </p>
+    </exploration>
+
     <p>
       Most of our examples of function of the form <m>w=f(x,y,z)</m> can be drawn by using our knowledge about conic sections. EXTRA<fn>\valpo{If you feel a little lost and skipped the review unit on conic sections, now would be a good time to go back and go through it.}</fn> We can graph ellipses and hyperbolas if there are only two variables. So the key idea is to set one of the variables equal to a constant and then graph the resulting curve. Repeat this with a few variables and a few constants, and you'll know what the surface is. Sometimes when you set a specific variable equal to a constant, you'll get an ellipse. If this occurs, try setting that variable equal to other constants, as ellipses are generally the easiest curves to draw.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          Go back to the table you started in <xref ref="prob_function_table">problem</xref>.
-          <ol>
-            <li>
-              <p>
-                Add in the new problems you've completed.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                What do you observe about the domain (<m>n</m>), co-domain (<m>m</m>) and the dimensions required for plotting?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+    <exploration>
+      <p>
+        Go back to the table you started in <xref ref="prob_function_table">problem</xref>.
+        <ol>
+          <li>
+            <p>
+              Add in the new problems you've completed.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What do you observe about the domain (<m>n</m>), co-domain (<m>m</m>) and the dimensions required for plotting?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
     <exploration>
       <title>More Surfaces</title>
@@ -445,64 +438,64 @@
     </p>
 
     </review>
-    <exercise xml:id="graphing_spherical_coordinates">
-      <statement>
-        <p>
-          EXTRA<fn>Recall that <m>\phi</m> (<q>phi</q>) is the angle down from the <m>z</m> axis, <m>\theta</m> (<q>theta</q>) is the angle counterclockwise from the <m>x</m>-axis in the <m>xy</m>-plane, and <m>\rho</m> (<q>rho</q>) is the distance from the origin. Review <xref ref="derive_spherical_coordinates">problem</xref> if you need a refresher.</fn>\larsonfive{ EXTRA<fn>See Larson 11.7:89<ndash />94, 111<ndash />114.</fn>}Consider the spherical coordinates transformation as defined in
-          \stewarts{
-          <me>
-            \vec T(\rho,\phi,\theta)=(\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi),
-          </me>
-        </p>
 
-        <p>
-          \bmw{
-          <me>
-            \vec T(\rho,\phi,\theta)=(\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi),
-          </me>
-        </p>
+    <exploration xml:id="graphing_spherical_coordinates">
+      <p>
+        EXTRA<fn>Recall that <m>\phi</m> (<q>phi</q>) is the angle down from the <m>z</m> axis, <m>\theta</m> (<q>theta</q>) is the angle counterclockwise from the <m>x</m>-axis in the <m>xy</m>-plane, and <m>\rho</m> (<q>rho</q>) is the distance from the origin. Review <xref ref="derive_spherical_coordinates">problem</xref> if you need a refresher.</fn>\larsonfive{ EXTRA<fn>See Larson 11.7:89<ndash />94, 111<ndash />114.</fn>}Consider the spherical coordinates transformation as defined in
+        \stewarts{
+        <me>
+          \vec T(\rho,\phi,\theta)=(\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi),
+        </me>
+      </p>
 
-        <p>
-          \larsonfive{
-          <me>
-            \vec T(\rho,\theta,\phi)=(\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi),
-          </me>
-          which could also be written as
-          <md>
-            <mrow>x\amp =\rho\sin\phi\cos\theta</mrow>
-            <mrow>y\amp =\rho\sin\phi\sin\theta</mrow>
-            <mrow>z\amp =\rho\cos\phi</mrow>
-          </md>
-        </p>
+      <p>
+        \bmw{
+        <me>
+          \vec T(\rho,\phi,\theta)=(\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi),
+        </me>
+      </p>
 
-        <p>
-          Graphing this transformation requires <m>3+3=6</m> dimensions. In this problem we'll construct parts of this graph by graphing various surfaces. We did something similar for the polar coordinate transformation in <xref ref="polar_coordinate_transformation_graph">problem</xref>.
-          <ol>
-            <li>
-              <p>
-                EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxVjsEKhDAMRO9-xeCpKTmId__C-1JEaEBtaPP_bLMirLe8ecOQNdRcGJqFYXm3RFjgWWxyhR5T3EoLt2K8hB__wosuaNAql2FcfWiZCdJGxkODpprO3apsHz2KhUcw7jnGxJijiie_zzp3oi_jZjWn">Sage</url> or 
-                <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3d+%282+sin+phi+cos+theta%2C+2+sin+phi+sin+theta%2C+2+cos+phi%29">Wolfram Alpha</url>.</fn>Let <m>\rho=2</m> and graph the resulting surface.  What do you get if <m>\rho = 3</m>?
-              </p>
-            </li>
+      <p>
+        \larsonfive{
+        <me>
+          \vec T(\rho,\theta,\phi)=(\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi),
+        </me>
+        which could also be written as
+        <md>
+          <mrow>x\amp =\rho\sin\phi\cos\theta</mrow>
+          <mrow>y\amp =\rho\sin\phi\sin\theta</mrow>
+          <mrow>z\amp =\rho\cos\phi</mrow>
+        </md>
+      </p>
 
-            <li>
-              <p>
-                EXTRA<fn>See 
-                <url href="http://aleph.sagemath.org/?z=eJxVjrEKwzAMRPd8xZHJMioNTdf8RfZiQsCCNha2_p9WyeJuuveOQ2uouTA0C8PybomwwFlscoQfpriVFi7F-BN-9MKLLmjQKodhXD0uKvcnQdrI6MCgqabPblW2l76Lhc4xrl3GxHhEFSfnn7eZMRN9AfBbOD8">Sage</url> or 
-                <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3d+%28rho+sin+%28pi%2F4%29+cos+theta%2C+rho+sin+%28pi%2F4%29+sin+theta%2C+rho+cos+%28pi%2F4%29%29+">Wolfram Alpha</url>.
-                </fn>Let <m>\phi=\pi/4</m> and graph the resulting surface.  What do you get if <m>\phi=\pi/2</m>?
-              </p>
-            </li>
+      <p>
+        Graphing this transformation requires <m>3+3=6</m> dimensions. In this problem we'll construct parts of this graph by graphing various surfaces. We did something similar for the polar coordinate transformation in <xref ref="polar_coordinate_transformation_graph">problem</xref>.
+        <ol>
+          <li>
+            <p>
+              EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxVjsEKhDAMRO9-xeCpKTmId__C-1JEaEBtaPP_bLMirLe8ecOQNdRcGJqFYXm3RFjgWWxyhR5T3EoLt2K8hB__wosuaNAql2FcfWiZCdJGxkODpprO3apsHz2KhUcw7jnGxJijiie_zzp3oi_jZjWn">Sage</url> or 
+              <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3d+%282+sin+phi+cos+theta%2C+2+sin+phi+sin+theta%2C+2+cos+phi%29">Wolfram Alpha</url>.</fn>Let <m>\rho=2</m> and graph the resulting surface.  What do you get if <m>\rho = 3</m>?
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Let <m>\theta=\pi/4</m> and graph the resulting surface.  What do you get if <m>\theta=\pi/2</m>?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              EXTRA<fn>See 
+              <url href="http://aleph.sagemath.org/?z=eJxVjrEKwzAMRPd8xZHJMioNTdf8RfZiQsCCNha2_p9WyeJuuveOQ2uouTA0C8PybomwwFlscoQfpriVFi7F-BN-9MKLLmjQKodhXD0uKvcnQdrI6MCgqabPblW2l76Lhc4xrl3GxHhEFSfnn7eZMRN9AfBbOD8">Sage</url> or 
+              <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3d+%28rho+sin+%28pi%2F4%29+cos+theta%2C+rho+sin+%28pi%2F4%29+sin+theta%2C+rho+cos+%28pi%2F4%29%29+">Wolfram Alpha</url>.
+              </fn>Let <m>\phi=\pi/4</m> and graph the resulting surface.  What do you get if <m>\phi=\pi/2</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Let <m>\theta=\pi/4</m> and graph the resulting surface.  What do you get if <m>\theta=\pi/2</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     </subsubsection>
 
 
@@ -528,52 +521,51 @@
     <p>
       We now explore a vector field example.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>See 
-          <url href="http://aleph.sagemath.org/?z=eJxz06jQqdRUsFXQMNKq0K7UqdA20qrU5CrIyS-JL0tNLskvik_LTM1J0XDTUQAq1TU00DE00ASyK2FsTQCKaxIN">Sage</url> or
-          <url href="http://wolfr.am/y4gIgX">Wolfram Alpha</url>. 
-          The computer will shrink the largest vector down in size so it does not overlap any of the others, and then reduce the size of all the vectors accordingly. 
 
-          \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1<ndash />19.}
-          \stewarts{See 16.1: 1-14 for more practice.}
-          </fn>
-          Consider the vector field <m>\vec F(x,y)=(2x+y,x+2y)</m>. In this problem, you will construct a graph of this vector field by hand.
-          <ol>
-            <li>
-              <p>
-                Compute <m>\vec F(1,0)</m>. Then draw the vector <m>F(1,0)</m> with its base at <m>(1,0)</m>.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        EXTRA<fn>See 
+        <url href="http://aleph.sagemath.org/?z=eJxz06jQqdRUsFXQMNKq0K7UqdA20qrU5CrIyS-JL0tNLskvik_LTM1J0XDTUQAq1TU00DE00ASyK2FsTQCKaxIN">Sage</url> or
+        <url href="http://wolfr.am/y4gIgX">Wolfram Alpha</url>. 
+        The computer will shrink the largest vector down in size so it does not overlap any of the others, and then reduce the size of all the vectors accordingly. 
 
-            <li>
-              <p>
-                Compute <m>\vec F(1,1)</m>. Then draw the vector <m>F(1,1)</m> with its base at <m>(1,1)</m>.
-              </p>
-            </li>
+        \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1<ndash />19.}
+        \stewarts{See 16.1: 1-14 for more practice.}
+        </fn>
+        Consider the vector field <m>\vec F(x,y)=(2x+y,x+2y)</m>. In this problem, you will construct a graph of this vector field by hand.
+        <ol>
+          <li>
+            <p>
+              Compute <m>\vec F(1,0)</m>. Then draw the vector <m>F(1,0)</m> with its base at <m>(1,0)</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Repeat the above process for the points <m>(0,1)</m>, <m>(-1,1)</m>, <m>(-1,0)</m>, <m>(-1,-1)</m>, <m>(0,-1),</m> and <m>(1,-1)</m>. Remember, at each point draw a vector.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
+          <li>
+            <p>
+              Compute <m>\vec F(1,1)</m>. Then draw the vector <m>F(1,1)</m> with its base at <m>(1,1)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Repeat the above process for the points <m>(0,1)</m>, <m>(-1,1)</m>, <m>(-1,0)</m>, <m>(-1,-1)</m>, <m>(0,-1),</m> and <m>(1,-1)</m>. Remember, at each point draw a vector.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <exploration>
       <title>The Spin field</title>
-      <statement>
-        <p>
-          EXTRA<fn>Use the links above to see the computer plot this.  
+      <p>
+        EXTRA<fn>Use the links above to see the computer plot this.  
 
-          \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1<ndash />19.}
-          \stewarts{See 16.1: 1-14 for more practice.}</fn>
-          Consider the vector field <m>\vec F(x,y)=(-y,x)</m>. Construct a graph of this vector field. Remember, the key to plotting a vector field is <q>at the point <m>(x,y)</m>, draw the vector <m>\vec F(x,y)</m> with its base at <m>(x,y)</m>.</q> Plot at least 8 vectors (a few in each quadrant), so we can see what this field is doing.
-        </p>
-      </statement>
-    </exercise>
+        \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1<ndash />19.}
+        \stewarts{See 16.1: 1-14 for more practice.}</fn>
+        Consider the vector field <m>\vec F(x,y)=(-y,x)</m>. Construct a graph of this vector field. Remember, the key to plotting a vector field is <q>at the point <m>(x,y)</m>, draw the vector <m>\vec F(x,y)</m> with its base at <m>(x,y)</m>.</q> Plot at least 8 vectors (a few in each quadrant), so we can see what this field is doing.
+      </p>
+    </exploration>
+
     <p>
       <url href="http://aleph.sagemath.org/?z=eJxz06jQqdSp0lSwVdAA0joVmlwFOfkl8WWpySX5RfFpmak5KcYpGm46CkCFusY6xpo6IIUQlkYVhKEJAOGFExs">Sage</url> can also help us visualize 3d vector fields, like <m>\vec F(x,y,z)=(y,z,x)</m>.
     </p>

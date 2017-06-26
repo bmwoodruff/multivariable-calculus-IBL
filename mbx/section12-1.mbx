@@ -40,69 +40,69 @@
     <p>
       In the double integral unit we learned how to compute double integrals <m>\iint_R fdA</m> along flat regions <m>R</m> in the plane. In this unit we will now learn how to change the flat region <m>R</m> into a curved surface <m>S</m>, and then compute integrals of the form <m>\iint_S fd\sigma</m> along curved surfaces. The differential <m>d\sigma</m> stands for a little bit of surface area. We already know that <m>\iint_R dA</m> gives the area of <m>R</m>. We'll define <m>\iint_S d\sigma</m> so that it gives the surface area of <m>S</m>.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          Consider the surface <m>S</m> given by <m>z=9-x^2-y^2</m> (we've seen this surface many times). A parametrization of this surface is
-          <me>
-            \vec r(x,y) = (x,y,9-x^2-y^2).
-          </me>
-          <ol>
-            <li>
-              <p>
-                Draw the surface <m>S</m>.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                Add to your surface plot the parabolas given by <m>\vec r(x,0)</m>, <m>\vec r(x,1)</m>, and <m>\vec r(x,2)</m>, as well as the parabolas given by <m>\vec r(0,y)</m>, <m>\vec r(1,y)</m>, and <m>\vec r(2,y)</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
+    <exploration>
+      <p>
+        Consider the surface <m>S</m> given by <m>z=9-x^2-y^2</m> (we've seen this surface many times). A parametrization of this surface is
+        <me>
+          \vec r(x,y) = (x,y,9-x^2-y^2).
+        </me>
+        <ol>
+          <li>
+            <p>
+              Draw the surface <m>S</m>.
+            </p>
+          </li>
 
-        <p>
-          You should have an upside down paraboloid, with at least 6 different parabolas drawn on the surface. These parabolas should divide the surface up into a bunch of different patches. Our goal is to find the area of each patch, where each patch is almost like a parallelogram.
-          <ol type="resume">
-            <li>
-              <p>
-                Find <m>\ds \frac{\partial \vec r}{\partial x}</m> and <m>\ds\frac{\partial \vec r}{\partial y}</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              Add to your surface plot the parabolas given by <m>\vec r(x,0)</m>, <m>\vec r(x,1)</m>, and <m>\vec r(x,2)</m>, as well as the parabolas given by <m>\vec r(0,y)</m>, <m>\vec r(1,y)</m>, and <m>\vec r(2,y)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
 
-            <li>
-              <p>
-                At the point <m>(2,1)</m>, draw both vectors.
-              </p>
-            </li>
+      <p>
+        You should have an upside down paraboloid, with at least 6 different parabolas drawn on the surface. These parabolas should divide the surface up into a bunch of different patches. Our goal is to find the area of each patch, where each patch is almost like a parallelogram.
+        <ol type="resume">
+          <li>
+            <p>
+              Find <m>\ds \frac{\partial \vec r}{\partial x}</m> and <m>\ds\frac{\partial \vec r}{\partial y}</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                These vectors form the edges of a parallelogram. Add that parallelogram to your picture.
-              </p>
-            </li>
+          <li>
+            <p>
+              At the point <m>(2,1)</m>, draw both vectors.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Show that the area of a parallelogram whose edges are the vectors <m>\ds\frac{\partial \vec r}{\partial x}(x,y)</m> and <m>\ds\frac{\partial \vec r}{\partial y}</m> is <m>\sqrt{1+4x^2+4y^2}</m>.
-                <hint>
+          <li>
+            <p>
+              These vectors form the edges of a parallelogram. Add that parallelogram to your picture.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Show that the area of a parallelogram whose edges are the vectors <m>\ds\frac{\partial \vec r}{\partial x}(x,y)</m> and <m>\ds\frac{\partial \vec r}{\partial y}</m> is <m>\sqrt{1+4x^2+4y^2}</m>.
+              <hint>
                 <p>
                   What was one part of the definition/meanings for the cross product.
                 </p>
-                </hint>
-              </p>
-            </li>
+              </hint>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Find the area of the parallelogram whose edges are the vectors <m>\ds\frac{\partial \vec r}{\partial x}dx</m> and <m>\ds\frac{\partial \vec r}{\partial y}dy</m>, where <m>dx</m> and <m>dy</m> are not yet determined.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Find the area of the parallelogram whose edges are the vectors <m>\ds\frac{\partial \vec r}{\partial x}dx</m> and <m>\ds\frac{\partial \vec r}{\partial y}dy</m>, where <m>dx</m> and <m>dy</m> are not yet determined.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       In the previous problem, you showed that the area of the parallelogram with edges given by <m>\frac{\partial \vec r}{\partial x}dx</m> and <m>\frac{\partial \vec r}{\partial y}dy</m> is
       <me>
@@ -167,172 +167,167 @@
         </li>
       </ol>
     </p>
-    <exercise>
-      <statement>
-        <p>
-          Consider the surface <m>S</m> given by <m>z=9-x^2-y^2</m>, for <m>z\geq 0</m>. A parametrization of this surface is
-          <me>
-            \vec r(x,y) = (x,y,9-x^2-y^2), \text{ where }  9-x^2-y^2\geq 0.
-          </me>
-          <ol>
-            <li>
-              <p>
-                Give a set of inequalities for <m>x</m> and <m>y</m> that describe the region <m>R</m> over which we need to integrate. The inequalities you give should be in a form that you can use them as the bounds of a double integral.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                Find <m>d\sigma = \left|\vec r_x\times \vec r_y\right|dxdy</m>.
-              </p>
-            </li>
-
-            <li>
-              <p>
-                Set up the surface integral <m>\iint_S d\sigma</m> as an iterated double integral over <m>R</m>.
-              </p>
-            </li>
-
-            <li>
-              <p>
-                Convert the integral above to an integral in polar coordinates (don't forget the Jacobian).
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Consider the surface <m>S</m> given by <m>z=9-x^2-y^2</m>, for <m>z\geq 0</m>. A different parametrization of this surface is
-          <me>
-            \vec r(r,\theta) = (r\cos\theta,r\sin\theta,9-r^2), \text{ where }  9-r^2\geq 0.
-          </me>
-          <ol>
-            <li>
-              <p>
-                Give a set of inequalities for <m>r</m> and <m>\theta</m> that describe the region <m>R_{r\theta}</m> over which we need to integrate. The inequalities you give should be in a form that you can use them as the bounds of a double integral.
-              </p>
-            </li>
-
-            <li>
-              <p>
-                Find <m>d\sigma = \left|\vec r_r\times \vec r_\theta \right|drd\theta</m>.
-              </p>
-            </li>
-
-            <li>
-              <p>
-                Set up the surface integral <m>\iint_S d\sigma</m> as an iterated double integral over <m>R_{r\theta}</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Find, that is actually compute, the surface area of the surface <m>S</m> given by <m>z=9-x^2-y^2</m>, for <m>z\geq 0</m>. Do this by computing any of the integrals from the previous two problems.
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
+    <exploration>
+      <p>
+        Consider the surface <m>S</m> given by <m>z=9-x^2-y^2</m>, for <m>z\geq 0</m>. A parametrization of this surface is
+        <me>
+          \vec r(x,y) = (x,y,9-x^2-y^2), \text{ where }  9-x^2-y^2\geq 0.
+        </me>
         <ol>
           <li>
             <p>
-              If a surface <m>S</m> is parametrized by <m>\vec r(x,y) = (x,y,f(x,y))</m>, show that <m>d\sigma = \sqrt{1+f_x^2+f_y^2}\ dxdy</m> (compute a cross product).
+              Give a set of inequalities for <m>x</m> and <m>y</m> that describe the region <m>R</m> over which we need to integrate. The inequalities you give should be in a form that you can use them as the bounds of a double integral.
             </p>
           </li>
 
           <li>
             <p>
-              If <m>\vec r(x,z) = (x,f(x,z),z)</m>, what does <m>d\sigma</m> equal (compute a cross product - you should see a pattern)?
+              Find <m>d\sigma = \left|\vec r_x\times \vec r_y\right|dxdy</m>.
             </p>
           </li>
 
           <li>
             <p>
-              Use the pattern you've discovered to quickly compute <m>d\sigma</m> for the surface <m>x=4-y^2-z^2</m>.
+              Set up the surface integral <m>\iint_S d\sigma</m> as an iterated double integral over <m>R</m>.
             </p>
           </li>
 
           <li>
             <p>
-              Set up an iterated double integral that would give the surface area of <m>S</m> for <m>x\geq 0</m>.
+              Convert the integral above to an integral in polar coordinates (don't forget the Jacobian).
             </p>
           </li>
         </ol>
-      </statement>
-    </exercise>
-    <exercise xml:id="sphere_surface_area_element">
-      <statement>
-        <p>
-          Consider the sphere <m>x^2+y^2+z^2=a^2</m>. We'll find <m>d\sigma</m> using two different parameterizations.
-          <ol>
-            <li>
-              <p>
-                If you use the rectangular parametrization <m>\vec r(x,y) = (x,y,\sqrt{a^2-x^2-y^2})</m>, what is <m>d\sigma</m>? [Hint, use the previous problem.]
-              </p>
-            </li>
+      </p>
+    </exploration>
 
-            <li>
-              <p>
-                Why can this parametrization only be use if the surface has positive <m>z</m>-values?
-              </p>
-            </li>
+    <exploration>
+      <p>
+        Consider the surface <m>S</m> given by <m>z=9-x^2-y^2</m>, for <m>z\geq 0</m>. A different parametrization of this surface is
+        <me>
+          \vec r(r,\theta) = (r\cos\theta,r\sin\theta,9-r^2), \text{ where }  9-r^2\geq 0.
+        </me>
+        <ol>
+          <li>
+            <p>
+              Give a set of inequalities for <m>r</m> and <m>\theta</m> that describe the region <m>R_{r\theta}</m> over which we need to integrate. The inequalities you give should be in a form that you can use them as the bounds of a double integral.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                EXTRA<fn>You'll want to memorize this result.</fn> If you use the spherical parametrization
-                <me>
-                  \vec r(\phi,\theta) = (a\sin\phi\cos\theta,a\sin\phi\sin\theta,a\cos\phi),
-                </me>
-                show that
-                <me>
-                  d\sigma = (a^2|\sin\phi|)d\phi d\theta= (a^2\sin\phi) d\phi d\theta,
-                </me>
-                where we can ignore the absolute values if we require <m>0\leq \phi\leq \pi</m>. Along the way, you'll show that
-                <me>
-                  \vec r_\phi\times \vec r_\theta = a^2\sin \phi (\sin\phi\cos\theta,\sin\phi\sin\theta,\cos\phi).
-                </me>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Find <m>d\sigma = \left|\vec r_r\times \vec r_\theta \right|drd\theta</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Set up the surface integral <m>\iint_S d\sigma</m> as an iterated double integral over <m>R_{r\theta}</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        Find, that is actually compute, the surface area of the surface <m>S</m> given by <m>z=9-x^2-y^2</m>, for <m>z\geq 0</m>. Do this by computing any of the integrals from the previous two problems.
+      </p>
+    </exploration>
+
+    <exploration>
+      <ol>
+        <li>
+          <p>
+            If a surface <m>S</m> is parametrized by <m>\vec r(x,y) = (x,y,f(x,y))</m>, show that <m>d\sigma = \sqrt{1+f_x^2+f_y^2}\ dxdy</m> (compute a cross product).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>\vec r(x,z) = (x,f(x,z),z)</m>, what does <m>d\sigma</m> equal (compute a cross product - you should see a pattern)?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Use the pattern you've discovered to quickly compute <m>d\sigma</m> for the surface <m>x=4-y^2-z^2</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Set up an iterated double integral that would give the surface area of <m>S</m> for <m>x\geq 0</m>.
+          </p>
+        </li>
+      </ol>
+    </exploration>
+
+    <exploration xml:id="sphere_surface_area_element">
+      <p>
+        Consider the sphere <m>x^2+y^2+z^2=a^2</m>. We'll find <m>d\sigma</m> using two different parameterizations.
+        <ol>
+          <li>
+            <p>
+              If you use the rectangular parametrization <m>\vec r(x,y) = (x,y,\sqrt{a^2-x^2-y^2})</m>, what is <m>d\sigma</m>? [Hint, use the previous problem.]
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Why can this parametrization only be use if the surface has positive <m>z</m>-values?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              EXTRA<fn>You'll want to memorize this result.</fn> If you use the spherical parametrization
+              <me>
+                \vec r(\phi,\theta) = (a\sin\phi\cos\theta,a\sin\phi\sin\theta,a\cos\phi),
+              </me>
+              show that
+              <me>
+                d\sigma = (a^2|\sin\phi|)d\phi d\theta= (a^2\sin\phi) d\phi d\theta,
+              </me>
+              where we can ignore the absolute values if we require <m>0\leq \phi\leq \pi</m>. Along the way, you'll show that
+              <me>
+                \vec r_\phi\times \vec r_\theta = a^2\sin \phi (\sin\phi\cos\theta,\sin\phi\sin\theta,\cos\phi).
+              </me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       We can compute average value, centroids, center of mass, moments of inertia, and radii of gyration as before. We just replace <m>dA</m> with <m>d\sigma</m>, and all the formulas are the same.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          Consider the hemisphere <m>x^2+y^2+z^2=a^2</m> for <m>z\geq 0</m>.
-          <ol>
-            <li>
-              <p>
-                Set up a formula that would give <m>\bar z</m> for the centroid of the hemisphere. I suggest you use a spherical parametrization, as then the bounds are fairly simple, and we know <m>d\sigma = (a^2\sin\phi) d\phi d\theta</m> from the previous problem.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                Compute the two integrals in your formula.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        Consider the hemisphere <m>x^2+y^2+z^2=a^2</m> for <m>z\geq 0</m>.
+        <ol>
+          <li>
+            <p>
+              Set up a formula that would give <m>\bar z</m> for the centroid of the hemisphere. I suggest you use a spherical parametrization, as then the bounds are fairly simple, and we know <m>d\sigma = (a^2\sin\phi) d\phi d\theta</m> from the previous problem.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Set up an integral formula for <m>R_z</m>, the radius of gyration about the <m>z</m> axis, provided the density is constant.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Compute the two integrals in your formula.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Set up an integral formula for <m>R_z</m>, the radius of gyration about the <m>z</m> axis, provided the density is constant.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
   </introduction>
 
   <subsection>
@@ -356,24 +351,42 @@
     <p>
       The next problem will help us simplify the computation of <m>\vec nd\sigma</m>.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          For both parts of this exercise, the computations involved were actually done in previous problems. You just need to compile the information here.
-        </p>
 
+    <exploration>
+      <p>
+        For both parts of this exercise, the computations involved were actually done in previous problems. You just need to compile the information here.
+      </p>
+
+      <p>
+        Consider again the surface <m>z=9-x^2-y^2</m>.
+      </p>
+      <ol>
+      <li>
         <p>
-          Consider again the surface <m>z=9-x^2-y^2</m>.
+          Using the parametrization <m>\vec r(x,y) =(x,y,9-x^2-y^2)</m>
         </p>
         <ol>
-        <li>
-          <p>
-            Using the parametrization <m>\vec r(x,y) =(x,y,9-x^2-y^2)</m>
-          </p>
+          <li>
+            <p>
+              Find a unit normal vector <m>\vec n</m> to the surface so that <m>\vec n</m> points upwards away from the <m>z</m>-axis. Make sure you explain how you know the normal vector you give is pointing upwards away from the <m>z</m> axis.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              State what <m>d\sigma</m> equals, as well as <m>\vec n d\sigma</m>.
+            </p>
+          </li>
+        </ol>
+      </li>
+
+      <li>
+        <p>
+          Using the parametrization <m>\vec r(r,\theta) =(r\cos \theta,r\sin\theta ,9-r^2)</m>
           <ol>
             <li>
               <p>
-                Find a unit normal vector <m>\vec n</m> to the surface so that <m>\vec n</m> points upwards away from the <m>z</m>-axis. Make sure you explain how you know the normal vector you give is pointing upwards away from the <m>z</m> axis.
+                Find a unit normal vector <m>\vec n</m> to the surface so that <m>\vec n</m> points downwards towards the <m>z</m>-axis. Make sure you explain how you know the normal vector you give is pointing downwards towards the <m>z</m> axis.
               </p>
             </li>
 
@@ -383,29 +396,11 @@
               </p>
             </li>
           </ol>
-        </li>
+        </p>
+      </li>
+      </ol>
+    </exploration>
 
-        <li>
-          <p>
-            Using the parametrization <m>\vec r(r,\theta) =(r\cos \theta,r\sin\theta ,9-r^2)</m>
-            <ol>
-              <li>
-                <p>
-                  Find a unit normal vector <m>\vec n</m> to the surface so that <m>\vec n</m> points downwards towards the <m>z</m>-axis. Make sure you explain how you know the normal vector you give is pointing downwards towards the <m>z</m> axis.
-                </p>
-              </li>
-
-              <li>
-                <p>
-                  State what <m>d\sigma</m> equals, as well as <m>\vec n d\sigma</m>.
-                </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-        </ol>
-      </statement>
-    </exercise>
     <p>
       In the problem above, we showed that <m>\vec n d\sigma = \pm(\vec r_x\times\vec r_y)dxdy</m> and that <m>\vec n d\sigma = \pm(\vec r_r\times\vec r_\theta)drd\theta</m>. We no longer need to find the magnitude of the cross product, but we must determine the correct sign to put on our cross product. This shows us that we can write flux as
       <me>
@@ -426,181 +421,179 @@
       </p>
     </exploration>
 
-    <exercise>
-      <statement>
-        <p>
-          Consider the cone <m>z^2=x^2+y^2</m> and vector field <m>\vec F = (2x+3y, x-2y, yz)</m>. We want to set up an iterated integral that would give the flux of <m>\vec F</m> outwards (away from the <m>z</m>-axis) for the portion of the cone between <m>z=1</m> and <m>z=3</m>.
-          <ol>
-            <li>
-              <p>
-                Start by  parameterizing the cone by using a polar parametrization
-                <me>
-                  x=r\cos\theta, y=r\sin\theta, z=?.
-                </me>
-              </p>
-            </li>
+    <exploration>
+      <p>
+        Consider the cone <m>z^2=x^2+y^2</m> and vector field <m>\vec F = (2x+3y, x-2y, yz)</m>. We want to set up an iterated integral that would give the flux of <m>\vec F</m> outwards (away from the <m>z</m>-axis) for the portion of the cone between <m>z=1</m> and <m>z=3</m>.
+        <ol>
+          <li>
+            <p>
+              Start by  parameterizing the cone by using a polar parametrization
+              <me>
+                x=r\cos\theta, y=r\sin\theta, z=?.
+              </me>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Next obtain bounds for <m>r</m> and <m>\theta</m> that are constants.
-              </p>
-            </li>
+          <li>
+            <p>
+              Next obtain bounds for <m>r</m> and <m>\theta</m> that are constants.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Compute the normal vector and look at the third component to determine if it points up or down.
-              </p>
-            </li>
+          <li>
+            <p>
+              Compute the normal vector and look at the third component to determine if it points up or down.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Finally just plug everything into the formula.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Finally just plug everything into the formula.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       When the surface is flat, often you can determine the normal vector without having to perform any cross products. We'll now compute a flux of a vector field outwards across the 6 faces of a cube.
     </p>
-    <exercise xml:id="boxflux">
-      <statement>
-        <p>
-          Find the flux of <m>\vec F=(x+y,y,z)</m> outward across the surface of the cube in the first quadrant bounded by {<m>x=2,y=3,z=5</m>}. The cube has 6 surfaces, so we have to compute the flux across all 6 surfaces.
-        </p>
 
-        <p>
-          Fill in the table below to write the flux integral across each surface, and then compute each integral and sum to find the total flux. You should be able to complete each integral by considering centroids and surface area of each of the 6 different flat surfaces.
-        </p>
-        <hint>
+    <exploration xml:id="boxflux">
+      <p>
+        Find the flux of <m>\vec F=(x+y,y,z)</m> outward across the surface of the cube in the first quadrant bounded by {<m>x=2,y=3,z=5</m>}. The cube has 6 surfaces, so we have to compute the flux across all 6 surfaces.
+      </p>
+
+      <p>
+        Fill in the table below to write the flux integral across each surface, and then compute each integral and sum to find the total flux. You should be able to complete each integral by considering centroids and surface area of each of the 6 different flat surfaces.
+      </p>
+      <hint>
         <p>
           Show that the total flux is 90.
         </p>
-        </hint>
-        <tabular>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>Surface</cell>
-            <cell><m>\vec r(u,v)</m></cell>
-            <cell><m>\vec n</m></cell>
-            <cell><m>\vec F(\vec r(u,v))</m></cell>
-            <cell><m>\vec F\cdot \vec n</m></cell>
-            <cell>Flux</cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>Back <m>x=0</m></cell>
-            <cell><m>\left\lt 0,y,z\right></m></cell>
-            <cell><m>\left\lt -1,0,0\right></m></cell>
-            <cell><m>\vec F(0,y,z) = \left\lt y,y,z\right></m></cell>
-            <cell><m>-y</m></cell>
-            <cell><m>\iint_{\text Back} -y d\sigma = -\bar y \sigma=-(\frac{3}{2})(15)</m></cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>Front <m>x=2</m></cell>
-            <cell><m>\left\lt 2,y,z\right></m></cell>
-            <cell></cell>
-            <cell><m>\vec F(2,y,z) = \left\lt 2+y,y,z\right></m></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>Left <m>y=0</m></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell><m>0</m> (Why?)</cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>Right <m>y=3</m></cell>
-            <cell><m>\left\lt x,3,z\right></m></cell>
-            <cell><m>\left\lt 0,1,0\right></m></cell>
-            <cell><m>\vec F(x,3,z) = \left\lt x+3,3,z\right></m></cell>
-            <cell>3</cell>
-            <cell>30 (Why?)</cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>Bottom <m>z=0</m></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>Top <m>z=3</m></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-        </tabular>
-      </statement>
-    </exercise>
+      </hint>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Surface</cell>
+          <cell><m>\vec r(u,v)</m></cell>
+          <cell><m>\vec n</m></cell>
+          <cell><m>\vec F(\vec r(u,v))</m></cell>
+          <cell><m>\vec F\cdot \vec n</m></cell>
+          <cell>Flux</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Back <m>x=0</m></cell>
+          <cell><m>\left\lt 0,y,z\right></m></cell>
+          <cell><m>\left\lt -1,0,0\right></m></cell>
+          <cell><m>\vec F(0,y,z) = \left\lt y,y,z\right></m></cell>
+          <cell><m>-y</m></cell>
+          <cell><m>\iint_{\text Back} -y d\sigma = -\bar y \sigma=-(\frac{3}{2})(15)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Front <m>x=2</m></cell>
+          <cell><m>\left\lt 2,y,z\right></m></cell>
+          <cell></cell>
+          <cell><m>\vec F(2,y,z) = \left\lt 2+y,y,z\right></m></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Left <m>y=0</m></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell><m>0</m> (Why?)</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Right <m>y=3</m></cell>
+          <cell><m>\left\lt x,3,z\right></m></cell>
+          <cell><m>\left\lt 0,1,0\right></m></cell>
+          <cell><m>\vec F(x,3,z) = \left\lt x+3,3,z\right></m></cell>
+          <cell>3</cell>
+          <cell>30 (Why?)</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Bottom <m>z=0</m></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Top <m>z=3</m></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </exploration>
   </subsection>
 </section>

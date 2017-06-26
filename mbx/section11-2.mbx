@@ -93,87 +93,86 @@
     <p>
       If you have never worked with kinetic energy before, you may skip the next exercise and then just practice using these formulas.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn><url href="http://www.youtube.com/watch?v=Zyqk9SWlTyQ&amp;list=PL04DF68E73B7ECD54&amp;index=7&amp;feature=plpp_video">Watch a YouTube video.</url></fn>
-          Suppose that an object, whose mass is <m>m</m>, is attached to a string (whose mass is so small we'll ignore it). We rotate the object about a point, where the angular velocity is <m>\omega</m> radians per second. The length of the string (distance from the point to the center of rotation) is <m>d</m>.
-          <ol>
-            <li>
-              <p>
-                Explain why the speed of the object <m>v=\omega d</m>.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                We know an object's kinetic energy <m>KE=\frac{1}{2}mv^2</m>. 
-                 EXTRA<fn>The quantity <m>I=d^2m</m> is called the moment of inertia. However, this formula assumes that all the mass is located at a single point.</fn> 
-                Explain why the kinetic energy of the rotating object is <m>KE = \frac{1}{2}d^2m\omega^2</m>.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        EXTRA<fn><url href="http://www.youtube.com/watch?v=Zyqk9SWlTyQ&amp;list=PL04DF68E73B7ECD54&amp;index=7&amp;feature=plpp_video">Watch a YouTube video.</url></fn>
+        Suppose that an object, whose mass is <m>m</m>, is attached to a string (whose mass is so small we'll ignore it). We rotate the object about a point, where the angular velocity is <m>\omega</m> radians per second. The length of the string (distance from the point to the center of rotation) is <m>d</m>.
+        <ol>
+          <li>
+            <p>
+              Explain why the speed of the object <m>v=\omega d</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Let's take our object, located at the point <m>P(x,y)</m>, and rotate it about the <m>x</m>-axis, still with angular velocity <m>\omega</m>. Find the kinetic energy of this point. [All you need is the distance <m>d</m> from the point <m>P(x,y)</m> to the <m>x</m>-axis.]
-              </p>
-            </li>
+          <li>
+            <p>
+              We know an object's kinetic energy <m>KE=\frac{1}{2}mv^2</m>. 
+               EXTRA<fn>The quantity <m>I=d^2m</m> is called the moment of inertia. However, this formula assumes that all the mass is located at a single point.</fn> 
+              Explain why the kinetic energy of the rotating object is <m>KE = \frac{1}{2}d^2m\omega^2</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                We can think of a region <m>R</m> in the plane as thousands of points <m>P(x,y)</m>, each with mass <m>dm=\delta dA</m>. As we rotate an entire object about the <m>x</m>-axis with angular velocity <m>\omega</m>, each little piece contributes a small amount of kinetic energy. Explain why the total kinetic energy of the region <m>R</m>, when rotated about the <m>x</m> axis at angular speed <m>\omega</m>, is
-                 EXTRA<fn>The inertia about the <m>x</m> axis is <m>I_x = \ds \iint_R (y^2)dm = \iint_R (y^2)\delta dA</m>.</fn>
-                <me>
-                  KE= \frac{1}{2}\left(\iint_R (y^2)dm\right)\omega^2
-                </me>
-                .
-              </p>
-            </li>
+          <li>
+            <p>
+              Let's take our object, located at the point <m>P(x,y)</m>, and rotate it about the <m>x</m>-axis, still with angular velocity <m>\omega</m>. Find the kinetic energy of this point. [All you need is the distance <m>d</m> from the point <m>P(x,y)</m> to the <m>x</m>-axis.]
+            </p>
+          </li>
 
-            <li>
-              <p>
-                How does the formula above change if we instead rotate about the <m>y</m>-axis? What if we rotate about the origin?
-                 EXTRA<fn>Feel free to ask in class about how this connects to figure skating.</fn>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
+          <li>
+            <p>
+              We can think of a region <m>R</m> in the plane as thousands of points <m>P(x,y)</m>, each with mass <m>dm=\delta dA</m>. As we rotate an entire object about the <m>x</m>-axis with angular velocity <m>\omega</m>, each little piece contributes a small amount of kinetic energy. Explain why the total kinetic energy of the region <m>R</m>, when rotated about the <m>x</m> axis at angular speed <m>\omega</m>, is
+               EXTRA<fn>The inertia about the <m>x</m> axis is <m>I_x = \ds \iint_R (y^2)dm = \iint_R (y^2)\delta dA</m>.</fn>
+              <me>
+                KE= \frac{1}{2}\left(\iint_R (y^2)dm\right)\omega^2
+              </me>
+              .
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How does the formula above change if we instead rotate about the <m>y</m>-axis? What if we rotate about the origin?
+               EXTRA<fn>Feel free to ask in class about how this connects to figure skating.</fn>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <exploration>
       <title>Centroid and Inertia of a Triangular Region</title>
-      <statement>
-        <p>
-          Consider the triangular region <m>R</m> in the first quadrant, bounded by the line <m>\ds \frac{x}{5}+\frac{y}{7}=1</m>. Assume that the density of the object is a constant <m>\delta = c</m>.
-          <ol>
-            <li>
-              <p>
-                Draw the region <m>R</m>, and give bounds for performing double integrals over this region. Check your answer with <url href="\sageDoubleIntegralCheckerURL">Sage</url> (use any <m>f</m> you want for the integrand, it doesn't matter as you just want to make sure you got the bounds right).
-              </p>
-            </li>
+      <p>
+        Consider the triangular region <m>R</m> in the first quadrant, bounded by the line <m>\ds \frac{x}{5}+\frac{y}{7}=1</m>. Assume that the density of the object is a constant <m>\delta = c</m>.
+        <ol>
+          <li>
+            <p>
+              Draw the region <m>R</m>, and give bounds for performing double integrals over this region. Check your answer with <url href="\sageDoubleIntegralCheckerURL">Sage</url> (use any <m>f</m> you want for the integrand, it doesn't matter as you just want to make sure you got the bounds right).
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Set up an integral formula to compute the center of mass <m>\bar x</m> of the region <m>R</m>.  Compute any integrals by hand to show that <m>\bar x = \frac{5}{3}</m>.  EXTRA<fn>Remember you can check your work with Sage.</fn> Then state a guess for <m>\bar y</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              Set up an integral formula to compute the center of mass <m>\bar x</m> of the region <m>R</m>.  Compute any integrals by hand to show that <m>\bar x = \frac{5}{3}</m>.  EXTRA<fn>Remember you can check your work with Sage.</fn> Then state a guess for <m>\bar y</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Set up an integral formula to compute the moments of inertia <m>I_x</m>, <m>I_y</m>, and <m>I_z</m>.  Use technology to compute <m>I_x</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              Set up an integral formula to compute the moments of inertia <m>I_x</m>, <m>I_y</m>, and <m>I_z</m>.  Use technology to compute <m>I_x</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                EXTRA<fn>You're welcome to compare your answers with known lists, such as <url href="http://en.wikipedia.org/wiki/List_of_moment_of_areas">this list on Wikipedia</url>.</fn>
-                If the triangular region had its corners at <m>(0,0)</m>, <m>(b,0)</m>, and <m>(0,h)</m>, state the center of mass <m>\bar x</m> and the moment of inertia <m>I_x</m>. You should be able to complete this part by replacing the 5's and 7's in your formula with <m>b</m>'s and <m>h</m>'s, provided you first factor any really large numbers, like <m>1715 = 5\cdot 343=5\cdot 7\cdot ?...</m> (I'll let you finish factoring).
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              EXTRA<fn>You're welcome to compare your answers with known lists, such as <url href="http://en.wikipedia.org/wiki/List_of_moment_of_areas">this list on Wikipedia</url>.</fn>
+              If the triangular region had its corners at <m>(0,0)</m>, <m>(b,0)</m>, and <m>(0,h)</m>, state the center of mass <m>\bar x</m> and the moment of inertia <m>I_x</m>. You should be able to complete this part by replacing the 5's and 7's in your formula with <m>b</m>'s and <m>h</m>'s, provided you first factor any really large numbers, like <m>1715 = 5\cdot 343=5\cdot 7\cdot ?...</m> (I'll let you finish factoring).
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       When we found average value, we wanted a height <m>\bar f</m> such that the area under <m>f</m> and the area under <m>\bar f</m> were the same. As an equation, we wrote
       <me>
@@ -192,23 +191,23 @@
       This same process gives the center of mass. We could replace the variable distance <m>x</m> in <m>\int_C x dm</m> with the constant distance <m>\bar x</m>, and then solve for <m>\bar x</m> in the equation <m>\int_C \bar xdm = \int_C x dm</m>.
       If all the mass were located at one spot, what would that spot have to be for the first moments of mass to be the same. The radii of gyration are obtained in the exact same manner. We'll think of a radius of gyration as a rotational center of mass.
     </p>
-    <exercise>
+
+    <exploration>
       <title>Radii of Gyration</title>
-      <statement>
-        <p>
-          EXTRA<fn><url href="http://www.youtube.com/watch?v=dsVtOw09StM&amp;list=PL04DF68E73B7ECD54&amp;index=8&amp;feature=plpp_video">Watch a YouTube video.</url></fn>Suppose a planar region <m>R</m> has density <m>\delta(x,y)</m>. The inertia about a line <m>L</m> we know is <m>I_x=\iint_R d^2 \delta(x,y)dA</m>, where <m>d</m> is the radius of rotation (distance to the line <m>L</m>).
-          What constant radius <m>R</m> should we replace the variable radius <m>d</m> with so that <m>\int_C R^2 dm = \int_C d^2 dm</m>. Explain why the radius of rotation about the <m>z</m>-axis is
-          <me>
-            R_z = \sqrt{\frac{\iint_R (x^2+y^2)\delta(x,y)dA}{\iint_R \delta(x,y)dA}}.
-          </me>
-        </p>
-      </statement>
+      <p>
+        EXTRA<fn><url href="http://www.youtube.com/watch?v=dsVtOw09StM&amp;list=PL04DF68E73B7ECD54&amp;index=8&amp;feature=plpp_video">Watch a YouTube video.</url></fn>Suppose a planar region <m>R</m> has density <m>\delta(x,y)</m>. The inertia about a line <m>L</m> we know is <m>I_x=\iint_R d^2 \delta(x,y)dA</m>, where <m>d</m> is the radius of rotation (distance to the line <m>L</m>).
+        What constant radius <m>R</m> should we replace the variable radius <m>d</m> with so that <m>\int_C R^2 dm = \int_C d^2 dm</m>. Explain why the radius of rotation about the <m>z</m>-axis is
+        <me>
+          R_z = \sqrt{\frac{\iint_R (x^2+y^2)\delta(x,y)dA}{\iint_R \delta(x,y)dA}}.
+        </me>
+      </p>
       <hint>
         <p>
           Remember that <m>R</m> is constant. Read the paragraph above.
         </p>
       </hint>
-    </exercise>
+    </exploration>
+
     <p>
       You only needed to show how to obtain the radius of gyration about the <m>z</m> axis. All three radii of gyration are found using the formulas
       <me>
@@ -219,115 +218,111 @@
       </me>
       where <m>dm=\delta(x,y) dA</m>. Note that in 2 dimensions, we have <m>z=0</m>, so the formulas for <m>R_x</m> and <m>R_y</m> are simpler.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          Consider the rectangular region <m>R</m> in the <m>xy</m>-plane described by <m>\{(x,y)\ |\ 2\leq x\leq 11, 3\leq y\leq 7\}</m>.
-          <ol>
-            <li>
-              <p>
-                Set up an integral formula which would give <m>\bar y</m> for the centroid of <m>R</m>.  Then evaluate the integral.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                State <m>\bar x</m> from geometric reasoning.
-                <hint>
+    <exploration>
+      <p>
+        Consider the rectangular region <m>R</m> in the <m>xy</m>-plane described by <m>\{(x,y)\ |\ 2\leq x\leq 11, 3\leq y\leq 7\}</m>.
+        <ol>
+          <li>
+            <p>
+              Set up an integral formula which would give <m>\bar y</m> for the centroid of <m>R</m>.  Then evaluate the integral.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              State <m>\bar x</m> from geometric reasoning.
+              <hint>
                 <p>
                   Sketch the region
                 </p>
-                </hint>
-                \bmw{
-              </p>
-            </li>
+              </hint>
+              \bmw{
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Set up an integral to give the moment of inertia about the <m>y</m>-axis if <m>\delta=5</m>. Note that <m>z=0</m> in the <m>xy</m>-plane.
-              </p>
-            </li>
+          <li>
+            <p>
+              Set up an integral to give the moment of inertia about the <m>y</m>-axis if <m>\delta=5</m>. Note that <m>z=0</m> in the <m>xy</m>-plane.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Set up an integral to give the <m>R_x</m> if the density is <m>\delta(x,y)=xy^2</m>.
-                      }
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Consider the region in the plane that is bounded by the curves <m>x=y^2-3</m> and <m>x=y-1</m>. A metal plate occupies this region in space, and its temperature function on the plate is give by the function <m>T(x,y)=2x+y</m>. Find the average temperature of the metal plate.
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="centroid_trick">
-      <statement>
-        <p>
-          Consider the region <m>R</m> that is the circular disc which is inside the circle <m>(x-2)^2+(y+1)^2=9</m>. The centroid is clearly <m>(2,-1)</m>, and the area is <m>A=\pi(3)^2=9\pi</m>. We can use these fact to simplify many integrals that require integrating over the region <m>R</m>.
-          <ol>
-            <li>
-              <p>
-                Compute <m>\iint_R 3dA = 3\iint_RdA</m>.  [How can area help you?]
-              </p>
-            </li>
+          <li>
+            <p>
+              Set up an integral to give the <m>R_x</m> if the density is <m>\delta(x,y)=xy^2</m>.
+                    }
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
-            <li>
-              <p>
-                Explain why <m>\iint_R x dA = \bar x A</m> for any region <m>R</m>, and then compute <m>\iint_R x dA</m> for the circular disc. [You don't need to set up any integrals at all.]
-              </p>
-            </li>
+    <exploration>
+      <p>
+        Consider the region in the plane that is bounded by the curves <m>x=y^2-3</m> and <m>x=y-1</m>. A metal plate occupies this region in space, and its temperature function on the plate is give by the function <m>T(x,y)=2x+y</m>. Find the average temperature of the metal plate.
+      </p>
+    </exploration>
 
-            <li>
-              <p>
-                Compute the integral <m>\iint_R 5x+2y dA</m> by using centroid and area facts.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Consider the region <m>R</m> in the <m>xy</m>-plane that is formed from two rectangular regions. The first region <m>R_1</m> satisfies <m>x\in[-2,2]</m> and <m>y\in[0,7]</m>. The second region <m>R_2</m> satisfies <m>x\in[-5,5]</m> and <m>y\in[7,10]</m>. Find the centroids of <m>R_1</m>, <m>R_2</m> and then finally <m>R</m>.
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Let <m>R</m> be the region in the plane with <m>a\leq x\leq b</m> and <m>g(x)\leq y\leq f(x)</m>. Let <m>A</m> be the area of <m>R</m>.
-          EXTRA<fn>When you use double integrals to find centroids, the formulas for the centroid are the same for both <m>\bar x</m> and <m>\bar y</m>. In other courses, you may see the formulas on the left, because the ideas will be presented without requiring knowledge of double integrals. Integrating the inside integral from the double integral formula gives the single variable formulas.</fn>
-          <ol>
-            <li>
-              <p>
-                Set up an iterated integral to compute the area of <m>R</m>.  Then compute the inside integral. You should obtain a familiar formula from first-semester calculus.
-              </p>
-            </li>
+    <exploration xml:id="centroid_trick">
+      <p>
+        Consider the region <m>R</m> that is the circular disc which is inside the circle <m>(x-2)^2+(y+1)^2=9</m>. The centroid is clearly <m>(2,-1)</m>, and the area is <m>A=\pi(3)^2=9\pi</m>. We can use these fact to simplify many integrals that require integrating over the region <m>R</m>.
+        <ol>
+          <li>
+            <p>
+              Compute <m>\iint_R 3dA = 3\iint_RdA</m>.  [How can area help you?]
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Set up an iterated integral formula to compute <m>\bar x</m> for the centroid. By computing the inside integral, show why <m>\ds\bar x = \frac{1}{A}\int_a^b x (f-g)dx</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              Explain why <m>\iint_R x dA = \bar x A</m> for any region <m>R</m>, and then compute <m>\iint_R x dA</m> for the circular disc. [You don't need to set up any integrals at all.]
+            </p>
+          </li>
 
-            <li>
-              <p>
-                If the density depends only on <m>x</m>, so <m>\delta = \delta (x)</m>, set up an iterated integral formula to compute <m>\bar y</m> for the center of mass. Explain why
-                <me>
-                  \ds\bar y = \frac{1}{A}\int_a^b  \frac{1}{2}(f^2-g^2)\delta(x)dx.
-                </me>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Compute the integral <m>\iint_R 5x+2y dA</m> by using centroid and area facts.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        Consider the region <m>R</m> in the <m>xy</m>-plane that is formed from two rectangular regions. The first region <m>R_1</m> satisfies <m>x\in[-2,2]</m> and <m>y\in[0,7]</m>. The second region <m>R_2</m> satisfies <m>x\in[-5,5]</m> and <m>y\in[7,10]</m>. Find the centroids of <m>R_1</m>, <m>R_2</m> and then finally <m>R</m>.
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        Let <m>R</m> be the region in the plane with <m>a\leq x\leq b</m> and <m>g(x)\leq y\leq f(x)</m>. Let <m>A</m> be the area of <m>R</m>.
+        EXTRA<fn>When you use double integrals to find centroids, the formulas for the centroid are the same for both <m>\bar x</m> and <m>\bar y</m>. In other courses, you may see the formulas on the left, because the ideas will be presented without requiring knowledge of double integrals. Integrating the inside integral from the double integral formula gives the single variable formulas.</fn>
+        <ol>
+          <li>
+            <p>
+              Set up an iterated integral to compute the area of <m>R</m>.  Then compute the inside integral. You should obtain a familiar formula from first-semester calculus.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Set up an iterated integral formula to compute <m>\bar x</m> for the centroid. By computing the inside integral, show why <m>\ds\bar x = \frac{1}{A}\int_a^b x (f-g)dx</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If the density depends only on <m>x</m>, so <m>\delta = \delta (x)</m>, set up an iterated integral formula to compute <m>\bar y</m> for the center of mass. Explain why
+              <me>
+                \ds\bar y = \frac{1}{A}\int_a^b  \frac{1}{2}(f^2-g^2)\delta(x)dx.
+              </me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       \valposhort{
     </p>
@@ -381,52 +376,51 @@
     <p>
       If you have never worked with kinetic energy before, you may skip the next exercise and then just practice using these formulas.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn><url href="http://www.youtube.com/watch?v=Zyqk9SWlTyQ&amp;list=PL04DF68E73B7ECD54&amp;index=7&amp;feature=plpp_video">Watch a YouTube video.</url></fn>
-          Suppose that an object, whose mass is <m>m</m>, is attached to a string (whose mass is so small we'll ignore it). We rotate the object about a point, where the angular velocity is <m>\omega</m> radians per second. The length of the string (distance from the point to the center of rotation) is <m>d</m>.
-          <ol>
-            <li>
-              <p>
-                Explain why the speed of the object <m>v=\omega d</m>.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                We know an object's kinetic energy <m>KE=\frac{1}{2}mv^2</m>. 
-                 EXTRA<fn>The quantity <m>I=d^2m</m> is called the moment of inertia. However, this formula assumes that all the mass is located at a single point.</fn> 
-                Explain why the kinetic energy of the rotating object is <m>KE = \frac{1}{2}d^2m\omega^2</m>.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        EXTRA<fn><url href="http://www.youtube.com/watch?v=Zyqk9SWlTyQ&amp;list=PL04DF68E73B7ECD54&amp;index=7&amp;feature=plpp_video">Watch a YouTube video.</url></fn>
+        Suppose that an object, whose mass is <m>m</m>, is attached to a string (whose mass is so small we'll ignore it). We rotate the object about a point, where the angular velocity is <m>\omega</m> radians per second. The length of the string (distance from the point to the center of rotation) is <m>d</m>.
+        <ol>
+          <li>
+            <p>
+              Explain why the speed of the object <m>v=\omega d</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Let's take our object, located at the point <m>P(x,y)</m>, and rotate it about the <m>x</m>-axis, still with angular velocity <m>\omega</m>. Find the kinetic energy of this point. [All you need is the distance <m>d</m> from the point <m>P(x,y)</m> to the <m>x</m>-axis.]
-              </p>
-            </li>
+          <li>
+            <p>
+              We know an object's kinetic energy <m>KE=\frac{1}{2}mv^2</m>. 
+               EXTRA<fn>The quantity <m>I=d^2m</m> is called the moment of inertia. However, this formula assumes that all the mass is located at a single point.</fn> 
+              Explain why the kinetic energy of the rotating object is <m>KE = \frac{1}{2}d^2m\omega^2</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                We can think of a region <m>R</m> in the plane as thousands of points <m>P(x,y)</m>, each with mass <m>dm=\delta dA</m>. As we rotate an entire object about the <m>x</m>-axis with angular velocity <m>\omega</m>, each little piece contributes a small amount of kinetic energy. Explain why the total kinetic energy of the region <m>R</m>, when rotated about the <m>x</m> axis at angular speed <m>\omega</m>, is
-                 EXTRA<fn>The inertia about the <m>x</m> axis is <m>I_x = \ds \iint_R (y^2)dm = \iint_R (y^2)\delta dA</m>.</fn>
-                <me>
-                  KE= \frac{1}{2}\left(\iint_R (y^2)dm\right)\omega^2
-                </me>
-                .
-              </p>
-            </li>
+          <li>
+            <p>
+              Let's take our object, located at the point <m>P(x,y)</m>, and rotate it about the <m>x</m>-axis, still with angular velocity <m>\omega</m>. Find the kinetic energy of this point. [All you need is the distance <m>d</m> from the point <m>P(x,y)</m> to the <m>x</m>-axis.]
+            </p>
+          </li>
 
-            <li>
-              <p>
-                How does the formula above change if we instead rotate about the <m>y</m>-axis? What if we rotate about the origin?
-                 EXTRA<fn>Feel free to ask in class about how this connects to figure skating.</fn>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              We can think of a region <m>R</m> in the plane as thousands of points <m>P(x,y)</m>, each with mass <m>dm=\delta dA</m>. As we rotate an entire object about the <m>x</m>-axis with angular velocity <m>\omega</m>, each little piece contributes a small amount of kinetic energy. Explain why the total kinetic energy of the region <m>R</m>, when rotated about the <m>x</m> axis at angular speed <m>\omega</m>, is
+               EXTRA<fn>The inertia about the <m>x</m> axis is <m>I_x = \ds \iint_R (y^2)dm = \iint_R (y^2)\delta dA</m>.</fn>
+              <me>
+                KE= \frac{1}{2}\left(\iint_R (y^2)dm\right)\omega^2
+              </me>
+              .
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How does the formula above change if we instead rotate about the <m>y</m>-axis? What if we rotate about the origin?
+               EXTRA<fn>Feel free to ask in class about how this connects to figure skating.</fn>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
   </subsection>
 </section>

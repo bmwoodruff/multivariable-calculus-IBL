@@ -15,126 +15,126 @@
   <p>
     I promised earlier in this chapter that you can obtain most of the results in multivariate calculus by replacing the <m>x</m> and <m>y</m> in <m>dy=f'dx</m> with <m>\vec x</m> and <m>\vec y</m>. The last exercise asked you to obtain a tangent plane to a parametric surface. You've never had to find a tangent plane to a function of the form <m>z=f(x,y)</m>. Let's review how to do it for functions of the form <m>y=f(x)</m>, and then generalize.
   </p>
-  <exercise xml:id="prob_tangent_line1">
+
+  <exploration xml:id="prob_tangent_line1">
     <title>Tangent Lines</title>
-    <statement>
+    <p>
+      Consider the function <m>y=f(x)=x^2</m>.
+    </p>
+    <ol>
+    <li>
       <p>
-        Consider the function <m>y=f(x)=x^2</m>.
+        The derivative is <m>f'(x) = ?</m>.
       </p>
       <ol>
-      <li>
-        <p>
-          The derivative is <m>f'(x) = ?</m>.
-        </p>
-        <ol>
-          <li>
-            <p>
-              At the point <m>x=3</m> the derivative is <m>f'(3)=?</m>
-            </p>
-          </li>
+        <li>
+          <p>
+            At the point <m>x=3</m> the derivative is <m>f'(3)=?</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              and the output <m>y</m> is <m>y=f(3)=?</m>.
-            </p>
-          </li>
-        </ol>
-      </li>
+        <li>
+          <p>
+            and the output <m>y</m> is <m>y=f(3)=?</m>.
+          </p>
+        </li>
       </ol>
-      <p>
-        If we move from the point <m>(3,f(3))</m> to the point <m>(x,y)</m> along the tangent line, then a small change in <m>x</m> is <m>dx=x-3</m>.
-        <ol type="resume">
-          <li>
-            <p>
-              What is <m>dy</m> in terms of <m>y</m>?
-            </p>
-          </li>
-        </ol>
-      </p>
+    </li>
+    </ol>
+    <p>
+      If we move from the point <m>(3,f(3))</m> to the point <m>(x,y)</m> along the tangent line, then a small change in <m>x</m> is <m>dx=x-3</m>.
+      <ol type="resume">
+        <li>
+          <p>
+            What is <m>dy</m> in terms of <m>y</m>?
+          </p>
+        </li>
+      </ol>
+    </p>
 
-      <p>
-        Differential notation states that a change in the output <m>dy</m> equals the derivative times a change in the input <m>dx</m>, which gives us the equation <m>dy=f'(3)dx</m>.
-        <ol type="resume">
-          <li>
-            <p>
-              Replace <m>dx</m>, <m>dy</m>, and <m>f'(3)</m> with what we know they equal, to obtain an equation <m>y-?=?(x-?)</m>.
-            </p>
-          </li>
+    <p>
+      Differential notation states that a change in the output <m>dy</m> equals the derivative times a change in the input <m>dx</m>, which gives us the equation <m>dy=f'(3)dx</m>.
+      <ol type="resume">
+        <li>
+          <p>
+            Replace <m>dx</m>, <m>dy</m>, and <m>f'(3)</m> with what we know they equal, to obtain an equation <m>y-?=?(x-?)</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What does this equation represent?
-            </p>
-          </li>
+        <li>
+          <p>
+            What does this equation represent?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Draw both <m>f</m> and the equation from the previous part on the same axes.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Draw both <m>f</m> and the equation from the previous part on the same axes.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     In first semester calculus, differential notation says <m>dy=f' dx</m>. A change in the output equals the derivative times a change in the inputs. For the next exercise, the output is <m>z</m>, and input is <m>(x,y)</m>, which means differential notation says <m>dz = Df \begin{bmatrix}dx\\dy
     \end{bmatrix}</m>.
   </p>
-  <exercise xml:id="prob_tangent_plane_downbowl">
+
+  <exploration xml:id="prob_tangent_plane_downbowl">
     <title>Tangent Planes</title>
-    <statement>
-      <p>
-        EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJx9kUtvAiEYRff8CqImA8qYkUkTu2DdfbdNbSYMKOkIBFCH_voCPprax2YyX_Jx7uUg0UgiZo_1uKF13FBgA0OUrIjMX4wBmMqD5kEZDTvdQ2uUDsAyO5jQ9kiSdL5uSYsJipcfaGzHVYisWT5gYBesnEE2EMjNYByrnOgrAr36EIw2OQLygzsKX5Y71-1FcIq_5QyU-LlMZKkMgbe0b6iwU_xdC-9Zi-EUpt1fSZTERBoZLaR4R9o6IXSqdQdL67ngUfBgnAdyZHLZK5k4GMh4HeL5ojnmvIleVqQhciwWXzHxoXOBZQdf_PUtO4phMKfqJ6TJl49XCPyfYlynt6LKQu3QafGHznitNUdjTfHiwp-jWK_SdH73oropfpKp5u5d1yljF_YDmjyLHioPZ8n5jMCn7LDMSdtsgoHfmROy-BN9Vrcb">Sage</url> for a picture.</fn>
-      </p>
+    <p>
+      EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJx9kUtvAiEYRff8CqImA8qYkUkTu2DdfbdNbSYMKOkIBFCH_voCPprax2YyX_Jx7uUg0UgiZo_1uKF13FBgA0OUrIjMX4wBmMqD5kEZDTvdQ2uUDsAyO5jQ9kiSdL5uSYsJipcfaGzHVYisWT5gYBesnEE2EMjNYByrnOgrAr36EIw2OQLygzsKX5Y71-1FcIq_5QyU-LlMZKkMgbe0b6iwU_xdC-9Zi-EUpt1fSZTERBoZLaR4R9o6IXSqdQdL67ngUfBgnAdyZHLZK5k4GMh4HeL5ojnmvIleVqQhciwWXzHxoXOBZQdf_PUtO4phMKfqJ6TJl49XCPyfYlynt6LKQu3QafGHznitNUdjTfHiwp-jWK_SdH73oropfpKp5u5d1yljF_YDmjyLHioPZ8n5jMCn7LDMSdtsgoHfmROy-BN9Vrcb">Sage</url> for a picture.</fn>
+    </p>
 
-      <p>
-        EXTRA<fn>\thomasee{See 14.6: 9-12 for more practice.}\larsonfive{See Larson 13.7:17<ndash />30 for more practice.}\stewarts{See 14.4:1-6 for more practice}</fn>
-      </p>
+    <p>
+      EXTRA<fn>\thomasee{See 14.6: 9-12 for more practice.}\larsonfive{See Larson 13.7:17<ndash />30 for more practice.}\stewarts{See 14.4:1-6 for more practice}</fn>
+    </p>
 
-      <p>
-        Consider the function <m>z=f(x,y)=9-x^2-y^2</m>.
-        <ol>
-          <li>
-            <p>
-              The derivative is <m>Df(x,y) = \begin{bmatrix}-2x\amp ?
-              \end{bmatrix}</m>.
-            </p>
-          </li>
+    <p>
+      Consider the function <m>z=f(x,y)=9-x^2-y^2</m>.
+      <ol>
+        <li>
+          <p>
+            The derivative is <m>Df(x,y) = \begin{bmatrix}-2x\amp ?
+            \end{bmatrix}</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              At the point <m>(x,y)=(2,1)</m>, the derivative is <m>Df(2,1) = \begin{bmatrix}-4\amp ?
-              \end{bmatrix}</m> and the output <m>z</m> is <m>z=f(2,1)=?</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            At the point <m>(x,y)=(2,1)</m>, the derivative is <m>Df(2,1) = \begin{bmatrix}-4\amp ?
+            \end{bmatrix}</m> and the output <m>z</m> is <m>z=f(2,1)=?</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              If we move from the point <m>(2,1,f(2,1))</m> to the point <m>(x,y,z)</m> along the tangent plane, then a small change in <m>x</m> is <m>dx=x-2</m>. What are <m>dy</m> and <m>dz</m> in terms of <m>y</m> and <m>z</m>?
-            </p>
-          </li>
+        <li>
+          <p>
+            If we move from the point <m>(2,1,f(2,1))</m> to the point <m>(x,y,z)</m> along the tangent plane, then a small change in <m>x</m> is <m>dx=x-2</m>. What are <m>dy</m> and <m>dz</m> in terms of <m>y</m> and <m>z</m>?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Explain why an equation of the tangent plane is  EXTRA<fn>We'll construct a graph of <m>f</m> and it's tangent plane in class.</fn>
-              <me>
-                z-4=\begin{bmatrix}-4 \amp  -2
-                \end{bmatrix} \begin{bmatrix}x-2\\y-1
-                \end{bmatrix}  
-                 \text{ or }  
-                z-4=-4(x-2)-2(y-1).
-              </me>
-              <hint>
+        <li>
+          <p>
+            Explain why an equation of the tangent plane is  EXTRA<fn>We'll construct a graph of <m>f</m> and it's tangent plane in class.</fn>
+            <me>
+              z-4=\begin{bmatrix}-4 \amp  -2
+              \end{bmatrix} \begin{bmatrix}x-2\\y-1
+              \end{bmatrix}  
+               \text{ or }  
+              z-4=-4(x-2)-2(y-1).
+            </me>
+            <hint>
               <p>
                 What does differential notation tell us?
               </p>
-              </hint>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+            </hint>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     Look back at the previous two exercises. The first semester calculus tangent line equation, with differential notation, generalized immediately to the tangent plane equation for functions of the form <m>z=f(x,y)</m>.
     We just used the differential notation <m>dy=f'dx</m> in 2D, and generalized to <m>dz = Df \begin{bmatrix}dx\\dy
@@ -157,69 +157,69 @@
   <p>
     Let's look again at the function <m>z=9-x^2-y^2</m>, and show how parametric surfaces can add more light to unlocking the derivative and its geometric meaning. With a parametrization, partial derivatives are vectors, instead of just numbers. Once we have vectors, we can describe motion. This makes it easier to visualize.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Let <m>z=f(x,y)=9-x^2-y^2</m>. We'll parameterize this function by writing <m>x=x, y=y, z=9-x^2-y^2</m>, or in vector notation we'd write
-        <me>
-          \vec r(x,y) = (x,y,f(x,y)).
-        </me>
-      </p>
 
-      <p>
-        EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJx9kUtvAiEYRff8CqImA8qYkUkTu2DdfbdNbSYMKOkIBFCH_voCPprax2YyX_Jx7uUg0UgiZo_1uKF13FBgA0OUrIjMX4wBmMqD5kEZDTvdQ2uUDsAyO5jQ9kiSdL5uSYsJipcfaGzHVYisWT5gYBesnEE2EMjNYByrnOgrAr36EIw2OQLygzsKX5Y71-1FcIq_5QyU-LlMZKkMgbe0b6iwU_xdC-9Zi-EUpt1fSZTERBoZLaR4R9o6IXSqdQdL67ngUfBgnAdyZHLZK5k4GMh4HeL5ojnmvIleVqQhciwWXzHxoXOBZQdf_PUtO4phMKfqJ6TJl49XCPyfYlynt6LKQu3QafGHznitNUdjTfHiwp-jWK_SdH73oropfpKp5u5d1yljF_YDmjyLHioPZ8n5jMCn7LDMSdtsgoHfmROy-BN9Vrcb">Sage</url> for a picture.</fn>
-        EXTRA<fn>\thomasee{See 16.5: 27-30 for more practice.}\larsonfive{See Larson 15.5:35<ndash />38 for more practice.}\stewarts{See 16.6:33-38 for more practice}</fn>
-        <ol>
-          <li>
-            <p>
-              Compute <m>\ds \frac{\partial f}{\partial x}</m> and <m>\ds \frac{\partial f}{\partial y}</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Let <m>z=f(x,y)=9-x^2-y^2</m>. We'll parameterize this function by writing <m>x=x, y=y, z=9-x^2-y^2</m>, or in vector notation we'd write
+      <me>
+        \vec r(x,y) = (x,y,f(x,y)).
+      </me>
+    </p>
 
-          <li>
-            <p>
-              Next evaluate these partials at <m>(x,y)=(2,1)</m>. You should have <m>f_x=-4</m>.
-            </p>
-          </li>
+    <p>
+      EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJx9kUtvAiEYRff8CqImA8qYkUkTu2DdfbdNbSYMKOkIBFCH_voCPprax2YyX_Jx7uUg0UgiZo_1uKF13FBgA0OUrIjMX4wBmMqD5kEZDTvdQ2uUDsAyO5jQ9kiSdL5uSYsJipcfaGzHVYisWT5gYBesnEE2EMjNYByrnOgrAr36EIw2OQLygzsKX5Y71-1FcIq_5QyU-LlMZKkMgbe0b6iwU_xdC-9Zi-EUpt1fSZTERBoZLaR4R9o6IXSqdQdL67ngUfBgnAdyZHLZK5k4GMh4HeL5ojnmvIleVqQhciwWXzHxoXOBZQdf_PUtO4phMKfqJ6TJl49XCPyfYlynt6LKQu3QafGHznitNUdjTfHiwp-jWK_SdH73oropfpKp5u5d1yljF_YDmjyLHioPZ8n5jMCn7LDMSdtsgoHfmROy-BN9Vrcb">Sage</url> for a picture.</fn>
+      EXTRA<fn>\thomasee{See 16.5: 27-30 for more practice.}\larsonfive{See Larson 15.5:35<ndash />38 for more practice.}\stewarts{See 16.6:33-38 for more practice}</fn>
+      <ol>
+        <li>
+          <p>
+            Compute <m>\ds \frac{\partial f}{\partial x}</m> and <m>\ds \frac{\partial f}{\partial y}</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What does the number <m>-4</m> mean? What does the number <m>f_y</m> mean?
-            </p>
-          </li>
+        <li>
+          <p>
+            Next evaluate these partials at <m>(x,y)=(2,1)</m>. You should have <m>f_x=-4</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Compute <m>\ds \frac{\partial \vec r}{\partial x}</m> and <m>\ds \frac{\partial \vec r}{\partial y}</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            What does the number <m>-4</m> mean? What does the number <m>f_y</m> mean?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Now evaluate these partials at <m>(x,y)=(2,1)</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute <m>\ds \frac{\partial \vec r}{\partial x}</m> and <m>\ds \frac{\partial \vec r}{\partial y}</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What do these vectors mean?
-              <hint>
+        <li>
+          <p>
+            Now evaluate these partials at <m>(x,y)=(2,1)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What do these vectors mean?
+            <hint>
               <p>
                 Draw the surface, and at the point <m>(2,1,4)</m>, draw these vectors. See the Sage plot.
               </p>
-              </hint>
-            </p>
-          </li>
+            </hint>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              The vectors above are tangent to the surface. Use them to obtain a normal vector to the tangent plane, and then given an equation of the tangent plane. (You should compare it to your equation from <xref ref="prob_tangent_plane_downbowl">exercise</xref>.)
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            The vectors above are tangent to the surface. Use them to obtain a normal vector to the tangent plane, and then given an equation of the tangent plane. (You should compare it to your equation from <xref ref="prob_tangent_plane_downbowl">exercise</xref>.)
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     The next exercise generalizes the tangent plane and normal vector calculations above to work for any parametric surface <m>\vec r(u,v)</m>.
   </p>
@@ -288,24 +288,23 @@
   </p>
 
   </review>
-  <exercise>
-    <title>Tangent Plane General Formula</title>
-    <statement>
-      <p>
-        Consider the function <m>z=f(x,y)</m>. Explain why an equation of the tangent plane to <m>f</m> at <m>(x,y)=(a,b)</m> is given by
-        <me>
-          z-f(a,b) = \frac{\partial f}{\partial x}(a,b) (x-a) +  \frac{\partial f}{\partial y}(a,b) (y-a).
-        </me>
-      </p>
 
-      <p>
-        Then give an equation of the tangent plane to <m>f(x,y) = x^2+3xy</m> at <m>(3,-1)</m>.
-      </p>
-    </statement>
+  <exploration>
+    <title>Tangent Plane General Formula</title>
+    <p>
+      Consider the function <m>z=f(x,y)</m>. Explain why an equation of the tangent plane to <m>f</m> at <m>(x,y)=(a,b)</m> is given by
+      <me>
+        z-f(a,b) = \frac{\partial f}{\partial x}(a,b) (x-a) +  \frac{\partial f}{\partial y}(a,b) (y-a).
+      </me>
+    </p>
+
+    <p>
+      Then give an equation of the tangent plane to <m>f(x,y) = x^2+3xy</m> at <m>(3,-1)</m>.
+    </p>
     <hint>
       <p>
         Use either differential notation or a parametrization. Try both ways.
       </p>
     </hint>
-  </exercise>
+  </exploration>
 </section>

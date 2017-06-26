@@ -4,19 +4,18 @@
   <p>
     Sometimes a problem can't be solved until the correct coordinate system is chosen. You have previously done problems which showed you how to graph the coordinate transformation given by polar coordinates. The following problem shows you how to graph in a different coordinate system.
   </p>
-  <exercise xml:id="prob_transform1">
-    <statement>
+
+  <exploration xml:id="prob_transform1">
+    <p>
+      Consider the coordinate transformation <m>T(a,\omega)=(a\cos\omega,a^2\sin \omega)</m>.
+    </p>
+    <ol>
+    <li>
       <p>
-        Consider the coordinate transformation <m>T(a,\omega)=(a\cos\omega,a^2\sin \omega)</m>.
-      </p>
-      <ol>
-      <li>
-        <p>
-          EXTRA<fn>See
-              <url href="http://aleph.sagemath.org/?z=eJwti7sKwCAMAHe_IjglkqHY2b9wbgkiJVAfqP9PB7vdHVxE4VbyIxRQXGoTtzHI5d3U-juZPrQusBElnAQ6LcNm02VIyWtouvvbFu7MsFeGg8G7rkQfMv4giA">Sage</url>.
-            Click on the link to see how to check your answer in Sage.</fn>
-           Let <m>a=3</m> and then graph the curve <m>\vec T(3,\omega)=(3\cos\omega,9\sin\omega)</m> for <m>\omega\in[0,2\pi]</m>.
-        </statement>
+        EXTRA<fn>See
+            <url href="http://aleph.sagemath.org/?z=eJwti7sKwCAMAHe_IjglkqHY2b9wbgkiJVAfqP9PB7vdHVxE4VbyIxRQXGoTtzHI5d3U-juZPrQusBElnAQ6LcNm02VIyWtouvvbFu7MsFeGg8G7rkQfMv4giA">Sage</url>.
+          Click on the link to see how to check your answer in Sage.</fn>
+         Let <m>a=3</m> and then graph the curve <m>\vec T(3,\omega)=(3\cos\omega,9\sin\omega)</m> for <m>\omega\in[0,2\pi]</m>.
         <hint>
           <p>
             You can start by making a <m>\omega,x,y</m> table.
@@ -58,7 +57,8 @@
         when you're done, you should have a bunch of parabolas and ellipses.
       </p>
     </hint>
-  </exercise>
+  </exploration>
+
   <p>
     In 3 dimensions, the most common coordinate systems are cylindrical and spherical. The equations for these coordinate systems are in the table below.
     \bmw{
@@ -120,37 +120,36 @@
   <p>
     in
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See page 893.} 
-          \stewarts{See pages 827-833} 
-          \larsonfive{See Larson 11.7.}
-          </fn>Let <m>P=(x,y,z)</m> be a point in space. This point lies on a cylinder of radius <m>r</m>, where the cylinder has the <m>z</m> axis as its axis of symmetry. The height of the point is <m>z</m> units up from the <m>xy</m> plane. The point casts a shadow in the <m>xy</m> plane at <m>Q=(x,y,0)</m>. The angle between the ray <m>\vec{OQ}</m> and the <m>x</m>-axis is <m>\theta</m>. Construct a graph in 3D of this information, and use it to develop the equations for cylindrical coordinates given above.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="derive_spherical_coordinates">
-    <statement>
-      <p>
-        Let
-        EXTRA<fn>
-          \thomasee{See page 897.}
-          \larsonfive{See Larson 11.7.}
-          </fn>
-        <m>P=(x,y,z)</m> be a point in space. This point lies on a sphere of
-        radius <m>\rho</m> (<q>rho</q>), where the sphere's center is at the origin
-        <m>O=(0,0,0)</m>. The point casts a shadow in the <m>xy</m> plane at
-        <m>Q=(x,y,0)</m>. The angle between the ray <m>\vec{OQ}</m> and the <m>x</m>-axis
-        is <m>\theta</m>, and is called the azimuth angle. The angle between
-        the ray <m>\vec{OP}</m> and the <m>z</m> axis is <m>\phi</m> (<q>phi</q>), and is
-        called the inclination angle, polar angle, or zenith angle. Construct
-        a graph in 3D of this information, and use it to develop the
-        equations for spherical coordinates given above.
-      </p>
-    </statement>
-  </exercise>
+
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See page 893.} 
+        \stewarts{See pages 827-833} 
+        \larsonfive{See Larson 11.7.}
+        </fn>Let <m>P=(x,y,z)</m> be a point in space. This point lies on a cylinder of radius <m>r</m>, where the cylinder has the <m>z</m> axis as its axis of symmetry. The height of the point is <m>z</m> units up from the <m>xy</m> plane. The point casts a shadow in the <m>xy</m> plane at <m>Q=(x,y,0)</m>. The angle between the ray <m>\vec{OQ}</m> and the <m>x</m>-axis is <m>\theta</m>. Construct a graph in 3D of this information, and use it to develop the equations for cylindrical coordinates given above.
+    </p>
+  </exploration>
+
+  <exploration xml:id="derive_spherical_coordinates">
+    <p>
+      Let
+      EXTRA<fn>
+        \thomasee{See page 897.}
+        \larsonfive{See Larson 11.7.}
+        </fn>
+      <m>P=(x,y,z)</m> be a point in space. This point lies on a sphere of
+      radius <m>\rho</m> (<q>rho</q>), where the sphere's center is at the origin
+      <m>O=(0,0,0)</m>. The point casts a shadow in the <m>xy</m> plane at
+      <m>Q=(x,y,0)</m>. The angle between the ray <m>\vec{OQ}</m> and the <m>x</m>-axis
+      is <m>\theta</m>, and is called the azimuth angle. The angle between
+      the ray <m>\vec{OP}</m> and the <m>z</m> axis is <m>\phi</m> (<q>phi</q>), and is
+      called the inclination angle, polar angle, or zenith angle. Construct
+      a graph in 3D of this information, and use it to develop the
+      equations for spherical coordinates given above.
+    </p>
+  </exploration>
+
   <p>
     EXTRA<fn>See the
       <url href="http://en.wikipedia.org/wiki/Spherical_coordinate_system">Wikipedia</url>
@@ -174,29 +173,29 @@
   <p>
     \valpo{
   </p>
-  <exercise>
-    <statement>
-      <p>
-        If you have never worked in Maple, you will want to spend some time familiarizing yourself with the program before our Lab day (keep reading if you are!). The link here takes you to a set of modules which will review several of the vector concepts we learned last week, but also introduce you to Maple. The Vector exploration contains a very nice visual on vector projections, which you should look at even if you are comfortable in Maple.
-      </p>
 
-      <p>
-        The Connected Curriculum Project:
-      </p>
+  <exploration>
+    <p>
+      If you have never worked in Maple, you will want to spend some time familiarizing yourself with the program before our Lab day (keep reading if you are!). The link here takes you to a set of modules which will review several of the vector concepts we learned last week, but also introduce you to Maple. The Vector exploration contains a very nice visual on vector projections, which you should look at even if you are comfortable in Maple.
+    </p>
 
-      <p>
-        <url href="https://www.math.duke.edu/education/ccp/resources/learn/index.html">Introduction to Modules</url>
-      </p>
+    <p>
+      The Connected Curriculum Project:
+    </p>
 
-      <p>
-        <url href="https://www.math.duke.edu/education/ccp/materials/mvcalc/javamaptutor/contents.html">Maple Tutorial</url>
-      </p>
+    <p>
+      <url href="https://www.math.duke.edu/education/ccp/resources/learn/index.html">Introduction to Modules</url>
+    </p>
 
-      <p>
-        <url href="https://www.math.duke.edu/education/ccp/materials/mvcalc/vectors/index.html">Vectors Exploration</url>
-      </p>
-    </statement>
-  </exercise>
+    <p>
+      <url href="https://www.math.duke.edu/education/ccp/materials/mvcalc/javamaptutor/contents.html">Maple Tutorial</url>
+    </p>
+
+    <p>
+      <url href="https://www.math.duke.edu/education/ccp/materials/mvcalc/vectors/index.html">Vectors Exploration</url>
+    </p>
+  </exploration>
+
   <p>
     \bmw{\section{Wrap Up}
     Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}

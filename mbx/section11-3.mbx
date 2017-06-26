@@ -52,38 +52,38 @@
   <p>
     In the exercise above, we used a change of coordinates <m>u=-3x</m>, or <m>x=-1/3 u</m>. By taking derivatives, we found that <m>dx=-\frac{1}{3}du</m>. The negative means that the orientation of the interval was reversed. The fraction <m>\frac13</m> tells us that lengths <m>dx</m> using <m>x</m> coordinates will be <m>1/3</m>rd as long as lengths <m>du</m> using <m>u</m> coordinates. When we write <m>dx = \frac{dx}{du}du</m>, the number <m>\frac{dx}{du}</m> is called the Jacobian of <m>x</m> with respect to <m>u</m>. The Jacobian tells us how lengths are altered when we change coordinate systems. We now generalize this to polar coordinates. Before we're done with this section, we'll generalize the Jacobian to any change of coordinates.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Consider the polar change of coordinates <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>, which we could just write as
-        <me>
-          \vec T(r,\theta)=(r\cos\theta,r\sin\theta).
-        </me>
-      </p>
 
-      <p>
-        EXTRA<fn>If you need a reminder of how to compute determinants, refer to <xref ref="sec_Determinants">Section</xref> </fn>
-        <ol>
-          <li>
-            <p>
-              Compute the derivative <m>D\vec T(r,\theta)</m>.  You should have a 2 by 2 matrix.
-            </p>
-          </li>
-        </ol>
-      </p>
+  <exploration>
+    <p>
+      Consider the polar change of coordinates <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>, which we could just write as
+      <me>
+        \vec T(r,\theta)=(r\cos\theta,r\sin\theta).
+      </me>
+    </p>
 
-      <p>
-        We need a single number from this matrix that tells us something about area. Determinants are connected to area.
-        <ol type="resume">
-          <li>
-            <p>
-              Compute the determinant of <m>D\vec T(r,\theta)</m> and simplify.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+    <p>
+      EXTRA<fn>If you need a reminder of how to compute determinants, refer to <xref ref="sec_Determinants">Section</xref> </fn>
+      <ol>
+        <li>
+          <p>
+            Compute the derivative <m>D\vec T(r,\theta)</m>.  You should have a 2 by 2 matrix.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      We need a single number from this matrix that tells us something about area. Determinants are connected to area.
+      <ol type="resume">
+        <li>
+          <p>
+            Compute the determinant of <m>D\vec T(r,\theta)</m> and simplify.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     The determinant you found above is called the Jacobian of the polar coordinate transformation. Let's summarize these results in a theorem.
   </p>
@@ -112,85 +112,82 @@
   <p>
     We need some practice using this idea. We'll start by describing regions using inequalities on <m>r</m> and <m>\theta</m>.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        For each region <m>R</m> below, draw the region in the <m>xy</m>-plane. Then give a set of inequalities of the form <m>a\leq r\leq b, \alpha(r)\leq \theta \leq \beta(r)</m> or <m>\alpha\lt \theta\lt \beta, a(\theta)\leq r\leq b(\theta)</m>. For example, if the region is the inside of the circle <m>x^2+y^2=9</m>, then we could write <m>0\leq \theta\leq 2\pi</m>, <m>0\leq r\leq 3</m>.
-        <ol>
-          <li>
-            <p>
-              The region <m>R</m> is the quarter circle in the first quadrant inside the circle <m>x^2+y^2=25</m>.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              The region <m>R</m> is below <m>y=\sqrt{9-x^2}</m>, above <m>y=x</m>, and to the right of <m>x=0</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      For each region <m>R</m> below, draw the region in the <m>xy</m>-plane. Then give a set of inequalities of the form <m>a\leq r\leq b, \alpha(r)\leq \theta \leq \beta(r)</m> or <m>\alpha\lt \theta\lt \beta, a(\theta)\leq r\leq b(\theta)</m>. For example, if the region is the inside of the circle <m>x^2+y^2=9</m>, then we could write <m>0\leq \theta\leq 2\pi</m>, <m>0\leq r\leq 3</m>.
+      <ol>
+        <li>
+          <p>
+            The region <m>R</m> is the quarter circle in the first quadrant inside the circle <m>x^2+y^2=25</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              The region <m>R</m> is the triangular region below <m>y=\sqrt 3 x</m>, above the <m>x</m>-axis, and to the left of <m>x=1</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>See <url href="http://aleph.sagemath.org/?q=60eb3051-6680-4031-afba-893277d1ec90">Sage.</url>
-        </fn>Consider the opening exercise for this unit. We want to find the volume under <m>f(x,y)=9-x^2-y^2</m> where <m>x\geq0</m> and <m>z\geq 0</m>. We obtained the integral formula
-        <me>
-          \iint_R f dA = \ds\int_{y=-3}^{y=3} \int_{x=0}^{x=\sqrt{9-y^2}}9-x^2-y^2 dx dy.
-        </me>
-        <ol>
-          <li>
-            <p>
-              Write bounds for the region <m>R</m> by giving bounds for <m>r</m> and <m>\theta</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            The region <m>R</m> is below <m>y=\sqrt{9-x^2}</m>, above <m>y=x</m>, and to the right of <m>x=0</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Rewrite the double integral as an iterated integral using the bounds for <m>r</m> and <m>\theta</m>. Don't forget the Jacobian (as <m>dxdy=rdrd\theta</m>).
-            </p>
-          </li>
+        <li>
+          <p>
+            The region <m>R</m> is the triangular region below <m>y=\sqrt 3 x</m>, above the <m>x</m>-axis, and to the left of <m>x=1</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              Compute the integral in the previous part by hand. [Suggestion: you'll want to simplify <m>9-x^2-y^2</m> to <m>9-r^2</m> before integrating.]
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Find the centroid of a semicircular disc of radius <m>a</m> (<m>y\geq 0</m>). Actually compute any integrals.
-      </p>
+  <exploration>
+    <p>
+      EXTRA<fn>See <url href="http://aleph.sagemath.org/?q=60eb3051-6680-4031-afba-893277d1ec90">Sage.</url>
+      </fn>Consider the opening exercise for this unit. We want to find the volume under <m>f(x,y)=9-x^2-y^2</m> where <m>x\geq0</m> and <m>z\geq 0</m>. We obtained the integral formula
+      <me>
+        \iint_R f dA = \ds\int_{y=-3}^{y=3} \int_{x=0}^{x=\sqrt{9-y^2}}9-x^2-y^2 dx dy.
+      </me>
+      <ol>
+        <li>
+          <p>
+            Write bounds for the region <m>R</m> by giving bounds for <m>r</m> and <m>\theta</m>.
+          </p>
+        </li>
 
-      <p>
-        \bmw{After doing this, in class we'll set up the integral formulas needed to find <m>R_y</m>, the radius of gyration about the <m>y</m>-axis, assuming the density is <m>\delta(x,y)=x^2+y^2</m>.}
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Compute the integral <m>\ds \int_{0}^{1}\int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}} \frac{2}{(1+x^2+y^2)^2}dydx</m>.
-      </p>
-    </statement>
+        <li>
+          <p>
+            Rewrite the double integral as an iterated integral using the bounds for <m>r</m> and <m>\theta</m>. Don't forget the Jacobian (as <m>dxdy=rdrd\theta</m>).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Compute the integral in the previous part by hand. [Suggestion: you'll want to simplify <m>9-x^2-y^2</m> to <m>9-r^2</m> before integrating.]
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      Find the centroid of a semicircular disc of radius <m>a</m> (<m>y\geq 0</m>). Actually compute any integrals.
+    </p>
+
+    <p>
+      \bmw{After doing this, in class we'll set up the integral formulas needed to find <m>R_y</m>, the radius of gyration about the <m>y</m>-axis, assuming the density is <m>\delta(x,y)=x^2+y^2</m>.}
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      Compute the integral <m>\ds \int_{0}^{1}\int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}} \frac{2}{(1+x^2+y^2)^2}dydx</m>.
+    </p>
     <hint>
       <p>
         try switching coordinate systems to polar coordinates. This will require you to first draw the region of integration, and then then obtain bounds for the region in polar coordinates.
       </p>
     </hint>
-  </exercise>
+  </exploration>
+
   <p>
     We're now ready to define the Jacobian of any transformation.
   </p>

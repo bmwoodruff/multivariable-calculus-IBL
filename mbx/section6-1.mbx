@@ -27,46 +27,46 @@
   <p>
     We will focus most of our time this semester on two- and three-dimensional problems. However, many problems in the real world require a higher number of dimensions. When you hear the word <q>dimension</q>, it does not always represent a physical dimension, such as length, width, or height. If a quantity depends on 30 different measurements, then the problem involves 30 dimensions. As a quick illustration, the formula for the distance between two points depends on 6 numbers, so distance is really a 6-dimensional problem. As another example, if a piece of equipment has a color, temperature, age, and cost, we can think of that piece of equipment being represented by a point in four-dimensional space (where the coordinate axes represent color, temperature, age, and cost).
   </p>
-  <exercise xml:id="prob_pebble">
-    <statement>
-      <p>
-        EXTRA<fn>See 
-        <url href="http://aleph.sagemath.org/?z=eJwrsS1LLNJQL1HXtOYqyMkv0TAz0TU00yqJM9JR0CjRMdAx0tQEAL5TCVo">Sage</url>
-        or 
-        <url href="http://wolfr.am/xoc07E">Wolfram Alpha</url>. 
-        Follow the links to Sage or Wolfram Alpha in all the problems below to see how to get the computer to graph the function.</fn>
-      </p>
 
-      <p>
-        A pebble falls from a 64 ft tall building. Its height (in ft) above the ground <m>t</m> seconds after it drops is given by the function <m>y=f(t)=64-16t^2</m>.
-        <ol>
-          <li>
-            <p>
-              What is <m>n</m> (the number of inputs)?
-            </p>
-          </li>
+  <exploration xml:id="prob_pebble">
+    <p>
+      EXTRA<fn>See 
+      <url href="http://aleph.sagemath.org/?z=eJwrsS1LLNJQL1HXtOYqyMkv0TAz0TU00yqJM9JR0CjRMdAx0tQEAL5TCVo">Sage</url>
+      or 
+      <url href="http://wolfr.am/xoc07E">Wolfram Alpha</url>. 
+      Follow the links to Sage or Wolfram Alpha in all the problems below to see how to get the computer to graph the function.</fn>
+    </p>
 
-          <li>
-            <p>
-              What is <m>m</m> (the number of outputs)?
-            </p>
-          </li>
+    <p>
+      A pebble falls from a 64 ft tall building. Its height (in ft) above the ground <m>t</m> seconds after it drops is given by the function <m>y=f(t)=64-16t^2</m>.
+      <ol>
+        <li>
+          <p>
+            What is <m>n</m> (the number of inputs)?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Construct a graph of this function.
-            </p>
-          </li>
+        <li>
+          <p>
+            What is <m>m</m> (the number of outputs)?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              How many dimensions do you need to graph this function?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Construct a graph of this function.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            How many dimensions do you need to graph this function?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     The next several sections will explore different sorts of functions with a variety of <m>n</m> and <m>m</m> combinations. We will start with these same questions as we work to understand the functions. Later on in the semester, you can use these questions to help understand what sort of function you are studying.
   </p>

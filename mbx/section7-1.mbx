@@ -15,43 +15,42 @@
   <p>
     We'll find that throughout this course, the key difference between first-semester calculus and multivariate calculus is that we replace the input <m>x</m> and output <m>y</m> of functions with the vectors <m>\vec x</m> and <m>\vec y</m>. For the function <m>f(x,y)=z</m>, we can write <m>f</m> in the vector notation <m>\vec y=\vec f(\vec x)</m> if we let <m>\vec x=(x,y)</m> and <m>\vec y=(z)</m>. Notice that <m>\vec x</m> is a vector of inputs, and <m>\vec y</m> is a vector of outputs.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        For each of the functions below, state what <m>\vec x</m> and <m>\vec y</m> should be so that the function can be written in the form <m>\vec y = \vec f (\vec x)</m>. In addition, identify what type of function each is from the list in <xref ref="sec_functionlist"></xref>.
-        EXTRA<fn>The point to this exercise is to help you learn to recognize the dimensions of the domain and codomain of the function.  If we write <m>\vec f:\R^n\to \R^m</m>, then <m>\vec x</m> is a vector in <m>\R^n</m> with <m>n</m> components, and <m>\vec y</m> is a vector in <m>\R^m</m> with <m>m</m> components.</fn>
-        <ol>
-          <li>
-            <p>
-              <m>f(x,y,z)=w</m>
-            </p>
-          </li>
 
-          <li>
-            <p>
-              <m>\vec r(t)=(x,y,z)</m>
-            </p>
-          </li>
+  <exploration>
+    <p>
+      For each of the functions below, state what <m>\vec x</m> and <m>\vec y</m> should be so that the function can be written in the form <m>\vec y = \vec f (\vec x)</m>. In addition, identify what type of function each is from the list in <xref ref="sec_functionlist"></xref>.
+      EXTRA<fn>The point to this exercise is to help you learn to recognize the dimensions of the domain and codomain of the function.  If we write <m>\vec f:\R^n\to \R^m</m>, then <m>\vec x</m> is a vector in <m>\R^n</m> with <m>n</m> components, and <m>\vec y</m> is a vector in <m>\R^m</m> with <m>m</m> components.</fn>
+      <ol>
+        <li>
+          <p>
+            <m>f(x,y,z)=w</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              <m>\vec r(u,v)=(x,y,z)</m>
-            </p>
-          </li>
+        <li>
+          <p>
+            <m>\vec r(t)=(x,y,z)</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              <m>\vec F(x,y)=(M,N)</m>
-            </p>
-          </li>
+        <li>
+          <p>
+            <m>\vec r(u,v)=(x,y,z)</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              <m>\vec F(\rho,\phi,\theta)=(x,y,z)</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            <m>\vec F(x,y)=(M,N)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\vec F(\rho,\phi,\theta)=(x,y,z)</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 </section>

@@ -17,51 +17,51 @@
       </li>
     </ul>
   </p>
-  <exercise xml:id="prob_parametric_curve_in_plane">
-    <statement>
-      <p>
-        EXTRA<fn>
-        See <url href="http://aleph.sagemath.org/?z=eJwrsS1LLNJQL1HX5CpILErMTS0pykyOL8jJL9GINtJKzi_WKNHUUTDWKs7MA7JidRQ0SnQMdIy0CjI1NQFWdRJT">Sage</url> or <url href="http://wolfr.am/wAkR8l">Wolfram Alpha</url>. 
-        </fn>
-        EXTRA<fn>
-          \thomasee{There's a lot more practice of this idea in 11.1. You'll also find more practice in 13.1: 1-8.}
-          \larsonfive{See also Larson 10.2.  You can also find more practice in 12.1 and 12.3.}
-          \stewarts{For review on parameterizing see 10.1 and 10.2. Find more practice in 13.4:3-6 }
-          </fn>A horse runs around an elliptical track. Its position at time <m>t</m> is given by the function <m>\vec r(t)=(2\cos t, 3\sin t).</m> We could alternatively write this as <m>x=2\cos t, y=3\sin t</m>.
-        <ol>
-          <li>
-            <p>
-              What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Construct a graph of this function.
-            </p>
-          </li>
+  <exploration xml:id="prob_parametric_curve_in_plane">
+    <p>
+      EXTRA<fn>
+      See <url href="http://aleph.sagemath.org/?z=eJwrsS1LLNJQL1HX5CpILErMTS0pykyOL8jJL9GINtJKzi_WKNHUUTDWKs7MA7JidRQ0SnQMdIy0CjI1NQFWdRJT">Sage</url> or <url href="http://wolfr.am/wAkR8l">Wolfram Alpha</url>. 
+      </fn>
+      EXTRA<fn>
+        \thomasee{There's a lot more practice of this idea in 11.1. You'll also find more practice in 13.1: 1-8.}
+        \larsonfive{See also Larson 10.2.  You can also find more practice in 12.1 and 12.3.}
+        \stewarts{For review on parameterizing see 10.1 and 10.2. Find more practice in 13.4:3-6 }
+        </fn>A horse runs around an elliptical track. Its position at time <m>t</m> is given by the function <m>\vec r(t)=(2\cos t, 3\sin t).</m> We could alternatively write this as <m>x=2\cos t, y=3\sin t</m>.
+      <ol>
+        <li>
+          <p>
+            What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Next to a few points on your graph, include the time <m>t</m> at which the horse is at this point on the graph. Include an arrow for the horse's direction.
-            </p>
-          </li>
+        <li>
+          <p>
+            Construct a graph of this function.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              How many dimensions do you need to graph this function?
-            </p>
-          </li>
+        <li>
+          <p>
+            Next to a few points on your graph, include the time <m>t</m> at which the horse is at this point on the graph. Include an arrow for the horse's direction.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              If we wanted to plot time (t) on its own axis, how many dimensions would we need?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            How many dimensions do you need to graph this function?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If we wanted to plot time (t) on its own axis, how many dimensions would we need?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     Notice in the problem above that we placed a vector symbol above the function name, as in <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>. When the target space (codomain) is 2-dimensional or larger, we place a vector above the function name to remind us that the output is more than just a number.
   </p>
@@ -69,85 +69,83 @@
   <p>
     In the next problem, we keep the input as just a single number <m>t</m>, but the output is now a vector in <m>\mathbb{R}^3</m>.
   </p>
-  <exercise xml:id="prob_jet_intro_for_space_curves">
-    <statement>
-      <p>
-        EXTRA<fn>
-        See <url href="http://aleph.sagemath.org/?z=eJxL0yjRtNUw0krOLwaydBSMtIoz88CsEk2ugsSixNzUkqLM5PiCnPwSjTQdBY0SHQMdBROtgkxNTQAYOxGO">Sage</url> or <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3D++%282+cos+t%2C+2+sin+t%2C+t%29+for+t+from+0+to+4+pi">Wolfram Alpha</url>. 
-          \thomasee{The text has more practice in 13.1: 9-14.}
-          \larsonfive{More practice is in Larson 12.1:9<ndash />12, 21<ndash />24, 27<ndash />32.}
-          \stewarts{More practice in 13.4:7-8, 15-18}
-          </fn>
-        A jet begins spiraling upwards to gain height. The position of the jet after <m>t</m> seconds is modeled by the equation
-        <m>\vec r_2(t)=(2\cos t, 2\sin t, t).</m> We could alternatively write this as <m>x=2\cos t,\, y=2\sin t,\, z=t</m>.
-        <ol>
-          <li>
-            <p>
-              What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Construct a graph of this function by picking several values of <m>t</m> and plotting the points resulting from <m>(2\cos t, 2\sin t, t)</m>.
-            </p>
-          </li>
+  <exploration xml:id="prob_jet_intro_for_space_curves">
+    <p>
+      EXTRA<fn>
+      See <url href="http://aleph.sagemath.org/?z=eJxL0yjRtNUw0krOLwaydBSMtIoz88CsEk2ugsSixNzUkqLM5PiCnPwSjTQdBY0SHQMdBROtgkxNTQAYOxGO">Sage</url> or <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3D++%282+cos+t%2C+2+sin+t%2C+t%29+for+t+from+0+to+4+pi">Wolfram Alpha</url>. 
+        \thomasee{The text has more practice in 13.1: 9-14.}
+        \larsonfive{More practice is in Larson 12.1:9<ndash />12, 21<ndash />24, 27<ndash />32.}
+        \stewarts{More practice in 13.4:7-8, 15-18}
+        </fn>
+      A jet begins spiraling upwards to gain height. The position of the jet after <m>t</m> seconds is modeled by the equation
+      <m>\vec r_2(t)=(2\cos t, 2\sin t, t).</m> We could alternatively write this as <m>x=2\cos t,\, y=2\sin t,\, z=t</m>.
+      <ol>
+        <li>
+          <p>
+            What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Next to a few points on your graph, include the time <m>t</m> at which the jet is at this point on the graph. Include an arrow for the jet's direction.
-            </p>
-          </li>
+        <li>
+          <p>
+            Construct a graph of this function by picking several values of <m>t</m> and plotting the points resulting from <m>(2\cos t, 2\sin t, t)</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              How many dimensions do you need to graph this function?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="prob_function_table">
-    <statement>
-      <p>
-        On a separate piece of paper (you'll be expanding this later) create a table with columns for:
-        <ul>
-          <li>
-            <p>
-              problem number
-            </p>
-          </li>
+        <li>
+          <p>
+            Next to a few points on your graph, include the time <m>t</m> at which the jet is at this point on the graph. Include an arrow for the jet's direction.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              function
-            </p>
-          </li>
+        <li>
+          <p>
+            How many dimensions do you need to graph this function?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              <m>n</m>
-            </p>
-          </li>
+  <exploration xml:id="prob_function_table">
+    <p>
+      On a separate piece of paper (you'll be expanding this later) create a table with columns for:
+      <ul>
+        <li>
+          <p>
+            problem number
+          </p>
+        </li>
 
-          <li>
-            <p>
-              <m>m</m>
-            </p>
-          </li>
+        <li>
+          <p>
+            function
+          </p>
+        </li>
 
-          <li>
-            <p>
-              number of dimensions required to graph
-            </p>
-          </li>
-        </ul>
-      </p>
+        <li>
+          <p>
+            <m>n</m>
+          </p>
+        </li>
 
-      <p>
-        Go back over the previous problems in this unit and fill in the table.
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            <m>m</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            number of dimensions required to graph
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Go back over the previous problems in this unit and fill in the table.
+    </p>
+  </exploration>
 </section>

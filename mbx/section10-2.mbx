@@ -141,182 +141,178 @@
     </statement>
   </example>
 
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-        \bmw{See 14.7 for more practice. }
-        </fn>Consider the function <m>f(x,y)=x^2+4xy+y^2</m>.
-        <ol>
-          <li>
-            <p>
-              Find the critical points of <m>f</m> by finding when <m>Df(x,y)</m> is the zero matrix.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>
+      \bmw{See 14.7 for more practice. }
+      </fn>Consider the function <m>f(x,y)=x^2+4xy+y^2</m>.
+      <ol>
+        <li>
+          <p>
+            Find the critical points of <m>f</m> by finding when <m>Df(x,y)</m> is the zero matrix.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Find the eigenvalues of <m>D^2f</m> at any critical points.
-            </p>
-          </li>
+        <li>
+          <p>
+            Find the eigenvalues of <m>D^2f</m> at any critical points.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Use the 2nd derivative test to label each critical point as a local maximum, local minimum, or saddle point, and state the value of <m>f</m> at the critical point.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Consider the function <m>f(x,y)=x^3-3x+y^2-4y</m>.
-        <ol>
-          <li>
-            <p>
-              Find the critical points of <m>f</m> by finding when <m>Df(x,y)</m> is the zero matrix.
-            </p>
-          </li>
+        <li>
+          <p>
+            Use the 2nd derivative test to label each critical point as a local maximum, local minimum, or saddle point, and state the value of <m>f</m> at the critical point.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              Find the eigenvalues of <m>D^2f</m> at any critical points.
-              <hint>
+  <exploration>
+    <p>
+      Consider the function <m>f(x,y)=x^3-3x+y^2-4y</m>.
+      <ol>
+        <li>
+          <p>
+            Find the critical points of <m>f</m> by finding when <m>Df(x,y)</m> is the zero matrix.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the eigenvalues of <m>D^2f</m> at any critical points.
+            <hint>
               <p>
                 First compute <m>D^2f</m>. Since there are two critical points, evaluate the second derivative at each point to obtain 2 different matrices. Then find the eigenvalues of each matrix.
               </p>
-              </hint>
-            </p>
-          </li>
+            </hint>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Label each critical point as a local maximum, local minimum, or saddle point, and state the value of <m>f</m> at the critical point.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Consider the function <m>f(x,y)=x^3 + 3xy +y^3</m>.
-        <ol>
-          <li>
-            <p>
-              Find the critical points of <m>f</m> by finding when <m>Df(x,y)</m> is the zero matrix.
-            </p>
-          </li>
+        <li>
+          <p>
+            Label each critical point as a local maximum, local minimum, or saddle point, and state the value of <m>f</m> at the critical point.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              Find the eigenvalues of <m>D^2f</m> at any critical points.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Consider the function <m>f(x,y)=x^3 + 3xy +y^3</m>.
+      <ol>
+        <li>
+          <p>
+            Find the critical points of <m>f</m> by finding when <m>Df(x,y)</m> is the zero matrix.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Label each critical point as a local maximum, local minimum, or saddle point, and state the value of <m>f</m> at the critical point.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Find the eigenvalues of <m>D^2f</m> at any critical points.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Label each critical point as a local maximum, local minimum, or saddle point, and state the value of <m>f</m> at the critical point.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     You now have the tools needed to find optimal solutions to exercises in any dimension. Here's a silly exercise that demonstrates how we can use this.
   </p>
-  <exercise xml:id="optimize_box_in_cake">
-    <statement>
-      <p>
-        Prof. Woodruff's daughter has asked for a Barbie princess cake. He purchased a metal pan that's roughly in the shape of a paraboloid <m>z=f(x,y)=9-x^2-y^2</m> for <m>z\geq 0</m>. To surprise her, he want to hide a present inside the cake. The present is a bunch of small candy that can pretty much fill a box of any size. He'd like to know how large (biggest volume) of a rectangular box he can fit under the cake, so that when she start cutting the cake, she'll find her surprise present. The box will start at <m>z=0</m> and the corners of the box (located at <m>(x,\pm y)</m> and <m>(-x,\pm y)</m>) will touch the surface of the cake <m>z=9-x^2-y^2</m>.
-        <ol>
-          <li>
-            <p>
-              What is the function <m>V(x,y)</m> that we are trying to maximize?
-            </p>
-          </li>
 
-          <li>
-            <p>
-              If you find all the critical points of <m>V</m>, you'll discover there are 9.  However, only one of these critical points makes sense in the context of this exercise. Find that critical point.
-            </p>
-          </li>
+  <exploration xml:id="optimize_box_in_cake">
+    <p>
+      Prof. Woodruff's daughter has asked for a Barbie princess cake. He purchased a metal pan that's roughly in the shape of a paraboloid <m>z=f(x,y)=9-x^2-y^2</m> for <m>z\geq 0</m>. To surprise her, he want to hide a present inside the cake. The present is a bunch of small candy that can pretty much fill a box of any size. He'd like to know how large (biggest volume) of a rectangular box he can fit under the cake, so that when she start cutting the cake, she'll find her surprise present. The box will start at <m>z=0</m> and the corners of the box (located at <m>(x,\pm y)</m> and <m>(-x,\pm y)</m>) will touch the surface of the cake <m>z=9-x^2-y^2</m>.
+      <ol>
+        <li>
+          <p>
+            What is the function <m>V(x,y)</m> that we are trying to maximize?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Use the second derivative test to prove that the critical point yields a maximum volume.
-            </p>
-          </li>
+        <li>
+          <p>
+            If you find all the critical points of <m>V</m>, you'll discover there are 9.  However, only one of these critical points makes sense in the context of this exercise. Find that critical point.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What are the dimensions of the box? What's the volume of the box?
-            </p>
-          </li>
-        </ol>
-      </p>
+        <li>
+          <p>
+            Use the second derivative test to prove that the critical point yields a maximum volume.
+          </p>
+        </li>
 
-      <p>
-        The only thing left for Prof. Woodruff to now determine how much candy he should buy to fill the box. He'll take care of that.
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            What are the dimensions of the box? What's the volume of the box?
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      The only thing left for Prof. Woodruff to now determine how much candy he should buy to fill the box. He'll take care of that.
+    </p>
+  </exploration>
+
   <p>
     In this exercise, we'll derive the version of the second derivative test that is found in most multivariate calculus texts. The test given below only works for functions of the form <m>f:\mathbb{R}^2\to\mathbb{R}</m>. The eigenvalue test you have been practicing will work with a function of the form <m>f:\mathbb{R}^n\to\mathbb{R}</m>, for any natural number <m>n</m>.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Suppose that <m>f(x,y)</m> has a critical point at <m>(a,b)</m>.
-        <ol>
-          <li>
-            <p>
-              Find a general formula for the eigenvalues of <m>D^2f(a,b)</m>. Your answer will be in terms of the second partials of <m>f</m>.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Let <m>D=f_{xx}f_{yy}-f_{xy}^2</m>.
-              <ul>
-                <li>
-                  <p>
-                    If <m>D\lt 0</m>, explain why <m>f</m> has a saddle point at <m>(a,b)</m>.
-                  </p>
-                </li>
+  <exploration>
+    <p>
+      Suppose that <m>f(x,y)</m> has a critical point at <m>(a,b)</m>.
+      <ol>
+        <li>
+          <p>
+            Find a general formula for the eigenvalues of <m>D^2f(a,b)</m>. Your answer will be in terms of the second partials of <m>f</m>.
+          </p>
+        </li>
 
-                <li>
-                  <p>
-                    If <m>D=0</m>, explain why the second derivative test fails.
-                  </p>
-                </li>
+        <li>
+          <p>
+            Let <m>D=f_{xx}f_{yy}-f_{xy}^2</m>.
+            <ul>
+              <li>
+                <p>
+                  If <m>D\lt 0</m>, explain why <m>f</m> has a saddle point at <m>(a,b)</m>.
+                </p>
+              </li>
 
-                <li>
-                  <p>
-                    If <m>D>0</m>, explain why <m>f</m> has either a maximum or minimum at <m>(a,b)</m>.
-                  </p>
-                </li>
+              <li>
+                <p>
+                  If <m>D=0</m>, explain why the second derivative test fails.
+                </p>
+              </li>
 
-                <li>
-                  <p>
-                    If <m>D>0</m>, and <m>f_x(a,b)>0</m>, does <m>f</m> have a local max or local min at <m>(a,b)</m>. Explain.
-                  </p>
-                </li>
-              </ul>
-            </p>
-          </li>
+              <li>
+                <p>
+                  If <m>D>0</m>, explain why <m>f</m> has either a maximum or minimum at <m>(a,b)</m>.
+                </p>
+              </li>
 
-          <li>
-            <p>
-              The only critical point of <m>f(x,y) = x^2+3xy+2y^2</m> is at <m>(0,0)</m>.  Does this point correspond to a local maximum, local minimum, or saddle point? Give the eigenvalues (which should come instantly out of part 1). Find <m>D</m>, from part 2, to answer the question.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+              <li>
+                <p>
+                  If <m>D>0</m>, and <m>f_x(a,b)>0</m>, does <m>f</m> have a local max or local min at <m>(a,b)</m>. Explain.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The only critical point of <m>f(x,y) = x^2+3xy+2y^2</m> is at <m>(0,0)</m>.  Does this point correspond to a local maximum, local minimum, or saddle point? Give the eigenvalues (which should come instantly out of part 1). Find <m>D</m>, from part 2, to answer the question.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 </section>

@@ -4,192 +4,190 @@
   <p>
     In the final two sections, we will examine several additional applications of line-integrals. The first is finding average values. The concept of averaging values together has many applications. In first-semester calculus, we saw how to generalize the concept of averaging numbers together to get an average value of a function. We'll review both of these concepts. In the next section we'll generalize average value to calculate centroids and center of mass.
   </p>
-  <exercise xml:id="average_value_methods">
-    <statement>
-      <p>
-        Suppose a class takes a test and there are three scores of 70, five scores of 85, one score of 90, and two scores of 95. We will calculate the average class score, <m>\bar s</m>, four different ways to emphasize four ways of thinking about the averages. We are emphasizing the pattern of the calculations in this exercise, rather than the final answer, so it is important to write out each calculation completely in the form <m>\bar s = \blank{1cm}</m> before calculating the number <m>\bar s</m>.
-        <ol>
-          <li>
-            <p>
-              EXTRA<fn><m>\bar s=\frac{\sum \text{ values } }{\text{ number of values } }</m></fn>
-               Compute the average by adding 11 numbers together and dividing by the number of scores.  Write down the whole computation before doing any arithmetic.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              EXTRA<fn><m>\bar s=\frac{\sum (\text{ value } \cdot\text{ weight } )}{\sum \text{ weight } }</m></fn>Compute the numerator of the fraction in the previous part by multiplying each score by how many times it occurs, rather than adding it in the sum that many times.  Again, write down the calculation for <m>\bar s</m> before doing any arithmetic.
-            </p>
-          </li>
+  <exploration xml:id="average_value_methods">
+    <p>
+      Suppose a class takes a test and there are three scores of 70, five scores of 85, one score of 90, and two scores of 95. We will calculate the average class score, <m>\bar s</m>, four different ways to emphasize four ways of thinking about the averages. We are emphasizing the pattern of the calculations in this exercise, rather than the final answer, so it is important to write out each calculation completely in the form <m>\bar s = \blank{1cm}</m> before calculating the number <m>\bar s</m>.
+      <ol>
+        <li>
+          <p>
+            EXTRA<fn><m>\bar s=\frac{\sum \text{ values } }{\text{ number of values } }</m></fn>
+             Compute the average by adding 11 numbers together and dividing by the number of scores.  Write down the whole computation before doing any arithmetic.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              EXTRA<fn><m>\bar s=\sum (\text{ value } \cdot\text{ (\% of stuff) } )=\sum (\text{ value }  \cdot \frac{\text{ weight } }{\text{ \# of values } } )</m></fn>Compute <m>\bar s</m> by splitting up the fraction in the previous part into the sum of four numbers.  This is called a <q>weighted average</q> because we are multiplying each score value by a weight.
-            </p>
-          </li>
+        <li>
+          <p>
+            EXTRA<fn><m>\bar s=\frac{\sum (\text{ value } \cdot\text{ weight } )}{\sum \text{ weight } }</m></fn>Compute the numerator of the fraction in the previous part by multiplying each score by how many times it occurs, rather than adding it in the sum that many times.  Again, write down the calculation for <m>\bar s</m> before doing any arithmetic.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              EXTRA<fn><m>\text{ (number of values) } \bar s = \sum \text{ values }</m>
-               <m>(\sum \text{ weight } )\bar s = \sum (\text{ value } \cdot\text{ weight } )</m></fn>Another way of thinking about the average <m>\bar s</m> is that <m>\bar s</m> is the number so that if all 11 scores were the same value <m>\bar s</m>, you'd have the same sum of scores.  Write this way of thinking about these computations by taking the formulas for <m>\bar s</m> in the first two parts and multiplying both sides by the denominator.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            EXTRA<fn><m>\bar s=\sum (\text{ value } \cdot\text{ (\% of stuff) } )=\sum (\text{ value }  \cdot \frac{\text{ weight } }{\text{ \# of values } } )</m></fn>Compute <m>\bar s</m> by splitting up the fraction in the previous part into the sum of four numbers.  This is called a <q>weighted average</q> because we are multiplying each score value by a weight.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            EXTRA<fn><m>\text{ (number of values) } \bar s = \sum \text{ values }</m>
+             <m>(\sum \text{ weight } )\bar s = \sum (\text{ value } \cdot\text{ weight } )</m></fn>Another way of thinking about the average <m>\bar s</m> is that <m>\bar s</m> is the number so that if all 11 scores were the same value <m>\bar s</m>, you'd have the same sum of scores.  Write this way of thinking about these computations by taking the formulas for <m>\bar s</m> in the first two parts and multiplying both sides by the denominator.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     In the next exercise, we generalize the above ways of thinking about averages from a discrete situation to a continuous situation. You did this in first-semester calculus if you found average values using integrals.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Suppose the price of a stock is <dollar />10 for one day. Then the price of the stock jumps to <dollar />20 for two days. Our goal is to determine the average price of the stock over the three days.
-        <ol>
-          <li>
-            <p>
-              Why is the average stock price not <dollar />15?
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Let <m>f(t) = \begin{cases}10 \amp 0\lt t\lt 1\\20\amp 1\lt t\lt 3
-              \end{cases}</m>, the price of the stock for the three-day period. Draw the function <m>f</m>, and find the area under <m>f</m> where <m>t\in[0,3]</m>.
-              <hint>
+  <exploration>
+    <p>
+      Suppose the price of a stock is <dollar />10 for one day. Then the price of the stock jumps to <dollar />20 for two days. Our goal is to determine the average price of the stock over the three days.
+      <ol>
+        <li>
+          <p>
+            Why is the average stock price not <dollar />15?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Let <m>f(t) = \begin{cases}10 \amp 0\lt t\lt 1\\20\amp 1\lt t\lt 3
+            \end{cases}</m>, the price of the stock for the three-day period. Draw the function <m>f</m>, and find the area under <m>f</m> where <m>t\in[0,3]</m>.
+            <hint>
               <p>
                 You can do this without integrals
               </p>
-              </hint>
-            </p>
-          </li>
+            </hint>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Now let <m>y=\bar f</m>.  The area under <m>\bar f</m> over <m>[0,3]</m> is simply width times height, or <m>(b-a)\bar f</m>. What should <m>\bar f</m> equal so that the area under <m>\bar f</m> over <m>[0,3]</m> matches the area under <m>f</m> over <m>[0,3]</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Now let <m>y=\bar f</m>.  The area under <m>\bar f</m> over <m>[0,3]</m> is simply width times height, or <m>(b-a)\bar f</m>. What should <m>\bar f</m> equal so that the area under <m>\bar f</m> over <m>[0,3]</m> matches the area under <m>f</m> over <m>[0,3]</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              We found a constant <m>\bar f</m> so that the area under <m>\bar f</m> matched the area under <m>f</m>. In other words, we solved the equation below for <m>\bar f</m>:
-              <me>
-                \int_a^b \bar f dx = \int_a^b f dx
-              </me>
-              Solve for <m>\bar f</m> symbolically (without doing any of the integrals). This quantity is called the average value of <m>f</m> over <m>[a,b]</m>.
-              <hint>
+        <li>
+          <p>
+            We found a constant <m>\bar f</m> so that the area under <m>\bar f</m> matched the area under <m>f</m>. In other words, we solved the equation below for <m>\bar f</m>:
+            <me>
+              \int_a^b \bar f dx = \int_a^b f dx
+            </me>
+            Solve for <m>\bar f</m> symbolically (without doing any of the integrals). This quantity is called the average value of <m>f</m> over <m>[a,b]</m>.
+            <hint>
               <p>
                 Remember <m>\bar{f}</m> is a constant
               </p>
-              </hint>
-            </p>
-          </li>
+            </hint>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              The formula for <m>\bar f</m> in the previous part resembles at least one of the ways of calculating averages from <xref ref="average_value_methods">exercise</xref>.  Which ones and why?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            The formula for <m>\bar f</m> in the previous part resembles at least one of the ways of calculating averages from <xref ref="average_value_methods">exercise</xref>.  Which ones and why?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     Ask me in class about the <q>ant farm</q> approach to average value.
   </p>
-  <exercise xml:id="Average_Value_intro">
-    <statement>
+
+  <exploration xml:id="Average_Value_intro">
+    <p>
+      EXTRA<fn><url href="http://www.youtube.com/watch?v=t7T0MzfgV0Q&amp;list=PL04DF68E73B7ECD54&amp;index=5&amp;feature=plpp_video">Watch a YouTube video.</url></fn>
+      Consider the elliptical curve <m>C</m> given by the parametrization <m>\vec r(t) = (2\cos t, 3\sin t)</m>. Let <m>f</m> be the function <m>f(x,y)=9-x^2-y^2</m>.
+    </p>
+    <ol>
+    <li>
       <p>
-        EXTRA<fn><url href="http://www.youtube.com/watch?v=t7T0MzfgV0Q&amp;list=PL04DF68E73B7ECD54&amp;index=5&amp;feature=plpp_video">Watch a YouTube video.</url></fn>
-        Consider the elliptical curve <m>C</m> given by the parametrization <m>\vec r(t) = (2\cos t, 3\sin t)</m>. Let <m>f</m> be the function <m>f(x,y)=9-x^2-y^2</m>.
+        Draw the surface <m>f</m> in 3D.
       </p>
       <ol>
-      <li>
-        <p>
-          Draw the surface <m>f</m> in 3D.
-        </p>
-        <ol>
-          <li>
-            <p>
-              Add to your drawing the curve <m>C</m> in the <m>xy</m> plane.
-            </p>
-          </li>
+        <li>
+          <p>
+            Add to your drawing the curve <m>C</m> in the <m>xy</m> plane.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Next draw the sheet whose area is given by the integral <m>\int_C f ds</m>.
-            </p>
-          </li>
-        </ol>
-      </li>
+        <li>
+          <p>
+            Next draw the sheet whose area is given by the integral <m>\int_C f ds</m>.
+          </p>
+        </li>
+      </ol>
+    </li>
 
-      <li>
-        <p>
-          What's the maximum height and minimum height of the sheet?  EXTRA<fn>See <xref ref="horse_track_chain_rule_introduction">exercise</xref>.</fn>
-        </p>
-      </li>
+    <li>
+      <p>
+        What's the maximum height and minimum height of the sheet?  EXTRA<fn>See <xref ref="horse_track_chain_rule_introduction">exercise</xref>.</fn>
+      </p>
+    </li>
 
-      <li>
-        <p>
-          We'd like to find a constant height <m>\bar f</m> so that the area under <m>f</m>, above <m>C</m>, is the same as area under <m>\bar f</m>, above <m>C</m>. This height <m>\bar f</m> is called the average value of <m>f</m> along <m>C</m>. 
-           EXTRA<fn>
-          \bmw{Please read 
-          <url href="https://www.lds.org/scriptures/ot/isa/40.4?lang=eng#3">Isaiah 40:4</url> and
-          <url href="https://www.lds.org/scriptures/nt/luke/3.5?lang=eng#4">Luke 3:5</url>. These scriptures should help you remember how to find average value. }
-          \valpo{ Please read 
-          <url href="https://www.lds.org/scriptures/ot/isa/40.4?lang=eng#3">Isaiah 40:4</url> and
-          <url href="https://www.lds.org/scriptures/nt/luke/3.5?lang=eng#4">Luke 3:5</url>. These scriptures should help you remember how to find average value. }
-          </fn>
-          Explain why the average value of <m>f</m> along <m>C</m> is
-          <me>
-            \bar f = \frac{\int_C f ds}{\int_C ds}.
-          </me>
-          Connect this formula with the ways of thinking about averages from <xref ref="average_value_methods">Exercise</xref>.
-          <hint>
+    <li>
+      <p>
+        We'd like to find a constant height <m>\bar f</m> so that the area under <m>f</m>, above <m>C</m>, is the same as area under <m>\bar f</m>, above <m>C</m>. This height <m>\bar f</m> is called the average value of <m>f</m> along <m>C</m>. 
+         EXTRA<fn>
+        \bmw{Please read 
+        <url href="https://www.lds.org/scriptures/ot/isa/40.4?lang=eng#3">Isaiah 40:4</url> and
+        <url href="https://www.lds.org/scriptures/nt/luke/3.5?lang=eng#4">Luke 3:5</url>. These scriptures should help you remember how to find average value. }
+        \valpo{ Please read 
+        <url href="https://www.lds.org/scriptures/ot/isa/40.4?lang=eng#3">Isaiah 40:4</url> and
+        <url href="https://www.lds.org/scriptures/nt/luke/3.5?lang=eng#4">Luke 3:5</url>. These scriptures should help you remember how to find average value. }
+        </fn>
+        Explain why the average value of <m>f</m> along <m>C</m> is
+        <me>
+          \bar f = \frac{\int_C f ds}{\int_C ds}.
+        </me>
+        Connect this formula with the ways of thinking about averages from <xref ref="average_value_methods">Exercise</xref>.
+        <hint>
           <p>
             The area under <m>\bar f</m> above <m>C</m> is <m>\int_C \bar f ds</m>. The area under <m>f</m> above <m>C</m> is <m>\int_C f ds</m>. Set them equal and solve for <m>\bar f</m>.
           </p>
-          </hint>
-        </p>
-      </li>
+        </hint>
+      </p>
+    </li>
 
-      <li>
-        <p>
-          EXTRA<fn>You can use the <url href="\sagelineintegral">Sage line integral calculator</url>.</fn>Use a computer to evaluate the integrals <m>\int_C f ds</m> and <m>\int_C ds</m>, and then give an approximation to the average value of <m>f</m> along <m>C</m>. Is your average value between the maximum and minimum of <m>f</m> along <m>C</m>? Why should it be?
-        </p>
-      </li>
+    <li>
+      <p>
+        EXTRA<fn>You can use the <url href="\sagelineintegral">Sage line integral calculator</url>.</fn>Use a computer to evaluate the integrals <m>\int_C f ds</m> and <m>\int_C ds</m>, and then give an approximation to the average value of <m>f</m> along <m>C</m>. Is your average value between the maximum and minimum of <m>f</m> along <m>C</m>? Why should it be?
+      </p>
+    </li>
+    </ol>
+  </exploration>
+
+  <exploration>
+    <p>
+      The temperature <m>T(x,y,z)</m> at points on a wire helix <m>C</m> given by <m>\vec r(t) = (\sin t, 2t, \cos t)</m> is known to be <m>T(x,y,z)=x^2+y+z^2</m>.
+      <ol>
+        <li>
+          <p>
+            What are the temperatures at <m>t=0</m>, <m>t=\pi/2</m>, <m>t=\pi</m>, <m>t=3\pi/2</m> and <m>t=2\pi</m>?
+          </p>
+        </li>
       </ol>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        The temperature <m>T(x,y,z)</m> at points on a wire helix <m>C</m> given by <m>\vec r(t) = (\sin t, 2t, \cos t)</m> is known to be <m>T(x,y,z)=x^2+y+z^2</m>.
-        <ol>
-          <li>
-            <p>
-              What are the temperatures at <m>t=0</m>, <m>t=\pi/2</m>, <m>t=\pi</m>, <m>t=3\pi/2</m> and <m>t=2\pi</m>?
-            </p>
-          </li>
-        </ol>
-      </p>
+    </p>
 
-      <p>
-        You should notice the temperature is constantly changing.
-        <ol type="resume">
-          <li>
-            <p>
-              Make a guess as to what the average temperature is (share with the class why you made the guess you made<mdash />it's OK if you're wrong).
-            </p>
-          </li>
+    <p>
+      You should notice the temperature is constantly changing.
+      <ol type="resume">
+        <li>
+          <p>
+            Make a guess as to what the average temperature is (share with the class why you made the guess you made<mdash />it's OK if you're wrong).
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Next compute the average temperature of the wire using the integral formula from the previous exercises. (You can do all these computations by hand.)
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Next compute the average temperature of the wire using the integral formula from the previous exercises. (You can do all these computations by hand.)
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 </section>

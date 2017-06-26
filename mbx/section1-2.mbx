@@ -17,17 +17,16 @@
     </statement>
   </definition>
 
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 3.10:19-38.}
-          \stewarts{See 3.10:11-22}
-          </fn>
-        If <m>f(x) = x^2\ln(3x+2)</m> and <m>g(t) = e^{2t}\tan(t^2)</m> then compute <m>df</m> and <m>dg</m>.
-      </p>
-    </statement>
-  </exercise>
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 3.10:19-38.}
+        \stewarts{See 3.10:11-22}
+        </fn>
+      If <m>f(x) = x^2\ln(3x+2)</m> and <m>g(t) = e^{2t}\tan(t^2)</m> then compute <m>df</m> and <m>dg</m>.
+    </p>
+  </exploration>
+
   <p>
     Most of higher dimensional calculus can quickly be developed from differential notation. Once we have the language of vectors and matrices at our command, we will develop calculus in higher dimensions by writing <m>d\vec y = Df(\vec x) d\vec x</m>. Variables will become vectors, and the derivative will become a matrix.
   </p>
@@ -35,93 +34,90 @@
   <p>
     This problem will help you see how the notion of differentials is used to develop equations of tangent lines. We'll use this same idea to develop tangent planes to surfaces in 3D and more.
   </p>
-  <exercise xml:id="differentialtangentline">
-    <statement>
-      <p>
-        EXTRA<fn>
-              \thomasee{See 3.11:39-44. Also see problems 3.11:1-18.}
-              \stewarts{See 3.10:1-10 and 3.10:23-31.} 
 
-              The linearization of a function is just an equation of the tangent line where you solve for <m>y</m>.</fn>
-        Consider the function <m>y=f(x) = x^2</m>. This problem has multiple steps, but each is fairly short.
-        <ol>
-          <li>
-            <p>
-              Find the differential of <m>y</m> with respect to <m>x</m>.
-            </p>
-          </li>
+  <exploration xml:id="differentialtangentline">
+    <p>
+      EXTRA<fn>
+            \thomasee{See 3.11:39-44. Also see problems 3.11:1-18.}
+            \stewarts{See 3.10:1-10 and 3.10:23-31.} 
 
-          <li>
-            <p>
-              Draw a graph of <m>f(x)</m>. Place a dot at the point <m>(3,9)</m> and label it on your graph. Sketch a tangent line to the graph at the point <m>(3,9)</m> on the same axes. Place another dot on the tangent line up and to the right of (3,9). Label the point <m>(x,y)</m>, as it will represent any point on the tangent line.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Using the two points <m>(3,9)</m> and <m>(x,y)</m>, compute the slope of the line connecting these two points. Your answer should involve <m>x</m> and <m>y</m>. What is the rise (i.e, the change in <m>y</m> called <m>dy</m>)? What is the run (i.e, the change in <m>x</m> called <m>dx</m>)?
-            </p>
-          </li>
-
-          <li>
-            <p>
-              We know the slope of the tangent line is the derivative <m>f'(3)=6</m>. We also know the slope from the previous part. These two must be equal. Use this fact to give an equation of the tangent line to <m>f(x)</m> at <m>x=3</m>. (Hint: do NOT simplify to slope-intercept form)
-            </p>
-          </li>
-
-          <li>
-            <p>
-              How is the equation for the tangent line related to the differentials <m>dy</m> and <m>dx</m>?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="diff-sphere">
-    <statement>
-      <p>
-        EXTRA<fn>\thomasee{See 3.11:45-62.} \stewarts{See 3.10}</fn> The manufacturer of a spherical storage tank needs to create a tank with a radius of 3 m. Recall that the volume of a sphere is <m>V(r) = \frac{4}{3}\pi r^3</m>. No manufacturing process is perfect, so the resulting sphere will have a radius of 3 m, plus or minus some small amount <m>dr</m>. The actual radius will be <m>3+dr</m>.
-      </p>
+            The linearization of a function is just an equation of the tangent line where you solve for <m>y</m>.</fn>
+      Consider the function <m>y=f(x) = x^2</m>. This problem has multiple steps, but each is fairly short.
       <ol>
-      <li>
-        <p>
-          Find the differential <m>dV</m>. This should be a formula with <m>dV</m>, <m>r</m>, and <m>dr</m>.
-        </p>
-      </li>
+        <li>
+          <p>
+            Find the differential of <m>y</m> with respect to <m>x</m>.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          If the actual radius is 3.02
-        </p>
-        <ol type="a">
-          <li>
-            <p>
-              What is <m>r</m>?
-            </p>
-          </li>
+        <li>
+          <p>
+            Draw a graph of <m>f(x)</m>. Place a dot at the point <m>(3,9)</m> and label it on your graph. Sketch a tangent line to the graph at the point <m>(3,9)</m> on the same axes. Place another dot on the tangent line up and to the right of (3,9). Label the point <m>(x,y)</m>, as it will represent any point on the tangent line.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What is <m>dr</m>?
-            </p>
-          </li>
-        </ol>
-      </li>
+        <li>
+          <p>
+            Using the two points <m>(3,9)</m> and <m>(x,y)</m>, compute the slope of the line connecting these two points. Your answer should involve <m>x</m> and <m>y</m>. What is the rise (i.e, the change in <m>y</m> called <m>dy</m>)? What is the run (i.e, the change in <m>x</m> called <m>dx</m>)?
+          </p>
+        </li>
 
-      <li>
-        <p>
-          What is <m>dV</m> equal to? What does <m>dV</m> tell you about the volume of the manufactured sphere?
-        </p>
-      </li>
+        <li>
+          <p>
+            We know the slope of the tangent line is the derivative <m>f'(3)=6</m>. We also know the slope from the previous part. These two must be equal. Use this fact to give an equation of the tangent line to <m>f(x)</m> at <m>x=3</m>. (Hint: do NOT simplify to slope-intercept form)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            How is the equation for the tangent line related to the differentials <m>dy</m> and <m>dx</m>?
+          </p>
+        </li>
       </ol>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
+    </p>
+  </exploration>
+
+  <exploration xml:id="diff-sphere">
+    <p>
+      EXTRA<fn>\thomasee{See 3.11:45-62.} \stewarts{See 3.10}</fn> The manufacturer of a spherical storage tank needs to create a tank with a radius of 3 m. Recall that the volume of a sphere is <m>V(r) = \frac{4}{3}\pi r^3</m>. No manufacturing process is perfect, so the resulting sphere will have a radius of 3 m, plus or minus some small amount <m>dr</m>. The actual radius will be <m>3+dr</m>.
+    </p>
+    <ol>
+    <li>
       <p>
-        A forest ranger needs to estimate the height of a tree. The ranger stands 50 feet from the base of tree and measures the angle of elevation to the top of the tree to be about 60<m>^\circ</m>. If this angle of 60<m>^\circ</m> is correct, then what is the height of the tree? If the ranger's angle measurement could be off by as much as <m>5^\circ</m>, then how much could his estimate of the height be off? Use differentials to give an answer.
+        Find the differential <m>dV</m>. This should be a formula with <m>dV</m>, <m>r</m>, and <m>dr</m>.
       </p>
-    </statement>
-  </exercise>
+    </li>
+
+    <li>
+      <p>
+        If the actual radius is 3.02
+      </p>
+      <ol type="a">
+        <li>
+          <p>
+            What is <m>r</m>?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What is <m>dr</m>?
+          </p>
+        </li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+        What is <m>dV</m> equal to? What does <m>dV</m> tell you about the volume of the manufactured sphere?
+      </p>
+    </li>
+    </ol>
+  </exploration>
+
+  <exploration>
+    <p>
+      A forest ranger needs to estimate the height of a tree. The ranger stands 50 feet from the base of tree and measures the angle of elevation to the top of the tree to be about 60<m>^\circ</m>. If this angle of 60<m>^\circ</m> is correct, then what is the height of the tree? If the ranger's angle measurement could be off by as much as <m>5^\circ</m>, then how much could his estimate of the height be off? Use differentials to give an answer.
+    </p>
+  </exploration>
 </section>

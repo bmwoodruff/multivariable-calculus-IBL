@@ -45,96 +45,95 @@
     <p>
       Let's practice finding the divergence before looking at some applications.
     </p>
-    <exercise xml:id="x2d_div">
-      <statement>
-        <p>
-          For each vector field:
-          <ol type="a">
-            <li>
-              <p>
-                sketch a plot (you can graph it in Sage or WolframAlpha first)  EXTRA<fn>See 
-                <url href="http://aleph.sagemath.org/?z=eJxz06jQqdRUsFXQMNKq0K7UqdA20qrU5CrIyS-JL0tNLskvik_LTM1J0XDTUQAq1TU00DE00ASyK2FsTQCKaxIN">Sage</url> or
-                <url href="http://wolfr.am/y4gIgX">Wolfram Alpha</url> to plot the vector fields</fn>
-              </p>
-            </li>
 
-            <li>
-              <p>
-                find the divergence
-              </p>
-            </li>
-          </ol>
-        </p>
+    <exploration xml:id="x2d_div">
+      <p>
+        For each vector field:
+        <ol type="a">
+          <li>
+            <p>
+              sketch a plot (you can graph it in Sage or WolframAlpha first)  EXTRA<fn>See 
+              <url href="http://aleph.sagemath.org/?z=eJxz06jQqdRUsFXQMNKq0K7UqdA20qrU5CrIyS-JL0tNLskvik_LTM1J0XDTUQAq1TU00DE00ASyK2FsTQCKaxIN">Sage</url> or
+              <url href="http://wolfr.am/y4gIgX">Wolfram Alpha</url> to plot the vector fields</fn>
+            </p>
+          </li>
 
-        <p>
-          [Suggestion: Leave space after each sub-exercise for another computation (the curl).]
-          <ol>
-            <li>
-              <p>
-                <m>\vec{F}(x,y)=(x,y)</m>
-              </p>
-            </li>
+          <li>
+            <p>
+              find the divergence
+            </p>
+          </li>
+        </ol>
+      </p>
 
-            <li>
-              <p>
-                <m>\vec{F}(x,y)=(y,x)</m>
-              </p>
-            </li>
+      <p>
+        [Suggestion: Leave space after each sub-exercise for another computation (the curl).]
+        <ol>
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x,y)</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>\vec{F}(x,y)=(x,x+y)</m>
-              </p>
-            </li>
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(y,x)</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>\vec{F}(x,y)=(x-y^2+2, xy+y)</m>
-              </p>
-            </li>
-          </ol>
-        </p>
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x,x+y)</m>
+            </p>
+          </li>
 
-        <p>
-          Can you make a general statement about how a 2-D vector field looks for it to have non-zero divergence?
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x-y^2+2, xy+y)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        Can you make a general statement about how a 2-D vector field looks for it to have non-zero divergence?
+      </p>
+    </exploration>
+
     <p>
       Now let's take a look at some 3-D fields. You should still plot them in Sage or Wolfram-Alpha, but don't worry about sketching a plot (unless you want to).
     </p>
-    <exercise xml:id="x3d_div">
-      <statement>
-        <p>
-          Compute the divergence for each of the following vector fields. [Suggestion: Again leave space]
-          <ol>
-            <li>
-              <p>
-                <m>\vec F(x,y,z) = \left(z,x,y \right)</m>
-              </p>
-            </li>
 
-            <li>
-              <p>
-                <m>\vec F(x,y,z) = \left(-y+x,x,z \right)</m>
-              </p>
-            </li>
+    <exploration xml:id="x3d_div">
+      <p>
+        Compute the divergence for each of the following vector fields. [Suggestion: Again leave space]
+        <ol>
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(z,x,y \right)</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>\vec F(x,y,z) = \left(x^2+y^2,x^2+z^2,y^2+z^2 \right)</m>
-              </p>
-            </li>
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(-y+x,x,z \right)</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>\vec F(x,y,z) = \left(x^3+y,\tan^{-1}(1+y^2) + z^2,e^{z^2+\sin z} -2x\right)</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(x^2+y^2,x^2+z^2,y^2+z^2 \right)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(x^3+y,\tan^{-1}(1+y^2) + z^2,e^{z^2+\sin z} -2x\right)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
   </subsection>
 
   <subsection>
@@ -178,56 +177,56 @@
     <p>
       Let's take a look now at several vector fields, to get intuition about what curl is really telling us.
     </p>
-    <exercise xml:id="x2dcurl">
-      <statement>
-        <p>
-          These are the same vector fields from <xref ref="x2d_div">Exercise</xref>.
-        </p>
 
-        <p>
-          Find the curl
-        </p>
+    <exploration xml:id="x2dcurl">
+      <p>
+        These are the same vector fields from <xref ref="x2d_div">Exercise</xref>.
+      </p>
 
-        <p>
-          EXTRA<fn>See <url href="http://mathinsight.org/curl_components">MathInsight.org</url> for a really nice animation of the curl of a vector field.</fn> for each vector field:
-          <ol>
-            <li>
-              <p>
-                <m>\vec{F}(x,y)=(x,y)</m>
-              </p>
-            </li>
+      <p>
+        Find the curl
+      </p>
 
-            <li>
-              <p>
-                <m>\vec{F}(x,y)=(y,x)</m>
-              </p>
-            </li>
+      <p>
+        EXTRA<fn>See <url href="http://mathinsight.org/curl_components">MathInsight.org</url> for a really nice animation of the curl of a vector field.</fn> for each vector field:
+        <ol>
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x,y)</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>\vec{F}(x,y)=(x,x+y)</m>
-              </p>
-            </li>
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(y,x)</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>\vec{F}(x,y)=(x-y^2+2, xy+y)</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x,x+y)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec{F}(x,y)=(x-y^2+2, xy+y)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       You should have noticed that for all of the above vector-fields, the curl was only in the <m>z</m>-direction. Let's do a quick problem to explore this.
     </p>
-    <exercise xml:id="show2dcurl">
-      <statement>
-        <p>
-          For a vector field <m>\vec{F}= ( M(x,y), N(x,y), 0 )</m>, compute <m>curl( \vec{F})</m>. That is, assume that <m>P(x,y,z)=0</m>
-        </p>
-      </statement>
-    </exercise>
+
+    <exploration xml:id="show2dcurl">
+      <p>
+        For a vector field <m>\vec{F}= ( M(x,y), N(x,y), 0 )</m>, compute <m>curl( \vec{F})</m>. That is, assume that <m>P(x,y,z)=0</m>
+      </p>
+    </exploration>
+
     <p>
       One common way to quickly decide if a 2-D field has a curl at a point is to imagine placing a paddle-wheel (like on an old-fashion water mill or steamboat) in the vector-field. If the paddle would spin, then there's a curl. If it spins counter-clockwise then the curl is positive. You can see this idea illustrated by visiting <url href="http://www.math.harvard.edu/~knill/pitf/2dcurldiv.html">this site</url>.
     </p>
@@ -235,37 +234,36 @@
     <p>
       We will use this 2-D version to rewrite Green's Theorem in the following section. Let's get a little more practice computing curl. This time, the vector fields are all three-dimensional. You should still plot them in Sage or Wolfram-Alpha, but don't worry about sketching a plot (unless you want to).
     </p>
-    <exercise xml:id="x3dcurl">
-      <statement>
-        <p>
-          Compute the curl for each of the following vector fields. You can add these in the spaces after <xref ref="x3d_div">Exercise</xref>.
-          <ol>
-            <li>
-              <p>
-                <m>\vec F(x,y,z) = \left(z,x,y \right)</m>
-              </p>
-            </li>
 
-            <li>
-              <p>
-                <m>\vec F(x,y,z) = \left(-y+x,x,z \right)</m>
-              </p>
-            </li>
+    <exploration xml:id="x3dcurl">
+      <p>
+        Compute the curl for each of the following vector fields. You can add these in the spaces after <xref ref="x3d_div">Exercise</xref>.
+        <ol>
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(z,x,y \right)</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>\vec F(x,y,z) = \left(x^2+y^2,x^2+z^2,y^2+z^2 \right)</m>
-              </p>
-            </li>
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(-y+x,x,z \right)</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>\vec F(x,y,z) = \left(x^3+y,\tan^{-1}(1+y^2) + z^2,e^{z^2+\sin z} -2x\right)</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(x^2+y^2,x^2+z^2,y^2+z^2 \right)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\vec F(x,y,z) = \left(x^3+y,\tan^{-1}(1+y^2) + z^2,e^{z^2+\sin z} -2x\right)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
   </subsection>
 </section>

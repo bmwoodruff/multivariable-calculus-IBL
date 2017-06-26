@@ -62,7 +62,6 @@ As you create this review guide, consider the following:
 \DeclareMathOperator{\curl}{curl}
 \newcommand{\blank}[1]{[14pt]{\rule{#1}{1pt}}}
 \newcommand{\vp}{^{\,\prime}}
-\newcommand{\wolfA}{\href{http://www.wolframalpha.com}{Wolfram Alpha} }
 </macros>
 
 <latex-image-preamble>

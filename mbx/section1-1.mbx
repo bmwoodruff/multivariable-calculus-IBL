@@ -6,20 +6,19 @@
     <p>
       We'll need to know how to graph by hand some basic functions. If you have not spent much time graphing functions by hand before this class, then you should spend some time graphing the following functions by hand. When we start drawing functions in 3D, we'll have to piece together infinitely many 2D graphs. Knowing the basic shape of graphs will help us do this.
     </p>
-    <exercise xml:id="firstreview">
-      <statement>
-        <p>
-          Provide a rough sketch of the following functions, showing their basic shapes:
-          <me>
-            \displaystyle x^2, x^3, x^4, \frac{1}{x}, \sin x, \cos x, \tan x, \sec x, \arctan x, e^x,\ln x.
-          </me>
-        </p>
 
-        <p>
-          Then use a computer algebra system, such as <url href="http://http://www.wolframalpha.com/">Wolfram Alpha</url>, to verify your work. I suggest Wolfram Alpha, because it is now built into Mathematica 8.0+. If you can learn to use Wolfram Alpha, you will be able to use Mathematica. EXTRA<fn>\valpo{You are also welcome to use Maple. On the surface both Mathematica and Maple are very similar.}</fn>
-        </p>
-      </statement>
-    </exercise>
+    <exploration xml:id="firstreview">
+      <p>
+        Provide a rough sketch of the following functions, showing their basic shapes:
+        <me>
+          \displaystyle x^2, x^3, x^4, \frac{1}{x}, \sin x, \cos x, \tan x, \sec x, \arctan x, e^x,\ln x.
+        </me>
+      </p>
+
+      <p>
+        Then use a computer algebra system, such as <url href="http://http://www.wolframalpha.com/">Wolfram Alpha</url>, to verify your work. I suggest Wolfram Alpha, because it is now built into Mathematica 8.0+. If you can learn to use Wolfram Alpha, you will be able to use Mathematica. EXTRA<fn>\valpo{You are also welcome to use Maple. On the surface both Mathematica and Maple are very similar.}</fn>
+      </p>
+    </exploration>
   </subsection>
 
   <subsection>
@@ -53,46 +52,44 @@
         </li>
       </ul>
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See sections 3.2-3.6 for more practice with derivatives. The later problems in 3.6 review of most of the entire differentiation chapter.}
-            \stewarts{See sections 3.1-3.6 for more practice with derivatives.}
-            </fn>
-          Compute the derivative of <m>e^{\sec x}\cos(\tan(x)+\ln(x^2+4))</m>.
-        </p>
 
-        <p>
-          Show each step in your computation, making sure to show what rules you used.
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          If <m>y(p) = \ds \frac{e^{p^3}\cot(4p+7)}{\tan^{-1}(p^4)}</m> find <m>dy/dp</m>.
-        </p>
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See sections 3.2-3.6 for more practice with derivatives. The later problems in 3.6 review of most of the entire differentiation chapter.}
+          \stewarts{See sections 3.1-3.6 for more practice with derivatives.}
+          </fn>
+        Compute the derivative of <m>e^{\sec x}\cos(\tan(x)+\ln(x^2+4))</m>.
+      </p>
 
-        <p>
-          Again, show each step in your computation, making sure to show what rules you used.
-        </p>
-      </statement>
-    </exercise>
+      <p>
+        Show each step in your computation, making sure to show what rules you used.
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        If <m>y(p) = \ds \frac{e^{p^3}\cot(4p+7)}{\tan^{-1}(p^4)}</m> find <m>dy/dp</m>.
+      </p>
+
+      <p>
+        Again, show each step in your computation, making sure to show what rules you used.
+      </p>
+    </exploration>
+
     <p>
       The following problem will help you review some of your trigonometry, inverse functions, as well as implicit differentiation.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See sections 3.7-3.9 for more examples involving inverse trig functions and implicit differentiation.}
-            \stewarts{See section 3.5 for more examples involving inverse trig functions and implicit differentiation.}
-            </fn>
-          Use implicit differentiation to explain why the derivative of <m>y=\arcsin x</m> is <m>\ds y'=\frac{1}{\sqrt{1-x^2}}</m>. [Rewrite <m>y=\arcsin x</m> as <m>x=\sin y</m>, differentiate both sides, solve for <m>y'</m>, and then write the answer in terms of <m>x</m>].
-        </p>
-      </statement>
-    </exercise>
+
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See sections 3.7-3.9 for more examples involving inverse trig functions and implicit differentiation.}
+          \stewarts{See section 3.5 for more examples involving inverse trig functions and implicit differentiation.}
+          </fn>
+        Use implicit differentiation to explain why the derivative of <m>y=\arcsin x</m> is <m>\ds y'=\frac{1}{\sqrt{1-x^2}}</m>. [Rewrite <m>y=\arcsin x</m> as <m>x=\sin y</m>, differentiate both sides, solve for <m>y'</m>, and then write the answer in terms of <m>x</m>].
+      </p>
+    </exploration>
   </subsection>
 
   <subsection>
@@ -104,39 +101,35 @@
       (3) integration by using software.
       There are many other integration techniques, but we will not focus on them. If you are trying to compute an integral to get a number while on the job, then software will almost always be the tool you use. As we develop new ideas in this and future classes (in engineering, physics, statistics, math), you'll find that <m>u</m>-substitution and integrations-by-parts show up so frequently that knowing when and how to apply them becomes crucial.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{For practice with <m>u</m>-substitution, see section 5.5 and 5.6.  
-           For practice with integration by parts, see section 8.2.}
-            \stewarts{For practice with <m>u</m>-substitution, see sections 5.5. 
-           For practice with integration by parts, see section 7.1}
-            </fn>
-          Compute <m>\ds\int x\sqrt{x^2+4}dx</m>.
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Compute <m>\ds\int x\sin 2x dx</m>.
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Compute <m>\ds \int \arctan x dx</m>.
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Compute <m>\ds \int x^2 e^{3x} dx</m>.
-        </p>
-      </statement>
-    </exercise>
+
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{For practice with <m>u</m>-substitution, see section 5.5 and 5.6.  
+         For practice with integration by parts, see section 8.2.}
+          \stewarts{For practice with <m>u</m>-substitution, see sections 5.5. 
+         For practice with integration by parts, see section 7.1}
+          </fn>
+        Compute <m>\ds\int x\sqrt{x^2+4}dx</m>.
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        Compute <m>\ds\int x\sin 2x dx</m>.
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        Compute <m>\ds \int \arctan x dx</m>.
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        Compute <m>\ds \int x^2 e^{3x} dx</m>.
+      </p>
+    </exploration>
   </subsection>
 </section>

@@ -33,78 +33,78 @@
   <p>
     Remember: When we talk about speed and velocity it is importation to recognize their differences. Velocity has direction and (often components) while speed is the total movement or the magnitude of the velocity.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=jZpAU2T6iI4&amp;list=PL30EE81142B1ED1F0&amp;index=3&amp;feature=plpp_video">YouTube video</url>.</fn>
-        A space ship travels through the galaxy. Let <m>\vec r(t) = (x,y,z)</m>
-        EXTRA<fn>Technically, we should write <m>\vec r(t) = (x(t),y(t),z(t))</m>. However, we already know that <m>x</m>, <m>y</m>, and <m>z</m> depend on <m>t</m>, hence we'll just leave the dependence on <m>t</m> off.</fn>be the position of the space ship at time <m>t</m>, with the earth at the origin <m>(0,0,0)</m>.
-        <ol>
-          <li>
-            <p>
-              What are the velocity and speed of the space ship at time <m>t</m>? You answers should involve some derivatives (such as <m>\frac{dx}{dt}</m>).
-            </p>
-          </li>
 
-          <li>
-            <p>
-              If the space ship travels for a really small time <m>dt</m>, then the speed is about constant. Since distance is speed times time, about how much distance (we'll call it <m>ds</m>) will the space ship travel in this short amount of time?
-            </p>
-          </li>
-
-          <li xml:id="arc_length2" >
-
+  <exploration>
+    <p>
+      EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=jZpAU2T6iI4&amp;list=PL30EE81142B1ED1F0&amp;index=3&amp;feature=plpp_video">YouTube video</url>.</fn>
+      A space ship travels through the galaxy. Let <m>\vec r(t) = (x,y,z)</m>
+      EXTRA<fn>Technically, we should write <m>\vec r(t) = (x(t),y(t),z(t))</m>. However, we already know that <m>x</m>, <m>y</m>, and <m>z</m> depend on <m>t</m>, hence we'll just leave the dependence on <m>t</m> off.</fn>be the position of the space ship at time <m>t</m>, with the earth at the origin <m>(0,0,0)</m>.
+      <ol>
+        <li>
           <p>
-            As the ship travels from time <m>t=a</m> to time <m>t=b</m>, explain why the distance traveled (the arc length of the path followed) is
-            <me>
-              s=\int_a^b |\vec r '(t)|\ dt = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2+\left(\frac{dz}{dt}\right)^2}\ dt .
-            </me>
+            What are the velocity and speed of the space ship at time <m>t</m>? You answers should involve some derivatives (such as <m>\frac{dx}{dt}</m>).
           </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        </li>
+
+        <li>
+          <p>
+            If the space ship travels for a really small time <m>dt</m>, then the speed is about constant. Since distance is speed times time, about how much distance (we'll call it <m>ds</m>) will the space ship travel in this short amount of time?
+          </p>
+        </li>
+
+        <li xml:id="arc_length2" >
+
+        <p>
+          As the ship travels from time <m>t=a</m> to time <m>t=b</m>, explain why the distance traveled (the arc length of the path followed) is
+          <me>
+            s=\int_a^b |\vec r '(t)|\ dt = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2+\left(\frac{dz}{dt}\right)^2}\ dt .
+          </me>
+        </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     In all our work that follows, we want to consider space curves that have nice smooth paths. What does this mean? We want to be able to compute tangent vectors at any point, so we will require that a parametrization <m>\vec r</m> be differentiable. However, this isn't enough.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        We've encountered the polar curve <m>r = 1-\sin\theta</m> before (we called it a cardioid, and it looked like heart). Recall that we can switch from polar to Cartesian using the coordinate transformation <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>.
-        <ol>
-          <li>
-            <p>
-              Draw the curve.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Give the parametrization of this curve: <m>\vec r(\theta) = ((1-\sin\theta)\cos\theta, ?)</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
+  <exploration>
+    <p>
+      We've encountered the polar curve <m>r = 1-\sin\theta</m> before (we called it a cardioid, and it looked like heart). Recall that we can switch from polar to Cartesian using the coordinate transformation <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>.
+      <ol>
+        <li>
+          <p>
+            Draw the curve.
+          </p>
+        </li>
 
-      <p>
-        The parametrization is completely differentiable.
-        <ol type="resume">
-          <li>
-            <p>
-              Find <m>\dfrac{d\vec r}{d\theta}</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Give the parametrization of this curve: <m>\vec r(\theta) = ((1-\sin\theta)\cos\theta, ?)</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
 
-          <li>
-            <p>
-              You should notice a sharp cusp in the graph. At what <m>\theta</m> does this cusp occur?  What is the value of the derivative <m>\dfrac{d\vec r}{d\theta}</m> at this value of <m>\theta</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+    <p>
+      The parametrization is completely differentiable.
+      <ol type="resume">
+        <li>
+          <p>
+            Find <m>\dfrac{d\vec r}{d\theta}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            You should notice a sharp cusp in the graph. At what <m>\theta</m> does this cusp occur?  What is the value of the derivative <m>\dfrac{d\vec r}{d\theta}</m> at this value of <m>\theta</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     We'd like to avoid paths that contain a cusp, because at a cusp the direction of motion changes rather abruptly. This can happen physically, but it requires the speed of an object to reach zero, the object stops moving, and then the path changes direction. The fact that the speed reaches zero will mean we can't divide by it in our work that follows. To avoid this, we make a definition that requires the path is differentiable, and the velocity is never zero.
   </p>
@@ -118,49 +118,48 @@
     </statement>
   </definition>
 
-  <exercise xml:id="prob_basic_helix">
-    <statement>
-      <p>
-        EXTRA<fn>Watch TWO <url href="http://www.youtube.com/watch?v=m25oxYTfXfU&amp;list=PL30EE81142B1ED1F0&amp;index=4&amp;feature=plpp_video">YouTube Videos</url> (Arc-Length Parameter and Unit Tangent Vector).  </fn>
-        EXTRA<fn>
-        \thomasee{See 13.3: 1-10 for more practice.}
-        \stewarts{See 13.3:1-6 (finding length) and 13.3:17-20 (finding a unit tangent) for more practice. For 17-20, just find the unit tangent vector (for now)}
-        </fn>
-        Consider the helical space curve <m>C</m> with parameterization <m>\vec r(t)=(\cos t, \sin t, t)</m>.
-        <ol>
-          <li>
-            <p>
-              Is C a smooth curve?
-            </p>
-          </li>
+  <exploration xml:id="prob_basic_helix">
+    <p>
+      EXTRA<fn>Watch TWO <url href="http://www.youtube.com/watch?v=m25oxYTfXfU&amp;list=PL30EE81142B1ED1F0&amp;index=4&amp;feature=plpp_video">YouTube Videos</url> (Arc-Length Parameter and Unit Tangent Vector).  </fn>
+      EXTRA<fn>
+      \thomasee{See 13.3: 1-10 for more practice.}
+      \stewarts{See 13.3:1-6 (finding length) and 13.3:17-20 (finding a unit tangent) for more practice. For 17-20, just find the unit tangent vector (for now)}
+      </fn>
+      Consider the helical space curve <m>C</m> with parameterization <m>\vec r(t)=(\cos t, \sin t, t)</m>.
+      <ol>
+        <li>
+          <p>
+            Is C a smooth curve?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Find the length of this space curve for <m>t\in[0,2\pi]</m> using the formula in <xref ref="arc_length2"></xref>. Compute any integrals.
-            </p>
-          </li>
+        <li>
+          <p>
+            Find the length of this space curve for <m>t\in[0,2\pi]</m> using the formula in <xref ref="arc_length2"></xref>. Compute any integrals.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Now find the length of the space curve from <m>t=0</m> to time <m>t=t</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Now find the length of the space curve from <m>t=0</m> to time <m>t=t</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Give a vector tangent to the curve at <m>t=2\pi</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Give a vector tangent to the curve at <m>t=2\pi</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Now give a vector of length 1 that is tangent to the curve at <m>t=2\pi</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Now give a vector of length 1 that is tangent to the curve at <m>t=2\pi</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     In the previous exercise, you developed two big ideas. You showed how to obtain a unit tangent vector to a curve. You also developed a formula for the length of a curve from time <m>t=0</m> to any time <m>t=t</m>. This gives us a function <m>s(t)</m> that tells us how far we have traveled after <m>t</m> seconds. We can now predict distance traveled from time. Predicting the future is powerful. Before moving on, let's examine the derivative of <m>s(t)</m>, because it's a quantity we already know.
   </p>
@@ -179,32 +178,32 @@
   </p>
 
   </review>
-  <exercise xml:id="fundamental_theorem_of_calculus_as_it_applies_to_arc_length_parameter">
-    <statement>
-      <p>
-        EXTRA<fn>You can remember <m>\ds\frac{ds}{dt} = \left|\frac {d\vec r}{dt} \right|</m> as follows. We use the differential <m>ds</m> to represents a change in distance, and <m>dt</m> represents a change in time. So the speed of an object is the change in distance <m>ds</m> over the change in time <m>dt</m>. </fn>
-        Let <m>\vec r(t)=(x,y,z)</m> be a parametrization of a smooth space curve. Let <m>\ds s(t)=\int_0^t \left|\frac {d\vec r}{d\tau} \right|\ d\tau</m>.
-        <ol>
-          <li>
-            <p>
-              Explain why <m>\ds\frac{ds}{dt} = \left|\frac {d\vec r}{dt} \right|</m>, the speed.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Now explain why <m>s(t)</m> is an increasing function.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+  <exploration xml:id="fundamental_theorem_of_calculus_as_it_applies_to_arc_length_parameter">
+    <p>
+      EXTRA<fn>You can remember <m>\ds\frac{ds}{dt} = \left|\frac {d\vec r}{dt} \right|</m> as follows. We use the differential <m>ds</m> to represents a change in distance, and <m>dt</m> represents a change in time. So the speed of an object is the change in distance <m>ds</m> over the change in time <m>dt</m>. </fn>
+      Let <m>\vec r(t)=(x,y,z)</m> be a parametrization of a smooth space curve. Let <m>\ds s(t)=\int_0^t \left|\frac {d\vec r}{d\tau} \right|\ d\tau</m>.
+      <ol>
+        <li>
+          <p>
+            Explain why <m>\ds\frac{ds}{dt} = \left|\frac {d\vec r}{dt} \right|</m>, the speed.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Now explain why <m>s(t)</m> is an increasing function.
+          </p>
+        </li>
+      </ol>
+    </p>
     <hint>
       <p>
         Look up the fundamental theorem of calculus. To answer why is <m>s</m> increasing, what does <q>smooth</q> mean?
       </p>
     </hint>
-  </exercise>
+  </exploration>
+
   <p>
     We'll call <m>\ds s(t)=\int_0^t \left|\frac {d\vec r}{d\tau}\right|\ d\tau</m> the arc length parameter. It tells us how far we've have traveled after <m>t</m> seconds. We can now predict distance traveled from time elapsed. Because <m>s(t)</m> is an increasing function, we can also invert this process and give time elapsed from distance traveled. This means we could compute derivatives with respect to <m>s</m> instead of <m>t</m>.
     When we take a derivative with respect to <m>s</m>, we ask how much a curve changes if we increase length by 1 unit, instead of increasing time by 1 unit. We'll write
@@ -212,47 +211,47 @@
       \ds\frac{d\vec r}{ds} =\ds\frac{d\vec r/dt}{ds/dt} = \frac{d\vec r/dt}{|d\vec r/dt|} = \frac{\vec v}{|\vec{v}|}.
     </me>
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-        \thomasee{See 13.3: 11-14 for more practice.}
-        \stewarts{TBD?}
-        </fn>Consider again the helical space curve <m>\vec r(t)=(\cos t, \sin t, t)</m>. We've shown that <m>s(t) = t\sqrt{2}</m> in <xref ref="prob_basic_helix"></xref>.
-        <ol>
-          <li>
-            <p>
-              Solve for <m>t</m> in terms of <m>s</m> (so find the inverse of <m>s(t)</m>).
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Use your answer to determine how much time has elapsed if you've travelled 4 units of distance.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>
+      \thomasee{See 13.3: 11-14 for more practice.}
+      \stewarts{TBD?}
+      </fn>Consider again the helical space curve <m>\vec r(t)=(\cos t, \sin t, t)</m>. We've shown that <m>s(t) = t\sqrt{2}</m> in <xref ref="prob_basic_helix"></xref>.
+      <ol>
+        <li>
+          <p>
+            Solve for <m>t</m> in terms of <m>s</m> (so find the inverse of <m>s(t)</m>).
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Compute <m>D\vec r(t)</m> and <m>Dt(s)</m>.  You should have a 2 by 1 matrix, and a 1 by 1 matrix.
-            </p>
-          </li>
+        <li>
+          <p>
+            Use your answer to determine how much time has elapsed if you've travelled 4 units of distance.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Use the chain rule to compute the derivative of <m>\vec r(t(s))</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute <m>D\vec r(t)</m> and <m>Dt(s)</m>.  You should have a 2 by 1 matrix, and a 1 by 1 matrix.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Compute the length <m>\left|\ds\frac{d\vec r}{ds}\right|</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Use the chain rule to compute the derivative of <m>\vec r(t(s))</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Compute the length <m>\left|\ds\frac{d\vec r}{ds}\right|</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     The previous exercise motivates the following definition.
   </p>
@@ -276,41 +275,41 @@
   <p>
     As we progress through this unit, one of our key goals is to learn new notation. We've got position <m>\vec r</m>, velocity <m>\vec v</m>, speed <m>v</m> or <m>ds/dt</m>, acceleration <m>\vec a</m>, the unit tangent vector <m>\vec T</m>, and the derivative of position with respect to arc length <m>d\vec r/ds</m>. The last two are the exact same since <m>\vec T = d\vec r/ds</m>. Did you also notice that <m>ds/dt</m> and <m>v</m> are both the speed? We'll need to start realizing that the same quantity can be developed in many ways.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-        \thomasee{See 13.3: 1-10 for more practice.}
-        \stewarts{TBD?}
-        </fn>
-        Suppose an object moves along the space curve given by <m>\vec r(t)=(a\cos t,a\sin t,b t)</m>.
-        <ol>
-          <li>
-            <p>
-              Find the object's velocity and speed. What is <m>ds/dt</m>?
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Compute <m>\frac{d\vec r}{ds}</m>, the derivative of <m>\vec r</m> with respect to arc length. Leave your answer in terms of <m>t</m>.
-              <hint>
+  <exploration>
+    <p>
+      EXTRA<fn>
+      \thomasee{See 13.3: 1-10 for more practice.}
+      \stewarts{TBD?}
+      </fn>
+      Suppose an object moves along the space curve given by <m>\vec r(t)=(a\cos t,a\sin t,b t)</m>.
+      <ol>
+        <li>
+          <p>
+            Find the object's velocity and speed. What is <m>ds/dt</m>?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Compute <m>\frac{d\vec r}{ds}</m>, the derivative of <m>\vec r</m> with respect to arc length. Leave your answer in terms of <m>t</m>.
+            <hint>
               <p>
                 Divide the top and bottom by <m>dt</m> and then compute <m>d\vec r/dt</m> and <m>ds/dt</m>.
               </p>
-              </hint>
-            </p>
-          </li>
+            </hint>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              State the unit tangent vector <m>\vec T(t)</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            State the unit tangent vector <m>\vec T(t)</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     As we progress in this chapter, we'll be computing more derivatives with respect to <m>s</m>, instead of <m>t</m>. Did you notice in the previous exercise that to compute a derivative with respect to <m>s</m>, you just compute the regular derivative with respect to <m>t</m>, and then divide by the speed. Please do the following review exercise to make sure you've got down what <m>\frac{d}{ds}</m> means.
   </p>

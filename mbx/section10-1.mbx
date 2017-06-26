@@ -12,111 +12,111 @@
     <p>
       Recall from the previous unit that the derivative <m>Df</m> of a function <m>f:\mathbb{R}^n\to\mathbb{R}</m> (one output dimension) is called the gradient of <m>f</m>, and written <m>\vec \nabla f</m>, when we want to emphasize that the derivative is a vector field.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>You'll want a computer to help you construct the graphs, particularly <m>h</m>. \bmw{Please use the Mathematica introduction in Brainhoney.} You could use Wolfram Alpha (use the links in the function chapter if you forgot how to graph).</fn>
-          Consider three functions:
-          <ul>
-            <li>
-              <p>
-                <m>f(x,y)=9-x^2-y^2</m>
-              </p>
-            </li>
 
-            <li>
-              <p>
-                <m>g(x,y)=2x-y</m>
-              </p>
-            </li>
+    <exploration>
+      <p>
+        EXTRA<fn>You'll want a computer to help you construct the graphs, particularly <m>h</m>. \bmw{Please use the Mathematica introduction in Brainhoney.} You could use Wolfram Alpha (use the links in the function chapter if you forgot how to graph).</fn>
+        Consider three functions:
+        <ul>
+          <li>
+            <p>
+              <m>f(x,y)=9-x^2-y^2</m>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>h(x,y)=\sin x\cos y</m>
-              </p>
-            </li>
-          </ul>
-        </p>
-        <hint>
+          <li>
+            <p>
+              <m>g(x,y)=2x-y</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>h(x,y)=\sin x\cos y</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+      <hint>
         <p>
           If you need a reminder of how to draw level curves look back at <xref ref="prob_intro_to_contour_plots">exercise</xref>
         </p>
-        </hint>
-        <ol>
-          <li>
-            <p>
-              Compute <m>\vec \nabla f(x,y)</m>.  Then draw both <m>\vec \nabla f</m> and several level curves of <m>f</m> on the same axes.  EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxljLEOwiAURXe-oltBHybSyeFtjV_gXIIIEYM-QqmWvxejm8vNyc3J8XyFKvAg10nJOik2-u_Dpdqs0LWtgrGElh6FlqxTpMI9NEkOMAjg9Qc-xIhHE2cH9m4S9jdXerAUKZ9NxlNenGBpi5-AfjpbKGsfXLzw0UP312vubr7Si5s5NVlnUwLhXrwBPnA2AQ">Sage</url>.  You can modify these commands to help in the plots below too.</fn>
-            </p>
-          </li>
+      </hint>
+      <ol>
+        <li>
+          <p>
+            Compute <m>\vec \nabla f(x,y)</m>.  Then draw both <m>\vec \nabla f</m> and several level curves of <m>f</m> on the same axes.  EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxljLEOwiAURXe-oltBHybSyeFtjV_gXIIIEYM-QqmWvxejm8vNyc3J8XyFKvAg10nJOik2-u_Dpdqs0LWtgrGElh6FlqxTpMI9NEkOMAjg9Qc-xIhHE2cH9m4S9jdXerAUKZ9NxlNenGBpi5-AfjpbKGsfXLzw0UP312vubr7Si5s5NVlnUwLhXrwBPnA2AQ">Sage</url>.  You can modify these commands to help in the plots below too.</fn>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Compute <m>\vec \nabla g(x,y)</m>.  Then draw both <m>\vec \nabla g</m> and several level curves of <m>g</m> on the same axes.
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute <m>\vec \nabla g(x,y)</m>.  Then draw both <m>\vec \nabla g</m> and several level curves of <m>g</m> on the same axes.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Compute <m>\vec \nabla h(x,y)</m>.  \valpo{You do not need to plot this one, I'll show you the plot.}
-                 \bmw{Then draw both <m>\vec \nabla h</m> and several level curves of <m>h</m> on the same axes.}
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute <m>\vec \nabla h(x,y)</m>.  \valpo{You do not need to plot this one, I'll show you the plot.}
+               \bmw{Then draw both <m>\vec \nabla h</m> and several level curves of <m>h</m> on the same axes.}
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What relationships do you see between the gradient vector field and level curves?
-            </p>
-          </li>
-        </ol>
-        <p>
-          \bmw{When you present in class, be prepared to provide rough sketches of the level curves and gradients of each function.}
-        </p>
-      </statement>
-    </exercise>
+        <li>
+          <p>
+            What relationships do you see between the gradient vector field and level curves?
+          </p>
+        </li>
+      </ol>
+      <p>
+        \bmw{When you present in class, be prepared to provide rough sketches of the level curves and gradients of each function.}
+      </p>
+    </exploration>
+
     <p>
       The next few exercises will focus on explaining why the relationships you saw are always true.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          Suppose <m>\vec r(t)</m> is a level curve of <m>f(x,y)</m>.
-          <ol>
-            <li>
-              <p>
-                Suppose you know that at <m>t=0</m>, the value of <m>f</m> at <m>\vec r(0)</m> is 7.  What is the value of <m>f</m> at <m>\vec r(1)</m>?
-                <hint>
+
+    <exploration>
+      <p>
+        Suppose <m>\vec r(t)</m> is a level curve of <m>f(x,y)</m>.
+        <ol>
+          <li>
+            <p>
+              Suppose you know that at <m>t=0</m>, the value of <m>f</m> at <m>\vec r(0)</m> is 7.  What is the value of <m>f</m> at <m>\vec r(1)</m>?
+              <hint>
                 <p>
                   What does it mean to be on a level curve?
                 </p>
-                </hint>
-              </p>
-            </li>
+              </hint>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                As you move along the level curve <m>\vec r</m>, how much does <m>f</m> change?  What must <m>\ds\frac{df}{dt}</m> equal?
-              </p>
-            </li>
+          <li>
+            <p>
+              As you move along the level curve <m>\vec r</m>, how much does <m>f</m> change?  What must <m>\ds\frac{df}{dt}</m> equal?
+            </p>
+          </li>
 
-            <li>
-              <p>
-                At points along the level curve <m>\vec r</m>, we have the composite function <m>f(\vec r(t))</m>.  Compute the derivative <m>\ds\frac{df}{dt}</m> using the chain rule.
-              </p>
-            </li>
+          <li>
+            <p>
+              At points along the level curve <m>\vec r</m>, we have the composite function <m>f(\vec r(t))</m>.  Compute the derivative <m>\ds\frac{df}{dt}</m> using the chain rule.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Use your work from the previous parts to explain why the gradient always meets the level curve at a 90<m>^\circ</m> angle.
-              </p>
-            </li>
-          </ol>
-        </p>
+          <li>
+            <p>
+              Use your work from the previous parts to explain why the gradient always meets the level curve at a 90<m>^\circ</m> angle.
+            </p>
+          </li>
+        </ol>
+      </p>
 
-        <p>
-          We say that the gradient is <em>normal</em> to level curves (i.e., a gradient vector is orthogonal to the tangent vector of the curve).
-        </p>
-      </statement>
-    </exercise>
+      <p>
+        We say that the gradient is <em>normal</em> to level curves (i.e., a gradient vector is orthogonal to the tangent vector of the curve).
+      </p>
+    </exploration>
+
     <p>
       In the derivative chapter, we extended differential notation from <m>dy=f' dx</m> to <m>d\vec y = D\vec f d\vec x</m>. The key idea is that a small change in the output variables is approximated by the product of the derivative and a small change in the input variables. As a quick refresher, if we have the function <m>z=f(x,y)</m>, then differential notation states that
       <me>
@@ -137,105 +137,104 @@
     </p>
 
     </review>
-    <exercise>
-      <statement>
+
+    <exploration>
+      <p>
+        Suppose the temperature at a point in the plane is given by the function {<m>T(x,y)=x^2-xy-y^2</m>} degrees Fahrenheit. A particle is at <m>P=(2,3)</m>.
+      </p>
+      <ol>
+      <li>
         <p>
-          Suppose the temperature at a point in the plane is given by the function {<m>T(x,y)=x^2-xy-y^2</m>} degrees Fahrenheit. A particle is at <m>P=(2,3)</m>.
+          Use differentials to estimate the change in temperature if the particle moves 1 unit in the direction of <m>\vec u=\left(3,4\right)</m>.
         </p>
-        <ol>
-        <li>
-          <p>
-            Use differentials to estimate the change in temperature if the particle moves 1 unit in the direction of <m>\vec u=\left(3,4\right)</m>.
-          </p>
+        <ol type="labelalph">
+          <li>
+            <p>
+              Find the unit vector <m>\hat{u}</m>. If the particle moves 1 unit in the direction of <m>\vec{u}</m> what is <m>dx</m> and <m>dy</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find <m>D\vec{T}(x,y)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Estimate the change using differential notation (set-up the exercise, then compute).
+            </p>
+          </li>
+        </ol>
+      </li>
+
+      <li>
+        <p>
+          What is the actual change in temperature if the particle moves 1 unit in the direction of <m>\vec u=\left(3,4\right)</m>?
           <ol type="labelalph">
             <li>
               <p>
-                Find the unit vector <m>\hat{u}</m>. If the particle moves 1 unit in the direction of <m>\vec{u}</m> what is <m>dx</m> and <m>dy</m>?
+                What is the particle's new position?
               </p>
             </li>
 
             <li>
               <p>
-                Find <m>D\vec{T}(x,y)</m>
+                What is the particle's new temperature?
               </p>
             </li>
 
             <li>
               <p>
-                Estimate the change using differential notation (set-up the exercise, then compute).
-              </p>
-            </li>
-          </ol>
-        </li>
-
-        <li>
-          <p>
-            What is the actual change in temperature if the particle moves 1 unit in the direction of <m>\vec u=\left(3,4\right)</m>?
-            <ol type="labelalph">
-              <li>
-                <p>
-                  What is the particle's new position?
-                </p>
-              </li>
-
-              <li>
-                <p>
-                  What is the particle's new temperature?
-                </p>
-              </li>
-
-              <li>
-                <p>
-                  What is <m>\Delta T</m>?
-                </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Use differentials to estimate the change in temperature if the particle moves about .2 units in the direction of <m>\vec u=\left(3,4\right)</m>.
-            <hint>
-            <p>
-              Use the previous parts as guides
-            </p>
-            </hint>
-          </p>
-        </li>
-        </ol>
-      </statement>
-    </exercise>
-    <p>
-      We can define partial derivatives solely in terms of differential notation. We can define derivatives in any direction in terms of differential notation.
-    </p>
-    <exercise>
-      <statement>
-        <p>
-          Suppose that <m>z=f(x,y)</m> is a differentiable function (so the derivative is the matrix <m>\begin{bmatrix}f_x\amp f_y
-          \end{bmatrix}</m>). Remember to use differential notation in this exercise.
-          <ol>
-            <li>
-              <p>
-                If <m>(dx,dy)=(1,0)</m>, which means we've moved one unit in the <m>x</m> direction while holding <m>y</m> constant, what is <m>dz</m>?
-              </p>
-            </li>
-
-            <li>
-              <p>
-                If <m>(dx,dy)=(0,1)</m>, which means we've moved one unit in the <m>y</m> direction while holding <m>x</m> constant, what is <m>dz</m>?
-              </p>
-            </li>
-
-            <li>
-              <p>
-                Consider the direction <m>\vec u=(2,3)</m>.  Find a unit vector in the direction of <m>\vec u</m>.  If we move one unit in the direction of <m>\vec u</m>, what is <m>dz</m>? [It's all right to leave you answer as a dot product.]
+                What is <m>\Delta T</m>?
               </p>
             </li>
           </ol>
         </p>
-      </statement>
-    </exercise>
+      </li>
+
+      <li>
+        <p>
+          Use differentials to estimate the change in temperature if the particle moves about .2 units in the direction of <m>\vec u=\left(3,4\right)</m>.
+          <hint>
+            <p>
+              Use the previous parts as guides
+            </p>
+          </hint>
+        </p>
+      </li>
+      </ol>
+    </exploration>
+
+    <p>
+      We can define partial derivatives solely in terms of differential notation. We can define derivatives in any direction in terms of differential notation.
+    </p>
+
+    <exploration>
+      <p>
+        Suppose that <m>z=f(x,y)</m> is a differentiable function (so the derivative is the matrix <m>\begin{bmatrix}f_x\amp f_y
+        \end{bmatrix}</m>). Remember to use differential notation in this exercise.
+        <ol>
+          <li>
+            <p>
+              If <m>(dx,dy)=(1,0)</m>, which means we've moved one unit in the <m>x</m> direction while holding <m>y</m> constant, what is <m>dz</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>(dx,dy)=(0,1)</m>, which means we've moved one unit in the <m>y</m> direction while holding <m>x</m> constant, what is <m>dz</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Consider the direction <m>\vec u=(2,3)</m>.  Find a unit vector in the direction of <m>\vec u</m>.  If we move one unit in the direction of <m>\vec u</m>, what is <m>dz</m>? [It's all right to leave you answer as a dot product.]
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
   </introduction>
 
   <subsection>
@@ -302,80 +301,78 @@
     <p>
       Note that in the definition above, we require the vector <m>\vec u</m> to be a unit vector. If you are asked to find a directional derivative in some direction, make sure you start by finding a unit vector in that direction. We want to deal with unit vectors because when we say something has a slope of <m>m</m> units, we want to say <q>The function `rises' <m>m</m> units if we `run' <m>1</m> unit.</q>
     </p>
-    <exercise>
-      <statement>
-        <p>
-          Consider the function <m>f(x,y) = 9-x^2-y^2</m>.
-          <ol>
-            <li>
-              <p>
-                Draw several level curves of <m>f</m>.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                At the point <m>P=(2,1)</m>, place a dot on your graph. Then draw a unit vector based at <m>P</m> that points in the direction <m>\vec u=(3,4)</m> [not to the point <m>(3,4)</m>, but in the direction <m>\vec u=(3,4)</m>]. If you were to move in the direction <m>(3,4)</m>, starting from the point <m>(2,1)</m>, would the value of <m>f</m> increase or decrease?
-              </p>
-            </li>
+    <exploration>
+      <p>
+        Consider the function <m>f(x,y) = 9-x^2-y^2</m>.
+        <ol>
+          <li>
+            <p>
+              Draw several level curves of <m>f</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Find the slope of <m>f</m> at <m>P=(2,1)</m> in the direction <m>\vec u=(3,4)</m> by finding the directional derivative. This should agree with your previous answer.
-              </p>
-            </li>
+          <li>
+            <p>
+              At the point <m>P=(2,1)</m>, place a dot on your graph. Then draw a unit vector based at <m>P</m> that points in the direction <m>\vec u=(3,4)</m> [not to the point <m>(3,4)</m>, but in the direction <m>\vec u=(3,4)</m>]. If you were to move in the direction <m>(3,4)</m>, starting from the point <m>(2,1)</m>, would the value of <m>f</m> increase or decrease?
+            </p>
+          </li>
 
-            <li>
-              <p>
-                If you stand at <m>Q=(-2,3)</m> and move in the direction <m>\vec v= (1,-1)</m>, will <m>f</m> increase or decrease?  Find the directional derivative of <m>f</m> in the direction <m>\vec v=(1,-1)</m> at the point <m>Q=(-2,3)</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Recall that the dot product can be computed using <m>\vec{v} \cdot \vec{u} = |\vec{v}||\vec{u}|\cos \theta</m>. In this exercise, you'll explain why the gradient points in the direction of greatest increase.
-          <ol>
-            <li>
-              <p>
-                Rewrite the dot product formula using the vectors/variables used to compute the directional derivative. (I.E. give an alternate formula for the directional derivative)
-              </p>
-            </li>
+          <li>
+            <p>
+              Find the slope of <m>f</m> at <m>P=(2,1)</m> in the direction <m>\vec u=(3,4)</m> by finding the directional derivative. This should agree with your previous answer.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Why is the directional derivative of <m>\vec f</m> the largest when <m>\vec u</m> points in the exact same direction as <m>\vec \nabla f</m>?
-                <hint>
+          <li>
+            <p>
+              If you stand at <m>Q=(-2,3)</m> and move in the direction <m>\vec v= (1,-1)</m>, will <m>f</m> increase or decrease?  Find the directional derivative of <m>f</m> in the direction <m>\vec v=(1,-1)</m> at the point <m>Q=(-2,3)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        Recall that the dot product can be computed using <m>\vec{v} \cdot \vec{u} = |\vec{v}||\vec{u}|\cos \theta</m>. In this exercise, you'll explain why the gradient points in the direction of greatest increase.
+        <ol>
+          <li>
+            <p>
+              Rewrite the dot product formula using the vectors/variables used to compute the directional derivative. (I.E. give an alternate formula for the directional derivative)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Why is the directional derivative of <m>\vec f</m> the largest when <m>\vec u</m> points in the exact same direction as <m>\vec \nabla f</m>?
+              <hint>
                 <p>
                   What angle maximizes the cosine function?
                 </p>
-                </hint>
-              </p>
-            </li>
+              </hint>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                When <m>\vec u</m> points in the same direction as <m>\vec \nabla f</m>, show that <m>D_{\vec u}f = |\vec \nabla f|</m>. In other words, explain why the length of the gradient is precisely the slope of <m>f</m> in the direction of greatest increase (the slope in the steepest direction).
-                <hint>
+          <li>
+            <p>
+              When <m>\vec u</m> points in the same direction as <m>\vec \nabla f</m>, show that <m>D_{\vec u}f = |\vec \nabla f|</m>. In other words, explain why the length of the gradient is precisely the slope of <m>f</m> in the direction of greatest increase (the slope in the steepest direction).
+              <hint>
                 <p>
                   What do you know about <m>\vec{u}</m> and <m>\theta</m>?
                 </p>
-                </hint>
-              </p>
-            </li>
+              </hint>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Which direction points in the direction of greatest decrease?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Which direction points in the direction of greatest decrease?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
     <exploration>
       <p>
@@ -439,133 +436,130 @@
     <p>
       The next few exercises have you practice using differentials, and then obtain tangent lines and planes to curves and surfaces using differentials.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          The volume of a cylindrical can is <m>V(r,h)=\pi r^2 h</m>. Any manufacturing process has imperfections, and so building a cylindrical can with designed dimensions <m>(r,h)</m> will result in a can with dimensions <m>(r+dr,h+dh)</m>.
-          <ol>
-            <li>
-              <p>
-                Compute both <m>DV</m> (the derivative of <m>V</m>) and <m>dV</m> (the differential of <m>V</m>).
-              </p>
-            </li>
 
-            <li>
-              <p>
-                If the can is tall and slender (<m>h</m> is big, <m>r</m> is small), which will cause a larger change in volume: an error in <m>r</m> or an error in <m>h</m>? Use <m>dV</m> to explain your answer.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        The volume of a cylindrical can is <m>V(r,h)=\pi r^2 h</m>. Any manufacturing process has imperfections, and so building a cylindrical can with designed dimensions <m>(r,h)</m> will result in a can with dimensions <m>(r+dr,h+dh)</m>.
+        <ol>
+          <li>
+            <p>
+              Compute both <m>DV</m> (the derivative of <m>V</m>) and <m>dV</m> (the differential of <m>V</m>).
+            </p>
+          </li>
 
-            <li>
-              <p>
-                If the can is short and wide (like a tuna can), which will cause a larger change in volume: an error in <m>r</m> or an error in <m>h</m>? Use <m>dV</m> to explain your answer.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Consider the function <m>f(x,y)=x^2+y^2</m>. Consider the level curve <m>C</m> given by <m>f(x,y)=25</m>. Our goal is to find an equation of the tangent line to <m>C</m> at <m>P=(3,-4)</m>.
-          <ol>
-            <li>
-              <p>
-                Draw <m>C</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              If the can is tall and slender (<m>h</m> is big, <m>r</m> is small), which will cause a larger change in volume: an error in <m>r</m> or an error in <m>h</m>? Use <m>dV</m> to explain your answer.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Compute <m>\vec \nabla f</m> and add to your graph the vector <m>\vec \nabla f(P)</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
+          <li>
+            <p>
+              If the can is short and wide (like a tuna can), which will cause a larger change in volume: an error in <m>r</m> or an error in <m>h</m>? Use <m>dV</m> to explain your answer.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
-        <p>
-          We know the point <m>P=(3,-4)</m> is on the tangent line. Let <m>Q=(x,y)</m> represent another point on the tangent line.
-          <ol type="resume">
-            <li>
-              <p>
-                Add to your graph the point <m>Q</m> and the vector <m>\vec {PQ} = (x-3,y+4)</m>.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        Consider the function <m>f(x,y)=x^2+y^2</m>. Consider the level curve <m>C</m> given by <m>f(x,y)=25</m>. Our goal is to find an equation of the tangent line to <m>C</m> at <m>P=(3,-4)</m>.
+        <ol>
+          <li>
+            <p>
+              Draw <m>C</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Why does the dot product <m>\vec \nabla f(P)\cdot\vec{PQ}</m> equal zero?
-              </p>
-            </li>
+          <li>
+            <p>
+              Compute <m>\vec \nabla f</m> and add to your graph the vector <m>\vec \nabla f(P)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
 
-            <li>
-              <p>
-                Compute this dot product and explain why this an equation of the tangent line?
-              </p>
-            </li>
+      <p>
+        We know the point <m>P=(3,-4)</m> is on the tangent line. Let <m>Q=(x,y)</m> represent another point on the tangent line.
+        <ol type="resume">
+          <li>
+            <p>
+              Add to your graph the point <m>Q</m> and the vector <m>\vec {PQ} = (x-3,y+4)</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                What is a normal vector to the line?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Why does the dot product <m>\vec \nabla f(P)\cdot\vec{PQ}</m> equal zero?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Compute this dot product and explain why this an equation of the tangent line?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What is a normal vector to the line?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       The previous exercise had you give an equation of the tangent line to a level curve, by using differential notation. The next exercises asks you to repeat this idea and give an equation of a tangent plane to a level surface.
     </p>
-    <exercise xml:id="prob_gradient_to_tangent_practice">
-      <statement>
-        <p>
-          Consider the function <m>f(x,y,z)=x^2+y^2+z^2</m>. Consider the level surface <m>S</m> given by <m>f(x,y,z)=9</m>. Our goal is to find an equation of the tangent plane to <m>S</m> at <m>P=(1,2,-2)</m>.
-          <ol>
-            <li>
-              <p>
-                Draw <m>S</m>.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                Compute <m>\vec \nabla f</m>. Add to your graph the vector <m>\vec \nabla f(P)</m>, with its base at <m>P</m>.
-              </p>
-            </li>
+    <exploration xml:id="prob_gradient_to_tangent_practice">
+      <p>
+        Consider the function <m>f(x,y,z)=x^2+y^2+z^2</m>. Consider the level surface <m>S</m> given by <m>f(x,y,z)=9</m>. Our goal is to find an equation of the tangent plane to <m>S</m> at <m>P=(1,2,-2)</m>.
+        <ol>
+          <li>
+            <p>
+              Draw <m>S</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                We know the point <m>P=(1,2,-2)</m> is on the tangent plane. Let <m>Q=(x,y,z)</m> be any other point on the tangent plane.  What is the component form of the vector <m>\vec {PQ}</m>?
-              </p>
-            </li>
+          <li>
+            <p>
+              Compute <m>\vec \nabla f</m>. Add to your graph the vector <m>\vec \nabla f(P)</m>, with its base at <m>P</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Why are  <m>\vec \nabla f(P)</m> and <m>\vec{PQ}</m> orthogonal? Use this fact to write an equation of the tangent plane.
-              </p>
-            </li>
+          <li>
+            <p>
+              We know the point <m>P=(1,2,-2)</m> is on the tangent plane. Let <m>Q=(x,y,z)</m> be any other point on the tangent plane.  What is the component form of the vector <m>\vec {PQ}</m>?
+            </p>
+          </li>
 
-            <li>
-              <p>
-                What is a normal vector to the plane?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Use the process from <xref ref="prob_gradient_to_tangent_practice"></xref> to find an equation of the tangent plane to the hyperboloid of one sheet <m>1=x^2-y^2+z^2</m> at the point <m>(-3,3,1)</m>.
-        </p>
+          <li>
+            <p>
+              Why are  <m>\vec \nabla f(P)</m> and <m>\vec{PQ}</m> orthogonal? Use this fact to write an equation of the tangent plane.
+            </p>
+          </li>
 
-        <p>
-          Also give an equation of the normal line (the line that sticks straight up out of the surface). FYI, the normal line is used in computer graphics to know how to shade an object.
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              What is a normal vector to the plane?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        Use the process from <xref ref="prob_gradient_to_tangent_practice"></xref> to find an equation of the tangent plane to the hyperboloid of one sheet <m>1=x^2-y^2+z^2</m> at the point <m>(-3,3,1)</m>.
+      </p>
+
+      <p>
+        Also give an equation of the normal line (the line that sticks straight up out of the surface). FYI, the normal line is used in computer graphics to know how to shade an object.
+      </p>
+    </exploration>
 
     <exploration>
       <p>

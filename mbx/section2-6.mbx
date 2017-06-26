@@ -14,59 +14,59 @@
     The box exerts a downward force of 200 Newtons, which we will write in vector notation as <m>\vec F=\left\lt 0,-200\right></m>.
     The ramp was placed so that the box needs to be moved right 6 m, and down 3 m, so we need to get from the origin <m>(0,0)</m> to the point <m>(6,-3)</m>. This displacement can be written as <m>\vec d=\left\lt 6,-3\right></m>. The force <m>F</m> acts straight down, which means the ramp takes some of the force. Our goal is to find out how much of the 200N the ramp takes, and how much force must be applied to prevent the box from sliding down the ramp (neglecting friction). We are going to break the force <m>\vec F</m> into two components, one component in the direction of <m>\vec d</m>, and another component orthogonal to <m>\vec d</m>.
   </p>
-  <exercise xml:id="prob_force_intro">
-    <statement>
-      <p>
-        Read the preceding paragraph.
-      </p>
 
-      <p>
-        We want to write <m>\vec F</m> as the sum of two vectors: <m>\vec F = \vec w+\vec n</m>
-        <ul>
-          <li>
-            <p>
-              where <m>\vec w</m> is parallel to <m>\vec d</m>
-            </p>
-          </li>
+  <exploration xml:id="prob_force_intro">
+    <p>
+      Read the preceding paragraph.
+    </p>
 
-          <li>
-            <p>
-              and <m>\vec n</m> is orthogonal to <m>\vec d</m>
-            </p>
-          </li>
-        </ul>
-      </p>
+    <p>
+      We want to write <m>\vec F</m> as the sum of two vectors: <m>\vec F = \vec w+\vec n</m>
+      <ul>
+        <li>
+          <p>
+            where <m>\vec w</m> is parallel to <m>\vec d</m>
+          </p>
+        </li>
 
-      <p>
-        Since <m>\vec w</m> is parallel to <m>\vec d</m>, we can write <m>\vec w=c\vec d</m> for some unknown scalar <m>c</m>.
-        <ol>
-          <li>
-            <p>
-              Rewrite <m>\vec F</m> in terms of <m>\vec d</m>
-            </p>
-          </li>
+        <li>
+          <p>
+            and <m>\vec n</m> is orthogonal to <m>\vec d</m>
+          </p>
+        </li>
+      </ul>
+    </p>
 
-          <li>
-            <p>
-              Take the dot-product of both sides with <m>\vec d</m>
-            </p>
-          </li>
+    <p>
+      Since <m>\vec w</m> is parallel to <m>\vec d</m>, we can write <m>\vec w=c\vec d</m> for some unknown scalar <m>c</m>.
+      <ol>
+        <li>
+          <p>
+            Rewrite <m>\vec F</m> in terms of <m>\vec d</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Since <m>\vec n</m> is orthogonal to <m>\vec d</m> we know that <m>\vec n \cdot \vec d =</m> ?
-            </p>
-          </li>
+        <li>
+          <p>
+            Take the dot-product of both sides with <m>\vec d</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Substitute and solve for the unknown <m>c</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Since <m>\vec n</m> is orthogonal to <m>\vec d</m> we know that <m>\vec n \cdot \vec d =</m> ?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Substitute and solve for the unknown <m>c</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     The solution to the previous problem gives us the definition of a projection.
   </p>
@@ -82,20 +82,19 @@
     </statement>
   </definition>
 
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.3:1-8 (part d).} 
-          \stewarts{See 12.3: 39-44}
-          </fn>Let <m>\vec u=(-1,2)</m> and <m>\vec v=(3,4)</m>. Compute the <m>\proj_{\vec v}\vec u</m>. Draw <m>\vec u,</m> <m>\vec v</m>, and <m>\proj_{\vec v}\vec u</m> all on one set of axis. Then draw a line segment from the head of <m>\vec u</m> to the head of the projection.
-      </p>
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.3:1-8 (part d).} 
+        \stewarts{See 12.3: 39-44}
+        </fn>Let <m>\vec u=(-1,2)</m> and <m>\vec v=(3,4)</m>. Compute the <m>\proj_{\vec v}\vec u</m>. Draw <m>\vec u,</m> <m>\vec v</m>, and <m>\proj_{\vec v}\vec u</m> all on one set of axis. Then draw a line segment from the head of <m>\vec u</m> to the head of the projection.
+    </p>
 
-      <p>
-        Now let <m>\vec w=(-2,0)</m>. Compute <m>\proj_{\vec v}\vec w</m>. Draw <m>\vec u,</m> <m>\vec v</m>, and <m>\proj_{\vec v}\vec w</m>. Then draw a line segment from the head of <m>\vec w</m> to the head of the projection.
-      </p>
-    </statement>
-  </exercise>
+    <p>
+      Now let <m>\vec w=(-2,0)</m>. Compute <m>\proj_{\vec v}\vec w</m>. Draw <m>\vec u,</m> <m>\vec v</m>, and <m>\proj_{\vec v}\vec w</m>. Then draw a line segment from the head of <m>\vec w</m> to the head of the projection.
+    </p>
+  </exploration>
+
   <p>
     One application of projections pertains to the concept of work. Work is the transfer of energy. If a force <m>F</m> acts through a displacement <m>d</m>, then the most basic definition of work is <m>W=Fd</m>, the product of the force and the displacement. This basic definition has a few assumptions.
     <ul>
@@ -126,72 +125,71 @@
   <p>
     Recall the set up to <xref ref="prob_force_intro">problem</xref>. We want to lower a box down a ramp (which we will assume is frictionless). Gravity exerts a force of <m>\vec F=\left\lt 0,-200\right></m> N. If we apply no other forces to this system, then gravity will do work on the box through a displacement of <m>\left\lt 6,-3\right></m> m. The work done by gravity will transfer the potential energy of the box into kinetic energy (remember that work is a transfer of energy). How much energy is transferred?
   </p>
-  <exercise xml:id="first_work_problem">
+
+  <exploration xml:id="first_work_problem">
     <title>Projection Application: Work</title>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.3: 24, 41-44.} 
-          \stewarts{See 12.3:49-52}
-          </fn>
-        Find the amount of work done by the force <m>\vec F=\left\lt 0,-200\right></m> through the displacement <m>\vec d=\left\lt 6,-3\right></m>. Find this by doing the following:
-        <ol>
-          <li>
-            <p>
-              Find the projection of <m>\vec F</m> onto <m>\vec d</m>. This tells you how much force acts in the direction of the displacement. Find the magnitude of this projection.
-            </p>
-          </li>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.3: 24, 41-44.} 
+        \stewarts{See 12.3:49-52}
+        </fn>
+      Find the amount of work done by the force <m>\vec F=\left\lt 0,-200\right></m> through the displacement <m>\vec d=\left\lt 6,-3\right></m>. Find this by doing the following:
+      <ol>
+        <li>
+          <p>
+            Find the projection of <m>\vec F</m> onto <m>\vec d</m>. This tells you how much force acts in the direction of the displacement. Find the magnitude of this projection.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Since work equals <m>W=Fd</m>, multiply your answer above by <m>|\vec {d}|</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Since work equals <m>W=Fd</m>, multiply your answer above by <m>|\vec {d}|</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Now compute <m>\vec F\cdot \vec d</m>. You have just shown that <m>W=\vec F\cdot \vec d</m> when <m>\vec F</m> and <m>\vec d</m> are not in the same direction.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
+        <li>
+          <p>
+            Now compute <m>\vec F\cdot \vec d</m>. You have just shown that <m>W=\vec F\cdot \vec d</m> when <m>\vec F</m> and <m>\vec d</m> are not in the same direction.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration>
     <title>Projection Application: Planes</title>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \stewarts{See 12.5:69-72}
-          </fn>
-        Consider the points <m>P=(2,4,5)</m>, <m>Q=(1,5,7)</m>, and <m>R=(-1,6,8)</m>.
-        <ol>
-          <li>
-            <p>
-              What is the area of the triangle <m>PQR</m>.
-            </p>
-          </li>
+    <p>
+      EXTRA<fn>
+        \stewarts{See 12.5:69-72}
+        </fn>
+      Consider the points <m>P=(2,4,5)</m>, <m>Q=(1,5,7)</m>, and <m>R=(-1,6,8)</m>.
+      <ol>
+        <li>
+          <p>
+            What is the area of the triangle <m>PQR</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Give a normal vector to the plane through these three points.
-            </p>
-          </li>
+        <li>
+          <p>
+            Give a normal vector to the plane through these three points.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What is the distance from the point <m>A=(1,2,3)</m> to the plane <m>PQR</m>.
-              <hint>
+        <li>
+          <p>
+            What is the distance from the point <m>A=(1,2,3)</m> to the plane <m>PQR</m>.
+            <hint>
               <p>
                 Compute the projection of <m>\vec {PA}</m> onto <m>\vec n</m>. How long is it?
               </p>
-              </hint>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+            </hint>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     \bmw{\section{Wrap Up}
     Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}

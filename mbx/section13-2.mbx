@@ -31,54 +31,54 @@
   <p>
     Remember that the Jacobian of a transformation is found by first taking the derivative of the transformation, then finding the determinant, and finally computing the absolute value.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        The cylindrical change of coordinates is:
-        <md>
-          <mrow>x\amp =r\cos\theta, y=r\sin\theta, z=z</mrow>
-          <mrow>\text{ or in vector form } \amp \</mrow>
-          <mrow>\vec C(r,\theta,z) \amp = (r\cos\theta,r\sin\theta, z)</mrow>
-        </md>
-      </p>
 
-      <p>
-        The spherical change of coordinates is:
-        <md>
-          <mrow>x\amp =\rho\sin\phi\cos\theta,\ y=\rho\sin\phi\sin\theta,\ z=\rho\cos\phi</mrow>
-          <mrow>\text{ or in vector form } \amp \</mrow>
-          <mrow>\vec S(\rho,\phi,\theta) \amp = (\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi).</mrow>
-        </md>
-        <ol>
-          <li>
-            <p>
-              Verify that the Jacobian of the cylindrical transformation is <m>\ds\frac{\partial(x,y,z)}{\partial(r,\theta,z)} = |r|</m>.
-              <ul>
-                <li>
-                  <p>
-                    If you want to make sure you don't have to use absolute values, what must you require?
-                  </p>
-                </li>
-              </ul>
-            </p>
-          </li>
+  <exploration>
+    <p>
+      The cylindrical change of coordinates is:
+      <md>
+        <mrow>x\amp =r\cos\theta, y=r\sin\theta, z=z</mrow>
+        <mrow>\text{ or in vector form } \amp \</mrow>
+        <mrow>\vec C(r,\theta,z) \amp = (r\cos\theta,r\sin\theta, z)</mrow>
+      </md>
+    </p>
 
-          <li>
-            <p>
-              Verify that the Jacobian of the spherical transformation is <m>\ds\frac{\partial(x,y,z)}{\partial(\rho,\phi,\theta)} = |\rho^2\sin\phi|</m>.
-              <ul>
-                <li>
-                  <p>
-                    If you want to make sure you don't have to use absolute values, what must you require?
-                  </p>
-                </li>
-              </ul>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+    <p>
+      The spherical change of coordinates is:
+      <md>
+        <mrow>x\amp =\rho\sin\phi\cos\theta,\ y=\rho\sin\phi\sin\theta,\ z=\rho\cos\phi</mrow>
+        <mrow>\text{ or in vector form } \amp \</mrow>
+        <mrow>\vec S(\rho,\phi,\theta) \amp = (\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi).</mrow>
+      </md>
+      <ol>
+        <li>
+          <p>
+            Verify that the Jacobian of the cylindrical transformation is <m>\ds\frac{\partial(x,y,z)}{\partial(r,\theta,z)} = |r|</m>.
+            <ul>
+              <li>
+                <p>
+                  If you want to make sure you don't have to use absolute values, what must you require?
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Verify that the Jacobian of the spherical transformation is <m>\ds\frac{\partial(x,y,z)}{\partial(\rho,\phi,\theta)} = |\rho^2\sin\phi|</m>.
+            <ul>
+              <li>
+                <p>
+                  If you want to make sure you don't have to use absolute values, what must you require?
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     The previous exercise shows us that, provided we require <m>r\geq0</m> and <m>0\leq \phi\leq \pi</m>, we can write:
     <me>
@@ -125,111 +125,105 @@
       </li>
     </ul>
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJytjkEOgjAQRfecojvaMBKsYIxhOEpNFaNNgDZItO3pRaguSExcuJo_8_Jf5i57Gltw4GMW9eeL0h02sj3WkkzXPfElWsETJziRXU18hdkcBP-Q0OSLaqAV5lMjrCWut5FB1ZpGndRwMI0eNjUNFEcK1MKqgIIBde_gIYOcQXhxHqCNHA0Os3THIpN8d-Z_U_qXLnh_lfKFNb1d9YOyJ0VbdCM">Sage</url>.</fn>
-        The double cone <m>z^2=x^2+y^2</m> has two halves. Each half is called a nappe. Set up an integral in the coordinate system of your choice that would give the volume of the region that is between the <m>xy</m> plane and the upper nappe of the double cone <m>z^2=x^2+y^2</m>, and between the cylinders <m>x^2+y^2=4</m> and <m>x^2+y^2=16</m>. Then evaluate the integral.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Set up an integral in the coordinate system of your choice that would give the volume of the solid ball that is inside the sphere <m>a^2=x^2+y^2+z^2</m>. Compute the integral to give a formula for the volume of a sphere of radius <m>a</m>. \bmw{Then set up (don't evaluate) an iterated integral that would give the moment of inertia <m>I_x</m> about the <m>x</m>-axis, if the density is a constant, so <m>\delta =c</m>.}
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxty00OgyAQQOF9L-IQB6PSnxUnMWqImpTEBgqTFji900V35m3e5vuYAFXCjKUSF6_ty-92sTT73ZFaoWgd34EgTX2dp14gJJQKFU_-T8EWr4J1fcbvkq1ke0675oaPH27i033BRL8tNAdD1umhQ24UB9CiL84">Sage</url>.</fn>Find the volume of the solid domain <m>D</m> in space which is above the cone <m>z=\sqrt{x^2+y^2}</m> and below the paraboloid <m>z=6-x^2-y^2</m>. Use cylindrical coordinates to set up and then evaluate your integral.
-      </p>
-    </statement>
+
+  <exploration>
+    <p>
+      EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJytjkEOgjAQRfecojvaMBKsYIxhOEpNFaNNgDZItO3pRaguSExcuJo_8_Jf5i57Gltw4GMW9eeL0h02sj3WkkzXPfElWsETJziRXU18hdkcBP-Q0OSLaqAV5lMjrCWut5FB1ZpGndRwMI0eNjUNFEcK1MKqgIIBde_gIYOcQXhxHqCNHA0Os3THIpN8d-Z_U_qXLnh_lfKFNb1d9YOyJ0VbdCM">Sage</url>.</fn>
+      The double cone <m>z^2=x^2+y^2</m> has two halves. Each half is called a nappe. Set up an integral in the coordinate system of your choice that would give the volume of the region that is between the <m>xy</m> plane and the upper nappe of the double cone <m>z^2=x^2+y^2</m>, and between the cylinders <m>x^2+y^2=4</m> and <m>x^2+y^2=16</m>. Then evaluate the integral.
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      Set up an integral in the coordinate system of your choice that would give the volume of the solid ball that is inside the sphere <m>a^2=x^2+y^2+z^2</m>. Compute the integral to give a formula for the volume of a sphere of radius <m>a</m>. \bmw{Then set up (don't evaluate) an iterated integral that would give the moment of inertia <m>I_x</m> about the <m>x</m>-axis, if the density is a constant, so <m>\delta =c</m>.}
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxty00OgyAQQOF9L-IQB6PSnxUnMWqImpTEBgqTFji900V35m3e5vuYAFXCjKUSF6_ty-92sTT73ZFaoWgd34EgTX2dp14gJJQKFU_-T8EWr4J1fcbvkq1ke0675oaPH27i033BRL8tNAdD1umhQ24UB9CiL84">Sage</url>.</fn>Find the volume of the solid domain <m>D</m> in space which is above the cone <m>z=\sqrt{x^2+y^2}</m> and below the paraboloid <m>z=6-x^2-y^2</m>. Use cylindrical coordinates to set up and then evaluate your integral.
+    </p>
     <hint>
       <p>
         You'll need to find where the surface intersect, as their intersection will help you determine the appropriate bounds.
       </p>
     </hint>
-  </exercise>
+  </exploration>
+
   <p>
     For the next several exercises be sure to check that you've correctly swapped bounds by having Sage or WolframAlpha actually compute all of the integrals.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Consider the region <m>D</m> in space that is inside both the sphere <m>x^2+y^2+z^2=9</m> and the cylinder <m>x^2+y^2=4</m>.
-      </p>
-      <hint>
-      <p>
-        Start by drawing the region.
-      </p>
-      </hint>
-      <ol>
-        <li>
-          <p>
-            Set up an iterated integral in Cartesian (rectangular) coordinates that would give the volume of <m>D</m>.
-          </p>
-        </li>
 
-        <li>
-          <p>
-            Set up an iterated integral in cylindrical coordinates that would give the volume of <m>D</m>.
-          </p>
-        </li>
-      </ol>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Consider the region <m>D</m> in space that is both inside the sphere <m>x^2+y^2+z^2=9</m> and yet outside the cylinder <m>x^2+y^2=4</m>.
-      </p>
-      <hint>
+  <exploration>
+    <p>
+      Consider the region <m>D</m> in space that is inside both the sphere <m>x^2+y^2+z^2=9</m> and the cylinder <m>x^2+y^2=4</m>.
+    </p>
+    <hint>
       <p>
         Start by drawing the region.
       </p>
-      </hint>
-      <ol>
+    </hint>
+    <ol>
       <li>
         <p>
-          Set up two iterated integrals in cylindrical coordinates that would give the volume of <m>D</m>.
-          <ol type="a">
-            <li>
-              <p>
-                For the first integral use the order <m>dzdrd\theta</m>.
-              </p>
-            </li>
-
-            <li>
-              <p>
-                For the second, use the order <m>d\theta dr dz</m>.
-              </p>
-            </li>
-          </ol>
+          Set up an iterated integral in Cartesian (rectangular) coordinates that would give the volume of <m>D</m>.
         </p>
       </li>
 
       <li>
         <p>
-          Set up an iterated integral in spherical coordinates that would give the volume of <m>D</m>.
+          Set up an iterated integral in cylindrical coordinates that would give the volume of <m>D</m>.
         </p>
       </li>
-      </ol>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
+    </ol>
+  </exploration>
+
+  <exploration>
+    <p>
+      Consider the region <m>D</m> in space that is both inside the sphere <m>x^2+y^2+z^2=9</m> and yet outside the cylinder <m>x^2+y^2=4</m>.
+    </p>
+    <hint>
       <p>
-        The integral <m>\ds\int_{0}^{\pi}\int_{0}^{1}\int_{\sqrt{3}r}^{\sqrt{4-r^2}}rdzdrd\theta</m> represents the volume of solid domain <m>D</m> in space. Set up integrals in both rectangular coordinates and spherical coordinates that would give the volume of the exact same region.
+        Start by drawing the region.
       </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
+    </hint>
+    <ol>
+    <li>
       <p>
-        The temperature at each point in space of a solid occupying the region {<m>D</m>}, which is the upper portion of the ball of radius 4 centered at the origin, is given by <m>T(x,y,z) = \sin(xy+z)</m>. Set up an iterated integral formula that would give the average temperature.
+        Set up two iterated integrals in cylindrical coordinates that would give the volume of <m>D</m>.
+        <ol type="a">
+          <li>
+            <p>
+              For the first integral use the order <m>dzdrd\theta</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              For the second, use the order <m>d\theta dr dz</m>.
+            </p>
+          </li>
+        </ol>
       </p>
-    </statement>
-  </exercise>
+    </li>
+
+    <li>
+      <p>
+        Set up an iterated integral in spherical coordinates that would give the volume of <m>D</m>.
+      </p>
+    </li>
+    </ol>
+  </exploration>
+
+  <exploration>
+    <p>
+      The integral <m>\ds\int_{0}^{\pi}\int_{0}^{1}\int_{\sqrt{3}r}^{\sqrt{4-r^2}}rdzdrd\theta</m> represents the volume of solid domain <m>D</m> in space. Set up integrals in both rectangular coordinates and spherical coordinates that would give the volume of the exact same region.
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      The temperature at each point in space of a solid occupying the region {<m>D</m>}, which is the upper portion of the ball of radius 4 centered at the origin, is given by <m>T(x,y,z) = \sin(xy+z)</m>. Set up an iterated integral formula that would give the average temperature.
+    </p>
+  </exploration>
 </section>

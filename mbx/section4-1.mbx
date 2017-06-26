@@ -32,115 +32,110 @@
     <p>
       You can generalize this definition to 3D and beyond by just adding more variables.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          By plotting points, construct graphs of the three parametric curves given below (just make a <m>t,x,y</m> table, and then plot the <m>(x,y)</m> coordinates). Place an arrow on your graph to show the direction of motion.
-        </p>
 
-        <p>
-          EXTRA<fn>
-            \thomasee{See 11.1: 1-18. This is the same for all the problems below.}
-            </fn>
-          <ol>
-            <li>
-              <p>
-                <m>x=\cos t, y=\sin t</m>, for <m>0\leq t\leq 2\pi</m>.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        By plotting points, construct graphs of the three parametric curves given below (just make a <m>t,x,y</m> table, and then plot the <m>(x,y)</m> coordinates). Place an arrow on your graph to show the direction of motion.
+      </p>
 
-            <li>
-              <p>
-                <m>x=\sin t, y=\cos t</m>, for <m>0\leq t\leq 2\pi</m>.
-              </p>
-            </li>
+      <p>
+        EXTRA<fn>
+          \thomasee{See 11.1: 1-18. This is the same for all the problems below.}
+          </fn>
+        <ol>
+          <li>
+            <p>
+              <m>x=\cos t, y=\sin t</m>, for <m>0\leq t\leq 2\pi</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>x=\cos t, y=\sin t, z=t</m>, for <m>0\leq t\leq 4\pi</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          For the parametric curve <m>x=1+2\cos t, y=3+5\sin t</m>:
-          <ol>
-            <li>
-              <p>
-                Plot the path traced out by the curve.
-              </p>
-            </li>
+          <li>
+            <p>
+              <m>x=\sin t, y=\cos t</m>, for <m>0\leq t\leq 2\pi</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Use the trig identity <m>\cos^2t+\sin^2t=1</m> to give a Cartesian equation of the curve (an equation that only involves <m>x</m> and <m>y</m>).
-              </p>
-            </li>
+          <li>
+            <p>
+              <m>x=\cos t, y=\sin t, z=t</m>, for <m>0\leq t\leq 4\pi</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
-            <li>
-              <p>
-                What are the foci of the resulting object (it's a conic section)?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="prob_line_equation_practice">
-      <statement>
-        <p>
-          EXTRA<fn>What we did in the vector unit should help here.</fn>
-          Find parametric equations for a line that passes through the points <m>(0,1,2)</m> and <m>(3,-2,4)</m>.
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          For the parametric curve <m>\vec r(t)= (t^2+1, 2t-3)</m>:
-          <ol>
-            <li>
-              <p>
-                Plot the path traced out by the curve.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        For the parametric curve <m>x=1+2\cos t, y=3+5\sin t</m>:
+        <ol>
+          <li>
+            <p>
+              Plot the path traced out by the curve.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Give a Cartesian equation of the curve (eliminate the parameter <m>t</m>)
-              </p>
-            </li>
+          <li>
+            <p>
+              Use the trig identity <m>\cos^2t+\sin^2t=1</m> to give a Cartesian equation of the curve (an equation that only involves <m>x</m> and <m>y</m>).
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Now find the focus of the resulting curve.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
+          <li>
+            <p>
+              What are the foci of the resulting object (it's a conic section)?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <exploration xml:id="prob_line_equation_practice">
+      <p>
+        EXTRA<fn>What we did in the vector unit should help here.</fn>
+        Find parametric equations for a line that passes through the points <m>(0,1,2)</m> and <m>(3,-2,4)</m>.
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        For the parametric curve <m>\vec r(t)= (t^2+1, 2t-3)</m>:
+        <ol>
+          <li>
+            <p>
+              Plot the path traced out by the curve.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Give a Cartesian equation of the curve (eliminate the parameter <m>t</m>)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Now find the focus of the resulting curve.
+            </p>
+          </li>
+        </ol>
+      </p>
       <hint>
         <p>
           Set up a system of equations then use substitution.
         </p>
       </hint>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Consider the parametric curve given by <m>x=\tan t, y=\sec t</m>. Plot the curve for <m>-\pi/2\lt t\lt \pi/2</m>. Give a Cartesian equation of the curve (a trig identity will help). Then find the foci of the resulting conic section.
-        </p>
-      </statement>
+    </exploration>
+
+    <exploration>
+      <p>
+        Consider the parametric curve given by <m>x=\tan t, y=\sec t</m>. Plot the curve for <m>-\pi/2\lt t\lt \pi/2</m>. Give a Cartesian equation of the curve (a trig identity will help). Then find the foci of the resulting conic section.
+      </p>
       <hint>
         <p>
           this problem will probably be easier to draw if you first find the Cartesian equation, and then plot the curve.
         </p>
       </hint>
-    </exercise>
+    </exploration>
   </introduction>
 
   <subsection xml:id="sec_derivatives_and_tangent_lines">
@@ -163,50 +158,49 @@
     <p>
       The subtraction above requires vector subtraction. The following problem will provide a simple way to take derivatives which we will use all semester long.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See page 728.}
-            </fn>Show that if <m>\vec r(t) = (f(t),g(t))</m>, then the derivative is just <m>\frac{d\vec r}{dt} = (f'(t),g'(t))</m>.
-        </p>
 
-        <p>
-          [The definition above says that <m>\frac{d\vec r}{dt}=\ds\lim_{h\to 0}\frac{\vec r(t+h)-\vec r(t)}{h}</m>. We were told <m>\vec r(t) = (f(t),g(t))</m>, so use this in the derivative definition. Then try to modify the equation to obtain <m>\frac{d\vec r}{dt} = (f'(t),g'(t))</m>.]
-        </p>
-      </statement>
-    </exercise>
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See page 728.}
+          </fn>Show that if <m>\vec r(t) = (f(t),g(t))</m>, then the derivative is just <m>\frac{d\vec r}{dt} = (f'(t),g'(t))</m>.
+      </p>
+
+      <p>
+        [The definition above says that <m>\frac{d\vec r}{dt}=\ds\lim_{h\to 0}\frac{\vec r(t+h)-\vec r(t)}{h}</m>. We were told <m>\vec r(t) = (f(t),g(t))</m>, so use this in the derivative definition. Then try to modify the equation to obtain <m>\frac{d\vec r}{dt} = (f'(t),g'(t))</m>.]
+      </p>
+    </exploration>
+
     <p>
       The previous problem shows you can take the derivative of a vector valued function by just differentiating each component separately. The next problem shows you that velocity and acceleration are still connected to the first and second derivatives.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See 13.1:5-8 and 13.1:19-20}
-            </fn>Consider the parametric curve given by <m>\vec r(t)=( 3\cos t, 3\sin t )</m>.
-          <ol>
-            <li>
-              <p>
-                Graph the curve <m>\vec r</m>, and compute <m>\frac{d\vec r}{dt}</m> and <m>\frac{d^2\vec r}{dt^2}</m>.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                On your graph, draw the vectors <m>\frac{d\vec r}{dt}\left(\frac{\pi}{4}\right)</m> and <m>\frac{d^2\vec r}{dt^2}\left(\frac{\pi}{4}\right)</m> with their tail placed on the curve at <m>\vec r\left(\frac{\pi}{4}\right)</m>. These vectors represent the velocity and acceleration vectors.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See 13.1:5-8 and 13.1:19-20}
+          </fn>Consider the parametric curve given by <m>\vec r(t)=( 3\cos t, 3\sin t )</m>.
+        <ol>
+          <li>
+            <p>
+              Graph the curve <m>\vec r</m>, and compute <m>\frac{d\vec r}{dt}</m> and <m>\frac{d^2\vec r}{dt^2}</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Give a vector equation of the tangent line to this curve at <m>t=\frac{\pi}{4}</m>. (You know a point and a direction vector.)
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              On your graph, draw the vectors <m>\frac{d\vec r}{dt}\left(\frac{\pi}{4}\right)</m> and <m>\frac{d^2\vec r}{dt^2}\left(\frac{\pi}{4}\right)</m> with their tail placed on the curve at <m>\vec r\left(\frac{\pi}{4}\right)</m>. These vectors represent the velocity and acceleration vectors.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Give a vector equation of the tangent line to this curve at <m>t=\frac{\pi}{4}</m>. (You know a point and a direction vector.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
     <definition xml:id="def_velocity_acceleration">
       <statement>
@@ -216,48 +210,46 @@
       </statement>
     </definition>
 
-    <exercise>
-      <statement>
-        <p>
-          Consider the curve <m>\vec r(t) = (2t+3, 4(2t-1)^2)</m>.
-          <ol>
-            <li>
-              <p>
-                Construct a graph of <m>\vec r</m> for <m>0\leq t\leq 2</m>.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        Consider the curve <m>\vec r(t) = (2t+3, 4(2t-1)^2)</m>.
+        <ol>
+          <li>
+            <p>
+              Construct a graph of <m>\vec r</m> for <m>0\leq t\leq 2</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                If this curve represented the path of a horse running through a pasture, find the velocity of the horse at any time <m>t</m>, and then specifically at <m>t=1</m>. What is the horse's speed at <m>t=1</m>?
-              </p>
-            </li>
+          <li>
+            <p>
+              If this curve represented the path of a horse running through a pasture, find the velocity of the horse at any time <m>t</m>, and then specifically at <m>t=1</m>. What is the horse's speed at <m>t=1</m>?
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Find a vector equation of the tangent line to <m>\vec r</m> at <m>t=1</m>.  Include this on your graph.
-              </p>
-            </li>
+          <li>
+            <p>
+              Find a vector equation of the tangent line to <m>\vec r</m> at <m>t=1</m>.  Include this on your graph.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Show that the slope of the line is
-                <me>
-                  \ds \frac{dy}{dx}\big|_{x=5} 
-                  = 
-                  \frac{
-                  (dy/dt)\big|_{t=1}
-                  }{
-                  (dx/dt)\big|_{t=1}
-                  }.
-                </me>
-                [How can you turn the direction vector, which involves <m>(dx/dt)</m> and <m>(dy/dt)</m> into a slope <m>(dy/dx)</m>?]
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Show that the slope of the line is
+              <me>
+                \ds \frac{dy}{dx}\big|_{x=5} 
+                = 
+                \frac{
+                (dy/dt)\big|_{t=1}
+                }{
+                (dx/dt)\big|_{t=1}
+                }.
+              </me>
+              [How can you turn the direction vector, which involves <m>(dx/dt)</m> and <m>(dy/dt)</m> into a slope <m>(dy/dx)</m>?]
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
   </subsection>
 
   <subsection xml:id="arc_length">
@@ -283,84 +275,82 @@
     <p>
       This requires that the speed be constant. What if the speed is not constant? Over a really small time interval <m>dt</m>, the speed is almost constant, so we can still use the idea above. The following problem will help you develop the key formula for arc length.
     </p>
-    <exercise>
-      <title>Derivation of the arc length formula</title>
-      <statement>
-        <p>
-          Suppose an object moves along the path given by:
-          <me>
-            \vec r(t)=(x(t),y(t))
-          </me>
-          for
-          <me>
-            a\leq t\leq b
-          </me>
-          <ol>
-            <li>
-              <p>
-                Show that the object's speed at any time <m>t</m> is 
-                <m>\ds\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}</m>.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                If you move over a really small time interval, say of length <m>dt</m>, then the speed is almost constant. If you move at a constant speed of <m>\ds\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}</m> for a time length of <m>dt</m>, what's the distance <m>ds</m> you have traveled.
-                <hint>
+    <exploration>
+      <title>Derivation of the arc length formula</title>
+      <p>
+        Suppose an object moves along the path given by:
+        <me>
+          \vec r(t)=(x(t),y(t))
+        </me>
+        for
+        <me>
+          a\leq t\leq b
+        </me>
+        <ol>
+          <li>
+            <p>
+              Show that the object's speed at any time <m>t</m> is 
+              <m>\ds\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If you move over a really small time interval, say of length <m>dt</m>, then the speed is almost constant. If you move at a constant speed of <m>\ds\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}</m> for a time length of <m>dt</m>, what's the distance <m>ds</m> you have traveled.
+              <hint>
                 <p>
                   This should be really fast to write down
                 </p>
-                </hint>
-              </p>
-            </li>
-
-            <li xml:id="arc_length_formula" >
-
-            <p>
-              Explain why the length of the path given by <m>\vec r(t)</m> for <m>a\leq t\leq b</m> is   EXTRA<fn>This is the arc length formula. Ask me in class for an alternate way to derive this formula.</fn>
-              <me>
-                \text{ Arc Length } =s=\int ds=\int_a^b \left|\frac{d\vec r}{dt}\right| dt=\int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt.
-              </me>
+              </hint>
             </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>\thomasee{See 11.2: 25-30}</fn>
-          Use the equation from <xref ref="arc_length_formula"></xref> to find the length of the curve <m>\ds \vec r(t) = \left(t^3,\frac{3t^2}{2}\right)</m> for <m>t\in[1,3]</m>. The notation <m>t\in[1,3]</m> means <m>1\leq t\leq 3</m>. Be prepared to show us your integration steps in class (you'll need a <m>u</m>-substitution).
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          For each curve below, set up an integral formula which would give the length, and sketch the curve. Do not worry about integrating them. EXTRA<fn>The reason I don't want you to actually compute the integrals is that they will get ugly really fast. Try doing one in Wolfram Alpha and see what the computer gives.</fn>
-          <ol>
-            <li>
-              <p>
-                The parabola <m>\vec p(t) = (t,t^2)</m> for <m>t\in[0,3]</m>.
-              </p>
-            </li>
+          </li>
 
-            <li>
-              <p>
-                The ellipse <m>\vec e(t) = (4\cos t,5\sin t)</m> for <m>t\in[0,2\pi]</m>.
-              </p>
-            </li>
+          <li xml:id="arc_length_formula" >
 
-            <li>
-              <p>
-                The hyperbola <m>\vec h(t) = (\tan t,\sec t)</m> for <m>t\in[-\pi/ 4,\pi/4]</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <p>
+            Explain why the length of the path given by <m>\vec r(t)</m> for <m>a\leq t\leq b</m> is   EXTRA<fn>This is the arc length formula. Ask me in class for an alternate way to derive this formula.</fn>
+            <me>
+              \text{ Arc Length } =s=\int ds=\int_a^b \left|\frac{d\vec r}{dt}\right| dt=\int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt.
+            </me>
+          </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        EXTRA<fn>\thomasee{See 11.2: 25-30}</fn>
+        Use the equation from <xref ref="arc_length_formula"></xref> to find the length of the curve <m>\ds \vec r(t) = \left(t^3,\frac{3t^2}{2}\right)</m> for <m>t\in[1,3]</m>. The notation <m>t\in[1,3]</m> means <m>1\leq t\leq 3</m>. Be prepared to show us your integration steps in class (you'll need a <m>u</m>-substitution).
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        For each curve below, set up an integral formula which would give the length, and sketch the curve. Do not worry about integrating them. EXTRA<fn>The reason I don't want you to actually compute the integrals is that they will get ugly really fast. Try doing one in Wolfram Alpha and see what the computer gives.</fn>
+        <ol>
+          <li>
+            <p>
+              The parabola <m>\vec p(t) = (t,t^2)</m> for <m>t\in[0,3]</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The ellipse <m>\vec e(t) = (4\cos t,5\sin t)</m> for <m>t\in[0,2\pi]</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The hyperbola <m>\vec h(t) = (\tan t,\sec t)</m> for <m>t\in[-\pi/ 4,\pi/4]</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       To actually compute the integrals above and find the lengths, we would use a numerical technique to approximate the integral (something akin to adding up the areas of lots and lots of rectangles as you did in first semester calculus).
 

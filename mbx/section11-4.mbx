@@ -28,38 +28,36 @@
     </statement>
   </definition>
 
-  <exercise>
-    <statement>
-      <p>
-        Consider the transformation <m>u=x+2y</m> and <m>v=2x-y</m>.
-        <ol>
-          <li>
-            <p>
-              Solve for <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Consider the transformation <m>u=x+2y</m> and <m>v=2x-y</m>.
+      <ol>
+        <li>
+          <p>
+            Solve for <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Next compute the Jacobian <m>\frac{\partial (x,y)}{\partial (u,v)}</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Next compute the Jacobian <m>\frac{\partial (x,y)}{\partial (u,v)}</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              We were give <m>u</m> and <m>v</m> in terms of <m>x</m> and <m>y</m>, so we could have directly computed <m>\frac{\partial (u,v)}{\partial (x,y)}</m>. Do so now.
-            </p>
-          </li>
+        <li>
+          <p>
+            We were give <m>u</m> and <m>v</m> in terms of <m>x</m> and <m>y</m>, so we could have directly computed <m>\frac{\partial (u,v)}{\partial (x,y)}</m>. Do so now.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Make a conjecture about the relationship between <m>\frac{\partial (x,y)}{\partial (u,v)}</m> and <m>\frac{\partial (u,v)}{\partial (x,y)}</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Make a conjecture about the relationship between <m>\frac{\partial (x,y)}{\partial (u,v)}</m> and <m>\frac{\partial (u,v)}{\partial (x,y)}</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
   <theorem>
     <statement>
@@ -82,109 +80,106 @@
   <p>
     Let's use this to rapidly find the area inside of an ellipse.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Consider the region <m>R</m> inside the ellipse <m>\left(\dfrac{x}{a}\right)^2+\left(\dfrac{y}{b}\right)^2=1</m>. We'll consider the change of coordinates given by <m>u=(x/a)</m> and <m>v=(y/b)</m>.
-        <ol>
-          <li>
-            <p>
-              Draw the region <m>R</m> in the <m>xy</m>-plane.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              After substituting <m>u=x/a</m> and <m>v=y/b</m>, draw the region <m>R_{uv}</m> in the <m>uv</m>-plane.  You should have a circle.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Consider the region <m>R</m> inside the ellipse <m>\left(\dfrac{x}{a}\right)^2+\left(\dfrac{y}{b}\right)^2=1</m>. We'll consider the change of coordinates given by <m>u=(x/a)</m> and <m>v=(y/b)</m>.
+      <ol>
+        <li>
+          <p>
+            Draw the region <m>R</m> in the <m>xy</m>-plane.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What is the area inside this circle in the <m>uv</m>-plane?
-            </p>
-          </li>
+        <li>
+          <p>
+            After substituting <m>u=x/a</m> and <m>v=y/b</m>, draw the region <m>R_{uv}</m> in the <m>uv</m>-plane.  You should have a circle.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Solve for <m>x</m> and <m>y</m>, and then compute the Jacobian  <m>\dfrac{\partial (x,y)}{\partial (u,v)}</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            What is the area inside this circle in the <m>uv</m>-plane?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Show how to get the same result from directly computing <m>\dfrac{\partial (u,v)}{\partial (x,y)}</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Solve for <m>x</m> and <m>y</m>, and then compute the Jacobian  <m>\dfrac{\partial (x,y)}{\partial (u,v)}</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              We know the area in the <m>xy</m>-plane of the ellipse is <m>\iint_{R_{xy}} dxdy</m>. Use the previous theorem to switch to an integral over the region <m>R_{uv}</m>.  Then evaluate this integral by using facts about area to prove that the area in the <m>xy</m> plane is <m>\pi a b</m>.
-              <hint>
+        <li>
+          <p>
+            Show how to get the same result from directly computing <m>\dfrac{\partial (u,v)}{\partial (x,y)}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            We know the area in the <m>xy</m>-plane of the ellipse is <m>\iint_{R_{xy}} dxdy</m>. Use the previous theorem to switch to an integral over the region <m>R_{uv}</m>.  Then evaluate this integral by using facts about area to prove that the area in the <m>xy</m> plane is <m>\pi a b</m>.
+            <hint>
               <p>
                 you don't actually have to set up any bounds, rather just reduce this to an area integral over the region <m>R_{uv}</m>.
               </p>
-              </hint>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Let <m>R</m> be the region in the plane bounded by the curves:
-        <md>
-          <mrow>x+2y\amp =1</mrow>
-          <mrow>x+2y\amp =4</mrow>
-          <mrow>2x-y\amp =0</mrow>
-          <mrow>2x-y\amp =8</mrow>
-        </md>
-      </p>
+            </hint>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-      <p>
-        We want to compute the integral <m>\iint_R xdxdy</m> using a change of coordinates. [Challenge: Try doing this without looking at the steps in the next paragraph]
-        <ol>
-          <li>
-            <p>
-              Draw the region <m>R</m> in the <m>xy</m>-plane.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Let <m>R</m> be the region in the plane bounded by the curves:
+      <md>
+        <mrow>x+2y\amp =1</mrow>
+        <mrow>x+2y\amp =4</mrow>
+        <mrow>2x-y\amp =0</mrow>
+        <mrow>2x-y\amp =8</mrow>
+      </md>
+    </p>
 
-          <li>
-            <p>
-              Use the change of coordinates <m>u=x+2y</m> and <m>v=2x-y</m> to evaluate this integral.
-            </p>
-          </li>
+    <p>
+      We want to compute the integral <m>\iint_R xdxdy</m> using a change of coordinates. [Challenge: Try doing this without looking at the steps in the next paragraph]
+      <ol>
+        <li>
+          <p>
+            Draw the region <m>R</m> in the <m>xy</m>-plane.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What are the bounds for <m>u</m> and <m>v</m>?  You'll want to solve for <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m>, and then you'll need a Jacobian.
-            </p>
-          </li>
+        <li>
+          <p>
+            Use the change of coordinates <m>u=x+2y</m> and <m>v=2x-y</m> to evaluate this integral.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Make sure you provide a sketch of the region <m>R_{uv}</m> in the <m>uv</m>-plane (it should be a rectangle).
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-        \bmw{This is problem 7 in section 15.8.}
-        </fn>
-        Use the transformation <m>u=3x+2y</m> and <m>v=x+4y</m> to evaluate the integral
-        <me>
-          \iint_R (3x^2+14xy+8y^2)dxdy =\iint_R (3x+2y)(x+4y)dxdy
-        </me>
-        for the region <m>R</m> that is bounded by the lines <m>y=-(3/2)x+1</m>, <m>y=-(3/2)x+3</m>, <m>y=-(1/4)x</m>, and <m>y=(-1/4)x+1</m>.
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            What are the bounds for <m>u</m> and <m>v</m>?  You'll want to solve for <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m>, and then you'll need a Jacobian.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Make sure you provide a sketch of the region <m>R_{uv}</m> in the <m>uv</m>-plane (it should be a rectangle).
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      EXTRA<fn>
+      \bmw{This is problem 7 in section 15.8.}
+      </fn>
+      Use the transformation <m>u=3x+2y</m> and <m>v=x+4y</m> to evaluate the integral
+      <me>
+        \iint_R (3x^2+14xy+8y^2)dxdy =\iint_R (3x+2y)(x+4y)dxdy
+      </me>
+      for the region <m>R</m> that is bounded by the lines <m>y=-(3/2)x+1</m>, <m>y=-(3/2)x+3</m>, <m>y=-(1/4)x</m>, and <m>y=(-1/4)x+1</m>.
+    </p>
+  </exploration>
 </section>

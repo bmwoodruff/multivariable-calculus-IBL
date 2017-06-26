@@ -18,51 +18,48 @@
       </statement>
     </definition>
 
-    <exercise xml:id="prob_centroid_of_curve">
+    <exploration xml:id="prob_centroid_of_curve">
       <title>Centroid</title>
-      <statement>
-        <p>
-          EXTRA<fn><url href="http://www.youtube.com/watch?v=t7T0MzfgV0Q&amp;list=PL04DF68E73B7ECD54&amp;index=5&amp;feature=plpp_video">Watch a YouTube video.</url></fn>
-          Notice the word <q>average</q> in the definition of the centroid. Use the concept of average value to explain why the coordinates of the centroid are
-          EXTRA<fn>These are the formulas for the centroid.</fn>
-          <me>
-            \bar x = \frac{\int_C x ds}{\int_C  ds},
-            \bar y = \frac{\int_C y ds}{\int_C  ds}, 
-            \text{ and } 
-            \bar z = \frac{\int_C z ds}{\int_C  ds}.
-          </me>
-        </p>
+      <p>
+        EXTRA<fn><url href="http://www.youtube.com/watch?v=t7T0MzfgV0Q&amp;list=PL04DF68E73B7ECD54&amp;index=5&amp;feature=plpp_video">Watch a YouTube video.</url></fn>
+        Notice the word <q>average</q> in the definition of the centroid. Use the concept of average value to explain why the coordinates of the centroid are
+        EXTRA<fn>These are the formulas for the centroid.</fn>
+        <me>
+          \bar x = \frac{\int_C x ds}{\int_C  ds},
+          \bar y = \frac{\int_C y ds}{\int_C  ds}, 
+          \text{ and } 
+          \bar z = \frac{\int_C z ds}{\int_C  ds}.
+        </me>
+      </p>
 
-        <p>
-          Notice that the denominator in each case is just the arc length <m>s=\int_C ds</m>.
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="prob_semicircle_centroid">
-      <statement>
-        <p>
-          Let <m>C</m> be the semicircular arc <m>\vec r(t)=(a\cos t, a\sin t)</m> for <m>t\in[0,\pi]</m>.
-        </p>
-        <hint>
+      <p>
+        Notice that the denominator in each case is just the arc length <m>s=\int_C ds</m>.
+      </p>
+    </exploration>
+
+    <exploration xml:id="prob_semicircle_centroid">
+      <p>
+        Let <m>C</m> be the semicircular arc <m>\vec r(t)=(a\cos t, a\sin t)</m> for <m>t\in[0,\pi]</m>.
+      </p>
+      <hint>
         <p>
           A picture of this will help
         </p>
-        </hint>
-        <ol>
-          <li>
-            <p>
-              Without doing any computations, make an educated guess for the centroid <m>(\bar x, \bar y)</m> of this arc.
-            </p>
-          </li>
+      </hint>
+      <ol>
+        <li>
+          <p>
+            Without doing any computations, make an educated guess for the centroid <m>(\bar x, \bar y)</m> of this arc.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Next compute the integrals given in <xref ref="prob_centroid_of_curve">exercise</xref> to find the actual centroid. Share with the class your guess, even if it was incorrect.
-            </p>
-          </li>
-        </ol>
-      </statement>
-    </exercise>
+        <li>
+          <p>
+            Next compute the integrals given in <xref ref="prob_centroid_of_curve">exercise</xref> to find the actual centroid. Share with the class your guess, even if it was incorrect.
+          </p>
+        </li>
+      </ol>
+    </exploration>
   </subsection>
 
   <subsection>
@@ -70,58 +67,56 @@
     <p>
       Density is generally a mass per unit volume. However, when talking about a curve or wire, as in this chapter, it's simpler to let density be the mass per unit length. Sometimes an object is made out of a composite material, and the density of the object is different at different places in the object. For example, we might have a straight wire where one end is steel and the other end is nickel. In the middle, the wire slowly transitions from being all steel to all nickel. The centroid is the midpoint of the wire. However, since nickel has a higher density than steel, the balance point (the center of mass) would not be at the midpoint of the wire, but would be closer to the denser and heavier nickel end. In this sub-section, we'll develop formulas for the mass and in the next sub-section formulas for the center of mass of such a wire. Such composite materials are engineered all the time (though probably not our example wire). \bmw{In future mechanical engineering courses, you would learn how to determine the density <m>\delta</m> (mass per unit length) at each point on such a composite wire.}\valpo{In future mechanical engineering courses, you may would learn how to determine the density <m>\delta</m> (mass per unit length) at each point on such a composite wire.}
     </p>
-    <exercise xml:id="mass_of_curve">
+
+    <exploration xml:id="mass_of_curve">
       <title>Mass</title>
-      <statement>
-        <p>
-          EXTRA<fn><url href="http://www.youtube.com/watch?v=mz-Udq5TeS4&amp;list=PL04DF68E73B7ECD54&amp;index=6&amp;feature=plpp_video">Watch a YouTube video.</url></fn>
-          Suppose a wire <m>C</m> has the parameterization <m>\vec r(t)</m> for <m>t\in[a,b]</m>. Suppose the wire's density at a point <m>(x,y,z)</m> on the wire is given by the function <m>\delta(x,y,z)</m>. \bmw{You'll learn to calculate this function in a future class. For the purposes of our class, we'll just assume we know what <m>\delta(x,y,z)</m> is.}
-          <ol>
-            <li>
-              <p>
-                Consider a small portion of the wire at <m>t=t_0</m> of length <m>ds</m>.  Explain why the mass of the small portion of the wire is <m>dm=\delta(\vec r(t_0)) ds</m>.
-              </p>
-            </li>
+      <p>
+        EXTRA<fn><url href="http://www.youtube.com/watch?v=mz-Udq5TeS4&amp;list=PL04DF68E73B7ECD54&amp;index=6&amp;feature=plpp_video">Watch a YouTube video.</url></fn>
+        Suppose a wire <m>C</m> has the parameterization <m>\vec r(t)</m> for <m>t\in[a,b]</m>. Suppose the wire's density at a point <m>(x,y,z)</m> on the wire is given by the function <m>\delta(x,y,z)</m>. \bmw{You'll learn to calculate this function in a future class. For the purposes of our class, we'll just assume we know what <m>\delta(x,y,z)</m> is.}
+        <ol>
+          <li>
+            <p>
+              Consider a small portion of the wire at <m>t=t_0</m> of length <m>ds</m>.  Explain why the mass of the small portion of the wire is <m>dm=\delta(\vec r(t_0)) ds</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Explain why the mass <m>m</m> of an object is given by the formulas below (explain why each equals sign is true):
-                <me>
-                  m=\int_C dm = \int_C \delta ds = \int_a^b \delta(\vec r(t)) \left|\frac{d\vec r}{dt}\right|dt.
-                </me>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          \larsonfive{ EXTRA<fn>See Larson 15.2:23<ndash />26 for more practice.</fn>}
-          A wire lies along the straight segment from <m>(0,2,0)</m> to <m>(1,1,3)</m>. The wire's density (mass per unit length) at a point <m>(x,y,z)</m> is <m>\delta(x,y,z)=x+y+z</m>.
-          <ol>
-            <li>
-              <p>
-                Find the wire's density at <m>(0,2,0)</m> and <m>(1,1,3)</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              Explain why the mass <m>m</m> of an object is given by the formulas below (explain why each equals sign is true):
+              <me>
+                m=\int_C dm = \int_C \delta ds = \int_a^b \delta(\vec r(t)) \left|\frac{d\vec r}{dt}\right|dt.
+              </me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
-            <li>
-              <p>
-                Is the wire heavier at <m>(0,2,0)</m> or at <m>(1,1,3)</m>?
-              </p>
-            </li>
+    <exploration>
+      <p>
+        \larsonfive{ EXTRA<fn>See Larson 15.2:23<ndash />26 for more practice.</fn>}
+        A wire lies along the straight segment from <m>(0,2,0)</m> to <m>(1,1,3)</m>. The wire's density (mass per unit length) at a point <m>(x,y,z)</m> is <m>\delta(x,y,z)=x+y+z</m>.
+        <ol>
+          <li>
+            <p>
+              Find the wire's density at <m>(0,2,0)</m> and <m>(1,1,3)</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                What is the total mass of the wire?  [You'll need to parametrize the line as your first step<mdash />see <xref ref="first_line_between_two_points">Exercise</xref> if you need a refresher.]
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Is the wire heavier at <m>(0,2,0)</m> or at <m>(1,1,3)</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What is the total mass of the wire?  [You'll need to parametrize the line as your first step<mdash />see <xref ref="first_line_between_two_points">Exercise</xref> if you need a refresher.]
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
   </subsection>
 
   <subsection>
@@ -133,129 +128,127 @@
     <p>
       The next exercise helps us reason about the center of mass of a collection of objects. Calculating the center of mass of a collection of objects is important, for example, in astronomy when you want to calculate how two bodies orbit each other.
     </p>
-    <exercise xml:id="center_of_mass_with_two_points">
-      <statement>
+
+    <exploration xml:id="center_of_mass_with_two_points">
+      <p>
+        Suppose two objects are positioned at the points <m>P_1=(x_1,y_1,z_1)</m> and <m>P_2=(x_2,y_2,z_2)</m>. Our goal in this exercise is to understand the difference between the centroid and the center of mass.
+      </p>
+      <ol>
+      <li>
         <p>
-          Suppose two objects are positioned at the points <m>P_1=(x_1,y_1,z_1)</m> and <m>P_2=(x_2,y_2,z_2)</m>. Our goal in this exercise is to understand the difference between the centroid and the center of mass.
+          Find the centroid of two objects.
         </p>
-        <ol>
-        <li>
-          <p>
-            Find the centroid of two objects.
-          </p>
-        </li>
+      </li>
 
-        <li>
-          <p>
-            Suppose both objects have the same mass of 2 kg.  Find the center of mass.
-          </p>
-        </li>
+      <li>
+        <p>
+          Suppose both objects have the same mass of 2 kg.  Find the center of mass.
+        </p>
+      </li>
 
-        <li>
-          <p>
-            Now suppose the mass of the object at point <m>P_1</m> is 2 kg, and the mass of the object at point <m>P_2</m> is 5 kg.
-          </p>
-          <ol type="a">
-            <li>
-              <p>
-                Make a hypothesis (no calculations) about if the center of mass will be closer to <m>P_1</m> or <m>P_2</m>?
-              </p>
-            </li>
+      <li>
+        <p>
+          Now suppose the mass of the object at point <m>P_1</m> is 2 kg, and the mass of the object at point <m>P_2</m> is 5 kg.
+        </p>
+        <ol type="a">
+          <li>
+            <p>
+              Make a hypothesis (no calculations) about if the center of mass will be closer to <m>P_1</m> or <m>P_2</m>?
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Give a physical reason for your answer before doing any computations.
-              </p>
-            </li>
+          <li>
+            <p>
+              Give a physical reason for your answer before doing any computations.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Now find the center of mass <m>(\bar x, \bar y, \bar z)</m> of the two points.
-                <hint>
+          <li>
+            <p>
+              Now find the center of mass <m>(\bar x, \bar y, \bar z)</m> of the two points.
+              <hint>
                 <p>
                   Think of it as a weighted average. If you are still stuck, see the margin
                 </p>
-                </hint>
-                EXTRA<fn>
-                <hint>
+              </hint>
+              EXTRA<fn>
+              <hint>
                 <p>
                   You should get <m>\bar x= \frac{2x_1+5x_2}{2+5}</m>.
                 </p>
-                </hint>
-                </fn>
-              </p>
-            </li>
-          </ol>
-        </li>
+              </hint>
+              </fn>
+            </p>
+          </li>
         </ol>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          This exercise reinforces what you just did with two points in the previous exercise. However, it now involves two people on a seesaw. EXTRA<fn>See <url href="http://en.wikipedia.org/wiki/Seesaw">Wikipedia</url> for a seesaw picture.</fn>Ignore the mass of the seesaw in your work below (pretend it's an extremely light seesaw, so its mass is negligible compared to the masses of the people).
-          <ol>
-            <li>
-              <p>
-                My daughter and her friend are sitting on a seesaw.  Both girls have the same mass of 30 kg. My wife stands about 1 m behind my daughter. We'll measure distance in this exercise from my wife's perspective.  We can think of my daughter as a point mass located at <m>(1\text{m} ,0)</m> whose mass is <m>30</m> kg. Suppose her friend is located at <m>(5\text{m} ,0)</m>. Suppose the kids are sitting just right so that the seesaw is perfectly balanced.  That means the the center of mass of the girls is precisely at the pivot point (or center) of the seesaw. Find the distance from my wife to the pivot point by finding the center of mass of the two girls.
-              </p>
-            </li>
+      </li>
+      </ol>
+    </exploration>
 
-            <li>
-              <p>
-                My daughter's friend has to leave, so I plan to take her place on the seesaw. My mass is 100 kg. Her friend was sitting at the point <m>(5,0)</m>. I would like to sit at the point <m>(a,0)</m> so that the seesaw is perfectly balanced. Without doing any computations, is <m>a>5</m> or <m>a\lt 5</m>? Explain.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        This exercise reinforces what you just did with two points in the previous exercise. However, it now involves two people on a seesaw. EXTRA<fn>See <url href="http://en.wikipedia.org/wiki/Seesaw">Wikipedia</url> for a seesaw picture.</fn>Ignore the mass of the seesaw in your work below (pretend it's an extremely light seesaw, so its mass is negligible compared to the masses of the people).
+        <ol>
+          <li>
+            <p>
+              My daughter and her friend are sitting on a seesaw.  Both girls have the same mass of 30 kg. My wife stands about 1 m behind my daughter. We'll measure distance in this exercise from my wife's perspective.  We can think of my daughter as a point mass located at <m>(1\text{m} ,0)</m> whose mass is <m>30</m> kg. Suppose her friend is located at <m>(5\text{m} ,0)</m>. Suppose the kids are sitting just right so that the seesaw is perfectly balanced.  That means the the center of mass of the girls is precisely at the pivot point (or center) of the seesaw. Find the distance from my wife to the pivot point by finding the center of mass of the two girls.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Suppose I sit at the spot <m>(x,0)</m> (perhaps causing my daughter or I to have a highly unbalanced ride). Find the center of mass of the two points <m>(1,0)</m> and <m>(x,0)</m> whose masses are <m>30</m> and <m>100</m>, respectively (units are meters and kilograms).
-              </p>
-            </li>
+          <li>
+            <p>
+              My daughter's friend has to leave, so I plan to take her place on the seesaw. My mass is 100 kg. Her friend was sitting at the point <m>(5,0)</m>. I would like to sit at the point <m>(a,0)</m> so that the seesaw is perfectly balanced. Without doing any computations, is <m>a>5</m> or <m>a\lt 5</m>? Explain.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Where should I sit so that the seesaw is perfectly balanced (what is <m>a</m>)?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="center_of_mass_of_curve">
+          <li>
+            <p>
+              Suppose I sit at the spot <m>(x,0)</m> (perhaps causing my daughter or I to have a highly unbalanced ride). Find the center of mass of the two points <m>(1,0)</m> and <m>(x,0)</m> whose masses are <m>30</m> and <m>100</m>, respectively (units are meters and kilograms).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Where should I sit so that the seesaw is perfectly balanced (what is <m>a</m>)?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <exploration xml:id="center_of_mass_of_curve">
       <title>Center of mass</title>
-      <statement>
-        <p>
-          EXTRA<fn><url href="http://www.youtube.com/watch?v=mz-Udq5TeS4&amp;list=PL04DF68E73B7ECD54&amp;index=6&amp;feature=plpp_video">Watch a YouTube video.</url></fn>In the previous exercises we focused on a system with two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> with masses <m>m_1</m> and <m>m_2</m>. The center of mass in the <m>x</m> direction is given by
-          <me>
-            \bar x = \frac{x_1m_1+x_2m_2}{m_1+m_2} = \frac{\sum_{i=1}^2x_i m_i}{\sum_{i=1}^2m_i}
-          </me>
-          <ol>
-            <li>
-              <p>
-                If we consider a system with 3 points, what formula gives the center of mass in the <m>x</m> direction? What if there are 4 points, 5 points, or <m>n</m> points?
-              </p>
-            </li>
+      <p>
+        EXTRA<fn><url href="http://www.youtube.com/watch?v=mz-Udq5TeS4&amp;list=PL04DF68E73B7ECD54&amp;index=6&amp;feature=plpp_video">Watch a YouTube video.</url></fn>In the previous exercises we focused on a system with two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> with masses <m>m_1</m> and <m>m_2</m>. The center of mass in the <m>x</m> direction is given by
+        <me>
+          \bar x = \frac{x_1m_1+x_2m_2}{m_1+m_2} = \frac{\sum_{i=1}^2x_i m_i}{\sum_{i=1}^2m_i}
+        </me>
+        <ol>
+          <li>
+            <p>
+              If we consider a system with 3 points, what formula gives the center of mass in the <m>x</m> direction? What if there are 4 points, 5 points, or <m>n</m> points?
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Suppose now that we have a wire located along a curve <m>C</m>. The density of the wire is known to be <m>\delta(x,y,z)</m> (which could be different at different points on the curve).  Imagine cutting the wire into a thousand or more tiny chunks.  Each chunk would be centered at some point <m>(x_i,y_i,z_i)</m> and have length <m>ds_i</m>. Explain why the mass of each little chunk is <m>dm_i\approx\delta ds_i</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              Suppose now that we have a wire located along a curve <m>C</m>. The density of the wire is known to be <m>\delta(x,y,z)</m> (which could be different at different points on the curve).  Imagine cutting the wire into a thousand or more tiny chunks.  Each chunk would be centered at some point <m>(x_i,y_i,z_i)</m> and have length <m>ds_i</m>. Explain why the mass of each little chunk is <m>dm_i\approx\delta ds_i</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Give a formula for the center of mass in the <m>y</m> direction of the thousands of points <m>(x_i,y_i,z_i)</m>, each with mass <m>dm_i</m>. [This should almost be an exact copy of the first part.] 
-                 Then explain why
-                <me>
-                  \bar y = \frac{\int_C y dm}{\int_C dm}=\frac{\int_C y \delta ds}{\int_C \delta ds}.
-                </me>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Give a formula for the center of mass in the <m>y</m> direction of the thousands of points <m>(x_i,y_i,z_i)</m>, each with mass <m>dm_i</m>. [This should almost be an exact copy of the first part.] 
+               Then explain why
+              <me>
+                \bar y = \frac{\int_C y dm}{\int_C dm}=\frac{\int_C y \delta ds}{\int_C \delta ds}.
+              </me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       Ask me in class to show you another way to obtain the formula for center of mass. It involves looking at masses weighted by their distance (called a moment of mass). Many of you will have already seen an idea similar to this in statics, but in that class you are talking about moments of force, not moments of mass.
     </p>

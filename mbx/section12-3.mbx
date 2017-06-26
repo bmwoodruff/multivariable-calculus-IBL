@@ -36,129 +36,125 @@
     </statement>
   </theorem>
 
-  <exercise>
-    <statement>
-      <p>
-        Consider the vector field <m>\vec F = (2z,3y,-4x)</m>. Let <m>C</m> be the disc <m>x^2+z^2\leq 9</m> in the plane <m>y=2</m>. Let <m>C</m> be the boundary of this disc, so the circle <m>x^2+z^2=9</m> in the plane <m>y=2</m>. The curve <m>C</m> is oriented in the counterclockwise direction when looked at from the origin.
-        <ol>
-          <li>
-            <p>
-              Compute the curl of <m>\vec F</m>, and state the unit normal vector <m>\vec n</m> to <m>S</m> that is oriented compatibly with <m>C</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Consider the vector field <m>\vec F = (2z,3y,-4x)</m>. Let <m>C</m> be the disc <m>x^2+z^2\leq 9</m> in the plane <m>y=2</m>. Let <m>C</m> be the boundary of this disc, so the circle <m>x^2+z^2=9</m> in the plane <m>y=2</m>. The curve <m>C</m> is oriented in the counterclockwise direction when looked at from the origin.
+      <ol>
+        <li>
+          <p>
+            Compute the curl of <m>\vec F</m>, and state the unit normal vector <m>\vec n</m> to <m>S</m> that is oriented compatibly with <m>C</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Give a parametrization <m>\vec r(t)</m> of the curve <m>C</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Give a parametrization <m>\vec r(t)</m> of the curve <m>C</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Verify Stokes' theorem by computing both sides of the equation:
-              <me>
-                \int_C\vec F\cdot d\vec r = \iint_S \text{ curl } \cdot \vec n d\sigma.
-              </me>
-              The left side will require you to set up and evaluate a line integral.  The right side will require you to evaluate a surface integral (though you should be able to reduce this integral to a known quantity).
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Consider the vector field <m>\vec F = \left(x+y, y+z, x+z\right)</m>.
-      </p>
+        <li>
+          <p>
+            Verify Stokes' theorem by computing both sides of the equation:
+            <me>
+              \int_C\vec F\cdot d\vec r = \iint_S \text{ curl } \cdot \vec n d\sigma.
+            </me>
+            The left side will require you to set up and evaluate a line integral.  The right side will require you to evaluate a surface integral (though you should be able to reduce this integral to a known quantity).
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-      <p>
-        Let <m>C</m> be the space curve which travels around a triangle in <m>\mathbb{R}^3</m> and hits the vertexes <m>(2,0,0)</m>, <m>(0,3,0)</m>, and <m>(0,0,6)</m>, in this order.
-        This triangle lies in the plane <m>S</m> given by <m>\ds \frac x2+\frac y3 +\frac z6=1</m>, or equivalently <m>z=6-3x-2y</m>.
-        <ol>
-          <li>
-            <p>
-              Give bounds for <m>x</m> and <m>y</m> so that <m>\vec r(x,y)=(x,y,6-3x-2y)</m> is a parametrization of <m>S</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Consider the vector field <m>\vec F = \left(x+y, y+z, x+z\right)</m>.
+    </p>
 
-          <li>
-            <p>
-              Show that the circulation of <m>\vec F</m> along <m>C</m> is <m>-18</m>, by using Stokes' theorem.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Let <m>\vec F = \left\lt z,y^2,x^2\right></m>. The surface <m>S</m>, parametrized by <m>\vec r(u,v) = \left\lt u\cos v,u\sin v, u\right></m> for <m>0\leq u\leq 1</m> and <m>0\leq v\leq 2\pi</m> is a cone. The boundary of <m>S</m> is the curve <m>C</m> is a circle of radius one at height <m>z=1</m>. If we choose as our normal vector to <m>S</m> the outward normal (away from the <m>z</m>-axis), then to use Stokes' theorem we must orient <m>C</m> counterclockwise as seen from below the surface.
-        <ol>
-          <li>
-            <p>
-              Find <m>\vec n d\sigma</m> (the product should allow you to ignore magnitudes).
-            </p>
-          </li>
+    <p>
+      Let <m>C</m> be the space curve which travels around a triangle in <m>\mathbb{R}^3</m> and hits the vertexes <m>(2,0,0)</m>, <m>(0,3,0)</m>, and <m>(0,0,6)</m>, in this order.
+      This triangle lies in the plane <m>S</m> given by <m>\ds \frac x2+\frac y3 +\frac z6=1</m>, or equivalently <m>z=6-3x-2y</m>.
+      <ol>
+        <li>
+          <p>
+            Give bounds for <m>x</m> and <m>y</m> so that <m>\vec r(x,y)=(x,y,6-3x-2y)</m> is a parametrization of <m>S</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Give a parameterization of <m>C</m> that is oriented compatibly with <m>\vec n</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Show that the circulation of <m>\vec F</m> along <m>C</m> is <m>-18</m>, by using Stokes' theorem.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              Set up both integrals in Stokes' theorem. Don't evaluate either.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Let <m>\vec F = \left\lt z,y^2,x^2\right></m>. The surface <m>S</m>, parametrized by <m>\vec r(u,v) = \left\lt u\cos v,u\sin v, u\right></m> for <m>0\leq u\leq 1</m> and <m>0\leq v\leq 2\pi</m> is a cone. The boundary of <m>S</m> is the curve <m>C</m> is a circle of radius one at height <m>z=1</m>. If we choose as our normal vector to <m>S</m> the outward normal (away from the <m>z</m>-axis), then to use Stokes' theorem we must orient <m>C</m> counterclockwise as seen from below the surface.
+      <ol>
+        <li>
+          <p>
+            Find <m>\vec n d\sigma</m> (the product should allow you to ignore magnitudes).
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Note that the surface <m>S_2</m>, which is the disc <m>x^2+y^2\leq 1</m> at height <m>z=1</m>, has the same boundary <m>C</m> as surface <m>S</m>. The normal vectors to <m>S_2</m> are <m>(0,0,\pm 1)</m>. Use Stokes' theorem to compute both integrals above.
-            </p>
-          </li>
-        </ol>
-      </p>
+        <li>
+          <p>
+            Give a parameterization of <m>C</m> that is oriented compatibly with <m>\vec n</m>.
+          </p>
+        </li>
 
-      <p>
-        Being creative in your choice of surface can sometimes make a problem trivial.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Let <m>\vec F(x,y,z)=(M,N,P)</m> be a continuously differentiable vector field. Suppose that <m>\vec F</m> has a potential (so that <m>D\vec F</m> is symmetric).
-        <ol>
-          <li>
-            <p>
-              Compute the derivative of <m>F</m> as a square matrix.
-            </p>
-          </li>
+        <li>
+          <p>
+            Set up both integrals in Stokes' theorem. Don't evaluate either.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Explain which partial derivatives must be equal.
-            </p>
-          </li>
+        <li>
+          <p>
+            Note that the surface <m>S_2</m>, which is the disc <m>x^2+y^2\leq 1</m> at height <m>z=1</m>, has the same boundary <m>C</m> as surface <m>S</m>. The normal vectors to <m>S_2</m> are <m>(0,0,\pm 1)</m>. Use Stokes' theorem to compute both integrals above.
+          </p>
+        </li>
+      </ol>
+    </p>
 
-          <li>
-            <p>
-              Use this information to find the curl of <m>\vec F</m> if <m>\vec F</m> has a potential.
-            </p>
-          </li>
+    <p>
+      Being creative in your choice of surface can sometimes make a problem trivial.
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              According to Stokes' Theorem, what is the circulation of <m>\vec F</m> along any closed path, provided <m>\vec F</m> has a potential?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+  <exploration>
+    <p>
+      Let <m>\vec F(x,y,z)=(M,N,P)</m> be a continuously differentiable vector field. Suppose that <m>\vec F</m> has a potential (so that <m>D\vec F</m> is symmetric).
+      <ol>
+        <li>
+          <p>
+            Compute the derivative of <m>F</m> as a square matrix.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Explain which partial derivatives must be equal.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Use this information to find the curl of <m>\vec F</m> if <m>\vec F</m> has a potential.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            According to Stokes' Theorem, what is the circulation of <m>\vec F</m> along any closed path, provided <m>\vec F</m> has a potential?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     \bmw{\section{Wrap Up}
     Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}

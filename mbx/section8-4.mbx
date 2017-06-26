@@ -40,38 +40,37 @@
     <p>
       If we throw a pebble from a 64 ft tall cliff, then we could parameterize the path after <m>t</m> seconds using <m>\vec r(t) = (3t,64-16t^2)</m>. The numbers below get rather large in a hurry, so let's use a simpler parameterization to gain understanding about the connection between <m>\vec v</m>, <m>\vec a</m>, <m>\vec T</m>, and <m>\vec N</m>. Sometimes the key to understanding is to simplify the exercise.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          Consider the parameterization <m>\vec r(t) = (t,9-t^2)</m> (it's a simplified version of tossing a pebble off a building). Our goal, at time <m>t=1</m>, is to write <m>\vec a</m> in the form <m>\vec a = a_T\vec T+a_N\vec N.</m> Follow the steps below.
-          <ol>
-            <li>
-              <p>
-                Compute <m>\vec v</m>, <m>\vec a</m>, and <m>\vec T</m> at time <m>t</m>, and then at time <m>t=1</m>.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                At <m>t=1</m>, compute the projection of <m>\vec a</m> onto <m>\vec T</m>, i.e. compute <m>\proj_{\vec T(1)}\vec a(1)</m>.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        Consider the parameterization <m>\vec r(t) = (t,9-t^2)</m> (it's a simplified version of tossing a pebble off a building). Our goal, at time <m>t=1</m>, is to write <m>\vec a</m> in the form <m>\vec a = a_T\vec T+a_N\vec N.</m> Follow the steps below.
+        <ol>
+          <li>
+            <p>
+              Compute <m>\vec v</m>, <m>\vec a</m>, and <m>\vec T</m> at time <m>t</m>, and then at time <m>t=1</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                State <m>\vec N(t)</m> (remember you can flip the order and change a sign), and then at <m>t=1</m> compute <m>\text{ proj } _{\vec N(1)}\vec a(1)</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              At <m>t=1</m>, compute the projection of <m>\vec a</m> onto <m>\vec T</m>, i.e. compute <m>\proj_{\vec T(1)}\vec a(1)</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                If we write <m>\vec a = a_T\vec T +a_N\vec N</m>, then what are <m>a_T</m> and <m>a_N</m>?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              State <m>\vec N(t)</m> (remember you can flip the order and change a sign), and then at <m>t=1</m> compute <m>\text{ proj } _{\vec N(1)}\vec a(1)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If we write <m>\vec a = a_T\vec T +a_N\vec N</m>, then what are <m>a_T</m> and <m>a_N</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
     <definition>
       <title>Tangential and Normal Components of Acceleration</title>
@@ -88,33 +87,33 @@
     <p>
       Let's return to the example of Sammy on a merry-go-round. From this example, we'll see one of the key ideas in this section.
     </p>
-    <exercise>
+
+    <exploration>
       <title>Optional, we already basically did this</title>
-      <statement>
-        <p>
-          Suppose that Sammy sits <m>\rho</m> feet away from the center of the merry-go-ground. His sister decides to spin him around at different speeds. Let <m>\vec r(t) = (\rho \cos \omega t, \rho \sin \omega t)</m> be a parametrization of Sammy's postion.
-          <ol>
-            <li>
-              <p>
-                Show that Sammy's speed is <m>|\vec v|=\rho \omega</m>.
-              </p>
-            </li>
+      <p>
+        Suppose that Sammy sits <m>\rho</m> feet away from the center of the merry-go-ground. His sister decides to spin him around at different speeds. Let <m>\vec r(t) = (\rho \cos \omega t, \rho \sin \omega t)</m> be a parametrization of Sammy's postion.
+        <ol>
+          <li>
+            <p>
+              Show that Sammy's speed is <m>|\vec v|=\rho \omega</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Find the curvature of Sammy's path at any time <m>t</m> (it happens to be constant - and we did this already when we computed the curvature along a circle).
-              </p>
-            </li>
+          <li>
+            <p>
+              Find the curvature of Sammy's path at any time <m>t</m> (it happens to be constant - and we did this already when we computed the curvature along a circle).
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Find the acceleration vector, and show that <m>\ds |\vec a| = \kappa |\vec v|^2 = \frac{|\vec v|^2}{\rho}</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Find the acceleration vector, and show that <m>\ds |\vec a| = \kappa |\vec v|^2 = \frac{|\vec v|^2}{\rho}</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       In the exercise above, all of the acceleration is in the normal direction. The interesting thing to note is that the normal acceleration is ALWAY <m>a_N =  \frac{|\vec v|^2}{\rho}=\kappa |\vec v|^2</m>. That's what we'll now show.
       We'll show that the acceleration of an object moving along a curve <m>\vec r(t)</m> with velocity <m>\vec v(t)</m> is the sum
@@ -132,43 +131,42 @@
     <p>
       Before we decompose the acceleration into its tangential and normal components, let's look at two examples to see what these facts physically represent.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          Imagine that you are riding as a passenger on a road and encounter a series of switchbacks (so the road starts to zigzag up the mountain). Right before each bend in the road, you see a yellow sign that tells you a U-turn is coming up, and that you should reduce your speed from 45 mi/hr to 15 mi/hr. Assume the largest curvature along the turn is <m>\kappa</m>. Recall that <m>a_N=\kappa |\vec v|^2</m>. The engineers of the road designed the road so that if you are moving at 15 mi/hr, then the normal acceleration will be at most <m>A</m> units.
-          <ol>
-            <li>
-              <p>
-                Suppose that your driver (Ben) ignores the suggestion to slow down to 15 mi/hr.  He keeps going 45 mi/hr through the turn. Had he slowed down, the max acceleration would be <m>A</m>.  You're traveling 3 times faster than suggested.  What will your maximum normal acceleration be?
-                <hint>
+
+    <exploration>
+      <p>
+        Imagine that you are riding as a passenger on a road and encounter a series of switchbacks (so the road starts to zigzag up the mountain). Right before each bend in the road, you see a yellow sign that tells you a U-turn is coming up, and that you should reduce your speed from 45 mi/hr to 15 mi/hr. Assume the largest curvature along the turn is <m>\kappa</m>. Recall that <m>a_N=\kappa |\vec v|^2</m>. The engineers of the road designed the road so that if you are moving at 15 mi/hr, then the normal acceleration will be at most <m>A</m> units.
+        <ol>
+          <li>
+            <p>
+              Suppose that your driver (Ben) ignores the suggestion to slow down to 15 mi/hr.  He keeps going 45 mi/hr through the turn. Had he slowed down, the max acceleration would be <m>A</m>.  You're traveling 3 times faster than suggested.  What will your maximum normal acceleration be?
+              <hint>
                 <p>
                   It's more than <m>3A</m>.
                 </p>
-                </hint>
-              </p>
-            </li>
+              </hint>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                You yell at Ben to slow down (you don't want to die). So Ben decides to only slow to 30 mi/hr. He figures this means you'll only feel twice as much acceleration as <m>A</m>.  Explain why this line of reasoning is flawed.
-              </p>
-            </li>
+          <li>
+            <p>
+              You yell at Ben to slow down (you don't want to die). So Ben decides to only slow to 30 mi/hr. He figures this means you'll only feel twice as much acceleration as <m>A</m>.  Explain why this line of reasoning is flawed.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Ben gets frustrated by the fact that he has to slow down. He complains about the engineers who designed the road, and says, <q>they should have just built a larger corner so I could keep going 45.</q>  How much larger should the radius of the circle be so that you can travel 45 mi/hr instead of 15 mi/hr, and still feel the same acceleration <m>A</m>?
-              </p>
-            </li>
+          <li>
+            <p>
+              Ben gets frustrated by the fact that he has to slow down. He complains about the engineers who designed the road, and says, <q>they should have just built a larger corner so I could keep going 45.</q>  How much larger should the radius of the circle be so that you can travel 45 mi/hr instead of 15 mi/hr, and still feel the same acceleration <m>A</m>?
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Which will cause the normal acceleration to decrease more, halving your speed or halving the curvature (doubling the radius)?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Which will cause the normal acceleration to decrease more, halving your speed or halving the curvature (doubling the radius)?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
     <exploration>
       <p>
@@ -271,34 +269,33 @@
     <p>
       The computations involved in getting <m>\tau</m> require a lot of work. Let's use the computer to help us. You can do all of this with the aid of Sage. I'll let you decide from the code what <m>\tau</m> is. That will be your decision to make.
     </p>
-    <exercise>
-      <title>Optional</title>
-      <statement>
-        <p>
-          EXTRA<fn>
-          \thomasee{See 13.4: 9-16 and 13.5: 9-16 (the relevant parts) for more practice.}
-          \stewarts{TBD?}
-          </fn>Consider the helix <m>r(t)=(3\cos t, 3\sin t, 4t)</m>. In <xref ref="helix_example_of_T_N_and_B">exercise</xref> we found
-          <md>
-            <mrow>\vec T \amp = (-\frac{3}{5}\sin t,\frac{3}{5}\cos t,\frac{4}{5})</mrow>
-            <mrow>\vec N \amp = (-\cos t,-\sin t,0)</mrow>
-            <mrow>\vec B \amp = (\frac{4}{5}\sin t,-\frac{4}{5}\cos t,\frac{3}{5})</mrow>
-          </md>
-        </p>
 
-        <p>
-          Compute the torsion vector <m>\vec \tau=\dfrac{d\vec B}{ds}</m>, and then give the torsion <m>\tau</m> (you'll need to determine the speed). Is the torsion positive or negative. Ask me in class to show you how you would be able to determine this physically (without any computations).
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
+    <exploration>
       <title>Optional</title>
-      <statement>
-        <p>
-          Consider the helix <m>r(t)=(4\sin t, 4\cos t, 3t)</m>. Use a computer to find <m>\vec T</m>, <m>\vec N</m>, <m>\vec B</m>, <m>\vec \kappa</m>, and <m>\vec \tau</m>. State your answers. <url href="\sageurlforcurvature">(This sage link will help.)</url> Use your answers to then give <m>\kappa</m> and <m>\tau</m>. (When you present on the board, just write down the 5 vectors, and then explain how you obtained <m>\kappa</m> and <m>\tau</m> from these vectors. If you follow the link, this is mostly already done for you. )
-        </p>
-      </statement>
-    </exercise>
+      <p>
+        EXTRA<fn>
+        \thomasee{See 13.4: 9-16 and 13.5: 9-16 (the relevant parts) for more practice.}
+        \stewarts{TBD?}
+        </fn>Consider the helix <m>r(t)=(3\cos t, 3\sin t, 4t)</m>. In <xref ref="helix_example_of_T_N_and_B">exercise</xref> we found
+        <md>
+          <mrow>\vec T \amp = (-\frac{3}{5}\sin t,\frac{3}{5}\cos t,\frac{4}{5})</mrow>
+          <mrow>\vec N \amp = (-\cos t,-\sin t,0)</mrow>
+          <mrow>\vec B \amp = (\frac{4}{5}\sin t,-\frac{4}{5}\cos t,\frac{3}{5})</mrow>
+        </md>
+      </p>
+
+      <p>
+        Compute the torsion vector <m>\vec \tau=\dfrac{d\vec B}{ds}</m>, and then give the torsion <m>\tau</m> (you'll need to determine the speed). Is the torsion positive or negative. Ask me in class to show you how you would be able to determine this physically (without any computations).
+      </p>
+    </exploration>
+
+    <exploration>
+      <title>Optional</title>
+      <p>
+        Consider the helix <m>r(t)=(4\sin t, 4\cos t, 3t)</m>. Use a computer to find <m>\vec T</m>, <m>\vec N</m>, <m>\vec B</m>, <m>\vec \kappa</m>, and <m>\vec \tau</m>. State your answers. <url href="\sageurlforcurvature">(This sage link will help.)</url> Use your answers to then give <m>\kappa</m> and <m>\tau</m>. (When you present on the board, just write down the 5 vectors, and then explain how you obtained <m>\kappa</m> and <m>\tau</m> from these vectors. If you follow the link, this is mostly already done for you. )
+      </p>
+    </exploration>
+
     <p>
       In the examples above, you should have noticed that <m>\vec \tau</m> was either parallel to <m>\vec N</m> or anti-parallel to <m>\vec N</m>. Let's now show this is always the case. The key is to use the product rule on the cross product, together with some key fact about the cross product.
     </p>
@@ -310,39 +307,39 @@
     </p>
 
     </review>
-    <exercise>
+
+    <exploration>
       <title>Optional</title>
-      <statement>
-        <p>
-          EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=MVtUc2peJn0&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  </fn>
-          Suppose a curve <m>\vec r(t)</m> has the frame <m>\vec T(t)</m>, <m>\vec N(t)</m>, and <m>\vec B(t)</m>. Prove that <m>\dfrac{d\vec B}{ds}</m> is either parallel to <m>\vec N</m>, or points opposite <m>\vec N</m>. Here are some steps.
-          <ul>
-            <li>
-              <p>
-                Why is <m>\dfrac{d\vec B}{ds}</m> orthogonal to <m>\vec B</m>?
-                <hint>
+      <p>
+        EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=MVtUc2peJn0&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  </fn>
+        Suppose a curve <m>\vec r(t)</m> has the frame <m>\vec T(t)</m>, <m>\vec N(t)</m>, and <m>\vec B(t)</m>. Prove that <m>\dfrac{d\vec B}{ds}</m> is either parallel to <m>\vec N</m>, or points opposite <m>\vec N</m>. Here are some steps.
+        <ul>
+          <li>
+            <p>
+              Why is <m>\dfrac{d\vec B}{ds}</m> orthogonal to <m>\vec B</m>?
+              <hint>
                 <p>
                   How long is <m>\vec B</m>? See <xref ref="vector_valued_functions_of_constant_length">Theorem</xref>.
                 </p>
-                </hint>
-              </p>
-            </li>
+              </hint>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                We know <m>\vec B=\vec T\times \vec N</m>. Compute the derivative of both sides using the product rule and explain why <m>\frac{d\vec T}{ds}\times \vec N</m> cancels out. Then explain why <m>\dfrac{d\vec B}{ds}</m> is orthogonal to <m>\vec T</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              We know <m>\vec B=\vec T\times \vec N</m>. Compute the derivative of both sides using the product rule and explain why <m>\frac{d\vec T}{ds}\times \vec N</m> cancels out. Then explain why <m>\dfrac{d\vec B}{ds}</m> is orthogonal to <m>\vec T</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                If <m>\dfrac{d\vec B}{ds}</m> is orthogonal to both <m>\vec B</m> and <m>\vec T</m> why must it be either parallel or anti-parallel to <m>\vec N</m>?
-              </p>
-            </li>
-          </ul>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              If <m>\dfrac{d\vec B}{ds}</m> is orthogonal to both <m>\vec B</m> and <m>\vec T</m> why must it be either parallel or anti-parallel to <m>\vec N</m>?
+            </p>
+          </li>
+        </ul>
+      </p>
+    </exploration>
+
     <p>
       \bmw{\section{Wrap Up}
       Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}

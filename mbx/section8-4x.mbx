@@ -16,18 +16,18 @@
   <p>
     To solve the next exercise, we need to know that acceleration is the derivative of velocity, and that velocity is the derivative of position. These facts hold true for vector-valued functions as well.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Consider a rocket in space (so we can neglect air resistance and gravity). The rocket's boosters apply an acceleration <m>\vec a(t) = (2t,-8)</m> m/s<m>^2</m>. The rocket's initial velocity is <m>\vec v(0) = (4,5)</m> m/s. The initial position is <m>\vec r(0) = (1,16)</m> m. Use this information to determine the position of the object after 2 seconds, and after 3 seconds.
-      </p>
-    </statement>
+
+  <exploration>
+    <p>
+      Consider a rocket in space (so we can neglect air resistance and gravity). The rocket's boosters apply an acceleration <m>\vec a(t) = (2t,-8)</m> m/s<m>^2</m>. The rocket's initial velocity is <m>\vec v(0) = (4,5)</m> m/s. The initial position is <m>\vec r(0) = (1,16)</m> m. Use this information to determine the position of the object after 2 seconds, and after 3 seconds.
+    </p>
     <hint>
       <p>
         Integrate each component to get velocity, then repeat to get position. Don't forget the 4 arbitrary constants you get from integration. Use the initial velocity and initial position to determine these constants.
       </p>
     </hint>
-  </exercise>
+  </exploration>
+
   <p>
     Suppose we fire a projectile (like a pumpkin) from a cannon. The projectile leaves the cannon with an initial speed <m>v_0</m>, at an angle of <m>\alpha</m> above the <m>x</m>-axis. All the motion in this exercise occurs within a plane, and we'll use <m>x</m> and <m>y</m> to represent motion in that plane. Our goal is to find the velocity <m>\vec v(t)</m> and position <m>\vec r(t)</m> of the projectile at any time <m>t</m>.
   </p>
@@ -82,42 +82,42 @@
   </p>
 
   </review>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=dW0bm7cLB8E&amp;list=PL30EE81142B1ED1F0&amp;index=1&amp;feature=plpp_video">YouTube video</url>.</fn>
-        EXTRA<fn> 
-        \thomasee{You can practice finding position from velocity and acceleration with exercises 13.2: 11-18, and especially 13.2: 29.}
-        \stewarts{You can practice finding various combinations of position, velocity and acceleration vectors with exercises: 13.4:9-18, particularly focus on 15-18}
-        </fn>
-        Suppose a projectile is fired from the point <m>(x_0,y_0)</m> with an initial velocity <m>\vec v(0)=(v_{x_0},v_{y_0})</m>, and that gravity is the only force acting on the object. This means the acceleration on the object is <m>\vec a(t) = (0,-g)</m>.
-        <ol>
-          <li>
-            <p>
-              Show that the velocity at any time <m>t</m> is <m>\vec v(t) = (c_1,-gt+c_2)</m>. What are <m>c_1</m> and <m>c_2</m>? Explain
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Show that the position at any time <m>t</m> is <m>\vec r(t) = (v_{x_0}t+c_3, -\frac{1}{2}gt^2+v_{y_0}t+c_4)</m>. What are <m>c_3</m> and <m>c_4</m>?
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=dW0bm7cLB8E&amp;list=PL30EE81142B1ED1F0&amp;index=1&amp;feature=plpp_video">YouTube video</url>.</fn>
+      EXTRA<fn> 
+      \thomasee{You can practice finding position from velocity and acceleration with exercises 13.2: 11-18, and especially 13.2: 29.}
+      \stewarts{You can practice finding various combinations of position, velocity and acceleration vectors with exercises: 13.4:9-18, particularly focus on 15-18}
+      </fn>
+      Suppose a projectile is fired from the point <m>(x_0,y_0)</m> with an initial velocity <m>\vec v(0)=(v_{x_0},v_{y_0})</m>, and that gravity is the only force acting on the object. This means the acceleration on the object is <m>\vec a(t) = (0,-g)</m>.
+      <ol>
+        <li>
+          <p>
+            Show that the velocity at any time <m>t</m> is <m>\vec v(t) = (c_1,-gt+c_2)</m>. What are <m>c_1</m> and <m>c_2</m>? Explain
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Eliminate the parameter <m>t</m> to give a Cartesian equation of the projectile's path. This will prove that the path of the particle is parabolic.
-              <hint>
+        <li>
+          <p>
+            Show that the position at any time <m>t</m> is <m>\vec r(t) = (v_{x_0}t+c_3, -\frac{1}{2}gt^2+v_{y_0}t+c_4)</m>. What are <m>c_3</m> and <m>c_4</m>?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Eliminate the parameter <m>t</m> to give a Cartesian equation of the projectile's path. This will prove that the path of the particle is parabolic.
+            <hint>
               <p>
                 Use substitution.
               </p>
-              </hint>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+            </hint>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     If a projectile starts at <m>(x_0,y_0)</m>, we can move the origin to this point. As long as we are not trying to gauge the location of two projectiles simultaneously, we could always make the origin <m>(0,0)</m> our starting point.
     We make the following definitions for a projectile that starts at <m>(0,0)</m> and hits the ground at <m>(R,0)</m>.
@@ -141,63 +141,62 @@
       </li>
     </ul>
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=a6PHAvynNWM&amp;list=PL30EE81142B1ED1F0&amp;index=2&amp;feature=plpp_video">YouTube video</url>.</fn>
-        Answer the following questions. Assume we fire a projectile from the origin, which means the acceleration, velocity, and position are
-        <me>
-          \vec a(t) = (0,-g), 
-          \vec v(t) = (v_{x_0}, -gt+ v_{y_0}),
-          \vec r(t) = (v_{x_0}t, -\frac12 gt^2+ v_{y_0}t)
-          .
-        </me>
-        <ol>
-          <li>
-            <p>
-              What's the time to max height?  What's the flight time?
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Show why the maximum height is <m>\ds y_{\max}=\frac{v_{y_0}^2}{2g}</m> and the range is <m>\ds R=\frac{2v_{x_0}v_{y_0}}{g}</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=a6PHAvynNWM&amp;list=PL30EE81142B1ED1F0&amp;index=2&amp;feature=plpp_video">YouTube video</url>.</fn>
+      Answer the following questions. Assume we fire a projectile from the origin, which means the acceleration, velocity, and position are
+      <me>
+        \vec a(t) = (0,-g), 
+        \vec v(t) = (v_{x_0}, -gt+ v_{y_0}),
+        \vec r(t) = (v_{x_0}t, -\frac12 gt^2+ v_{y_0}t)
+        .
+      </me>
+      <ol>
+        <li>
+          <p>
+            What's the time to max height?  What's the flight time?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              If the initial speed is <m>v_0</m>, with a firing angle of <m>\alpha</m> above the horizontal, rewrite <m>v_{x_0}</m> and <m>v_{y_0}</m> in terms of <m>v_0</m> and <m>\alpha</m>, and then state the range in terms of <m>v_0</m> and <m>\alpha</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Show why the maximum height is <m>\ds y_{\max}=\frac{v_{y_0}^2}{2g}</m> and the range is <m>\ds R=\frac{2v_{x_0}v_{y_0}}{g}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If the initial speed is <m>v_0</m>, with a firing angle of <m>\alpha</m> above the horizontal, rewrite <m>v_{x_0}</m> and <m>v_{y_0}</m> in terms of <m>v_0</m> and <m>\alpha</m>, and then state the range in terms of <m>v_0</m> and <m>\alpha</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     \bmw{The next exercise comes from your text. (See section 13.2.) Try it without reading the text. It's a fun application of the ideas above.}
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>This exercise was created around the opening ceremony of the Barcelona Spain Olympics.  Antonio Rebollo was the archer, but he didn't try to hit the flame at the peak of the flight. You can <url href="http://www.youtube.com/watch?v=b5gZeT4TVds">watch a YouTube video</url> of the opening ceremony by following the link.</fn>
-        EXTRA<fn>
-        \thomasee{See 13.2: 19-28 for more practice.}
-        \stewarts{See 13.4:19-36 for a variety of application exercises} 
-        </fn>
-      </p>
 
-      <p>
-        An archer stands at ground level and shoots an arrow at an object which is 90 feet away in the horizontal direction and 74 ft above ground. The arrow leaves the bow at about 6 ft above ground level (not the origin).
-        The archer wants the arrow to hit the target at the peak of its parabolic path.
-        For the purposes of this exercise, Let <m>g = 32 \text{ ft } /\text{s} ^2</m>.
-        What initial speed <m>v_0</m> and firing angle <m>\alpha</m> are needed to achieve this result?
-      </p>
-    </statement>
+  <exploration>
+    <p>
+      EXTRA<fn>This exercise was created around the opening ceremony of the Barcelona Spain Olympics.  Antonio Rebollo was the archer, but he didn't try to hit the flame at the peak of the flight. You can <url href="http://www.youtube.com/watch?v=b5gZeT4TVds">watch a YouTube video</url> of the opening ceremony by following the link.</fn>
+      EXTRA<fn>
+      \thomasee{See 13.2: 19-28 for more practice.}
+      \stewarts{See 13.4:19-36 for a variety of application exercises} 
+      </fn>
+    </p>
+
+    <p>
+      An archer stands at ground level and shoots an arrow at an object which is 90 feet away in the horizontal direction and 74 ft above ground. The arrow leaves the bow at about 6 ft above ground level (not the origin).
+      The archer wants the arrow to hit the target at the peak of its parabolic path.
+      For the purposes of this exercise, Let <m>g = 32 \text{ ft } /\text{s} ^2</m>.
+      What initial speed <m>v_0</m> and firing angle <m>\alpha</m> are needed to achieve this result?
+    </p>
     <hint>
       <p>
         This is much easier to solve if you first find <m>v_{x_0}</m> and <m>v_{y_0}</m>, the horizontal and vertical components of the velocity. You may want to move the origin as well, so that you can use the formulas from above.
       </p>
     </hint>
-  </exercise>
+  </exploration>
 </section>

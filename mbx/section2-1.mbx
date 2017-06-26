@@ -22,76 +22,74 @@
     Learning to work with vectors will be key tool we need for our work in high dimensions. Let's start with some problems related to finding distance in 3D, drawing in 3D, and then we'll be ready to work with vectors.
     `
   </p>
-  <exercise>
-    <statement>
-      <p>
-        To find the distance between two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> in the plane, we create a triangle connecting the two points. The base of the triangle has length <m>\Delta x=(x_2-x_1)</m> and the vertical side has length <m>\Delta y=(y_2-y_1)</m>. The Pythagorean theorem gives us the distance between the two points as <m>\sqrt{\Delta x^2+\Delta y^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}</m>.
-        <ol>
-          <li>
-            <p>
-              Draw a 3-D axis then plot the points <m>(1,5)</m> and <m>(2,3)</m>
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Sketch the triangle that connects these two points and the origin <mdash /> <m>(0,0)</m>
-            </p>
-          </li>
+  <exploration>
+    <p>
+      To find the distance between two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> in the plane, we create a triangle connecting the two points. The base of the triangle has length <m>\Delta x=(x_2-x_1)</m> and the vertical side has length <m>\Delta y=(y_2-y_1)</m>. The Pythagorean theorem gives us the distance between the two points as <m>\sqrt{\Delta x^2+\Delta y^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}</m>.
+      <ol>
+        <li>
+          <p>
+            Draw a 3-D axis then plot the points <m>(1,5)</m> and <m>(2,3)</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Find <m>\Delta x</m> and <m>\Delta y</m>
-            </p>
-          </li>
+        <li>
+          <p>
+            Sketch the triangle that connects these two points and the origin <mdash /> <m>(0,0)</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Now extend your picture into 3 and use it to show that the distance between two points <m>(x_1,y_1,z_1)</m> and <m>(x_2,y_2,z_2)</m> in 3-dimensions is <m>\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Find <m>\Delta x</m> and <m>\Delta y</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Use this formula to find the distance between the points <m>(1,5,2)</m> and <m>(2,3,3)</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.1:41-58.} 
-          \stewarts{See 12.1:11-18}
-          </fn>
-        Recall that a circle (or sphere in 3-D) is just a collection of points which are all equal distance away from a center point.
-        <ol>
-          <li>
-            <p>
-              If the center of a circle is the point <m>(1,5)</m> what is the equation for a circle which passes through the point <m>(2,3)</m>?
-            </p>
-          </li>
+        <li>
+          <p>
+            Now extend your picture into 3 and use it to show that the distance between two points <m>(x_1,y_1,z_1)</m> and <m>(x_2,y_2,z_2)</m> in 3-dimensions is <m>\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Find the distance between the two points <m>P=(2,3,-4)</m> and <m>Q=(0,-1,1)</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Use this formula to find the distance between the points <m>(1,5,2)</m> and <m>(2,3,3)</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              Now find an equation of the sphere passing though point <m>Q</m> whose center is at <m>P</m>. 
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.1:41-58.} 
+        \stewarts{See 12.1:11-18}
+        </fn>
+      Recall that a circle (or sphere in 3-D) is just a collection of points which are all equal distance away from a center point.
+      <ol>
+        <li>
+          <p>
+            If the center of a circle is the point <m>(1,5)</m> what is the equation for a circle which passes through the point <m>(2,3)</m>?
+          </p>
+        </li>
 
-              Hint: Each point on the surface of a sphere is <m>r</m> distance away from the center.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Find the distance between the two points <m>P=(2,3,-4)</m> and <m>Q=(0,-1,1)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Now find an equation of the sphere passing though point <m>Q</m> whose center is at <m>P</m>. 
+
+            Hint: Each point on the surface of a sphere is <m>r</m> distance away from the center.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
   <definition>
     <statement>
@@ -160,76 +158,74 @@
     </statement>
   </definition>
 
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.2:23-24.} 
-          \stewarts{See 12.2:5-6}
-          </fn>
-        Consider the vectors <m>\vec u=\langle 1,2 \rangle</m> and <m>\vec v=\left\lt 3,1\right></m>. Draw <m>\vec u</m>, <m>\vec v</m>, <m>\vec u+\vec v</m>, and <m>\vec u-\vec v</m> with their tail placed at the origin. Then draw <m>\vec v</m> with its tail at the head of <m>\vec u</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="prob_donkey">
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 11.1: 3,4.}
-          </fn>
-        Consider the vector <m>\vec v=\langle 3,-1 \rangle</m>.
-        <ol>
-          <li>
-            <p>
-              Draw <m>\vec v</m>, <m>-\vec v</m>, and <m>3\vec v</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.2:23-24.} 
+        \stewarts{See 12.2:5-6}
+        </fn>
+      Consider the vectors <m>\vec u=\langle 1,2 \rangle</m> and <m>\vec v=\left\lt 3,1\right></m>. Draw <m>\vec u</m>, <m>\vec v</m>, <m>\vec u+\vec v</m>, and <m>\vec u-\vec v</m> with their tail placed at the origin. Then draw <m>\vec v</m> with its tail at the head of <m>\vec u</m>.
+    </p>
+  </exploration>
 
-      <p>
-        Suppose a donkey travels along the path given by <m>(x,y)=\vec v t = (3t,-t)</m>, where <m>t</m> represents time.
-      </p>
-      <ol type="resume">
-      <li>
-        <p>
-          At the following times, where is the donkey?
-        </p>
-        <ol>
-          <li>
-            <p>
-              <m>t=0</m> ?
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>t=1</m> ?
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>t=2</m> ?
-            </p>
-          </li>
-        </ol>
-      </li>
-
-      <li>
-        <p>
-          Draw an axis, then sketch the path followed by the donkey.
-        </p>
-      </li>
-
-      <li>
-        <p>
-          Where is the donkey at time <m>t=0,1,2</m>? Put markers with labels on your graph to show the donkey's location.
-        </p>
-      </li>
+  <exploration xml:id="prob_donkey">
+    <p>
+      EXTRA<fn>
+        \thomasee{See 11.1: 3,4.}
+        </fn>
+      Consider the vector <m>\vec v=\langle 3,-1 \rangle</m>.
+      <ol>
+        <li>
+          <p>
+            Draw <m>\vec v</m>, <m>-\vec v</m>, and <m>3\vec v</m>.
+          </p>
+        </li>
       </ol>
-    </statement>
-  </exercise>
+    </p>
+
+    <p>
+      Suppose a donkey travels along the path given by <m>(x,y)=\vec v t = (3t,-t)</m>, where <m>t</m> represents time.
+    </p>
+    <ol type="resume">
+    <li>
+      <p>
+        At the following times, where is the donkey?
+      </p>
+      <ol>
+        <li>
+          <p>
+            <m>t=0</m> ?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>t=1</m> ?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>t=2</m> ?
+          </p>
+        </li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+        Draw an axis, then sketch the path followed by the donkey.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Where is the donkey at time <m>t=0,1,2</m>? Put markers with labels on your graph to show the donkey's location.
+      </p>
+    </li>
+    </ol>
+  </exploration>
+
   <p>
     In a previous problem <xref ref="prob_donkey" /> you encountered <m>(x,y)=(3t,-t)</m>. This is an example of a function where the input is <m>t</m> and the output is a vector <m>(x,y)</m>. For each input <m>t</m>, you get a single vector output <m>(x,y)</m>. Such a function is called a parametrization of the donkey's path. Because the output is a vector, we call the function a vector-valued function. Often, we'll use the variable <m>\vec r</m> to represent the radial vector <m>(x,y)</m>, or <m>(x,y,z)</m> in 3D. So we could rewrite the position of the donkey as <m>\vec r(t)=(3,-1)t</m>. We use <m>\vec r</m> instead of <m>r</m> to remind us that the output is a vector.
   </p>
@@ -237,35 +233,35 @@
   <p>
     Let's look at another, similar problem.
   </p>
-  <exercise xml:id="prob_horseline">
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.2: 1.}
-          </fn>
-        Suppose a horse races down a path given by the vector-valued function <m>\vec r(t) = (1,2)t+(3,4)</m>. (Remember this is the same as writing <m>(x,y) =  (1,2)t+(3,4)</m> or similarly <m>(x,y)=(1t+3,2t+4)</m>.)
-        <ol>
-          <li>
-            <p>
-              Where is the horse at time <m>t=0,1,2</m>?
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Draw an set of axis and put markers on your graph to show the horse's location.
-            </p>
-          </li>
+  <exploration xml:id="prob_horseline">
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.2: 1.}
+        </fn>
+      Suppose a horse races down a path given by the vector-valued function <m>\vec r(t) = (1,2)t+(3,4)</m>. (Remember this is the same as writing <m>(x,y) =  (1,2)t+(3,4)</m> or similarly <m>(x,y)=(1t+3,2t+4)</m>.)
+      <ol>
+        <li>
+          <p>
+            Where is the horse at time <m>t=0,1,2</m>?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Draw the path followed by the horse.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Draw an set of axis and put markers on your graph to show the horse's location.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Draw the path followed by the horse.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     In the last two problems we described the donkey and horse's paths using vectors. The use of vectors actually lets us do a lot more like give a generalized direction or easily compute their speed at any point along the path. To do that we need to define two more mathematical ideas, the magnitude and unit-vector.
   </p>
@@ -298,169 +294,164 @@
     </statement>
   </definition>
 
-  <exercise>
+  <exploration>
     <title>Magnitude and Unit Vector Practice</title>
-    <statement>
+    <p>
+      For each of the following vectors, compute the magnitude and unit vector in the same direction.
+      <ol>
+        <li>
+          <p>
+            <m>-3\ii + 7 \jj</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\lt -4,2,4></m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>8\ii - \jj + 4 \kk</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.2: 9,17,25,33 and surrounding.} 
+        \stewarts{See 12.2: 23-26, 41, 42}
+        </fn>Consider the two points <m>P=(1,2,3)</m> and <m>Q=(2,-1,0)</m>.
+      <ol>
+        <li>
+          <p>
+            Write the vector <m>\vec {PQ}</m> in component form <m>\lt a,b,c)\rangle</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the length (magnitude) of vector <m>\vec {PQ}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find a unit vector for <m>\vec{PQ}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Finally, find a vector of length 7 units that points in the same direction as <m>\vec{PQ}</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      Let's return to <xref ref="prob_donkey">problems</xref> and <xref ref="prob_horseline"></xref>. We now have the tools to determine the donkey's and horse's speed and direction.
+    </p>
+    <ol>
+    <li>
       <p>
-        For each of the following vectors, compute the magnitude and unit vector in the same direction.
-        <ol>
-          <li>
-            <p>
-              <m>-3\ii + 7 \jj</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\lt -4,2,4></m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>8\ii - \jj + 4 \kk</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.2: 9,17,25,33 and surrounding.} 
-          \stewarts{See 12.2: 23-26, 41, 42}
-          </fn>Consider the two points <m>P=(1,2,3)</m> and <m>Q=(2,-1,0)</m>.
-        <ol>
-          <li>
-            <p>
-              Write the vector <m>\vec {PQ}</m> in component form <m>\lt a,b,c)\rangle</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Find the length (magnitude) of vector <m>\vec {PQ}</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Find a unit vector for <m>\vec{PQ}</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Finally, find a vector of length 7 units that points in the same direction as <m>\vec{PQ}</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Let's return to <xref ref="prob_donkey">problems</xref> and <xref ref="prob_horseline"></xref>. We now have the tools to determine the donkey's and horse's speed and direction.
+        The donkey's path was given by <m>(x,y)=\vec v t = (3t,-t)</m>. Find
       </p>
       <ol>
-      <li>
-        <p>
-          The donkey's path was given by <m>(x,y)=\vec v t = (3t,-t)</m>. Find
-        </p>
+        <li>
+          <p>
+            The donkey's speed
+          </p>
+        </li>
+
+        <li>
+          <p>
+            A unit vector that gives the donkey's direction of travel.
+          </p>
+        </li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+        The horse's path was given by <m>\vec r(t) = (1,2)t + (3,4)</m>.
         <ol>
           <li>
             <p>
-              The donkey's speed
+              State the part of <m>\vec r(t)</m> which gives the direction of travel.
             </p>
           </li>
 
           <li>
             <p>
-              A unit vector that gives the donkey's direction of travel.
+              What is a unit vector in the same direction?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              what is the speed of the horse?
             </p>
           </li>
         </ol>
-      </li>
-
-      <li>
-        <p>
-          The horse's path was given by <m>\vec r(t) = (1,2)t + (3,4)</m>.
-          <ol>
-            <li>
-              <p>
-                State the part of <m>\vec r(t)</m> which gives the direction of travel.
-              </p>
-            </li>
-
-            <li>
-              <p>
-                What is a unit vector in the same direction?
-              </p>
-            </li>
-
-            <li>
-              <p>
-                what is the speed of the horse?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </li>
-      </ol>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.5: 1-12.} 
-          \stewarts{Look at 12.2:34-40}
-          </fn>A raccoon is sitting at point <m>P=(0,2,3)</m>. It starts to climb in the direction <m>\vec v=\left\lt 1,-1,2\right></m>.
       </p>
+    </li>
+    </ol>
+  </exploration>
 
-      <p>
-        Write a vector equation <m>(x,y,z)=(?,?,?)</m> for the line that passes through the point <m>P</m> and is parallel to <m>\vec v</m>. [Hint, study <xref ref="prob_horseline">problem</xref>, and base your work off of what you saw there. It's almost identical.]
-      </p>
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.5: 1-12.} 
+        \stewarts{Look at 12.2:34-40}
+        </fn>A raccoon is sitting at point <m>P=(0,2,3)</m>. It starts to climb in the direction <m>\vec v=\left\lt 1,-1,2\right></m>.
+    </p>
 
-      <p>
-        Generalize your work to give an equation of the line that passes through the point <m>P=(x_1,y_1,z_1)</m> and is parallel to the vector <m>\vec v=\langle v_1,v_2,v_3 \rangle</m>.
-      </p>
-    </statement>
-  </exercise>
+    <p>
+      Write a vector equation <m>(x,y,z)=(?,?,?)</m> for the line that passes through the point <m>P</m> and is parallel to <m>\vec v</m>. [Hint, study <xref ref="prob_horseline">problem</xref>, and base your work off of what you saw there. It's almost identical.]
+    </p>
+
+    <p>
+      Generalize your work to give an equation of the line that passes through the point <m>P=(x_1,y_1,z_1)</m> and is parallel to the vector <m>\vec v=\langle v_1,v_2,v_3 \rangle</m>.
+    </p>
+  </exploration>
+
   <p>
     Make sure you ask me in class to show you how to connect the equation developed above to what you have been doing since middle school. If you can remember <m>y=mx+b</m>, then you can quickly remember the equation of a line. If I don't show you in class, make sure you ask me (or feel free to come by early and ask before class).
   </p>
-  <exercise xml:id="first_line_between_two_points">
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.5: 13-20.} 
-          \stewarts{12.5: 6-15}
-          </fn>
-        Let <m>P=(3,1)</m> and <m>Q=(-1,4)</m>.
-        <ol>
-          <li>
-            <p>
-              Write a vector equation <m>\vec r(t)=(x,y)</m> for (i.e, give a parametrization of) the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> and <m>\vec r(1)=Q</m>.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Write a vector equation for the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> but whose speed is twice the speed of the first line.
-            </p>
-          </li>
+  <exploration xml:id="first_line_between_two_points">
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.5: 13-20.} 
+        \stewarts{12.5: 6-15}
+        </fn>
+      Let <m>P=(3,1)</m> and <m>Q=(-1,4)</m>.
+      <ol>
+        <li>
+          <p>
+            Write a vector equation <m>\vec r(t)=(x,y)</m> for (i.e, give a parametrization of) the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> and <m>\vec r(1)=Q</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Write a vector equation for the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> but whose speed is one unit per second.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Write a vector equation for the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> but whose speed is twice the speed of the first line.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Write a vector equation for the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> but whose speed is one unit per second.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 </section>

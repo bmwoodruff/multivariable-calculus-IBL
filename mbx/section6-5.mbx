@@ -4,81 +4,79 @@
   <p>
     We now know how to draw a vector field provided someone tells us the equation. How do we obtain an equation of a vector field? The following problem will help you develop the gravitational vector field.
   </p>
-  <exercise>
+
+  <exploration>
     <title>Radial fields</title>
-    <statement>
-      <p>
-        EXTRA<fn>Use <url href="http://aleph.sagemath.org/?z=eJxz06jQqdSp0lSwVdAA0joVmlwFOfkl8WWpySX5RfFpmak5KcYpGm46CkCFusY6xpo6IIUQlkYVhKEJAOGFExs">Sage</url> to plot your vector fields.  
+    <p>
+      EXTRA<fn>Use <url href="http://aleph.sagemath.org/?z=eJxz06jQqdSp0lSwVdAA0joVmlwFOfkl8WWpySX5RfFpmak5KcYpGm46CkCFusY6xpo6IIUQlkYVhKEJAOGFExs">Sage</url> to plot your vector fields.  
 
-        \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1<ndash />19.}</fn>Do the following:
-        <ol>
-          <li>
-            <p>
-              Let <m>P=(x,y,z)</m> be a point in space. At that point, what is the <m>x</m>, <m>y</m>, and <m>z</m> distance to the origin?
-            </p>
-          </li>
+      \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1<ndash />19.}</fn>Do the following:
+      <ol>
+        <li>
+          <p>
+            Let <m>P=(x,y,z)</m> be a point in space. At that point, what is the <m>x</m>, <m>y</m>, and <m>z</m> distance to the origin?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              At the point <m>P</m>, let <m>\vec F(x,y,z)</m> be the vector which points from <m>P</m> to the origin.  Give a formula for <m>\vec F(x,y,z)</m>
-              <hint>
+        <li>
+          <p>
+            At the point <m>P</m>, let <m>\vec F(x,y,z)</m> be the vector which points from <m>P</m> to the origin.  Give a formula for <m>\vec F(x,y,z)</m>
+            <hint>
               <p>
                 An object following this vector would travel from the point to the origin
               </p>
-              </hint>
-              .
-            </p>
-          </li>
+            </hint>
+            .
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Give an equation of the vector field where at each point <m>P</m> in the plane, the vector <m>\vec F_2(P)</m> is a unit vector that points towards the origin.
-            </p>
-          </li>
+        <li>
+          <p>
+            Give an equation of the vector field where at each point <m>P</m> in the plane, the vector <m>\vec F_2(P)</m> is a unit vector that points towards the origin.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Give an equation of the vector field where at each point <m>P</m> in the plane, the vector <m>\vec F_3(P)</m> is a vector of length 7 that points towards the origin.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Give an equation of the vector field where at each point <m>P</m> in the plane, the vector <m>\vec F_3(P)</m> is a vector of length 7 that points towards the origin.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     If someone gives us parametric equations for a curve in the plane, we know how to draw the curve. How do we obtain parametric equations of a given curve? In <xref ref="prob_parametric_curve_in_plane">problem</xref>, we were given the parametric equation for the path of a horse, namely <m>x=2\cos t, y=3 \sin t</m> or <m>\vec r(t)=(2\cos t,3\sin t)</m>. From those equations, we drew the path of the horse, and could have written a Cartesian equation for the path. How do we work this in reverse, namely if we had only been given the ellipse <m>\ds\frac{x^2}{4}+\frac{y^2}{9}=1</m>, could we have obtained parametric equations <m>\vec r(t)=(x(t),y(t))</m> for the curve?
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Give a parametrization of the straight line from <m>(a,0)</m> to <m>(0,b)</m>.
-        You can write your parametrization in the vector form <m>\vec r(t)=(?,?)</m>, or in the parametric form <m>x=?,\ y=?</m>.
-        Remember to include bounds for <m>t</m>.
-      </p>
-    </statement>
+
+  <exploration>
+    <p>
+      Give a parametrization of the straight line from <m>(a,0)</m> to <m>(0,b)</m>.
+      You can write your parametrization in the vector form <m>\vec r(t)=(?,?)</m>, or in the parametric form <m>x=?,\ y=?</m>.
+      Remember to include bounds for <m>t</m>.
+    </p>
     <hint>
       <p>
         <xref ref="prob_line_equation_practice">Review</xref>.
       </p>
     </hint>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Give a parametrization of the parabola <m>y=x^2</m> from <m>(-1,1)</m> to <m>(2,4)</m>.
-        Remember the bounds for <m>t</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Give a parametrization of the function <m>y=f(x)</m> for <m>x\in[a,b]</m>.
-        You can write your parametrization in the vector form <m>\vec r(t)=(?,?)</m>, or in the parametric form <m>x=?,\ y=?</m>.
-        Include bounds for <m>t</m>.
-      </p>
-    </statement>
-  </exercise>
+  </exploration>
+
+  <exploration>
+    <p>
+      Give a parametrization of the parabola <m>y=x^2</m> from <m>(-1,1)</m> to <m>(2,4)</m>.
+      Remember the bounds for <m>t</m>.
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      Give a parametrization of the function <m>y=f(x)</m> for <m>x\in[a,b]</m>.
+      You can write your parametrization in the vector form <m>\vec r(t)=(?,?)</m>, or in the parametric form <m>x=?,\ y=?</m>.
+      Include bounds for <m>t</m>.
+    </p>
+  </exploration>
+
   <p>
     If someone gives us parametric equations for a surface, we can draw the surface. This is what we did in <xref ref="prob_parametric_surface_example">problems</xref> and <xref ref="second_parametric_surface_example"></xref>.
     How do we work backwards and obtain parametric equations for a given surface?
@@ -90,143 +88,141 @@
   <p>
     The next three problems show how to do this.
   </p>
-  <exercise xml:id="x3d_parametric_plot">
-    <statement>
-      <p>
-        EXTRA<fn>Use <url href="http://aleph.sagemath.org/?z=eJwL0ajQqdSp0lSwVYCyuAqKMvNKFJRCNKpsK7QrNRUyi5V0FGA8roLEosTc1JKizOT4gpz8Eg2YhA5Iv66xjjGIVQlhaQIALhka5w">Sage</url> or
-        <url href="http://wolfr.am/zk2KTu">Wolfram Alpha</url> 
-        to plot your parametrization.  
 
-          \thomasee{See 16.5: 1-16 for more practice.}
-          \larsonfive{See Larson 15.5:21<ndash />30 and 15.5, Example 3.}
-          \stewarts{See section 16.6 for more examples}
-          </fn>
-        Consider the surface <m>z=9-x^2-y^2</m> plotted in <xref ref="prob_3dsurface_plot">problem</xref>.
-        <ol>
-          <li>
-            <p>
-              Using the rectangular coordinate transformation <m>\vec T(x,y,z)=(x,y,z)</m>, give a parametrization <m>\vec r\colon \mathbb{R}^2\to\mathbb{R}^3</m> of the surface. 
+  <exploration xml:id="x3d_parametric_plot">
+    <p>
+      EXTRA<fn>Use <url href="http://aleph.sagemath.org/?z=eJwL0ajQqdSp0lSwVYCyuAqKMvNKFJRCNKpsK7QrNRUyi5V0FGA8roLEosTc1JKizOT4gpz8Eg2YhA5Iv66xjjGIVQlhaQIALhka5w">Sage</url> or
+      <url href="http://wolfr.am/zk2KTu">Wolfram Alpha</url> 
+      to plot your parametrization.  
 
-              This is the same as saying
-              <me>
-                x=x, y=y, z=?.
-              </me>
-              <hint>
+        \thomasee{See 16.5: 1-16 for more practice.}
+        \larsonfive{See Larson 15.5:21<ndash />30 and 15.5, Example 3.}
+        \stewarts{See section 16.6 for more examples}
+        </fn>
+      Consider the surface <m>z=9-x^2-y^2</m> plotted in <xref ref="prob_3dsurface_plot">problem</xref>.
+      <ol>
+        <li>
+          <p>
+            Using the rectangular coordinate transformation <m>\vec T(x,y,z)=(x,y,z)</m>, give a parametrization <m>\vec r\colon \mathbb{R}^2\to\mathbb{R}^3</m> of the surface. 
+
+            This is the same as saying
+            <me>
+              x=x, y=y, z=?.
+            </me>
+            <hint>
               <p>
                 Use the surface equation to eliminate the input variable <m>z</m> in <m>T</m>.
               </p>
-              </hint>
-            </p>
-          </li>
+            </hint>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What bounds must you place on <m>x</m> and <m>y</m> to obtain the portion of the surface above the plane <m>z=0</m>?
-            </p>
-          </li>
+        <li>
+          <p>
+            What bounds must you place on <m>x</m> and <m>y</m> to obtain the portion of the surface above the plane <m>z=0</m>?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              If <m>z=f(x,y)</m> is any surface, give a parametrization of the surface (i.e., <m>x=?, y=?, z=?</m> or <m>\vec r (?,?)=(?,?,?)</m>.)
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://wolframalpha.com">Wolfram Alpha</url> to plot your parametrization with your bounds (<xref ref="x3d_parametric_plot">see</xref> for examples).  
+        <li>
+          <p>
+            If <m>z=f(x,y)</m> is any surface, give a parametrization of the surface (i.e., <m>x=?, y=?, z=?</m> or <m>\vec r (?,?)=(?,?,?)</m>.)
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-          \thomasee{See 16.5: 1-16 for more practice.}
-          \larsonfive{See Larson 15.5:1<ndash />10}
-          </fn>
-        Again consider the surface <m>z=9-x^2-y^2</m>.
-        <ol>
-          <li>
-            <p>
-              Using cylindrical coordinates, <m>\vec T(r,\theta,z) = (r\cos \theta, r\sin\theta, z)</m>, obtain a parametrization <m>\vec r(r,\theta)=(?,?,?)</m> of the surface using the input variables <m>r</m> and <m>\theta</m>. In other words, if we let <m>x=r\cos \theta, y=r\sin\theta, z=z</m>, write <m>z=9-x^2-y^2</m> in terms of <m>r</m> and <m>\theta</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://wolframalpha.com">Wolfram Alpha</url> to plot your parametrization with your bounds (<xref ref="x3d_parametric_plot">see</xref> for examples).  
 
-          <li>
-            <p>
-              What bounds must you place on <m>r</m> and <m>\theta</m> to obtain the portion of the surface above the plane <m>z=0</m>?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          We did very similar things in <xref ref="graphing_spherical_coordinates">problem</xref>.
+        \thomasee{See 16.5: 1-16 for more practice.}
+        \larsonfive{See Larson 15.5:1<ndash />10}
+        </fn>
+      Again consider the surface <m>z=9-x^2-y^2</m>.
+      <ol>
+        <li>
+          <p>
+            Using cylindrical coordinates, <m>\vec T(r,\theta,z) = (r\cos \theta, r\sin\theta, z)</m>, obtain a parametrization <m>\vec r(r,\theta)=(?,?,?)</m> of the surface using the input variables <m>r</m> and <m>\theta</m>. In other words, if we let <m>x=r\cos \theta, y=r\sin\theta, z=z</m>, write <m>z=9-x^2-y^2</m> in terms of <m>r</m> and <m>\theta</m>.
+          </p>
+        </li>
 
-          \thomasee{See 16.5: 1-16 for more practice.}
-          \larsonfive{See Larson 15.5:1<ndash />10}
-          </fn>
-      </p>
+        <li>
+          <p>
+            What bounds must you place on <m>r</m> and <m>\theta</m> to obtain the portion of the surface above the plane <m>z=0</m>?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-      <p>
-        Recall the spherical coordinate transformation as given in
-        \stewarts{
-        <me>
-          \vec T(\rho,\phi,\theta) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
-        </me>
-      </p>
+  <exploration>
+    <p>
+      EXTRA<fn>
+        We did very similar things in <xref ref="graphing_spherical_coordinates">problem</xref>.
 
-      <p>
-        }
-        \bmw{
-        <me>
-          \vec T(\rho,\phi,\theta) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
-        </me>
-      </p>
+        \thomasee{See 16.5: 1-16 for more practice.}
+        \larsonfive{See Larson 15.5:1<ndash />10}
+        </fn>
+    </p>
 
-      <p>
-        }\larsonfive{
-        <me>
-          \vec T(\rho,\theta, \phi) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
-        </me>
-      </p>
+    <p>
+      Recall the spherical coordinate transformation as given in
+      \stewarts{
+      <me>
+        \vec T(\rho,\phi,\theta) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
+      </me>
+    </p>
 
-      <p>
-        }This is a function of the form <m>\vec T\colon \mathbb{R}^3\to\mathbb{R}^3</m>. If we hold one of the three inputs constant, then we have a function of the form <m>\vec r\colon \mathbb{R}^2\to\mathbb{R}^3</m>, which is a parametric surface.
-        <ol>
-          <li>
-            <p>
-              EXTRA<fn>Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://www.wolframalpha.com/">Wolfram Alpha</url> to plot each parametrization (<xref ref="x3d_parametric_plot">see</xref> for examples).</fn>Give a parametrization of the sphere of radius 2, using <m>\phi</m> and <m>\theta</m> as your input variables.
-            </p>
-          </li>
+    <p>
+      }
+      \bmw{
+      <me>
+        \vec T(\rho,\phi,\theta) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
+      </me>
+    </p>
 
-          <li>
-            <p>
-              What bounds should you place on <m>\phi</m> and <m>\theta</m> if you want to hit each point on the sphere exactly once?
-              <hint>
+    <p>
+      }\larsonfive{
+      <me>
+        \vec T(\rho,\theta, \phi) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
+      </me>
+    </p>
+
+    <p>
+      }This is a function of the form <m>\vec T\colon \mathbb{R}^3\to\mathbb{R}^3</m>. If we hold one of the three inputs constant, then we have a function of the form <m>\vec r\colon \mathbb{R}^2\to\mathbb{R}^3</m>, which is a parametric surface.
+      <ol>
+        <li>
+          <p>
+            EXTRA<fn>Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://www.wolframalpha.com/">Wolfram Alpha</url> to plot each parametrization (<xref ref="x3d_parametric_plot">see</xref> for examples).</fn>Give a parametrization of the sphere of radius 2, using <m>\phi</m> and <m>\theta</m> as your input variables.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What bounds should you place on <m>\phi</m> and <m>\theta</m> if you want to hit each point on the sphere exactly once?
+            <hint>
               <p>
                 There are two possible answers here
               </p>
-              </hint>
-            </p>
-          </li>
+            </hint>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What bounds should you place on <m>\phi</m> and <m>\theta</m> if you only want the portion of the sphere above the plane <m>z=1</m>?
-              <hint>
+        <li>
+          <p>
+            What bounds should you place on <m>\phi</m> and <m>\theta</m> if you only want the portion of the sphere above the plane <m>z=1</m>?
+            <hint>
               <p>
                 There are also two possible answers here
               </p>
-              </hint>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+            </hint>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     Sometimes you'll have to invent your own coordinate system when constructing parametric equations for a surface. If you notice that there are lots of circles parallel to one of the coordinate planes, try using a modified version of cylindrical coordinates. Instead of circles in the <m>xy</m> plane (<m>x=r\cos\theta,y=r\sin\theta,z=z</m>), maybe you need circles in the <m>yz</m>-plane (<m>x=x,y=r\sin\theta,z=r\sin\theta</m>) or the <m>xz</m> plane. Just look for lots of circles, and then construct your parametrization accordingly.
   </p>

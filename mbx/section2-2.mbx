@@ -33,26 +33,23 @@
     </statement>
   </theorem>
 
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.3: 9-12.} 
-          \stewarts{See 12.3:15-20}
-          </fn>Sketch in <m>\mathbb{R}^2</m> the vectors <m>\left\lt 1,2\right></m> and <m>\left\lt 3,5\right></m>. Use the law of cosines to find the angle between the vectors.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="prob_dot_angle_practice">
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.3: 9-12.} 
-          \stewarts{See 12.3:15-20}
-          </fn>Sketch in <m>\mathbb{R}^3</m> the vectors <m>\left\lt 1,2,3\right></m> and <m>\left\lt -2,1,0\right></m>. Use the law of cosines to find the angle between the vectors.
-      </p>
-    </statement>
-  </exercise>
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.3: 9-12.} 
+        \stewarts{See 12.3:15-20}
+        </fn>Sketch in <m>\mathbb{R}^2</m> the vectors <m>\left\lt 1,2\right></m> and <m>\left\lt 3,5\right></m>. Use the law of cosines to find the angle between the vectors.
+    </p>
+  </exploration>
+
+  <exploration xml:id="prob_dot_angle_practice">
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.3: 9-12.} 
+        \stewarts{See 12.3:15-20}
+        </fn>Sketch in <m>\mathbb{R}^3</m> the vectors <m>\left\lt 1,2,3\right></m> and <m>\left\lt -2,1,0\right></m>. Use the law of cosines to find the angle between the vectors.
+    </p>
+  </exploration>
 
   <definition>
     <title>The Dot Product</title>
@@ -72,23 +69,21 @@
     </statement>
   </definition>
 
-  <exercise xml:id="prob_dot_angle_practice2">
-    <statement>
-      <ol>
-        <li>
-          <p>
-            Use the formula <m>\vec u\cdot \vec v=|\vec u||\vec v|\cos\theta</m> to find the angle between the vectors <m>\left\lt 1,2,3\right></m> and <m>\left\lt -2,1,0\right></m>.
-          </p>
-        </li>
+  <exploration xml:id="prob_dot_angle_practice2">
+    <ol>
+      <li>
+        <p>
+          Use the formula <m>\vec u\cdot \vec v=|\vec u||\vec v|\cos\theta</m> to find the angle between the vectors <m>\left\lt 1,2,3\right></m> and <m>\left\lt -2,1,0\right></m>.
+        </p>
+      </li>
 
-        <li>
-          <p>
-            Which was easier, <xref ref="prob_dot_angle_practice"></xref> or this method?  (You will derive this formula in a later problem)
-          </p>
-        </li>
-      </ol>
-    </statement>
-  </exercise>
+      <li>
+        <p>
+          Which was easier, <xref ref="prob_dot_angle_practice"></xref> or this method?  (You will derive this formula in a later problem)
+        </p>
+      </li>
+    </ol>
+  </exploration>
 
   <definition xml:id="def_orthogonal">
     <statement>
@@ -98,106 +93,101 @@
     </statement>
   </definition>
 
-  <exercise>
-    <statement>
-      <p>
-        Find two vectors orthogonal to <m>(1,2)</m>. Then find 4 vectors orthogonal to <m>(3,2,1)</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="dot_product_facts">
-    <statement>
-      <p>
-        Mark each statement true or false. Use <xref ref="def_vecadd">Definitions</xref> - <xref ref="def_orthogonal"></xref> to explain and justify or prove your claim. You can assume that <m>\vec u,\vec v,\vec w\in\mathbb{R}^3</m> and that <m>c\in\mathbb{R}</m>.
-        <ol>
-          <li>
-            <p>
-              <m>\vec u\cdot \vec v=\vec v\cdot \vec u</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Find two vectors orthogonal to <m>(1,2)</m>. Then find 4 vectors orthogonal to <m>(3,2,1)</m>.
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              <m>\vec u\cdot (\vec v\cdot \vec w)=(\vec u\cdot\vec v)\cdot\vec w</m>.
-            </p>
-          </li>
+  <exploration xml:id="dot_product_facts">
+    <p>
+      Mark each statement true or false. Use <xref ref="def_vecadd">Definitions</xref> - <xref ref="def_orthogonal"></xref> to explain and justify or prove your claim. You can assume that <m>\vec u,\vec v,\vec w\in\mathbb{R}^3</m> and that <m>c\in\mathbb{R}</m>.
+      <ol>
+        <li>
+          <p>
+            <m>\vec u\cdot \vec v=\vec v\cdot \vec u</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              <m>c(\vec u\cdot \vec v)=(c\vec u)\cdot \vec v=\vec u\cdot (c\vec v)</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            <m>\vec u\cdot (\vec v\cdot \vec w)=(\vec u\cdot\vec v)\cdot\vec w</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              <m>\vec u+(\vec v\cdot \vec w)=(\vec u+\vec v)\cdot(\vec u+\vec w)</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            <m>c(\vec u\cdot \vec v)=(c\vec u)\cdot \vec v=\vec u\cdot (c\vec v)</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              <m>\vec u\cdot (\vec v+ \vec w)=(\vec u\cdot \vec v)+(\vec u\cdot\vec w)</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            <m>\vec u+(\vec v\cdot \vec w)=(\vec u+\vec v)\cdot(\vec u+\vec w)</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              <m>\vec u\cdot \vec u= |\vec u|^2</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="prob_dot_prep">
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{Page 693 has the solution if you are struggling.} 
-          </fn>
-        If <m>\vec u = (u_1,u_2,u_3)</m> and <m>\vec v= (v_1,v_2,v_3)</m> are vectors in <m>\mathbb{R}^3</m> (which is often written <m>\vec u,\vec v\in\mathbb{R}^3</m>), then show that
-        <me>
-          |\vec u-\vec v|^2 = |\vec u|^2-2\vec u\cdot \vec v +|\vec v|^2.
-        </me>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="prob_dot_angle_formula">
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See page 693.} 
-          \stewarts{See pages 801-802 if you are struggling}
-          </fn>Let <m>\vec u,\vec v\in\mathbb{R}^3</m>. Let <m>\theta</m> be the angle between <m>\vec u</m> and <m>\vec v</m>.
-        <ol>
-          <li>
-            <p>
-              Use the law of cosines to explain why <m>|\vec u-\vec v|^2=|\vec u|^2+|\vec v|^2-2|\vec u||\vec v|\cos\theta</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            <m>\vec u\cdot (\vec v+ \vec w)=(\vec u\cdot \vec v)+(\vec u\cdot\vec w)</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Use the above together with <xref ref="prob_dot_prep">problem</xref> to derive
-              <me>
-                \vec u\cdot \vec v=|\vec u||\vec v|\cos\theta.
-              </me>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See page 694.} 
-          \stewarts{See page 804}
-          </fn>Show that if two nonzero vectors <m>\vec u</m> and <m>\vec v</m> are orthogonal, then the angle between them is 90<m>^\circ</m>. Then show that if the angle between them is 90<m>^\circ</m>, then the vectors are orthogonal. I.E. expand and compute both sides of the formula <m>\vec u\cdot \vec v=|\vec u||\vec v|\cos\theta</m> with non-zero, orthogonal vectors.
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            <m>\vec u\cdot \vec u= |\vec u|^2</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration xml:id="prob_dot_prep">
+    <p>
+      EXTRA<fn>
+        \thomasee{Page 693 has the solution if you are struggling.} 
+        </fn>
+      If <m>\vec u = (u_1,u_2,u_3)</m> and <m>\vec v= (v_1,v_2,v_3)</m> are vectors in <m>\mathbb{R}^3</m> (which is often written <m>\vec u,\vec v\in\mathbb{R}^3</m>), then show that
+      <me>
+        |\vec u-\vec v|^2 = |\vec u|^2-2\vec u\cdot \vec v +|\vec v|^2.
+      </me>
+    </p>
+  </exploration>
+
+  <exploration xml:id="prob_dot_angle_formula">
+    <p>
+      EXTRA<fn>
+        \thomasee{See page 693.} 
+        \stewarts{See pages 801-802 if you are struggling}
+        </fn>Let <m>\vec u,\vec v\in\mathbb{R}^3</m>. Let <m>\theta</m> be the angle between <m>\vec u</m> and <m>\vec v</m>.
+      <ol>
+        <li>
+          <p>
+            Use the law of cosines to explain why <m>|\vec u-\vec v|^2=|\vec u|^2+|\vec v|^2-2|\vec u||\vec v|\cos\theta</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Use the above together with <xref ref="prob_dot_prep">problem</xref> to derive
+            <me>
+              \vec u\cdot \vec v=|\vec u||\vec v|\cos\theta.
+            </me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See page 694.} 
+        \stewarts{See page 804}
+        </fn>Show that if two nonzero vectors <m>\vec u</m> and <m>\vec v</m> are orthogonal, then the angle between them is 90<m>^\circ</m>. Then show that if the angle between them is 90<m>^\circ</m>, then the vectors are orthogonal. I.E. expand and compute both sides of the formula <m>\vec u\cdot \vec v=|\vec u||\vec v|\cos\theta</m> with non-zero, orthogonal vectors.
+    </p>
+  </exploration>
+
   <p>
     The dot product provides a really easy way to find when two vectors meet at a right angle. The dot product is precisely zero when this happens.
   </p>

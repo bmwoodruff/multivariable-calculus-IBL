@@ -25,34 +25,33 @@
       </statement>
     </theorem>
 
-    <exercise>
+    <exploration>
       <title>Optional Proof of <xref ref="vector_valued_functions_of_constant_length">Theorem</xref></title>
-      <statement>
-        <p>
-          EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=08Ygw_M-4yM&amp;list=PL30EE81142B1ED1F0&amp;index=6&amp;feature=plpp_video">YouTube Video</url> for the answer.  </fn>
-          Prove the theorem above. Here are some hints [as an alternative to watching the YouTube video].
-          <ul>
-            <li>
-              <p>
-                We know that <m>\vec r(t)</m> has constant length, so we write <m>|\vec r|=c</m> for some constant <m>c</m>.
-              </p>
-            </li>
+      <p>
+        EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=08Ygw_M-4yM&amp;list=PL30EE81142B1ED1F0&amp;index=6&amp;feature=plpp_video">YouTube Video</url> for the answer.  </fn>
+        Prove the theorem above. Here are some hints [as an alternative to watching the YouTube video].
+        <ul>
+          <li>
+            <p>
+              We know that <m>\vec r(t)</m> has constant length, so we write <m>|\vec r|=c</m> for some constant <m>c</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                We need to get from a magnitude to a dot product. Look in your text for a way to relate magnitude to the dot product. See <xref ref="dot_product_facts">exercise</xref>.
-              </p>
-            </li>
+          <li>
+            <p>
+              We need to get from a magnitude to a dot product. Look in your text for a way to relate magnitude to the dot product. See <xref ref="dot_product_facts">exercise</xref>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                After writing <m>|\vec r(t)|=c</m> in terms of a dot product (squaring both sides may help), take the derivative of both sides. Apply the product rule to the dot product.
-              </p>
-            </li>
-          </ul>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              After writing <m>|\vec r(t)|=c</m> in terms of a dot product (squaring both sides may help), take the derivative of both sides. Apply the product rule to the dot product.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </exploration>
+
     <p>
       The above fact is so crucial, that we'll repeat what it says.
     </p>
@@ -60,33 +59,33 @@
     <blockquote>
     If the vector <m>\vec v(t)</m> has constant length, then the vector and its derivative <m>\frac{d\vec v}{dt}</m> are orthogonal.
     </blockquote>
-    <exercise xml:id="T_and_N_are_orthogonal">
-      <statement>
-        <p>
-          EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=aJttU3kS_p8&amp;list=PL30EE81142B1ED1F0&amp;index=7&amp;feature=plpp_video">YouTube Video</url>.  </fn>
-          Let <m>\vec r</m> be a smooth parametrization of a curve.
-          <ol>
-            <li>
-              <p>
-                How long is the <em>unit</em> tangent vector <m>\vec T(t)</m>?
-              </p>
-            </li>
 
-            <li>
-              <p>
-                Explain why <m>\vec T</m> is orthogonal to <m>\dfrac{d\vec T}{dt}</m>.
-              </p>
-            </li>
+    <exploration xml:id="T_and_N_are_orthogonal">
+      <p>
+        EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=aJttU3kS_p8&amp;list=PL30EE81142B1ED1F0&amp;index=7&amp;feature=plpp_video">YouTube Video</url>.  </fn>
+        Let <m>\vec r</m> be a smooth parametrization of a curve.
+        <ol>
+          <li>
+            <p>
+              How long is the <em>unit</em> tangent vector <m>\vec T(t)</m>?
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Then give a formula for computing a unit vector that is orthogonal to <m>\vec T(t)</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Explain why <m>\vec T</m> is orthogonal to <m>\dfrac{d\vec T}{dt}</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Then give a formula for computing a unit vector that is orthogonal to <m>\vec T(t)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       Based on our answer above, let's make the following definition of the principle unit normal vector. The key idea is that this vector points in the direction of normal acceleration.
     </p>
@@ -146,56 +145,55 @@
     </p>
 
     </review>
-    <exercise>
-      <statement>
-        <p>
-          Answer the following questions (this will review your knowledge of the dot and cross products).
-          <ol>
-            <li>
-              <p>
-                What is <m>\vec T\cdot \vec N</m>? Explain.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                Now explain why <m>\vec T\cdot \vec B=0</m> and <m>\vec N\cdot \vec B=0</m>.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        Answer the following questions (this will review your knowledge of the dot and cross products).
+        <ol>
+          <li>
+            <p>
+              What is <m>\vec T\cdot \vec N</m>? Explain.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Both <m>\vec T</m> and <m>\vec N</m> are unit vectors. They are also orthogonal. Why is <m>\vec B</m> is a unit vector? [What's the connection between the cross product and area.]
-              </p>
-            </li>
+          <li>
+            <p>
+              Now explain why <m>\vec T\cdot \vec B=0</m> and <m>\vec N\cdot \vec B=0</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                We defined <m>\vec B=\vec T\times \vec N</m>. This means that <m>\vec N\times \vec T=-\vec B</m>.  Do we have <m>\vec T\times \vec B</m> equal to <m>\vec N</m> or <m>-\vec N</m>? Explain.
-                <hint>
+          <li>
+            <p>
+              Both <m>\vec T</m> and <m>\vec N</m> are unit vectors. They are also orthogonal. Why is <m>\vec B</m> is a unit vector? [What's the connection between the cross product and area.]
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We defined <m>\vec B=\vec T\times \vec N</m>. This means that <m>\vec N\times \vec T=-\vec B</m>.  Do we have <m>\vec T\times \vec B</m> equal to <m>\vec N</m> or <m>-\vec N</m>? Explain.
+              <hint>
                 <p>
                   What does the right hand rule say? Compare to <m>\hat i\times \hat k</m>.
                 </p>
-                </hint>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+              </hint>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       Let's carry through a single exercise where we compute <m>\vec T</m>, <m>\vec N</m>, and <m>\vec B</m>.
     </p>
-    <exercise xml:id="helix_example_of_T_N_and_B">
-      <statement>
-        <p>
-          EXTRA<fn>
-          \thomasee{See 13.4: 9-16 and 13.5: 9-16 (the relevant parts) for more practice.}
-          \stewarts{See 13.3:47-48 for more practice, You can also go back and do 13.3:17-20, this time just do the unit normal vector}
-          </fn>Consider the helix <m>\vec r(t) = (3\cos t,3\sin t, 4t)</m>. Find the unit tangent vector <m>\vec T(t)</m>, principle unit normal vector <m>\vec N(t)</m>, and the binormal vector <m>\vec B(t)</m>.
-        </p>
-      </statement>
-    </exercise>
+
+    <exploration xml:id="helix_example_of_T_N_and_B">
+      <p>
+        EXTRA<fn>
+        \thomasee{See 13.4: 9-16 and 13.5: 9-16 (the relevant parts) for more practice.}
+        \stewarts{See 13.3:47-48 for more practice, You can also go back and do 13.3:17-20, this time just do the unit normal vector}
+        </fn>Consider the helix <m>\vec r(t) = (3\cos t,3\sin t, 4t)</m>. Find the unit tangent vector <m>\vec T(t)</m>, principle unit normal vector <m>\vec N(t)</m>, and the binormal vector <m>\vec B(t)</m>.
+      </p>
+    </exploration>
   </introduction>
 
   <subsection>
@@ -211,45 +209,45 @@
     </p>
 
     </review>
-    <exercise>
+
+    <exploration>
       <title>Extra Practice</title>
-      <statement>
-        <p>
-          EXTRA<fn>Use this <url href="\sageurlforcurvature">Sage link</url> to check your work, and see if your picture is correct. You'll have to type the appropriate function in, so use <q>[t,sin(t),cos(t)]</q> and <q>point=pi/2.</q></fn>
-          Consider the helix <m>\vec r(t)=(t,\sin t,\cos t)</m>.
-          <ol>
-            <li>
-              <p>
-                Find the curvature and radius of curvature <m>t=\pi/2</m>.
-              </p>
-            </li>
+      <p>
+        EXTRA<fn>Use this <url href="\sageurlforcurvature">Sage link</url> to check your work, and see if your picture is correct. You'll have to type the appropriate function in, so use <q>[t,sin(t),cos(t)]</q> and <q>point=pi/2.</q></fn>
+        Consider the helix <m>\vec r(t)=(t,\sin t,\cos t)</m>.
+        <ol>
+          <li>
+            <p>
+              Find the curvature and radius of curvature <m>t=\pi/2</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Draw the curve, and draw the circle of curvature at <m>t=\pi/2</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              Draw the curve, and draw the circle of curvature at <m>t=\pi/2</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Finally, find the center of curvature at <m>t=\pi/2</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              Finally, find the center of curvature at <m>t=\pi/2</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Take a guess at the center of curvature at <m>t=\pi</m>?
-                <hint>
+          <li>
+            <p>
+              Take a guess at the center of curvature at <m>t=\pi</m>?
+              <hint>
                 <p>
                   If you're struggling with how to get from the curve to the center of curvature, please do the review exercise above.
                 </p>
-                </hint>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+              </hint>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       When a civil engineering team builds a road, they have to pay attention to the curvature of the road. If the curvature of the road is too large, accidents will happen and the civil engineering team will be liable. How do they make sure the curvature never gets to large? They use the circle of curvature. When they want to cause a road to turn, they'll find the center of curvature, send a surveyor out to the center, and then have the surveyor make sure that the road follows the circle of curvature for a short distance. They actually pace out the circle of curvature and then build the road along this circle for a hundred feet or so. Then, they recompute the radius of curvature (if they need the direction to change again), and pace out another circle. In this way, they can guarantee that the curvature never gets large. In the next section we'll see how curvature is directly related to normal acceleration (which is what causes semis to tip, and vehicles to slide off icy roads.)
     </p>

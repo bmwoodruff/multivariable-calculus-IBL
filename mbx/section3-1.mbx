@@ -41,15 +41,14 @@
     <p>
       Using the distance formula, this means that every circle can be written in the form <m>(x-a)^2+(y-b)^2=r^2</m>.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          The equation <m>4x^2+4y^2+6x-8y-1=0</m> represents a circle (though initially it does not look like it). Use the method of completing the square to rewrite the equation in the form
-          <m>(x-a)^2 + (y-b)^2 = r^2</m> (hence telling you the center and radius). Then generalize
-          your work to find the center and radius of any circle written in the form <m>x^2+y^2+Dx+Ey+F=0</m>.
-        </p>
-      </statement>
-    </exercise>
+
+    <exploration>
+      <p>
+        The equation <m>4x^2+4y^2+6x-8y-1=0</m> represents a circle (though initially it does not look like it). Use the method of completing the square to rewrite the equation in the form
+        <m>(x-a)^2 + (y-b)^2 = r^2</m> (hence telling you the center and radius). Then generalize
+        your work to find the center and radius of any circle written in the form <m>x^2+y^2+Dx+Ey+F=0</m>.
+      </p>
+    </exploration>
   </introduction>
 
   <subsection>
@@ -76,114 +75,109 @@
       </statement>
     </definition>
 
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See page 658.}
-            </fn>Consider the line <m>L:y=-p</m>, the point <m>P=(0,p)</m>, and another point <m>Q=(x,y)</m>. Use the distance formula to show that an equation of a parabola with directrix <m>L</m> and focus <m>P</m> is <m>x^2=4py</m>.
-          Then use your work to explain why an equation of a parabola with directrix <m>x=-p</m> and focus <m>(p,0)</m> is <m>y^2=4px</m>.
-        </p>
-      </statement>
-    </exercise>
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See page 658.}
+          </fn>Consider the line <m>L:y=-p</m>, the point <m>P=(0,p)</m>, and another point <m>Q=(x,y)</m>. Use the distance formula to show that an equation of a parabola with directrix <m>L</m> and focus <m>P</m> is <m>x^2=4py</m>.
+        Then use your work to explain why an equation of a parabola with directrix <m>x=-p</m> and focus <m>(p,0)</m> is <m>y^2=4px</m>.
+      </p>
+    </exploration>
+
     <p>
       Ask me about the reflective properties of parabolas in class, if I have not told you already. They are used in satellite dishes, long range telescopes, solar ovens, and more. The following problem provides the basis to these reflective properties and is optional. If you wish to present it, let me know. I'll have you type it up prior to presenting in class.
     </p>
-    <exercise>
+
+    <exploration>
       <title>Optional</title>
-      <statement>
-        <p>
-          Consider the parabola <m>x^2=4py</m> with directrix <m>y=-p</m> and focus <m>(0,p)</m>. Let <m>Q=(a,b)</m> be some point on the parabola. Let <m>T</m> be the tangent line to <m>L</m> at point <m>Q</m>. Show that the angle between <m>PQ</m> and <m>T</m> is the same as the angle between the line <m>x=a</m> and <m>T</m>. This shows that a vertical ray coming down towards the parabola will reflect of the wall of a parabola and head straight towards the vertex.
-        </p>
-      </statement>
-    </exercise>
+      <p>
+        Consider the parabola <m>x^2=4py</m> with directrix <m>y=-p</m> and focus <m>(0,p)</m>. Let <m>Q=(a,b)</m> be some point on the parabola. Let <m>T</m> be the tangent line to <m>L</m> at point <m>Q</m>. Show that the angle between <m>PQ</m> and <m>T</m> is the same as the angle between the line <m>x=a</m> and <m>T</m>. This shows that a vertical ray coming down towards the parabola will reflect of the wall of a parabola and head straight towards the vertex.
+      </p>
+    </exploration>
+
     <p>
       The next two problems will help you use the basic equations of a parabola, together with shifting and reflecting, to study all parabolas whose axis of symmetry is parallel to either the <m>x</m> or <m>y</m> axis.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See 11.6: 9-14}
-            </fn>Once the directrix and focus are known, we can give an equation of a parabola. For each of the following, give an equation of the parabola with the stated directrix and focus. Provide a sketch of each parabola.
-          <ol>
-            <li>
-              <p>
-                The focus is <m>(0,3)</m> and the directrix is <m>y=-3</m>.
-              </p>
-            </li>
 
-            <li>
-              <p>
-                The focus is <m>(0,3)</m> and the directrix is <m>y=1</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Give an equation of each parabola with the stated directrix and focus. Provide a sketch of each parabola.
-          <ol>
-            <li>
-              <p>
-                The focus is <m>(2,-5)</m> and the directrix is <m>y=3</m>.
-              </p>
-            </li>
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See 11.6: 9-14}
+          </fn>Once the directrix and focus are known, we can give an equation of a parabola. For each of the following, give an equation of the parabola with the stated directrix and focus. Provide a sketch of each parabola.
+        <ol>
+          <li>
+            <p>
+              The focus is <m>(0,3)</m> and the directrix is <m>y=-3</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                The focus is <m>(1,2)</m> and the directrix is <m>x=3</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See 11.6: 9-14}
-            </fn>Each equation below represents a parabola. Find the focus, directrix, and vertex of each parabola, and then provide a rough sketch.
-          <ol>
-            <li>
-              <p>
-                <m>y=x^2</m>
-              </p>
-            </li>
+          <li>
+            <p>
+              The focus is <m>(0,3)</m> and the directrix is <m>y=1</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
-            <li>
-              <p>
-                <m>(y-2)^2=4(x-1)</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Each equation below represents a parabola. Find the focus, directrix, and vertex of each parabola, and then provide a rough sketch.
-          <ol>
-            <li>
-              <p>
-                <m>y=-8x^2+3</m>
-              </p>
-            </li>
+    <exploration>
+      <p>
+        Give an equation of each parabola with the stated directrix and focus. Provide a sketch of each parabola.
+        <ol>
+          <li>
+            <p>
+              The focus is <m>(2,-5)</m> and the directrix is <m>y=3</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>y=x^2-4x+5</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              The focus is <m>(1,2)</m> and the directrix is <m>x=3</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See 11.6: 9-14}
+          </fn>Each equation below represents a parabola. Find the focus, directrix, and vertex of each parabola, and then provide a rough sketch.
+        <ol>
+          <li>
+            <p>
+              <m>y=x^2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(y-2)^2=4(x-1)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        Each equation below represents a parabola. Find the focus, directrix, and vertex of each parabola, and then provide a rough sketch.
+        <ol>
+          <li>
+            <p>
+              <m>y=-8x^2+3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y=x^2-4x+5</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
   </subsection>
 
   <subsection>
@@ -199,46 +193,46 @@
     <p>
       We can derive an equation of an ellipse in a manner very similar to how we obtained an equation of a parabola. The following problem will walk you through this. \bmw{We will not have time to present this problem in class. However, if you would like to complete the problem and write up your solution on the wiki, you can obtain presentation points for doing so. Let me know if you are interested. }
     </p>
-    <exercise>
+
+    <exploration>
       <title>Optional</title>
-      <statement>
-        <p>
-          Consider the ellipse produced by the fixed distance <m>d</m> and the foci <m>F_1=(c,0)</m> and <m>F_2=(-c,0)</m>. Let <m>(a,0)</m> and <m>(-a,0)</m> be the vertexes of the ellipse.
-          <ol>
-            <li>
-              <p>
-                Show that <m>d=2a</m> by considering the distances from <m>F_1</m> and <m>F_2</m> to the point <m>Q=(a,0)</m>.
-              </p>
-            </li>
+      <p>
+        Consider the ellipse produced by the fixed distance <m>d</m> and the foci <m>F_1=(c,0)</m> and <m>F_2=(-c,0)</m>. Let <m>(a,0)</m> and <m>(-a,0)</m> be the vertexes of the ellipse.
+        <ol>
+          <li>
+            <p>
+              Show that <m>d=2a</m> by considering the distances from <m>F_1</m> and <m>F_2</m> to the point <m>Q=(a,0)</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Let <m>Q=(0,b)</m> be a point on the ellipse.  Show that <m>b^2+c^2=a^2</m> by considering the distance between <m>Q</m> and each focus.
-              </p>
-            </li>
+          <li>
+            <p>
+              Let <m>Q=(0,b)</m> be a point on the ellipse.  Show that <m>b^2+c^2=a^2</m> by considering the distance between <m>Q</m> and each focus.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Let <m>Q=(x,y)</m>. By considering the distances between <m>Q</m> and the foci, show that an equation of the ellipse is
-                <me>
-                  \frac{x^2}{a^2}+\frac{y^2}{b^2}=1.
-                </me>
-              </p>
-            </li>
+          <li>
+            <p>
+              Let <m>Q=(x,y)</m>. By considering the distances between <m>Q</m> and the foci, show that an equation of the ellipse is
+              <me>
+                \frac{x^2}{a^2}+\frac{y^2}{b^2}=1.
+              </me>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Suppose the foci are along the <m>y</m>-axis (at <m>(0,\pm c)</m>) and the fixed distance <m>d</m> is now <m>d=2b</m>, with vertexes <m>(0,\pm b)</m>. Let <m>(a,0)</m> be a point on the <m>x</m> axis that intersect the ellipse.  Show that we still have
-                <me>
-                  \frac{x^2}{a^2}+\frac{y^2}{b^2}=1,
-                </me>
-                but now we instead have <m>a^2+c^2=b^2</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Suppose the foci are along the <m>y</m>-axis (at <m>(0,\pm c)</m>) and the fixed distance <m>d</m> is now <m>d=2b</m>, with vertexes <m>(0,\pm b)</m>. Let <m>(a,0)</m> be a point on the <m>x</m> axis that intersect the ellipse.  Show that we still have
+              <me>
+                \frac{x^2}{a^2}+\frac{y^2}{b^2}=1,
+              </me>
+              but now we instead have <m>a^2+c^2=b^2</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       You'll want to use the results of the previous problem to complete the problems below. The key equation above is <m>\frac{x^2}{a^2}+\frac{y^2}{b^2}=1</m>. The foci will be on the <m>x</m>-axis if <m>a>b</m>, and will be on the <m>y</m>-axis if <m>b>a</m>. The second part of the problem above shows that the distance from the center of the ellipse to the vertex is equal to the hypotenuse of a right triangle whose legs go from the center to a focus, and from the center to an end point of the minor axis.
     </p>
@@ -246,76 +240,73 @@
     <p>
       The next three problems will help you use the basic equations of an ellipse, together with shifting and reflecting, to study all ellipses whose major axis is parallel to either the <m>x</m>- or <m>y</m>-axis.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See 11.6: 17-24}
-            </fn>For each ellipse below, graph the ellipse and give the coordinates of the foci and vertexes.
-          <ol>
-            <li>
-              <p>
-                <m>\ds 16x^2+25y^2=400</m>
-                <hint>
+
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See 11.6: 17-24}
+          </fn>For each ellipse below, graph the ellipse and give the coordinates of the foci and vertexes.
+        <ol>
+          <li>
+            <p>
+              <m>\ds 16x^2+25y^2=400</m>
+              <hint>
                 <p>
                   divide by 400.
                 </p>
-                </hint>
-              </p>
-            </li>
+              </hint>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>\ds \frac{(x-1)^2}{5}+\frac{(y-2)^2}{9}=1</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          For the ellipse <m>x^2+2x+2y^2-8y=9</m>, sketch a graph and give the coordinates of the foci and vertexes.
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See 11.6: 25-26}
-            </fn>Given an equation of each ellipse described below, and provide a rough sketch.
-          <ol>
-            <li>
-              <p>
-                The foci are at <m>(2\pm 3,1)</m> and vertices at <m>(2\pm 5, 1)</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              <m>\ds \frac{(x-1)^2}{5}+\frac{(y-2)^2}{9}=1</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
-            <li>
-              <p>
-                The foci are at <m>(-1,3\pm 2)</m> and vertices at <m>(-1, 3\pm 5)</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+    <exploration>
+      <p>
+        For the ellipse <m>x^2+2x+2y^2-8y=9</m>, sketch a graph and give the coordinates of the foci and vertexes.
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See 11.6: 25-26}
+          </fn>Given an equation of each ellipse described below, and provide a rough sketch.
+        <ol>
+          <li>
+            <p>
+              The foci are at <m>(2\pm 3,1)</m> and vertices at <m>(2\pm 5, 1)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The foci are at <m>(-1,3\pm 2)</m> and vertices at <m>(-1, 3\pm 5)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       \bmw{Ask me about the reflective properties of an ellipse in class, if I have not told you already. The following problem provides the basis to these reflective properties and is optional. If you wish to present it, let me know. I'll have you type it up prior to presenting in class.}
     </p>
-    <exercise>
+
+    <exploration>
       <title>Optional</title>
-      <statement>
-        <p>
-          Consider the ellipse <m>\frac{x^2}{a^2}+\frac{y^2}{b^2}=1</m> with foci <m>F_1=(c,0)</m> and <m>F_2=(-c,0)</m>.
-          Let <m>Q=(x,y)</m> be some point on the ellipse.
-          Let <m>T</m> be the tangent line to the ellipse at point <m>Q</m>.
-          Show that the angle between <m>F_1Q</m> and <m>T</m> is the same as the angle between <m>F_2Q</m> and <m>T</m>. This shows that a ray from <m>F_1</m> to <m>Q</m> will reflect off the wall of the ellipse at <m>Q</m> and head straight towards the other focus <m>F_2</m>.
-        </p>
-      </statement>
-    </exercise>
+      <p>
+        Consider the ellipse <m>\frac{x^2}{a^2}+\frac{y^2}{b^2}=1</m> with foci <m>F_1=(c,0)</m> and <m>F_2=(-c,0)</m>.
+        Let <m>Q=(x,y)</m> be some point on the ellipse.
+        Let <m>T</m> be the tangent line to the ellipse at point <m>Q</m>.
+        Show that the angle between <m>F_1Q</m> and <m>T</m> is the same as the angle between <m>F_2Q</m> and <m>T</m>. This shows that a ray from <m>F_1</m> to <m>Q</m> will reflect off the wall of the ellipse at <m>Q</m> and head straight towards the other focus <m>F_2</m>.
+      </p>
+    </exploration>
   </subsection>
 
   <subsection>
@@ -331,135 +322,132 @@
     <p>
       We can derive an equation of a hyperbola in a manner very similar to how we obtained an equation of an ellipse. The following problem will walk you through this. \bmw{We will not have time to present this problem in class.}
     </p>
-    <exercise>
+
+    <exploration>
       <title>Optional</title>
-      <statement>
-        <p>
-          Consider the hyperbola produced by the fixed number <m>d</m> and the foci <m>F_1=(c,0)</m> and <m>F_2=(-c,0)</m>. Let <m>(a,0)</m> and <m>(-a,0)</m> be the vertexes of the hyperbola.
-          <ol>
-            <li>
-              <p>
-                Show that <m>d=2a</m> by considering the difference of the distances from <m>F_1</m> and <m>F_2</m> to the vertex <m>(a,0)</m>.
-              </p>
-            </li>
+      <p>
+        Consider the hyperbola produced by the fixed number <m>d</m> and the foci <m>F_1=(c,0)</m> and <m>F_2=(-c,0)</m>. Let <m>(a,0)</m> and <m>(-a,0)</m> be the vertexes of the hyperbola.
+        <ol>
+          <li>
+            <p>
+              Show that <m>d=2a</m> by considering the difference of the distances from <m>F_1</m> and <m>F_2</m> to the vertex <m>(a,0)</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Let <m>Q=(x,y)</m> be a point on the hyperbola. By considering the difference of the distances between <m>Q</m> and the foci, show that an equation of the hyperbola is <m>\frac{x^2}{a^2}-\frac{y^2}{c^2-a^2}=1,</m> or if we let <m>c^2-a^2=b^2</m>, then the equation is
-                <me>
-                  \frac{x^2}{a^2}-\frac{y^2}{b^2}=1.
-                </me>
-              </p>
-            </li>
+          <li>
+            <p>
+              Let <m>Q=(x,y)</m> be a point on the hyperbola. By considering the difference of the distances between <m>Q</m> and the foci, show that an equation of the hyperbola is <m>\frac{x^2}{a^2}-\frac{y^2}{c^2-a^2}=1,</m> or if we let <m>c^2-a^2=b^2</m>, then the equation is
+              <me>
+                \frac{x^2}{a^2}-\frac{y^2}{b^2}=1.
+              </me>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Suppose the foci are along the <m>y</m>-axis (at <m>(0,\pm c)</m>) and the number <m>d</m> is now <m>d=2b</m>, with vertexes <m>(0,\pm b)</m>. Let <m>a^2=c^2-b^2</m>. Show that an equation of the hyperbola is
-                <me>
-                  \frac{y^2}{b^2}-\frac{x^2}{a^2}=1.
-                </me>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+          <li>
+            <p>
+              Suppose the foci are along the <m>y</m>-axis (at <m>(0,\pm c)</m>) and the number <m>d</m> is now <m>d=2b</m>, with vertexes <m>(0,\pm b)</m>. Let <m>a^2=c^2-b^2</m>. Show that an equation of the hyperbola is
+              <me>
+                \frac{y^2}{b^2}-\frac{x^2}{a^2}=1.
+              </me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       You'll want to use the results of the previous problem to complete the problems below.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See 11.6: 27-34}
-            </fn>Consider the hyperbola <m>\frac{x^2}{a^2}-\frac{y^2}{b^2}=1.</m> Construct a box centered at the origin with corners at <m>(a, \pm b)</m> and <m>(-a,\pm b)</m>. Draw lines through the diagonals of this box. Rewrite the equation of the hyperbola by solving for <m>y</m> and then factoring to show that as <m>x</m> gets large, the hyperbola gets really close to the lines <m>y=\pm \frac{b}{a}x</m>.
-        </p>
-        <hint>
+
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See 11.6: 27-34}
+          </fn>Consider the hyperbola <m>\frac{x^2}{a^2}-\frac{y^2}{b^2}=1.</m> Construct a box centered at the origin with corners at <m>(a, \pm b)</m> and <m>(-a,\pm b)</m>. Draw lines through the diagonals of this box. Rewrite the equation of the hyperbola by solving for <m>y</m> and then factoring to show that as <m>x</m> gets large, the hyperbola gets really close to the lines <m>y=\pm \frac{b}{a}x</m>.
+      </p>
+      <hint>
         <p>
           rewrite so that you obtain <m>y=\pm\frac{b}{a}x\sqrt{\text{ something } }</m>
         </p>
-        </hint>
-        <p>
-          . These two lines are often called oblique asymptotes.
-        </p>
+      </hint>
+      <p>
+        . These two lines are often called oblique asymptotes.
+      </p>
 
-        <p>
-          Now apply what you have just done to sketch the hyperbola <m>\frac{x^2}{25}-\frac{y^2}{9}=1</m> and give the location of the foci.
-        </p>
-      </statement>
-    </exercise>
+      <p>
+        Now apply what you have just done to sketch the hyperbola <m>\frac{x^2}{25}-\frac{y^2}{9}=1</m> and give the location of the foci.
+      </p>
+    </exploration>
+
     <p>
       The next three problems will help you use the basic equations of a hyperbola, together with shifting and reflecting, to study all ellipses whose major axis is parallel to either the <m>x</m>- or <m>y</m>-axis.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See 11.6: 27-34}
-            </fn>For each hyperbola below, graph the hyperbola (include the box and asymptotes) and give the coordinates of the foci and vertexes.
-          <ol>
-            <li>
-              <p>
-                <m>\ds 16x^2-25y^2=400</m>
-                <hint>
+
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See 11.6: 27-34}
+          </fn>For each hyperbola below, graph the hyperbola (include the box and asymptotes) and give the coordinates of the foci and vertexes.
+        <ol>
+          <li>
+            <p>
+              <m>\ds 16x^2-25y^2=400</m>
+              <hint>
                 <p>
                   divide by 400.
                 </p>
-                </hint>
-              </p>
-            </li>
+              </hint>
+            </p>
+          </li>
 
-            <li>
-              <p>
-                <m>\ds \frac{(x-1)^2}{5}-\frac{(y-2)^2}{9}=1</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          For the hyperbola <m>x^2+2x-2y^2+8y=9</m>, sketch a graph (include the box and asymptotes) and give the coordinates of the foci and vertexes.
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>
-            \thomasee{See 11.6: 35-38}
-            </fn>Given an equation of each hyperbola described below, and provide a rough sketch.
-          <ol>
-            <li>
-              <p>
-                The vertexes are at <m>(2\pm 3,1)</m> and foci at <m>(2\pm 5, 1)</m>.
-              </p>
-            </li>
+          <li>
+            <p>
+              <m>\ds \frac{(x-1)^2}{5}-\frac{(y-2)^2}{9}=1</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
 
-            <li>
-              <p>
-                The vertexes are at <m>(-1,3\pm 2)</m> and foci at <m>(-1, 3\pm 5)</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
+    <exploration>
+      <p>
+        For the hyperbola <m>x^2+2x-2y^2+8y=9</m>, sketch a graph (include the box and asymptotes) and give the coordinates of the foci and vertexes.
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        EXTRA<fn>
+          \thomasee{See 11.6: 35-38}
+          </fn>Given an equation of each hyperbola described below, and provide a rough sketch.
+        <ol>
+          <li>
+            <p>
+              The vertexes are at <m>(2\pm 3,1)</m> and foci at <m>(2\pm 5, 1)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The vertexes are at <m>(-1,3\pm 2)</m> and foci at <m>(-1, 3\pm 5)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
     <p>
       \bmw{Ask me about the reflective properties of a hyperbola in class, if I have not told you already. In particular, we can discuss lasers and long range telescopes. The following problem provides the basis to these reflective properties and is optional. If you wish to present it, let me know. I'll have you type it up prior to presenting in class.}
     </p>
-    <exercise>
+
+    <exploration>
       <title>Optional</title>
-      <statement>
-        <p>
-          Consider the hyperbola <m>\frac{x^2}{a^2}-\frac{y^2}{b^2}=1</m> with foci <m>F_1=(c,0)</m> and <m>F_2=(-c,0)</m>.
-          Let <m>Q=(x,y)</m> be a point on the hyperbola.
-          Let <m>T</m> be the tangent line to the hyperbola at point <m>Q</m>.
-          Show that the angle between <m>F_1Q</m> and <m>T</m> is the same as the angle between <m>F_2Q</m> and <m>T</m>. This shows that if you begin a ray from a point in the plane and head towards <m>F_1</m> (where the wall of the hyperbola lies between the start point and <m>F_1</m>), then when the ray hits the wall at <m>Q</m>, it reflects off the wall and heads straight towards the other focus <m>F_2</m>.
-        </p>
-      </statement>
-    </exercise>
+      <p>
+        Consider the hyperbola <m>\frac{x^2}{a^2}-\frac{y^2}{b^2}=1</m> with foci <m>F_1=(c,0)</m> and <m>F_2=(-c,0)</m>.
+        Let <m>Q=(x,y)</m> be a point on the hyperbola.
+        Let <m>T</m> be the tangent line to the hyperbola at point <m>Q</m>.
+        Show that the angle between <m>F_1Q</m> and <m>T</m> is the same as the angle between <m>F_2Q</m> and <m>T</m>. This shows that if you begin a ray from a point in the plane and head towards <m>F_1</m> (where the wall of the hyperbola lies between the start point and <m>F_1</m>), then when the ray hits the wall at <m>Q</m>, it reflects off the wall and heads straight towards the other focus <m>F_2</m>.
+      </p>
+    </exploration>
   </subsection>
 </section>

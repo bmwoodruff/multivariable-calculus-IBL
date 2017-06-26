@@ -19,56 +19,55 @@
   <p>
     Rather than introduce Cobb-Douglass production functions (from economics) or sheer-stress calculations (from engineering), we'll work with simple examples that illustrate the key points. Sometimes silly examples carry the message across just as well.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Suppose an ant walks around the circle <m>g(x,y)=x^2+y^2=1</m>. As the ant walks around the circle, the temperature is <m>f(x,y) = x^2+y+4</m>. Our goal is to find the maximum and minimum temperatures reached by the ant as it walks around the circle. We want to optimize <m>f(x,y)</m> subject to the constraint <m>g(x,y)=1</m>.
-        <ol>
-          <li>
-            <p>
-              Draw the circle <m>g(x,y)=1</m>.  Then, on the same set of axes, draw several level curves of <m>f</m>. The level curves <m>f=3, 4, 5, 6</m> are a good start. Then add more (maybe at each 1/4th). If you make a careful, accurate graph, it will help a lot below.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Based solely on your graph, where does the minimum temperature occur?  What is the minimum temperature?
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Suppose an ant walks around the circle <m>g(x,y)=x^2+y^2=1</m>. As the ant walks around the circle, the temperature is <m>f(x,y) = x^2+y+4</m>. Our goal is to find the maximum and minimum temperatures reached by the ant as it walks around the circle. We want to optimize <m>f(x,y)</m> subject to the constraint <m>g(x,y)=1</m>.
+      <ol>
+        <li>
+          <p>
+            Draw the circle <m>g(x,y)=1</m>.  Then, on the same set of axes, draw several level curves of <m>f</m>. The level curves <m>f=3, 4, 5, 6</m> are a good start. Then add more (maybe at each 1/4th). If you make a careful, accurate graph, it will help a lot below.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              If the ant is at the point <m>(0,1)</m>, and it moves left, will the temperature rise or fall?  What if the ant moves right?
-            </p>
-          </li>
+        <li>
+          <p>
+            Based solely on your graph, where does the minimum temperature occur?  What is the minimum temperature?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              On your graph, place a dot(s) where you believe the ant reaches a maximum temperature (it may occur at more than one spot).
-            </p>
-          </li>
+        <li>
+          <p>
+            If the ant is at the point <m>(0,1)</m>, and it moves left, will the temperature rise or fall?  What if the ant moves right?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Explain why you believe this is the spot where the maximum temperature occurs. What about the level curves tells you that these spots should be a maximum?
-            </p>
-          </li>
+        <li>
+          <p>
+            On your graph, place a dot(s) where you believe the ant reaches a maximum temperature (it may occur at more than one spot).
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Draw the gradient of <m>f</m> at the places where the minimum and maximum temperatures occur. Also draw the gradient of <m>g</m> at these spots.
-            </p>
-          </li>
+        <li>
+          <p>
+            Explain why you believe this is the spot where the maximum temperature occurs. What about the level curves tells you that these spots should be a maximum?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Explain how are gradients of <m>f</m> and <m>g</m> related at these spots.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Draw the gradient of <m>f</m> at the places where the minimum and maximum temperatures occur. Also draw the gradient of <m>g</m> at these spots.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Explain how are gradients of <m>f</m> and <m>g</m> related at these spots.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
   <theorem>
     <title>Lagrange Multipliers</title>
@@ -83,85 +82,81 @@
     </statement>
   </theorem>
 
-  <exercise>
-    <statement>
-      <p>
-        Suppose an ant walks around the circle <m>x^2+y^2=1</m>. As the ant walks around the circle, the temperature is <m>T(x,y) = x^2+y+4</m>. Our goal is to find the maximum and minimum temperatures <m>T</m> reached by the ant as it walks around the circle.
-        <ol>
-          <li>
-            <p>
-              What function <m>f(x,y)</m> do we wish to optimize? What is the constraint <m>g(x,y)=c</m>?
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Suppose an ant walks around the circle <m>x^2+y^2=1</m>. As the ant walks around the circle, the temperature is <m>T(x,y) = x^2+y+4</m>. Our goal is to find the maximum and minimum temperatures <m>T</m> reached by the ant as it walks around the circle.
+      <ol>
+        <li>
+          <p>
+            What function <m>f(x,y)</m> do we wish to optimize? What is the constraint <m>g(x,y)=c</m>?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              EXTRA<fn>The most common error on this exercise is to divide both sides of an equation by <m>x</m>, which could be zero.  If you do this, you'll only get 2 ordered pairs.</fn>Find the gradient of <m>f</m> and the gradient of <m>g</m>.  Then solve the system of equations that you get from the equations
-              <me>
-                \vec \nabla f = \lambda \vec \nabla g,   x^2+y^2=1.
-              </me>
-              You should obtain 4 ordered pairs <m>(x,y)</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            EXTRA<fn>The most common error on this exercise is to divide both sides of an equation by <m>x</m>, which could be zero.  If you do this, you'll only get 2 ordered pairs.</fn>Find the gradient of <m>f</m> and the gradient of <m>g</m>.  Then solve the system of equations that you get from the equations
+            <me>
+              \vec \nabla f = \lambda \vec \nabla g,   x^2+y^2=1.
+            </me>
+            You should obtain 4 ordered pairs <m>(x,y)</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              At each ordered pair, find the temperature.
-            </p>
-          </li>
+        <li>
+          <p>
+            At each ordered pair, find the temperature.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What is the maximum temperature obtained? What is the minimum temperature obtained? Do your results match the previous exercise?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-        \bmw{See 14.8 for more practice.}
-        </fn>
-        Consider the curve <m>xy^2=54</m> (draw it). The distance from each point on this curve to the origin is a function that must have a minimum value. Find a point <m>(a,b)</m> on the curve that is closest to the origin.
-      </p>
-    </statement>
+        <li>
+          <p>
+            What is the maximum temperature obtained? What is the minimum temperature obtained? Do your results match the previous exercise?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      EXTRA<fn>
+      \bmw{See 14.8 for more practice.}
+      </fn>
+      Consider the curve <m>xy^2=54</m> (draw it). The distance from each point on this curve to the origin is a function that must have a minimum value. Find a point <m>(a,b)</m> on the curve that is closest to the origin.
+    </p>
     <hint>
       <p>
         The distance to the origin is <m>d(x,y)=\sqrt{x^2+y^2}.</m> This distance is minimized when <m>f(x,y) = x^2+y^2</m> is minimized. So use <m>f(x,y)=x^2+y^2</m> as the function you wish to minimize. What's the constraint <m>g(x,y)=c</m>?
       </p>
     </hint>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Find the dimensions of the rectangular box with maximum volume that can be inscribed inside the ellipsoid
-        <me>
-          \frac{x^2}{2^2}+\frac{y^2}{3^2}+\frac{z^2}{5^2}=1.
-        </me>
-      </p>
-    </statement>
+  </exploration>
+
+  <exploration>
+    <p>
+      Find the dimensions of the rectangular box with maximum volume that can be inscribed inside the ellipsoid
+      <me>
+        \frac{x^2}{2^2}+\frac{y^2}{3^2}+\frac{z^2}{5^2}=1.
+      </me>
+    </p>
     <hint>
       <p>
         What is the function <m>f</m> you wish to optimize? What is the constraint <m>g=c</m>? Try solving each equation for <m>\lambda</m> so you can eliminate it from the exercise.
       </p>
     </hint>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Repeat <xref ref="optimize_box_in_cake">exercise</xref>, but this time use Lagrange multipliers.
-        Find the dimensions of the rectangular box of maximum volume that fits underneath the surface <m>z=f(x,y)=9-x^2-y^2</m> for <m>z\geq 0</m>.
-      </p>
-    </statement>
+  </exploration>
+
+  <exploration>
+    <p>
+      Repeat <xref ref="optimize_box_in_cake">exercise</xref>, but this time use Lagrange multipliers.
+      Find the dimensions of the rectangular box of maximum volume that fits underneath the surface <m>z=f(x,y)=9-x^2-y^2</m> for <m>z\geq 0</m>.
+    </p>
     <hint>
       <p>
         Let <m>f(x,y,z) = (2x)(2x)(z)</m> and <m>g(x,y,z)=z+x^2+y^2=9</m>. You'll get a system of 4 equations with 4 unknowns (<m>x,y,z,\lambda</m>). Try solving each equation for lambda. You know <m>x,y,z</m> can't be zero or negative, so ignore those possible cases.
       </p>
     </hint>
-  </exercise>
+  </exploration>
+
   <p>
     \bmw{\section{Wrap Up}
     Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}

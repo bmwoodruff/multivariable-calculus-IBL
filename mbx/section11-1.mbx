@@ -27,67 +27,66 @@
   <p>
     Before we introduce integration, let's practice using inequalities to describe regions in the plane. In first semester calculus, we often use the inequalities <m>a\leq x\leq b</m> and <m>g(x)\leq y\leq f(x)</m> to describe the region above <m>g</m> below <m>f</m> for <m>x</m> between <m>a</m> and <m>b</m>. We trapped <m>x</m> between two constants, and <m>y</m> between two functions. Sometimes we wrote <m>c\leq y\leq d</m> where <m>g(y)\leq x\leq f(y)</m> to describe the region to the right of <m>g</m> and left of <m>f</m> for <m>y</m> between <m>c</m> and <m>d</m>. We need to practice writing inequalities in this form, as these inequalities provide us the bounds of integration for double integrals.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Consider the region <m>R</m> in the <m>xy</m>-plane that is below the line <m>y=x+2</m>, above the line <m>y=2</m>, and left of the line <m>x=5</m>. We can describe this region by saying for each <m>x</m> with <m>0\leq x\leq 5</m>, we want <m>y</m> to satisfy <m>2\leq y\leq x+2</m>. In set builder notation, we would write
-        <me>
-          R=\{(x,y)\ | \ 0\leq x\leq 5, 2\leq y\leq x+2\}.
-        </me>
-      </p>
 
-      <p>
-        The symbols <m>\{</m> and <m>\}</m> are used to enclose sets, and the symbol <m>|</m> stands for <q>such that</q>. We read the above line as <q><m>R</m> equals the set of <m>(x,y)</m> such that zero is less than <m>x</m> which is less than 5, and 2 is less than <m>y</m> which is less than <m>x+2</m>.</q>
-        <ol>
-          <li>
-            <p>
-              Describe the region <m>R</m> by saying for each <m>y</m> with <m>c\leq y\leq d</m>, we want <m>x</m> to satisfy <m>a(y)\leq x\leq b(y)</m>. In other words, find constants <m>c</m> and <m>d</m>, and functions <m>a(y)</m> and <m>b(y)</m>, so that for each <m>y</m> between <m>c</m> and <m>d</m>, the <m>x</m> values must be between the functions <m>a(y)</m> and <m>b(y)</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Consider the region <m>R</m> in the <m>xy</m>-plane that is below the line <m>y=x+2</m>, above the line <m>y=2</m>, and left of the line <m>x=5</m>. We can describe this region by saying for each <m>x</m> with <m>0\leq x\leq 5</m>, we want <m>y</m> to satisfy <m>2\leq y\leq x+2</m>. In set builder notation, we would write
+      <me>
+        R=\{(x,y)\ | \ 0\leq x\leq 5, 2\leq y\leq x+2\}.
+      </me>
+    </p>
 
-          <li>
-            <p>
-              Write your last answer in the set builder notation
-              <me>
-                R=\{(x,y)\ | \ c\leq y\leq d, a(y)\leq x\leq b(y)\}.
-              </me>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+    <p>
+      The symbols <m>\{</m> and <m>\}</m> are used to enclose sets, and the symbol <m>|</m> stands for <q>such that</q>. We read the above line as <q><m>R</m> equals the set of <m>(x,y)</m> such that zero is less than <m>x</m> which is less than 5, and 2 is less than <m>y</m> which is less than <m>x+2</m>.</q>
+      <ol>
+        <li>
+          <p>
+            Describe the region <m>R</m> by saying for each <m>y</m> with <m>c\leq y\leq d</m>, we want <m>x</m> to satisfy <m>a(y)\leq x\leq b(y)</m>. In other words, find constants <m>c</m> and <m>d</m>, and functions <m>a(y)</m> and <m>b(y)</m>, so that for each <m>y</m> between <m>c</m> and <m>d</m>, the <m>x</m> values must be between the functions <m>a(y)</m> and <m>b(y)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Write your last answer in the set builder notation
+            <me>
+              R=\{(x,y)\ | \ c\leq y\leq d, a(y)\leq x\leq b(y)\}.
+            </me>
+          </p>
+        </li>
+      </ol>
+    </p>
     <hint>
       <p>
         If your struggling, then draw the 4 curves given by <m>0=x</m>, <m>x= 5</m>, <m>2=y</m> and <m>y= x+2</m>. Then shade either above, below, left, or right of the line (as appropriate).
       </p>
     </hint>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        For each region <m>R</m> below, draw the region and give a set of inequalities of the form <m>a\leq x\leq b, c(x)\leq y\leq d(x)</m> or in the form <m>c\lt y\lt d, a(y)\leq x\leq b(y)</m>. In class, we'll give whichever one you did not.
-        <ol>
-          <li>
-            <p>
-              The region <m>R</m> is above the line <m>x+y=1</m> and inside the circle <m>x^2+y^2=1</m>.
-            </p>
-          </li>
+  </exploration>
 
-          <li>
-            <p>
-              The region <m>R</m> is below the line <m>y=8</m>, above the curve <m>y=x^2</m>, and to the right of the <m>y</m>-axis.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      For each region <m>R</m> below, draw the region and give a set of inequalities of the form <m>a\leq x\leq b, c(x)\leq y\leq d(x)</m> or in the form <m>c\lt y\lt d, a(y)\leq x\leq b(y)</m>. In class, we'll give whichever one you did not.
+      <ol>
+        <li>
+          <p>
+            The region <m>R</m> is above the line <m>x+y=1</m> and inside the circle <m>x^2+y^2=1</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              The region <m>R</m> is bounded by <m>2x+y=3</m>, <m>y=x</m>, and <m>x=0</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            The region <m>R</m> is below the line <m>y=8</m>, above the curve <m>y=x^2</m>, and to the right of the <m>y</m>-axis.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The region <m>R</m> is bounded by <m>2x+y=3</m>, <m>y=x</m>, and <m>x=0</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     We're now ready to discuss double integrals. Just as single integrals gave us the area under a function over an interval, double integrals will give us the volume under a function, above a region in the plane. We'll introduce double integrals by looking at cross sections of a solid. You did this in first semester calculus, but you always used geometric shapes, for which we know the area, to create the cross sections. Let's start with a review of this idea, and then jump into double integrals.
   </p>
@@ -112,37 +111,37 @@
   <p>
     Let's now consider the exact same solid, but instead of cutting horizontally, let's cut the object vertically. The first exercise has you cut the solid up using slices that are parallel to the <m>x</m>-axis (so keeping <m>y</m> constant). The next has you repeat the exercise, but this time using vertical slices that are parallel to the <m>y</m>-axis (so keeping <m>x</m> constant). The idea is exactly the same. Just find the area of a slice, thicken it up (using <m>dx</m> or <m>dy</m>), and then integrate.
   </p>
-  <exercise xml:id="prob_double-int_half_parabolic">
-    <statement>
-      <p>
-        Please <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_of_solid_by_letting_y_equal_a_constant">click on this Sage link.</url> In this picture, you'll see the solid <m>D</m> drawn. You'll also see several cross sections of the surface (half parabolas), each one obtained by letting <m>y</m> equal a constant (<m>y=-2, -1,0,1,2</m>). When <m>y_i=0</m>, the half parabola has area <m>\int_0^3 9-x^2dx</m>. When <m>y_i=2</m>, the half parabola has area <m>\int_0^? 5-x^2dx</m>.
-        <ol>
-          <li>
-            <p>
-              When <m>y=y_i</m>, explain why the area of each of the cross sections from the first part is
-              <me>
-                A_{y=y_i}=\ds \int_0^{\sqrt{9-y_i^2}} (9-x^2-y_i^2) dx.
-              </me>
-            </p>
-          </li>
-        </ol>
-      </p>
 
-      <p>
-        In the first Sage picture above, we cut the solid into 6 pieces. We could cut the solid into more pieces. <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_multiplied_by_dy">Click on this Sage link</url> to see what happens if we cut the solid into 12 pieces, and then fatten up each cross section by <m>dy=1/2</m> units, obtaining 12 tiny bits of volume <m>dV</m>.
-        <ol type="resume">
-          <li>
-            <p>
-              Explain why the total volume of the solid <m>D</m> equals
-              <me>
-                \ds\int_{-3}^{3} \left(\int_0^{\sqrt{9-y^2}}(9-x^2-y^2) dx\right) dy.
-              </me>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+  <exploration xml:id="prob_double-int_half_parabolic">
+    <p>
+      Please <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_of_solid_by_letting_y_equal_a_constant">click on this Sage link.</url> In this picture, you'll see the solid <m>D</m> drawn. You'll also see several cross sections of the surface (half parabolas), each one obtained by letting <m>y</m> equal a constant (<m>y=-2, -1,0,1,2</m>). When <m>y_i=0</m>, the half parabola has area <m>\int_0^3 9-x^2dx</m>. When <m>y_i=2</m>, the half parabola has area <m>\int_0^? 5-x^2dx</m>.
+      <ol>
+        <li>
+          <p>
+            When <m>y=y_i</m>, explain why the area of each of the cross sections from the first part is
+            <me>
+              A_{y=y_i}=\ds \int_0^{\sqrt{9-y_i^2}} (9-x^2-y_i^2) dx.
+            </me>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      In the first Sage picture above, we cut the solid into 6 pieces. We could cut the solid into more pieces. <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_multiplied_by_dy">Click on this Sage link</url> to see what happens if we cut the solid into 12 pieces, and then fatten up each cross section by <m>dy=1/2</m> units, obtaining 12 tiny bits of volume <m>dV</m>.
+      <ol type="resume">
+        <li>
+          <p>
+            Explain why the total volume of the solid <m>D</m> equals
+            <me>
+              \ds\int_{-3}^{3} \left(\int_0^{\sqrt{9-y^2}}(9-x^2-y^2) dx\right) dy.
+            </me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     The integral above is called an iterated integral because you first compute the inside integral and then you compute the outside integral (you iteratively integrate). Often the parenthesis are not written because we know that the inside integral should be performed first without writing the parenthesis. We could also explicitly emphasize which variables go with each bound by writing
     <me>
@@ -153,43 +152,42 @@
   <p>
     This latter approach is not commonly used, but can save a beginner from making simple errors.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn><url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_of_solid_by_letting_x_equal_a_constant">Click on this Sage link</url> to see a picture of how you could obtain this answer by considering cross sections.</fn> The bounds of the integral
-        <me>
-          \ds\int_{-3}^{3} \left(\int_0^{\sqrt{9-y^2}}(9-x^2-y^2) dx\right) dy
-        </me>
-        describe a region <m>R</m> in the plane, namely
-        <me>
-          -3\leq y\leq 3 \text{ and }  0\leq x\leq \sqrt{9-y^2}.
-        </me>
-        <ol>
-          <li>
-            <p>
-              Draw this region <m>R</m> in the <m>xy</m>-plane.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Then give bounds to describe the region alternately by first stating constants which trap <m>x</m> (so <m>a\leq x\leq b</m>) and then functions which trap <m>y</m> (so <m>c(x)\leq y \leq d(x)</m>).
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn><url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_of_solid_by_letting_x_equal_a_constant">Click on this Sage link</url> to see a picture of how you could obtain this answer by considering cross sections.</fn> The bounds of the integral
+      <me>
+        \ds\int_{-3}^{3} \left(\int_0^{\sqrt{9-y^2}}(9-x^2-y^2) dx\right) dy
+      </me>
+      describe a region <m>R</m> in the plane, namely
+      <me>
+        -3\leq y\leq 3 \text{ and }  0\leq x\leq \sqrt{9-y^2}.
+      </me>
+      <ol>
+        <li>
+          <p>
+            Draw this region <m>R</m> in the <m>xy</m>-plane.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Use these new bounds to write an iterated integral
-              <me>
-                \ds\int_{x=a}^{x=b} \left(\int_{y=c(x)}^{y=d(x)}9-x^2-y^2 dy\right) dx
-              </me>
-              that gives the exact same volume of the solid <m>D</m> from the previous problem.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Then give bounds to describe the region alternately by first stating constants which trap <m>x</m> (so <m>a\leq x\leq b</m>) and then functions which trap <m>y</m> (so <m>c(x)\leq y \leq d(x)</m>).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Use these new bounds to write an iterated integral
+            <me>
+              \ds\int_{x=a}^{x=b} \left(\int_{y=c(x)}^{y=d(x)}9-x^2-y^2 dy\right) dx
+            </me>
+            that gives the exact same volume of the solid <m>D</m> from the previous problem.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
   <exploration>
     <p>
@@ -319,91 +317,88 @@
     </statement>
   </definition>
 
-  <exercise>
-    <statement>
-      <p>
-        Consider the region <m>R</m> in the plane that is bounded by the line <m>y=x+2</m> and the parabola <m>y=x^2-4</m>. Distances are measured in <m>cm</m>.
-        <ol>
-          <li>
-            <p>
-              Draw the region <m>R</m>, and give bounds of the form <m>a\leq x\leq b</m>, <m>c(x)\leq y\leq d(x)</m> to describe the region.
-            </p>
-          </li>
-        </ol>
-      </p>
+  <exploration>
+    <p>
+      Consider the region <m>R</m> in the plane that is bounded by the line <m>y=x+2</m> and the parabola <m>y=x^2-4</m>. Distances are measured in <m>cm</m>.
+      <ol>
+        <li>
+          <p>
+            Draw the region <m>R</m>, and give bounds of the form <m>a\leq x\leq b</m>, <m>c(x)\leq y\leq d(x)</m> to describe the region.
+          </p>
+        </li>
+      </ol>
+    </p>
 
-      <p>
-        Check your work with the link in the margin. You can use this Sage link to check any double integral. If you think you have the bounds right, use this Sage link to draw the region your bounds describe. If it doesn't the draw the region you thought, then your bounds are off. Trial and error is a powerful tool here. You've got to try, and fail, and then make adjustments. This is the key to mastering double integrals.
-      </p>
+    <p>
+      Check your work with the link in the margin. You can use this Sage link to check any double integral. If you think you have the bounds right, use this Sage link to draw the region your bounds describe. If it doesn't the draw the region you thought, then your bounds are off. Trial and error is a powerful tool here. You've got to try, and fail, and then make adjustments. This is the key to mastering double integrals.
+    </p>
 
-      <p>
-        Suppose a metal plate occupies the region <m>R</m>. The metal plate was constructed to have a density of <m>\delta (x,y)=(y+4)</m> g/<m>cm^2</m>.
-        <ol type="resume">
-          <li>
-            <p>
-              Explain why the mass of the plate is the double integral <m>\ds\iint_R \delta dA</m>.
-            </p>
-          </li>
+    <p>
+      Suppose a metal plate occupies the region <m>R</m>. The metal plate was constructed to have a density of <m>\delta (x,y)=(y+4)</m> g/<m>cm^2</m>.
+      <ol type="resume">
+        <li>
+          <p>
+            Explain why the mass of the plate is the double integral <m>\ds\iint_R \delta dA</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              EXTRA<fn>Check your work with this <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator">Double Integral Checker written in Sage</url>.</fn>
-              Set up an iterated integral (use the bounds from part 1) to compute the double integral <m>\ds\iint_R (y+4) dA</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            EXTRA<fn>Check your work with this <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator">Double Integral Checker written in Sage</url>.</fn>
+            Set up an iterated integral (use the bounds from part 1) to compute the double integral <m>\ds\iint_R (y+4) dA</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Now compute the integral starting with the inside integral, followed by the outside integral.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Consider the iterated integral <m>\ds \int_0^3\int_x^3 e^{y^2}dydx</m>. This integral as written cannot (easily) be computed by hand. However, with a little math magic, we can...
-        <ol>
-          <li>
-            <p>
-              Write the bounds as two inequalities (<m>0\leq x\leq 3</m> and <m>?\leq y\leq ?</m>). Then draw and shade the region <m>R</m> described by these two inequalities.
-            </p>
-          </li>
-        </ol>
-      </p>
+        <li>
+          <p>
+            Now compute the integral starting with the inside integral, followed by the outside integral.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-      <p>
-        We want to swap the order of integration from <m>dydx</m> to <m>dxdy</m>. This requires you to describe new bounds for the integrals. The new bounds will define <m>x</m> as a function of <m>y</m>. This is the key to swapping the order of integration.
-        <ol type="resume">
-          <li>
-            <p>
-              Write new bounds to describe the region using two inequalities of the form <m>c\leq y\leq d</m> and <m>a(y)\leq x\leq b(y)</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Consider the iterated integral <m>\ds \int_0^3\int_x^3 e^{y^2}dydx</m>. This integral as written cannot (easily) be computed by hand. However, with a little math magic, we can...
+      <ol>
+        <li>
+          <p>
+            Write the bounds as two inequalities (<m>0\leq x\leq 3</m> and <m>?\leq y\leq ?</m>). Then draw and shade the region <m>R</m> described by these two inequalities.
+          </p>
+        </li>
+      </ol>
+    </p>
 
-          <li>
-            <p>
-              Use your new bounds to compute the integral by hand (you'll need a <m>u</m>-substitution <m>u=y^2</m> on the outer integral).
-            </p>
-          </li>
+    <p>
+      We want to swap the order of integration from <m>dydx</m> to <m>dxdy</m>. This requires you to describe new bounds for the integrals. The new bounds will define <m>x</m> as a function of <m>y</m>. This is the key to swapping the order of integration.
+      <ol type="resume">
+        <li>
+          <p>
+            Write new bounds to describe the region using two inequalities of the form <m>c\leq y\leq d</m> and <m>a(y)\leq x\leq b(y)</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Now use <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator">Sage</url> to check your work.
-            </p>
-          </li>
+        <li>
+          <p>
+            Use your new bounds to compute the integral by hand (you'll need a <m>u</m>-substitution <m>u=y^2</m> on the outer integral).
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Then also use Sage to compute the original the original integral <m>\ds \int_0^3\int_x^3 e^{y^2}dydx</m>, and tell us what the inner integral equals (if you see <m>i</m>, <m>\sqrt{\pi}</m>, and erf, then you did this correctly).
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Now use <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator">Sage</url> to check your work.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Then also use Sage to compute the original the original integral <m>\ds \int_0^3\int_x^3 e^{y^2}dydx</m>, and tell us what the inner integral equals (if you see <m>i</m>, <m>\sqrt{\pi}</m>, and erf, then you did this correctly).
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
   <exploration>
     <title>Extra Practice</title>

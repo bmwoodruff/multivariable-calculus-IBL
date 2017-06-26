@@ -33,93 +33,93 @@
   <p>
     We'll quickly see that if a vector field has a potential, then the work done by the vector field is the difference in the potential. If you've ever dealt with kinetic and potential energy, then you hopefully recall that the change in kinetic energy is precisely the difference in potential energy. This is the reason we use the word <q>potential.</q>
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn><url href="http://www.youtube.com/watch?v=8Tk2pEIOnwg&amp;list=PL04DF68E73B7ECD54&amp;index=9&amp;feature=plpp_video">Watch a YouTube Video</url>.</fn>Let's practice finding gradients and potentials.
-      </p>
-      <hint>
+
+  <exploration>
+    <p>
+      EXTRA<fn><url href="http://www.youtube.com/watch?v=8Tk2pEIOnwg&amp;list=PL04DF68E73B7ECD54&amp;index=9&amp;feature=plpp_video">Watch a YouTube Video</url>.</fn>Let's practice finding gradients and potentials.
+    </p>
+    <hint>
       <p>
         For 1 and 2 the first derivative you take should yield a 1x2 vector (matrix).
       </p>
-      </hint>
-      <ol>
-      <li>
-        <p>
-          Let <m>f(x,y) = x^2+3xy+2y^2</m>.
-          <ol>
-            <li>
-              <p>
-                Find the gradient of <m>f</m>, i.e. find <m>Df(x,y)</m>.
-              </p>
-            </li>
+    </hint>
+    <ol>
+    <li>
+      <p>
+        Let <m>f(x,y) = x^2+3xy+2y^2</m>.
+        <ol>
+          <li>
+            <p>
+              Find the gradient of <m>f</m>, i.e. find <m>Df(x,y)</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Next compute <m>D^2f(x,y)</m> (you should get a square matrix).
-              </p>
-            </li>
+          <li>
+            <p>
+              Next compute <m>D^2f(x,y)</m> (you should get a square matrix).
+            </p>
+          </li>
 
-            <li>
-              <p>
-                What are <m>f_{xy}</m> and <m>f_{yx}</m>?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </li>
+          <li>
+            <p>
+              What are <m>f_{xy}</m> and <m>f_{yx}</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
 
-      <li>
-        <p>
-          Consider the vector field <m>\vec F(x,y)=(2x+y,x+4y)</m>.
-          <ol>
-            <li>
-              <p>
-                Find the derivative of <m>\vec F(x,y)</m> (it should be a square matrix).
-              </p>
-            </li>
+    <li>
+      <p>
+        Consider the vector field <m>\vec F(x,y)=(2x+y,x+4y)</m>.
+        <ol>
+          <li>
+            <p>
+              Find the derivative of <m>\vec F(x,y)</m> (it should be a square matrix).
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Now find a function <m>f(x,y)</m> whose gradient is <m>\vec F</m> (i.e. <m>Df=\vec F</m>).
-              </p>
-            </li>
+          <li>
+            <p>
+              Now find a function <m>f(x,y)</m> whose gradient is <m>\vec F</m> (i.e. <m>Df=\vec F</m>).
+            </p>
+          </li>
 
-            <li>
-              <p>
-                What are <m>f_{xy}</m> and <m>f_{yx}</m>?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </li>
+          <li>
+            <p>
+              What are <m>f_{xy}</m> and <m>f_{yx}</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
 
-      <li>
-        <p>
-          EXTRA<fn>See <xref ref="second_partials_agree">exercise</xref>.</fn>Consider the vector field <m>\vec F(x,y)=(2x+y,3x+4y)</m>.
-          <ol>
-            <li>
-              <p>
-                Find the derivative of <m>\vec F</m>.
-              </p>
-            </li>
+    <li>
+      <p>
+        EXTRA<fn>See <xref ref="second_partials_agree">exercise</xref>.</fn>Consider the vector field <m>\vec F(x,y)=(2x+y,3x+4y)</m>.
+        <ol>
+          <li>
+            <p>
+              Find the derivative of <m>\vec F</m>.
+            </p>
+          </li>
 
-            <li>
-              <p>
-                Explain why is there no function <m>f(x,y)</m> so that <m>Df(x,y)=\vec F(x,y)</m>?
-                <hint>
+          <li>
+            <p>
+              Explain why is there no function <m>f(x,y)</m> so that <m>Df(x,y)=\vec F(x,y)</m>?
+              <hint>
                 <p>
                   what would <m>f_{xy}</m> and <m>f_{yx}</m> have to equal?
                 </p>
-                </hint>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </li>
-      </ol>
-    </statement>
-  </exercise>
+              </hint>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    </ol>
+  </exploration>
+
   <p>
     Based on your observations in the previous exercise, we have the following key theorem.
   </p>
@@ -132,55 +132,54 @@
     </statement>
   </theorem>
 
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>If you haven't yet, please watch this <url href="http://www.youtube.com/watch?v=8Tk2pEIOnwg&amp;list=PL04DF68E73B7ECD54&amp;index=9&amp;feature=plpp_video">YouTube video</url>.</fn>For each of the following vector fields, find a potential, or explain why none exists.
-      </p>
-      <hint>
+  <exploration>
+    <p>
+      EXTRA<fn>If you haven't yet, please watch this <url href="http://www.youtube.com/watch?v=8Tk2pEIOnwg&amp;list=PL04DF68E73B7ECD54&amp;index=9&amp;feature=plpp_video">YouTube video</url>.</fn>For each of the following vector fields, find a potential, or explain why none exists.
+    </p>
+    <hint>
       <p>
         Use <xref ref="thm_has_potential">Thm</xref>
       </p>
-      </hint>
-      <ol>
-        <li>
-          <p>
-            <m>\vec F(x,y)=(2x-y, 3x+2y)</m>
-          </p>
-        </li>
+    </hint>
+    <ol>
+      <li>
+        <p>
+          <m>\vec F(x,y)=(2x-y, 3x+2y)</m>
+        </p>
+      </li>
 
-        <li>
-          <p>
-            <m>\vec F(x,y)=(2x+4y, 4x+3y)</m>
-          </p>
-        </li>
+      <li>
+        <p>
+          <m>\vec F(x,y)=(2x+4y, 4x+3y)</m>
+        </p>
+      </li>
 
-        <li>
-          <p>
-            <m>\vec F(x,y)=(2x+4xy, 2x^2+y)</m>
-          </p>
-        </li>
+      <li>
+        <p>
+          <m>\vec F(x,y)=(2x+4xy, 2x^2+y)</m>
+        </p>
+      </li>
 
-        <li>
-          <p>
-            <m>\vec F(x,y,z)=(x+2y+3z,2x+3y+4z,2x+3y+4z)</m>
-          </p>
-        </li>
+      <li>
+        <p>
+          <m>\vec F(x,y,z)=(x+2y+3z,2x+3y+4z,2x+3y+4z)</m>
+        </p>
+      </li>
 
-        <li>
-          <p>
-            <m>\vec F(x,y,z)=(x+2y+3z,2x+3y+4z,3x+4y+5z)</m>
-          </p>
-        </li>
+      <li>
+        <p>
+          <m>\vec F(x,y,z)=(x+2y+3z,2x+3y+4z,3x+4y+5z)</m>
+        </p>
+      </li>
 
-        <li>
-          <p>
-            <m>\vec F(x,y,z)=(x+yz,xz+z,xy+y)</m>
-          </p>
-        </li>
-      </ol>
-    </statement>
-  </exercise>
+      <li>
+        <p>
+          <m>\vec F(x,y,z)=(x+yz,xz+z,xy+y)</m>
+        </p>
+      </li>
+    </ol>
+  </exploration>
+
   <p>
     If a vector field has a potential, then there is an extremely simple way to compute work. To see this, we must first review the fundamental theorem of calculus. The second half of the fundamental theorem of calculus states,
   </p>
@@ -242,52 +241,49 @@
     </p>
   </exploration>
 
-  <exercise xml:id="prob_proof_of_fundamental_thm2">
+  <exploration xml:id="prob_proof_of_fundamental_thm2">
     <title>Guided Proof of Fundamental Theorem</title>
-    <statement>
-      <p>
-        Suppose <m>f(x,y)</m> is continuously differentiable, and suppose that <m>\vec r(t)</m> for <m>t\in[a,b]</m> is a parametrization of a smooth curve <m>C</m>.
-      </p>
+    <p>
+      Suppose <m>f(x,y)</m> is continuously differentiable, and suppose that <m>\vec r(t)</m> for <m>t\in[a,b]</m> is a parametrization of a smooth curve <m>C</m>.
+    </p>
 
-      <p>
-        We want to prove that:
-        <me>
-          f(\vec r(b))-f(\vec r(a)) = \int_a^b Df(\vec r(t))D\vec r(t)\ dt
-        </me>
-        <ol>
-          <li>
-            <p>
-              Let <m>g(t) = f(\vec r(t))</m>. Use substitution on the equation. Remember <m>t \in [a,b]</m>.
-            </p>
-          </li>
+    <p>
+      We want to prove that:
+      <me>
+        f(\vec r(b))-f(\vec r(a)) = \int_a^b Df(\vec r(t))D\vec r(t)\ dt
+      </me>
+      <ol>
+        <li>
+          <p>
+            Let <m>g(t) = f(\vec r(t))</m>. Use substitution on the equation. Remember <m>t \in [a,b]</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Explain why the equation you get after the substitution is true.
-            </p>
-          </li>
+        <li>
+          <p>
+            Explain why the equation you get after the substitution is true.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Compute <m>g`(t)</m> using the matrix form of the chain rule.
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute <m>g`(t)</m> using the matrix form of the chain rule.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Substitute back in to remove <m>g(\ )</m> from your equation.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn><url href="http://www.youtube.com/watch?v=5ZsCN6NN3yg&amp;list=PL04DF68E73B7ECD54&amp;index=11&amp;feature=plpp_video">Watch a YouTube video</url>.</fn>For each vector field and curve below, find the work done by <m>\vec F</m> along <m>C</m>. In other words, compute the integral <m>\int_C Mdx+Ndy</m> or <m>\int_C Mdx+Ndy+Pdz</m>.
-      </p>
-    </statement>
+        <li>
+          <p>
+            Substitute back in to remove <m>g(\ )</m> from your equation.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      EXTRA<fn><url href="http://www.youtube.com/watch?v=5ZsCN6NN3yg&amp;list=PL04DF68E73B7ECD54&amp;index=11&amp;feature=plpp_video">Watch a YouTube video</url>.</fn>For each vector field and curve below, find the work done by <m>\vec F</m> along <m>C</m>. In other words, compute the integral <m>\int_C Mdx+Ndy</m> or <m>\int_C Mdx+Ndy+Pdz</m>.
+    </p>
     <hint>
       <p>
         If you parametrize the curve, then you'll have done the exercise the HARD way. You don't need any parametrization at all.
@@ -313,34 +309,34 @@
         Did you find a potential, and then plug in the end points?
       </p>
     </hint>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJytkM1uhCAUhfc-hTsueMmMYNOV23mJydQYpR1SK0TItPr0hVFbm5kumnQBl597zvngUg9APKHJAT5wxImWoU440sRY78pWNx78WTevvXKulDSxpe2Mry6q8WaonrXqWtnCAdOg4zkKGlYj8gILijAhl_hIgyorbT3Ub8oPuqmiA0BjHPjQ7nR_rXGAxz0KZjVFxiLBVdrpXsER8q-7FAQWKOkJ07UtzkfSmM4M5FSSQbVkI53bgy567Le6e2SCr0wFmykZ5Dzu5bJfUa3eiR-ov3oxwfzO6tVSsm-7B_YPhuFgLllnXiDPIrPns92SEzPnhzyJP-RlMe-qvX3CbWa-4G0-a3N4P9adzTtYmnwCd8u7lQ">Sage</url><mdash /><m>C_1</m> and <m>C_2</m> are in blue, and several possible <m>C_3</m> are shown in red.</fn>
-        Let <m>\vec F = (x,z,y)</m>. Let <m>C_1</m> be the curve which starts at <m>(1,0,0)</m> and follows a helical path <m>(\cos t, \sin t, t)</m> to <m>(1,0,2\pi)</m>. Let <m>C_2</m> be the curve which starts at <m>(1,0, 2\pi)</m> and follows a straight line path to <m>(2,4,3)</m>. Let <m>C_3</m> be any smooth curve that starts at <m>(2,4,3)</m> and ends at <m>(0,1,2)</m>.
-        <ol>
-          <li>
-            <p>
-              Find the work done by <m>\vec F</m> along each path <m>C_1</m>, <m>C_2</m>, <m>C_3</m>.  EXTRA<fn>If you are parameterizing the curves, you're doing this the really hard way. Are you using the potential of the vector field?</fn>
-            </p>
-          </li>
+  </exploration>
 
-          <li>
-            <p>
-              Find the work done by <m>\vec F</m> along the path <m>C</m> which follows <m>C_1</m>, then <m>C_2</m>, then <m>C_3</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJytkM1uhCAUhfc-hTsueMmMYNOV23mJydQYpR1SK0TItPr0hVFbm5kumnQBl597zvngUg9APKHJAT5wxImWoU440sRY78pWNx78WTevvXKulDSxpe2Mry6q8WaonrXqWtnCAdOg4zkKGlYj8gILijAhl_hIgyorbT3Ub8oPuqmiA0BjHPjQ7nR_rXGAxz0KZjVFxiLBVdrpXsER8q-7FAQWKOkJ07UtzkfSmM4M5FSSQbVkI53bgy567Le6e2SCr0wFmykZ5Dzu5bJfUa3eiR-ov3oxwfzO6tVSsm-7B_YPhuFgLllnXiDPIrPns92SEzPnhzyJP-RlMe-qvX3CbWa-4G0-a3N4P9adzTtYmnwCd8u7lQ">Sage</url><mdash /><m>C_1</m> and <m>C_2</m> are in blue, and several possible <m>C_3</m> are shown in red.</fn>
+      Let <m>\vec F = (x,z,y)</m>. Let <m>C_1</m> be the curve which starts at <m>(1,0,0)</m> and follows a helical path <m>(\cos t, \sin t, t)</m> to <m>(1,0,2\pi)</m>. Let <m>C_2</m> be the curve which starts at <m>(1,0, 2\pi)</m> and follows a straight line path to <m>(2,4,3)</m>. Let <m>C_3</m> be any smooth curve that starts at <m>(2,4,3)</m> and ends at <m>(0,1,2)</m>.
+      <ol>
+        <li>
+          <p>
+            Find the work done by <m>\vec F</m> along each path <m>C_1</m>, <m>C_2</m>, <m>C_3</m>.  EXTRA<fn>If you are parameterizing the curves, you're doing this the really hard way. Are you using the potential of the vector field?</fn>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              If <m>C</m> is any path that can be broken up into finitely many smooth sub-paths, and <m>C</m> starts at <m>(1,0,0)</m> and ends at <m>(0,1,2)</m>, what is the work done by <m>\vec F</m> along <m>C</m>?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Find the work done by <m>\vec F</m> along the path <m>C</m> which follows <m>C_1</m>, then <m>C_2</m>, then <m>C_3</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>C</m> is any path that can be broken up into finitely many smooth sub-paths, and <m>C</m> starts at <m>(1,0,0)</m> and ends at <m>(0,1,2)</m>, what is the work done by <m>\vec F</m> along <m>C</m>?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     In the exercise above, the path we took to get from one point to another did not matter. The vector field had a potential, which meant that the work done did not depend on the path traveled.
   </p>
@@ -370,23 +366,21 @@
   </p>
 
   </review>
-  <exercise>
-    <statement>
-      <p>
-        The gravitational vector field is directly related to the radial field <m>\ds\vec F = \frac{\left(-x,-y,-z\right)}{(x^2+y^2+z^2)^{3/2}}</m>. Show that this vector field is conservative, by finding a potential for <m>\vec F</m>. Then compute the work done by an object that moves from <m>(1,2,-2)</m> to <m>(0,-3,4)</m> along ANY path that avoids the origin.
-      </p>
-    </statement>
+
+  <exploration>
+    <p>
+      The gravitational vector field is directly related to the radial field <m>\ds\vec F = \frac{\left(-x,-y,-z\right)}{(x^2+y^2+z^2)^{3/2}}</m>. Show that this vector field is conservative, by finding a potential for <m>\vec F</m>. Then compute the work done by an object that moves from <m>(1,2,-2)</m> to <m>(0,-3,4)</m> along ANY path that avoids the origin.
+    </p>
     <hint>
       <p>
         See the review exercise just before this if you're struggling with the integral.
       </p>
     </hint>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Suppose <m>\vec F</m> is a gradient field. Let <m>C</m> be a <em>piecewise smooth closed curve</em>. Compute <m>\int_C \vec F\cdot d\vec r</m> (you should get a number). Explain how you know your answer is correct.
-      </p>
-    </statement>
-  </exercise>
+  </exploration>
+
+  <exploration>
+    <p>
+      Suppose <m>\vec F</m> is a gradient field. Let <m>C</m> be a <em>piecewise smooth closed curve</em>. Compute <m>\int_C \vec F\cdot d\vec r</m> (you should get a number). Explain how you know your answer is correct.
+    </p>
+  </exploration>
 </section>

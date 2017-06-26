@@ -15,100 +15,99 @@
   <p>
     Imagine that you are at a park with some kids (a nephew, a daughter, etc.). The park has a merry-go-round where the kids can sit down, hold on, and then spin in circles. As the spinning speed increases, they'll feel a greater force trying to throw them outwards. To stay on the merry-go-round, they have to counteract this outward acceleration with their own inward acceleration. For the next few examples, let's examine the connections between <m>\vec v</m>, <m>\vec a</m>, <m>\vec T</m>, <m>d\vec T/dt</m>, <m>d\vec T/ds</m>, and <m>|d\vec T/ds|</m> in the context of spinning around on a merry-go-round. These few examples are enough to develop just about the entire chapter.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Sammy sits on a merry go round. He sits 3 feet from the center of the merry ground, and lets his big sister spin him around. We can parameterize Sammy's path with the vector equation <m>\vec r(t) = (3\cos t, 3\sin t)</m>, where <m>t</m> is in seconds. The point <m>(0,3)</m> corresponds to the time <m>t=\pi/2</m>.
-        <ol>
-          <li>
-            <p>
-              Draw the curve for <m>0\leq t\leq 2\pi</m>.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Compute <m>\vec v</m> and <m>\vec a</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Sammy sits on a merry go round. He sits 3 feet from the center of the merry ground, and lets his big sister spin him around. We can parameterize Sammy's path with the vector equation <m>\vec r(t) = (3\cos t, 3\sin t)</m>, where <m>t</m> is in seconds. The point <m>(0,3)</m> corresponds to the time <m>t=\pi/2</m>.
+      <ol>
+        <li>
+          <p>
+            Draw the curve for <m>0\leq t\leq 2\pi</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              At <m>(0,3)</m> (so <m>t=\pi/2</m>), draw these two vectors. Are these two vectors orthogonal?
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute <m>\vec v</m> and <m>\vec a</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Compute <m>\vec T</m> and <m>\dfrac{d\vec T}{dt}</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            At <m>(0,3)</m> (so <m>t=\pi/2</m>), draw these two vectors. Are these two vectors orthogonal?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              At <m>(0,3)</m>, draw these two vectors. Are these two vectors orthogonal?
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute <m>\vec T</m> and <m>\dfrac{d\vec T}{dt}</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Compute <m>\dfrac{d\vec T}{ds}</m> and <m>\left|\dfrac{d\vec T}{ds}\right|</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            At <m>(0,3)</m>, draw these two vectors. Are these two vectors orthogonal?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              How is the length of <m>\dfrac{d\vec T}{ds}</m> related to the circle?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        We started with the parameterization <m>\vec r(t) = (3\cos t, 3\sin t)</m>, now we'll replace <m>t</m> with <m>5t</m> and <m>\omega t</m> to understand which values can be used as descriptors of the curve vs. the motion.
-        <ol>
-          <li>
-            <p>
-              Replace <m>t</m> with <m>5t</m> and compute <m>\vec v</m>, <m>\vec a</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, <m>\dfrac{d\vec T}{ds}</m>, and <m>\left|\dfrac{d\vec T}{ds}\right|</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute <m>\dfrac{d\vec T}{ds}</m> and <m>\left|\dfrac{d\vec T}{ds}\right|</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              If we still want to evaluate at the time corresponding to the point <m>(0,3)</m>, what is <m>t=</m>?. \begin{hint}It should be smaller than <m>\frac{\pi}{2}</m>
-            </p>
-          </li>
+        <li>
+          <p>
+            How is the length of <m>\dfrac{d\vec T}{ds}</m> related to the circle?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              Replace <m>t</m> with <m>\omega t</m> and find <m>\vec v</m>, <m>\vec a</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, <m>\dfrac{d\vec T}{ds}</m>, and <m>\left|\dfrac{d\vec T}{ds}\right|</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      We started with the parameterization <m>\vec r(t) = (3\cos t, 3\sin t)</m>, now we'll replace <m>t</m> with <m>5t</m> and <m>\omega t</m> to understand which values can be used as descriptors of the curve vs. the motion.
+      <ol>
+        <li>
+          <p>
+            Replace <m>t</m> with <m>5t</m> and compute <m>\vec v</m>, <m>\vec a</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, <m>\dfrac{d\vec T}{ds}</m>, and <m>\left|\dfrac{d\vec T}{ds}\right|</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Explain why we should evaluate at <m>t=\frac{\pi}{2\omega}</m> for the point <m>(0,3)</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            If we still want to evaluate at the time corresponding to the point <m>(0,3)</m>, what is <m>t=</m>?. \begin{hint}It should be smaller than <m>\frac{\pi}{2}</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Evaluate each at <m>t=\frac{\pi}{2\omega}</m>, the time corresponding to point <m>(0,3)</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Replace <m>t</m> with <m>\omega t</m> and find <m>\vec v</m>, <m>\vec a</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, <m>\dfrac{d\vec T}{ds}</m>, and <m>\left|\dfrac{d\vec T}{ds}\right|</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              At <m>(0,3)</m>, which of these 6 quantities remain the same?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Explain why we should evaluate at <m>t=\frac{\pi}{2\omega}</m> for the point <m>(0,3)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Evaluate each at <m>t=\frac{\pi}{2\omega}</m>, the time corresponding to point <m>(0,3)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            At <m>(0,3)</m>, which of these 6 quantities remain the same?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     EXTRA<fn>Gauss developed and expanded many of the ideas in this section while on a map making mission for a king.  He wanted to create extremely high quality 2D images of the 3D world we are in.</fn>
   </p>
@@ -146,32 +145,32 @@
     Let's apply this new definition to a circle of any radius. We'll quickly see that the curvature and radius of a circle are related.
     The curvature vector <m>d\vec T/ds</m> tells us how quickly <m>\vec T</m> changes as we increase in length, which is a measure of how sharply we turn a corner. If our curve is a circle of radius <m>3</m>, then the curvature is <m>1/3</m>. <em>A larger circle should result in smaller curvature. </em>
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Consider the curve <m>\vec r(t)=(a\cos t, a\sin t)</m>.
-        <ol>
-          <li>
-            <p>
-              Draw the curve, and state the radius <m>\rho</m> of the best approximating circle.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Find the curvature vector <m>\vec \kappa</m> by performing a computation.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Consider the curve <m>\vec r(t)=(a\cos t, a\sin t)</m>.
+      <ol>
+        <li>
+          <p>
+            Draw the curve, and state the radius <m>\rho</m> of the best approximating circle.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What relationship exists between <m>\rho</m> and <m>\kappa</m>?  If the radius <m>\rho</m> were to increase, what would happen to <m>\kappa</m>?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Find the curvature vector <m>\vec \kappa</m> by performing a computation.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What relationship exists between <m>\rho</m> and <m>\kappa</m>?  If the radius <m>\rho</m> were to increase, what would happen to <m>\kappa</m>?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     For any curve, we could approximate how rapidly the curve turns at a point by drawing a circle that best approximates the curve (kind of like a Taylor polynomial, only now we'll use a circle.) We want the circle to meet the curve <m>\vec r</m> tangentially, and we want the curvature of the circle to match the curvature of the curve. Since the curvature of the circle must match the curvature of the curve, we know they are inverse related. This gives the following definition.
   </p>
@@ -210,76 +209,76 @@
   </p>
 
   </review>
-  <exercise>
-    <statement>
-      <p>
-        The big kids pushing Sammy on the merry-go-round decide to constantly increase the spinning rate. To parametrize Sammy's path, let's replace <m>t</m> with <m>t^2</m> in the original parametrization to obtain <m>\vec r(t) = (3\cos t^2, 3\sin t^2)</m>. Fill in the missing values below, and then answer the questions that follow.
-        <me>
-          \begin{array}{|c|c|}\hline
-           \vec v \amp  ( -6 t \sin \left(t^2\right),6 t \cos \left(t^2\right) ) \\\hline
-           ds/dt \amp  6 t \\\hline
-           \vec a \amp  
-             \\\hline
-           \vec T \amp  \left(-\sin \left(t^2\right),\cos \left(t^2\right)\right) 
-          \\\hline
-           d\vec T/dt \amp  \left(-2 t \cos \left(t^2\right),-2 t \sin \left(t^2\right)\right)\\\hline
-           \vec \kappa = d\vec T/ds \amp  
-          \\\hline
-           \kappa =|d\vec T/ds| \amp  \frac{1}{3} \\\hline
-          \end{array}
-        </me>
-        <ol>
-          <li>
-            <p>
-              Show that <m>\vec v</m> and <m>\vec a</m> are not orthogonal, but that <m>\vec T</m> and <m>d\vec T/dt</m> are.
-            </p>
-          </li>
-        </ol>
-      </p>
 
-      <p>
-        Because <m>\vec r (t)</m> includes periodic trig functinos at <m>(0,3)</m> we could have <m>t^2 = \frac{\pi}{2}</m>, <m>t^2=2\pi+frac{\pi}{2}</m> or <m>t^2=2\pi k + \frac{\pi}{2}</m> for any integer <m>k</m>.
-      </p>
-      <ol type="resume">
-      <li>
-        <p>
-          Show that <m>\vec T</m> is the same at <m>(0,3)</m>, regardless of what time we pass through <m>(0,3)</m>.
-        </p>
-      </li>
-
-      <li>
-        <p>
-          Show the same is true for <m>d\vec T/ds</m>.
-        </p>
-      </li>
-
-      <li>
-        <p>
-          When the speed is <m>\frac{ds}{dt}=6</m> (so <m>t=1</m>), how long are <m>d\vec T/dt</m> and <m>d\vec T/ds</m>?
-        </p>
-        <ol>
-          <li>
-            <p>
-              When the speed is <m>\frac{ds}{dt}=12</m> (so <m>t=2</m>), how long are <m>d\vec T/dt</m> and <m>d\vec T/ds</m>?
-            </p>
-          </li>
-
-          <li>
-            <p>
-              When the speed is <m>\frac{ds}{dt}=30</m> (so <m>t=5</m>), how long are <m>d\vec T/dt</m> and <m>d\vec T/ds</m>?
-            </p>
-          </li>
-
-          <li>
-            <p>
-              If the speed were some random number <m>v</m>, how long are <m>d\vec T/dt</m> and <m>d\vec T/ds</m>?
-            </p>
-          </li>
-        </ol>
-      </li>
+  <exploration>
+    <p>
+      The big kids pushing Sammy on the merry-go-round decide to constantly increase the spinning rate. To parametrize Sammy's path, let's replace <m>t</m> with <m>t^2</m> in the original parametrization to obtain <m>\vec r(t) = (3\cos t^2, 3\sin t^2)</m>. Fill in the missing values below, and then answer the questions that follow.
+      <me>
+        \begin{array}{|c|c|}\hline
+         \vec v \amp  ( -6 t \sin \left(t^2\right),6 t \cos \left(t^2\right) ) \\\hline
+         ds/dt \amp  6 t \\\hline
+         \vec a \amp  
+           \\\hline
+         \vec T \amp  \left(-\sin \left(t^2\right),\cos \left(t^2\right)\right) 
+        \\\hline
+         d\vec T/dt \amp  \left(-2 t \cos \left(t^2\right),-2 t \sin \left(t^2\right)\right)\\\hline
+         \vec \kappa = d\vec T/ds \amp  
+        \\\hline
+         \kappa =|d\vec T/ds| \amp  \frac{1}{3} \\\hline
+        \end{array}
+      </me>
+      <ol>
+        <li>
+          <p>
+            Show that <m>\vec v</m> and <m>\vec a</m> are not orthogonal, but that <m>\vec T</m> and <m>d\vec T/dt</m> are.
+          </p>
+        </li>
       </ol>
-    </statement>
-  </exercise>
+    </p>
+
+    <p>
+      Because <m>\vec r (t)</m> includes periodic trig functinos at <m>(0,3)</m> we could have <m>t^2 = \frac{\pi}{2}</m>, <m>t^2=2\pi+frac{\pi}{2}</m> or <m>t^2=2\pi k + \frac{\pi}{2}</m> for any integer <m>k</m>.
+    </p>
+    <ol type="resume">
+    <li>
+      <p>
+        Show that <m>\vec T</m> is the same at <m>(0,3)</m>, regardless of what time we pass through <m>(0,3)</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Show the same is true for <m>d\vec T/ds</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        When the speed is <m>\frac{ds}{dt}=6</m> (so <m>t=1</m>), how long are <m>d\vec T/dt</m> and <m>d\vec T/ds</m>?
+      </p>
+      <ol>
+        <li>
+          <p>
+            When the speed is <m>\frac{ds}{dt}=12</m> (so <m>t=2</m>), how long are <m>d\vec T/dt</m> and <m>d\vec T/ds</m>?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            When the speed is <m>\frac{ds}{dt}=30</m> (so <m>t=5</m>), how long are <m>d\vec T/dt</m> and <m>d\vec T/ds</m>?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If the speed were some random number <m>v</m>, how long are <m>d\vec T/dt</m> and <m>d\vec T/ds</m>?
+          </p>
+        </li>
+      </ol>
+    </li>
+    </ol>
+  </exploration>
+
   <observation xml:id="curvature_observations">
 
   <p>
@@ -321,226 +320,225 @@
   <p>
     If you want to perform the computations below by hand, you must master the product, quotient, and chain rule, as well as working with rational exponents in algebra. Feel free to try the computations by hand (if you can get them, then well done). You may also simply use Sage to do the computations below.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>Use the <url href="\sageurlforcurvature">Sage link</url>.</fn>
-        Consider the curve <m>\vec r(t) = (t, t^2)</m>. The computations get intense, so let's use a computer algebra system, such as Sage (<url href="\sageurlforcurvature">follow this link</url>) to help us. If we don't use a computer, we could spend hours on this exercise. The computer will do all the computations, and give graphs, in seconds.
-        <ol>
-          <li>
-            <p>
-              Use this <url href="\sageurlforcurvature">Sage link</url> to compute <m>\vec v</m>, <m>\vec a</m>, <m>\dfrac{ds}{dt}</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, <m>\dfrac{d\vec T}{ds}</m>, <m>\left|\dfrac{d\vec T}{ds}\right|</m>, and the unit vector <m>\vec N</m> that is orthogonal to <m>\vec T</m>. Evaluate each at <m>t=1</m> and <m>t=\sqrt{3}/2</m> (use <q>sqrt(3)/2</q>). Record your answers in the provided table.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Let's now double the speed at which we traverse along the curve. Replace <m>t</m> with <m>2t</m>, and then repeat the exercise above. However, instead of putting in <m>t=1</m> and <m>t=\sqrt{3}/2</m>, we now need to use <m>t=1/2</m> and <m>t=?</m>. Use Sage to record your answers in the provided table.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>Use the <url href="\sageurlforcurvature">Sage link</url>.</fn>
+      Consider the curve <m>\vec r(t) = (t, t^2)</m>. The computations get intense, so let's use a computer algebra system, such as Sage (<url href="\sageurlforcurvature">follow this link</url>) to help us. If we don't use a computer, we could spend hours on this exercise. The computer will do all the computations, and give graphs, in seconds.
+      <ol>
+        <li>
+          <p>
+            Use this <url href="\sageurlforcurvature">Sage link</url> to compute <m>\vec v</m>, <m>\vec a</m>, <m>\dfrac{ds}{dt}</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, <m>\dfrac{d\vec T}{ds}</m>, <m>\left|\dfrac{d\vec T}{ds}\right|</m>, and the unit vector <m>\vec N</m> that is orthogonal to <m>\vec T</m>. Evaluate each at <m>t=1</m> and <m>t=\sqrt{3}/2</m> (use <q>sqrt(3)/2</q>). Record your answers in the provided table.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              After completing the table, does <xref ref="curvature_observations">Observation</xref> still hold?
-            </p>
-          </li>
+        <li>
+          <p>
+            Let's now double the speed at which we traverse along the curve. Replace <m>t</m> with <m>2t</m>, and then repeat the exercise above. However, instead of putting in <m>t=1</m> and <m>t=\sqrt{3}/2</m>, we now need to use <m>t=1/2</m> and <m>t=?</m>. Use Sage to record your answers in the provided table.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              How are <m>\vec T</m> and <m>\vec N</m> related?  Conjecture a pattern.
-              <tabular>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row>
-                  <cell>\multirow{2}{*}{Value}</cell>
-                  <cell><m>\vec r(t)=(t,t^2)</m></cell>
-                  <cell><m>\vec r(t)=(2t,(2t)^2)</m></cell>
-                </row>
-                <row>
-                  <cell></cell>
-                  <cell><nbsp /><nbsp /> <nbsp /><nbsp /> at <m>t=1</m> <nbsp /><nbsp /> <nbsp /><nbsp /></cell>
-                  <cell><nbsp /><nbsp /> at <m>t=\sqrt3/2</m><nbsp /><nbsp /> <nbsp /><nbsp /></cell>
-                  <cell><nbsp /><nbsp /> <nbsp /><nbsp /> at <m>t=1/2</m><nbsp /><nbsp /> <nbsp /><nbsp /></cell>
-                  <cell><nbsp /><nbsp /> at <m>t=?</m><nbsp /><nbsp /><nbsp /><nbsp /><nbsp /><nbsp /> <nbsp /><nbsp /></cell>
-                </row>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row>
-                  <cell><m>\vec r</m></cell>
-                  <cell><m>(1,1)</m></cell>
-                  <cell><m>(3/4,3/4)</m></cell>
-                  <cell><m>(1,1)</m></cell>
-                  <cell><m>(3/4,3/4)</m></cell>
-                </row>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row>
-                  <cell><m>\vec v</m></cell>
-                  <cell><m>(1,2)</m></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row>
-                  <cell><m>\vec a</m></cell>
-                  <cell><m>(0,2)</m></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row>
-                  <cell><m>\frac{ds}{dt}</m></cell>
-                  <cell><m>\sqrt{5}</m></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row>
-                  <cell><m>\vec T</m></cell>
-                  <cell><m>(\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5})</m></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row>
-                  <cell><m>\frac{d\vec T}{dt}</m></cell>
-                  <cell><m>(-\frac{4\sqrt{5}}{25},\frac{2\sqrt{5}}{25})</m></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row>
-                  <cell><m>\vec\kappa=\frac{d\vec T}{ds}</m></cell>
-                  <cell><m>(-\frac{4}{25},\frac{2}{25})</m></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row>
-                  <cell><m>\kappa=\left|\frac{d\vec T}{ds}\right|</m></cell>
-                  <cell><m>\frac{2\sqrt{5}}{25}</m></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row>
-                  <cell><m>\vec N</m></cell>
-                  <cell><m>(-\frac{2\sqrt{5}}{5},\frac{1\sqrt{5}}{5})</m></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-              </tabular>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            After completing the table, does <xref ref="curvature_observations">Observation</xref> still hold?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            How are <m>\vec T</m> and <m>\vec N</m> related?  Conjecture a pattern.
+            <tabular>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>\multirow{2}{*}{Value}</cell>
+                <cell><m>\vec r(t)=(t,t^2)</m></cell>
+                <cell><m>\vec r(t)=(2t,(2t)^2)</m></cell>
+              </row>
+              <row>
+                <cell></cell>
+                <cell><nbsp /><nbsp /> <nbsp /><nbsp /> at <m>t=1</m> <nbsp /><nbsp /> <nbsp /><nbsp /></cell>
+                <cell><nbsp /><nbsp /> at <m>t=\sqrt3/2</m><nbsp /><nbsp /> <nbsp /><nbsp /></cell>
+                <cell><nbsp /><nbsp /> <nbsp /><nbsp /> at <m>t=1/2</m><nbsp /><nbsp /> <nbsp /><nbsp /></cell>
+                <cell><nbsp /><nbsp /> at <m>t=?</m><nbsp /><nbsp /><nbsp /><nbsp /><nbsp /><nbsp /> <nbsp /><nbsp /></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>\vec r</m></cell>
+                <cell><m>(1,1)</m></cell>
+                <cell><m>(3/4,3/4)</m></cell>
+                <cell><m>(1,1)</m></cell>
+                <cell><m>(3/4,3/4)</m></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>\vec v</m></cell>
+                <cell><m>(1,2)</m></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>\vec a</m></cell>
+                <cell><m>(0,2)</m></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>\frac{ds}{dt}</m></cell>
+                <cell><m>\sqrt{5}</m></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>\vec T</m></cell>
+                <cell><m>(\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5})</m></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>\frac{d\vec T}{dt}</m></cell>
+                <cell><m>(-\frac{4\sqrt{5}}{25},\frac{2\sqrt{5}}{25})</m></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>\vec\kappa=\frac{d\vec T}{ds}</m></cell>
+                <cell><m>(-\frac{4}{25},\frac{2}{25})</m></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>\kappa=\left|\frac{d\vec T}{ds}\right|</m></cell>
+                <cell><m>\frac{2\sqrt{5}}{25}</m></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>\vec N</m></cell>
+                <cell><m>(-\frac{2\sqrt{5}}{5},\frac{1\sqrt{5}}{5})</m></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     Our observation still holds. Let's try it on one more curve in 3D by hand.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Consider the helix <m>\vec r(t)=(4\cos t,4\sin t, 3t)</m>. EXTRA<fn>Because the speed is constant, many of the computations are simplified. You can use the <url href="\sageurlforcurvature">Sage link</url> to check your work.</fn> Compute <m>\vec v</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, and <m>\dfrac{d\vec T}{ds}</m>. Then do the following:
-        <ol>
-          <li>
-            <p>
-              Show that <m>\vec T</m> and <m>\dfrac{d\vec T}{dt}</m> are orthogonal. (Do this for any time <m>t</m>.)
-            </p>
-          </li>
 
-          <li>
-            <p>
-              At <m>t=2\pi</m>, compute <m>ds/dt</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, and <m>\dfrac{d\vec T}{ds}</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Consider the helix <m>\vec r(t)=(4\cos t,4\sin t, 3t)</m>. EXTRA<fn>Because the speed is constant, many of the computations are simplified. You can use the <url href="\sageurlforcurvature">Sage link</url> to check your work.</fn> Compute <m>\vec v</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, and <m>\dfrac{d\vec T}{ds}</m>. Then do the following:
+      <ol>
+        <li>
+          <p>
+            Show that <m>\vec T</m> and <m>\dfrac{d\vec T}{dt}</m> are orthogonal. (Do this for any time <m>t</m>.)
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Let's slow down how quickly we travel along the curve.  Replace <m>t</m> with <m>t/5</m>.  Then at <m>t=10\pi</m>, give <m>ds/dt</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, and <m>\dfrac{d\vec T}{ds}</m> for the new curve <m>\vec r_2(t) =(4\cos(\frac{t}{5}),4\sin(\frac{t}{5}), 3(\frac{t}{5}))</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            At <m>t=2\pi</m>, compute <m>ds/dt</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, and <m>\dfrac{d\vec T}{ds}</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Give a unit vector that points in the same direction as <m>\dfrac{d\vec T}{dt}</m> or <m>\dfrac{d\vec T}{ds}</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Let's slow down how quickly we travel along the curve.  Replace <m>t</m> with <m>t/5</m>.  Then at <m>t=10\pi</m>, give <m>ds/dt</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, and <m>\dfrac{d\vec T}{ds}</m> for the new curve <m>\vec r_2(t) =(4\cos(\frac{t}{5}),4\sin(\frac{t}{5}), 3(\frac{t}{5}))</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Give a unit vector that points in the same direction as <m>\dfrac{d\vec T}{dt}</m> or <m>\dfrac{d\vec T}{ds}</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 </section>

@@ -4,191 +4,189 @@
   <p>
     We now increase the number of inputs from 1 to 2. This will allow us to graph many space curves at the same time.
   </p>
-  <exercise xml:id="prob_parametric_surface_example">
-    <statement>
-      <p>
-        EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxL0yjRUUjUtNVI1ErOL9Yo0QTytIoz88CsEk2ugsSixNzUkqLM5PiCnPwSjTQdBaAOAx0FE62CTKASjUQdBSMgT1OTCwBCiRSf">Sage</url> or <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3D++%28a+cos+t%2C+a+sin+t%2C+t%29+for+t+from+0+to+4+pi+and+a+from+2+to+4">Wolfram Alpha</url>.
-        \larsonfive{More practice in Larson 15.5:1<ndash />6.}
-        </fn>
-        The jet from <xref ref="prob_jet_intro_for_space_curves">problem</xref> is actually accompanied by several jets flying side by side. As all the jets fly, they leave a smoke trail behind them (it's an air show). The smoke from one jet spreads outwards to mix with the neighboring jet, so that it looks like the jets are leaving a rather wide sheet of smoke behind them as they fly.
-      </p>
 
+  <exploration xml:id="prob_parametric_surface_example">
+    <p>
+      EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxL0yjRUUjUtNVI1ErOL9Yo0QTytIoz88CsEk2ugsSixNzUkqLM5PiCnPwSjTQdBaAOAx0FE62CTKASjUQdBSMgT1OTCwBCiRSf">Sage</url> or <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3D++%28a+cos+t%2C+a+sin+t%2C+t%29+for+t+from+0+to+4+pi+and+a+from+2+to+4">Wolfram Alpha</url>.
+      \larsonfive{More practice in Larson 15.5:1<ndash />6.}
+      </fn>
+      The jet from <xref ref="prob_jet_intro_for_space_curves">problem</xref> is actually accompanied by several jets flying side by side. As all the jets fly, they leave a smoke trail behind them (it's an air show). The smoke from one jet spreads outwards to mix with the neighboring jet, so that it looks like the jets are leaving a rather wide sheet of smoke behind them as they fly.
+    </p>
+
+    <p>
+      The position of two of the many other jets is given by <m>\vec r_3(t)=(3\cos t, 3\sin t, t)</m> and <m>\vec r_4(t)=(4\cos t,4\sin t,t)</m>. A function which represents the smoke stream is <m>\vec r(a,t)=(a\cos t, a\sin t, t)</m> for <m>0\leq t\leq 4\pi</m> and <m>2\leq a\leq 4</m>.
+    </p>
+    <ol>
+    <li>
       <p>
-        The position of two of the many other jets is given by <m>\vec r_3(t)=(3\cos t, 3\sin t, t)</m> and <m>\vec r_4(t)=(4\cos t,4\sin t,t)</m>. A function which represents the smoke stream is <m>\vec r(a,t)=(a\cos t, a\sin t, t)</m> for <m>0\leq t\leq 4\pi</m> and <m>2\leq a\leq 4</m>.
+        What are <m>n</m> (inputs) and <m>m</m> (outputs) when we write the function <m>\vec r(a,t)=(a\cos t, a\sin t, t)</m> in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Start by graphing the position of the three jets. For <m>t=0, \frac{\pi}{2}, \pi, \frac{3\pi}{2}</m> plot the position of each jet:
       </p>
       <ol>
-      <li>
-        <p>
-          What are <m>n</m> (inputs) and <m>m</m> (outputs) when we write the function <m>\vec r(a,t)=(a\cos t, a\sin t, t)</m> in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
-        </p>
-      </li>
+        <li>
+          <p>
+            <m>\vec r_2(2,t)=(2\cos t, 2\sin t, t)</m>
+          </p>
+        </li>
 
-      <li>
-        <p>
-          Start by graphing the position of the three jets. For <m>t=0, \frac{\pi}{2}, \pi, \frac{3\pi}{2}</m> plot the position of each jet:
-        </p>
+        <li>
+          <p>
+            <m>\vec r_3(3,t)=(3\cos t, 3\sin t, t)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\vec r_4(4,t)=(4\cos t, 4\sin t, t)</m>
+          </p>
+        </li>
+      </ol>
+    </li>
+
+    <li>
+      <p>
+        We said in the initial problem statement that the smoke spreads and merges. So we really want to plot <m>\vec{r}(a,t)=(a\cos t, a\sin t, t)</m> for <m>2\leq a \leq 4</m> at each <m>t</m> value.
         <ol>
           <li>
             <p>
-              <m>\vec r_2(2,t)=(2\cos t, 2\sin t, t)</m>
+              Describe how would this modify your graph from the previous part?
             </p>
           </li>
 
           <li>
             <p>
-              <m>\vec r_3(3,t)=(3\cos t, 3\sin t, t)</m>
+              Let <m>t=0</m> and graph the curve <m>r(a,0)=(a,0,0)</m> for <m>a\in[2,4]</m>.
             </p>
           </li>
 
           <li>
             <p>
-              <m>\vec r_4(4,t)=(4\cos t, 4\sin t, t)</m>
+              Repeat this for <m>t=\pi/2,\pi,3\pi/2</m>
             </p>
           </li>
         </ol>
-      </li>
+      </p>
+    </li>
 
-      <li>
-        <p>
-          We said in the initial problem statement that the smoke spreads and merges. So we really want to plot <m>\vec{r}(a,t)=(a\cos t, a\sin t, t)</m> for <m>2\leq a \leq 4</m> at each <m>t</m> value.
-          <ol>
-            <li>
-              <p>
-                Describe how would this modify your graph from the previous part?
-              </p>
-            </li>
+    <li>
+      <p>
+        Describe the resulting surface.
+      </p>
+    </li>
+    </ol>
+  </exploration>
 
-            <li>
-              <p>
-                Let <m>t=0</m> and graph the curve <m>r(a,0)=(a,0,0)</m> for <m>a\in[2,4]</m>.
-              </p>
-            </li>
-
-            <li>
-              <p>
-                Repeat this for <m>t=\pi/2,\pi,3\pi/2</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </li>
-
-      <li>
-        <p>
-          Describe the resulting surface.
-        </p>
-      </li>
-      </ol>
-    </statement>
-  </exercise>
   <p>
     <em>Contexual Aside:</em> The function above is called a parametric surface. Parametric surfaces are formed by joining together many parametric space curves. Most of 3D computer animation is done using parametric surfaces. Woody's entire body in <em>Toy Story</em> is a collection of parametric surfaces. Car companies create computer models of vehicles using parametric surfaces, and then use those parametric surfaces to study collisions. Often the mathematics behind these models is hidden in the software program, but parametric surfaces are at the heart of just about every 3D computer model.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>See <xref ref="differentialtangentline">Section</xref> and <xref ref="def_velocity_acceleration">Definition</xref>.</fn>
-        EXTRA<fn>
-          \thomasee{The text has more practice in 13.1: 19-22.}
-          \larsonfive{More practice in Larson 12.2:23<ndash />30.} 
-          \stewarts{The text has more practice in 13.2:3-8 }
-          </fn>
-        Use the same set up as <xref ref="space_curve_example">problem</xref>, namely
-        <me>
-          \vec r(t)=(2\cos t, 2\sin t, t).
-        </me>
-      </p>
 
-      <p>
-        You'll need a graph of this function to complete this problem.
-        <ol>
-          <li>
-            <p>
-              Find the first and second derivative of <m>\vec r(t)</m>. 
+  <exploration>
+    <p>
+      EXTRA<fn>See <xref ref="differentialtangentline">Section</xref> and <xref ref="def_velocity_acceleration">Definition</xref>.</fn>
+      EXTRA<fn>
+        \thomasee{The text has more practice in 13.1: 19-22.}
+        \larsonfive{More practice in Larson 12.2:23<ndash />30.} 
+        \stewarts{The text has more practice in 13.2:3-8 }
+        </fn>
+      Use the same set up as <xref ref="space_curve_example">problem</xref>, namely
+      <me>
+        \vec r(t)=(2\cos t, 2\sin t, t).
+      </me>
+    </p>
 
-                Note that <m>\vec{v}(t) = \vec{r}'(t)</m> and <m>\vec{a}(t)=\vec{r}''(t)</m>.
-            </p>
-          </li>
+    <p>
+      You'll need a graph of this function to complete this problem.
+      <ol>
+        <li>
+          <p>
+            Find the first and second derivative of <m>\vec r(t)</m>. 
 
-          <li>
-            <p>
-              Compute the velocity and acceleration vectors at <m>t=\pi/2</m>. Place these vectors on your graph with their tails at the point corresponding to <m>t=\pi/2</m>.
-            </p>
-          </li>
+              Note that <m>\vec{v}(t) = \vec{r}'(t)</m> and <m>\vec{a}(t)=\vec{r}''(t)</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Give an equation of the tangent line to this curve at <m>t=\pi/2</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-        See <url href="http://aleph.sagemath.org/?z=eJwNxksKgCAUBdB5q3Dmh2eQfWZuJXmIgpAodtt_Dg6crKC92g1IXIfdLoPb6aXz4JowSgz9aVCZhAJZt540aRL89hQRBqM0L_lDq7NR6h-iAhhm">Sage</url> or <url href="http://wolfr.am/ynm3kD">Wolfram Alpha</url>. 
-          \thomasee{The text has more practice in 13.1: 1-8.}
-          \larsonfive{See also Larson 12.3.}
-          \stewarts{The text has more practice in 13.4:3-6}
-          </fn>Consider the pebble from <xref ref="prob_pebble">problem</xref>. The pebble's height was given by <m>y=64-16t^2</m>. The pebble also has some horizontal velocity (it's moving at 3 ft/s to the right). If we let the origin be the base of the 64 ft building, then the position of the pebble at time <m>t</m> is given by <m>\vec r(t) = (3t, 64-16t^2)</m>.
-        <ol>
-          <li>
-            <p>
-              What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute the velocity and acceleration vectors at <m>t=\pi/2</m>. Place these vectors on your graph with their tails at the point corresponding to <m>t=\pi/2</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              At what time does the pebble hit the ground (the height reaches zero)?
-            </p>
-          </li>
+        <li>
+          <p>
+            Give an equation of the tangent line to this curve at <m>t=\pi/2</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              Construct a graph of the pebble's path from when it leaves the top of the building until it hits the ground.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>
+      See <url href="http://aleph.sagemath.org/?z=eJwNxksKgCAUBdB5q3Dmh2eQfWZuJXmIgpAodtt_Dg6crKC92g1IXIfdLoPb6aXz4JowSgz9aVCZhAJZt540aRL89hQRBqM0L_lDq7NR6h-iAhhm">Sage</url> or <url href="http://wolfr.am/ynm3kD">Wolfram Alpha</url>. 
+        \thomasee{The text has more practice in 13.1: 1-8.}
+        \larsonfive{See also Larson 12.3.}
+        \stewarts{The text has more practice in 13.4:3-6}
+        </fn>Consider the pebble from <xref ref="prob_pebble">problem</xref>. The pebble's height was given by <m>y=64-16t^2</m>. The pebble also has some horizontal velocity (it's moving at 3 ft/s to the right). If we let the origin be the base of the 64 ft building, then the position of the pebble at time <m>t</m> is given by <m>\vec r(t) = (3t, 64-16t^2)</m>.
+      <ol>
+        <li>
+          <p>
+            What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              EXTRA<fn>See <xref ref="differentialtangentline">Section</xref> and <xref ref="def_velocity_acceleration">Definition</xref>.</fn>
-               Find the pebble's velocity and acceleration vectors at <m>t=1</m>? Draw these vectors on your graph with their base at the pebble's position at <m>t=1</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            At what time does the pebble hit the ground (the height reaches zero)?
+          </p>
+        </li>
 
-          <li>
-            <p>
-              At what speed is the pebble moving when it hits the ground?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Go back to the table you started in <xref ref="prob_function_table">problem</xref>.
-        <ol>
-          <li>
-            <p>
-              Add in the new problems you've completed.
-            </p>
-          </li>
+        <li>
+          <p>
+            Construct a graph of the pebble's path from when it leaves the top of the building until it hits the ground.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              What do you observe about the domain (<m>n</m>), co-domain (<m>m</m>) and the dimensions required for plotting?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            EXTRA<fn>See <xref ref="differentialtangentline">Section</xref> and <xref ref="def_velocity_acceleration">Definition</xref>.</fn>
+             Find the pebble's velocity and acceleration vectors at <m>t=1</m>? Draw these vectors on your graph with their base at the pebble's position at <m>t=1</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            At what speed is the pebble moving when it hits the ground?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      Go back to the table you started in <xref ref="prob_function_table">problem</xref>.
+      <ol>
+        <li>
+          <p>
+            Add in the new problems you've completed.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What do you observe about the domain (<m>n</m>), co-domain (<m>m</m>) and the dimensions required for plotting?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
   <p>
     In all the problems above, you should have noticed that in order to draw a function (provided you include arrows for direction, or use an animation to represent <q>time</q>), you can determine how many dimensions you need to graph a function by just summing the dimensions of the domain and codomain. This is true in general.
   </p>

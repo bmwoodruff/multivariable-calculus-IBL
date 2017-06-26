@@ -10,61 +10,59 @@
       We perform matrix multiplication <q>row by column</q>. Wikipedia has an excellent visual illustration of how to do this. See EXTRA<fn> \bmw{The electronic version has links that will open your browser and take you to the web.} \valpo{The electronic version has links that will open your browser and take you to the web.}</fn>
       <url href="http://en.wikipedia.org/wiki/Matrix_multiplication">Wikipedia</url> for an explanation. Alternatively see <url href="http://www.texample.net/tikz/examples/matrix-multiplication/">texample.net</url> for a visualization of the idea.
     </p>
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn> 
-            \bmw{For extra practice, make up two small matrices and multiply them.  Use 
-          <url href="http://aleph.sagemath.org/?z=eJxztM1NLCnKrNCIjjbUMdYxiY3V5HJCiJnrGMXqKICkQJSukY4BSIGjlhMA16EPQw">Sage</url>
-          or
-          <url href="http://www.wolframalpha.com/input/?i=%281%2C3%2C4%29+*%28%287%2C2%29%2C%281%2C3%29%2C%28-2%2C0%29%29">Wolfram
-            Alpha</url> to see if you are correct (click the links to see how to do
-          matrix multiplication in each system).}
-            \valpo{For extra practice, make up two small matrices and multiply them.  Use 
-          <url href="http://aleph.sagemath.org/?z=eJxztM1NLCnKrNCIjjbUMdYxiY3V5HJCiJnrGMXqKICkQJSukY4BSIGjlhMA16EPQw">Sage</url>
-          or
-          <url href="http://www.wolframalpha.com/input/?i=%281%2C3%2C4%29+*%28%287%2C2%29%2C%281%2C3%29%2C%28-2%2C0%29%29">Wolfram
-            Alpha</url> to see if you are correct (click the links to see how to do
-          matrix multiplication in each system).}
-          </fn>
-          Compute the following matrix products.
-          <ul>
-            <li>
-              <p>
-                <m>\begin{bmatrix}3 \amp  2\amp  1
-                \end{bmatrix} 
-                \begin{bmatrix}-1 \\
-                 2\\
-                 0
-                \end{bmatrix}</m>
-              </p>
-            </li>
 
-            <li>
-              <p>
-                <m>\begin{bmatrix}1 \amp 2\\3\amp 4
-                \end{bmatrix} \begin{bmatrix}5\amp 0\\6\amp 1
-                \end{bmatrix}</m>
-              </p>
-            </li>
-          </ul>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          Compute the product
-          <m>\begin{bmatrix}3 \amp  2\amp  1\\
-          0 \amp  1\amp  -4
-          \end{bmatrix} 
-          \begin{bmatrix}-1\amp 3 \amp 0 \\
-           2\amp -1 \amp 0\\
-           0\amp 1 \amp 2
-          \end{bmatrix}</m>.
-        </p>
-      </statement>
-    </exercise>
+    <exploration>
+      <p>
+        EXTRA<fn> 
+          \bmw{For extra practice, make up two small matrices and multiply them.  Use 
+        <url href="http://aleph.sagemath.org/?z=eJxztM1NLCnKrNCIjjbUMdYxiY3V5HJCiJnrGMXqKICkQJSukY4BSIGjlhMA16EPQw">Sage</url>
+        or
+        <url href="http://www.wolframalpha.com/input/?i=%281%2C3%2C4%29+*%28%287%2C2%29%2C%281%2C3%29%2C%28-2%2C0%29%29">Wolfram
+          Alpha</url> to see if you are correct (click the links to see how to do
+        matrix multiplication in each system).}
+          \valpo{For extra practice, make up two small matrices and multiply them.  Use 
+        <url href="http://aleph.sagemath.org/?z=eJxztM1NLCnKrNCIjjbUMdYxiY3V5HJCiJnrGMXqKICkQJSukY4BSIGjlhMA16EPQw">Sage</url>
+        or
+        <url href="http://www.wolframalpha.com/input/?i=%281%2C3%2C4%29+*%28%287%2C2%29%2C%281%2C3%29%2C%28-2%2C0%29%29">Wolfram
+          Alpha</url> to see if you are correct (click the links to see how to do
+        matrix multiplication in each system).}
+        </fn>
+        Compute the following matrix products.
+        <ul>
+          <li>
+            <p>
+              <m>\begin{bmatrix}3 \amp  2\amp  1
+              \end{bmatrix} 
+              \begin{bmatrix}-1 \\
+               2\\
+               0
+              \end{bmatrix}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\begin{bmatrix}1 \amp 2\\3\amp 4
+              \end{bmatrix} \begin{bmatrix}5\amp 0\\6\amp 1
+              \end{bmatrix}</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </exploration>
+
+    <exploration>
+      <p>
+        Compute the product
+        <m>\begin{bmatrix}3 \amp  2\amp  1\\
+        0 \amp  1\amp  -4
+        \end{bmatrix} 
+        \begin{bmatrix}-1\amp 3 \amp 0 \\
+         2\amp -1 \amp 0\\
+         0\amp 1 \amp 2
+        \end{bmatrix}</m>.
+      </p>
+    </exploration>
   </introduction>
 
   <subsection xml:id="sec_Determinants">
@@ -102,24 +100,23 @@
       </statement>
     </definition>
 
-    <exercise>
-      <statement>
-        <p>
-          EXTRA<fn>For extra practice, create your own square matrix (2 by 2 or 3 by 3) and compute the determinant by hand. Then use <url href="http://www.wolframalpha.com">Wolfram Alpha</url> to check your work.  Do this until you feel comfortable taking determinants.</fn>
-          Compute
-          <m>\begin{vmatrix}
-          1\amp 2\\
-          3\amp 4
-          \end{vmatrix}</m>
-          and
-          <m>\begin{vmatrix}
-          1\amp 2\amp 0\\
-          -1\amp 3\amp 4\\
-          2\amp -3\amp 1
-          \end{vmatrix}</m>.
-        </p>
-      </statement>
-    </exercise>
+    <exploration>
+      <p>
+        EXTRA<fn>For extra practice, create your own square matrix (2 by 2 or 3 by 3) and compute the determinant by hand. Then use <url href="http://www.wolframalpha.com">Wolfram Alpha</url> to check your work.  Do this until you feel comfortable taking determinants.</fn>
+        Compute
+        <m>\begin{vmatrix}
+        1\amp 2\\
+        3\amp 4
+        \end{vmatrix}</m>
+        and
+        <m>\begin{vmatrix}
+        1\amp 2\amp 0\\
+        -1\amp 3\amp 4\\
+        2\amp -3\amp 1
+        \end{vmatrix}</m>.
+      </p>
+    </exploration>
+
     <p>
       What good is the determinant?
       The determinant was discovered as a result of trying to find the area of a parallelogram and the volume of the three dimensional version of a parallelogram (called a parallelepiped) in space.
@@ -171,22 +168,21 @@
       \end{matrix}     }
       \end{bmatrix}</m>, then the volume doesn't change since the shape is still the same. However, the sign of the determinant is negative because if you point your index finger in the direction (0,2,0) and your middle finger in the direction (1,0,0), then your thumb points down in the direction (0,0,-3). If you repeat this with your left hand instead of right hand, then your thumb points up.
     </p>
-    <exercise>
-      <statement>
-        <ol>
-          <li>
-            <p>
-              Use determinants to find the area of the triangle with vertices <m>(0,0)</m>, <m>(-2,5)</m>, and <m>(3,4)</m>.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              What would you change if you wanted to find the area of the triangle with vertices <m>(-3,1)</m>, <m>(-2,5)</m>, and <m>(3,4)</m>? Find this area.
-            </p>
-          </li>
-        </ol>
-      </statement>
-    </exercise>
+    <exploration>
+      <ol>
+        <li>
+          <p>
+            Use determinants to find the area of the triangle with vertices <m>(0,0)</m>, <m>(-2,5)</m>, and <m>(3,4)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What would you change if you wanted to find the area of the triangle with vertices <m>(-3,1)</m>, <m>(-2,5)</m>, and <m>(3,4)</m>? Find this area.
+          </p>
+        </li>
+      </ol>
+    </exploration>
   </subsection>
 </section>

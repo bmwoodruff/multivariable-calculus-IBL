@@ -5,90 +5,88 @@
     When you ask a calculator to tell you what <m>e^{.1}</m> means, your calculator uses an extension of differentials to give you an approximation. The calculator only uses polynomials (multiplication and addition) to give you an answer. This same process is used to evaluate any function that is not a polynomial (so trig functions, square roots, inverse trig functions, logarithms, etc.)
     The key idea needed to approximate functions is illustrated by the next problem.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Let <m>f(x)=e^x</m>. You should find that your work on each step can be reused to do the next step.
-        <ul>
-          <li>
-            <p>
-              Find a first degree polynomial <m>P_1(x)=a+bx</m> so that <m>P_1(0)=f(0)</m> and <m>P'_1(0)=f'(0)</m>. In other words, give me a line that passes through the same point and has the same slope as <m>f(x)=e^x</m> does at <m>x=0</m>. Set up a system of equations and then find the unknowns <m>a</m> and <m>b</m>. The next two are very similar.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Find a second degree polynomial <m>P_2(x)=a+bx+cx^2</m> so that <m>P_2(0)=f(0)</m>, <m>P'_2(0)=f'(0)</m>, and <m>P''_2(0)=f''(0)</m>. In other words, give me a parabola that passes through the same point, has the same slope, and has the same concavity as <m>f(x)=e^x</m> does at <m>x=0</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      Let <m>f(x)=e^x</m>. You should find that your work on each step can be reused to do the next step.
+      <ul>
+        <li>
+          <p>
+            Find a first degree polynomial <m>P_1(x)=a+bx</m> so that <m>P_1(0)=f(0)</m> and <m>P'_1(0)=f'(0)</m>. In other words, give me a line that passes through the same point and has the same slope as <m>f(x)=e^x</m> does at <m>x=0</m>. Set up a system of equations and then find the unknowns <m>a</m> and <m>b</m>. The next two are very similar.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Find a third degree polynomial <m>P_3(x)=a+bx+cx^2+dx^3</m> so that <m>P_3(0)=f(0)</m>, <m>P'_3(0)=f'(0)</m>, <m>P''_3(0)=f''(0)</m>, and <m>P'''_3(0)=f'''(0)</m>. In other words, give me a cubic that passes through the same point, has the same slope, the same concavity, and the same third derivative as <m>f(x)=e^x</m> does at <m>x=0</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            Find a second degree polynomial <m>P_2(x)=a+bx+cx^2</m> so that <m>P_2(0)=f(0)</m>, <m>P'_2(0)=f'(0)</m>, and <m>P''_2(0)=f''(0)</m>. In other words, give me a parabola that passes through the same point, has the same slope, and has the same concavity as <m>f(x)=e^x</m> does at <m>x=0</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Now compute <m>e^{.1}</m> with a calculator.  Then compute <m>P_1(.1)</m>, <m>P_2(.1)</m>, and <m>P_3(.1)</m>. How accurate are the line, parabola, and cubic in approximating <m>e^{.1}</m>?
-            </p>
-          </li>
-        </ul>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>The polynomial you are creating is often called a Taylor polynomial. (I'm giving you the name so that you can search online for more information if you are interested.)</fn>
-        Now let <m>f(x)=\sin x</m>. Find a 7th degree polynomial so that the function and the polynomial have the same value and same first seven derivatives when evaluated at <m>x=0</m>. Evaluate the polynomial at <m>x=0.3</m>. How close is this value to your calculator's estimate of <m>\sin(0.3)</m>? You may find it valuable to use the notation
-        <me>
-          P(x) = a_0+a_1x+a_2x^2+a_3x^3 +\cdots+a_7 x^7.
-        </me>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Find a third degree polynomial <m>P_3(x)=a+bx+cx^2+dx^3</m> so that <m>P_3(0)=f(0)</m>, <m>P'_3(0)=f'(0)</m>, <m>P''_3(0)=f''(0)</m>, and <m>P'''_3(0)=f'''(0)</m>. In other words, give me a cubic that passes through the same point, has the same slope, the same concavity, and the same third derivative as <m>f(x)=e^x</m> does at <m>x=0</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Now compute <m>e^{.1}</m> with a calculator.  Then compute <m>P_1(.1)</m>, <m>P_2(.1)</m>, and <m>P_3(.1)</m>. How accurate are the line, parabola, and cubic in approximating <m>e^{.1}</m>?
+          </p>
+        </li>
+      </ul>
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      EXTRA<fn>The polynomial you are creating is often called a Taylor polynomial. (I'm giving you the name so that you can search online for more information if you are interested.)</fn>
+      Now let <m>f(x)=\sin x</m>. Find a 7th degree polynomial so that the function and the polynomial have the same value and same first seven derivatives when evaluated at <m>x=0</m>. Evaluate the polynomial at <m>x=0.3</m>. How close is this value to your calculator's estimate of <m>\sin(0.3)</m>? You may find it valuable to use the notation
+      <me>
+        P(x) = a_0+a_1x+a_2x^2+a_3x^3 +\cdots+a_7 x^7.
+      </me>
+    </p>
+  </exploration>
+
   <p>
     The previous two problems involved finding polynomial approximations to the function at <m>x=0</m>. The next problem shows how to move this to any other point, such as <m>x=1</m>.
   </p>
-  <exercise xml:id="Taylor_at_1">
-    <statement>
-      <p>
-        Let <m>f(x)=e^x</m>.
-        <ul>
-          <li>
-            <p>
-              Find a second degree polynomial
-              <me>
-                T(x)=a+bx+cx^2
-              </me>
-              so that <m>T(1)=f(1)</m>, <m>T'(1)=f'(1)</m>, and <m>T''(1)=f''(1)</m>. In other words, give me a parabola that passes through the same point, has the same slope, and the same concavity as <m>f(x)=e^x</m> does at <m>x=1</m>.
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Find a second degree polynomial written in the form
-              <me>
-                S(x)=a+b(x-1)+c(x-1)^2
-              </me>
-              EXTRA<fn>Notice that we just replaced <m>x</m> with <m>x-1</m>. This centers, or shifts, the approximation to be at <m>x=1</m>. The first part will be much simpler now when you let <m>x=1</m>.</fn> so that <m>S(1)=f(1)</m>, <m>S'(1)=f'(1)</m>, and <m>S''(1)=f''(1)</m>. In other words, find a quadratric that passes through the same point, has the same slope, and the same concavity as <m>f(x)=e^x</m> does at <m>x=1</m>.
-            </p>
-          </li>
+  <exploration xml:id="Taylor_at_1">
+    <p>
+      Let <m>f(x)=e^x</m>.
+      <ul>
+        <li>
+          <p>
+            Find a second degree polynomial
+            <me>
+              T(x)=a+bx+cx^2
+            </me>
+            so that <m>T(1)=f(1)</m>, <m>T'(1)=f'(1)</m>, and <m>T''(1)=f''(1)</m>. In other words, give me a parabola that passes through the same point, has the same slope, and the same concavity as <m>f(x)=e^x</m> does at <m>x=1</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Find a third degree polynomial written in the form
-              <me>
-                P(x)=a+b(x-1)+c(x-1)^2+d(x-1)^3
-              </me>
-              so that <m>P(1)=f(1)</m>, <m>P'(1)=f'(1)</m>, <m>P''(1)=f''(1)</m>, and <m>P'''(1)=f'''(1)</m>. In other words, give me a cubic that passes through the same point, has the same slope, the same concavity, and the same third derivative as <m>f(x)=e^x</m> does at <m>x=1</m>.
-            </p>
-          </li>
-        </ul>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Find a second degree polynomial written in the form
+            <me>
+              S(x)=a+b(x-1)+c(x-1)^2
+            </me>
+            EXTRA<fn>Notice that we just replaced <m>x</m> with <m>x-1</m>. This centers, or shifts, the approximation to be at <m>x=1</m>. The first part will be much simpler now when you let <m>x=1</m>.</fn> so that <m>S(1)=f(1)</m>, <m>S'(1)=f'(1)</m>, and <m>S''(1)=f''(1)</m>. In other words, find a quadratric that passes through the same point, has the same slope, and the same concavity as <m>f(x)=e^x</m> does at <m>x=1</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find a third degree polynomial written in the form
+            <me>
+              P(x)=a+b(x-1)+c(x-1)^2+d(x-1)^3
+            </me>
+            so that <m>P(1)=f(1)</m>, <m>P'(1)=f'(1)</m>, <m>P''(1)=f''(1)</m>, and <m>P'''(1)=f'''(1)</m>. In other words, give me a cubic that passes through the same point, has the same slope, the same concavity, and the same third derivative as <m>f(x)=e^x</m> does at <m>x=1</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </exploration>
 
   <example>
     <statement>
@@ -241,15 +239,14 @@
   <p>
     We'll end this section with a problem to practice the example above.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        Suppose you are constructing a cube whose side length should be <m>s=2</m> units. The manufacturing process is not exact, but instead creates a cube with side lengths <m>s=2+ds</m> units. (You should assume that all sides are still the same, so any error on one side is replicated on all. We have to assume this for now, but before the semester ends we'll be able to do this with high dimensional calculus.)
-      </p>
 
-      <p>
-        EXTRA<fn>As a challenge, try to draw a 3D graph which illustrates the volume added on by each successive approximation. If you have it before we get here as a class, let me know and I'll let you share what you have discovered with the class.</fn> Suppose that the machine creates a cube with side length <m>2.3</m> units instead of 2 units. Note that the volume of the cube is <m>V=s^3</m>. Use a first, second, and third order approximation to estimate the increase in volume caused by the .3 increase in side length. Then compute the actual increase in volume <m>V(2.3)-V(2)</m>.
-      </p>
-    </statement>
-  </exercise>
+  <exploration>
+    <p>
+      Suppose you are constructing a cube whose side length should be <m>s=2</m> units. The manufacturing process is not exact, but instead creates a cube with side lengths <m>s=2+ds</m> units. (You should assume that all sides are still the same, so any error on one side is replicated on all. We have to assume this for now, but before the semester ends we'll be able to do this with high dimensional calculus.)
+    </p>
+
+    <p>
+      EXTRA<fn>As a challenge, try to draw a 3D graph which illustrates the volume added on by each successive approximation. If you have it before we get here as a class, let me know and I'll let you share what you have discovered with the class.</fn> Suppose that the machine creates a cube with side length <m>2.3</m> units instead of 2 units. Note that the volume of the cube is <m>V=s^3</m>. Use a first, second, and third order approximation to estimate the increase in volume caused by the .3 increase in side length. Then compute the actual increase in volume <m>V(2.3)-V(2)</m>.
+    </p>
+  </exploration>
 </section>

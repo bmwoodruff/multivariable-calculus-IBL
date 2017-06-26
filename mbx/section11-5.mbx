@@ -98,89 +98,86 @@
   <p>
     Let's now use this theorem to rapidly find circulation (work) and flux.
   </p>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-        \bmw{See 16.4 for more practice.  Try doing a bunch of these, as they get really fast.}
-        </fn>
-        Consider a rectangle <m>C</m> where the boundary of the rectangle are <m>2\leq x\leq 7</m> and <m>0\leq y\leq 3</m>. The rectangle is subject to a vector field <m>\vec F=(2x+3y,4x+5y)</m>.
-        <ol>
-          <li>
-            <p>
-              Compute <m>N_x-M_y</m>
-            </p>
-          </li>
 
-          <li>
-            <p>
-              Compute <m>M_x+N_y</m>.
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>
+      \bmw{See 16.4 for more practice.  Try doing a bunch of these, as they get really fast.}
+      </fn>
+      Consider a rectangle <m>C</m> where the boundary of the rectangle are <m>2\leq x\leq 7</m> and <m>0\leq y\leq 3</m>. The rectangle is subject to a vector field <m>\vec F=(2x+3y,4x+5y)</m>.
+      <ol>
+        <li>
+          <p>
+            Compute <m>N_x-M_y</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Find the circulation of <m>\vec F</m> along <m>C</m>
-            </p>
-          </li>
+        <li>
+          <p>
+            Compute <m>M_x+N_y</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Find the flux of <m>\vec F</m> along <m>C</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-      <hint>
+        <li>
+          <p>
+            Find the circulation of <m>\vec F</m> along <m>C</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the flux of <m>\vec F</m> along <m>C</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <hint>
       <p>
         The last two should reduce to facts about area.
       </p>
-      </hint>
-      <p>
-        Note: If you tried doing this without Green's theorem, you would have to parametrize 4 line segments, compute 4 integrals, and then sum the results.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Consider the vector field <m>\vec F=(x^2+y^2,3x+5y)</m> and <m>C</m>, the circle <m>(x-3)^2+(y+1)^2=4</m> (oriented counterclockwise).
-        <ol>
-          <li>
-            <p>
-              Start by computing <m>N_x-M_y</m> and <m>M_x+N_y</m>.
-            </p>
-          </li>
+    </hint>
+    <p>
+      Note: If you tried doing this without Green's theorem, you would have to parametrize 4 line segments, compute 4 integrals, and then sum the results.
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              Now find both the circulation and flux of <m>\vec F</m> along <m>C</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+  <exploration>
+    <p>
+      Consider the vector field <m>\vec F=(x^2+y^2,3x+5y)</m> and <m>C</m>, the circle <m>(x-3)^2+(y+1)^2=4</m> (oriented counterclockwise).
+      <ol>
+        <li>
+          <p>
+            Start by computing <m>N_x-M_y</m> and <m>M_x+N_y</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Now find both the circulation and flux of <m>\vec F</m> along <m>C</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
     <hint>
       <p>
         You should be able to reduce the integrals to facts about the area and centroid.
       </p>
     </hint>
-  </exercise>
-  <exercise>
+  </exploration>
+
+  <exploration>
     <title>Understanding Question</title>
-    <statement>
-      <p>
-        Explain why you need or can use a centroid to reduce the integrals. This will help you in the next exercise.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Repeat the previous exercise, but change the curve <m>C</m> to the boundary of the triangular region <m>R</m> with vertexes at <m>(0,0)</m>, <m>(3,0)</m>, and <m>(3,6)</m>. You can complete this exercise without having to set up the bounds on any integrals, if you reduce the integrals to facts about area and centroids. You are welcome to look up the centroid of a triangular region without computing it.
-      </p>
-    </statement>
-  </exercise>
+    <p>
+      Explain why you need or can use a centroid to reduce the integrals. This will help you in the next exercise.
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      Repeat the previous exercise, but change the curve <m>C</m> to the boundary of the triangular region <m>R</m> with vertexes at <m>(0,0)</m>, <m>(3,0)</m>, and <m>(3,6)</m>. You can complete this exercise without having to set up the bounds on any integrals, if you reduce the integrals to facts about area and centroids. You are welcome to look up the centroid of a triangular region without computing it.
+    </p>
+  </exploration>
+
   <p>
     \bmw{\section{Wrap Up}
     Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}

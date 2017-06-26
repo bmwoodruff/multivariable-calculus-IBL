@@ -1,59 +1,56 @@
 
 <section>
   <title>Solving Systems of equations</title>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>For additional practice, make up your own systems of equations. Use \wolfA<nbsp /> to check your work.</fn>
-        Solve the following linear systems of equations.
-        <ul>
-          <li>
-            <p>
-              <m>\begin{cases}x+y\amp =3\\2x-y\amp =4
-              \end{cases}</m>
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>For additional practice, make up your own systems of equations. Use \wolfA<nbsp /> to check your work.</fn>
+      Solve the following linear systems of equations.
+      <ul>
+        <li>
+          <p>
+            <m>\begin{cases}x+y\amp =3\\2x-y\amp =4
+            \end{cases}</m>
+          </p>
+        </li>
 
-          <li>
-            <p>
-              <m>\begin{cases}-x + 4y\amp =8\\3x - 12y\amp =2
-              \end{cases}</m>
-            </p>
-          </li>
-        </ul>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>This 
-            <url href="http://www.wolframalpha.com/input/?i=Solve+x%2B2y%3D3+and+4x-y%2Bz%3D7+and+x%3Dt">link</url> 
-            will show you how to specify which variable is <m>t</m> when using Wolfram Alpha.</fn>
-        Find all solutions to the linear system
-        <m>\begin{cases}x+y+z\amp =3\\2x-y\amp =4
-        \end{cases}</m>.
-        Since there are more variables than equations, this suggests there is probably not just one solution, but perhaps infinitely many. One common way to deal with solving such a system is to let one variable equal <m>t</m>, and then solve for the other variables in terms of <m>t</m>. Do this three different ways.
-        <ul>
-          <li>
-            <p>
-              If you let <m>x=t</m>, what are <m>y</m> and <m>z</m>.  Write your solution in the form <m>(x,y,z)</m> where you replace <m>x</m>, <m>y</m>, and <m>z</m> with what they are in terms of <m>t</m>.
-            </p>
-          </li>
+        <li>
+          <p>
+            <m>\begin{cases}-x + 4y\amp =8\\3x - 12y\amp =2
+            \end{cases}</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </exploration>
 
-          <li>
-            <p>
-              If you let <m>y=t</m>, what are <m>x</m> and <m>z</m> (in terms of <m>t</m>).
-            </p>
-          </li>
+  <exploration>
+    <p>
+      EXTRA<fn>This 
+          <url href="http://www.wolframalpha.com/input/?i=Solve+x%2B2y%3D3+and+4x-y%2Bz%3D7+and+x%3Dt">link</url> 
+          will show you how to specify which variable is <m>t</m> when using Wolfram Alpha.</fn>
+      Find all solutions to the linear system
+      <m>\begin{cases}x+y+z\amp =3\\2x-y\amp =4
+      \end{cases}</m>.
+      Since there are more variables than equations, this suggests there is probably not just one solution, but perhaps infinitely many. One common way to deal with solving such a system is to let one variable equal <m>t</m>, and then solve for the other variables in terms of <m>t</m>. Do this three different ways.
+      <ul>
+        <li>
+          <p>
+            If you let <m>x=t</m>, what are <m>y</m> and <m>z</m>.  Write your solution in the form <m>(x,y,z)</m> where you replace <m>x</m>, <m>y</m>, and <m>z</m> with what they are in terms of <m>t</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              If you let <m>z=t</m>, what are <m>x</m> and <m>y</m>.
-            </p>
-          </li>
-        </ul>
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            If you let <m>y=t</m>, what are <m>x</m> and <m>z</m> (in terms of <m>t</m>).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If you let <m>z=t</m>, what are <m>x</m> and <m>y</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </exploration>
 </section>

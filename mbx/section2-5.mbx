@@ -15,87 +15,81 @@
     To obtain a line in 2D, one way is to have 2 points.
     The next problem introduces the new idea by showing you how to find an equation of a line in 2D.
   </p>
-  <exercise xml:id="prob_plane_equation_normal_point">
-    <statement>
-      <p>
-        Suppose the point <m>P=(1,2)</m> lies on line <m>L</m>. Suppose that the angle between the line and the vector <m>\vec n=\left\lt 3,4\right></m> is 90<m>^\circ</m> (whenever this happens we say the vector <m>\vec n</m> is normal to the line). Let <m>Q=(x,y)</m> be another point on the line <m>L</m>. Use the fact that <m>\vec n</m> is orthogonal to <m>\vec {PQ}</m> to obtain an equation of the line <m>L</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="plane_equation_three_points">
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See page 709.}
-          \larsonfive{See Larson 11.5.} 
-          \stewarts{See pages 819-822}
-          </fn>Let <m>P=(a,b,c)</m> be a point on a plane in 3D. Let <m>\vec n=\langle A,B,C \rangle</m> be a normal vector to the plane (so the angle between the plane and and <m>\vec n</m> is 90<m>^\circ</m>). Let <m>Q=(x,y,z)</m> be another point on the plane. Show that an equation of the plane through point <m>P</m> with normal vector <m>\vec n</m> is
-        <me>
-          A(x-a)+B(y-b)+C(z-c)=0.
-        </me>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="plane_equation_2_lines">
-    <statement>
-      <p>
-        EXTRA<fn>
-          \larsonfive{See Larson 11.5:47<ndash />58 for more practice.}
-          </fn>Find an equation of the plane containing the lines <m>\vec r_1(t)=(1,3,0)t+(1,0,2)</m> and <m>\vec r_2(t)=(2,0,-1)t+(2,3,2)</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.5: 21-28.}
-          \larsonfive{See Larson 11.5:47<ndash />58 for more practice.} 
-          \stewarts{See 12.5: 23-40}
-          </fn>Consider the three points <m>P=(1,0,0), Q=(2,0,-1), R=(0,1,3)</m>. Find an equation of the plane which passes through these three points.
-      </p>
-    </statement>
+
+  <exploration xml:id="prob_plane_equation_normal_point">
+    <p>
+      Suppose the point <m>P=(1,2)</m> lies on line <m>L</m>. Suppose that the angle between the line and the vector <m>\vec n=\left\lt 3,4\right></m> is 90<m>^\circ</m> (whenever this happens we say the vector <m>\vec n</m> is normal to the line). Let <m>Q=(x,y)</m> be another point on the line <m>L</m>. Use the fact that <m>\vec n</m> is orthogonal to <m>\vec {PQ}</m> to obtain an equation of the line <m>L</m>.
+    </p>
+  </exploration>
+
+  <exploration xml:id="plane_equation_three_points">
+    <p>
+      EXTRA<fn>
+        \thomasee{See page 709.}
+        \larsonfive{See Larson 11.5.} 
+        \stewarts{See pages 819-822}
+        </fn>Let <m>P=(a,b,c)</m> be a point on a plane in 3D. Let <m>\vec n=\langle A,B,C \rangle</m> be a normal vector to the plane (so the angle between the plane and and <m>\vec n</m> is 90<m>^\circ</m>). Let <m>Q=(x,y,z)</m> be another point on the plane. Show that an equation of the plane through point <m>P</m> with normal vector <m>\vec n</m> is
+      <me>
+        A(x-a)+B(y-b)+C(z-c)=0.
+      </me>
+    </p>
+  </exploration>
+
+  <exploration xml:id="plane_equation_2_lines">
+    <p>
+      EXTRA<fn>
+        \larsonfive{See Larson 11.5:47<ndash />58 for more practice.}
+        </fn>Find an equation of the plane containing the lines <m>\vec r_1(t)=(1,3,0)t+(1,0,2)</m> and <m>\vec r_2(t)=(2,0,-1)t+(2,3,2)</m>.
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.5: 21-28.}
+        \larsonfive{See Larson 11.5:47<ndash />58 for more practice.} 
+        \stewarts{See 12.5: 23-40}
+        </fn>Consider the three points <m>P=(1,0,0), Q=(2,0,-1), R=(0,1,3)</m>. Find an equation of the plane which passes through these three points.
+    </p>
     <hint>
       <p>
         First find a normal vector to the plane.
       </p>
     </hint>
-  </exercise>
-  <exercise xml:id="prob_crossproduct_normalvector">
-    <statement>
-      <p>
-        Consider the points <m>P=(2,-1,0)</m>, <m>Q=(0,2,3)</m>, and <m>R=(-1,2,-4)</m>.
-        <ol>
-          <li>
-            <p>
-              Give an equation <m>(x,y,z)=(?,?,?)</m> of the line through <m>P</m> and <m>Q</m>.
-            </p>
-          </li>
+  </exploration>
 
-          <li>
-            <p>
-              Give an equation of the line through <m>P</m> and <m>R</m>.
-            </p>
-          </li>
+  <exploration xml:id="prob_crossproduct_normalvector">
+    <p>
+      Consider the points <m>P=(2,-1,0)</m>, <m>Q=(0,2,3)</m>, and <m>R=(-1,2,-4)</m>.
+      <ol>
+        <li>
+          <p>
+            Give an equation <m>(x,y,z)=(?,?,?)</m> of the line through <m>P</m> and <m>Q</m>.
+          </p>
+        </li>
 
-          <li>
-            <p>
-              Give an equation of the plane through <m>P</m>, <m>Q</m>, and <m>R</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        EXTRA<fn>
-          \thomasee{See 12.5: 57-60.}
-          \larsonfive{See Larson 11.5:91<ndash />92 for more practice.} 
-          \stewarts{See 12.5: 23-40, 45-47}
-          </fn>Consider the two planes <m>x+2y+3z=4</m> and <m>2x-y+z=0</m>. These planes meet in a line. Find a vector that is parallel to this line. Then find a vector equation of the line.
-      </p>
-    </statement>
-  </exercise>
+        <li>
+          <p>
+            Give an equation of the line through <m>P</m> and <m>R</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Give an equation of the plane through <m>P</m>, <m>Q</m>, and <m>R</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </exploration>
+
+  <exploration>
+    <p>
+      EXTRA<fn>
+        \thomasee{See 12.5: 57-60.}
+        \larsonfive{See Larson 11.5:91<ndash />92 for more practice.} 
+        \stewarts{See 12.5: 23-40, 45-47}
+        </fn>Consider the two planes <m>x+2y+3z=4</m> and <m>2x-y+z=0</m>. These planes meet in a line. Find a vector that is parallel to this line. Then find a vector equation of the line.
+    </p>
+  </exploration>
 </section>
