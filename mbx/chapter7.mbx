@@ -1,0 +1,38 @@
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Derivatives</title>
+  <introduction>
+    <p>
+      In this unit you will learn how to...
+      <ol>
+        <li>
+          <p>
+            Compute partial derivatives.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Explain how to obtain the total derivative from the partial derivatives (using a matrix).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find equations of tangent lines and tangent planes to surfaces. (We'll do this three ways.)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find derivatives of composite functions, using the chain rule (matrix multiplication).
+          </p>
+        </li>
+      </ol>
+    </p>
+  </introduction>
+  <xi:include  href="section7-1.mbx" />
+  <xi:include  href="section7-2.mbx" />
+  <xi:include  href="section7-3.mbx" />
+  <xi:include  href="section7-4.mbx" />
+</chapter>
