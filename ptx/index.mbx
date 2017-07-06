@@ -11,15 +11,15 @@
 \newcommand{\wrapup}{
 
 <insight>
+  <title>Wrap Up</title>
   <p>
-    <title>Wrap Up</title>
     Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.
   </p>
 </insight>
 
 <insight>
+  <title>Wrap Up</title>
   <p>
-    <title>Wrap Up</title>
     This concludes the \chaptername .  Look at the objectives at the beginning of the \chpname . Can you now do all the things you were promised? \\
     \instructor{TeX files for these are included in a separate folder in the GitHub Project}
     \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
