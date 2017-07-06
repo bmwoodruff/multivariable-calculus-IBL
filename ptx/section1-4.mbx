@@ -8,14 +8,14 @@
         <li>
           <p>
             <m>\begin{cases}x+y\amp =3\\2x-y\amp =4
-                        \end{cases}</m>
+            \end{cases}</m>
           </p>
         </li>
 
         <li>
           <p>
             <m>\begin{cases}-x + 4y\amp =8\\3x - 12y\amp =2
-                        \end{cases}</m>
+            \end{cases}</m>
           </p>
         </li>
       </ul>
@@ -25,11 +25,11 @@
   <exploration>
     <p>
       \extrafn{This 
-                <url href="http://www.wolframalpha.com/input/?i=Solve+x%2B2y%3D3+and+4x-y%2Bz%3D7+and+x%3Dt">link</url> 
-                will show you how to specify which variable is <m>t</m> when using Wolfram Alpha.}Find all solutions to the linear system
-            <m>\begin{cases}x+y+z\amp =3\\2x-y\amp =4
-            \end{cases}</m>.
-            Since there are more variables than equations, this suggests there is probably not just one solution, but perhaps infinitely many. One common way to deal with solving such a system is to let one variable equal <m>t</m>, and then solve for the other variables in terms of <m>t</m>. Do this three different ways.
+      <url href="http://www.wolframalpha.com/input/?i=Solve+x%2B2y%3D3+and+4x-y%2Bz%3D7+and+x%3Dt">link</url> 
+      will show you how to specify which variable is <m>t</m> when using Wolfram Alpha.}Find all solutions to the linear system
+      <m>\begin{cases}x+y+z\amp =3\\2x-y\amp =4
+      \end{cases}</m>.
+      Since there are more variables than equations, this suggests there is probably not just one solution, but perhaps infinitely many. One common way to deal with solving such a system is to let one variable equal <m>t</m>, and then solve for the other variables in terms of <m>t</m>. Do this three different ways.
       <ul>
         <li>
           <p>

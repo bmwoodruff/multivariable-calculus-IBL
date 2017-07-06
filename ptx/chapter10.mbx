@@ -235,6 +235,6 @@
     </tabular>
   </introduction>
   <xi:include  href="section10-1.mbx" />
-    <xi:include  href="section10-2.mbx" />
-    <xi:include  href="section10-3.mbx" />
+  <xi:include  href="section10-2.mbx" />
+  <xi:include  href="section10-3.mbx" />
 </chapter>

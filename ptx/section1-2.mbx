@@ -20,9 +20,9 @@
   <exploration>
     <p>
       \extrafn{
-              \thomasee{See 3.10:19-38.}
-              \stewarts{See 3.10:11-22}
-              }If <m>f(x) = x^2\ln(3x+2)</m> and <m>g(t) = e^{2t}\tan(t^2)</m> then compute <m>df</m> and <m>dg</m>.
+      \thomasee{See 3.10:19-38.}
+      \stewarts{See 3.10:11-22}
+      }If <m>f(x) = x^2\ln(3x+2)</m> and <m>g(t) = e^{2t}\tan(t^2)</m> then compute <m>df</m> and <m>dg</m>.
     </p>
   </exploration>
 
@@ -37,10 +37,10 @@
   <exploration xml:id="differentialtangentline">
     <p>
       \extrafn{
-                  \thomasee{See 3.11:39-44. Also see problems 3.11:1-18.}
-                  \stewarts{See 3.10:1-10 and 3.10:23-31.} 
+      \thomasee{See 3.11:39-44. Also see problems 3.11:1-18.}
+      \stewarts{See 3.10:1-10 and 3.10:23-31.} 
 
-                  The linearization of a function is just an equation of the tangent line where you solve for <m>y</m>.}Consider the function <m>y=f(x) = x^2</m>. This problem has multiple steps, but each is fairly short.
+      The linearization of a function is just an equation of the tangent line where you solve for <m>y</m>.}Consider the function <m>y=f(x) = x^2</m>. This problem has multiple steps, but each is fairly short.
       <ol>
         <li>
           <p>

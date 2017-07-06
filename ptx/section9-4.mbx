@@ -30,7 +30,7 @@
         <li>
           <p>
             \extrafn{<m>\text{ (number of values) } \bar s = \sum \text{ values }</m>
-                         <m>(\sum \text{ weight } )\bar s = \sum (\text{ value } \cdot\text{ weight } )</m>}Another way of thinking about the average <m>\bar s</m> is that <m>\bar s</m> is the number so that if all 11 scores were the same value <m>\bar s</m>, you'd have the same sum of scores.  Write this way of thinking about these computations by taking the formulas for <m>\bar s</m> in the first two parts and multiplying both sides by the denominator.
+            <m>(\sum \text{ weight } )\bar s = \sum (\text{ value } \cdot\text{ weight } )</m>}Another way of thinking about the average <m>\bar s</m> is that <m>\bar s</m> is the number so that if all 11 scores were the same value <m>\bar s</m>, you'd have the same sum of scores.  Write this way of thinking about these computations by taking the formulas for <m>\bar s</m> in the first two parts and multiplying both sides by the denominator.
           </p>
         </li>
       </ol>
@@ -54,7 +54,7 @@
         <li>
           <p>
             Let <m>f(t) = \begin{cases}10 \amp 0\lt t\lt 1\\20\amp 1\lt t\lt 3
-                        \end{cases}</m>, the price of the stock for the three-day period. Draw the function <m>f</m>, and find the area under <m>f</m> where <m>t\in[0,3]</m>.
+            \end{cases}</m>, the price of the stock for the three-day period. Draw the function <m>f</m>, and find the area under <m>f</m> where <m>t\in[0,3]</m>.
             <hint>
               <p>
                 You can do this without integrals
@@ -130,21 +130,21 @@
     <li>
       <p>
         We'd like to find a constant height <m>\bar f</m> so that the area under <m>f</m>, above <m>C</m>, is the same as area under <m>\bar f</m>, above <m>C</m>. This height <m>\bar f</m> is called the average value of <m>f</m> along <m>C</m>. 
-                 \extrafn{
+        \extrafn{
 
         <insight>
         <p>
           Please read 
-                  <url href="https://www.lds.org/scriptures/ot/isa/40.4?lang=eng#3">Isaiah 40:4</url> and
-                  <url href="https://www.lds.org/scriptures/nt/luke/3.5?lang=eng#4">Luke 3:5</url>. These scriptures should help you remember how to find average value.
+          <url href="https://www.lds.org/scriptures/ot/isa/40.4?lang=eng#3">Isaiah 40:4</url> and
+          <url href="https://www.lds.org/scriptures/nt/luke/3.5?lang=eng#4">Luke 3:5</url>. These scriptures should help you remember how to find average value.
         </p>
         </insight>
 
         <insight>
         <p>
           Please read 
-                  <url href="https://www.lds.org/scriptures/ot/isa/40.4?lang=eng#3">Isaiah 40:4</url> and
-                  <url href="https://www.lds.org/scriptures/nt/luke/3.5?lang=eng#4">Luke 3:5</url>. These scriptures should help you remember how to find average value.
+          <url href="https://www.lds.org/scriptures/ot/isa/40.4?lang=eng#3">Isaiah 40:4</url> and
+          <url href="https://www.lds.org/scriptures/nt/luke/3.5?lang=eng#4">Luke 3:5</url>. These scriptures should help you remember how to find average value.
         </p>
         </insight>
 

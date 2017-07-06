@@ -15,21 +15,21 @@
 
     <p>
       In the line integral chapter, we introduced the ideas of average value, centroid, and center of mass.
-            We now extend those ideas to regions in the plane, in exactly the same way.
-            For example, the average value formula in the line integral section was <m>\bar f = \dfrac{\int_C fdx}{\int_C ds}</m>.
-            For double integrals, we just change <m>ds</m> to <m>dA</m>, and add an integral.
-            \extrafn{Average value formula}This gives the formula <m>\bar f = \dfrac{\iint_R fdA}{\iint_R dA}.</m>
-            The same substitution works on all the integrals from before.
-            We now have <m>dm = \delta dA</m> instead of <m>dm=\delta ds</m>, as now density is a mass per area, instead of a mass per length.
-            We obtained the arc length of a curve <m>C</m> by computing <m>s=\int_C ds</m>, as we just add up little bits of arc length.
-            We can obtain the area of a region <m>R</m> by computing <m>A=\iint_R dA</m>, as we just add up little bits of area.
+      We now extend those ideas to regions in the plane, in exactly the same way.
+      For example, the average value formula in the line integral section was <m>\bar f = \dfrac{\int_C fdx}{\int_C ds}</m>.
+      For double integrals, we just change <m>ds</m> to <m>dA</m>, and add an integral.
+      \extrafn{Average value formula}This gives the formula <m>\bar f = \dfrac{\iint_R fdA}{\iint_R dA}.</m>
+      The same substitution works on all the integrals from before.
+      We now have <m>dm = \delta dA</m> instead of <m>dm=\delta ds</m>, as now density is a mass per area, instead of a mass per length.
+      We obtained the arc length of a curve <m>C</m> by computing <m>s=\int_C ds</m>, as we just add up little bits of arc length.
+      We can obtain the area of a region <m>R</m> by computing <m>A=\iint_R dA</m>, as we just add up little bits of area.
     </p>
 
     <p>
       The centroid of a region <m>R</m> in the plane is: \extrafn{Centroid Formula}
       <me>
         \left(\bar x = \frac{\iint_R x dA}{\iint_R dA}, 
-                \bar y = \frac{\iint_R y dA}{\iint_R dA}\right)
+        \bar y = \frac{\iint_R y dA}{\iint_R dA}\right)
       </me>
     </p>
 
@@ -37,7 +37,7 @@
       \extrafn{Center of Mass Formula}and the center of mass is
       <me>
         \left(\bar x = \frac{\iint_R x  dm}{\iint_R dm}, 
-                \bar y = \frac{\iint_R y dm}{\iint_R dm}\right), \text{ where \(dm=\delta dA\) } .
+        \bar y = \frac{\iint_R y dm}{\iint_R dm}\right), \text{ where \(dm=\delta dA\) } .
       </me>
     </p>
 
@@ -52,7 +52,7 @@
 
     <p>
       One of the main reasons we are studying mass, center of mass, centroids, etc., is so that we can understand energy.
-            The transfer of energy (for example from kinetic to electrical and then back from electrical to kinetic) is one of the most important ideas in modern innovations.
+      The transfer of energy (for example from kinetic to electrical and then back from electrical to kinetic) is one of the most important ideas in modern innovations.
     </p>
 
     <p>
@@ -68,14 +68,14 @@
 
     <p>
       When something rotates, we need a handy way to compute its kinetic energy.
-            We'll show that the kinetic energy of an object that is rotating about a line <m>L</m>, and has an angular velocity of <m>\omega</m> radians per second about the line, is precisely
-            \extrafn{Compare the two formulas <m>KE = \frac{1}{2}mv^2</m> and <m>KE = \frac{1}{2}I\omega^2</m>.  If we replace speed with angular speed, then we replace mass with inertia.  Heavy objects are hard to push. Objects with large inertia are hard to rotate.  Just as mass is an objects resistance to being moved, inertia is an objects resistance to being rotated.  Engineers build I-beams so that a large portion of the mass is far from the axis of rotation. This causes a large inertia, which prevents I-beams from rotating.
-            }
+      We'll show that the kinetic energy of an object that is rotating about a line <m>L</m>, and has an angular velocity of <m>\omega</m> radians per second about the line, is precisely
+      \extrafn{Compare the two formulas <m>KE = \frac{1}{2}mv^2</m> and <m>KE = \frac{1}{2}I\omega^2</m>.  If we replace speed with angular speed, then we replace mass with inertia.  Heavy objects are hard to push. Objects with large inertia are hard to rotate.  Just as mass is an objects resistance to being moved, inertia is an objects resistance to being rotated.  Engineers build I-beams so that a large portion of the mass is far from the axis of rotation. This causes a large inertia, which prevents I-beams from rotating.
+      }
       <me>
         KE = \frac{1}{2}I \omega^2,
       </me>
       where <m>I</m> is the (second) moment of inertia.
-            If an object has a large inertia, it takes a lot of work (transfer of energy) to get the object rotating. Inertia is like an object's resistance to rotational motion.
+      If an object has a large inertia, it takes a lot of work (transfer of energy) to get the object rotating. Inertia is like an object's resistance to rotational motion.
     </p>
 
     <definition>
@@ -85,9 +85,9 @@
           We can obtain the moment of inertia by integrating <m>I=\iint_R (d)^2 dm</m> where <m>d</m> is the radius of rotation about the axis <m>L</m> of rotation, which means that <m>d</m> is distance from a point <m>(x,y,z)</m> to the axis of rotation <m>L</m>. If the line <m>L</m> is one of the coordinate axes, then we obtain the key formulas
           <me>
             I_x = \iint_R (y^2)dm,
-                        I_y = \iint_R (x^2)dm,
-                        I_z = \iint_R (x^2+y^2)dm
-                        .
+            I_y = \iint_R (x^2)dm,
+            I_z = \iint_R (x^2+y^2)dm
+            .
           </me>
         </p>
       </statement>
@@ -110,7 +110,7 @@
           <li>
             <p>
               We know an object's kinetic energy <m>KE=\frac{1}{2}mv^2</m>. 
-                             \extrafn{The quantity <m>I=d^2m</m> is called the moment of inertia. However, this formula assumes that all the mass is located at a single point.}Explain why the kinetic energy of the rotating object is <m>KE = \frac{1}{2}d^2m\omega^2</m>.
+              \extrafn{The quantity <m>I=d^2m</m> is called the moment of inertia. However, this formula assumes that all the mass is located at a single point.}Explain why the kinetic energy of the rotating object is <m>KE = \frac{1}{2}d^2m\omega^2</m>.
             </p>
           </li>
 
@@ -123,7 +123,7 @@
           <li>
             <p>
               We can think of a region <m>R</m> in the plane as thousands of points <m>P(x,y)</m>, each with mass <m>dm=\delta dA</m>. As we rotate an entire object about the <m>x</m>-axis with angular velocity <m>\omega</m>, each little piece contributes a small amount of kinetic energy. Explain why the total kinetic energy of the region <m>R</m>, when rotated about the <m>x</m> axis at angular speed <m>\omega</m>, is
-                             \extrafn{The inertia about the <m>x</m> axis is <m>I_x = \ds \iint_R (y^2)dm = \iint_R (y^2)\delta dA</m>.}
+              \extrafn{The inertia about the <m>x</m> axis is <m>I_x = \ds \iint_R (y^2)dm = \iint_R (y^2)\delta dA</m>.}
               <me>
                 KE= \frac{1}{2}\left(\iint_R (y^2)dm\right)\omega^2
               </me>
@@ -134,7 +134,7 @@
           <li>
             <p>
               How does the formula above change if we instead rotate about the <m>y</m>-axis? What if we rotate about the origin?
-                             \extrafn{Feel free to ask in class about how this connects to figure skating.}
+              \extrafn{Feel free to ask in class about how this connects to figure skating.}
             </p>
           </li>
         </ol>
@@ -181,22 +181,22 @@
       and then since <m>\bar f</m> is constant, we pulled it out of the integral, and then solved for <m>\bar f</m> to get
       <me>
         \bar f \iint_R dA = \iint_R f dA 
-                 \text{ or }  
-                \bar f  = \frac{\iint_R f dA }{\iint_R dA}
-                .
+        \text{ or }  
+        \bar f  = \frac{\iint_R f dA }{\iint_R dA}
+        .
       </me>
     </p>
 
     <p>
       This same process gives the center of mass. We could replace the variable distance <m>x</m> in <m>\int_C x dm</m> with the constant distance <m>\bar x</m>, and then solve for <m>\bar x</m> in the equation <m>\int_C \bar xdm = \int_C x dm</m>.
-            If all the mass were located at one spot, what would that spot have to be for the first moments of mass to be the same. The radii of gyration are obtained in the exact same manner. We'll think of a radius of gyration as a rotational center of mass.
+      If all the mass were located at one spot, what would that spot have to be for the first moments of mass to be the same. The radii of gyration are obtained in the exact same manner. We'll think of a radius of gyration as a rotational center of mass.
     </p>
 
     <exploration>
       <title>Radii of Gyration</title>
       <p>
         \extrafn{<url href="http://www.youtube.com/watch?v=dsVtOw09StM&amp;list=PL04DF68E73B7ECD54&amp;index=8&amp;feature=plpp_video">Watch a YouTube video.</url>}Suppose a planar region <m>R</m> has density <m>\delta(x,y)</m>. The inertia about a line <m>L</m> we know is <m>I_x=\iint_R d^2 \delta(x,y)dA</m>, where <m>d</m> is the radius of rotation (distance to the line <m>L</m>).
-                What constant radius <m>R</m> should we replace the variable radius <m>d</m> with so that <m>\int_C R^2 dm = \int_C d^2 dm</m>. Explain why the radius of rotation about the <m>z</m>-axis is
+        What constant radius <m>R</m> should we replace the variable radius <m>d</m> with so that <m>\int_C R^2 dm = \int_C d^2 dm</m>. Explain why the radius of rotation about the <m>z</m>-axis is
         <me>
           R_z = \sqrt{\frac{\iint_R (x^2+y^2)\delta(x,y)dA}{\iint_R \delta(x,y)dA}}.
         </me>
@@ -212,9 +212,9 @@
       You only needed to show how to obtain the radius of gyration about the <m>z</m> axis. All three radii of gyration are found using the formulas
       <me>
         R_x = \sqrt{\frac{\iint_R (y^2+z^2)dm}{\iint_R dm}},
-                R_y = \sqrt{\frac{\iint_R (x^2+z^2)dm}{\iint_R dm}},
-                \text{ and } 
-                R_z = \sqrt{\frac{\iint_R (x^2+y^2)dm}{\iint_R dm}}.
+        R_y = \sqrt{\frac{\iint_R (x^2+z^2)dm}{\iint_R dm}},
+        \text{ and } 
+        R_z = \sqrt{\frac{\iint_R (x^2+y^2)dm}{\iint_R dm}}.
       </me>
       where <m>dm=\delta(x,y) dA</m>. Note that in 2 dimensions, we have <m>z=0</m>, so the formulas for <m>R_x</m> and <m>R_y</m> are simpler.
     </p>
@@ -300,7 +300,7 @@
     <exploration>
       <p>
         Let <m>R</m> be the region in the plane with <m>a\leq x\leq b</m> and <m>g(x)\leq y\leq f(x)</m>. Let <m>A</m> be the area of <m>R</m>.
-                \extrafn{When you use double integrals to find centroids, the formulas for the centroid are the same for both <m>\bar x</m> and <m>\bar y</m>. In other courses, you may see the formulas on the left, because the ideas will be presented without requiring knowledge of double integrals. Integrating the inside integral from the double integral formula gives the single variable formulas.}
+        \extrafn{When you use double integrals to find centroids, the formulas for the centroid are the same for both <m>\bar x</m> and <m>\bar y</m>. In other courses, you may see the formulas on the left, because the ideas will be presented without requiring knowledge of double integrals. Integrating the inside integral from the double integral formula gives the single variable formulas.}
         <ol>
           <li>
             <p>
@@ -340,7 +340,7 @@
     <title>Optional: Application to Inertia</title>
     <p>
       One of the main reasons we are studying mass, center of mass, centroids, etc., is so that we can understand energy.
-            The transfer of energy (for example from kinetic to electrical and then back from electrical to kinetic) is one of the most important ideas in modern innovations.
+      The transfer of energy (for example from kinetic to electrical and then back from electrical to kinetic) is one of the most important ideas in modern innovations.
     </p>
 
     <p>
@@ -356,14 +356,14 @@
 
     <p>
       When something rotates, we need a handy way to compute its kinetic energy.
-            We'll show that the kinetic energy of an object that is rotating about a line <m>L</m>, and has an angular velocity of <m>\omega</m> radians per second about the line, is precisely
-            \extrafn{Compare the two formulas <m>KE = \frac{1}{2}mv^2</m> and <m>KE = \frac{1}{2}I\omega^2</m>.  If we replace speed with angular speed, then we replace mass with inertia.  Heavy objects are hard to push. Objects with large inertia are hard to rotate.  Just as mass is an objects resistance to being moved, inertia is an objects resistance to being rotated.  Engineers build I-beams so that a large portion of the mass is far from the axis of rotation. This causes a large inertia, which prevents I-beams from rotating.
-            }
+      We'll show that the kinetic energy of an object that is rotating about a line <m>L</m>, and has an angular velocity of <m>\omega</m> radians per second about the line, is precisely
+      \extrafn{Compare the two formulas <m>KE = \frac{1}{2}mv^2</m> and <m>KE = \frac{1}{2}I\omega^2</m>.  If we replace speed with angular speed, then we replace mass with inertia.  Heavy objects are hard to push. Objects with large inertia are hard to rotate.  Just as mass is an objects resistance to being moved, inertia is an objects resistance to being rotated.  Engineers build I-beams so that a large portion of the mass is far from the axis of rotation. This causes a large inertia, which prevents I-beams from rotating.
+      }
       <me>
         KE = \frac{1}{2}I \omega^2,
       </me>
       where <m>I</m> is the (second) moment of inertia.
-            If an object has a large inertia, it takes a lot of work (transfer of energy) to get the object rotating. Inertia is like an object's resistance to rotational motion.
+      If an object has a large inertia, it takes a lot of work (transfer of energy) to get the object rotating. Inertia is like an object's resistance to rotational motion.
     </p>
 
     <definition>
@@ -373,9 +373,9 @@
           We can obtain the moment of inertia by integrating <m>I=\iint_R (d)^2 dm</m> where <m>d</m> is the radius of rotation about the axis <m>L</m> of rotation, which means that <m>d</m> is distance from a point <m>(x,y,z)</m> to the axis of rotation <m>L</m>. If the line <m>L</m> is one of the coordinate axes, then we obtain the key formulas
           <me>
             I_x = \iint_R (y^2)dm,
-                        I_y = \iint_R (x^2)dm,
-                        I_z = \iint_R (x^2+y^2)dm
-                        .
+            I_y = \iint_R (x^2)dm,
+            I_z = \iint_R (x^2+y^2)dm
+            .
           </me>
         </p>
       </statement>
@@ -398,7 +398,7 @@
           <li>
             <p>
               We know an object's kinetic energy <m>KE=\frac{1}{2}mv^2</m>. 
-                             \extrafn{The quantity <m>I=d^2m</m> is called the moment of inertia. However, this formula assumes that all the mass is located at a single point.}Explain why the kinetic energy of the rotating object is <m>KE = \frac{1}{2}d^2m\omega^2</m>.
+              \extrafn{The quantity <m>I=d^2m</m> is called the moment of inertia. However, this formula assumes that all the mass is located at a single point.}Explain why the kinetic energy of the rotating object is <m>KE = \frac{1}{2}d^2m\omega^2</m>.
             </p>
           </li>
 
@@ -411,7 +411,7 @@
           <li>
             <p>
               We can think of a region <m>R</m> in the plane as thousands of points <m>P(x,y)</m>, each with mass <m>dm=\delta dA</m>. As we rotate an entire object about the <m>x</m>-axis with angular velocity <m>\omega</m>, each little piece contributes a small amount of kinetic energy. Explain why the total kinetic energy of the region <m>R</m>, when rotated about the <m>x</m> axis at angular speed <m>\omega</m>, is
-                             \extrafn{The inertia about the <m>x</m> axis is <m>I_x = \ds \iint_R (y^2)dm = \iint_R (y^2)\delta dA</m>.}
+              \extrafn{The inertia about the <m>x</m> axis is <m>I_x = \ds \iint_R (y^2)dm = \iint_R (y^2)\delta dA</m>.}
               <me>
                 KE= \frac{1}{2}\left(\iint_R (y^2)dm\right)\omega^2
               </me>
@@ -422,7 +422,7 @@
           <li>
             <p>
               How does the formula above change if we instead rotate about the <m>y</m>-axis? What if we rotate about the origin?
-                             \extrafn{Feel free to ask in class about how this connects to figure skating.}
+              \extrafn{Feel free to ask in class about how this connects to figure skating.}
             </p>
           </li>
         </ol>

@@ -379,8 +379,8 @@
     </tabular>
   </introduction>
   <xi:include  href="section9-1.mbx" />
-    <xi:include  href="section9-2.mbx" />
-    <xi:include  href="section9-3.mbx" />
-    <xi:include  href="section9-4.mbx" />
-    <xi:include  href="section9-5.mbx" />
+  <xi:include  href="section9-2.mbx" />
+  <xi:include  href="section9-3.mbx" />
+  <xi:include  href="section9-4.mbx" />
+  <xi:include  href="section9-5.mbx" />
 </chapter>

@@ -20,7 +20,7 @@
 
   <p>
     Learning to work with vectors will be key tool we need for our work in high dimensions. Let's start with some problems related to finding distance in 3D, drawing in 3D, and then we'll be ready to work with vectors.
-        `
+    `
   </p>
 
   <exploration>
@@ -63,9 +63,9 @@
   <exploration>
     <p>
       \extrafn{
-              \thomasee{See 12.1:41-58.} 
-              \stewarts{See 12.1:11-18}
-              }Recall that a circle (or sphere in 3-D) is just a collection of points which are all equal distance away from a center point.
+      \thomasee{See 12.1:41-58.} 
+      \stewarts{See 12.1:11-18}
+      }Recall that a circle (or sphere in 3-D) is just a collection of points which are all equal distance away from a center point.
       <ol>
         <li>
           <p>
@@ -83,7 +83,7 @@
           <p>
             Now find an equation of the sphere passing though point <m>Q</m> whose center is at <m>P</m>. 
 
-                        Hint: Each point on the surface of a sphere is <m>r</m> distance away from the center.
+            Hint: Each point on the surface of a sphere is <m>r</m> distance away from the center.
           </p>
         </li>
       </ol>
@@ -94,15 +94,15 @@
     <statement>
       <p>
         A vector is a magnitude in a certain direction.
-                If <m>P</m> and <m>Q</m> are points, then the vector <m>\vec{PQ}</m> is the directed line segment from <m>P</m> to <m>Q</m>. This definition holds in 1D, 2D, 3D, and beyond.
-                If <m>V=(v_1,v_2,v_3)</m> is a point in space, then to talk about the vector <m>\vec v</m> from the origin <m>O</m> to <m>V</m> we'll use any of the following notations:
+        If <m>P</m> and <m>Q</m> are points, then the vector <m>\vec{PQ}</m> is the directed line segment from <m>P</m> to <m>Q</m>. This definition holds in 1D, 2D, 3D, and beyond.
+        If <m>V=(v_1,v_2,v_3)</m> is a point in space, then to talk about the vector <m>\vec v</m> from the origin <m>O</m> to <m>V</m> we'll use any of the following notations:
         <me>
           \vec v = \vec{OV}=\left\lt v_1,v_2,v_3\right> 
-                    = v_1\mathbf{i}+v_2\mathbf{j}+v_3\mathbf{k} 
-                    = (v_1,v_2,v_3) 
-                    = \begin{pmatrix}v_1\\ v_2\\ v_3
-                    \end{pmatrix} 
-                    .
+          = v_1\mathbf{i}+v_2\mathbf{j}+v_3\mathbf{k} 
+          = (v_1,v_2,v_3) 
+          = \begin{pmatrix}v_1\\ v_2\\ v_3
+          \end{pmatrix} 
+          .
         </me>
       </p>
 
@@ -160,17 +160,17 @@
   <exploration>
     <p>
       \extrafn{
-              \thomasee{See 12.2:23-24.} 
-              \stewarts{See 12.2:5-6}
-              }Consider the vectors <m>\vec u=\langle 1,2 \rangle</m> and <m>\vec v=\left\lt 3,1\right></m>. Draw <m>\vec u</m>, <m>\vec v</m>, <m>\vec u+\vec v</m>, and <m>\vec u-\vec v</m> with their tail placed at the origin. Then draw <m>\vec v</m> with its tail at the head of <m>\vec u</m>.
+      \thomasee{See 12.2:23-24.} 
+      \stewarts{See 12.2:5-6}
+      }Consider the vectors <m>\vec u=\langle 1,2 \rangle</m> and <m>\vec v=\left\lt 3,1\right></m>. Draw <m>\vec u</m>, <m>\vec v</m>, <m>\vec u+\vec v</m>, and <m>\vec u-\vec v</m> with their tail placed at the origin. Then draw <m>\vec v</m> with its tail at the head of <m>\vec u</m>.
     </p>
   </exploration>
 
   <exploration xml:id="prob_donkey">
     <p>
       \extrafn{
-              \thomasee{See 11.1: 3,4.}
-              }Consider the vector <m>\vec v=\langle 3,-1 \rangle</m>.
+      \thomasee{See 11.1: 3,4.}
+      }Consider the vector <m>\vec v=\langle 3,-1 \rangle</m>.
       <ol>
         <li>
           <p>
@@ -234,8 +234,8 @@
   <exploration xml:id="prob_horseline">
     <p>
       \extrafn{
-              \thomasee{See 12.2: 1.}
-              }Suppose a horse races down a path given by the vector-valued function <m>\vec r(t) = (1,2)t+(3,4)</m>. (Remember this is the same as writing <m>(x,y) =  (1,2)t+(3,4)</m> or similarly <m>(x,y)=(1t+3,2t+4)</m>.)
+      \thomasee{See 12.2: 1.}
+      }Suppose a horse races down a path given by the vector-valued function <m>\vec r(t) = (1,2)t+(3,4)</m>. (Remember this is the same as writing <m>(x,y) =  (1,2)t+(3,4)</m> or similarly <m>(x,y)=(1t+3,2t+4)</m>.)
       <ol>
         <li>
           <p>
@@ -319,9 +319,9 @@
   <exploration>
     <p>
       \extrafn{
-              \thomasee{See 12.2: 9,17,25,33 and surrounding.} 
-              \stewarts{See 12.2: 23-26, 41, 42}
-              }Consider the two points <m>P=(1,2,3)</m> and <m>Q=(2,-1,0)</m>.
+      \thomasee{See 12.2: 9,17,25,33 and surrounding.} 
+      \stewarts{See 12.2: 23-26, 41, 42}
+      }Consider the two points <m>P=(1,2,3)</m> and <m>Q=(2,-1,0)</m>.
       <ol>
         <li>
           <p>
@@ -404,9 +404,9 @@
   <exploration>
     <p>
       \extrafn{
-              \thomasee{See 12.5: 1-12.} 
-              \stewarts{Look at 12.2:34-40}
-              }A raccoon is sitting at point <m>P=(0,2,3)</m>. It starts to climb in the direction <m>\vec v=\left\lt 1,-1,2\right></m>.
+      \thomasee{See 12.5: 1-12.} 
+      \stewarts{Look at 12.2:34-40}
+      }A raccoon is sitting at point <m>P=(0,2,3)</m>. It starts to climb in the direction <m>\vec v=\left\lt 1,-1,2\right></m>.
     </p>
 
     <p>
@@ -425,9 +425,9 @@
   <exploration xml:id="first_line_between_two_points">
     <p>
       \extrafn{
-              \thomasee{See 12.5: 13-20.} 
-              \stewarts{12.5: 6-15}
-              }Let <m>P=(3,1)</m> and <m>Q=(-1,4)</m>.
+      \thomasee{See 12.5: 13-20.} 
+      \stewarts{12.5: 6-15}
+      }Let <m>P=(3,1)</m> and <m>Q=(-1,4)</m>.
       <ol>
         <li>
           <p>

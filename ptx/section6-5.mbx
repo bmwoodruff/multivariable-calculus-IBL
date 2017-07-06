@@ -10,7 +10,7 @@
     <p>
       \extrafn{Use <url href="http://aleph.sagemath.org/?z=eJxz06jQqdSp0lSwVdAA0joVmlwFOfkl8WWpySX5RfFpmak5KcYpGm46CkCFusY6xpo6IIUQlkYVhKEJAOGFExs">Sage</url> to plot your vector fields.  
 
-            \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1<ndash />19.}}Do the following:
+      \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1<ndash />19.}}Do the following:
       <ol>
         <li>
           <p>
@@ -52,8 +52,8 @@
   <exploration>
     <p>
       Give a parametrization of the straight line from <m>(a,0)</m> to <m>(0,b)</m>.
-            You can write your parametrization in the vector form <m>\vec r(t)=(?,?)</m>, or in the parametric form <m>x=?,\ y=?</m>.
-            Remember to include bounds for <m>t</m>.
+      You can write your parametrization in the vector form <m>\vec r(t)=(?,?)</m>, or in the parametric form <m>x=?,\ y=?</m>.
+      Remember to include bounds for <m>t</m>.
     </p>
     <hint>
       <p>
@@ -65,24 +65,24 @@
   <exploration>
     <p>
       Give a parametrization of the parabola <m>y=x^2</m> from <m>(-1,1)</m> to <m>(2,4)</m>.
-            Remember the bounds for <m>t</m>.
+      Remember the bounds for <m>t</m>.
     </p>
   </exploration>
 
   <exploration>
     <p>
       Give a parametrization of the function <m>y=f(x)</m> for <m>x\in[a,b]</m>.
-            You can write your parametrization in the vector form <m>\vec r(t)=(?,?)</m>, or in the parametric form <m>x=?,\ y=?</m>.
-            Include bounds for <m>t</m>.
+      You can write your parametrization in the vector form <m>\vec r(t)=(?,?)</m>, or in the parametric form <m>x=?,\ y=?</m>.
+      Include bounds for <m>t</m>.
     </p>
   </exploration>
 
   <p>
     If someone gives us parametric equations for a surface, we can draw the surface. This is what we did in <xref ref="prob_parametric_surface_example">problems</xref> and <xref ref="second_parametric_surface_example"></xref>.
-        How do we work backwards and obtain parametric equations for a given surface?
-        This requires that we write an equation for <m>x</m>, <m>y</m>, and <m>z</m> in terms of two input variables (<xref ref="prob_parametric_surface_example">see</xref> and <xref ref="second_parametric_surface_example"></xref> for examples).
-        In vector form, we need a function <m>\vec r\colon \mathbb{R}^2\to\mathbb{R}^3</m>.
-        We can often use a coordinate transformation <m>\vec T\colon \mathbb{R}^3\to\mathbb{R}^3</m> to obtain a parametrization of a surface.
+    How do we work backwards and obtain parametric equations for a given surface?
+    This requires that we write an equation for <m>x</m>, <m>y</m>, and <m>z</m> in terms of two input variables (<xref ref="prob_parametric_surface_example">see</xref> and <xref ref="second_parametric_surface_example"></xref> for examples).
+    In vector form, we need a function <m>\vec r\colon \mathbb{R}^2\to\mathbb{R}^3</m>.
+    We can often use a coordinate transformation <m>\vec T\colon \mathbb{R}^3\to\mathbb{R}^3</m> to obtain a parametrization of a surface.
   </p>
 
   <p>
@@ -92,19 +92,19 @@
   <exploration xml:id="x3d_parametric_plot">
     <p>
       \extrafn{Use <url href="http://aleph.sagemath.org/?z=eJwL0ajQqdSp0lSwVYCyuAqKMvNKFJRCNKpsK7QrNRUyi5V0FGA8roLEosTc1JKizOT4gpz8Eg2YhA5Iv66xjjGIVQlhaQIALhka5w">Sage</url> or
-            <url href="http://wolfr.am/zk2KTu">Wolfram Alpha</url> 
-            to plot your parametrization.  
+      <url href="http://wolfr.am/zk2KTu">Wolfram Alpha</url> 
+      to plot your parametrization.  
 
-              \thomasee{See 16.5: 1-16 for more practice.}
-              \larsonfive{See Larson 15.5:21<ndash />30 and 15.5, Example 3.}
-              \stewarts{See section 16.6 for more examples}
-              }Consider the surface <m>z=9-x^2-y^2</m> plotted in <xref ref="prob_3dsurface_plot">problem</xref>.
+      \thomasee{See 16.5: 1-16 for more practice.}
+      \larsonfive{See Larson 15.5:21<ndash />30 and 15.5, Example 3.}
+      \stewarts{See section 16.6 for more examples}
+      }Consider the surface <m>z=9-x^2-y^2</m> plotted in <xref ref="prob_3dsurface_plot">problem</xref>.
       <ol>
         <li>
           <p>
             Using the rectangular coordinate transformation <m>\vec T(x,y,z)=(x,y,z)</m>, give a parametrization <m>\vec r\colon \mathbb{R}^2\to\mathbb{R}^3</m> of the surface. 
 
-                        This is the same as saying
+            This is the same as saying
             <me>
               x=x, y=y, z=?.
             </me>
@@ -135,9 +135,9 @@
     <p>
       \extrafn{Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://wolframalpha.com">Wolfram Alpha</url> to plot your parametrization with your bounds (<xref ref="x3d_parametric_plot">see</xref> for examples).  
 
-              \thomasee{See 16.5: 1-16 for more practice.}
-              \larsonfive{See Larson 15.5:1<ndash />10}
-              }Again consider the surface <m>z=9-x^2-y^2</m>.
+      \thomasee{See 16.5: 1-16 for more practice.}
+      \larsonfive{See Larson 15.5:1<ndash />10}
+      }Again consider the surface <m>z=9-x^2-y^2</m>.
       <ol>
         <li>
           <p>
@@ -157,16 +157,16 @@
   <exploration>
     <p>
       \extrafn{
-              We did very similar things in <xref ref="graphing_spherical_coordinates">problem</xref>.
+      We did very similar things in <xref ref="graphing_spherical_coordinates">problem</xref>.
 
-              \thomasee{See 16.5: 1-16 for more practice.}
-              \larsonfive{See Larson 15.5:1<ndash />10}
-              }
+      \thomasee{See 16.5: 1-16 for more practice.}
+      \larsonfive{See Larson 15.5:1<ndash />10}
+      }
     </p>
 
     <p>
       Recall the spherical coordinate transformation as given in
-            \stewarts{
+      \stewarts{
       <me>
         \vec T(\rho,\phi,\theta) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
       </me>
@@ -263,7 +263,7 @@
   <exploration>
     <p>
       Construct a graph of the surface <m>z = x^2-y^2</m>. Do so in 2 ways. (1) Construct a 3D surface plot. (2) Construct a contour plot, which is a graph with several level curves. Which level curve passes through the point <m>(3,4)</m>?
-            Use Wolfram Alpha to know if you're right. Just type <q>plot z=x\^2-y\^2.</q>
+      Use Wolfram Alpha to know if you're right. Just type <q>plot z=x\^2-y\^2.</q>
     </p>
   </exploration>
 
@@ -274,7 +274,7 @@
         \vec F(x,y) = (x+y, -x+1)
       </me>
       by graphing the field at many integer points around the origin (I generally like to get the 8 integer points around the origin, and then a few more).
-            Then explain how to modify your graph to obtain a plot of the vector field
+      Then explain how to modify your graph to obtain a plot of the vector field
       <me>
         \hat F(x,y) = \frac{(x+y, -x+1)}{\sqrt{(x+y)^2+(1-x)^2}}.
       </me>

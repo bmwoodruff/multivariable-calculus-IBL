@@ -227,9 +227,9 @@
           <cell>Acceleration (sum the components)</cell>
           <cell><m>\vec a</m></cell>
           <cell><m>\vec a 
-                    = a_T\vec T+a_N\vec N 
-                    = \left(\frac{d}{dt}|\vec v|\right) \vec T 
-                     +\left(\kappa |\vec v|^2\right) \vec N</m></cell>
+          = a_T\vec T+a_N\vec N 
+          = \left(\frac{d}{dt}|\vec v|\right) \vec T 
+          +\left(\kappa |\vec v|^2\right) \vec N</m></cell>
         </row>
         <row bottom="minor">
           <cell></cell>
@@ -240,8 +240,8 @@
     </table>
   </introduction>
   <xi:include  href="section8-4x.mbx" />
-    <xi:include  href="section8-1.mbx" />
-    <xi:include  href="section8-2.mbx" />
-    <xi:include  href="section8-3.mbx" />
-    <xi:include  href="section8-4.mbx" />
+  <xi:include  href="section8-1.mbx" />
+  <xi:include  href="section8-2.mbx" />
+  <xi:include  href="section8-3.mbx" />
+  <xi:include  href="section8-4.mbx" />
 </chapter>

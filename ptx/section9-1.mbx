@@ -63,7 +63,7 @@
         <p>
           For <m>0\leq t\leq .5</m>, what is the displacement vector <m>\vec{d}</m> from <m>\vec{r}(0) \rightarrow \vec{r}(0.5)</m>?
 
-                     If the force encountered over this section is <m>\vec F = (2,5)</m> how much work is done?
+          If the force encountered over this section is <m>\vec F = (2,5)</m> how much work is done?
         </p>
       </li>
 
@@ -71,7 +71,7 @@
         <p>
           For <m>.5\leq t\leq 1</m>, what is the displacement vector <m>\vec{d}</m> from <m>\vec{r}(0.5) \rightarrow \vec{r}(1)</m>?
 
-                     If the force encountered over this section is <m>\vec F = (2,6)</m> how much work is done?
+          If the force encountered over this section is <m>\vec F = (2,6)</m> how much work is done?
         </p>
       </li>
 
@@ -89,14 +89,14 @@
           <li>
             <p>
               Find <m>\ds W=\int \vec F\cdot d\vec r = \int_0^{0.5} (2,5+2t)\cdot (-6,3)dt.</m>
-                             How does this compare to part (1)?
+              How does this compare to part (1)?
             </p>
           </li>
 
           <li>
             <p>
               Find <m>\ds W=\int \vec F\cdot d\vec r = \int_0^1 (2,5+2t)\cdot (-6,3)dt.</m>
-                             How does this compare to part (3)?
+              How does this compare to part (3)?
             </p>
           </li>
         </ol>
@@ -105,7 +105,7 @@
       <li>
         <p>
           Explain why the total work done by this force along the path is 
-                      <m>\ds W=\int \vec F\cdot d\vec r</m>. [What does <m>\vec{F} \cdot d\vec{r}</m> represent?]
+          <m>\ds W=\int \vec F\cdot d\vec r</m>. [What does <m>\vec{F} \cdot d\vec{r}</m> represent?]
         </p>
       </li>
       </ol>
@@ -116,7 +116,7 @@
     </p>
 
     <blockquote>
-        If a force <m>F</m> acts through a displacement <m>d</m>, then the most basic definition of work is <m>W=Fd</m>, the product of the force and the displacement.  This basic definition has a few assumptions.
+    If a force <m>F</m> acts through a displacement <m>d</m>, then the most basic definition of work is <m>W=Fd</m>, the product of the force and the displacement.  This basic definition has a few assumptions.
     <ul>
       <li>
         <p>
@@ -171,7 +171,7 @@
               Explain why the work done by <m>\vec F</m> along the circle <m>C</m>  \extrafn{We put the <m>C</m> under the integral <m>\int_C</m> to remind us that we are integrating along the curve <m>C</m>.  This means we need to get a parametrization of the curve <m>C</m>, and give bounds before we can integrate with respect to <m>t</m>.}is
               <me>
                 W = \int_C\left(-2y,2x\right)\cdot d\vec r
-                                = \int_0^{2\pi}\left(-2(3\sin t),2(3\cos t)\right)\cdot(-3\sin t, 3\cos t)dt.
+                = \int_0^{2\pi}\left(-2(3\sin t),2(3\cos t)\right)\cdot(-3\sin t, 3\cos t)dt.
               </me>
               Then integrate to show that the work done by <m>\vec F</m> along this circle is <m>36\pi</m>.
             </p>
@@ -195,7 +195,7 @@
 
         <p>
           If we let <m>\vec F = (M,N)</m> and we let <m>\vec r(t)=(x,y)</m>, so that <m>d\vec r = (dx,dy)</m>,
-                    then we can write work in the differential form
+          then we can write work in the differential form
           <me>
             W = \int_C \vec F\cdot d\vec r= \int_C (M,N)\cdot (dx,dy) = \int_C Mdx+Ndy.
           </me>
@@ -333,9 +333,9 @@
           <li>
             <p>
               Explain why <m>W = \int_C \vec F\cdot \vec T ds</m>. [Why does <m>\vec T ds = d\vec r</m>?  Look up <m>\vec T</m> in the last chapter.]
-                             \extrafn{Watch a 
-                            <url href="http://www.youtube.com/watch?v=6WcN36FbeWc&amp;list=PL04DF68E73B7ECD54">YouTube video</url> about flow and circulation.
-                            }
+              \extrafn{Watch a 
+              <url href="http://www.youtube.com/watch?v=6WcN36FbeWc&amp;list=PL04DF68E73B7ECD54">YouTube video</url> about flow and circulation.
+              }
             </p>
           </li>
 
@@ -348,7 +348,7 @@
           <li>
             <p>
               \extrafn{Watch a  <url href="http://www.youtube.com/watch?v=5DNdI72XEYY&amp;list=PL04DF68E73B7ECD54&amp;index=4&amp;feature=plpp_video">YouTube video</url> about flux.
-                            }We know that <m>\vec T = \dfrac{(dx, dy)}{\sqrt{(dx)^2+(dy)^2}}</m>.  Suppose <m>\vec n</m> is a unit normal vector to the curve. Give two options for <m>\vec n</m>.
+              }We know that <m>\vec T = \dfrac{(dx, dy)}{\sqrt{(dx)^2+(dy)^2}}</m>.  Suppose <m>\vec n</m> is a unit normal vector to the curve. Give two options for <m>\vec n</m>.
               <hint>
                 <p>
                   Look at the review exercise.
@@ -392,7 +392,7 @@
           <li>
             <p>
               To get a normal vector, we could change <m>(dx,dy)</m> to <m>(dy,-dx)</m> or to <m>(-dy,dx)</m>. Compute both 
-                            <m>\ds \int_C (M,N)\cdot (dy,-dx)</m> and <m>\ds \int_C (M,N)\cdot (-dy,dx)</m>. (They should differ by a sign.) Both integrals measure the flow of the field across the curve, instead of along the curve.
+              <m>\ds \int_C (M,N)\cdot (dy,-dx)</m> and <m>\ds \int_C (M,N)\cdot (-dy,dx)</m>. (They should differ by a sign.) Both integrals measure the flow of the field across the curve, instead of along the curve.
             </p>
           </li>
 
@@ -425,14 +425,14 @@
             <li>
               <p>
                 Watch a YouTube video about 
-                                <url href="http://www.youtube.com/watch?v=6WcN36FbeWc&amp;list=PL04DF68E73B7ECD54">flow and circulation.</url>
+                <url href="http://www.youtube.com/watch?v=6WcN36FbeWc&amp;list=PL04DF68E73B7ECD54">flow and circulation.</url>
               </p>
             </li>
 
             <li>
               <p>
                 Watch a 
-                                <url href="http://www.youtube.com/watch?v=5DNdI72XEYY&amp;list=PL04DF68E73B7ECD54&amp;index=4&amp;feature=plpp_video">YouTube video </url> about flux.
+                <url href="http://www.youtube.com/watch?v=5DNdI72XEYY&amp;list=PL04DF68E73B7ECD54&amp;index=4&amp;feature=plpp_video">YouTube video </url> about flux.
               </p>
             </li>
           </ul>
@@ -462,7 +462,7 @@
             <li>
               <p>
                 If <m>C</m> is a simple closed curve parametrized counter clockwise, then the flow of <m>\vec F</m> along <m>C</m> is called circulation, and we write 
-                                <m>\text{ Circulation }  = \oint_C Mdx+Ndy</m>
+                <m>\text{ Circulation }  = \oint_C Mdx+Ndy</m>
               </p>
             </li>
 

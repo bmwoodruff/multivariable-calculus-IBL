@@ -35,7 +35,7 @@
   <exploration>
     <p>
       \extrafn{Watch a <url href="http://www.youtube.com/watch?v=jZpAU2T6iI4&amp;list=PL30EE81142B1ED1F0&amp;index=3&amp;feature=plpp_video">YouTube video</url>.}A space ship travels through the galaxy. Let <m>\vec r(t) = (x,y,z)</m>
-            \extrafn{Technically, we should write <m>\vec r(t) = (x(t),y(t),z(t))</m>. However, we already know that <m>x</m>, <m>y</m>, and <m>z</m> depend on <m>t</m>, hence we'll just leave the dependence on <m>t</m> off.}be the position of the space ship at time <m>t</m>, with the earth at the origin <m>(0,0,0)</m>.
+      \extrafn{Technically, we should write <m>\vec r(t) = (x(t),y(t),z(t))</m>. However, we already know that <m>x</m>, <m>y</m>, and <m>z</m> depend on <m>t</m>, hence we'll just leave the dependence on <m>t</m> off.}be the position of the space ship at time <m>t</m>, with the earth at the origin <m>(0,0,0)</m>.
       <ol>
         <li>
           <p>
@@ -118,9 +118,9 @@
   <exploration xml:id="prob_basic_helix">
     <p>
       \extrafn{Watch TWO <url href="http://www.youtube.com/watch?v=m25oxYTfXfU&amp;list=PL30EE81142B1ED1F0&amp;index=4&amp;feature=plpp_video">YouTube Videos</url> (Arc-Length Parameter and Unit Tangent Vector).  }\extrafn{
-            \thomasee{See 13.3: 1-10 for more practice.}
-            \stewarts{See 13.3:1-6 (finding length) and 13.3:17-20 (finding a unit tangent) for more practice. For 17-20, just find the unit tangent vector (for now)}
-            }Consider the helical space curve <m>C</m> with parameterization <m>\vec r(t)=(\cos t, \sin t, t)</m>.
+      \thomasee{See 13.3: 1-10 for more practice.}
+      \stewarts{See 13.3:1-6 (finding length) and 13.3:17-20 (finding a unit tangent) for more practice. For 17-20, just find the unit tangent vector (for now)}
+      }Consider the helical space curve <m>C</m> with parameterization <m>\vec r(t)=(\cos t, \sin t, t)</m>.
       <ol>
         <li>
           <p>
@@ -163,10 +163,10 @@
 
   <p>
     Compute <m>\ds \int_0^t 3x^2 dx</m> and <m>\ds \int_0^t 3p^2 dp</m> and <m>\ds \int_0^t 3\tau^2 d\tau</m>.
-        Does it matter what you call the variable inside the integral?
-        Then compute <m>\ds\frac{d}{dt} \int_0^t 3\tau^2 d\tau</m>. See<fn>The first integral is <m>x^3|_0^t = t^3</m>. The other two are the same. You can change the variable inside the integral whenever you want.  For this reason, some people call it a dummy variable. 
-        The last part is <m>\ds\frac{d}{dt} \int_0^t 3\tau^2 d\tau = \frac{d}{dt} t^3 = 3t^2</m>, 
-        we just replaced <m>\tau</m> with <m>t</m> in <m>3\tau^2</m>.</fn>for an answer.
+    Does it matter what you call the variable inside the integral?
+    Then compute <m>\ds\frac{d}{dt} \int_0^t 3\tau^2 d\tau</m>. See<fn>The first integral is <m>x^3|_0^t = t^3</m>. The other two are the same. You can change the variable inside the integral whenever you want.  For this reason, some people call it a dummy variable. 
+    The last part is <m>\ds\frac{d}{dt} \int_0^t 3\tau^2 d\tau = \frac{d}{dt} t^3 = 3t^2</m>, 
+    we just replaced <m>\tau</m> with <m>t</m> in <m>3\tau^2</m>.</fn>for an answer.
   </p>
 
   </review>
@@ -197,7 +197,7 @@
 
   <p>
     We'll call <m>\ds s(t)=\int_0^t \left|\frac {d\vec r}{d\tau}\right|\ d\tau</m> the arc length parameter. It tells us how far we've have traveled after <m>t</m> seconds. We can now predict distance traveled from time elapsed. Because <m>s(t)</m> is an increasing function, we can also invert this process and give time elapsed from distance traveled. This means we could compute derivatives with respect to <m>s</m> instead of <m>t</m>.
-        When we take a derivative with respect to <m>s</m>, we ask how much a curve changes if we increase length by 1 unit, instead of increasing time by 1 unit. We'll write
+    When we take a derivative with respect to <m>s</m>, we ask how much a curve changes if we increase length by 1 unit, instead of increasing time by 1 unit. We'll write
     <me>
       \ds\frac{d\vec r}{ds} =\ds\frac{d\vec r/dt}{ds/dt} = \frac{d\vec r/dt}{|d\vec r/dt|} = \frac{\vec v}{|\vec{v}|}.
     </me>
@@ -206,9 +206,9 @@
   <exploration>
     <p>
       \extrafn{
-            \thomasee{See 13.3: 11-14 for more practice.}
-            \stewarts{TBD?}
-            }Consider again the helical space curve <m>\vec r(t)=(\cos t, \sin t, t)</m>. We've shown that <m>s(t) = t\sqrt{2}</m> in <xref ref="prob_basic_helix"></xref>.
+      \thomasee{See 13.3: 11-14 for more practice.}
+      \stewarts{TBD?}
+      }Consider again the helical space curve <m>\vec r(t)=(\cos t, \sin t, t)</m>. We've shown that <m>s(t) = t\sqrt{2}</m> in <xref ref="prob_basic_helix"></xref>.
       <ol>
         <li>
           <p>
@@ -270,9 +270,9 @@
   <exploration>
     <p>
       \extrafn{
-            \thomasee{See 13.3: 1-10 for more practice.}
-            \stewarts{TBD?}
-            }Suppose an object moves along the space curve given by <m>\vec r(t)=(a\cos t,a\sin t,b t)</m>.
+      \thomasee{See 13.3: 1-10 for more practice.}
+      \stewarts{TBD?}
+      }Suppose an object moves along the space curve given by <m>\vec r(t)=(a\cos t,a\sin t,b t)</m>.
       <ol>
         <li>
           <p>
@@ -308,10 +308,10 @@
 
   <p>
     Suppose <m>\vec r(t)=(3\cos t,3\sin t,4t)</m>. Compute <m>v</m>, <m>ds/dt</m>, <m>d\vec r/ds</m>, <m>\vec T</m>, and <m>d\vec T/ds</m>. See<fn>We have <m>\vec v = \dfrac{d\vec r}{dt} = (-3\sin t, 3\cos t, 4)</m>. 
-        The speed is <m>\dfrac{ds}{dt}=|\vec v| = \sqrt{9\sin^2t+9\cos^2t+16}=5</m>.  
-        We then compute <m>\dfrac{d\vec r}{ds}=\dfrac{d\vec r/dt}{ds/dt} = \dfrac{1}{5}(-3\sin t, 3\cos t, 4)</m>, 
-        which equals <m>\vec T</m>.
-        We finally compute
+    The speed is <m>\dfrac{ds}{dt}=|\vec v| = \sqrt{9\sin^2t+9\cos^2t+16}=5</m>.  
+    We then compute <m>\dfrac{d\vec r}{ds}=\dfrac{d\vec r/dt}{ds/dt} = \dfrac{1}{5}(-3\sin t, 3\cos t, 4)</m>, 
+    which equals <m>\vec T</m>.
+    We finally compute
     <me>
       \dfrac{d\vec T}{ds}=\dfrac{d\vec T/dt}{ds/dt}=\left(\dfrac{1}{ds/dt}\right)\dfrac{d\vec T}{dt} = \left(\dfrac{1}{5}\right)\dfrac{1}{5}(-3\cos t, -3\sin t, 0) =  \dfrac{1}{25}(-3\cos t, -3\sin t, 0).
     </me></fn>for an answer.

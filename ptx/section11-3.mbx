@@ -92,8 +92,8 @@
     <statement>
       <p>
         \extrafn{Ask me in class to give you an informal picture approach that explains why 
-                <m>dxdy=rdrd\theta</m>.  
-                }If we use the polar coordinate transformation <m>x=r\cos\theta, y=r\sin\theta</m>, then we can switch from <m>(x,y)</m> coordinates to <m>(r,\theta)</m> coordinates if we use
+        <m>dxdy=rdrd\theta</m>.  
+        }If we use the polar coordinate transformation <m>x=r\cos\theta, y=r\sin\theta</m>, then we can switch from <m>(x,y)</m> coordinates to <m>(r,\theta)</m> coordinates if we use
         <me>
           dxdy=|r|drd\theta.
         </me>
@@ -140,7 +140,7 @@
   <exploration>
     <p>
       \extrafn{See <url href="http://aleph.sagemath.org/?q=60eb3051-6680-4031-afba-893277d1ec90">Sage.</url>
-            }Consider the opening exercise for this unit. We want to find the volume under <m>f(x,y)=9-x^2-y^2</m> where <m>x\geq0</m> and <m>z\geq 0</m>. We obtained the integral formula
+      }Consider the opening exercise for this unit. We want to find the volume under <m>f(x,y)=9-x^2-y^2</m> where <m>x\geq0</m> and <m>z\geq 0</m>. We obtained the integral formula
       <me>
         \iint_R f dA = \ds\int_{y=-3}^{y=3} \int_{x=0}^{x=\sqrt{9-y^2}}9-x^2-y^2 dx dy.
       </me>

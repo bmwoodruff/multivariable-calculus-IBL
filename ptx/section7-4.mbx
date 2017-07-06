@@ -20,7 +20,7 @@
   </ul>
   <p>
     We'll now see how the chain rule generalizes to all dimensions. Just as before, we'll find that the first semester calculus rule will generalize to all dimensions, if we replace <m>f'</m> with the matrix <m>Df</m>.
-        Let's recall the chain rule from first-semester calculus.
+    Let's recall the chain rule from first-semester calculus.
   </p>
 
   <theorem>
@@ -77,7 +77,7 @@
       In <xref ref="prob_differential_volume_of_a_cylinder">exercise</xref>, we showed that for a circular cylinder with volume <m>V=\pi r^2 h</m>, the derivative is
       <me>
         DV(r,h)=\begin{bmatrix}2\pi rh \amp  \pi r^2
-                \end{bmatrix} .
+        \end{bmatrix} .
       </me>
     </p>
 
@@ -110,9 +110,9 @@
         <li>
           <p>
             We know 
-                        <m>DV(r,h)</m> and
-                        <m>D(r,h)(t)</m>
-                        In first semester calculus, the chain rule was the product of derivatives. Multiply these matrices together to get find <m>\frac{dV}{dt}</m>. I.E. computer:
+            <m>DV(r,h)</m> and
+            <m>D(r,h)(t)</m>
+            In first semester calculus, the chain rule was the product of derivatives. Multiply these matrices together to get find <m>\frac{dV}{dt}</m>. I.E. computer:
             <me>
               \dfrac{dV}{dt}=DV((r,h)(t))\cdot D(r,h)(t).
             </me>
@@ -164,15 +164,15 @@
         <li>
           <p>
             On the same 2D graph, include a contour plot of the temperature function <m>f</m>. Make sure you include the level curves that pass through the points in <xref ref="item_1">part</xref>, and write the temperature on each level curve you draw. 
-                           \extrafn{If you end up with an ellipse and several concentric circles, then you've done this right.}
+            \extrafn{If you end up with an ellipse and several concentric circles, then you've done this right.}
           </p>
         </li>
 
         <li>
           <p>
             As the horse runs around, the temperature of the air around the horse is constantly changing. 
-                        At which <m>t</m> does the temperature around the horse reach a maximum?  A minimum?  Explain, using your graph. 
-                         \extrafn{This idea leads to an optimization technique, Lagrange multipliers, later in the semester.}
+            At which <m>t</m> does the temperature around the horse reach a maximum?  A minimum?  Explain, using your graph. 
+            \extrafn{This idea leads to an optimization technique, Lagrange multipliers, later in the semester.}
           </p>
         </li>
 
@@ -270,8 +270,8 @@
   </p>
 
   <blockquote>
-    If <m>z=f(x,y)</m> is a function of <m>x</m> and <m>y</m>, and both <m>x</m> and <m>y</m> are functions of <m>t</m> ( <m>\vec r(t)=(x(t),y(t))</m>), then how do we discover how quickly <m>f</m> changes as we change <m>t</m>. In other words, what is the derivative of <m>f</m> with respect to <m>t</m>. Notationally, we seek <m>\ds \frac{df}{dt}</m> which we formally write as <m>\ds \frac{d}{dt}[f(x(t),y(t))]</m> or <m>\ds \frac{d}{dt} [f(\vec r(t))].</m>
-    </blockquote>
+  If <m>z=f(x,y)</m> is a function of <m>x</m> and <m>y</m>, and both <m>x</m> and <m>y</m> are functions of <m>t</m> ( <m>\vec r(t)=(x(t),y(t))</m>), then how do we discover how quickly <m>f</m> changes as we change <m>t</m>. In other words, what is the derivative of <m>f</m> with respect to <m>t</m>. Notationally, we seek <m>\ds \frac{df}{dt}</m> which we formally write as <m>\ds \frac{d}{dt}[f(x(t),y(t))]</m> or <m>\ds \frac{d}{dt} [f(\vec r(t))].</m>
+  </blockquote>
 
   <p>
     To answer this exercise, we use the chain rule, which is just matrix multiplication.
@@ -300,10 +300,10 @@
   <exploration>
     <p>
       \extrafn{
-            \thomasee{See 14.4: 1-6 for more practice. Don't use the formulas in the chapter, rather practice using matrix multiplication.  The formulas are just a way of writing matrix multiplication without writing down the matrices, and only work for functions from <m>\RR^n\to\RR</m>.  Our matrix multiplication method works for any function from <m>\RR^n\to\RR^m</m>.}
-            \larsonfive{See Larson 13.5:1<ndash />6 for more practice (you can check answers in the back of the book).  Don't use the formulas on pages 925<ndash />930.  Instead, use matrix multiplication.  The formulas are just a way of writing matrix multiplication without writing down the matrices, and only work for functions from <m>\RR^n\to\RR</m>.  Our matrix multiplication method works for any function from <m>\RR^n\to\RR^m</m>.}
-            \stewarts{ See 14.5:1-12 for more practice. Don't use the formulas in the chapter, rather practice using matrix multiplication.  The formulas are just a way of writing matrix multiplication without writing down the matrices, and only work for functions from <m>\RR^n\to\RR</m>.  Our matrix multiplication method works for any function from <m>\RR^n\to\RR^m</m>. } 
-              }
+      \thomasee{See 14.4: 1-6 for more practice. Don't use the formulas in the chapter, rather practice using matrix multiplication.  The formulas are just a way of writing matrix multiplication without writing down the matrices, and only work for functions from <m>\RR^n\to\RR</m>.  Our matrix multiplication method works for any function from <m>\RR^n\to\RR^m</m>.}
+      \larsonfive{See Larson 13.5:1<ndash />6 for more practice (you can check answers in the back of the book).  Don't use the formulas on pages 925<ndash />930.  Instead, use matrix multiplication.  The formulas are just a way of writing matrix multiplication without writing down the matrices, and only work for functions from <m>\RR^n\to\RR</m>.  Our matrix multiplication method works for any function from <m>\RR^n\to\RR^m</m>.}
+      \stewarts{ See 14.5:1-12 for more practice. Don't use the formulas in the chapter, rather practice using matrix multiplication.  The formulas are just a way of writing matrix multiplication without writing down the matrices, and only work for functions from <m>\RR^n\to\RR</m>.  Our matrix multiplication method works for any function from <m>\RR^n\to\RR^m</m>. } 
+      }
     </p>
 
     <p>
@@ -343,10 +343,10 @@
   <exploration>
     <p>
       \extrafn{
-            \thomasee{See 14.4: 7-12 for more practice.}
-            \larsonfive{See Larson 13.5:7<ndash />10 for more practice (remember to use matrix multiplication, not the formulas from the book).}
-            \stewarts{ See 14.5:1-12 for more practice.} 
-             }Suppose <m>f(x,y,z) = x+2y+3z^2</m> and <m>x=u+v</m>, <m>y=2u-3v</m>, and <m>z=uv</m>. Our goal is to find how much <m>f</m> changes if we were to change <m>u</m> (so <m>\partial f/\partial u</m>) or if we were to change <m>v</m> (so <m>\partial f/\partial v</m>). Try doing this exercise without looking at the steps below, but instead try to follow the patterns in the previous exercise on your own.
+      \thomasee{See 14.4: 7-12 for more practice.}
+      \larsonfive{See Larson 13.5:7<ndash />10 for more practice (remember to use matrix multiplication, not the formulas from the book).}
+      \stewarts{ See 14.5:1-12 for more practice.} 
+      }Suppose <m>f(x,y,z) = x+2y+3z^2</m> and <m>x=u+v</m>, <m>y=2u-3v</m>, and <m>z=uv</m>. Our goal is to find how much <m>f</m> changes if we were to change <m>u</m> (so <m>\partial f/\partial u</m>) or if we were to change <m>v</m> (so <m>\partial f/\partial v</m>). Try doing this exercise without looking at the steps below, but instead try to follow the patterns in the previous exercise on your own.
       <ol>
         <li>
           <p>
@@ -404,16 +404,16 @@
 
   <p>
     Suppose <m>f(x,y)=x^2+3xy</m> and <m>(x,y) = \vec r(t) = (3t,t^2)</m>.
-        Compute both <m>Df(x,y)</m> and <m>D\vec r(t)</m>. Then explain how you got your answer by writing what you did in terms of partial derivatives and regular derivatives. See<fn>We have 
-        <m>Df(x,y) = \begin{bmatrix}2x+3y\amp 3y
-        \end{bmatrix}</m> and 
-        <m>D\vec r(t) = \begin{bmatrix}3\\2t
-        \end{bmatrix}</m>. 
-        We just computed <m>f_x</m> and <m>f_y</m>, and <m>dx/dt</m> and <m>dy/dt</m>, which gave us
-        <m>Df(x,y) = \begin{bmatrix}\partial f/\partial x\amp \partial f/\partial y
-        \end{bmatrix}</m> and 
-        <m>D\vec r(t) = \begin{bmatrix}dx/dt\\dy/dt
-        \end{bmatrix}</m>.</fn>for an answer.
+    Compute both <m>Df(x,y)</m> and <m>D\vec r(t)</m>. Then explain how you got your answer by writing what you did in terms of partial derivatives and regular derivatives. See<fn>We have 
+    <m>Df(x,y) = \begin{bmatrix}2x+3y\amp 3y
+    \end{bmatrix}</m> and 
+    <m>D\vec r(t) = \begin{bmatrix}3\\2t
+    \end{bmatrix}</m>. 
+    We just computed <m>f_x</m> and <m>f_y</m>, and <m>dx/dt</m> and <m>dy/dt</m>, which gave us
+    <m>Df(x,y) = \begin{bmatrix}\partial f/\partial x\amp \partial f/\partial y
+    \end{bmatrix}</m> and 
+    <m>D\vec r(t) = \begin{bmatrix}dx/dt\\dy/dt
+    \end{bmatrix}</m>.</fn>for an answer.
   </p>
 
   </review>
@@ -422,24 +422,24 @@
     <title>General Chain Rule Formulas</title>
     <p>
       \extrafn{
-            \thomasee{See 14.4: 13-24 for more practice. Practice these exercises by using matrix multiplication. The example exercises in the text use a <q>branch diagram,</q> which is just a way to express matrix multiplication without having to introduce matrices.}
-            \larsonfive{See Larson 13.5:7<ndash />10 for more practice.}
-            }Complete the following:
+      \thomasee{See 14.4: 13-24 for more practice. Practice these exercises by using matrix multiplication. The example exercises in the text use a <q>branch diagram,</q> which is just a way to express matrix multiplication without having to introduce matrices.}
+      \larsonfive{See Larson 13.5:7<ndash />10 for more practice.}
+      }Complete the following:
       <ol>
         <li>
           <p>
             Suppose that <m>w=f(x,y,z)</m> and that <m>x,y,z</m> are all function of one variable <m>t</m> (so <m>x=g(t), y=h(t), z=k(t)</m>).  
-                         Use the chain rule with matrix multiplication to explain why
+            Use the chain rule with matrix multiplication to explain why
             <me>
               \frac{dw}{dt} 
-                            = \frac{\partial f}{\partial x}\frac{dg}{dt}+\frac{\partial f}{\partial y}\frac{dh}{dt}+\frac{\partial f}{\partial z}\frac{dk}{dt} 
-                            .
+              = \frac{\partial f}{\partial x}\frac{dg}{dt}+\frac{\partial f}{\partial y}\frac{dh}{dt}+\frac{\partial f}{\partial z}\frac{dk}{dt} 
+              .
             </me>
             which is equivalent to writing
             <me>
               \frac{dw}{dt} 
-                            = \frac{\partial f}{\partial x}\frac{dx}{dt}+\frac{\partial f}{\partial y}\frac{dy}{dt}+\frac{\partial f}{\partial z}\frac{dz}{dt} 
-                            .
+              = \frac{\partial f}{\partial x}\frac{dx}{dt}+\frac{\partial f}{\partial y}\frac{dy}{dt}+\frac{\partial f}{\partial z}\frac{dz}{dt} 
+              .
             </me>
             <hint>
               <p>
@@ -461,10 +461,10 @@
   <exploration>
     <p>
       \larsonfive{ \extrafn{See Larson 13.5:19<ndash />26 for more practice.}}
-            \extrafn{
-            \thomasee{Make sure you practice exercises 14.4: 13-24. Use matrix multiplication, rather than the <q>branch diagram</q> referenced in the text.}
-            \larsonfive{See Larson 13.5:7<ndash />10 for more practice.}
-            }Suppose <m>z=f(s,t)</m> and <m>s</m> and <m>t</m> are functions of <m>u</m>, <m>v</m> and <m>w</m>. Use the chain rule to give a general formula for <m>\partial z/\partial u</m>, <m>\partial z/\partial v</m>, and <m>\partial z/\partial w</m>.
+      \extrafn{
+      \thomasee{Make sure you practice exercises 14.4: 13-24. Use matrix multiplication, rather than the <q>branch diagram</q> referenced in the text.}
+      \larsonfive{See Larson 13.5:7<ndash />10 for more practice.}
+      }Suppose <m>z=f(s,t)</m> and <m>s</m> and <m>t</m> are functions of <m>u</m>, <m>v</m> and <m>w</m>. Use the chain rule to give a general formula for <m>\partial z/\partial u</m>, <m>\partial z/\partial v</m>, and <m>\partial z/\partial w</m>.
     </p>
   </exploration>
 
@@ -472,29 +472,29 @@
 
   <p>
     If <m>w=f(x,y,z)</m> and <m>x,y,z</m> are functions of <m>u</m> and <m>v</m>, obtain formulas for <m>\dfrac{\partial f}{\partial u}</m> and <m>\dfrac{\partial f}{\partial v}</m>.
-        See<fn>We have 
-        <m>Df(x,y,z)
-        =\begin{bmatrix}\dfrac{\partial f}{\partial x}\amp \dfrac{\partial f}{\partial y}\amp \dfrac{\partial f}{\partial z}
-        \end{bmatrix}</m>.
- 
-        The parametrization <m>\vec r(u,v)=(x,y,z)</m> has derivative 
-        <m>D\vec r 
-        =\begin{bmatrix}\dfrac{\partial x}{\partial u}\amp \dfrac{\partial x}{\partial v}\\
-        \dfrac{\partial y}{\partial u}\amp \dfrac{\partial y}{\partial v}\\
-        \dfrac{\partial z}{\partial u}\amp \dfrac{\partial z}{\partial v}
-        \end{bmatrix}</m>. 
+    See<fn>We have 
+    <m>Df(x,y,z)
+    =\begin{bmatrix}\dfrac{\partial f}{\partial x}\amp \dfrac{\partial f}{\partial y}\amp \dfrac{\partial f}{\partial z}
+    \end{bmatrix}</m>.
 
-        The product is
-        <m>D(f(\vec r(u,v)))
-        =\begin{bmatrix}\dfrac{\partial f}{\partial x}\dfrac{\partial x}{\partial u}+
-        \dfrac{\partial f}{\partial y}\dfrac{\partial y}{\partial u}+
-        \dfrac{\partial f}{\partial z}\dfrac{\partial z}{\partial u}\amp 
-        \dfrac{\partial f}{\partial x}\dfrac{\partial x}{\partial v}+
-        \dfrac{\partial f}{\partial y}\dfrac{\partial y}{\partial v}+
-        \dfrac{\partial f}{\partial z}\dfrac{\partial z}{\partial v}
-        \end{bmatrix}</m>. 
+    The parametrization <m>\vec r(u,v)=(x,y,z)</m> has derivative 
+    <m>D\vec r 
+    =\begin{bmatrix}\dfrac{\partial x}{\partial u}\amp \dfrac{\partial x}{\partial v}\\
+    \dfrac{\partial y}{\partial u}\amp \dfrac{\partial y}{\partial v}\\
+    \dfrac{\partial z}{\partial u}\amp \dfrac{\partial z}{\partial v}
+    \end{bmatrix}</m>. 
 
-        The first column is <m>\dfrac{\partial f}{\partial u}</m>, and the second column is <m>\dfrac{\partial f}{\partial v}</m>.</fn>for an answer.
+    The product is
+    <m>D(f(\vec r(u,v)))
+    =\begin{bmatrix}\dfrac{\partial f}{\partial x}\dfrac{\partial x}{\partial u}+
+    \dfrac{\partial f}{\partial y}\dfrac{\partial y}{\partial u}+
+    \dfrac{\partial f}{\partial z}\dfrac{\partial z}{\partial u}\amp 
+    \dfrac{\partial f}{\partial x}\dfrac{\partial x}{\partial v}+
+    \dfrac{\partial f}{\partial y}\dfrac{\partial y}{\partial v}+
+    \dfrac{\partial f}{\partial z}\dfrac{\partial z}{\partial v}
+    \end{bmatrix}</m>. 
+
+    The first column is <m>\dfrac{\partial f}{\partial u}</m>, and the second column is <m>\dfrac{\partial f}{\partial v}</m>.</fn>for an answer.
   </p>
 
   </review>
@@ -506,13 +506,13 @@
   <exploration>
     <p>
       \extrafn{
-            \thomasee{See 14.4: 25-32 to practice using the formula you developed.
-            }  
-            To practice the idea developed in this exercise, show that if <m>w=F(x,y,z)</m> is held constant at <m>w=c</m> and we assume that <m>z=f(x,y)</m> depends on <m>x</m> and <m>y</m>, then <m>\frac{\partial z}{\partial x} = -\frac{F_x}{F_z}</m> and <m>\frac{\partial z}{\partial y} = -\frac{F_y}{F_z}</m>. 
+      \thomasee{See 14.4: 25-32 to practice using the formula you developed.
+      }  
+      To practice the idea developed in this exercise, show that if <m>w=F(x,y,z)</m> is held constant at <m>w=c</m> and we assume that <m>z=f(x,y)</m> depends on <m>x</m> and <m>y</m>, then <m>\frac{\partial z}{\partial x} = -\frac{F_x}{F_z}</m> and <m>\frac{\partial z}{\partial y} = -\frac{F_y}{F_z}</m>. 
 
-            \thomasee{This is done on page 997 at the bottom. }
-            \larsonfive{See Larson 13.5:27<ndash />30 for more practice, and see pages 929<ndash />930 for how the book derives these formulas.}
-            }Suppose <m>z=f(x,y)</m>. If <m>z</m> is held constant, this produces a level curve. As an example, if <m>f(x,y) = x^2+3xy-y^3</m> then <m>5=x^2+3xy-y^3</m> is a level curve. Our goal in this exercise is to find <m>dy/dx</m> in terms of partial derivatives of <m>f</m>.
+      \thomasee{This is done on page 997 at the bottom. }
+      \larsonfive{See Larson 13.5:27<ndash />30 for more practice, and see pages 929<ndash />930 for how the book derives these formulas.}
+      }Suppose <m>z=f(x,y)</m>. If <m>z</m> is held constant, this produces a level curve. As an example, if <m>f(x,y) = x^2+3xy-y^3</m> then <m>5=x^2+3xy-y^3</m> is a level curve. Our goal in this exercise is to find <m>dy/dx</m> in terms of partial derivatives of <m>f</m>.
     </p>
 
     <p>
@@ -560,16 +560,16 @@
       <p>
         This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
-            \instructor{TeX files for these are included in a separate folder in the GitHub Project}
-            \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+        \instructor{TeX files for these are included in a separate folder in the GitHub Project}
+        \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
 
-            <em>Review Guide Creation</em>
-
-
-            Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+        <em>Review Guide Creation</em>
 
 
-            As you create this review guide, consider the following:
+        Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+
+
+        As you create this review guide, consider the following:
         <ul>
           <li>
             <p>

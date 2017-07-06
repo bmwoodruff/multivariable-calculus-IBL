@@ -9,8 +9,8 @@
     <exploration>
       <p>
         \extrafn{
-                  \thomasee{See 11.3:5-10.}
-                  }Consider the point <m>P</m> with Cartesian (rectangular) coordinates <m>(2,1)</m>.
+        \thomasee{See 11.3:5-10.}
+        }Consider the point <m>P</m> with Cartesian (rectangular) coordinates <m>(2,1)</m>.
         <ol>
           <li>
             <p>
@@ -49,13 +49,13 @@
     <exploration>
       <p>
         \extrafn{
-                  \thomasee{See 11.3:5-10.}
-                  }The following points are given using their polar coordinates. Plot the points in the Cartesian plane, and give the Cartesian (rectangular) coordinates of each point. The points are
+        \thomasee{See 11.3:5-10.}
+        }The following points are given using their polar coordinates. Plot the points in the Cartesian plane, and give the Cartesian (rectangular) coordinates of each point. The points are
         <me>
           (1,\pi), 
-                    \ds \left( 3,\frac{5\pi}{4}\right),
-                    \ds \left( -3,\frac{\pi}{4}\right),\text{ and } 
-                    \ds \left( -2,-\frac{\pi}{6}\right).
+          \ds \left( 3,\frac{5\pi}{4}\right),
+          \ds \left( -3,\frac{\pi}{4}\right),\text{ and } 
+          \ds \left( -2,-\frac{\pi}{6}\right).
         </me>
       </p>
     </exploration>
@@ -67,8 +67,8 @@
     <exploration xml:id="prob_polar_coordinate_equations">
       <p>
         \extrafn{
-                  \thomasee{See page 647.}
-                  }Suppose that <m>Q</m> is a point in the plane with Cartesian coordinates <m>(x,y)</m> and polar coordinates <m>(r,\theta)</m>.
+        \thomasee{See page 647.}
+        }Suppose that <m>Q</m> is a point in the plane with Cartesian coordinates <m>(x,y)</m> and polar coordinates <m>(r,\theta)</m>.
         <ol>
           <li>
             <p>
@@ -86,7 +86,7 @@
             <p>
               Write a formula to find the angle <m>\theta</m> between the <m>x</m>-axis and a line connecting <m>Q</m> to the origin. 
 
-                              <em>
+              <em>
               <hint>
                 <p>
                   A picture of a triangle will help here.
@@ -108,12 +108,12 @@
 
     <p>
       We can write this in vector notation as <m>\begin{pmatrix}x\\y
-            \end{pmatrix} =\begin{pmatrix}r\cos\theta\\ r\sin\theta
-            \end{pmatrix}</m>.
-            This is a vector equation in which you input polar coordinates <m>(r,\theta)</m> and get out Cartesian coordinates <m>(x,y)</m>.
-            So you input one thing to get out one thing, which means that we have a function.
-            We could write <m>\vec T(r,\theta) = (r\cos\theta,r\sin\theta)</m>, where we've used the letter <m>T</m> as the name of the function because it is a transformation between coordinate systems.
-            To emphasize that the domain and range are both two dimensional systems, we could also write <m>T:\mathbb{R}^2\to\mathbb{R}^2</m>. In the next chapter, we'll spend more time with this notation.
+      \end{pmatrix} =\begin{pmatrix}r\cos\theta\\ r\sin\theta
+      \end{pmatrix}</m>.
+      This is a vector equation in which you input polar coordinates <m>(r,\theta)</m> and get out Cartesian coordinates <m>(x,y)</m>.
+      So you input one thing to get out one thing, which means that we have a function.
+      We could write <m>\vec T(r,\theta) = (r\cos\theta,r\sin\theta)</m>, where we've used the letter <m>T</m> as the name of the function because it is a transformation between coordinate systems.
+      To emphasize that the domain and range are both two dimensional systems, we could also write <m>T:\mathbb{R}^2\to\mathbb{R}^2</m>. In the next chapter, we'll spend more time with this notation.
     </p>
 
     <p>
@@ -144,14 +144,14 @@
           <li>
             <p>
               Let <m>\theta=\frac{\pi}{4}</m> and then, on the same axes as above, add the graph of 
-                            <m>\vec T\left(r,\frac{\pi}{4}\right)=\left(r\frac{\sqrt 2}{2},r \frac{\sqrt 2}{2}\right)</m> for <m>r\in[0,5]</m>.
+              <m>\vec T\left(r,\frac{\pi}{4}\right)=\left(r\frac{\sqrt 2}{2},r \frac{\sqrt 2}{2}\right)</m> for <m>r\in[0,5]</m>.
             </p>
           </li>
 
           <li>
             <p>
               To the same axes as above, add the graphs of 
-                            <m>\vec T(1,\theta), \vec T(2,\theta), \vec T(4,\theta)</m>  for <m>\theta\in[0,2\pi]</m>
+              <m>\vec T(1,\theta), \vec T(2,\theta), \vec T(4,\theta)</m>  for <m>\theta\in[0,2\pi]</m>
             </p>
           </li>
 
@@ -190,8 +190,8 @@
     <exploration>
       <p>
         \extrafn{
-                  \thomasee{See 11.3: 53-66.}
-                  }Each of the following equations is written in the Cartesian (rectangular) coordinate system. Convert each to an equation in polar coordinates by substituting in the formulas from <xref ref="prob_polar_coordinate_equations"></xref>, and then solve for <m>r</m> so that the equation is in the form <m>r=f(\theta)</m>.
+        \thomasee{See 11.3: 53-66.}
+        }Each of the following equations is written in the Cartesian (rectangular) coordinate system. Convert each to an equation in polar coordinates by substituting in the formulas from <xref ref="prob_polar_coordinate_equations"></xref>, and then solve for <m>r</m> so that the equation is in the form <m>r=f(\theta)</m>.
         <ol>
           <li>
             <p>
@@ -217,8 +217,8 @@
     <exploration>
       <p>
         \extrafn{
-                  \thomasee{See 11.3: 27-52. I strongly suggest that you do many of these as practice.}
-                  }Each of the following equations is written in the polar coordinate system. Convert each to an equation in the Cartesian coordinates.
+        \thomasee{See 11.3: 27-52. I strongly suggest that you do many of these as practice.}
+        }Each of the following equations is written in the polar coordinate system. Convert each to an equation in the Cartesian coordinates.
         <ol>
           <li>
             <p>
@@ -296,8 +296,8 @@
     <exploration>
       <p>
         \extrafn{
-                  \thomasee{See 11.2: 1-14.}
-                  }Consider the polar curve <m>r=1+2\cos \theta</m>. (It wouldn't hurt to provide a quick sketch of the curve.)
+        \thomasee{See 11.2: 1-14.}
+        }Consider the polar curve <m>r=1+2\cos \theta</m>. (It wouldn't hurt to provide a quick sketch of the curve.)
         <ol>
           <li>
             <p>
@@ -334,12 +334,12 @@
     <exploration>
       <p>
         \extrafn{
-                  \thomasee{See 11.5: 29.}
-                  }Recall that <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>. Suppose that <m>r=f(\theta)</m> for <m>\theta\in[\alpha,\beta]</m> is a continuous function, and that <m>f'</m> is continuous.
-                Show that the arc length formula can be simplified to
+        \thomasee{See 11.5: 29.}
+        }Recall that <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>. Suppose that <m>r=f(\theta)</m> for <m>\theta\in[\alpha,\beta]</m> is a continuous function, and that <m>f'</m> is continuous.
+        Show that the arc length formula can be simplified to
         <me>
           s=\int_{\alpha}^{\beta}\sqrt{\left(\frac{dx}{d\theta}\right)^2+\left(\frac{dy}{d\theta}\right)^2} 
-                    = \int_{\alpha}^{\beta}\sqrt{r^2+\left(\frac{dr}{d\theta}\right)^2} .
+          = \int_{\alpha}^{\beta}\sqrt{r^2+\left(\frac{dr}{d\theta}\right)^2} .
         </me>
       </p>
       <hint>
@@ -352,8 +352,8 @@
     <exploration>
       <p>
         \extrafn{
-                  \thomasee{See 11.5: 21-28.}
-                  }Set up <em>(do not evaluate)</em> an integral formula to compute the length of
+        \thomasee{See 11.5: 21-28.}
+        }Set up <em>(do not evaluate)</em> an integral formula to compute the length of
         <ol>
           <li>
             <p>

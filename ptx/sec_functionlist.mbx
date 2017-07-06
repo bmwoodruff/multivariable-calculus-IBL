@@ -80,16 +80,16 @@
       <p>
         This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
-            \instructor{TeX files for these are included in a separate folder in the GitHub Project}
-            \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+        \instructor{TeX files for these are included in a separate folder in the GitHub Project}
+        \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
 
-            <em>Review Guide Creation</em>
-
-
-            Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+        <em>Review Guide Creation</em>
 
 
-            As you create this review guide, consider the following:
+        Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+
+
+        As you create this review guide, consider the following:
         <ul>
           <li>
             <p>

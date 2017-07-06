@@ -36,18 +36,18 @@
   <exploration>
     <p>
       \extrafn{
-              \thomasee{See 12.3: 9-12.} 
-              \stewarts{See 12.3:15-20}
-              }Sketch in <m>\mathbb{R}^2</m> the vectors <m>\left\lt 1,2\right></m> and <m>\left\lt 3,5\right></m>. Use the law of cosines to find the angle between the vectors.
+      \thomasee{See 12.3: 9-12.} 
+      \stewarts{See 12.3:15-20}
+      }Sketch in <m>\mathbb{R}^2</m> the vectors <m>\left\lt 1,2\right></m> and <m>\left\lt 3,5\right></m>. Use the law of cosines to find the angle between the vectors.
     </p>
   </exploration>
 
   <exploration xml:id="prob_dot_angle_practice">
     <p>
       \extrafn{
-              \thomasee{See 12.3: 9-12.} 
-              \stewarts{See 12.3:15-20}
-              }Sketch in <m>\mathbb{R}^3</m> the vectors <m>\left\lt 1,2,3\right></m> and <m>\left\lt -2,1,0\right></m>. Use the law of cosines to find the angle between the vectors.
+      \thomasee{See 12.3: 9-12.} 
+      \stewarts{See 12.3:15-20}
+      }Sketch in <m>\mathbb{R}^3</m> the vectors <m>\left\lt 1,2,3\right></m> and <m>\left\lt -2,1,0\right></m>. Use the law of cosines to find the angle between the vectors.
     </p>
   </exploration>
 
@@ -63,8 +63,8 @@
 
       <p>
         A similar definition holds for vectors in <m>\mathbb{R}^n</m>, where
-                <m>\vec u\cdot \vec v = u_1 v_1+ u_2 v_2+\cdots+ u_n v_n.</m>
-                You just multiply corresponding components together and then add. It is the same process used in matrix multiplication.
+        <m>\vec u\cdot \vec v = u_1 v_1+ u_2 v_2+\cdots+ u_n v_n.</m>
+        You just multiply corresponding components together and then add. It is the same process used in matrix multiplication.
       </p>
     </statement>
   </definition>
@@ -145,8 +145,8 @@
   <exploration xml:id="prob_dot_prep">
     <p>
       \extrafn{
-              \thomasee{Page 693 has the solution if you are struggling.} 
-              }If <m>\vec u = (u_1,u_2,u_3)</m> and <m>\vec v= (v_1,v_2,v_3)</m> are vectors in <m>\mathbb{R}^3</m> (which is often written <m>\vec u,\vec v\in\mathbb{R}^3</m>), then show that
+      \thomasee{Page 693 has the solution if you are struggling.} 
+      }If <m>\vec u = (u_1,u_2,u_3)</m> and <m>\vec v= (v_1,v_2,v_3)</m> are vectors in <m>\mathbb{R}^3</m> (which is often written <m>\vec u,\vec v\in\mathbb{R}^3</m>), then show that
       <me>
         |\vec u-\vec v|^2 = |\vec u|^2-2\vec u\cdot \vec v +|\vec v|^2.
       </me>
@@ -156,9 +156,9 @@
   <exploration xml:id="prob_dot_angle_formula">
     <p>
       \extrafn{
-              \thomasee{See page 693.} 
-              \stewarts{See pages 801-802 if you are struggling}
-              }Let <m>\vec u,\vec v\in\mathbb{R}^3</m>. Let <m>\theta</m> be the angle between <m>\vec u</m> and <m>\vec v</m>.
+      \thomasee{See page 693.} 
+      \stewarts{See pages 801-802 if you are struggling}
+      }Let <m>\vec u,\vec v\in\mathbb{R}^3</m>. Let <m>\theta</m> be the angle between <m>\vec u</m> and <m>\vec v</m>.
       <ol>
         <li>
           <p>
@@ -181,9 +181,9 @@
   <exploration>
     <p>
       \extrafn{
-              \thomasee{See page 694.} 
-              \stewarts{See page 804}
-              }Show that if two nonzero vectors <m>\vec u</m> and <m>\vec v</m> are orthogonal, then the angle between them is 90<m>^\circ</m>. Then show that if the angle between them is 90<m>^\circ</m>, then the vectors are orthogonal. I.E. expand and compute both sides of the formula <m>\vec u\cdot \vec v=|\vec u||\vec v|\cos\theta</m> with non-zero, orthogonal vectors.
+      \thomasee{See page 694.} 
+      \stewarts{See page 804}
+      }Show that if two nonzero vectors <m>\vec u</m> and <m>\vec v</m> are orthogonal, then the angle between them is 90<m>^\circ</m>. Then show that if the angle between them is 90<m>^\circ</m>, then the vectors are orthogonal. I.E. expand and compute both sides of the formula <m>\vec u\cdot \vec v=|\vec u||\vec v|\cos\theta</m> with non-zero, orthogonal vectors.
     </p>
   </exploration>
 

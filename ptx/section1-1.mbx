@@ -33,7 +33,7 @@
     <title>Derivatives</title>
     <p>
       In first semester calculus, one of the things you focused on was learning to compute derivatives. You'll need to know the derivatives of basic functions (found on the end cover of almost every calculus textbook). Computing derivatives accurately and rapidly will make learning calculus in high dimensions easier.
-            The following rules are crucial.
+      The following rules are crucial.
       <ul>
         <li>
           <p>
@@ -64,9 +64,9 @@
     <exploration>
       <p>
         \extrafn{
-                  \thomasee{See sections 3.2-3.6 for more practice with derivatives. The later problems in 3.6 review of most of the entire differentiation chapter.}
-                  \stewarts{See sections 3.1-3.6 for more practice with derivatives.}
-                  }Compute the derivative of <m>e^{\sec x}\cos(\tan(x)+\ln(x^2+4))</m>.
+        \thomasee{See sections 3.2-3.6 for more practice with derivatives. The later problems in 3.6 review of most of the entire differentiation chapter.}
+        \stewarts{See sections 3.1-3.6 for more practice with derivatives.}
+        }Compute the derivative of <m>e^{\sec x}\cos(\tan(x)+\ln(x^2+4))</m>.
       </p>
 
       <p>
@@ -91,9 +91,9 @@
     <exploration>
       <p>
         \extrafn{
-                  \thomasee{See sections 3.7-3.9 for more examples involving inverse trig functions and implicit differentiation.}
-                  \stewarts{See section 3.5 for more examples involving inverse trig functions and implicit differentiation.}
-                  }Use implicit differentiation to explain why the derivative of <m>y=\arcsin x</m> is <m>\ds y'=\frac{1}{\sqrt{1-x^2}}</m>. [Rewrite <m>y=\arcsin x</m> as <m>x=\sin y</m>, differentiate both sides, solve for <m>y'</m>, and then write the answer in terms of <m>x</m>].
+        \thomasee{See sections 3.7-3.9 for more examples involving inverse trig functions and implicit differentiation.}
+        \stewarts{See section 3.5 for more examples involving inverse trig functions and implicit differentiation.}
+        }Use implicit differentiation to explain why the derivative of <m>y=\arcsin x</m> is <m>\ds y'=\frac{1}{\sqrt{1-x^2}}</m>. [Rewrite <m>y=\arcsin x</m> as <m>x=\sin y</m>, differentiate both sides, solve for <m>y'</m>, and then write the answer in terms of <m>x</m>].
       </p>
     </exploration>
   </subsection>
@@ -102,20 +102,20 @@
     <title>Integrals</title>
     <p>
       Each derivative rule from the front cover of your calculus text is also an integration rule. In addition to these basic rules, we'll need to know three integration techniques. They are
-            (1) {<m>u</m>}-substitution,
-            (2) integration-by-parts, and
-            (3) integration by using software.
-            There are many other integration techniques, but we will not focus on them. If you are trying to compute an integral to get a number while on the job, then software will almost always be the tool you use. As we develop new ideas in this and future classes (in engineering, physics, statistics, math), you'll find that <m>u</m>-substitution and integrations-by-parts show up so frequently that knowing when and how to apply them becomes crucial.
+      (1) {<m>u</m>}-substitution,
+      (2) integration-by-parts, and
+      (3) integration by using software.
+      There are many other integration techniques, but we will not focus on them. If you are trying to compute an integral to get a number while on the job, then software will almost always be the tool you use. As we develop new ideas in this and future classes (in engineering, physics, statistics, math), you'll find that <m>u</m>-substitution and integrations-by-parts show up so frequently that knowing when and how to apply them becomes crucial.
     </p>
 
     <exploration>
       <p>
         \extrafn{
-                  \thomasee{For practice with <m>u</m>-substitution, see section 5.5 and 5.6.  
-                 For practice with integration by parts, see section 8.2.}
-                  \stewarts{For practice with <m>u</m>-substitution, see sections 5.5. 
-                 For practice with integration by parts, see section 7.1}
-                  }Compute <m>\ds\int x\sqrt{x^2+4}dx</m>.
+        \thomasee{For practice with <m>u</m>-substitution, see section 5.5 and 5.6.  
+        For practice with integration by parts, see section 8.2.}
+        \stewarts{For practice with <m>u</m>-substitution, see sections 5.5. 
+        For practice with integration by parts, see section 7.1}
+        }Compute <m>\ds\int x\sqrt{x^2+4}dx</m>.
       </p>
     </exploration>
 

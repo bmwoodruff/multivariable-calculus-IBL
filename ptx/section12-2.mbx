@@ -34,11 +34,11 @@
       The first vector operation we learned was the dot product. We now use the dot product between <m>\vec \nabla</m> and a vector field to define the divergence:
       <md>
         <mrow>\text{ div } \vec F(x,y,z) 
-                \amp = \vec \nabla\cdot \vec F 
-                = \left(\frac{\partial }{\partial x},\frac{\partial }{\partial y},\frac{\partial }{\partial z} \right)\cdot (M,N,P)</mrow>
+        \amp = \vec \nabla\cdot \vec F 
+        = \left(\frac{\partial }{\partial x},\frac{\partial }{\partial y},\frac{\partial }{\partial z} \right)\cdot (M,N,P)</mrow>
         <mrow>\amp = \frac{\partial M}{\partial x}+\frac{\partial N}{\partial y}+\frac{\partial P}{\partial z} 
-                = M_x+N_y+P_z 
-                .</mrow>
+        = M_x+N_y+P_z 
+        .</mrow>
       </md>
     </p>
 
@@ -53,8 +53,8 @@
           <li>
             <p>
               sketch a plot (you can graph it in Sage or WolframAlpha first)  \extrafn{See 
-                            <url href="http://aleph.sagemath.org/?z=eJxz06jQqdRUsFXQMNKq0K7UqdA20qrU5CrIyS-JL0tNLskvik_LTM1J0XDTUQAq1TU00DE00ASyK2FsTQCKaxIN">Sage</url> or
-                            <url href="http://wolfr.am/y4gIgX">Wolfram Alpha</url> to plot the vector fields}
+              <url href="http://aleph.sagemath.org/?z=eJxz06jQqdRUsFXQMNKq0K7UqdA20qrU5CrIyS-JL0tNLskvik_LTM1J0XDTUQAq1TU00DE00ASyK2FsTQCKaxIN">Sage</url> or
+              <url href="http://wolfr.am/y4gIgX">Wolfram Alpha</url> to plot the vector fields}
             </p>
           </li>
 
@@ -146,7 +146,7 @@
       We call the vector <m>\left\lt P_y-N_z,M_z-P_x,N_x-M_y\right></m> the curl of <m>\vec F</m> and we write
       <md>
         <mrow>\text{ curl } (\vec F) 
-                \amp = \vec \nabla \times \vec F</mrow>
+        \amp = \vec \nabla \times \vec F</mrow>
         <mrow>\amp = \left(\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right) \times (M,N,P)</mrow>
         <mrow>\amp = \left(\frac{\partial P}{\partial y}-\frac{\partial N}{\partial z}, \frac{\partial M}{\partial z}-\frac{\partial P}{\partial x},\frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}\right)</mrow>
         <mrow>\amp =  \left(P_y-N_z,M_z-P_x,N_x-M_y\right)</mrow>
@@ -157,11 +157,11 @@
       The notation <m>\vec \nabla \times \vec F</m> gives a convenient way to remember the formula, as
       <md>
         <mrow>\text{ curl } (\vec F)=\vec \nabla \times \vec F 
-                \amp =\det \begin{bmatrix}
-                \vec i \amp  \vec j \amp  \vec k</mrow>
+        \amp =\det \begin{bmatrix}
+        \vec i \amp  \vec j \amp  \vec k</mrow>
         <mrow>\frac{\partial}{\partial x}\amp \frac{\partial}{\partial y}\amp \frac{\partial}{\partial z}</mrow>
         <mrow>M\amp N\amp P
-                \end{bmatrix}</mrow>
+        \end{bmatrix}</mrow>
         <mrow>\amp = \left(\frac{\partial}{\partial y}P-\frac{\partial}{\partial z}N,\frac{\partial}{\partial z}M-\frac{\partial}{\partial x}P,\frac{\partial}{\partial x}N-\frac{\partial}{\partial y}M\right)</mrow>
       </md>
     </p>

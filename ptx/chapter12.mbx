@@ -50,6 +50,6 @@
     </p>
   </introduction>
   <xi:include  href="section12-1.mbx" />
-    <xi:include  href="section12-2.mbx" />
-    <xi:include  href="section12-3.mbx" />
+  <xi:include  href="section12-2.mbx" />
+  <xi:include  href="section12-3.mbx" />
 </chapter>

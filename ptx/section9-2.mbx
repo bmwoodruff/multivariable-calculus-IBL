@@ -18,8 +18,8 @@
   <exploration>
     <p>
       \extrafn{<url href="http://www.youtube.com/watch?v=sYsMcqtXBrc&amp;list=PL04DF68E73B7ECD54&amp;index=1&amp;feature=plpp_video">Watch a YouTube video.</url>}\extrafn{See <url href="http://aleph.sagemath.org/?z=eJx1j8EOgyAQRO98hTeBroniqQe-pFFjECupFQJro39ftPXQxN5mknk7sz1dYGXymi21yNZaEE-RSSq4siEqSEoezBQVI-jb6a4lRchBcGcY8UU0c4xv0C2vINlFUcHMe8o3Ezk1-5durENjpyA7o5AqO1ovU6-7FHAw6jHpEGT5zQbpWt8-NXqjGjdapHtRHtd8NgDnP0fZ5RQoGPzJkzBojSc1B0Dn-GRxjA-XPf8GnQ5jSA">Sage</url> for a picture of this sheet.}Consider the surface in space that is below the function
-            <m>f(x,y)=9-x^2-y^2</m> and above the curve <m>C</m> parametrized by
-            <m>\vec r(t)=(2\cos t, 3\sin t)</m> for <m>t\in[0,2\pi]</m>. Think of this region as a metal plate that has been stood up with its base on <m>C</m> where the height above each spot is given by <m>z=f(x,y)</m>.
+      <m>f(x,y)=9-x^2-y^2</m> and above the curve <m>C</m> parametrized by
+      <m>\vec r(t)=(2\cos t, 3\sin t)</m> for <m>t\in[0,2\pi]</m>. Think of this region as a metal plate that has been stood up with its base on <m>C</m> where the height above each spot is given by <m>z=f(x,y)</m>.
       <ol>
         <li>
           <p>
@@ -64,11 +64,11 @@
     <statement>
       <p>
         \extrafn{The line integral is also called the path integral, contour integral, or curve integral.}Let <m>f</m> be a function and let <m>C</m> be a piecewise smooth curve whose parametrization is <m>\vec r(t)</m> for <m>t\in[a,b]</m>. We'll require that the composition <m>f(\vec r(t))</m> be continuous for all <m>t\in [a,b]</m>. Then we define the line integral
-                of <m>f</m> over <m>C</m> to be the integral
+        of <m>f</m> over <m>C</m> to be the integral
         <me>
           \int_C f ds 
-                    = \int_a^b f(\vec r(t))\frac{ds}{dt}dt
-                    = \int_a^b f(\vec r(t))\left|\frac{d\vec r}{dt}\right|dt.
+          = \int_a^b f(\vec r(t))\frac{ds}{dt}dt
+          = \int_a^b f(\vec r(t))\left|\frac{d\vec r}{dt}\right|dt.
         </me>
       </p>
     </statement>
@@ -106,18 +106,18 @@
   <exploration>
     <p>
       \extrafn{
-            \thomasee{See 16.1: 9-32.  Some exercises give you a parametrization, some expect you to come up with one on your own.}
-            \stewarts{See 16.2: 1-16, 19-22 for more practice}
-            }\extrafn{<url href="\sagelineintegral">Check your answer with Sage.</url>}Let <m>f(x,y,z)=x^2+y^2-2z</m> and let <m>C</m> be two coils of the helix <m>\vec r(t)=(3\cos t, 3\sin t, 4t)</m>, starting at <m>t=0</m>. Remember that the parametrization means <m>x=3\cos t</m>, <m>y=3\sin t</m>, and <m>z=4t</m>. Compute <m>\int_Cf ds</m>. [You will have to find the end bound yourself. How much time passes to go around two coils?]
+      \thomasee{See 16.1: 9-32.  Some exercises give you a parametrization, some expect you to come up with one on your own.}
+      \stewarts{See 16.2: 1-16, 19-22 for more practice}
+      }\extrafn{<url href="\sagelineintegral">Check your answer with Sage.</url>}Let <m>f(x,y,z)=x^2+y^2-2z</m> and let <m>C</m> be two coils of the helix <m>\vec r(t)=(3\cos t, 3\sin t, 4t)</m>, starting at <m>t=0</m>. Remember that the parametrization means <m>x=3\cos t</m>, <m>y=3\sin t</m>, and <m>z=4t</m>. Compute <m>\int_Cf ds</m>. [You will have to find the end bound yourself. How much time passes to go around two coils?]
     </p>
   </exploration>
 
   <exploration>
     <p>
       \extrafn{
-            \thomasee{To practice matching parametrization to curves, try 16.1:1-8.}
-            \stewarts{To practice matching parametrization to curves, try 16.6:13-18}
-            }\extrafn{<url href="\sagelineintegral">Check your answer with Sage.</url>}Consider the function <m>f(x,y)=3xy+2</m>. Let <m>C</m> be a circle of radius 4 centered at the origin. Compute <m>\int_C fds</m>. [You'll have to come up with your own parametrization.]
+      \thomasee{To practice matching parametrization to curves, try 16.1:1-8.}
+      \stewarts{To practice matching parametrization to curves, try 16.6:13-18}
+      }\extrafn{<url href="\sagelineintegral">Check your answer with Sage.</url>}Consider the function <m>f(x,y)=3xy+2</m>. Let <m>C</m> be a circle of radius 4 centered at the origin. Compute <m>\int_C fds</m>. [You'll have to come up with your own parametrization.]
     </p>
   </exploration>
 
@@ -130,7 +130,7 @@
   <exploration>
     <p>
       \extrafn{<xref ref="prob_parametric_curve_in_plane">See</xref> if you forgot how to parametrize plane curves.}\larsonfive{ \extrafn{See Larson 15.2: 1<ndash />20, 63<ndash />70.  Some exercises give you a parametrization, some expect you to come up with one on your own.}}
-            \extrafn{<url href="\sagelineintegral">Check your answer with Sage.</url>}Let <m>f(x,y)=x^2+y^2-25</m>. Let <m>C</m> be the portion of the parabola <m>y^2=x</m> between <m>(1,-1)</m> and <m>(4,2)</m>. We want to compute <m>\int_C fds</m>.
+      \extrafn{<url href="\sagelineintegral">Check your answer with Sage.</url>}Let <m>f(x,y)=x^2+y^2-25</m>. Let <m>C</m> be the portion of the parabola <m>y^2=x</m> between <m>(1,-1)</m> and <m>(4,2)</m>. We want to compute <m>\int_C fds</m>.
       <ol>
         <li>
           <p>
@@ -198,7 +198,7 @@
         <li>
           <p>
             Now find the counterclockwise circulation (work) done by <m>\vec F</m> along <m>C</m>.  You'll have three separate calculations, one for each side. We'll do the flux computation in class. 
-                         Check your work on each piece with the <url href="\sageworkfluxurl">Sage calculator</url>.
+            Check your work on each piece with the <url href="\sageworkfluxurl">Sage calculator</url>.
           </p>
         </li>
       </ol>

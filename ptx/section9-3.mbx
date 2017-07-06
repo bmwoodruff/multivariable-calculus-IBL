@@ -23,7 +23,7 @@
     <statement>
       <p>
         \extrafn{<url href="http://www.youtube.com/watch?v=8Tk2pEIOnwg&amp;list=PL04DF68E73B7ECD54&amp;index=9&amp;feature=plpp_video">Watch a YouTube Video</url>.}Let <m>\vec F</m> be a vector field. A potential for the vector field is a function <m>f</m> whose derivative equals <m>\vec F</m>. So if <m>Df=\vec F</m>, then we say that <m>f</m> is a potential for <m>\vec F</m>. When we want to emphasize that the derivative of <m>f</m> is a vector field, we call <m>Df</m> the gradient of <m>f</m> and write <m>Df = \vec \nabla f</m>.
-                \extrafn{The symbol <m>\vec \nabla f</m> is read <q>the gradient of <m>f</m></q> or <q>del f.</q>}If <m>\vec F</m> has a potential, then we say that <m>\vec F</m> is a gradient field.
+        \extrafn{The symbol <m>\vec \nabla f</m> is read <q>the gradient of <m>f</m></q> or <q>del f.</q>}If <m>\vec F</m> has a potential, then we say that <m>\vec F</m> is a gradient field.
       </p>
     </statement>
   </definition>
@@ -183,15 +183,15 @@
   </p>
 
   <blockquote>
-    If <m>f</m> is continuous on <m>[a,b]</m> and <m>F</m> is an anti-derivative of <m>f</m>, then <m>F(b)-F(a) = \int_a^b f(x) dx</m>.
-    </blockquote>
+  If <m>f</m> is continuous on <m>[a,b]</m> and <m>F</m> is an anti-derivative of <m>f</m>, then <m>F(b)-F(a) = \int_a^b f(x) dx</m>.
+  </blockquote>
 
   <p>
     If we replace <m>f</m> with <m>f'</m>, then an anti-derivative of <m>f'</m> is <m>f</m>, and we can write,
   </p>
 
   <blockquote>
-    If <m>f</m> is continuously differentiable on <m>[a,b]</m>, then
+  If <m>f</m> is continuously differentiable on <m>[a,b]</m>, then
   <me>
     f(b)-f(a)=\int_a^b f'(x) dx.
   </me>
@@ -218,12 +218,12 @@
   </p>
 
   <blockquote>
-    Suppose <m>\vec F</m> is a a vector field that is continuous along some open region containing the curve <m>C</m>. Suppose <m>\vec F</m> has a potential <m>f</m>. Let <m>A</m> and <m>B</m> be the start and end points of the smooth curve <m>C</m>.  Then the work done by <m>\vec F</m> along <m>C</m> depends only on the start and end points, and is precisely
+  Suppose <m>\vec F</m> is a a vector field that is continuous along some open region containing the curve <m>C</m>. Suppose <m>\vec F</m> has a potential <m>f</m>. Let <m>A</m> and <m>B</m> be the start and end points of the smooth curve <m>C</m>.  Then the work done by <m>\vec F</m> along <m>C</m> depends only on the start and end points, and is precisely
   <me>
     f(B)-f(A)=\int_C \vec F\cdot d\vec r = \int_C Mdx+Ndy.
   </me>
   The work done by <m>\vec F</m> is the difference in a potential.
-    </blockquote>
+  </blockquote>
 
   <p>
     If you are familiar with kinetic energy, then you should notice a key idea here. Work is a transfer of energy. As an object falls, energy is transferred from potential energy to kinetic energy. The total kinetic energy at the end of a fall is precisely equal to the difference between the potential energy at the top of the fall and the potential energy at the bottom of the fall (neglecting air resistance). So work (the transfer of energy) is exactly the difference in potential energy.
@@ -233,7 +233,7 @@
     <title>Proof of the Fundamental Theorem</title>
     <p>
       \extrafn{The proof of the fundamental theorem of line integrals is quite short. All you need is the fundamental theorem of calculus, together with the chain rule (chain_rule_def).}Suppose <m>f(x,y)</m> is continuously differentiable, and suppose that <m>\vec r(t)</m> for <m>t\in[a,b]</m> is a parametrization of a smooth curve <m>C</m>. Prove that <m>f(\vec r(b))-f(\vec r(a)) = \int_a^b Df(\vec r(t))D\vec r(t)\ dt</m>.
-            [If you do this exercise, skip <xref ref="prob_proof_of_fundamental_thm2">exercise</xref> ]
+      [If you do this exercise, skip <xref ref="prob_proof_of_fundamental_thm2">exercise</xref> ]
     </p>
   </exploration>
 
@@ -349,10 +349,10 @@
     Compute <m>\ds \int \frac{x}{\sqrt{x^2+4}}dx</m>. See<fn>Let <m>u=x^2+4</m>, which means <m>du=2xdx</m> or <m>dx=\frac{du}{2x}</m>.  This means
     <me>
       \ds \int \frac{x}{\sqrt{x^2+4}}dx 
-            = \int \frac{x}{\sqrt{u}}\frac{du}{2x} 
-            = \frac{1}{2}\int u^{-1/2}du
-            = \frac{1}{2}\frac{u^{1/2}}{1/2}
-            = \sqrt{u} = \sqrt{x^2+4}.
+      = \int \frac{x}{\sqrt{u}}\frac{du}{2x} 
+      = \frac{1}{2}\int u^{-1/2}du
+      = \frac{1}{2}\frac{u^{1/2}}{1/2}
+      = \sqrt{u} = \sqrt{x^2+4}.
     </me></fn>.
   </p>
 

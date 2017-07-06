@@ -146,8 +146,8 @@
       In the derivative chapter, we extended differential notation from <m>dy=f' dx</m> to <m>d\vec y = D\vec f d\vec x</m>. The key idea is that a small change in the output variables is approximated by the product of the derivative and a small change in the input variables. As a quick refresher, if we have the function <m>z=f(x,y)</m>, then differential notation states that
       <me>
         dz = \begin{bmatrix}f_x\amp f_y
-                \end{bmatrix}  \begin{bmatrix}dx\\dy
-                \end{bmatrix} .
+        \end{bmatrix}  \begin{bmatrix}dx\\dy
+        \end{bmatrix} .
       </me>
     </p>
 
@@ -236,7 +236,7 @@
     <exploration>
       <p>
         Suppose that <m>z=f(x,y)</m> is a differentiable function (so the derivative is the matrix <m>\begin{bmatrix}f_x\amp f_y
-                \end{bmatrix}</m>). Remember to use differential notation in this exercise.
+        \end{bmatrix}</m>). Remember to use differential notation in this exercise.
         <ol>
           <li>
             <p>
@@ -416,7 +416,7 @@
           <li>
             <p>
               \extrafn{If you're stuck, look at a contour plot of <m>f(x,y) = (x+1)^3-3(x+1)^2-y^2+2</m> in   
-                            <url href="http://aleph.sagemath.org/?z=eJxL06jQqdS01ajQNtSMM9Y11oKwjHQr44y0jbiS8_NK8kuL4gty8ks00nSAinWNdIw0dRQ0KqGs5Pyc_KKkxCLbkKLSVE0AbVIWvQ">Sage</url>. Then make your own example.}Create you own topographical map to illustrate the ideas above. Just make sure your map has a section with some contours that are closely packed together, and some that are far apart, as well as a contour that intersects itself. Then on your topographical map, please add a few gradient vectors, where you emphasize which ones are long, and which ones are short. Show us how to find a peak, as well as what the gradient vector would be at the peak.
+              <url href="http://aleph.sagemath.org/?z=eJxL06jQqdS01ajQNtSMM9Y11oKwjHQr44y0jbiS8_NK8kuL4gty8ks00nSAinWNdIw0dRQ0KqGs5Pyc_KKkxCLbkKLSVE0AbVIWvQ">Sage</url>. Then make your own example.}Create you own topographical map to illustrate the ideas above. Just make sure your map has a section with some contours that are closely packed together, and some that are far apart, as well as a contour that intersects itself. Then on your topographical map, please add a few gradient vectors, where you emphasize which ones are long, and which ones are short. Show us how to find a peak, as well as what the gradient vector would be at the peak.
             </p>
           </li>
         </ol>

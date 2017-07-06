@@ -11,8 +11,8 @@
 
   <p>
     Suppose a heavy box needs to be lowered down a ramp.
-        The box exerts a downward force of 200 Newtons, which we will write in vector notation as <m>\vec F=\left\lt 0,-200\right></m>.
-        The ramp was placed so that the box needs to be moved right 6 m, and down 3 m, so we need to get from the origin <m>(0,0)</m> to the point <m>(6,-3)</m>. This displacement can be written as <m>\vec d=\left\lt 6,-3\right></m>. The force <m>F</m> acts straight down, which means the ramp takes some of the force. Our goal is to find out how much of the 200N the ramp takes, and how much force must be applied to prevent the box from sliding down the ramp (neglecting friction). We are going to break the force <m>\vec F</m> into two components, one component in the direction of <m>\vec d</m>, and another component orthogonal to <m>\vec d</m>.
+    The box exerts a downward force of 200 Newtons, which we will write in vector notation as <m>\vec F=\left\lt 0,-200\right></m>.
+    The ramp was placed so that the box needs to be moved right 6 m, and down 3 m, so we need to get from the origin <m>(0,0)</m> to the point <m>(6,-3)</m>. This displacement can be written as <m>\vec d=\left\lt 6,-3\right></m>. The force <m>F</m> acts straight down, which means the ramp takes some of the force. Our goal is to find out how much of the 200N the ramp takes, and how much force must be applied to prevent the box from sliding down the ramp (neglecting friction). We are going to break the force <m>\vec F</m> into two components, one component in the direction of <m>\vec d</m>, and another component orthogonal to <m>\vec d</m>.
   </p>
 
   <exploration xml:id="prob_force_intro">
@@ -85,9 +85,9 @@
   <exploration>
     <p>
       \extrafn{
-              \thomasee{See 12.3:1-8 (part d).} 
-              \stewarts{See 12.3: 39-44}
-              }Let <m>\vec u=(-1,2)</m> and <m>\vec v=(3,4)</m>. Compute the <m>\proj_{\vec v}\vec u</m>. Draw <m>\vec u,</m> <m>\vec v</m>, and <m>\proj_{\vec v}\vec u</m> all on one set of axis. Then draw a line segment from the head of <m>\vec u</m> to the head of the projection.
+      \thomasee{See 12.3:1-8 (part d).} 
+      \stewarts{See 12.3: 39-44}
+      }Let <m>\vec u=(-1,2)</m> and <m>\vec v=(3,4)</m>. Compute the <m>\proj_{\vec v}\vec u</m>. Draw <m>\vec u,</m> <m>\vec v</m>, and <m>\proj_{\vec v}\vec u</m> all on one set of axis. Then draw a line segment from the head of <m>\vec u</m> to the head of the projection.
     </p>
 
     <p>
@@ -130,9 +130,9 @@
     <title>Projection Application: Work</title>
     <p>
       \extrafn{
-              \thomasee{See 12.3: 24, 41-44.} 
-              \stewarts{See 12.3:49-52}
-              }Find the amount of work done by the force <m>\vec F=\left\lt 0,-200\right></m> through the displacement <m>\vec d=\left\lt 6,-3\right></m>. Find this by doing the following:
+      \thomasee{See 12.3: 24, 41-44.} 
+      \stewarts{See 12.3:49-52}
+      }Find the amount of work done by the force <m>\vec F=\left\lt 0,-200\right></m> through the displacement <m>\vec d=\left\lt 6,-3\right></m>. Find this by doing the following:
       <ol>
         <li>
           <p>
@@ -159,8 +159,8 @@
     <title>Projection Application: Planes</title>
     <p>
       \extrafn{
-              \stewarts{See 12.5:69-72}
-              }Consider the points <m>P=(2,4,5)</m>, <m>Q=(1,5,7)</m>, and <m>R=(-1,6,8)</m>.
+      \stewarts{See 12.5:69-72}
+      }Consider the points <m>P=(2,4,5)</m>, <m>Q=(1,5,7)</m>, and <m>R=(-1,6,8)</m>.
       <ol>
         <li>
           <p>
@@ -202,16 +202,16 @@
       <p>
         This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
-            \instructor{TeX files for these are included in a separate folder in the GitHub Project}
-            \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+        \instructor{TeX files for these are included in a separate folder in the GitHub Project}
+        \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
 
-            <em>Review Guide Creation</em>
-
-
-            Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+        <em>Review Guide Creation</em>
 
 
-            As you create this review guide, consider the following:
+        Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+
+
+        As you create this review guide, consider the following:
         <ul>
           <li>
             <p>

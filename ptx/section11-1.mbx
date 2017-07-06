@@ -97,10 +97,10 @@
     Consider the parabola <m>z=9-x^2</m> for <m>0\leq x\leq 3</m>. Revolve this parabola half way around the <m>z</m>-axis, and compute the volume of the solid that is inside the paraboloid and above the <m>xy</m>-plane. Do so by considering horizontal semicircular cross sections. See<fn>The area of each cross section is the area of a semicircle, which is <m>A=\frac{1}{2}\pi r^2 = \frac12 \pi x^2</m> as the radius is <m>x</m>. We thicken each cross section up by multiplying by <m>dz</m>, the height of each circular disc. Since the height has a <m>dz</m>, we replace <m>x</m> with <m>x=\sqrt{9-z}</m> in the area formula to get a little bit of volume as <m>dV = \frac{1}{2}\pi (\sqrt{9-z})^2 dz</m>.  The <m>z</m> values range from <m>0</m> to <m>9</m>, which means the volume of the solid is the integral
     <me>
       V
-            =\int_0^9 \frac{1}{2}\pi (\sqrt{9-z})^2 dz
-            =\frac{\pi}{2}\int_0^9  9-z dz
-            =\frac{\pi}{2}  \left(9z-\frac{z^2}{2}\right)\bigg|_0^9
-            =\frac{81\pi}{4}
+      =\int_0^9 \frac{1}{2}\pi (\sqrt{9-z})^2 dz
+      =\frac{\pi}{2}\int_0^9  9-z dz
+      =\frac{\pi}{2}  \left(9z-\frac{z^2}{2}\right)\bigg|_0^9
+      =\frac{81\pi}{4}
     </me></fn>.
   </p>
 
@@ -288,7 +288,7 @@
     We can either set up the bounds with <m>x</m> on the inside, or <m>y</m> on the inside. We'll get the same answer. When we set up the integral with bounds, we call it an iterated integral, and write.
     <me>
       \ds \int_a^b \int_{c(x)}^{d(x)}f(x,y)dydx  \text{ or }  
-            \ds \int_c^d \int_{a(y)}^{b(y)}f(x,y)dxdxy.
+      \ds \int_c^d \int_{a(y)}^{b(y)}f(x,y)dxdxy.
     </me>
   </p>
 
@@ -301,10 +301,10 @@
 
       <p>
         An iterated integral is a double integral where we have actually set up
-                the bounds as either
+        the bounds as either
         <me>
           \ds \int_a^b \int_{c(x)}^{d(x)}f(x,y)dydx  \text{ or }  
-                    \ds \int_c^d \int_{a(y)}^{b(y)}f(x,y)dxdxy.
+          \ds \int_c^d \int_{a(y)}^{b(y)}f(x,y)dxdxy.
         </me>
       </p>
 

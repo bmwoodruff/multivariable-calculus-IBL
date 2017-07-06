@@ -343,8 +343,8 @@
       We now want to look at the flux of a vector field across a surface <m>S</m>. In the line integral section, we defined the outward flux of a vector field <m>F</m> across a curve <m>C</m> to be the line integral <m>\ds \int_C \vec F\cdot \vec n ds</m>, where <m>\vec n</m> is a normal vector point out of region enclosed by a curve <m>C</m>. When we want to find the flux of a vector field across a surface, we must state in which direction we want to compute the flux. We then must make sure that normal vector <m>\vec n</m> we choose to use actually points in the desired direction. The flux of a vector field <m>\vec F</m> across a surface <m>S</m> is the surface integral
       <me>
         \text{ Flux } =\Phi 
-                = \iint_S \vec F\cdot \vec n d\sigma 
-                .
+        = \iint_S \vec F\cdot \vec n d\sigma 
+        .
       </me>
     </p>
 
@@ -405,9 +405,9 @@
       In the problem above, we showed that <m>\vec n d\sigma = \pm(\vec r_x\times\vec r_y)dxdy</m> and that <m>\vec n d\sigma = \pm(\vec r_r\times\vec r_\theta)drd\theta</m>. We no longer need to find the magnitude of the cross product, but we must determine the correct sign to put on our cross product. This shows us that we can write flux as
       <me>
         \text{ Flux } =\Phi 
-                = \iint_S \vec F\cdot \vec n d\sigma 
-                = \iint_{R_{uv}} \vec F\cdot (\pm \vec r_u\times \vec r_v) dudv
-                .
+        = \iint_S \vec F\cdot \vec n d\sigma 
+        = \iint_{R_{uv}} \vec F\cdot (\pm \vec r_u\times \vec r_v) dudv
+        .
       </me>
     </p>
 
