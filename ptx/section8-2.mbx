@@ -109,7 +109,7 @@
   </exploration>
 
   <p>
-    EXTRA<fn>Gauss developed and expanded many of the ideas in this section while on a map making mission for a king.  He wanted to create extremely high quality 2D images of the 3D world we are in.</fn>
+    \extrafn{Gauss developed and expanded many of the ideas in this section while on a map making mission for a king.  He wanted to create extremely high quality 2D images of the 3D world we are in.}
   </p>
 
   <p>
@@ -143,7 +143,7 @@
 
   <p>
     Let's apply this new definition to a circle of any radius. We'll quickly see that the curvature and radius of a circle are related.
-    The curvature vector <m>d\vec T/ds</m> tells us how quickly <m>\vec T</m> changes as we increase in length, which is a measure of how sharply we turn a corner. If our curve is a circle of radius <m>3</m>, then the curvature is <m>1/3</m>. <em>A larger circle should result in smaller curvature. </em>
+        The curvature vector <m>d\vec T/ds</m> tells us how quickly <m>\vec T</m> changes as we increase in length, which is a measure of how sharply we turn a corner. If our curve is a circle of radius <m>3</m>, then the curvature is <m>1/3</m>. <em>A larger circle should result in smaller curvature. </em>
   </p>
 
   <exploration>
@@ -179,7 +179,7 @@
     <title>Radius of Curvature</title>
     <statement>
       <p>
-        EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=cHez5K1EWPs&amp;list=PL30EE81142B1ED1F0&amp;index=8&amp;feature=plpp_video">YouTube Video</url>.  </fn>When the curvature <m>\kappa</m> of a smooth curve is nonzero, we'll define the radius of curvature, written <m>\rho</m>, to be the reciprocal <m>\rho = \dfrac{1}{\kappa}</m>. The curvature and radius of curvature are inversely related.
+        \extrafn{Watch a <url href="http://www.youtube.com/watch?v=cHez5K1EWPs&amp;list=PL30EE81142B1ED1F0&amp;index=8&amp;feature=plpp_video">YouTube Video</url>.  }When the curvature <m>\kappa</m> of a smooth curve is nonzero, we'll define the radius of curvature, written <m>\rho</m>, to be the reciprocal <m>\rho = \dfrac{1}{\kappa}</m>. The curvature and radius of curvature are inversely related.
       </p>
     </statement>
   </definition>
@@ -191,21 +191,16 @@
   <review>
 
   <p>
-    Suppose <m>f(x) = \sin(x^2)</m>. Compute <m>f'(x)</m> and <m>f''(x)</m>. See
-    <fn>
-    We have <m>f'(x) = 2x\cos(x^2)</m> and <m>f''(x) = -4x^2\sin(x^2)+2\cos(x^2)</m>.
-    </fn>.
+    Suppose <m>f(x) = \sin(x^2)</m>. Compute <m>f'(x)</m> and <m>f''(x)</m>. See<fn>We have <m>f'(x) = 2x\cos(x^2)</m> and <m>f''(x) = -4x^2\sin(x^2)+2\cos(x^2)</m>.</fn>.
   </p>
 
   </review>
   
-  <review>
+    <review>
 
   <p>
-    Show that <m>(-2,3,1)</m> and <m>(4,2,2)</m> are orthogonal. See
-    <fn>The dot product of these two vectors is 
-    <m>(-2,3,1)\cdot(4,2,2) = -8+6+2=0</m>. Because the dot product is zero, the vectors are orthogonal.
-    </fn>.
+    Show that <m>(-2,3,1)</m> and <m>(4,2,2)</m> are orthogonal. See<fn>The dot product of these two vectors is 
+        <m>(-2,3,1)\cdot(4,2,2) = -8+6+2=0</m>. Because the dot product is zero, the vectors are orthogonal.</fn>.
   </p>
 
   </review>
@@ -215,17 +210,17 @@
       The big kids pushing Sammy on the merry-go-round decide to constantly increase the spinning rate. To parametrize Sammy's path, let's replace <m>t</m> with <m>t^2</m> in the original parametrization to obtain <m>\vec r(t) = (3\cos t^2, 3\sin t^2)</m>. Fill in the missing values below, and then answer the questions that follow.
       <me>
         \begin{array}{|c|c|}\hline
-         \vec v \amp  ( -6 t \sin \left(t^2\right),6 t \cos \left(t^2\right) ) \\\hline
-         ds/dt \amp  6 t \\\hline
-         \vec a \amp  
-           \\\hline
-         \vec T \amp  \left(-\sin \left(t^2\right),\cos \left(t^2\right)\right) 
-        \\\hline
-         d\vec T/dt \amp  \left(-2 t \cos \left(t^2\right),-2 t \sin \left(t^2\right)\right)\\\hline
-         \vec \kappa = d\vec T/ds \amp  
-        \\\hline
-         \kappa =|d\vec T/ds| \amp  \frac{1}{3} \\\hline
-        \end{array}
+                 \vec v \amp  ( -6 t \sin \left(t^2\right),6 t \cos \left(t^2\right) ) \\\hline
+                 ds/dt \amp  6 t \\\hline
+                 \vec a \amp  
+                   \\\hline
+                 \vec T \amp  \left(-\sin \left(t^2\right),\cos \left(t^2\right)\right) 
+                \\\hline
+                 d\vec T/dt \amp  \left(-2 t \cos \left(t^2\right),-2 t \sin \left(t^2\right)\right)\\\hline
+                 \vec \kappa = d\vec T/ds \amp  
+                \\\hline
+                 \kappa =|d\vec T/ds| \amp  \frac{1}{3} \\\hline
+                \end{array}
       </me>
       <ol>
         <li>
@@ -314,7 +309,7 @@
 
   <p>
     Let's see if this pattern continues when we swap to a different curve.
-    Rather than try to connect the curve to some physical real world example, let's look at a curve we are familiar with, a parabola. If the pattern holds there as well, then we may have found a key pattern that works with all curves. Then we can take our new knowledge and apply it to ANYTHING (like space flight, roller coasters, missiles, and anything that moves).
+        Rather than try to connect the curve to some physical real world example, let's look at a curve we are familiar with, a parabola. If the pattern holds there as well, then we may have found a key pattern that works with all curves. Then we can take our new knowledge and apply it to ANYTHING (like space flight, roller coasters, missiles, and anything that moves).
   </p>
 
   <p>
@@ -323,8 +318,7 @@
 
   <exploration>
     <p>
-      EXTRA<fn>Use the <url href="\sageurlforcurvature">Sage link</url>.</fn>
-      Consider the curve <m>\vec r(t) = (t, t^2)</m>. The computations get intense, so let's use a computer algebra system, such as Sage (<url href="\sageurlforcurvature">follow this link</url>) to help us. If we don't use a computer, we could spend hours on this exercise. The computer will do all the computations, and give graphs, in seconds.
+      \extrafn{Use the <url href="\sageurlforcurvature">Sage link</url>.}Consider the curve <m>\vec r(t) = (t, t^2)</m>. The computations get intense, so let's use a computer algebra system, such as Sage (<url href="\sageurlforcurvature">follow this link</url>) to help us. If we don't use a computer, we could spend hours on this exercise. The computer will do all the computations, and give graphs, in seconds.
       <ol>
         <li>
           <p>
@@ -513,7 +507,7 @@
 
   <exploration>
     <p>
-      Consider the helix <m>\vec r(t)=(4\cos t,4\sin t, 3t)</m>. EXTRA<fn>Because the speed is constant, many of the computations are simplified. You can use the <url href="\sageurlforcurvature">Sage link</url> to check your work.</fn> Compute <m>\vec v</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, and <m>\dfrac{d\vec T}{ds}</m>. Then do the following:
+      Consider the helix <m>\vec r(t)=(4\cos t,4\sin t, 3t)</m>. \extrafn{Because the speed is constant, many of the computations are simplified. You can use the <url href="\sageurlforcurvature">Sage link</url> to check your work.}Compute <m>\vec v</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, and <m>\dfrac{d\vec T}{ds}</m>. Then do the following:
       <ol>
         <li>
           <p>

@@ -29,8 +29,8 @@
   </p>
 
   <blockquote>
-  A change in the output <m>y</m> equals the derivative multiplied by  a change in the input <m>x</m>. To get <m>dy</m>, we just need the derivative times <m>dx</m>.
-  </blockquote>
+    A change in the output <m>y</m> equals the derivative multiplied by  a change in the input <m>x</m>. To get <m>dy</m>, we just need the derivative times <m>dx</m>.
+    </blockquote>
 
   <p>
     To get the derivative in all dimensions, we just substitute in vectors to obtain the differential notation <m>d\vec y = f'(\vec x) d\vec x</m>. The derivative is precisely the thing that tells us how to get <m>d\vec y</m> from <m>d\vec x</m>. We'll quickly see that <m>f'(\vec x)</m> must be a matrix, and then we'll start calling it <m>Df</m> instead of <m>f'</m>.
@@ -44,8 +44,7 @@
 
   <exploration xml:id="prob_differential_volume_of_a_cylinder">
     <p>
-      EXTRA<fn>\thomasee{See 3.10 for more practice.}\larsonfive{See Larson ?.} \stewarts{??} </fn>
-      The volume of a right circular cylinder is <m>V(r,h)= \pi r^2 h</m>. Imagine that each of <m>V</m>, <m>r</m>, and <m>h</m> depends on <m>t</m> (we might be collecting rain water in a can, or crushing a cylindrical concentrated juice can, etc.).
+      \extrafn{\thomasee{See 3.10 for more practice.}\larsonfive{See Larson ?.} \stewarts{??} }The volume of a right circular cylinder is <m>V(r,h)= \pi r^2 h</m>. Imagine that each of <m>V</m>, <m>r</m>, and <m>h</m> depends on <m>t</m> (we might be collecting rain water in a can, or crushing a cylindrical concentrated juice can, etc.).
     </p>
     <ol>
     <li>
@@ -99,12 +98,12 @@
 
     <li>
       <p>
-        EXTRA<fn>The matrix <m>\begin{bmatrix}2\pi rh\amp  \pi r^2
-        \end{bmatrix}</m> is the derivative.  The columns we'll call the partial derivatives.  The partial derivatives make up the whole.</fn>Show that we can write <m>dV</m> as the matrix product
+        \extrafn{The matrix <m>\begin{bmatrix}2\pi rh\amp  \pi r^2
+                \end{bmatrix}</m> is the derivative.  The columns we'll call the partial derivatives.  The partial derivatives make up the whole.}Show that we can write <m>dV</m> as the matrix product
         <me>
           dV = \begin{bmatrix}2\pi rh\amp  \pi r^2
-          \end{bmatrix} \begin{bmatrix}dr\\dh
-          \end{bmatrix} .
+                    \end{bmatrix} \begin{bmatrix}dr\\dh
+                    \end{bmatrix} .
         </me>
         How do the columns of this matrix relate to the previous portions of the exercise.
       </p>
@@ -156,13 +155,12 @@
 
     <li>
       <p>
-        EXTRA<fn>The matrix <m>\begin{bmatrix}yz\amp  ?\amp ?
-        \end{bmatrix}</m> is the derivative.  The columns we'll call the partial derivatives.  The partial derivatives make up the whole.</fn>
-        Show that we can write <m>dV</m> as the matrix product (fill in the blanks)
+        \extrafn{The matrix <m>\begin{bmatrix}yz\amp  ?\amp ?
+                \end{bmatrix}</m> is the derivative.  The columns we'll call the partial derivatives.  The partial derivatives make up the whole.}Show that we can write <m>dV</m> as the matrix product (fill in the blanks)
         <me>
           dV = \begin{bmatrix}yz\amp  ?\amp ?
-          \end{bmatrix} \begin{bmatrix}dx\\dy\\dz
-          \end{bmatrix} .
+                    \end{bmatrix} \begin{bmatrix}dx\\dy\\dz
+                    \end{bmatrix} .
         </me>
         How do the columns of this matrix relate to the previous portions of the exercise.
       </p>
@@ -180,12 +178,19 @@
       <ol>
         <li>
           <p>
-            EXTRA<fn>\bmw{Make sure you ask me in class to show you physically exactly how you can see these differential formulas.}</fn>
-             <xref ref="prob_differential_volume_of_a_cylinder">In</xref> we showed that a change in the volume of a cylinder is approximately
+            \extrafn{
+
+            <insight>
+            <p>
+              Make sure you ask me in class to show you physically exactly how you can see these differential formulas.
+            </p>
+            </insight>
+
+            }<xref ref="prob_differential_volume_of_a_cylinder">In</xref> we showed that a change in the volume of a cylinder is approximately
             <me>
               dV = \begin{bmatrix}2\pi rh\amp  \pi r^2
-              \end{bmatrix} \begin{bmatrix}dr\\dh
-              \end{bmatrix} .
+                            \end{bmatrix} \begin{bmatrix}dr\\dh
+                            \end{bmatrix} .
             </me>
             If we know that <m>r=3</m> and <m>h=4</m>, and we know that <m>r</m> could going to increase by about <m>.1</m> and <m>h</m> could increase by about <m>.2</m>, then by about how much will <m>V</m> increase by?
           </p>
@@ -194,8 +199,8 @@
         <li>
           <p>
             The volume of a box is given by <m>V=xyz</m>. <xref ref="prob_volumebox">From</xref> we know the differential of the volume is <m>V=\begin{bmatrix}yz\amp  xz \amp  xy
-            \end{bmatrix} \begin{bmatrix}dx\\dy\\dz
-            \end{bmatrix}</m>. If the current measurements are <m>x=2</m>, <m>y=3</m>, and <m>z=5</m>, and we know that <m>dx=.01</m>, <m>dy=.02</m>, and <m>dz=.03</m>, then by about how much will the volume increase.
+                        \end{bmatrix} \begin{bmatrix}dx\\dy\\dz
+                        \end{bmatrix}</m>. If the current measurements are <m>x=2</m>, <m>y=3</m>, and <m>z=5</m>, and we know that <m>dx=.01</m>, <m>dy=.02</m>, and <m>dz=.03</m>, then by about how much will the volume increase.
           </p>
         </li>
       </ol>
@@ -221,8 +226,8 @@
             Solve for <m>df</m>, and write your answer as the matrix product (fill in the blank)
             <me>
               df = \begin{bmatrix}?\amp  x^2+20\cos(5y)
-              \end{bmatrix} \begin{bmatrix}dx\\dy
-              \end{bmatrix} .
+                            \end{bmatrix} \begin{bmatrix}dx\\dy
+                            \end{bmatrix} .
             </me>
           </p>
         </li>
@@ -250,8 +255,8 @@
           The derivative of <m>f</m> in the previous exercise is the matrix
           <me>
             Df(x,y) = \begin{bmatrix}2xy+3\amp  
-              x^2+20\cos(5y)
-            \end{bmatrix} .
+                          x^2+20\cos(5y)
+                        \end{bmatrix} .
           </me>
           Some people call this the total derivative, as it's made up of two parts, called partial derivatives.
         </p>
@@ -288,9 +293,9 @@
               The partial derivative of <m>f</m> with respect to <m>x</m> is the regular derivative of <m>f</m>, provided we hold every every input variable constant except <m>x</m>. (This is what we did in the first parts of <xref ref="prob_differential_volume_of_a_cylinder">exercises</xref> and <xref ref="prob_volumebox"></xref>.  We'll use the notations
               <me>
                 \frac{\partial f}{\partial x}, 
-                  \frac{\partial}{\partial x}[f],
-                  f_x,
-                  \text{ and } D_x f
+                                  \frac{\partial}{\partial x}[f],
+                                  f_x,
+                                  \text{ and } D_x f
               </me>
               to mean the partial of <m>f</m> with respect to <m>x</m>.
             </p>
@@ -305,11 +310,11 @@
           <li>
             <p>
               The derivative of <m>f</m> is a matrix. The columns of the derivative are the partial derivatives. When there's more than one input variable, we'll use <m>Df</m> rather than <m>f'</m> to talk about derivatives.  The order of the columns must match the order you list the variables in the function. If the function is <m>f(x,y)</m>, then the derivative is 
-               <m>Df(x,y) = \begin{bmatrix}\frac{\partial f}{\partial x}\amp \frac{\partial f}{\partial y}
-              \end{bmatrix} .</m>
-               If the function is <m>V(x,y,z)</m>, then the derivative is 
-               <m>DV(x,y,z) = \begin{bmatrix}\frac{\partial V}{\partial x}\amp \frac{\partial V}{\partial y}\amp \frac{\partial V}{\partial z}
-              \end{bmatrix} .</m>
+                             <m>Df(x,y) = \begin{bmatrix}\frac{\partial f}{\partial x}\amp \frac{\partial f}{\partial y}
+                            \end{bmatrix} .</m>
+                             If the function is <m>V(x,y,z)</m>, then the derivative is 
+                             <m>DV(x,y,z) = \begin{bmatrix}\frac{\partial V}{\partial x}\amp \frac{\partial V}{\partial y}\amp \frac{\partial V}{\partial z}
+                            \end{bmatrix} .</m>
             </p>
           </li>
         </ul>
@@ -323,13 +328,13 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
-        \thomasee{See 14.3: 1-40 for more practice.
-      }
-        \larsonfive{See Larson 13.3:9<ndash />40 for more practice.
-      }
-        \stewarts{See 14.3:15-40 for more practice.
-      } I strongly suggest you practice a lot of this type of exercise until you can compute partial derivatives with ease.</fn>Compute the requested partial and total derivatives.
+      \extrafn{
+              \thomasee{See 14.3: 1-40 for more practice.
+            }
+              \larsonfive{See Larson 13.3:9<ndash />40 for more practice.
+            }
+              \stewarts{See 14.3:15-40 for more practice.
+            } I strongly suggest you practice a lot of this type of exercise until you can compute partial derivatives with ease.}Compute the requested partial and total derivatives.
       <ol>
         <li>
           <p>
@@ -379,7 +384,7 @@
 
   <p>
     We've now seen that the derivative of <m>z=f(x,y)</m> is a matrix <m>Df(x,y) = \begin{bmatrix}f_x \amp  f_y
-    \end{bmatrix}</m>. This is a function itself that has inputs <m>x</m> and <m>y</m>, and outputs <m>f_x</m> and <m>f_y</m>. This means it has 2 inputs and 2 outputs, so it's a vector field. What does the vector field tell us about the original function?
+        \end{bmatrix}</m>. This is a function itself that has inputs <m>x</m> and <m>y</m>, and outputs <m>f_x</m> and <m>f_y</m>. This means it has 2 inputs and 2 outputs, so it's a vector field. What does the vector field tell us about the original function?
   </p>
 
   <exploration>
@@ -488,9 +493,8 @@
   <review>
 
   <p>
-    If you know that a line passes through the point <m>(1,2,3)</m> and is parallel to the vector <m>(4,5,6)</m>, give a vector equation, and parametric equations, of the line. See <fn>A vector equation is <m>\vec r(t) = (4,5,6)t+(1,2,3)</m> or <m>\vec r(t) = (4t+1, 5t+2, 6t+3)</m>.  Parametric equations for this line are 
-    <m>x=4t+1</m>, <m>y=5t+2</m>, and <m>z=6t+3</m>. 
-    </fn> for an answer.
+    If you know that a line passes through the point <m>(1,2,3)</m> and is parallel to the vector <m>(4,5,6)</m>, give a vector equation, and parametric equations, of the line. See<fn>A vector equation is <m>\vec r(t) = (4,5,6)t+(1,2,3)</m> or <m>\vec r(t) = (4t+1, 5t+2, 6t+3)</m>.  Parametric equations for this line are 
+        <m>x=4t+1</m>, <m>y=5t+2</m>, and <m>z=6t+3</m>.</fn>for an answer.
   </p>
 
   </review>
@@ -520,9 +524,9 @@
         <li>
           <p>
             Look at a plot of the surface (use one of the links to the right). Now, suppose an object is on this surface at the point <m>\vec r(3,\pi) = (-3,0,\pi)</m>. At that point, please draw the partial derivatives <m>\vec r_a(3,\pi)</m> and <m>\vec r_t(3,\pi)</m>.
-               EXTRA<fn>Please see <url href="http://aleph.sagemath.org/?z=eJxL0yjRUUjUtNVI1ErOL9Yo0QTytIoz88CsEk2ugsSixNzUkqLM5PiCnPwSjTQdBaAOAx0FE62CTKASjUQdBSMgT1OTCwBCiRSf">Sage</url> 
-                          or <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3D++%28a+cos+t%2C+a+sin+t%2C+t%29+for+t+from+0+to+4+pi+and+a+from+2+to+4">Wolfram Alpha</url> 
-                          for a plot of the surface. Click on either link.</fn>
+                           \extrafn{Please see <url href="http://aleph.sagemath.org/?z=eJxL0yjRUUjUtNVI1ErOL9Yo0QTytIoz88CsEk2ugsSixNzUkqLM5PiCnPwSjTQdBaAOAx0FE62CTKASjUQdBSMgT1OTCwBCiRSf">Sage</url> 
+                                      or <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3D++%28a+cos+t%2C+a+sin+t%2C+t%29+for+t+from+0+to+4+pi+and+a+from+2+to+4">Wolfram Alpha</url> 
+                                      for a plot of the surface. Click on either link.}
           </p>
         </li>
 
@@ -553,7 +557,7 @@
   <review>
 
   <p>
-    If you know that a plane passes through the point <m>(1,2,3)</m> and has normal vector <m>(4,5,6)</m>, then give an equation of the plane. See <fn>An equation of the plane is <m>4(x-1)+5(y-2)+6(y-3)=0</m>. If <m>(x,y,z)</m> is any point in the plane, then the vector <m>(x-1,y-2,z-3)</m> is a vector in the plane, and hence orthogonal to <m>(4,5,6)</m>. The dot product of these two vectors should be equal to zero, which is why the plane's equation is <m>(4,5,6)\cdot (x-1,y-2,z-3)=0</m>.</fn> for an answer.
+    If you know that a plane passes through the point <m>(1,2,3)</m> and has normal vector <m>(4,5,6)</m>, then give an equation of the plane. See<fn>An equation of the plane is <m>4(x-1)+5(y-2)+6(y-3)=0</m>. If <m>(x,y,z)</m> is any point in the plane, then the vector <m>(x-1,y-2,z-3)</m> is a vector in the plane, and hence orthogonal to <m>(4,5,6)</m>. The dot product of these two vectors should be equal to zero, which is why the plane's equation is <m>(4,5,6)\cdot (x-1,y-2,z-3)=0</m>.</fn>for an answer.
   </p>
 
   </review>
@@ -561,7 +565,7 @@
   <exploration>
     <p>
       Consider again the parametric surface <m>\vec r(a,t) = (a\cos t, a\sin t, t)</m> for <m>2\leq a\leq 4</m> and <m>0\leq t\leq 4\pi</m>.
-      We'd like to obtain an equation of the tangent plane to this surface at the point <m>\vec r(3,\pi)</m>. To find a plane we need a point and a normal (orthogonal) vector to the [tangent] plane.
+            We'd like to obtain an equation of the tangent plane to this surface at the point <m>\vec r(3,\pi)</m>. To find a plane we need a point and a normal (orthogonal) vector to the [tangent] plane.
       <ol>
         <li>
           <p>
@@ -596,7 +600,7 @@
 
   <p>
     Since a partial derivative is a function, we can take partial derivatives of that function as well.
-    If we want to first compute a partial with respect to <m>x</m>, and then with respect to <m>y</m>, we would write one of
+        If we want to first compute a partial with respect to <m>x</m>, and then with respect to <m>y</m>, we would write one of
     <me>
       f_{xy}=\ds\frac{\partial}{\partial y}\frac{\partial}{\partial x}f = \frac{\partial}{\partial y}\frac{\partial f}{\partial x} = \frac{\partial^2 f}{\partial y \partial x}.
     </me>
@@ -609,13 +613,13 @@
   <exploration xml:id="prob_second_partials_agree">
     <title>Mixed Partials Agree</title>
     <p>
-      \larsonfive{ EXTRA<fn>See Larson 13.3:71<ndash />80 for more practice.</fn>}
-      Complete the following:
+      \larsonfive{ \extrafn{See Larson 13.3:71<ndash />80 for more practice.}}
+            Complete the following:
       <ol>
         <li>
           <p>
             Let <m>f(x,y)=3xy^3+e^{x}.</m>
-            Compute the four second partials
+                        Compute the four second partials
             <me>
               \ds \frac{\partial^2 f}{ \partial x^2}, \ds\frac{\partial^2 f}{\partial y \partial x}, \ds\frac{\partial^2 f}{\partial y^2},  \text{ and } \ds\frac{\partial^2 f}{\partial x \partial y}.
             </me>

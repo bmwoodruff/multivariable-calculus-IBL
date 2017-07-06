@@ -3,7 +3,20 @@
   <title>Double Integrals</title>
   <introduction>
     <p>
-      This unit covers the following ideas. \valposhort{In preparation for the concept checks and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts.} \bmw{In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.}
+      This unit covers the following ideas.
+
+      <insight>
+        <p>
+          In preparation for the concept checks and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts.
+        </p>
+      </insight>
+
+      <insight>
+        <p>
+          In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.
+        </p>
+      </insight>
+
       <ol>
         <li>
           <p>
@@ -38,7 +51,13 @@
     </p>
 
     <p>
-      \bmw{The following homework problems line up with the topics in class.
+
+      <insight>
+        <p>
+          The following homework problems line up with the topics in class.
+        </p>
+      </insight>
+
     </p>
     <tabular>
       <row bottom="minor">
@@ -286,8 +305,8 @@
     </tabular>
   </introduction>
   <xi:include  href="section11-1.mbx" />
-  <xi:include  href="section11-2.mbx" />
-  <xi:include  href="section11-3.mbx" />
-  <xi:include  href="section11-4.mbx" />
-  <xi:include  href="section11-5.mbx" />
+    <xi:include  href="section11-2.mbx" />
+    <xi:include  href="section11-3.mbx" />
+    <xi:include  href="section11-4.mbx" />
+    <xi:include  href="section11-5.mbx" />
 </chapter>

@@ -62,7 +62,7 @@
     </p>
 
     <p>
-      EXTRA<fn>If you need a reminder of how to compute determinants, refer to <xref ref="sec_Determinants">Section</xref> </fn>
+      \extrafn{If you need a reminder of how to compute determinants, refer to <xref ref="sec_Determinants">Section</xref> }
       <ol>
         <li>
           <p>
@@ -91,10 +91,9 @@
   <theorem>
     <statement>
       <p>
-        EXTRA<fn>Ask me in class to give you an informal picture approach that explains why 
-        <m>dxdy=rdrd\theta</m>.  
-        </fn>
-        If we use the polar coordinate transformation <m>x=r\cos\theta, y=r\sin\theta</m>, then we can switch from <m>(x,y)</m> coordinates to <m>(r,\theta)</m> coordinates if we use
+        \extrafn{Ask me in class to give you an informal picture approach that explains why 
+                <m>dxdy=rdrd\theta</m>.  
+                }If we use the polar coordinate transformation <m>x=r\cos\theta, y=r\sin\theta</m>, then we can switch from <m>(x,y)</m> coordinates to <m>(r,\theta)</m> coordinates if we use
         <me>
           dxdy=|r|drd\theta.
         </me>
@@ -140,8 +139,8 @@
 
   <exploration>
     <p>
-      EXTRA<fn>See <url href="http://aleph.sagemath.org/?q=60eb3051-6680-4031-afba-893277d1ec90">Sage.</url>
-      </fn>Consider the opening exercise for this unit. We want to find the volume under <m>f(x,y)=9-x^2-y^2</m> where <m>x\geq0</m> and <m>z\geq 0</m>. We obtained the integral formula
+      \extrafn{See <url href="http://aleph.sagemath.org/?q=60eb3051-6680-4031-afba-893277d1ec90">Sage.</url>
+            }Consider the opening exercise for this unit. We want to find the volume under <m>f(x,y)=9-x^2-y^2</m> where <m>x\geq0</m> and <m>z\geq 0</m>. We obtained the integral formula
       <me>
         \iint_R f dA = \ds\int_{y=-3}^{y=3} \int_{x=0}^{x=\sqrt{9-y^2}}9-x^2-y^2 dx dy.
       </me>
@@ -173,7 +172,13 @@
     </p>
 
     <p>
-      \bmw{After doing this, in class we'll set up the integral formulas needed to find <m>R_y</m>, the radius of gyration about the <m>y</m>-axis, assuming the density is <m>\delta(x,y)=x^2+y^2</m>.}
+
+      <insight>
+      <p>
+        After doing this, in class we'll set up the integral formulas needed to find <m>R_y</m>, the radius of gyration about the <m>y</m>-axis, assuming the density is <m>\delta(x,y)=x^2+y^2</m>.
+      </p>
+      </insight>
+
     </p>
   </exploration>
 

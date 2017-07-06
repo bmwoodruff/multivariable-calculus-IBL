@@ -15,8 +15,15 @@
 
     <exploration>
       <p>
-        EXTRA<fn>You'll want a computer to help you construct the graphs, particularly <m>h</m>. \bmw{Please use the Mathematica introduction in Brainhoney.} You could use Wolfram Alpha (use the links in the function chapter if you forgot how to graph).</fn>
-        Consider three functions:
+        \extrafn{You'll want a computer to help you construct the graphs, particularly <m>h</m>.
+
+        <insight>
+        <p>
+          Please use the Mathematica introduction in Brainhoney.
+        </p>
+        </insight>
+
+        You could use Wolfram Alpha (use the links in the function chapter if you forgot how to graph).}Consider three functions:
         <ul>
           <li>
             <p>
@@ -45,7 +52,7 @@
       <ol>
         <li>
           <p>
-            Compute <m>\vec \nabla f(x,y)</m>.  Then draw both <m>\vec \nabla f</m> and several level curves of <m>f</m> on the same axes.  EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxljLEOwiAURXe-oltBHybSyeFtjV_gXIIIEYM-QqmWvxejm8vNyc3J8XyFKvAg10nJOik2-u_Dpdqs0LWtgrGElh6FlqxTpMI9NEkOMAjg9Qc-xIhHE2cH9m4S9jdXerAUKZ9NxlNenGBpi5-AfjpbKGsfXLzw0UP312vubr7Si5s5NVlnUwLhXrwBPnA2AQ">Sage</url>.  You can modify these commands to help in the plots below too.</fn>
+            Compute <m>\vec \nabla f(x,y)</m>.  Then draw both <m>\vec \nabla f</m> and several level curves of <m>f</m> on the same axes.  \extrafn{See <url href="http://aleph.sagemath.org/?z=eJxljLEOwiAURXe-oltBHybSyeFtjV_gXIIIEYM-QqmWvxejm8vNyc3J8XyFKvAg10nJOik2-u_Dpdqs0LWtgrGElh6FlqxTpMI9NEkOMAjg9Qc-xIhHE2cH9m4S9jdXerAUKZ9NxlNenGBpi5-AfjpbKGsfXLzw0UP312vubr7Si5s5NVlnUwLhXrwBPnA2AQ">Sage</url>.  You can modify these commands to help in the plots below too.}
           </p>
         </li>
 
@@ -57,8 +64,20 @@
 
         <li>
           <p>
-            Compute <m>\vec \nabla h(x,y)</m>.  \valpo{You do not need to plot this one, I'll show you the plot.}
-               \bmw{Then draw both <m>\vec \nabla h</m> and several level curves of <m>h</m> on the same axes.}
+            Compute <m>\vec \nabla h(x,y)</m>.
+
+            <insight>
+            <p>
+              You do not need to plot this one, I'll show you the plot.
+            </p>
+            </insight>
+
+            <insight>
+            <p>
+              Then draw both <m>\vec \nabla h</m> and several level curves of <m>h</m> on the same axes.
+            </p>
+            </insight>
+
           </p>
         </li>
 
@@ -69,7 +88,13 @@
         </li>
       </ol>
       <p>
-        \bmw{When you present in class, be prepared to provide rough sketches of the level curves and gradients of each function.}
+
+        <insight>
+        <p>
+          When you present in class, be prepared to provide rough sketches of the level curves and gradients of each function.
+        </p>
+        </insight>
+
       </p>
     </exploration>
 
@@ -121,20 +146,18 @@
       In the derivative chapter, we extended differential notation from <m>dy=f' dx</m> to <m>d\vec y = D\vec f d\vec x</m>. The key idea is that a small change in the output variables is approximated by the product of the derivative and a small change in the input variables. As a quick refresher, if we have the function <m>z=f(x,y)</m>, then differential notation states that
       <me>
         dz = \begin{bmatrix}f_x\amp f_y
-        \end{bmatrix}  \begin{bmatrix}dx\\dy
-        \end{bmatrix} .
+                \end{bmatrix}  \begin{bmatrix}dx\\dy
+                \end{bmatrix} .
       </me>
     </p>
 
     <review>
 
     <p>
-      Compute a unit vector in the direction <m>\vec{d}=\langle 1,3 \rangle</m> See <fn> <m>\hat{u}=\frac{\vec{d}}{|\vec{d}|}=\frac{\langle 1,3 \rangle}{\sqrt{1^2+3^2}}=\langle \frac{1}{\sqrt{10}}, \frac{3}{\sqrt{10}} \rangle</m></fn>
-    </p>
+      Compute a unit vector in the direction <m>\vec{d}=\langle 1,3 \rangle</m> See<fn><m>\hat{u}=\frac{\vec{d}}{|\vec{d}|}=\frac{\langle 1,3 \rangle}{\sqrt{1^2+3^2}}=\langle \frac{1}{\sqrt{10}}, \frac{3}{\sqrt{10}} \rangle</m></fn></p>
 
     <p>
-      If you move 1 unit in the <m>\vec{d}</m> direction from <m>(x,y)=(0,1)</m> what is the new point? See <fn><m>(x,y)+\hat{u}=\langle \frac{1}{\sqrt{10}}, 1+\frac{3}{\sqrt{10}} \rangle</m></fn>
-    </p>
+      If you move 1 unit in the <m>\vec{d}</m> direction from <m>(x,y)=(0,1)</m> what is the new point? See<fn><m>(x,y)+\hat{u}=\langle \frac{1}{\sqrt{10}}, 1+\frac{3}{\sqrt{10}} \rangle</m></fn></p>
 
     </review>
 
@@ -213,7 +236,7 @@
     <exploration>
       <p>
         Suppose that <m>z=f(x,y)</m> is a differentiable function (so the derivative is the matrix <m>\begin{bmatrix}f_x\amp f_y
-        \end{bmatrix}</m>). Remember to use differential notation in this exercise.
+                \end{bmatrix}</m>). Remember to use differential notation in this exercise.
         <ol>
           <li>
             <p>
@@ -392,8 +415,8 @@
 
           <li>
             <p>
-              EXTRA<fn>If you're stuck, look at a contour plot of <m>f(x,y) = (x+1)^3-3(x+1)^2-y^2+2</m> in   
-              <url href="http://aleph.sagemath.org/?z=eJxL06jQqdS01ajQNtSMM9Y11oKwjHQr44y0jbiS8_NK8kuL4gty8ks00nSAinWNdIw0dRQ0KqGs5Pyc_KKkxCLbkKLSVE0AbVIWvQ">Sage</url>. Then make your own example.</fn>Create you own topographical map to illustrate the ideas above. Just make sure your map has a section with some contours that are closely packed together, and some that are far apart, as well as a contour that intersects itself. Then on your topographical map, please add a few gradient vectors, where you emphasize which ones are long, and which ones are short. Show us how to find a peak, as well as what the gradient vector would be at the peak.
+              \extrafn{If you're stuck, look at a contour plot of <m>f(x,y) = (x+1)^3-3(x+1)^2-y^2+2</m> in   
+                            <url href="http://aleph.sagemath.org/?z=eJxL06jQqdS01ajQNtSMM9Y11oKwjHQr44y0jbiS8_NK8kuL4gty8ks00nSAinWNdIw0dRQ0KqGs5Pyc_KKkxCLbkKLSVE0AbVIWvQ">Sage</url>. Then make your own example.}Create you own topographical map to illustrate the ideas above. Just make sure your map has a section with some contours that are closely packed together, and some that are far apart, as well as a contour that intersects itself. Then on your topographical map, please add a few gradient vectors, where you emphasize which ones are long, and which ones are short. Show us how to find a peak, as well as what the gradient vector would be at the peak.
             </p>
           </li>
         </ol>

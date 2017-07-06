@@ -17,11 +17,10 @@
     <title>The Cross Product</title>
     <statement>
       <p>
-        EXTRA<fn>This definition is not really a definition.  It is actually a theorem.  If you use the formula given as the definition, then you would need to prove the three facts. We have the tools to give a complete proof of (1) and (3), but we would need a course in linear algebra to prove (2). It shouldn't be too much of a surprise that the cross product is related to area, since it is defined in terms of determinants</fn>
-        The cross product of two vectors <m>\vec u = \left\lt u_1,u_2,u_3\right></m> and <m>\vec v = \left\lt v_1,v_2,v_3\right></m> is a new vector <m>\vec u\times \vec v</m>. This new vector is (1) orthogonal to both <m>\vec u</m> and <m>\vec v</m>, (2) has a length equal to the area of the parallelogram whose sides are these two vectors, and (3) points in the direction your thumb points as you curl the base of your right hand from <m>\vec u</m> to <m>\vec v</m>. The formula for the cross product is
+        \extrafn{This definition is not really a definition.  It is actually a theorem.  If you use the formula given as the definition, then you would need to prove the three facts. We have the tools to give a complete proof of (1) and (3), but we would need a course in linear algebra to prove (2). It shouldn't be too much of a surprise that the cross product is related to area, since it is defined in terms of determinants}The cross product of two vectors <m>\vec u = \left\lt u_1,u_2,u_3\right></m> and <m>\vec v = \left\lt v_1,v_2,v_3\right></m> is a new vector <m>\vec u\times \vec v</m>. This new vector is (1) orthogonal to both <m>\vec u</m> and <m>\vec v</m>, (2) has a length equal to the area of the parallelogram whose sides are these two vectors, and (3) points in the direction your thumb points as you curl the base of your right hand from <m>\vec u</m> to <m>\vec v</m>. The formula for the cross product is
         <me>
           \vec u\times \vec v = \left\lt u_2v_3-u_3v_2,-(u_1v_3-u_3v_1),u_1v_2-u_2v_1\right> = \det\begin{bmatrix}\vec i \amp  \vec j\amp \vec k\\ u_1\amp u_2\amp u_3\\ v_1\amp v_2\amp v_3
-          \end{bmatrix} .
+                    \end{bmatrix} .
         </me>
       </p>
     </statement>
@@ -29,10 +28,10 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
-        \thomasee{See 12.4: 1-8.} 
-        \stewarts{See 12.4:1-7}
-        </fn>Let <m>\vec u=\langle 1,-2,3\rangle</m> and <m>\vec v=\langle 2,0,-1\rangle</m>.
+      \extrafn{
+              \thomasee{See 12.4: 1-8.} 
+              \stewarts{See 12.4:1-7}
+              }Let <m>\vec u=\langle 1,-2,3\rangle</m> and <m>\vec v=\langle 2,0,-1\rangle</m>.
       <ol>
         <li>
           <p>
@@ -57,9 +56,9 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
-        \thomasee{See 12.4: 9-14.} 
-        </fn>Consider the vectors <m>{\ii}=(1,0,0)</m>, <m>{2\jj}=(0,2,0)</m>, and <m>{3\kk}=(0,0,3)</m>.
+      \extrafn{
+              \thomasee{See 12.4: 9-14.} 
+              }Consider the vectors <m>{\ii}=(1,0,0)</m>, <m>{2\jj}=(0,2,0)</m>, and <m>{3\kk}=(0,0,3)</m>.
       <ol>
         <li>
           <p>
@@ -88,10 +87,10 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
-        \thomasee{See 12.4: 15-18.} 
-        \stewarts{See 12.4: 29-32}
-        </fn>Let <m>P=(2,0,0)</m>, <m>Q=(0,3,0)</m>, and <m>R=(0,0,4)</m>. Find a vector that orthogonal to both <m>\vec {PQ}</m> and <m>\vec {PR}</m>. Then find the area of the triangle <m>PQR</m>
+      \extrafn{
+              \thomasee{See 12.4: 15-18.} 
+              \stewarts{See 12.4: 29-32}
+              }Let <m>P=(2,0,0)</m>, <m>Q=(0,3,0)</m>, and <m>R=(0,0,4)</m>. Find a vector that orthogonal to both <m>\vec {PQ}</m> and <m>\vec {PR}</m>. Then find the area of the triangle <m>PQR</m>
     </p>
     <hint>
       <p>

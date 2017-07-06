@@ -3,11 +3,31 @@
   <title>Surface Integrals</title>
   <introduction>
     <p>
-      This unit covers the following ideas. \valposhort{In preparation for the concept checks and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts.} \bmw{In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.}
+      This unit covers the following ideas.
+
+      <insight>
+        <p>
+          In preparation for the concept checks and exam, make sure you have a review packet containing examples that explain and illustrate the following concepts.
+        </p>
+      </insight>
+
+      <insight>
+        <p>
+          In preparation for the quiz and exam, make sure you have a lesson plan containing examples that explain and illustrate the following concepts.
+        </p>
+      </insight>
+
       <ol>
         <li>
           <p>
-            Explain how to setup surface integrals, and use them to compute surface area\bmw{, average value, centroids, center of mass, moments of inertia, and radii of gyration.}
+            Explain how to setup surface integrals, and use them to compute surface area
+
+            <insight>
+              <p>
+                , average value, centroids, center of mass, moments of inertia, and radii of gyration.
+              </p>
+            </insight>
+
           </p>
         </li>
 
@@ -30,6 +50,6 @@
     </p>
   </introduction>
   <xi:include  href="section12-1.mbx" />
-  <xi:include  href="section12-2.mbx" />
-  <xi:include  href="section12-3.mbx" />
+    <xi:include  href="section12-2.mbx" />
+    <xi:include  href="section12-3.mbx" />
 </chapter>

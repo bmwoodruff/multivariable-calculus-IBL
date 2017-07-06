@@ -32,9 +32,9 @@
     </p>
   </introduction>
   <xi:include  href="section2-1.mbx" />
-  <xi:include  href="section2-2.mbx" />
-  <xi:include  href="review_matrices.mbx" />
-  <xi:include  href="section2-4.mbx" />
-  <xi:include  href="section2-5.mbx" />
-  <xi:include  href="section2-6.mbx" />
+    <xi:include  href="section2-2.mbx" />
+    <xi:include  href="review_matrices.mbx" />
+    <xi:include  href="section2-4.mbx" />
+    <xi:include  href="section2-5.mbx" />
+    <xi:include  href="section2-6.mbx" />
 </chapter>
