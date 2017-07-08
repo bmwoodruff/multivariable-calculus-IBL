@@ -41,7 +41,7 @@
 
   <exploration xml:id="prob_chain_rule_review">
     <p>
-      Suppose we know that <m>\ds f'(x) = \frac{\sin(x)}{2x^2+3}</m> and <m>g(x)=\sqrt{x^2+1}</m>. Notice we don't know <m>f(x)</m>. EXTRA<fn> Not knowing a function <m>f</m> is actually quite common in real life. We can often measure how something changes (a derivative) without knowing the function itself.</fn>
+      Suppose we know that <m>\ds f'(x) = \frac{\sin(x)}{2x^2+3}</m> and <m>g(x)=\sqrt{x^2+1}</m>. Notice we don't know <m>f(x)</m>. \extrafn{ Not knowing a function <m>f</m> is actually quite common in real life. We can often measure how something changes (a derivative) without knowing the function itself.}
       <ol>
         <li>
           <p>
@@ -164,7 +164,7 @@
         <li>
           <p>
             On the same 2D graph, include a contour plot of the temperature function <m>f</m>. Make sure you include the level curves that pass through the points in <xref ref="item_1">part</xref>, and write the temperature on each level curve you draw. 
-               EXTRA<fn>If you end up with an ellipse and several concentric circles, then you've done this right.</fn>
+            \extrafn{If you end up with an ellipse and several concentric circles, then you've done this right.}
           </p>
         </li>
 
@@ -172,7 +172,7 @@
           <p>
             As the horse runs around, the temperature of the air around the horse is constantly changing. 
             At which <m>t</m> does the temperature around the horse reach a maximum?  A minimum?  Explain, using your graph. 
-             EXTRA<fn>This idea leads to an optimization technique, Lagrange multipliers, later in the semester.</fn>
+            \extrafn{This idea leads to an optimization technique, Lagrange multipliers, later in the semester.}
           </p>
         </li>
 
@@ -299,11 +299,11 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
+      \extrafn{
       \thomasee{See 14.4: 1-6 for more practice. Don't use the formulas in the chapter, rather practice using matrix multiplication.  The formulas are just a way of writing matrix multiplication without writing down the matrices, and only work for functions from <m>\RR^n\to\RR</m>.  Our matrix multiplication method works for any function from <m>\RR^n\to\RR^m</m>.}
       \larsonfive{See Larson 13.5:1<ndash />6 for more practice (you can check answers in the back of the book).  Don't use the formulas on pages 925<ndash />930.  Instead, use matrix multiplication.  The formulas are just a way of writing matrix multiplication without writing down the matrices, and only work for functions from <m>\RR^n\to\RR</m>.  Our matrix multiplication method works for any function from <m>\RR^n\to\RR^m</m>.}
       \stewarts{ See 14.5:1-12 for more practice. Don't use the formulas in the chapter, rather practice using matrix multiplication.  The formulas are just a way of writing matrix multiplication without writing down the matrices, and only work for functions from <m>\RR^n\to\RR</m>.  Our matrix multiplication method works for any function from <m>\RR^n\to\RR^m</m>. } 
-        </fn>
+      }
     </p>
 
     <p>
@@ -342,12 +342,11 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
+      \extrafn{
       \thomasee{See 14.4: 7-12 for more practice.}
       \larsonfive{See Larson 13.5:7<ndash />10 for more practice (remember to use matrix multiplication, not the formulas from the book).}
       \stewarts{ See 14.5:1-12 for more practice.} 
-       </fn>
-      Suppose <m>f(x,y,z) = x+2y+3z^2</m> and <m>x=u+v</m>, <m>y=2u-3v</m>, and <m>z=uv</m>. Our goal is to find how much <m>f</m> changes if we were to change <m>u</m> (so <m>\partial f/\partial u</m>) or if we were to change <m>v</m> (so <m>\partial f/\partial v</m>). Try doing this exercise without looking at the steps below, but instead try to follow the patterns in the previous exercise on your own.
+      }Suppose <m>f(x,y,z) = x+2y+3z^2</m> and <m>x=u+v</m>, <m>y=2u-3v</m>, and <m>z=uv</m>. Our goal is to find how much <m>f</m> changes if we were to change <m>u</m> (so <m>\partial f/\partial u</m>) or if we were to change <m>v</m> (so <m>\partial f/\partial v</m>). Try doing this exercise without looking at the steps below, but instead try to follow the patterns in the previous exercise on your own.
       <ol>
         <li>
           <p>
@@ -405,7 +404,7 @@
 
   <p>
     Suppose <m>f(x,y)=x^2+3xy</m> and <m>(x,y) = \vec r(t) = (3t,t^2)</m>.
-    Compute both <m>Df(x,y)</m> and <m>D\vec r(t)</m>. Then explain how you got your answer by writing what you did in terms of partial derivatives and regular derivatives. See <fn>We have 
+    Compute both <m>Df(x,y)</m> and <m>D\vec r(t)</m>. Then explain how you got your answer by writing what you did in terms of partial derivatives and regular derivatives. See<fn>We have 
     <m>Df(x,y) = \begin{bmatrix}2x+3y\amp 3y
     \end{bmatrix}</m> and 
     <m>D\vec r(t) = \begin{bmatrix}3\\2t
@@ -414,8 +413,7 @@
     <m>Df(x,y) = \begin{bmatrix}\partial f/\partial x\amp \partial f/\partial y
     \end{bmatrix}</m> and 
     <m>D\vec r(t) = \begin{bmatrix}dx/dt\\dy/dt
-    \end{bmatrix}</m>.</fn>
-    for an answer.
+    \end{bmatrix}</m>.</fn>for an answer.
   </p>
 
   </review>
@@ -423,15 +421,15 @@
   <exploration>
     <title>General Chain Rule Formulas</title>
     <p>
-      EXTRA<fn>
+      \extrafn{
       \thomasee{See 14.4: 13-24 for more practice. Practice these exercises by using matrix multiplication. The example exercises in the text use a <q>branch diagram,</q> which is just a way to express matrix multiplication without having to introduce matrices.}
       \larsonfive{See Larson 13.5:7<ndash />10 for more practice.}
-      </fn>Complete the following:
+      }Complete the following:
       <ol>
         <li>
           <p>
             Suppose that <m>w=f(x,y,z)</m> and that <m>x,y,z</m> are all function of one variable <m>t</m> (so <m>x=g(t), y=h(t), z=k(t)</m>).  
-             Use the chain rule with matrix multiplication to explain why
+            Use the chain rule with matrix multiplication to explain why
             <me>
               \frac{dw}{dt} 
               = \frac{\partial f}{\partial x}\frac{dg}{dt}+\frac{\partial f}{\partial y}\frac{dh}{dt}+\frac{\partial f}{\partial z}\frac{dk}{dt} 
@@ -462,12 +460,11 @@
 
   <exploration>
     <p>
-      \larsonfive{ EXTRA<fn>See Larson 13.5:19<ndash />26 for more practice.</fn>}
-      EXTRA<fn>
+      \larsonfive{ \extrafn{See Larson 13.5:19<ndash />26 for more practice.}}
+      \extrafn{
       \thomasee{Make sure you practice exercises 14.4: 13-24. Use matrix multiplication, rather than the <q>branch diagram</q> referenced in the text.}
       \larsonfive{See Larson 13.5:7<ndash />10 for more practice.}
-      </fn>
-      Suppose <m>z=f(s,t)</m> and <m>s</m> and <m>t</m> are functions of <m>u</m>, <m>v</m> and <m>w</m>. Use the chain rule to give a general formula for <m>\partial z/\partial u</m>, <m>\partial z/\partial v</m>, and <m>\partial z/\partial w</m>.
+      }Suppose <m>z=f(s,t)</m> and <m>s</m> and <m>t</m> are functions of <m>u</m>, <m>v</m> and <m>w</m>. Use the chain rule to give a general formula for <m>\partial z/\partial u</m>, <m>\partial z/\partial v</m>, and <m>\partial z/\partial w</m>.
     </p>
   </exploration>
 
@@ -475,11 +472,11 @@
 
   <p>
     If <m>w=f(x,y,z)</m> and <m>x,y,z</m> are functions of <m>u</m> and <m>v</m>, obtain formulas for <m>\dfrac{\partial f}{\partial u}</m> and <m>\dfrac{\partial f}{\partial v}</m>.
-    See <fn> We have 
+    See<fn>We have 
     <m>Df(x,y,z)
     =\begin{bmatrix}\dfrac{\partial f}{\partial x}\amp \dfrac{\partial f}{\partial y}\amp \dfrac{\partial f}{\partial z}
     \end{bmatrix}</m>.
- 
+
     The parametrization <m>\vec r(u,v)=(x,y,z)</m> has derivative 
     <m>D\vec r 
     =\begin{bmatrix}\dfrac{\partial x}{\partial u}\amp \dfrac{\partial x}{\partial v}\\
@@ -497,8 +494,7 @@
     \dfrac{\partial f}{\partial z}\dfrac{\partial z}{\partial v}
     \end{bmatrix}</m>. 
 
-    The first column is <m>\dfrac{\partial f}{\partial u}</m>, and the second column is <m>\dfrac{\partial f}{\partial v}</m>.
-    </fn> for an answer.
+    The first column is <m>\dfrac{\partial f}{\partial u}</m>, and the second column is <m>\dfrac{\partial f}{\partial v}</m>.</fn>for an answer.
   </p>
 
   </review>
@@ -509,14 +505,14 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
+      \extrafn{
       \thomasee{See 14.4: 25-32 to practice using the formula you developed.
       }  
       To practice the idea developed in this exercise, show that if <m>w=F(x,y,z)</m> is held constant at <m>w=c</m> and we assume that <m>z=f(x,y)</m> depends on <m>x</m> and <m>y</m>, then <m>\frac{\partial z}{\partial x} = -\frac{F_x}{F_z}</m> and <m>\frac{\partial z}{\partial y} = -\frac{F_y}{F_z}</m>. 
 
       \thomasee{This is done on page 997 at the bottom. }
       \larsonfive{See Larson 13.5:27<ndash />30 for more practice, and see pages 929<ndash />930 for how the book derives these formulas.}
-      </fn> Suppose <m>z=f(x,y)</m>. If <m>z</m> is held constant, this produces a level curve. As an example, if <m>f(x,y) = x^2+3xy-y^3</m> then <m>5=x^2+3xy-y^3</m> is a level curve. Our goal in this exercise is to find <m>dy/dx</m> in terms of partial derivatives of <m>f</m>.
+      }Suppose <m>z=f(x,y)</m>. If <m>z</m> is held constant, this produces a level curve. As an example, if <m>f(x,y) = x^2+3xy-y^3</m> then <m>5=x^2+3xy-y^3</m> is a level curve. Our goal in this exercise is to find <m>dy/dx</m> in terms of partial derivatives of <m>f</m>.
     </p>
 
     <p>
@@ -551,26 +547,44 @@
   </exploration>
 
   <p>
-    \bmw{\section{Wrap Up}
-    Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
 
-    \valposhort{\section{Wrap Up}
-    This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
+    <insight>
+      <title>Wrap Up</title>
+      <p>
+        Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.
+      </p>
+    </insight>
 
-    \instructor{TeX files for these are included in a separate folder in the GitHub Project}
-    \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+    <insight>
+      <title>Wrap Up</title>
+      <p>
+        This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
-    <em>Review Guide Creation</em>
+        \instructor{TeX files for these are included in a separate folder in the GitHub Project}
+        \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+        <em>Review Guide Creation</em>
 
 
-    Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+        Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
 
 
-    As you create this review guide, consider the following:
-    \begin{itemize}
-     \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
-     \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
-    \end{itemize}
-    }
+        As you create this review guide, consider the following:
+        <ul>
+          <li>
+            <p>
+              Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </insight>
+
   </p>
 </section>

@@ -229,7 +229,7 @@
           <cell><m>\vec a 
           = a_T\vec T+a_N\vec N 
           = \left(\frac{d}{dt}|\vec v|\right) \vec T 
-           +\left(\kappa |\vec v|^2\right) \vec N</m></cell>
+          +\left(\kappa |\vec v|^2\right) \vec N</m></cell>
         </row>
         <row bottom="minor">
           <cell></cell>

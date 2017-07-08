@@ -7,35 +7,58 @@
     </p>
 
     <p>
-      We perform matrix multiplication <q>row by column</q>. Wikipedia has an excellent visual illustration of how to do this. See EXTRA<fn> \bmw{The electronic version has links that will open your browser and take you to the web.} \valpo{The electronic version has links that will open your browser and take you to the web.}</fn>
-      <url href="http://en.wikipedia.org/wiki/Matrix_multiplication">Wikipedia</url> for an explanation. Alternatively see <url href="http://www.texample.net/tikz/examples/matrix-multiplication/">texample.net</url> for a visualization of the idea.
+      We perform matrix multiplication <q>row by column</q>. Wikipedia has an excellent visual illustration of how to do this. See \extrafn{
+
+      <insight>
+        <p>
+          The electronic version has links that will open your browser and take you to the web.
+        </p>
+      </insight>
+
+      <insight>
+        <p>
+          The electronic version has links that will open your browser and take you to the web.
+        </p>
+      </insight>
+
+      }<url href="http://en.wikipedia.org/wiki/Matrix_multiplication">Wikipedia</url> for an explanation. Alternatively see <url href="http://www.texample.net/tikz/examples/matrix-multiplication/">texample.net</url> for a visualization of the idea.
     </p>
 
     <exploration>
       <p>
-        EXTRA<fn> 
-          \bmw{For extra practice, make up two small matrices and multiply them.  Use 
-        <url href="http://aleph.sagemath.org/?z=eJxztM1NLCnKrNCIjjbUMdYxiY3V5HJCiJnrGMXqKICkQJSukY4BSIGjlhMA16EPQw">Sage</url>
-        or
-        <url href="http://www.wolframalpha.com/input/?i=%281%2C3%2C4%29+*%28%287%2C2%29%2C%281%2C3%29%2C%28-2%2C0%29%29">Wolfram
+        \extrafn{
+
+        <insight>
+        <p>
+          For extra practice, make up two small matrices and multiply them.  Use 
+          <url href="http://aleph.sagemath.org/?z=eJxztM1NLCnKrNCIjjbUMdYxiY3V5HJCiJnrGMXqKICkQJSukY4BSIGjlhMA16EPQw">Sage</url>
+          or
+          <url href="http://www.wolframalpha.com/input/?i=%281%2C3%2C4%29+*%28%287%2C2%29%2C%281%2C3%29%2C%28-2%2C0%29%29">Wolfram
           Alpha</url> to see if you are correct (click the links to see how to do
-        matrix multiplication in each system).}
-          \valpo{For extra practice, make up two small matrices and multiply them.  Use 
-        <url href="http://aleph.sagemath.org/?z=eJxztM1NLCnKrNCIjjbUMdYxiY3V5HJCiJnrGMXqKICkQJSukY4BSIGjlhMA16EPQw">Sage</url>
-        or
-        <url href="http://www.wolframalpha.com/input/?i=%281%2C3%2C4%29+*%28%287%2C2%29%2C%281%2C3%29%2C%28-2%2C0%29%29">Wolfram
+          matrix multiplication in each system).
+        </p>
+        </insight>
+
+        <insight>
+        <p>
+          For extra practice, make up two small matrices and multiply them.  Use 
+          <url href="http://aleph.sagemath.org/?z=eJxztM1NLCnKrNCIjjbUMdYxiY3V5HJCiJnrGMXqKICkQJSukY4BSIGjlhMA16EPQw">Sage</url>
+          or
+          <url href="http://www.wolframalpha.com/input/?i=%281%2C3%2C4%29+*%28%287%2C2%29%2C%281%2C3%29%2C%28-2%2C0%29%29">Wolfram
           Alpha</url> to see if you are correct (click the links to see how to do
-        matrix multiplication in each system).}
-        </fn>
-        Compute the following matrix products.
+          matrix multiplication in each system).
+        </p>
+        </insight>
+
+        }Compute the following matrix products.
         <ul>
           <li>
             <p>
               <m>\begin{bmatrix}3 \amp  2\amp  1
               \end{bmatrix} 
               \begin{bmatrix}-1 \\
-               2\\
-               0
+              2\\
+              0
               \end{bmatrix}</m>
             </p>
           </li>
@@ -58,8 +81,8 @@
         0 \amp  1\amp  -4
         \end{bmatrix} 
         \begin{bmatrix}-1\amp 3 \amp 0 \\
-         2\amp -1 \amp 0\\
-         0\amp 1 \amp 2
+        2\amp -1 \amp 0\\
+        0\amp 1 \amp 2
         \end{bmatrix}</m>.
       </p>
     </exploration>
@@ -76,7 +99,7 @@
       <statement>
         <p>
           The determinant of a {<m>2\times 2</m>} matrix is the number
-          EXTRA<fn>We use vertical bars next to a matrix to state we want the determinant, so <m>\det A = |A|</m>. </fn>
+          \extrafn{We use vertical bars next to a matrix to state we want the determinant, so <m>\det A = |A|</m>. }
           <md>
             <mrow>\det\begin{bmatrix}a\amp b</mrow>
             <mrow>c\amp d\end{bmatrix} \amp =\begin{vmatrix}a\amp b</mrow>
@@ -86,7 +109,7 @@
 
         <p>
           The determinant of a {<m>3\times 3</m>} matrix is the number
-          EXTRA<fn>Notice the negative sign on the middle term of the {<m>3 \times 3</m>} determinant. Also, notice that we had to compute three determinants of 2 by 2 matrices in order to find the determinant of a 3 by 3.</fn>
+          \extrafn{Notice the negative sign on the middle term of the {<m>3 \times 3</m>} determinant. Also, notice that we had to compute three determinants of 2 by 2 matrices in order to find the determinant of a 3 by 3.}
           <md>
             <mrow>\begin{vmatrix}a\amp b\amp c</mrow>
             <mrow>d\amp e\amp f</mrow>
@@ -102,8 +125,7 @@
 
     <exploration>
       <p>
-        EXTRA<fn>For extra practice, create your own square matrix (2 by 2 or 3 by 3) and compute the determinant by hand. Then use <url href="http://www.wolframalpha.com">Wolfram Alpha</url> to check your work.  Do this until you feel comfortable taking determinants.</fn>
-        Compute
+        \extrafn{For extra practice, create your own square matrix (2 by 2 or 3 by 3) and compute the determinant by hand. Then use <url href="http://www.wolframalpha.com">Wolfram Alpha</url> to check your work.  Do this until you feel comfortable taking determinants.}Compute
         <m>\begin{vmatrix}
         1\amp 2\\
         3\amp 4

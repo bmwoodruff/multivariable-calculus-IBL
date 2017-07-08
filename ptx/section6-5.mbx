@@ -8,9 +8,9 @@
   <exploration>
     <title>Radial fields</title>
     <p>
-      EXTRA<fn>Use <url href="http://aleph.sagemath.org/?z=eJxz06jQqdSp0lSwVdAA0joVmlwFOfkl8WWpySX5RfFpmak5KcYpGm46CkCFusY6xpo6IIUQlkYVhKEJAOGFExs">Sage</url> to plot your vector fields.  
+      \extrafn{Use <url href="http://aleph.sagemath.org/?z=eJxz06jQqdSp0lSwVdAA0joVmlwFOfkl8WWpySX5RfFpmak5KcYpGm46CkCFusY6xpo6IIUQlkYVhKEJAOGFExs">Sage</url> to plot your vector fields.  
 
-      \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1<ndash />19.}</fn>Do the following:
+      \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1<ndash />19.}}Do the following:
       <ol>
         <li>
           <p>
@@ -91,15 +91,14 @@
 
   <exploration xml:id="x3d_parametric_plot">
     <p>
-      EXTRA<fn>Use <url href="http://aleph.sagemath.org/?z=eJwL0ajQqdSp0lSwVYCyuAqKMvNKFJRCNKpsK7QrNRUyi5V0FGA8roLEosTc1JKizOT4gpz8Eg2YhA5Iv66xjjGIVQlhaQIALhka5w">Sage</url> or
+      \extrafn{Use <url href="http://aleph.sagemath.org/?z=eJwL0ajQqdSp0lSwVYCyuAqKMvNKFJRCNKpsK7QrNRUyi5V0FGA8roLEosTc1JKizOT4gpz8Eg2YhA5Iv66xjjGIVQlhaQIALhka5w">Sage</url> or
       <url href="http://wolfr.am/zk2KTu">Wolfram Alpha</url> 
       to plot your parametrization.  
 
-        \thomasee{See 16.5: 1-16 for more practice.}
-        \larsonfive{See Larson 15.5:21<ndash />30 and 15.5, Example 3.}
-        \stewarts{See section 16.6 for more examples}
-        </fn>
-      Consider the surface <m>z=9-x^2-y^2</m> plotted in <xref ref="prob_3dsurface_plot">problem</xref>.
+      \thomasee{See 16.5: 1-16 for more practice.}
+      \larsonfive{See Larson 15.5:21<ndash />30 and 15.5, Example 3.}
+      \stewarts{See section 16.6 for more examples}
+      }Consider the surface <m>z=9-x^2-y^2</m> plotted in <xref ref="prob_3dsurface_plot">problem</xref>.
       <ol>
         <li>
           <p>
@@ -134,12 +133,11 @@
 
   <exploration>
     <p>
-      EXTRA<fn>Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://wolframalpha.com">Wolfram Alpha</url> to plot your parametrization with your bounds (<xref ref="x3d_parametric_plot">see</xref> for examples).  
+      \extrafn{Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://wolframalpha.com">Wolfram Alpha</url> to plot your parametrization with your bounds (<xref ref="x3d_parametric_plot">see</xref> for examples).  
 
-        \thomasee{See 16.5: 1-16 for more practice.}
-        \larsonfive{See Larson 15.5:1<ndash />10}
-        </fn>
-      Again consider the surface <m>z=9-x^2-y^2</m>.
+      \thomasee{See 16.5: 1-16 for more practice.}
+      \larsonfive{See Larson 15.5:1<ndash />10}
+      }Again consider the surface <m>z=9-x^2-y^2</m>.
       <ol>
         <li>
           <p>
@@ -158,12 +156,12 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
-        We did very similar things in <xref ref="graphing_spherical_coordinates">problem</xref>.
+      \extrafn{
+      We did very similar things in <xref ref="graphing_spherical_coordinates">problem</xref>.
 
-        \thomasee{See 16.5: 1-16 for more practice.}
-        \larsonfive{See Larson 15.5:1<ndash />10}
-        </fn>
+      \thomasee{See 16.5: 1-16 for more practice.}
+      \larsonfive{See Larson 15.5:1<ndash />10}
+      }
     </p>
 
     <p>
@@ -176,14 +174,19 @@
 
     <p>
       }
-      \bmw{
-      <me>
-        \vec T(\rho,\phi,\theta) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
-      </me>
-    </p>
 
-    <p>
-      }\larsonfive{
+      <insight>
+      <p>
+        <me>
+          \vec T(\rho,\phi,\theta) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
+        </me>
+      </p>
+
+      <p>
+      </p>
+      </insight>
+
+      \larsonfive{
       <me>
         \vec T(\rho,\theta, \phi) = (\rho\sin\phi\cos \theta, \rho\sin\phi\sin \theta,\rho \cos \phi).
       </me>
@@ -194,7 +197,7 @@
       <ol>
         <li>
           <p>
-            EXTRA<fn>Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://www.wolframalpha.com/">Wolfram Alpha</url> to plot each parametrization (<xref ref="x3d_parametric_plot">see</xref> for examples).</fn>Give a parametrization of the sphere of radius 2, using <m>\phi</m> and <m>\theta</m> as your input variables.
+            \extrafn{Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://www.wolframalpha.com/">Wolfram Alpha</url> to plot each parametrization (<xref ref="x3d_parametric_plot">see</xref> for examples).}Give a parametrization of the sphere of radius 2, using <m>\phi</m> and <m>\theta</m> as your input variables.
           </p>
         </li>
 
@@ -229,7 +232,7 @@
 
   <exploration>
     <p>
-      EXTRA<fn>\larsonfive{See Larson 15.5:21<ndash />30.}</fn>Find parametric equations for the surface <m>x^2+z^2=9</m>.
+      \extrafn{\larsonfive{See Larson 15.5:21<ndash />30.}}Find parametric equations for the surface <m>x^2+z^2=9</m>.
     </p>
     <hint>
       <p>
@@ -239,8 +242,7 @@
     <ol>
       <li>
         <p>
-          EXTRA<fn>Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://www.wolframalpha.com/">Wolfram Alpha</url> to plot each parametrization  (<xref ref="x3d_parametric_plot">see</xref> for examples).</fn>
-           What bounds should you use to obtain the portion of the surface between <m>y=-2</m> and <m>y=3</m>?
+          \extrafn{Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://www.wolframalpha.com/">Wolfram Alpha</url> to plot each parametrization  (<xref ref="x3d_parametric_plot">see</xref> for examples).}What bounds should you use to obtain the portion of the surface between <m>y=-2</m> and <m>y=3</m>?
         </p>
       </li>
 

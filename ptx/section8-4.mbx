@@ -24,15 +24,13 @@
     <review>
 
     <p>
-      Consider the force vector <m>\vec F = (0,-10)</m>, and displacement vector <m>\vec (2,-1)</m>. Compute the projection of <m>\vec F</m> onto <m>\vec d</m>, and then write <m>\vec F</m> as the sum of a vector parallel to <m>\vec d</m> and a vector orthogonal to <m>\vec d</m>. See <fn>
-      The projection is <m>\proj_{\vec d}\vec F = \frac{10}{5}(2,-1) = (4,-2)</m>.  This is the parallel component <m>\vec F_{|| \text{ to } \vec d} =(4,-2)</m>.  To get the orthogonal component, we know that <m>\vec F = \vec F_{|| \text{ to } \vec d} + \vec F_{\perp \text{ to } \vec d}</m>. Vector subtraction gives
+      Consider the force vector <m>\vec F = (0,-10)</m>, and displacement vector <m>\vec (2,-1)</m>. Compute the projection of <m>\vec F</m> onto <m>\vec d</m>, and then write <m>\vec F</m> as the sum of a vector parallel to <m>\vec d</m> and a vector orthogonal to <m>\vec d</m>. See<fn>The projection is <m>\proj_{\vec d}\vec F = \frac{10}{5}(2,-1) = (4,-2)</m>.  This is the parallel component <m>\vec F_{|| \text{ to } \vec d} =(4,-2)</m>.  To get the orthogonal component, we know that <m>\vec F = \vec F_{|| \text{ to } \vec d} + \vec F_{\perp \text{ to } \vec d}</m>. Vector subtraction gives
       <m>\vec F_{\perp \text{ to } \vec d} = \vec F -\vec F_{|| \text{ to } \vec d} = (0,-10)-(4,-2) = (-4,-8)</m>.
       We now write
       <me>
         \vec F = (4,-2) + (-4,-8).
-      </me>
-      </fn>.
-      EXTRA<fn>This is a good time to look back over the projection section from Unit 1: <xref ref="prob_force_intro"></xref></fn>
+      </me></fn>.
+      \extrafn{This is a good time to look back over the projection section from Unit 1: <xref ref="prob_force_intro"></xref>}
     </p>
 
     </review>
@@ -124,8 +122,7 @@
 
     <p>
       The scalars <m>a_T=\dfrac{d}{dt}|\vec v(t)|</m> and <m>a_N=\kappa |\vec v|^2</m>
-      EXTRA<fn>Engineers often use the equivalent formula <m>a_N = \frac{|\vec v|^2}{\rho}</m>, as <m>\rho</m> is a physical distance that they can measure.</fn>
-      are the tangential and normal components of acceleration. All we have to do is write the vector <m>\vec a(t)</m> as the sum of a vector parallel to <m>\vec T</m> and a vector orthogonal to <m>\vec T</m>.
+      \extrafn{Engineers often use the equivalent formula <m>a_N = \frac{|\vec v|^2}{\rho}</m>, as <m>\rho</m> is a physical distance that they can measure.}are the tangential and normal components of acceleration. All we have to do is write the vector <m>\vec a(t)</m> as the sum of a vector parallel to <m>\vec T</m> and a vector orthogonal to <m>\vec T</m>.
     </p>
 
     <p>
@@ -170,8 +167,7 @@
 
     <exploration>
       <p>
-        EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=cSh2Bdd-yTg&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  </fn>
-        Prove that <m>\ds \vec a(t) = a_T\vec T+a_N\vec N=\frac{d}{dt}|\vec v| \vec T + \kappa |\vec v|^2 \vec N.</m> Here's some hints.
+        \extrafn{Watch a <url href="http://www.youtube.com/watch?v=cSh2Bdd-yTg&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  }Prove that <m>\ds \vec a(t) = a_T\vec T+a_N\vec N=\frac{d}{dt}|\vec v| \vec T + \kappa |\vec v|^2 \vec N.</m> Here's some hints.
         <ul>
           <li>
             <p>
@@ -220,13 +216,20 @@
     </exploration>
 
     <p>
-      We can use the above formula for curvature to get a quick way to compute the curvature of a function <m>y=f(x)</m>. If you use the previous exercise, this formula falls out almost instantly. You'd see this formula in dynamics\bmw{, and it shows up on the Fundamentals of Engineering exam (where you just have to use the formula, not prove where it comes from)}. This is the culminating idea from this chapter that you'll use again and again in engineering courses.
+      We can use the above formula for curvature to get a quick way to compute the curvature of a function <m>y=f(x)</m>. If you use the previous exercise, this formula falls out almost instantly. You'd see this formula in dynamics
+
+      <insight>
+        <p>
+          , and it shows up on the Fundamentals of Engineering exam (where you just have to use the formula, not prove where it comes from)
+        </p>
+      </insight>
+
+      . This is the culminating idea from this chapter that you'll use again and again in engineering courses.
     </p>
 
     <exploration xml:id="formula_for_curvature">
       <p>
-        EXTRA<fn>See 13.4: 5.</fn>
-        The function <m>y=f(x)</m> can be given the parametrization <m>\vec r(x) = (x,f(x))</m>. Use this parametrization (and the previous exercise) to show that the curvature is
+        \extrafn{See 13.4: 5.}The function <m>y=f(x)</m> can be given the parametrization <m>\vec r(x) = (x,f(x))</m>. Use this parametrization (and the previous exercise) to show that the curvature is
         <me>
           \kappa(x) = \frac{|f''(x)|}{(1+(f')^2)^{3/2}},
         </me>
@@ -241,7 +244,13 @@
   <subsection>
     <title>Optional: Torsion</title>
     <p>
-      \valpo{We will be skipping this section, however, if you want to see more tie-in to physics and engineering, this skim this section.}
+
+      <insight>
+        <p>
+          We will be skipping this section, however, if you want to see more tie-in to physics and engineering, this skim this section.
+        </p>
+      </insight>
+
     </p>
 
     <definition>
@@ -250,7 +259,7 @@
         <p>
           Let <m>\vec r(t)</m> be a parametrization of a smooth curve <m>C</m> with unit tangent vector <m>\vec T(t)</m>.
           The derivative of <m>\vec B</m> with respect to <m>s</m> tells us how rapidly the plane containing <m>\vec T</m> and <m>\vec N</m> rotates. We'll define the torsion vector to be
-          EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=MVtUc2peJn0&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  </fn>
+          \extrafn{Watch a <url href="http://www.youtube.com/watch?v=MVtUc2peJn0&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  }
           <me>
             \vec \tau = \dfrac{d\vec B}{ds} = \dfrac{d\vec B/dt}{ds/dt}=\dfrac{d\vec B/dt}{|d\vec r/dt|}.
           </me>
@@ -273,10 +282,10 @@
     <exploration>
       <title>Optional</title>
       <p>
-        EXTRA<fn>
+        \extrafn{
         \thomasee{See 13.4: 9-16 and 13.5: 9-16 (the relevant parts) for more practice.}
         \stewarts{TBD?}
-        </fn>Consider the helix <m>r(t)=(3\cos t, 3\sin t, 4t)</m>. In <xref ref="helix_example_of_T_N_and_B">exercise</xref> we found
+        }Consider the helix <m>r(t)=(3\cos t, 3\sin t, 4t)</m>. In <xref ref="helix_example_of_T_N_and_B">exercise</xref> we found
         <md>
           <mrow>\vec T \amp = (-\frac{3}{5}\sin t,\frac{3}{5}\cos t,\frac{4}{5})</mrow>
           <mrow>\vec N \amp = (-\cos t,-\sin t,0)</mrow>
@@ -303,7 +312,7 @@
     <review>
 
     <p>
-      What is the cross product of <m>(1,2,3)</m> and <m>(2,4,6)</m>? If two vectors are parallel, then what is their cross product? In particular, what is the cross product of <m>\vec N</m> and <m>\vec \kappa</m>? See <fn>The cross product of parallel vectors is always the zero vector <m>(0,0,0)</m>. This is because the area of the parallelogram formed using the parallel vectors is always zero. So all three answers are <m>(0,0,0)</m>.</fn> for an answer.
+      What is the cross product of <m>(1,2,3)</m> and <m>(2,4,6)</m>? If two vectors are parallel, then what is their cross product? In particular, what is the cross product of <m>\vec N</m> and <m>\vec \kappa</m>? See<fn>The cross product of parallel vectors is always the zero vector <m>(0,0,0)</m>. This is because the area of the parallelogram formed using the parallel vectors is always zero. So all three answers are <m>(0,0,0)</m>.</fn>for an answer.
     </p>
 
     </review>
@@ -311,8 +320,7 @@
     <exploration>
       <title>Optional</title>
       <p>
-        EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=MVtUc2peJn0&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  </fn>
-        Suppose a curve <m>\vec r(t)</m> has the frame <m>\vec T(t)</m>, <m>\vec N(t)</m>, and <m>\vec B(t)</m>. Prove that <m>\dfrac{d\vec B}{ds}</m> is either parallel to <m>\vec N</m>, or points opposite <m>\vec N</m>. Here are some steps.
+        \extrafn{Watch a <url href="http://www.youtube.com/watch?v=MVtUc2peJn0&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  }Suppose a curve <m>\vec r(t)</m> has the frame <m>\vec T(t)</m>, <m>\vec N(t)</m>, and <m>\vec B(t)</m>. Prove that <m>\dfrac{d\vec B}{ds}</m> is either parallel to <m>\vec N</m>, or points opposite <m>\vec N</m>. Here are some steps.
         <ul>
           <li>
             <p>
@@ -341,27 +349,45 @@
     </exploration>
 
     <p>
-      \bmw{\section{Wrap Up}
-      Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
 
-      \valposhort{\section{Wrap Up}
-      This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
+      <insight>
+        <title>Wrap Up</title>
+        <p>
+          Once you have finished the problems in this \chaptername and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to Brainhoney and download the quiz. Once you have taken the quiz, you can upload your work back to brainhoney and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.
+        </p>
+      </insight>
 
-      \instructor{TeX files for these are included in a separate folder in the GitHub Project}
-      \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+      <insight>
+        <title>Wrap Up</title>
+        <p>
+          This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
-      <em>Review Guide Creation</em>
+          \instructor{TeX files for these are included in a separate folder in the GitHub Project}
+          \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+
+          <em>Review Guide Creation</em>
 
 
-      Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+          Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
 
 
-      As you create this review guide, consider the following:
-      \begin{itemize}
-       \item Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
-       \item Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
-      \end{itemize}
-      }
+          As you create this review guide, consider the following:
+          <ul>
+            <li>
+              <p>
+                Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Think ahead 2-5 years. If you make these lesson plans correctly, you'll be able to look back at your lesson plans for this semester. In about 20-25 pages, you can have the entire course summarized and easy for you to recall.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </insight>
+
     </p>
   </subsection>
 </section>

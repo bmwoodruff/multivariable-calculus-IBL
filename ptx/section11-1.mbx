@@ -94,16 +94,14 @@
   <review>
 
   <p>
-    Consider the parabola <m>z=9-x^2</m> for <m>0\leq x\leq 3</m>. Revolve this parabola half way around the <m>z</m>-axis, and compute the volume of the solid that is inside the paraboloid and above the <m>xy</m>-plane. Do so by considering horizontal semicircular cross sections. See <fn>
-    The area of each cross section is the area of a semicircle, which is <m>A=\frac{1}{2}\pi r^2 = \frac12 \pi x^2</m> as the radius is <m>x</m>. We thicken each cross section up by multiplying by <m>dz</m>, the height of each circular disc. Since the height has a <m>dz</m>, we replace <m>x</m> with <m>x=\sqrt{9-z}</m> in the area formula to get a little bit of volume as <m>dV = \frac{1}{2}\pi (\sqrt{9-z})^2 dz</m>.  The <m>z</m> values range from <m>0</m> to <m>9</m>, which means the volume of the solid is the integral
+    Consider the parabola <m>z=9-x^2</m> for <m>0\leq x\leq 3</m>. Revolve this parabola half way around the <m>z</m>-axis, and compute the volume of the solid that is inside the paraboloid and above the <m>xy</m>-plane. Do so by considering horizontal semicircular cross sections. See<fn>The area of each cross section is the area of a semicircle, which is <m>A=\frac{1}{2}\pi r^2 = \frac12 \pi x^2</m> as the radius is <m>x</m>. We thicken each cross section up by multiplying by <m>dz</m>, the height of each circular disc. Since the height has a <m>dz</m>, we replace <m>x</m> with <m>x=\sqrt{9-z}</m> in the area formula to get a little bit of volume as <m>dV = \frac{1}{2}\pi (\sqrt{9-z})^2 dz</m>.  The <m>z</m> values range from <m>0</m> to <m>9</m>, which means the volume of the solid is the integral
     <me>
       V
       =\int_0^9 \frac{1}{2}\pi (\sqrt{9-z})^2 dz
       =\frac{\pi}{2}\int_0^9  9-z dz
       =\frac{\pi}{2}  \left(9z-\frac{z^2}{2}\right)\bigg|_0^9
       =\frac{81\pi}{4}
-    </me>
-    </fn>.
+    </me></fn>.
   </p>
 
   </review>
@@ -155,7 +153,7 @@
 
   <exploration>
     <p>
-      EXTRA<fn><url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_of_solid_by_letting_x_equal_a_constant">Click on this Sage link</url> to see a picture of how you could obtain this answer by considering cross sections.</fn> The bounds of the integral
+      \extrafn{<url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=cross_sections_of_solid_by_letting_x_equal_a_constant">Click on this Sage link</url> to see a picture of how you could obtain this answer by considering cross sections.}The bounds of the integral
       <me>
         \ds\int_{-3}^{3} \left(\int_0^{\sqrt{9-y^2}}(9-x^2-y^2) dx\right) dy
       </me>
@@ -191,7 +189,7 @@
 
   <exploration>
     <p>
-      EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJx9kMtugzAQRfd8BVIXjJ2BElAWWfAlVYOQgWKJYHfsNsDX17xaRKtu_JJ1zp37WRAEI9qmsgVSwLwaehxwZNmyc7iG_S0Jh1vCmGdUK8tcaWuyUgoLQrWKsmCo2lY9AlS6ENIOWRyl2983KnST6YKKe2VJily3yqYlAHGhDMxehsSN7LbLNSQnQx8IY0wZLu8Yavmc4LQw5PwnCfOedqrT0QUQb3PMMzjugGE6g0cnOB9p_8NcKdy8k11qYRhPwH4N6sDn30BPkDImN5WwUnVrI-bjDkd4DXKufom4WuRk2Z2_YzO_VuRLX3b-S4zRBaMIk-jy6oSmUQ_Yz_FHAuZ9Aa-ooss">Sage</url>.</fn>Consider the solid domain <m>D</m> in space that is beneath the surface <m>f(x,y)=9-x^2-y^2</m> and above the <m>xy</m>-plane, where the <m>x</m> values satisfy <m>x\geq 0</m>. The region is half of a parabolic solid. Our goal in this exercise is to find the volume of the solid <m>D</m>. This is the same solid referred to in the previous two exercises.
+      \extrafn{See <url href="http://aleph.sagemath.org/?z=eJx9kMtugzAQRfd8BVIXjJ2BElAWWfAlVYOQgWKJYHfsNsDX17xaRKtu_JJ1zp37WRAEI9qmsgVSwLwaehxwZNmyc7iG_S0Jh1vCmGdUK8tcaWuyUgoLQrWKsmCo2lY9AlS6ENIOWRyl2983KnST6YKKe2VJily3yqYlAHGhDMxehsSN7LbLNSQnQx8IY0wZLu8Yavmc4LQw5PwnCfOedqrT0QUQb3PMMzjugGE6g0cnOB9p_8NcKdy8k11qYRhPwH4N6sDn30BPkDImN5WwUnVrI-bjDkd4DXKufom4WuRk2Z2_YzO_VuRLX3b-S4zRBaMIk-jy6oSmUQ_Yz_FHAuZ9Aa-ooss">Sage</url>.}Consider the solid domain <m>D</m> in space that is beneath the surface <m>f(x,y)=9-x^2-y^2</m> and above the <m>xy</m>-plane, where the <m>x</m> values satisfy <m>x\geq 0</m>. The region is half of a parabolic solid. Our goal in this exercise is to find the volume of the solid <m>D</m>. This is the same solid referred to in the previous two exercises.
     </p>
     <ol>
     <li>
@@ -227,8 +225,7 @@
 
     <li>
       <p>
-        EXTRA<fn>You should obtain an inequality <m>a\leq x\leq b</m> where <m>a</m> and <m>b</m> are constants. For <m>c\leq y\leq d</m>, you should have functions of <m>x</m> for both <m>c</m> and <m>d</m>. If both involve square roots, you're on the right track.</fn>
-            For which <m>x</m>-values <m>x_0</m> does the plane <m>x=x_0</m> intersect the paraboloid.
+        \extrafn{You should obtain an inequality <m>a\leq x\leq b</m> where <m>a</m> and <m>b</m> are constants. For <m>c\leq y\leq d</m>, you should have functions of <m>x</m> for both <m>c</m> and <m>d</m>. If both involve square roots, you're on the right track.}For which <m>x</m>-values <m>x_0</m> does the plane <m>x=x_0</m> intersect the paraboloid.
       </p>
     </li>
 
@@ -344,8 +341,7 @@
 
         <li>
           <p>
-            EXTRA<fn>Check your work with this <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator">Double Integral Checker written in Sage</url>.</fn>
-            Set up an iterated integral (use the bounds from part 1) to compute the double integral <m>\ds\iint_R (y+4) dA</m>.
+            \extrafn{Check your work with this <url href="http://bmw.byuimath.com/dokuwiki/doku.php?id=double_integral_calculator">Double Integral Checker written in Sage</url>.}Set up an iterated integral (use the bounds from part 1) to compute the double integral <m>\ds\iint_R (y+4) dA</m>.
           </p>
         </li>
 
