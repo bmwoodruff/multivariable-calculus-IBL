@@ -1,0 +1,11 @@
+#!/bin/bash
+for OUTPUT in $(ls multivariable-calculus-IBL/ptx)
+do
+mathbook/script/mbx -v -c latex-image -f svg -d multivariable-calculus-IBL/html/images $OUTPUT
+done
+
+>>>     
+Python Script -- Need to do a path-file join on "filename" first, so path is correct for call.:
+
+for filename in os.listdir('multivariable-calculus-IBL/ptx'):
+	subprocess.call(["mathbook/script/mbx", "-v", "-c", "latex-image", "-f", "svg", "-d", "multivariable-calculus-IBL/html/images",filename])
