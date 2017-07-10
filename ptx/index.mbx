@@ -47,7 +47,6 @@
 
 }
 \newcommand{\sagefluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=flux_calculator}
-\newcommand{}[1]{ EXTRA\footnote{\textcolor{blue}{\textbf{Instructor: }#1}}}
 \newcommand{\sageworkfluxurl}{http://bmw.byuimath.com/dokuwiki/doku.php?id=both_flux_and_work}
 \newcommand{\instructor}[1]{}
 \newcommand{\sagelineintegral}{http://bmw.byuimath.com/dokuwiki/doku.php?id=line_integral_calculator}
