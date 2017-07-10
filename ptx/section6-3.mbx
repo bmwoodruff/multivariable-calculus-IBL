@@ -7,10 +7,9 @@
 
   <exploration xml:id="prob_parametric_surface_example">
     <p>
-      EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxL0yjRUUjUtNVI1ErOL9Yo0QTytIoz88CsEk2ugsSixNzUkqLM5PiCnPwSjTQdBaAOAx0FE62CTKASjUQdBSMgT1OTCwBCiRSf">Sage</url> or <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3D++%28a+cos+t%2C+a+sin+t%2C+t%29+for+t+from+0+to+4+pi+and+a+from+2+to+4">Wolfram Alpha</url>.
+      \extrafn{See <url href="http://aleph.sagemath.org/?z=eJxL0yjRUUjUtNVI1ErOL9Yo0QTytIoz88CsEk2ugsSixNzUkqLM5PiCnPwSjTQdBaAOAx0FE62CTKASjUQdBSMgT1OTCwBCiRSf">Sage</url> or <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3D++%28a+cos+t%2C+a+sin+t%2C+t%29+for+t+from+0+to+4+pi+and+a+from+2+to+4">Wolfram Alpha</url>.
       \larsonfive{More practice in Larson 15.5:1<ndash />6.}
-      </fn>
-      The jet from <xref ref="prob_jet_intro_for_space_curves">problem</xref> is actually accompanied by several jets flying side by side. As all the jets fly, they leave a smoke trail behind them (it's an air show). The smoke from one jet spreads outwards to mix with the neighboring jet, so that it looks like the jets are leaving a rather wide sheet of smoke behind them as they fly.
+      }The jet from <xref ref="prob_jet_intro_for_space_curves">problem</xref> is actually accompanied by several jets flying side by side. As all the jets fly, they leave a smoke trail behind them (it's an air show). The smoke from one jet spreads outwards to mix with the neighboring jet, so that it looks like the jets are leaving a rather wide sheet of smoke behind them as they fly.
     </p>
 
     <p>
@@ -87,13 +86,11 @@
 
   <exploration>
     <p>
-      EXTRA<fn>See <xref ref="differentialtangentline">Section</xref> and <xref ref="def_velocity_acceleration">Definition</xref>.</fn>
-      EXTRA<fn>
-        \thomasee{The text has more practice in 13.1: 19-22.}
-        \larsonfive{More practice in Larson 12.2:23<ndash />30.} 
-        \stewarts{The text has more practice in 13.2:3-8 }
-        </fn>
-      Use the same set up as <xref ref="space_curve_example">problem</xref>, namely
+      \extrafn{See <xref ref="differentialtangentline">Section</xref> and <xref ref="def_velocity_acceleration">Definition</xref>.}\extrafn{
+      \thomasee{The text has more practice in 13.1: 19-22.}
+      \larsonfive{More practice in Larson 12.2:23<ndash />30.} 
+      \stewarts{The text has more practice in 13.2:3-8 }
+      }Use the same set up as <xref ref="space_curve_example">problem</xref>, namely
       <me>
         \vec r(t)=(2\cos t, 2\sin t, t).
       </me>
@@ -106,7 +103,7 @@
           <p>
             Find the first and second derivative of <m>\vec r(t)</m>. 
 
-              Note that <m>\vec{v}(t) = \vec{r}'(t)</m> and <m>\vec{a}(t)=\vec{r}''(t)</m>.
+            Note that <m>\vec{v}(t) = \vec{r}'(t)</m> and <m>\vec{a}(t)=\vec{r}''(t)</m>.
           </p>
         </li>
 
@@ -127,12 +124,12 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
+      \extrafn{
       See <url href="http://aleph.sagemath.org/?z=eJwNxksKgCAUBdB5q3Dmh2eQfWZuJXmIgpAodtt_Dg6crKC92g1IXIfdLoPb6aXz4JowSgz9aVCZhAJZt540aRL89hQRBqM0L_lDq7NR6h-iAhhm">Sage</url> or <url href="http://wolfr.am/ynm3kD">Wolfram Alpha</url>. 
-        \thomasee{The text has more practice in 13.1: 1-8.}
-        \larsonfive{See also Larson 12.3.}
-        \stewarts{The text has more practice in 13.4:3-6}
-        </fn>Consider the pebble from <xref ref="prob_pebble">problem</xref>. The pebble's height was given by <m>y=64-16t^2</m>. The pebble also has some horizontal velocity (it's moving at 3 ft/s to the right). If we let the origin be the base of the 64 ft building, then the position of the pebble at time <m>t</m> is given by <m>\vec r(t) = (3t, 64-16t^2)</m>.
+      \thomasee{The text has more practice in 13.1: 1-8.}
+      \larsonfive{See also Larson 12.3.}
+      \stewarts{The text has more practice in 13.4:3-6}
+      }Consider the pebble from <xref ref="prob_pebble">problem</xref>. The pebble's height was given by <m>y=64-16t^2</m>. The pebble also has some horizontal velocity (it's moving at 3 ft/s to the right). If we let the origin be the base of the 64 ft building, then the position of the pebble at time <m>t</m> is given by <m>\vec r(t) = (3t, 64-16t^2)</m>.
       <ol>
         <li>
           <p>
@@ -154,8 +151,7 @@
 
         <li>
           <p>
-            EXTRA<fn>See <xref ref="differentialtangentline">Section</xref> and <xref ref="def_velocity_acceleration">Definition</xref>.</fn>
-             Find the pebble's velocity and acceleration vectors at <m>t=1</m>? Draw these vectors on your graph with their base at the pebble's position at <m>t=1</m>.
+            \extrafn{See <xref ref="differentialtangentline">Section</xref> and <xref ref="def_velocity_acceleration">Definition</xref>.}Find the pebble's velocity and acceleration vectors at <m>t=1</m>? Draw these vectors on your graph with their base at the pebble's position at <m>t=1</m>.
           </p>
         </li>
 
@@ -194,9 +190,8 @@
   <exploration xml:id="second_parametric_surface_example">
     <title>More Parametric Surfaces</title>
     <p>
-      EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxL0yjVUSjTtNUo1UrOL9Yo09RRKNUqzsyDsOKMNLkKEosSc1NLijKT4wty8ks00nQUQHoMdBRMgEo0ynQMdIy0CjI1NQFPyxVa">Sage</url> or <url href="http://wolfr.am/A90cfW">Wolfram Alpha</url>.
-      </fn>
-      Consider the parametric surface <m>\vec r(u,v)=(u\cos v, u\sin v, u^2)</m> for <m>0\leq u\leq 3</m> and <m>0\leq v\leq 2 \pi</m>.
+      \extrafn{See <url href="http://aleph.sagemath.org/?z=eJxL0yjVUSjTtNUo1UrOL9Yo09RRKNUqzsyDsOKMNLkKEosSc1NLijKT4wty8ks00nQUQHoMdBRMgEo0ynQMdIy0CjI1NQFPyxVa">Sage</url> or <url href="http://wolfr.am/A90cfW">Wolfram Alpha</url>.
+      }Consider the parametric surface <m>\vec r(u,v)=(u\cos v, u\sin v, u^2)</m> for <m>0\leq u\leq 3</m> and <m>0\leq v\leq 2 \pi</m>.
       Construct a graph of this function. To do so, let <m>u</m> equal a constant (such as 1, 2, 3) and then graph the resulting space curve. Then let <m>v</m> equal a constant (such as 0, <m>\pi/2</m>, etc.) and graph the resulting space curve until you can visualize the surface.
     </p>
     <hint>

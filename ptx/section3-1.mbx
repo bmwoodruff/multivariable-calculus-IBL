@@ -77,9 +77,9 @@
 
     <exploration>
       <p>
-        EXTRA<fn>
-          \thomasee{See page 658.}
-          </fn>Consider the line <m>L:y=-p</m>, the point <m>P=(0,p)</m>, and another point <m>Q=(x,y)</m>. Use the distance formula to show that an equation of a parabola with directrix <m>L</m> and focus <m>P</m> is <m>x^2=4py</m>.
+        \extrafn{
+        \thomasee{See page 658.}
+        }Consider the line <m>L:y=-p</m>, the point <m>P=(0,p)</m>, and another point <m>Q=(x,y)</m>. Use the distance formula to show that an equation of a parabola with directrix <m>L</m> and focus <m>P</m> is <m>x^2=4py</m>.
         Then use your work to explain why an equation of a parabola with directrix <m>x=-p</m> and focus <m>(p,0)</m> is <m>y^2=4px</m>.
       </p>
     </exploration>
@@ -101,9 +101,9 @@
 
     <exploration>
       <p>
-        EXTRA<fn>
-          \thomasee{See 11.6: 9-14}
-          </fn>Once the directrix and focus are known, we can give an equation of a parabola. For each of the following, give an equation of the parabola with the stated directrix and focus. Provide a sketch of each parabola.
+        \extrafn{
+        \thomasee{See 11.6: 9-14}
+        }Once the directrix and focus are known, we can give an equation of a parabola. For each of the following, give an equation of the parabola with the stated directrix and focus. Provide a sketch of each parabola.
         <ol>
           <li>
             <p>
@@ -141,9 +141,9 @@
 
     <exploration>
       <p>
-        EXTRA<fn>
-          \thomasee{See 11.6: 9-14}
-          </fn>Each equation below represents a parabola. Find the focus, directrix, and vertex of each parabola, and then provide a rough sketch.
+        \extrafn{
+        \thomasee{See 11.6: 9-14}
+        }Each equation below represents a parabola. Find the focus, directrix, and vertex of each parabola, and then provide a rough sketch.
         <ol>
           <li>
             <p>
@@ -191,7 +191,14 @@
     </definition>
 
     <p>
-      We can derive an equation of an ellipse in a manner very similar to how we obtained an equation of a parabola. The following problem will walk you through this. \bmw{We will not have time to present this problem in class. However, if you would like to complete the problem and write up your solution on the wiki, you can obtain presentation points for doing so. Let me know if you are interested. }
+      We can derive an equation of an ellipse in a manner very similar to how we obtained an equation of a parabola. The following problem will walk you through this.
+
+      <insight>
+        <p>
+          We will not have time to present this problem in class. However, if you would like to complete the problem and write up your solution on the wiki, you can obtain presentation points for doing so. Let me know if you are interested.
+        </p>
+      </insight>
+
     </p>
 
     <exploration>
@@ -243,9 +250,9 @@
 
     <exploration>
       <p>
-        EXTRA<fn>
-          \thomasee{See 11.6: 17-24}
-          </fn>For each ellipse below, graph the ellipse and give the coordinates of the foci and vertexes.
+        \extrafn{
+        \thomasee{See 11.6: 17-24}
+        }For each ellipse below, graph the ellipse and give the coordinates of the foci and vertexes.
         <ol>
           <li>
             <p>
@@ -275,9 +282,9 @@
 
     <exploration>
       <p>
-        EXTRA<fn>
-          \thomasee{See 11.6: 25-26}
-          </fn>Given an equation of each ellipse described below, and provide a rough sketch.
+        \extrafn{
+        \thomasee{See 11.6: 25-26}
+        }Given an equation of each ellipse described below, and provide a rough sketch.
         <ol>
           <li>
             <p>
@@ -295,7 +302,13 @@
     </exploration>
 
     <p>
-      \bmw{Ask me about the reflective properties of an ellipse in class, if I have not told you already. The following problem provides the basis to these reflective properties and is optional. If you wish to present it, let me know. I'll have you type it up prior to presenting in class.}
+
+      <insight>
+        <p>
+          Ask me about the reflective properties of an ellipse in class, if I have not told you already. The following problem provides the basis to these reflective properties and is optional. If you wish to present it, let me know. I'll have you type it up prior to presenting in class.
+        </p>
+      </insight>
+
     </p>
 
     <exploration>
@@ -320,7 +333,14 @@
     </definition>
 
     <p>
-      We can derive an equation of a hyperbola in a manner very similar to how we obtained an equation of an ellipse. The following problem will walk you through this. \bmw{We will not have time to present this problem in class.}
+      We can derive an equation of a hyperbola in a manner very similar to how we obtained an equation of an ellipse. The following problem will walk you through this.
+
+      <insight>
+        <p>
+          We will not have time to present this problem in class.
+        </p>
+      </insight>
+
     </p>
 
     <exploration>
@@ -361,9 +381,9 @@
 
     <exploration>
       <p>
-        EXTRA<fn>
-          \thomasee{See 11.6: 27-34}
-          </fn>Consider the hyperbola <m>\frac{x^2}{a^2}-\frac{y^2}{b^2}=1.</m> Construct a box centered at the origin with corners at <m>(a, \pm b)</m> and <m>(-a,\pm b)</m>. Draw lines through the diagonals of this box. Rewrite the equation of the hyperbola by solving for <m>y</m> and then factoring to show that as <m>x</m> gets large, the hyperbola gets really close to the lines <m>y=\pm \frac{b}{a}x</m>.
+        \extrafn{
+        \thomasee{See 11.6: 27-34}
+        }Consider the hyperbola <m>\frac{x^2}{a^2}-\frac{y^2}{b^2}=1.</m> Construct a box centered at the origin with corners at <m>(a, \pm b)</m> and <m>(-a,\pm b)</m>. Draw lines through the diagonals of this box. Rewrite the equation of the hyperbola by solving for <m>y</m> and then factoring to show that as <m>x</m> gets large, the hyperbola gets really close to the lines <m>y=\pm \frac{b}{a}x</m>.
       </p>
       <hint>
         <p>
@@ -385,9 +405,9 @@
 
     <exploration>
       <p>
-        EXTRA<fn>
-          \thomasee{See 11.6: 27-34}
-          </fn>For each hyperbola below, graph the hyperbola (include the box and asymptotes) and give the coordinates of the foci and vertexes.
+        \extrafn{
+        \thomasee{See 11.6: 27-34}
+        }For each hyperbola below, graph the hyperbola (include the box and asymptotes) and give the coordinates of the foci and vertexes.
         <ol>
           <li>
             <p>
@@ -417,9 +437,9 @@
 
     <exploration>
       <p>
-        EXTRA<fn>
-          \thomasee{See 11.6: 35-38}
-          </fn>Given an equation of each hyperbola described below, and provide a rough sketch.
+        \extrafn{
+        \thomasee{See 11.6: 35-38}
+        }Given an equation of each hyperbola described below, and provide a rough sketch.
         <ol>
           <li>
             <p>
@@ -437,7 +457,13 @@
     </exploration>
 
     <p>
-      \bmw{Ask me about the reflective properties of a hyperbola in class, if I have not told you already. In particular, we can discuss lasers and long range telescopes. The following problem provides the basis to these reflective properties and is optional. If you wish to present it, let me know. I'll have you type it up prior to presenting in class.}
+
+      <insight>
+        <p>
+          Ask me about the reflective properties of a hyperbola in class, if I have not told you already. In particular, we can discuss lasers and long range telescopes. The following problem provides the basis to these reflective properties and is optional. If you wish to present it, let me know. I'll have you type it up prior to presenting in class.
+        </p>
+      </insight>
+
     </p>
 
     <exploration>

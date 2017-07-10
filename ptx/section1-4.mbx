@@ -3,8 +3,7 @@
   <title>Solving Systems of equations</title>
   <exploration>
     <p>
-      EXTRA<fn>For additional practice, make up your own systems of equations. Use \wolfA<nbsp /> to check your work.</fn>
-      Solve the following linear systems of equations.
+      \extrafn{For additional practice, make up your own systems of equations. Use \wolfA<nbsp /> to check your work.}Solve the following linear systems of equations.
       <ul>
         <li>
           <p>
@@ -25,10 +24,9 @@
 
   <exploration>
     <p>
-      EXTRA<fn>This 
-          <url href="http://www.wolframalpha.com/input/?i=Solve+x%2B2y%3D3+and+4x-y%2Bz%3D7+and+x%3Dt">link</url> 
-          will show you how to specify which variable is <m>t</m> when using Wolfram Alpha.</fn>
-      Find all solutions to the linear system
+      \extrafn{This 
+      <url href="http://www.wolframalpha.com/input/?i=Solve+x%2B2y%3D3+and+4x-y%2Bz%3D7+and+x%3Dt">link</url> 
+      will show you how to specify which variable is <m>t</m> when using Wolfram Alpha.}Find all solutions to the linear system
       <m>\begin{cases}x+y+z\amp =3\\2x-y\amp =4
       \end{cases}</m>.
       Since there are more variables than equations, this suggests there is probably not just one solution, but perhaps infinitely many. One common way to deal with solving such a system is to let one variable equal <m>t</m>, and then solve for the other variables in terms of <m>t</m>. Do this three different ways.

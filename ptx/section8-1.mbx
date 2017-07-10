@@ -19,9 +19,7 @@
   <review>
 
   <p>
-    A horse runs once around an elliptical track, which is parametrized by <m>\vec r(t) = (3\cos t,4\sin t)</m>. Set up, do not solve, an integral formula that tells us the distance the horse traveled. What's the displacement? See
-    <fn>The velocity is <m>\vec v(t) = (3\sin t, -4\cos t)</m>. The speed is <m>v(t) = \sqrt{9\sin^2t+16\cos^2t}</m>. The distance traveled is the arc length <m>\ds s=\int_0^{2\pi} \left(\sqrt{9\sin^2t+16\cos^2t}\right)dt</m>. Since the horse's initial and final position are equal, the displacement is zero. Arc length does not equal displacement. </fn>
-    for an answer.
+    A horse runs once around an elliptical track, which is parametrized by <m>\vec r(t) = (3\cos t,4\sin t)</m>. Set up, do not solve, an integral formula that tells us the distance the horse traveled. What's the displacement? See<fn>The velocity is <m>\vec v(t) = (3\sin t, -4\cos t)</m>. The speed is <m>v(t) = \sqrt{9\sin^2t+16\cos^2t}</m>. The distance traveled is the arc length <m>\ds s=\int_0^{2\pi} \left(\sqrt{9\sin^2t+16\cos^2t}\right)dt</m>. Since the horse's initial and final position are equal, the displacement is zero. Arc length does not equal displacement.</fn>for an answer.
   </p>
 
   </review>
@@ -36,9 +34,8 @@
 
   <exploration>
     <p>
-      EXTRA<fn>Watch a <url href="http://www.youtube.com/watch?v=jZpAU2T6iI4&amp;list=PL30EE81142B1ED1F0&amp;index=3&amp;feature=plpp_video">YouTube video</url>.</fn>
-      A space ship travels through the galaxy. Let <m>\vec r(t) = (x,y,z)</m>
-      EXTRA<fn>Technically, we should write <m>\vec r(t) = (x(t),y(t),z(t))</m>. However, we already know that <m>x</m>, <m>y</m>, and <m>z</m> depend on <m>t</m>, hence we'll just leave the dependence on <m>t</m> off.</fn>be the position of the space ship at time <m>t</m>, with the earth at the origin <m>(0,0,0)</m>.
+      \extrafn{Watch a <url href="http://www.youtube.com/watch?v=jZpAU2T6iI4&amp;list=PL30EE81142B1ED1F0&amp;index=3&amp;feature=plpp_video">YouTube video</url>.}A space ship travels through the galaxy. Let <m>\vec r(t) = (x,y,z)</m>
+      \extrafn{Technically, we should write <m>\vec r(t) = (x(t),y(t),z(t))</m>. However, we already know that <m>x</m>, <m>y</m>, and <m>z</m> depend on <m>t</m>, hence we'll just leave the dependence on <m>t</m> off.}be the position of the space ship at time <m>t</m>, with the earth at the origin <m>(0,0,0)</m>.
       <ol>
         <li>
           <p>
@@ -120,12 +117,10 @@
 
   <exploration xml:id="prob_basic_helix">
     <p>
-      EXTRA<fn>Watch TWO <url href="http://www.youtube.com/watch?v=m25oxYTfXfU&amp;list=PL30EE81142B1ED1F0&amp;index=4&amp;feature=plpp_video">YouTube Videos</url> (Arc-Length Parameter and Unit Tangent Vector).  </fn>
-      EXTRA<fn>
+      \extrafn{Watch TWO <url href="http://www.youtube.com/watch?v=m25oxYTfXfU&amp;list=PL30EE81142B1ED1F0&amp;index=4&amp;feature=plpp_video">YouTube Videos</url> (Arc-Length Parameter and Unit Tangent Vector).  }\extrafn{
       \thomasee{See 13.3: 1-10 for more practice.}
       \stewarts{See 13.3:1-6 (finding length) and 13.3:17-20 (finding a unit tangent) for more practice. For 17-20, just find the unit tangent vector (for now)}
-      </fn>
-      Consider the helical space curve <m>C</m> with parameterization <m>\vec r(t)=(\cos t, \sin t, t)</m>.
+      }Consider the helical space curve <m>C</m> with parameterization <m>\vec r(t)=(\cos t, \sin t, t)</m>.
       <ol>
         <li>
           <p>
@@ -169,20 +164,16 @@
   <p>
     Compute <m>\ds \int_0^t 3x^2 dx</m> and <m>\ds \int_0^t 3p^2 dp</m> and <m>\ds \int_0^t 3\tau^2 d\tau</m>.
     Does it matter what you call the variable inside the integral?
-    Then compute <m>\ds\frac{d}{dt} \int_0^t 3\tau^2 d\tau</m>. See
-    <fn>
-    The first integral is <m>x^3|_0^t = t^3</m>. The other two are the same. You can change the variable inside the integral whenever you want.  For this reason, some people call it a dummy variable. 
+    Then compute <m>\ds\frac{d}{dt} \int_0^t 3\tau^2 d\tau</m>. See<fn>The first integral is <m>x^3|_0^t = t^3</m>. The other two are the same. You can change the variable inside the integral whenever you want.  For this reason, some people call it a dummy variable. 
     The last part is <m>\ds\frac{d}{dt} \int_0^t 3\tau^2 d\tau = \frac{d}{dt} t^3 = 3t^2</m>, 
-    we just replaced <m>\tau</m> with <m>t</m> in <m>3\tau^2</m>.</fn>
-    for an answer.
+    we just replaced <m>\tau</m> with <m>t</m> in <m>3\tau^2</m>.</fn>for an answer.
   </p>
 
   </review>
 
   <exploration xml:id="fundamental_theorem_of_calculus_as_it_applies_to_arc_length_parameter">
     <p>
-      EXTRA<fn>You can remember <m>\ds\frac{ds}{dt} = \left|\frac {d\vec r}{dt} \right|</m> as follows. We use the differential <m>ds</m> to represents a change in distance, and <m>dt</m> represents a change in time. So the speed of an object is the change in distance <m>ds</m> over the change in time <m>dt</m>. </fn>
-      Let <m>\vec r(t)=(x,y,z)</m> be a parametrization of a smooth space curve. Let <m>\ds s(t)=\int_0^t \left|\frac {d\vec r}{d\tau} \right|\ d\tau</m>.
+      \extrafn{You can remember <m>\ds\frac{ds}{dt} = \left|\frac {d\vec r}{dt} \right|</m> as follows. We use the differential <m>ds</m> to represents a change in distance, and <m>dt</m> represents a change in time. So the speed of an object is the change in distance <m>ds</m> over the change in time <m>dt</m>. }Let <m>\vec r(t)=(x,y,z)</m> be a parametrization of a smooth space curve. Let <m>\ds s(t)=\int_0^t \left|\frac {d\vec r}{d\tau} \right|\ d\tau</m>.
       <ol>
         <li>
           <p>
@@ -214,10 +205,10 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
+      \extrafn{
       \thomasee{See 13.3: 11-14 for more practice.}
       \stewarts{TBD?}
-      </fn>Consider again the helical space curve <m>\vec r(t)=(\cos t, \sin t, t)</m>. We've shown that <m>s(t) = t\sqrt{2}</m> in <xref ref="prob_basic_helix"></xref>.
+      }Consider again the helical space curve <m>\vec r(t)=(\cos t, \sin t, t)</m>. We've shown that <m>s(t) = t\sqrt{2}</m> in <xref ref="prob_basic_helix"></xref>.
       <ol>
         <li>
           <p>
@@ -278,11 +269,10 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
+      \extrafn{
       \thomasee{See 13.3: 1-10 for more practice.}
       \stewarts{TBD?}
-      </fn>
-      Suppose an object moves along the space curve given by <m>\vec r(t)=(a\cos t,a\sin t,b t)</m>.
+      }Suppose an object moves along the space curve given by <m>\vec r(t)=(a\cos t,a\sin t,b t)</m>.
       <ol>
         <li>
           <p>
@@ -317,17 +307,14 @@
   <review>
 
   <p>
-    Suppose <m>\vec r(t)=(3\cos t,3\sin t,4t)</m>. Compute <m>v</m>, <m>ds/dt</m>, <m>d\vec r/ds</m>, <m>\vec T</m>, and <m>d\vec T/ds</m>. See
-    <fn>
-    We have <m>\vec v = \dfrac{d\vec r}{dt} = (-3\sin t, 3\cos t, 4)</m>. 
+    Suppose <m>\vec r(t)=(3\cos t,3\sin t,4t)</m>. Compute <m>v</m>, <m>ds/dt</m>, <m>d\vec r/ds</m>, <m>\vec T</m>, and <m>d\vec T/ds</m>. See<fn>We have <m>\vec v = \dfrac{d\vec r}{dt} = (-3\sin t, 3\cos t, 4)</m>. 
     The speed is <m>\dfrac{ds}{dt}=|\vec v| = \sqrt{9\sin^2t+9\cos^2t+16}=5</m>.  
     We then compute <m>\dfrac{d\vec r}{ds}=\dfrac{d\vec r/dt}{ds/dt} = \dfrac{1}{5}(-3\sin t, 3\cos t, 4)</m>, 
     which equals <m>\vec T</m>.
     We finally compute
     <me>
       \dfrac{d\vec T}{ds}=\dfrac{d\vec T/dt}{ds/dt}=\left(\dfrac{1}{ds/dt}\right)\dfrac{d\vec T}{dt} = \left(\dfrac{1}{5}\right)\dfrac{1}{5}(-3\cos t, -3\sin t, 0) =  \dfrac{1}{25}(-3\cos t, -3\sin t, 0).
-    </me>
-    </fn> for an answer.
+    </me></fn>for an answer.
   </p>
 
   </review>

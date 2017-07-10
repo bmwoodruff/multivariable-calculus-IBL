@@ -17,16 +17,13 @@
 
   <exploration>
     <p>
-      EXTRA<fn><url href="http://www.youtube.com/watch?v=sYsMcqtXBrc&amp;list=PL04DF68E73B7ECD54&amp;index=1&amp;feature=plpp_video">Watch a YouTube video.</url></fn>
-      EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJx1j8EOgyAQRO98hTeBroniqQe-pFFjECupFQJro39ftPXQxN5mknk7sz1dYGXymi21yNZaEE-RSSq4siEqSEoezBQVI-jb6a4lRchBcGcY8UU0c4xv0C2vINlFUcHMe8o3Ezk1-5durENjpyA7o5AqO1ovU6-7FHAw6jHpEGT5zQbpWt8-NXqjGjdapHtRHtd8NgDnP0fZ5RQoGPzJkzBojSc1B0Dn-GRxjA-XPf8GnQ5jSA">Sage</url> for a picture of this sheet.</fn>
-      Consider the surface in space that is below the function
+      \extrafn{<url href="http://www.youtube.com/watch?v=sYsMcqtXBrc&amp;list=PL04DF68E73B7ECD54&amp;index=1&amp;feature=plpp_video">Watch a YouTube video.</url>}\extrafn{See <url href="http://aleph.sagemath.org/?z=eJx1j8EOgyAQRO98hTeBroniqQe-pFFjECupFQJro39ftPXQxN5mknk7sz1dYGXymi21yNZaEE-RSSq4siEqSEoezBQVI-jb6a4lRchBcGcY8UU0c4xv0C2vINlFUcHMe8o3Ezk1-5durENjpyA7o5AqO1ovU6-7FHAw6jHpEGT5zQbpWt8-NXqjGjdapHtRHtd8NgDnP0fZ5RQoGPzJkzBojSc1B0Dn-GRxjA-XPf8GnQ5jSA">Sage</url> for a picture of this sheet.}Consider the surface in space that is below the function
       <m>f(x,y)=9-x^2-y^2</m> and above the curve <m>C</m> parametrized by
       <m>\vec r(t)=(2\cos t, 3\sin t)</m> for <m>t\in[0,2\pi]</m>. Think of this region as a metal plate that has been stood up with its base on <m>C</m> where the height above each spot is given by <m>z=f(x,y)</m>.
       <ol>
         <li>
           <p>
-            EXTRA<fn>See <xref ref="horse_track_chain_rule_introduction">exercise</xref></fn>
-              Draw the curve <m>C</m> in the <m>xy</m>-plane.
+            \extrafn{See <xref ref="horse_track_chain_rule_introduction">exercise</xref>}Draw the curve <m>C</m> in the <m>xy</m>-plane.
           </p>
         </li>
 
@@ -51,7 +48,7 @@
 
         <li>
           <p>
-            EXTRA<fn>This  <url href="\sagelineintegral">Sage worksheet</url> will compute the integral.</fn>Find the surface area of the metal sheet. [Use technology to do this integral.]
+            \extrafn{This  <url href="\sagelineintegral">Sage worksheet</url> will compute the integral.}Find the surface area of the metal sheet. [Use technology to do this integral.]
           </p>
         </li>
       </ol>
@@ -66,8 +63,7 @@
     <title>Line Integral</title>
     <statement>
       <p>
-        EXTRA<fn>The line integral is also called the path integral, contour integral, or curve integral.</fn>
-        Let <m>f</m> be a function and let <m>C</m> be a piecewise smooth curve whose parametrization is <m>\vec r(t)</m> for <m>t\in[a,b]</m>. We'll require that the composition <m>f(\vec r(t))</m> be continuous for all <m>t\in [a,b]</m>. Then we define the line integral
+        \extrafn{The line integral is also called the path integral, contour integral, or curve integral.}Let <m>f</m> be a function and let <m>C</m> be a piecewise smooth curve whose parametrization is <m>\vec r(t)</m> for <m>t\in[a,b]</m>. We'll require that the composition <m>f(\vec r(t))</m> be continuous for all <m>t\in [a,b]</m>. Then we define the line integral
         of <m>f</m> over <m>C</m> to be the integral
         <me>
           \int_C f ds 
@@ -79,7 +75,7 @@
   </definition>
 
   <p>
-    Notice that this definition suggests the following four steps. These four steps are the key to computing any line integral. EXTRA<fn>When we ask you to set up a line integral, it means that you should do steps 1<ndash />3, so that you get an integral with a single variable and with bounds that you could plug into a computer or complete by hand.</fn>
+    Notice that this definition suggests the following four steps. These four steps are the key to computing any line integral. \extrafn{When we ask you to set up a line integral, it means that you should do steps 1<ndash />3, so that you get an integral with a single variable and with bounds that you could plug into a computer or complete by hand.}
     <ol>
       <li>
         <p>
@@ -101,7 +97,7 @@
 
       <li>
         <p>
-          EXTRA<fn>You should use the <url href="\sagelineintegral">Sage line integral calculator</url> to check all your answers.</fn>Integrate the product from the previous step. Practice doing this by hand on every exercise, unless it specifically says to use technology. Some of the integrals are impossible to do by hand.
+          \extrafn{You should use the <url href="\sagelineintegral">Sage line integral calculator</url> to check all your answers.}Integrate the product from the previous step. Practice doing this by hand on every exercise, unless it specifically says to use technology. Some of the integrals are impossible to do by hand.
         </p>
       </li>
     </ol>
@@ -109,39 +105,32 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
+      \extrafn{
       \thomasee{See 16.1: 9-32.  Some exercises give you a parametrization, some expect you to come up with one on your own.}
       \stewarts{See 16.2: 1-16, 19-22 for more practice}
-      </fn>
-      EXTRA<fn><url href="\sagelineintegral">Check your answer with Sage.</url></fn>
-      Let <m>f(x,y,z)=x^2+y^2-2z</m> and let <m>C</m> be two coils of the helix <m>\vec r(t)=(3\cos t, 3\sin t, 4t)</m>, starting at <m>t=0</m>. Remember that the parametrization means <m>x=3\cos t</m>, <m>y=3\sin t</m>, and <m>z=4t</m>. Compute <m>\int_Cf ds</m>. [You will have to find the end bound yourself. How much time passes to go around two coils?]
+      }\extrafn{<url href="\sagelineintegral">Check your answer with Sage.</url>}Let <m>f(x,y,z)=x^2+y^2-2z</m> and let <m>C</m> be two coils of the helix <m>\vec r(t)=(3\cos t, 3\sin t, 4t)</m>, starting at <m>t=0</m>. Remember that the parametrization means <m>x=3\cos t</m>, <m>y=3\sin t</m>, and <m>z=4t</m>. Compute <m>\int_Cf ds</m>. [You will have to find the end bound yourself. How much time passes to go around two coils?]
     </p>
   </exploration>
 
   <exploration>
     <p>
-      EXTRA<fn>
+      \extrafn{
       \thomasee{To practice matching parametrization to curves, try 16.1:1-8.}
       \stewarts{To practice matching parametrization to curves, try 16.6:13-18}
-      </fn>
-      EXTRA<fn><url href="\sagelineintegral">Check your answer with Sage.</url></fn>
-      Consider the function <m>f(x,y)=3xy+2</m>. Let <m>C</m> be a circle of radius 4 centered at the origin. Compute <m>\int_C fds</m>. [You'll have to come up with your own parametrization.]
+      }\extrafn{<url href="\sagelineintegral">Check your answer with Sage.</url>}Consider the function <m>f(x,y)=3xy+2</m>. Let <m>C</m> be a circle of radius 4 centered at the origin. Compute <m>\int_C fds</m>. [You'll have to come up with your own parametrization.]
     </p>
   </exploration>
 
   <exploration>
     <p>
-      EXTRA<fn>If you've forgotten how to parametrize line segments, <xref ref="prob_line_equation_practice">see</xref>.</fn>
-      EXTRA<fn><url href="\sagelineintegral">Check your answer with Sage.</url></fn>
-      Let <m>f(x,y,z)=x^2+3yz</m>. Let <m>C</m> be the straight line segment from <m>(1,0,0)</m> to <m>(0,4,5)</m>. Compute <m>\int_C f ds</m>.
+      \extrafn{If you've forgotten how to parametrize line segments, <xref ref="prob_line_equation_practice">see</xref>.}\extrafn{<url href="\sagelineintegral">Check your answer with Sage.</url>}Let <m>f(x,y,z)=x^2+3yz</m>. Let <m>C</m> be the straight line segment from <m>(1,0,0)</m> to <m>(0,4,5)</m>. Compute <m>\int_C f ds</m>.
     </p>
   </exploration>
 
   <exploration>
     <p>
-      EXTRA<fn><xref ref="prob_parametric_curve_in_plane">See</xref> if you forgot how to parametrize plane curves.</fn>\larsonfive{ EXTRA<fn>See Larson 15.2: 1<ndash />20, 63<ndash />70.  Some exercises give you a parametrization, some expect you to come up with one on your own.</fn>}
-      EXTRA<fn><url href="\sagelineintegral">Check your answer with Sage.</url></fn>
-      Let <m>f(x,y)=x^2+y^2-25</m>. Let <m>C</m> be the portion of the parabola <m>y^2=x</m> between <m>(1,-1)</m> and <m>(4,2)</m>. We want to compute <m>\int_C fds</m>.
+      \extrafn{<xref ref="prob_parametric_curve_in_plane">See</xref> if you forgot how to parametrize plane curves.}\larsonfive{ \extrafn{See Larson 15.2: 1<ndash />20, 63<ndash />70.  Some exercises give you a parametrization, some expect you to come up with one on your own.}}
+      \extrafn{<url href="\sagelineintegral">Check your answer with Sage.</url>}Let <m>f(x,y)=x^2+y^2-25</m>. Let <m>C</m> be the portion of the parabola <m>y^2=x</m> between <m>(1,-1)</m> and <m>(4,2)</m>. We want to compute <m>\int_C fds</m>.
       <ol>
         <li>
           <p>
@@ -192,7 +181,7 @@
 
   <exploration>
     <p>
-      EXTRA<fn><url href="http://www.youtube.com/watch?v=6WcN36FbeWc&amp;list=PL04DF68E73B7ECD54&amp;index=3&amp;feature=plpp_video">Watch a YouTube video</url>.  Also, see <url href="http://aleph.sagemath.org/?z=eJw9yjEKhDAQRuF-TzKDvxLTp80lgohodMMORjZBnNtvqm0-XvE8PVB21CueTvl1Sa7zHdeav_Oeomzk0ZZ-GGGHkUH6b-6uLHrkk0IwsBOChWma5oQ9iTi_SImo77R-zliKs_wDRwwhgQ">Sage</url> for a picture.</fn>Let <m>\vec F=(-y,x+y)</m> and <m>C</m> be the triangle with vertices <m>(2,0)</m>, <m>(0,2)</m>, and <m>(0,0)</m>.
+      \extrafn{<url href="http://www.youtube.com/watch?v=6WcN36FbeWc&amp;list=PL04DF68E73B7ECD54&amp;index=3&amp;feature=plpp_video">Watch a YouTube video</url>.  Also, see <url href="http://aleph.sagemath.org/?z=eJw9yjEKhDAQRuF-TzKDvxLTp80lgohodMMORjZBnNtvqm0-XvE8PVB21CueTvl1Sa7zHdeav_Oeomzk0ZZ-GGGHkUH6b-6uLHrkk0IwsBOChWma5oQ9iTi_SImo77R-zliKs_wDRwwhgQ">Sage</url> for a picture.}Let <m>\vec F=(-y,x+y)</m> and <m>C</m> be the triangle with vertices <m>(2,0)</m>, <m>(0,2)</m>, and <m>(0,0)</m>.
       <ol>
         <li>
           <p>
@@ -209,7 +198,7 @@
         <li>
           <p>
             Now find the counterclockwise circulation (work) done by <m>\vec F</m> along <m>C</m>.  You'll have three separate calculations, one for each side. We'll do the flux computation in class. 
-             Check your work on each piece with the <url href="\sageworkfluxurl">Sage calculator</url>.
+            Check your work on each piece with the <url href="\sageworkfluxurl">Sage calculator</url>.
           </p>
         </li>
       </ol>
@@ -218,8 +207,7 @@
 
   <exploration>
     <p>
-      EXTRA<fn>See <url href="http://aleph.sagemath.org/?z=eJxNjEEOQDAUBfdO8j-vSZWtrUs0ZUFFo0FopL09VmwnM9NSROKGVB5FQuRs91voLzuE7egnZ_1ILR5HKJQMSpComQvvVktaP1Qa6BKVMQizG5bVnmejuHg3VIvYqa_-CzduCCO3">Sage</url>. Think of an airplane wing as you solve this exercise.</fn>
-      Consider the vector field <m>\vec F=(2x-y,x)</m>. Let <m>C</m> be the curve that starts at <m>(-2,0)</m>, follows a straight line to <m>(1,3)</m>, and then back to <m>(-2,0)</m> along the parabola <m>y=4-x^2</m>.
+      \extrafn{See <url href="http://aleph.sagemath.org/?z=eJxNjEEOQDAUBfdO8j-vSZWtrUs0ZUFFo0FopL09VmwnM9NSROKGVB5FQuRs91voLzuE7egnZ_1ILR5HKJQMSpComQvvVktaP1Qa6BKVMQizG5bVnmejuHg3VIvYqa_-CzduCCO3">Sage</url>. Think of an airplane wing as you solve this exercise.}Consider the vector field <m>\vec F=(2x-y,x)</m>. Let <m>C</m> be the curve that starts at <m>(-2,0)</m>, follows a straight line to <m>(1,3)</m>, and then back to <m>(-2,0)</m> along the parabola <m>y=4-x^2</m>.
       <ol>
         <li>
           <p>

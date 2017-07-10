@@ -7,20 +7,33 @@
       <ol>
         <li>
           <p>
-            Summarize the ideas you learned in Calculus I and II \valposhort{Math 131 and 132}, including graphing, derivatives (product, quotient, power, chain, trig, exponential, and logarithm rules), and integration (<m>u</m>-sub and integration by parts).
+            Summarize the ideas you learned in Calculus I and II
+
+            <insight>
+              <p>
+                Math 131 and 132
+              </p>
+            </insight>
+
+            , including graphing, derivatives (product, quotient, power, chain, trig, exponential, and logarithm rules), and integration (<m>u</m>-sub and integration by parts).
           </p>
         </li>
 
         <li>
           <p>
-            Compute the differential <m>dy</m> of a function and use it to approximate the change in a function. 
-            \bmw{
-          </p>
-        </li>
+            Compute the differential <m>dy</m> of a function and use it to approximate the change in a function.
 
-        <li>
-          <p>
-            Explain how to perform matrix multiplication and compute determinants of square matrices. }
+            <insight>
+              <p>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Explain how to perform matrix multiplication and compute determinants of square matrices.
+              </p>
+            </insight>
+
           </p>
         </li>
 

@@ -48,7 +48,7 @@
           \end{pmatrix} -\lambda 
           \begin{pmatrix}1\amp 0\amp 0\\0\amp 1\amp 0\\0\amp 0\amp 1
           \end{pmatrix}  \right| = 
-                     \begin{vmatrix} a-\lambda\amp b\amp c\\d\amp e-\lambda\amp f\\g\amp h\amp i-\lambda\end{vmatrix}=0.
+          \begin{vmatrix} a-\lambda\amp b\amp c\\d\amp e-\lambda\amp f\\g\amp h\amp i-\lambda\end{vmatrix}=0.
         </md>
       </p>
 
@@ -109,7 +109,7 @@
           Df(x,y)=\begin{bmatrix}2x-2+y,x+2y
           \end{bmatrix} 
           \text{ and }  
-           D^2f = \begin{bmatrix}2\amp 1 \\1\amp 2
+          D^2f = \begin{bmatrix}2\amp 1 \\1\amp 2
           \end{bmatrix} .
         </me>
       </p>
@@ -119,10 +119,9 @@
       </p>
 
       <p>
-        EXTRA<fn>In this example, the second derivative is constant, so the point <m>(4/3,-2/3)</m> did not change the matrix. In general, the point will affect your matrix. See <url href="http://aleph.sagemath.org/?q=775b0c4a-fc2c-4d39-8c30-ac5256cfb68a">Sage</url> 
+        \extrafn{In this example, the second derivative is constant, so the point <m>(4/3,-2/3)</m> did not change the matrix. In general, the point will affect your matrix. See <url href="http://aleph.sagemath.org/?q=775b0c4a-fc2c-4d39-8c30-ac5256cfb68a">Sage</url> 
         to see a graph which shows the eigenvectors in which the largest and smallest second derivatives occur.
-        </fn>
-        We find the eigenvalues of <m>D^2 f(4/3,-2/3)</m> by solving the equation
+        }We find the eigenvalues of <m>D^2 f(4/3,-2/3)</m> by solving the equation
         <md>
           \begin{vmatrix}2-\lambda\amp 1 \\1\amp 2-\lambda\end{vmatrix} = (2-\lambda)(2-\lambda)-1=0.
         </md>
@@ -143,9 +142,15 @@
 
   <exploration>
     <p>
-      EXTRA<fn>
-      \bmw{See 14.7 for more practice. }
-      </fn>Consider the function <m>f(x,y)=x^2+4xy+y^2</m>.
+      \extrafn{
+
+      <insight>
+      <p>
+        See 14.7 for more practice.
+      </p>
+      </insight>
+
+      }Consider the function <m>f(x,y)=x^2+4xy+y^2</m>.
       <ol>
         <li>
           <p>
