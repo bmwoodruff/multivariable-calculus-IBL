@@ -128,7 +128,7 @@
 
   <exploration>
     <p>
-      \extrafn{See <url href="http://aleph.sagemath.org/?z=eJytjkEOgjAQRfecojvaMBKsYIxhOEpNFaNNgDZItO3pRaguSExcuJo_8_Jf5i57Gltw4GMW9eeL0h02sj3WkkzXPfElWsETJziRXU18hdkcBP-Q0OSLaqAV5lMjrCWut5FB1ZpGndRwMI0eNjUNFEcK1MKqgIIBde_gIYOcQXhxHqCNHA0Os3THIpN8d-Z_U_qXLnh_lfKFNb1d9YOyJ0VbdCM">Sage</url>.}The double cone <m>z^2=x^2+y^2</m> has two halves. Each half is called a nappe. Set up an integral in the coordinate system of your choice that would give the volume of the region that is between the <m>xy</m> plane and the upper nappe of the double cone <m>z^2=x^2+y^2</m>, and between the cylinders <m>x^2+y^2=4</m> and <m>x^2+y^2=16</m>. Then evaluate the integral.
+      <!-- \extrafn{See <url href="http://aleph.sagemath.org/?z=eJytjkEOgjAQRfecojvaMBKsYIxhOEpNFaNNgDZItO3pRaguSExcuJo_8_Jf5i57Gltw4GMW9eeL0h02sj3WkkzXPfElWsETJziRXU18hdkcBP-Q0OSLaqAV5lMjrCWut5FB1ZpGndRwMI0eNjUNFEcK1MKqgIIBde_gIYOcQXhxHqCNHA0Os3THIpN8d-Z_U_qXLnh_lfKFNb1d9YOyJ0VbdCM">Sage</url>.} -->The double cone <m>z^2=x^2+y^2</m> has two halves. Each half is called a nappe. Set up an integral in the coordinate system of your choice that would give the volume of the region that is between the <m>xy</m> plane and the upper nappe of the double cone <m>z^2=x^2+y^2</m>, and between the cylinders <m>x^2+y^2=4</m> and <m>x^2+y^2=16</m>. Then evaluate the integral.
     </p>
   </exploration>
 
@@ -147,7 +147,7 @@
 
   <exploration>
     <p>
-      \extrafn{See <url href="http://aleph.sagemath.org/?z=eJxty00OgyAQQOF9L-IQB6PSnxUnMWqImpTEBgqTFji900V35m3e5vuYAFXCjKUSF6_ty-92sTT73ZFaoWgd34EgTX2dp14gJJQKFU_-T8EWr4J1fcbvkq1ke0675oaPH27i033BRL8tNAdD1umhQ24UB9CiL84">Sage</url>.}Find the volume of the solid domain <m>D</m> in space which is above the cone <m>z=\sqrt{x^2+y^2}</m> and below the paraboloid <m>z=6-x^2-y^2</m>. Use cylindrical coordinates to set up and then evaluate your integral.
+      <!-- \extrafn{See <url href="http://aleph.sagemath.org/?z=eJxty00OgyAQQOF9L-IQB6PSnxUnMWqImpTEBgqTFji900V35m3e5vuYAFXCjKUSF6_ty-92sTT73ZFaoWgd34EgTX2dp14gJJQKFU_-T8EWr4J1fcbvkq1ke0675oaPH27i033BRL8tNAdD1umhQ24UB9CiL84">Sage</url>.} -->Find the volume of the solid domain <m>D</m> in space which is above the cone <m>z=\sqrt{x^2+y^2}</m> and below the paraboloid <m>z=6-x^2-y^2</m>. Use cylindrical coordinates to set up and then evaluate your integral.
     </p>
     <hint>
       <p>

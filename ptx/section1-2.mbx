@@ -19,10 +19,10 @@
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 3.10:19-38.}
       \stewarts{See 3.10:11-22}
-      }If <m>f(x) = x^2\ln(3x+2)</m> and <m>g(t) = e^{2t}\tan(t^2)</m> then compute <m>df</m> and <m>dg</m>.
+      } -->If <m>f(x) = x^2\ln(3x+2)</m> and <m>g(t) = e^{2t}\tan(t^2)</m> then compute <m>df</m> and <m>dg</m>.
     </p>
   </exploration>
 
@@ -36,11 +36,11 @@
 
   <exploration xml:id="differentialtangentline">
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 3.11:39-44. Also see problems 3.11:1-18.}
       \stewarts{See 3.10:1-10 and 3.10:23-31.} 
 
-      The linearization of a function is just an equation of the tangent line where you solve for <m>y</m>.}Consider the function <m>y=f(x) = x^2</m>. This problem has multiple steps, but each is fairly short.
+      The linearization of a function is just an equation of the tangent line where you solve for <m>y</m>.} -->Consider the function <m>y=f(x) = x^2</m>. This problem has multiple steps, but each is fairly short.
       <ol>
         <li>
           <p>
@@ -77,7 +77,7 @@
 
   <exploration xml:id="diff-sphere">
     <p>
-      \extrafn{\thomasee{See 3.11:45-62.} \stewarts{See 3.10}}The manufacturer of a spherical storage tank needs to create a tank with a radius of 3 m. Recall that the volume of a sphere is <m>V(r) = \frac{4}{3}\pi r^3</m>. No manufacturing process is perfect, so the resulting sphere will have a radius of 3 m, plus or minus some small amount <m>dr</m>. The actual radius will be <m>3+dr</m>.
+      <!-- \extrafn{\thomasee{See 3.11:45-62.} \stewarts{See 3.10}} -->The manufacturer of a spherical storage tank needs to create a tank with a radius of 3 m. Recall that the volume of a sphere is <m>V(r) = \frac{4}{3}\pi r^3</m>. No manufacturing process is perfect, so the resulting sphere will have a radius of 3 m, plus or minus some small amount <m>dr</m>. The actual radius will be <m>3+dr</m>.
     </p>
     <ol>
     <li>

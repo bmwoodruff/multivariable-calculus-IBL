@@ -84,10 +84,10 @@
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 12.3:1-8 (part d).} 
       \stewarts{See 12.3: 39-44}
-      }Let <m>\vec u=(-1,2)</m> and <m>\vec v=(3,4)</m>. Compute the <m>\proj_{\vec v}\vec u</m>. Draw <m>\vec u,</m> <m>\vec v</m>, and <m>\proj_{\vec v}\vec u</m> all on one set of axis. Then draw a line segment from the head of <m>\vec u</m> to the head of the projection.
+      } -->Let <m>\vec u=(-1,2)</m> and <m>\vec v=(3,4)</m>. Compute the <m>\proj_{\vec v}\vec u</m>. Draw <m>\vec u,</m> <m>\vec v</m>, and <m>\proj_{\vec v}\vec u</m> all on one set of axis. Then draw a line segment from the head of <m>\vec u</m> to the head of the projection.
     </p>
 
     <p>
@@ -129,10 +129,10 @@
   <exploration xml:id="first_work_problem">
     <title>Projection Application: Work</title>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 12.3: 24, 41-44.} 
       \stewarts{See 12.3:49-52}
-      }Find the amount of work done by the force <m>\vec F=\left\lt 0,-200\right></m> through the displacement <m>\vec d=\left\lt 6,-3\right></m>. Find this by doing the following:
+      } -->Find the amount of work done by the force <m>\vec F=\left\lt 0,-200\right></m> through the displacement <m>\vec d=\left\lt 6,-3\right></m>. Find this by doing the following:
       <ol>
         <li>
           <p>
@@ -158,9 +158,9 @@
   <exploration>
     <title>Projection Application: Planes</title>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \stewarts{See 12.5:69-72}
-      }Consider the points <m>P=(2,4,5)</m>, <m>Q=(1,5,7)</m>, and <m>R=(-1,6,8)</m>.
+      } -->Consider the points <m>P=(2,4,5)</m>, <m>Q=(1,5,7)</m>, and <m>R=(-1,6,8)</m>.
       <ol>
         <li>
           <p>
@@ -202,20 +202,20 @@
       <p>
         This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
-        \instructor{TeX files for these are included in a separate folder in the GitHub Project}
+        <!-- \instructor{TeX files for these are included in a separate folder in the GitHub Project} -->
         \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
 
         <em>Review Guide Creation</em>
 
 
-        Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+        Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. <!-- \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } --> 
 
 
         As you create this review guide, consider the following:
         <ul>
           <li>
             <p>
-              Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+              Before each Celebration of Knowledge <!-- \instructor{This is just an exam} --> we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
             </p>
           </li>
 

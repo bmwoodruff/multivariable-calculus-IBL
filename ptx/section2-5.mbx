@@ -24,11 +24,11 @@
 
   <exploration xml:id="plane_equation_three_points">
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See page 709.}
       \larsonfive{See Larson 11.5.} 
       \stewarts{See pages 819-822}
-      }Let <m>P=(a,b,c)</m> be a point on a plane in 3D. Let <m>\vec n=\langle A,B,C \rangle</m> be a normal vector to the plane (so the angle between the plane and and <m>\vec n</m> is 90<m>^\circ</m>). Let <m>Q=(x,y,z)</m> be another point on the plane. Show that an equation of the plane through point <m>P</m> with normal vector <m>\vec n</m> is
+      } -->Let <m>P=(a,b,c)</m> be a point on a plane in 3D. Let <m>\vec n=\langle A,B,C \rangle</m> be a normal vector to the plane (so the angle between the plane and and <m>\vec n</m> is 90<m>^\circ</m>). Let <m>Q=(x,y,z)</m> be another point on the plane. Show that an equation of the plane through point <m>P</m> with normal vector <m>\vec n</m> is
       <me>
         A(x-a)+B(y-b)+C(z-c)=0.
       </me>
@@ -37,19 +37,19 @@
 
   <exploration xml:id="plane_equation_2_lines">
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \larsonfive{See Larson 11.5:47<ndash />58 for more practice.}
-      }Find an equation of the plane containing the lines <m>\vec r_1(t)=(1,3,0)t+(1,0,2)</m> and <m>\vec r_2(t)=(2,0,-1)t+(2,3,2)</m>.
+      } -->Find an equation of the plane containing the lines <m>\vec r_1(t)=(1,3,0)t+(1,0,2)</m> and <m>\vec r_2(t)=(2,0,-1)t+(2,3,2)</m>.
     </p>
   </exploration>
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 12.5: 21-28.}
       \larsonfive{See Larson 11.5:47<ndash />58 for more practice.} 
       \stewarts{See 12.5: 23-40}
-      }Consider the three points <m>P=(1,0,0), Q=(2,0,-1), R=(0,1,3)</m>. Find an equation of the plane which passes through these three points.
+      } -->Consider the three points <m>P=(1,0,0), Q=(2,0,-1), R=(0,1,3)</m>. Find an equation of the plane which passes through these three points.
     </p>
     <hint>
       <p>
@@ -85,11 +85,11 @@
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 12.5: 57-60.}
       \larsonfive{See Larson 11.5:91<ndash />92 for more practice.} 
       \stewarts{See 12.5: 23-40, 45-47}
-      }Consider the two planes <m>x+2y+3z=4</m> and <m>2x-y+z=0</m>. These planes meet in a line. Find a vector that is parallel to this line. Then find a vector equation of the line.
+      } -->Consider the two planes <m>x+2y+3z=4</m> and <m>2x-y+z=0</m>. These planes meet in a line. Find a vector that is parallel to this line. Then find a vector equation of the line.
     </p>
   </exploration>
 </section>

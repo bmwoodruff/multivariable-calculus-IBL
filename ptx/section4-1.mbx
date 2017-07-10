@@ -39,9 +39,9 @@
       </p>
 
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See 11.1: 1-18. This is the same for all the problems below.}
-        }
+        } -->
         <ol>
           <li>
             <p>
@@ -91,7 +91,7 @@
 
     <exploration xml:id="prob_line_equation_practice">
       <p>
-        \extrafn{What we did in the vector unit should help here.}Find parametric equations for a line that passes through the points <m>(0,1,2)</m> and <m>(3,-2,4)</m>.
+        <!-- \extrafn{What we did in the vector unit should help here.} -->Find parametric equations for a line that passes through the points <m>(0,1,2)</m> and <m>(3,-2,4)</m>.
       </p>
     </exploration>
 
@@ -160,9 +160,9 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See page 728.}
-        }Show that if <m>\vec r(t) = (f(t),g(t))</m>, then the derivative is just <m>\frac{d\vec r}{dt} = (f'(t),g'(t))</m>.
+        } -->Show that if <m>\vec r(t) = (f(t),g(t))</m>, then the derivative is just <m>\frac{d\vec r}{dt} = (f'(t),g'(t))</m>.
       </p>
 
       <p>
@@ -176,9 +176,9 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See 13.1:5-8 and 13.1:19-20}
-        }Consider the parametric curve given by <m>\vec r(t)=( 3\cos t, 3\sin t )</m>.
+        } -->Consider the parametric curve given by <m>\vec r(t)=( 3\cos t, 3\sin t )</m>.
         <ol>
           <li>
             <p>
@@ -308,7 +308,7 @@
           <li xml:id="arc_length_formula" >
 
           <p>
-            Explain why the length of the path given by <m>\vec r(t)</m> for <m>a\leq t\leq b</m> is   \extrafn{This is the arc length formula. Ask me in class for an alternate way to derive this formula.}
+            Explain why the length of the path given by <m>\vec r(t)</m> for <m>a\leq t\leq b</m> is   <!-- \extrafn{This is the arc length formula. Ask me in class for an alternate way to derive this formula.} -->
             <me>
               \text{ Arc Length } =s=\int ds=\int_a^b \left|\frac{d\vec r}{dt}\right| dt=\int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt.
             </me>
@@ -320,13 +320,13 @@
 
     <exploration>
       <p>
-        \extrafn{\thomasee{See 11.2: 25-30}}Use the equation from <xref ref="arc_length_formula"></xref> to find the length of the curve <m>\ds \vec r(t) = \left(t^3,\frac{3t^2}{2}\right)</m> for <m>t\in[1,3]</m>. The notation <m>t\in[1,3]</m> means <m>1\leq t\leq 3</m>. Be prepared to show us your integration steps in class (you'll need a <m>u</m>-substitution).
+        <!-- \extrafn{\thomasee{See 11.2: 25-30}} -->Use the equation from <xref ref="arc_length_formula"></xref> to find the length of the curve <m>\ds \vec r(t) = \left(t^3,\frac{3t^2}{2}\right)</m> for <m>t\in[1,3]</m>. The notation <m>t\in[1,3]</m> means <m>1\leq t\leq 3</m>. Be prepared to show us your integration steps in class (you'll need a <m>u</m>-substitution).
       </p>
     </exploration>
 
     <exploration>
       <p>
-        For each curve below, set up an integral formula which would give the length, and sketch the curve. Do not worry about integrating them. \extrafn{The reason I don't want you to actually compute the integrals is that they will get ugly really fast. Try doing one in Wolfram Alpha and see what the computer gives.}
+        For each curve below, set up an integral formula which would give the length, and sketch the curve. Do not worry about integrating them. <!-- \extrafn{The reason I don't want you to actually compute the integrals is that they will get ugly really fast. Try doing one in Wolfram Alpha and see what the computer gives.} -->
         <ol>
           <li>
             <p>
@@ -364,20 +364,20 @@
         <p>
           This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
-          \instructor{TeX files for these are included in a separate folder in the GitHub Project}
+          <!-- \instructor{TeX files for these are included in a separate folder in the GitHub Project} -->
           \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
 
           <em>Review Guide Creation</em>
 
 
-          Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+          Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. <!-- \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } --> 
 
 
           As you create this review guide, consider the following:
           <ul>
             <li>
               <p>
-                Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+                Before each Celebration of Knowledge <!-- \instructor{This is just an exam} --> we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
               </p>
             </li>
 

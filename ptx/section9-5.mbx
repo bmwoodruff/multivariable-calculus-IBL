@@ -21,8 +21,8 @@
     <exploration xml:id="prob_centroid_of_curve">
       <title>Centroid</title>
       <p>
-        \extrafn{<url href="http://www.youtube.com/watch?v=t7T0MzfgV0Q&amp;list=PL04DF68E73B7ECD54&amp;index=5&amp;feature=plpp_video">Watch a YouTube video.</url>}Notice the word <q>average</q> in the definition of the centroid. Use the concept of average value to explain why the coordinates of the centroid are
-        \extrafn{These are the formulas for the centroid.}
+        <!-- \extrafn{<url href="http://www.youtube.com/watch?v=t7T0MzfgV0Q&amp;list=PL04DF68E73B7ECD54&amp;index=5&amp;feature=plpp_video">Watch a YouTube video.</url>} -->Notice the word <q>average</q> in the definition of the centroid. Use the concept of average value to explain why the coordinates of the centroid are
+        <!-- \extrafn{These are the formulas for the centroid.} -->
         <me>
           \bar x = \frac{\int_C x ds}{\int_C  ds},
           \bar y = \frac{\int_C y ds}{\int_C  ds}, 
@@ -83,7 +83,7 @@
     <exploration xml:id="mass_of_curve">
       <title>Mass</title>
       <p>
-        \extrafn{<url href="http://www.youtube.com/watch?v=mz-Udq5TeS4&amp;list=PL04DF68E73B7ECD54&amp;index=6&amp;feature=plpp_video">Watch a YouTube video.</url>}Suppose a wire <m>C</m> has the parameterization <m>\vec r(t)</m> for <m>t\in[a,b]</m>. Suppose the wire's density at a point <m>(x,y,z)</m> on the wire is given by the function <m>\delta(x,y,z)</m>.
+        <!-- \extrafn{<url href="http://www.youtube.com/watch?v=mz-Udq5TeS4&amp;list=PL04DF68E73B7ECD54&amp;index=6&amp;feature=plpp_video">Watch a YouTube video.</url>} -->Suppose a wire <m>C</m> has the parameterization <m>\vec r(t)</m> for <m>t\in[a,b]</m>. Suppose the wire's density at a point <m>(x,y,z)</m> on the wire is given by the function <m>\delta(x,y,z)</m>.
 
         <insight>
         <p>
@@ -112,7 +112,7 @@
 
     <exploration>
       <p>
-        \larsonfive{ \extrafn{See Larson 15.2:23<ndash />26 for more practice.}}
+        \larsonfive{ <!-- \extrafn{See Larson 15.2:23<ndash />26 for more practice.} -->}
         A wire lies along the straight segment from <m>(0,2,0)</m> to <m>(1,1,3)</m>. The wire's density (mass per unit length) at a point <m>(x,y,z)</m> is <m>\delta(x,y,z)=x+y+z</m>.
         <ol>
           <li>
@@ -140,7 +140,7 @@
   <subsection>
     <title>Center of Mass</title>
     <p>
-      \extrafn{<url href="http://en.wikipedia.org/wiki/Center_of_mass">Wikipedia</url> has some interesting applications of center of mass.}The center of mass of an object is the point where the object balances. In order to calculate the <m>x</m>-coordinate of the center of mass, we average the <m>x</m>-coordinates, but we weight each <m>x</m>-coordinate with its mass. Similarly, we can calculate the <m>y</m> and <m>z</m> coordinates of the center of mass.
+      <!-- \extrafn{<url href="http://en.wikipedia.org/wiki/Center_of_mass">Wikipedia</url> has some interesting applications of center of mass.} -->The center of mass of an object is the point where the object balances. In order to calculate the <m>x</m>-coordinate of the center of mass, we average the <m>x</m>-coordinates, but we weight each <m>x</m>-coordinate with its mass. Similarly, we can calculate the <m>y</m> and <m>z</m> coordinates of the center of mass.
     </p>
 
     <p>
@@ -189,13 +189,13 @@
                   Think of it as a weighted average. If you are still stuck, see the margin
                 </p>
               </hint>
-              \extrafn{
+              <!-- \extrafn{
               <hint>
                 <p>
                   You should get <m>\bar x= \frac{2x_1+5x_2}{2+5}</m>.
                 </p>
               </hint>
-              }
+              } -->
             </p>
           </li>
         </ol>
@@ -205,7 +205,7 @@
 
     <exploration>
       <p>
-        This exercise reinforces what you just did with two points in the previous exercise. However, it now involves two people on a seesaw. \extrafn{See <url href="http://en.wikipedia.org/wiki/Seesaw">Wikipedia</url> for a seesaw picture.}Ignore the mass of the seesaw in your work below (pretend it's an extremely light seesaw, so its mass is negligible compared to the masses of the people).
+        This exercise reinforces what you just did with two points in the previous exercise. However, it now involves two people on a seesaw. <!-- \extrafn{See <url href="http://en.wikipedia.org/wiki/Seesaw">Wikipedia</url> for a seesaw picture.} -->Ignore the mass of the seesaw in your work below (pretend it's an extremely light seesaw, so its mass is negligible compared to the masses of the people).
         <ol>
           <li>
             <p>
@@ -237,7 +237,7 @@
     <exploration xml:id="center_of_mass_of_curve">
       <title>Center of mass</title>
       <p>
-        \extrafn{<url href="http://www.youtube.com/watch?v=mz-Udq5TeS4&amp;list=PL04DF68E73B7ECD54&amp;index=6&amp;feature=plpp_video">Watch a YouTube video.</url>}In the previous exercises we focused on a system with two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> with masses <m>m_1</m> and <m>m_2</m>. The center of mass in the <m>x</m> direction is given by
+        <!-- \extrafn{<url href="http://www.youtube.com/watch?v=mz-Udq5TeS4&amp;list=PL04DF68E73B7ECD54&amp;index=6&amp;feature=plpp_video">Watch a YouTube video.</url>} -->In the previous exercises we focused on a system with two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> with masses <m>m_1</m> and <m>m_2</m>. The center of mass in the <m>x</m> direction is given by
         <me>
           \bar x = \frac{x_1m_1+x_2m_2}{m_1+m_2} = \frac{\sum_{i=1}^2x_i m_i}{\sum_{i=1}^2m_i}
         </me>
@@ -283,7 +283,7 @@
 
     <p>
       If the wire has density <m>\delta</m>, then the formulas for the center of mass are
-      \extrafn{The quantity <m>\int_C x dm</m> is sometimes called the first moment of mass about the <m>yz</m>-plane (so <m>x=0</m>). Notationally, some people write <m>M_{yz} =\int_C x ds</m>. Similarly, we could write <m>M_{xz}=\int_C y dm</m> and <m>M_{xy}=\int_C zdm</m>.  With this notation, we could write the center of mass formulas as
+      <!-- \extrafn{The quantity <m>\int_C x dm</m> is sometimes called the first moment of mass about the <m>yz</m>-plane (so <m>x=0</m>). Notationally, some people write <m>M_{yz} =\int_C x ds</m>. Similarly, we could write <m>M_{xz}=\int_C y dm</m> and <m>M_{xy}=\int_C zdm</m>.  With this notation, we could write the center of mass formulas as
       <me>
         (\bar x,\bar y,\bar z) 
         = 
@@ -294,7 +294,7 @@
         \right)
         .
       </me>
-      }
+      } -->
       <me>
         \bar x = \frac{\int_C x dm}{\int_C  dm},
         \bar y = \frac{\int_C y dm}{\int_C  dm}, 
@@ -388,20 +388,20 @@
         <p>
           This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
-          \instructor{TeX files for these are included in a separate folder in the GitHub Project}
+          <!-- \instructor{TeX files for these are included in a separate folder in the GitHub Project} -->
           \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
 
           <em>Review Guide Creation</em>
 
 
-          Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+          Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. <!-- \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } --> 
 
 
           As you create this review guide, consider the following:
           <ul>
             <li>
               <p>
-                Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+                Before each Celebration of Knowledge <!-- \instructor{This is just an exam} --> we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
               </p>
             </li>
 

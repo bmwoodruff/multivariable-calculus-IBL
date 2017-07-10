@@ -109,7 +109,7 @@
   </exploration>
 
   <p>
-    \extrafn{Gauss developed and expanded many of the ideas in this section while on a map making mission for a king.  He wanted to create extremely high quality 2D images of the 3D world we are in.}
+    <!-- \extrafn{Gauss developed and expanded many of the ideas in this section while on a map making mission for a king.  He wanted to create extremely high quality 2D images of the 3D world we are in.} -->
   </p>
 
   <p>
@@ -179,7 +179,7 @@
     <title>Radius of Curvature</title>
     <statement>
       <p>
-        \extrafn{Watch a <url href="http://www.youtube.com/watch?v=cHez5K1EWPs&amp;list=PL30EE81142B1ED1F0&amp;index=8&amp;feature=plpp_video">YouTube Video</url>.  }When the curvature <m>\kappa</m> of a smooth curve is nonzero, we'll define the radius of curvature, written <m>\rho</m>, to be the reciprocal <m>\rho = \dfrac{1}{\kappa}</m>. The curvature and radius of curvature are inversely related.
+        <!-- \extrafn{Watch a <url href="http://www.youtube.com/watch?v=cHez5K1EWPs&amp;list=PL30EE81142B1ED1F0&amp;index=8&amp;feature=plpp_video">YouTube Video</url>.  } -->When the curvature <m>\kappa</m> of a smooth curve is nonzero, we'll define the radius of curvature, written <m>\rho</m>, to be the reciprocal <m>\rho = \dfrac{1}{\kappa}</m>. The curvature and radius of curvature are inversely related.
       </p>
     </statement>
   </definition>
@@ -318,7 +318,7 @@
 
   <exploration>
     <p>
-      \extrafn{Use the <url href="\sageurlforcurvature">Sage link</url>.}Consider the curve <m>\vec r(t) = (t, t^2)</m>. The computations get intense, so let's use a computer algebra system, such as Sage (<url href="\sageurlforcurvature">follow this link</url>) to help us. If we don't use a computer, we could spend hours on this exercise. The computer will do all the computations, and give graphs, in seconds.
+      <!-- \extrafn{Use the <url href="\sageurlforcurvature">Sage link</url>.} -->Consider the curve <m>\vec r(t) = (t, t^2)</m>. The computations get intense, so let's use a computer algebra system, such as Sage (<url href="\sageurlforcurvature">follow this link</url>) to help us. If we don't use a computer, we could spend hours on this exercise. The computer will do all the computations, and give graphs, in seconds.
       <ol>
         <li>
           <p>
@@ -507,7 +507,7 @@
 
   <exploration>
     <p>
-      Consider the helix <m>\vec r(t)=(4\cos t,4\sin t, 3t)</m>. \extrafn{Because the speed is constant, many of the computations are simplified. You can use the <url href="\sageurlforcurvature">Sage link</url> to check your work.}Compute <m>\vec v</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, and <m>\dfrac{d\vec T}{ds}</m>. Then do the following:
+      Consider the helix <m>\vec r(t)=(4\cos t,4\sin t, 3t)</m>. <!-- \extrafn{Because the speed is constant, many of the computations are simplified. You can use the <url href="\sageurlforcurvature">Sage link</url> to check your work.} -->Compute <m>\vec v</m>, <m>\vec T</m>, <m>\dfrac{d\vec T}{dt}</m>, and <m>\dfrac{d\vec T}{ds}</m>. Then do the following:
       <ol>
         <li>
           <p>

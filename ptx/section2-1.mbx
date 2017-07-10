@@ -62,10 +62,10 @@
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 12.1:41-58.} 
       \stewarts{See 12.1:11-18}
-      }Recall that a circle (or sphere in 3-D) is just a collection of points which are all equal distance away from a center point.
+      } -->Recall that a circle (or sphere in 3-D) is just a collection of points which are all equal distance away from a center point.
       <ol>
         <li>
           <p>
@@ -159,18 +159,18 @@
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 12.2:23-24.} 
       \stewarts{See 12.2:5-6}
-      }Consider the vectors <m>\vec u=\langle 1,2 \rangle</m> and <m>\vec v=\left\lt 3,1\right></m>. Draw <m>\vec u</m>, <m>\vec v</m>, <m>\vec u+\vec v</m>, and <m>\vec u-\vec v</m> with their tail placed at the origin. Then draw <m>\vec v</m> with its tail at the head of <m>\vec u</m>.
+      } -->Consider the vectors <m>\vec u=\langle 1,2 \rangle</m> and <m>\vec v=\left\lt 3,1\right></m>. Draw <m>\vec u</m>, <m>\vec v</m>, <m>\vec u+\vec v</m>, and <m>\vec u-\vec v</m> with their tail placed at the origin. Then draw <m>\vec v</m> with its tail at the head of <m>\vec u</m>.
     </p>
   </exploration>
 
   <exploration xml:id="prob_donkey">
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 11.1: 3,4.}
-      }Consider the vector <m>\vec v=\langle 3,-1 \rangle</m>.
+      } -->Consider the vector <m>\vec v=\langle 3,-1 \rangle</m>.
       <ol>
         <li>
           <p>
@@ -233,9 +233,9 @@
 
   <exploration xml:id="prob_horseline">
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 12.2: 1.}
-      }Suppose a horse races down a path given by the vector-valued function <m>\vec r(t) = (1,2)t+(3,4)</m>. (Remember this is the same as writing <m>(x,y) =  (1,2)t+(3,4)</m> or similarly <m>(x,y)=(1t+3,2t+4)</m>.)
+      } -->Suppose a horse races down a path given by the vector-valued function <m>\vec r(t) = (1,2)t+(3,4)</m>. (Remember this is the same as writing <m>(x,y) =  (1,2)t+(3,4)</m> or similarly <m>(x,y)=(1t+3,2t+4)</m>.)
       <ol>
         <li>
           <p>
@@ -318,10 +318,10 @@
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 12.2: 9,17,25,33 and surrounding.} 
       \stewarts{See 12.2: 23-26, 41, 42}
-      }Consider the two points <m>P=(1,2,3)</m> and <m>Q=(2,-1,0)</m>.
+      } -->Consider the two points <m>P=(1,2,3)</m> and <m>Q=(2,-1,0)</m>.
       <ol>
         <li>
           <p>
@@ -403,10 +403,10 @@
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 12.5: 1-12.} 
       \stewarts{Look at 12.2:34-40}
-      }A raccoon is sitting at point <m>P=(0,2,3)</m>. It starts to climb in the direction <m>\vec v=\left\lt 1,-1,2\right></m>.
+      } -->A raccoon is sitting at point <m>P=(0,2,3)</m>. It starts to climb in the direction <m>\vec v=\left\lt 1,-1,2\right></m>.
     </p>
 
     <p>
@@ -424,10 +424,10 @@
 
   <exploration xml:id="first_line_between_two_points">
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 12.5: 13-20.} 
       \stewarts{12.5: 6-15}
-      }Let <m>P=(3,1)</m> and <m>Q=(-1,4)</m>.
+      } -->Let <m>P=(3,1)</m> and <m>Q=(-1,4)</m>.
       <ol>
         <li>
           <p>

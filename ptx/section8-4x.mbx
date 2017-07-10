@@ -85,10 +85,10 @@
 
   <exploration>
     <p>
-      \extrafn{Watch a <url href="http://www.youtube.com/watch?v=dW0bm7cLB8E&amp;list=PL30EE81142B1ED1F0&amp;index=1&amp;feature=plpp_video">YouTube video</url>.}\extrafn{ 
+      <!-- \extrafn{Watch a <url href="http://www.youtube.com/watch?v=dW0bm7cLB8E&amp;list=PL30EE81142B1ED1F0&amp;index=1&amp;feature=plpp_video">YouTube video</url>.} --><!-- \extrafn{ 
       \thomasee{You can practice finding position from velocity and acceleration with exercises 13.2: 11-18, and especially 13.2: 29.}
       \stewarts{You can practice finding various combinations of position, velocity and acceleration vectors with exercises: 13.4:9-18, particularly focus on 15-18}
-      }Suppose a projectile is fired from the point <m>(x_0,y_0)</m> with an initial velocity <m>\vec v(0)=(v_{x_0},v_{y_0})</m>, and that gravity is the only force acting on the object. This means the acceleration on the object is <m>\vec a(t) = (0,-g)</m>.
+      } -->Suppose a projectile is fired from the point <m>(x_0,y_0)</m> with an initial velocity <m>\vec v(0)=(v_{x_0},v_{y_0})</m>, and that gravity is the only force acting on the object. This means the acceleration on the object is <m>\vec a(t) = (0,-g)</m>.
       <ol>
         <li>
           <p>
@@ -142,7 +142,7 @@
 
   <exploration>
     <p>
-      \extrafn{Watch a <url href="http://www.youtube.com/watch?v=a6PHAvynNWM&amp;list=PL30EE81142B1ED1F0&amp;index=2&amp;feature=plpp_video">YouTube video</url>.}Answer the following questions. Assume we fire a projectile from the origin, which means the acceleration, velocity, and position are
+      <!-- \extrafn{Watch a <url href="http://www.youtube.com/watch?v=a6PHAvynNWM&amp;list=PL30EE81142B1ED1F0&amp;index=2&amp;feature=plpp_video">YouTube video</url>.} -->Answer the following questions. Assume we fire a projectile from the origin, which means the acceleration, velocity, and position are
       <me>
         \vec a(t) = (0,-g), 
         \vec v(t) = (v_{x_0}, -gt+ v_{y_0}),
@@ -183,10 +183,10 @@
 
   <exploration>
     <p>
-      \extrafn{This exercise was created around the opening ceremony of the Barcelona Spain Olympics.  Antonio Rebollo was the archer, but he didn't try to hit the flame at the peak of the flight. You can <url href="http://www.youtube.com/watch?v=b5gZeT4TVds">watch a YouTube video</url> of the opening ceremony by following the link.}\extrafn{
+      <!-- \extrafn{This exercise was created around the opening ceremony of the Barcelona Spain Olympics.  Antonio Rebollo was the archer, but he didn't try to hit the flame at the peak of the flight. You can <url href="http://www.youtube.com/watch?v=b5gZeT4TVds">watch a YouTube video</url> of the opening ceremony by following the link.} --><!-- \extrafn{
       \thomasee{See 13.2: 19-28 for more practice.}
       \stewarts{See 13.4:19-36 for a variety of application exercises} 
-      }
+      } -->
     </p>
 
     <p>

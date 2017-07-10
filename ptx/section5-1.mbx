@@ -8,9 +8,9 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See 11.3:5-10.}
-        }Consider the point <m>P</m> with Cartesian (rectangular) coordinates <m>(2,1)</m>.
+        } -->Consider the point <m>P</m> with Cartesian (rectangular) coordinates <m>(2,1)</m>.
         <ol>
           <li>
             <p>
@@ -48,9 +48,9 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See 11.3:5-10.}
-        }The following points are given using their polar coordinates. Plot the points in the Cartesian plane, and give the Cartesian (rectangular) coordinates of each point. The points are
+        } -->The following points are given using their polar coordinates. Plot the points in the Cartesian plane, and give the Cartesian (rectangular) coordinates of each point. The points are
         <me>
           (1,\pi), 
           \ds \left( 3,\frac{5\pi}{4}\right),
@@ -66,9 +66,9 @@
 
     <exploration xml:id="prob_polar_coordinate_equations">
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See page 647.}
-        }Suppose that <m>Q</m> is a point in the plane with Cartesian coordinates <m>(x,y)</m> and polar coordinates <m>(r,\theta)</m>.
+        } -->Suppose that <m>Q</m> is a point in the plane with Cartesian coordinates <m>(x,y)</m> and polar coordinates <m>(r,\theta)</m>.
         <ol>
           <li>
             <p>
@@ -122,7 +122,7 @@
 
     <exploration xml:id="polar_coordinate_transformation_graph">
       <p>
-        \extrafn{For this problem, you are just drawing many parametric curves.
+        <!-- \extrafn{For this problem, you are just drawing many parametric curves.
 
         <insight>
         <p>
@@ -130,7 +130,7 @@
         </p>
         </insight>
 
-        }Consider the coordinate transformation
+        } -->Consider the coordinate transformation
         <me>
           \vec T(r,\theta) = (r\cos\theta,r\sin\theta).
         </me>
@@ -189,9 +189,9 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See 11.3: 53-66.}
-        }Each of the following equations is written in the Cartesian (rectangular) coordinate system. Convert each to an equation in polar coordinates by substituting in the formulas from <xref ref="prob_polar_coordinate_equations"></xref>, and then solve for <m>r</m> so that the equation is in the form <m>r=f(\theta)</m>.
+        } -->Each of the following equations is written in the Cartesian (rectangular) coordinate system. Convert each to an equation in polar coordinates by substituting in the formulas from <xref ref="prob_polar_coordinate_equations"></xref>, and then solve for <m>r</m> so that the equation is in the form <m>r=f(\theta)</m>.
         <ol>
           <li>
             <p>
@@ -216,9 +216,9 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See 11.3: 27-52. I strongly suggest that you do many of these as practice.}
-        }Each of the following equations is written in the polar coordinate system. Convert each to an equation in the Cartesian coordinates.
+        } -->Each of the following equations is written in the polar coordinate system. Convert each to an equation in the Cartesian coordinates.
         <ol>
           <li>
             <p>
@@ -295,9 +295,9 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See 11.2: 1-14.}
-        }Consider the polar curve <m>r=1+2\cos \theta</m>. (It wouldn't hurt to provide a quick sketch of the curve.)
+        } -->Consider the polar curve <m>r=1+2\cos \theta</m>. (It wouldn't hurt to provide a quick sketch of the curve.)
         <ol>
           <li>
             <p>
@@ -333,9 +333,9 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See 11.5: 29.}
-        }Recall that <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>. Suppose that <m>r=f(\theta)</m> for <m>\theta\in[\alpha,\beta]</m> is a continuous function, and that <m>f'</m> is continuous.
+        } -->Recall that <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>. Suppose that <m>r=f(\theta)</m> for <m>\theta\in[\alpha,\beta]</m> is a continuous function, and that <m>f'</m> is continuous.
         Show that the arc length formula can be simplified to
         <me>
           s=\int_{\alpha}^{\beta}\sqrt{\left(\frac{dx}{d\theta}\right)^2+\left(\frac{dy}{d\theta}\right)^2} 
@@ -351,9 +351,9 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See 11.5: 21-28.}
-        }Set up <em>(do not evaluate)</em> an integral formula to compute the length of
+        } -->Set up <em>(do not evaluate)</em> an integral formula to compute the length of
         <ol>
           <li>
             <p>

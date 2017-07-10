@@ -16,7 +16,7 @@
       </p>
 
       <p>
-        Then use a computer algebra system, such as <url href="http://http://www.wolframalpha.com/">Wolfram Alpha</url>, to verify your work. I suggest Wolfram Alpha, because it is now built into Mathematica 8.0+. If you can learn to use Wolfram Alpha, you will be able to use Mathematica. \extrafn{
+        Then use a computer algebra system, such as <url href="http://http://www.wolframalpha.com/">Wolfram Alpha</url>, to verify your work. I suggest Wolfram Alpha, because it is now built into Mathematica 8.0+. If you can learn to use Wolfram Alpha, you will be able to use Mathematica. <!-- \extrafn{
 
         <insight>
         <p>
@@ -24,7 +24,7 @@
         </p>
         </insight>
 
-        }
+        } -->
       </p>
     </exploration>
   </subsection>
@@ -63,10 +63,10 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See sections 3.2-3.6 for more practice with derivatives. The later problems in 3.6 review of most of the entire differentiation chapter.}
         \stewarts{See sections 3.1-3.6 for more practice with derivatives.}
-        }Compute the derivative of <m>e^{\sec x}\cos(\tan(x)+\ln(x^2+4))</m>.
+        } -->Compute the derivative of <m>e^{\sec x}\cos(\tan(x)+\ln(x^2+4))</m>.
       </p>
 
       <p>
@@ -90,10 +90,10 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See sections 3.7-3.9 for more examples involving inverse trig functions and implicit differentiation.}
         \stewarts{See section 3.5 for more examples involving inverse trig functions and implicit differentiation.}
-        }Use implicit differentiation to explain why the derivative of <m>y=\arcsin x</m> is <m>\ds y'=\frac{1}{\sqrt{1-x^2}}</m>. [Rewrite <m>y=\arcsin x</m> as <m>x=\sin y</m>, differentiate both sides, solve for <m>y'</m>, and then write the answer in terms of <m>x</m>].
+        } -->Use implicit differentiation to explain why the derivative of <m>y=\arcsin x</m> is <m>\ds y'=\frac{1}{\sqrt{1-x^2}}</m>. [Rewrite <m>y=\arcsin x</m> as <m>x=\sin y</m>, differentiate both sides, solve for <m>y'</m>, and then write the answer in terms of <m>x</m>].
       </p>
     </exploration>
   </subsection>
@@ -110,12 +110,12 @@
 
     <exploration>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{For practice with <m>u</m>-substitution, see section 5.5 and 5.6.  
         For practice with integration by parts, see section 8.2.}
         \stewarts{For practice with <m>u</m>-substitution, see sections 5.5. 
         For practice with integration by parts, see section 7.1}
-        }Compute <m>\ds\int x\sqrt{x^2+4}dx</m>.
+        } -->Compute <m>\ds\int x\sqrt{x^2+4}dx</m>.
       </p>
     </exploration>
 

@@ -282,7 +282,7 @@
 
           <li>
             <p>
-              \extrafn{You'll want to memorize this result.}If you use the spherical parametrization
+              <!-- \extrafn{You'll want to memorize this result.} -->If you use the spherical parametrization
               <me>
                 \vec r(\phi,\theta) = (a\sin\phi\cos\theta,a\sin\phi\sin\theta,a\cos\phi),
               </me>

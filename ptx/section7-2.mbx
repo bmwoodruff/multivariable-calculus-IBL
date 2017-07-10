@@ -44,7 +44,7 @@
 
   <exploration xml:id="prob_differential_volume_of_a_cylinder">
     <p>
-      \extrafn{\thomasee{See 3.10 for more practice.}\larsonfive{See Larson ?.} \stewarts{??} }The volume of a right circular cylinder is <m>V(r,h)= \pi r^2 h</m>. Imagine that each of <m>V</m>, <m>r</m>, and <m>h</m> depends on <m>t</m> (we might be collecting rain water in a can, or crushing a cylindrical concentrated juice can, etc.).
+      <!-- \extrafn{\thomasee{See 3.10 for more practice.}\larsonfive{See Larson ?.} \stewarts{??} } -->The volume of a right circular cylinder is <m>V(r,h)= \pi r^2 h</m>. Imagine that each of <m>V</m>, <m>r</m>, and <m>h</m> depends on <m>t</m> (we might be collecting rain water in a can, or crushing a cylindrical concentrated juice can, etc.).
     </p>
     <ol>
     <li>
@@ -98,8 +98,8 @@
 
     <li>
       <p>
-        \extrafn{The matrix <m>\begin{bmatrix}2\pi rh\amp  \pi r^2
-        \end{bmatrix}</m> is the derivative.  The columns we'll call the partial derivatives.  The partial derivatives make up the whole.}Show that we can write <m>dV</m> as the matrix product
+        <!-- \extrafn{The matrix <m>\begin{bmatrix}2\pi rh\amp  \pi r^2
+        \end{bmatrix}</m> is the derivative.  The columns we'll call the partial derivatives.  The partial derivatives make up the whole.} -->Show that we can write <m>dV</m> as the matrix product
         <me>
           dV = \begin{bmatrix}2\pi rh\amp  \pi r^2
           \end{bmatrix} \begin{bmatrix}dr\\dh
@@ -155,8 +155,8 @@
 
     <li>
       <p>
-        \extrafn{The matrix <m>\begin{bmatrix}yz\amp  ?\amp ?
-        \end{bmatrix}</m> is the derivative.  The columns we'll call the partial derivatives.  The partial derivatives make up the whole.}Show that we can write <m>dV</m> as the matrix product (fill in the blanks)
+        <!-- \extrafn{The matrix <m>\begin{bmatrix}yz\amp  ?\amp ?
+        \end{bmatrix}</m> is the derivative.  The columns we'll call the partial derivatives.  The partial derivatives make up the whole.} -->Show that we can write <m>dV</m> as the matrix product (fill in the blanks)
         <me>
           dV = \begin{bmatrix}yz\amp  ?\amp ?
           \end{bmatrix} \begin{bmatrix}dx\\dy\\dz
@@ -178,7 +178,7 @@
       <ol>
         <li>
           <p>
-            \extrafn{
+            <!-- \extrafn{
 
             <insight>
             <p>
@@ -186,7 +186,7 @@
             </p>
             </insight>
 
-            }<xref ref="prob_differential_volume_of_a_cylinder">In</xref> we showed that a change in the volume of a cylinder is approximately
+            } --><xref ref="prob_differential_volume_of_a_cylinder">In</xref> we showed that a change in the volume of a cylinder is approximately
             <me>
               dV = \begin{bmatrix}2\pi rh\amp  \pi r^2
               \end{bmatrix} \begin{bmatrix}dr\\dh
@@ -328,13 +328,13 @@
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See 14.3: 1-40 for more practice.
       }
       \larsonfive{See Larson 13.3:9<ndash />40 for more practice.
       }
       \stewarts{See 14.3:15-40 for more practice.
-      } I strongly suggest you practice a lot of this type of exercise until you can compute partial derivatives with ease.}Compute the requested partial and total derivatives.
+      } I strongly suggest you practice a lot of this type of exercise until you can compute partial derivatives with ease.} -->Compute the requested partial and total derivatives.
       <ol>
         <li>
           <p>
@@ -524,9 +524,9 @@
         <li>
           <p>
             Look at a plot of the surface (use one of the links to the right). Now, suppose an object is on this surface at the point <m>\vec r(3,\pi) = (-3,0,\pi)</m>. At that point, please draw the partial derivatives <m>\vec r_a(3,\pi)</m> and <m>\vec r_t(3,\pi)</m>.
-            \extrafn{Please see <url href="http://aleph.sagemath.org/?z=eJxL0yjRUUjUtNVI1ErOL9Yo0QTytIoz88CsEk2ugsSixNzUkqLM5PiCnPwSjTQdBaAOAx0FE62CTKASjUQdBSMgT1OTCwBCiRSf">Sage</url> 
+            <!-- \extrafn{Please see <url href="http://aleph.sagemath.org/?z=eJxL0yjRUUjUtNVI1ErOL9Yo0QTytIoz88CsEk2ugsSixNzUkqLM5PiCnPwSjTQdBaAOAx0FE62CTKASjUQdBSMgT1OTCwBCiRSf">Sage</url> 
             or <url href="http://www.wolframalpha.com/input/?i=parametric+plot+3D++%28a+cos+t%2C+a+sin+t%2C+t%29+for+t+from+0+to+4+pi+and+a+from+2+to+4">Wolfram Alpha</url> 
-            for a plot of the surface. Click on either link.}
+            for a plot of the surface. Click on either link.} -->
           </p>
         </li>
 
@@ -613,7 +613,7 @@
   <exploration xml:id="prob_second_partials_agree">
     <title>Mixed Partials Agree</title>
     <p>
-      \larsonfive{ \extrafn{See Larson 13.3:71<ndash />80 for more practice.}}
+      \larsonfive{ <!-- \extrafn{See Larson 13.3:71<ndash />80 for more practice.} -->}
       Complete the following:
       <ol>
         <li>
