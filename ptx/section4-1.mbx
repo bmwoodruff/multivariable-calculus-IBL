@@ -365,7 +365,7 @@
           This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
           <!-- \instructor{TeX files for these are included in a separate folder in the GitHub Project} -->
-          \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+          <!-- \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all} -->
 
           <em>Review Guide Creation</em>
 
