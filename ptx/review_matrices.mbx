@@ -11,7 +11,7 @@
       <url href="http://en.wikipedia.org/wiki/Matrix_multiplication">Wikipedia</url> for an explanation. Alternatively see <url href="http://www.texample.net/tikz/examples/matrix-multiplication/">texample.net</url> for a visualization of the idea.
     </p>
 
-    <exploration>
+    <project>
       <p>
         EXTRA<fn> 
           \bmw{For extra practice, make up two small matrices and multiply them.  Use 
@@ -49,9 +49,9 @@
           </li>
         </ul>
       </p>
-    </exploration>
+    </project>
 
-    <exploration>
+    <project>
       <p>
         Compute the product
         <m>\begin{bmatrix}3 \amp  2\amp  1\\
@@ -62,7 +62,7 @@
          0\amp 1 \amp 2
         \end{bmatrix}</m>.
       </p>
-    </exploration>
+    </project>
   </introduction>
 
   <subsection xml:id="sec_Determinants">
@@ -100,7 +100,7 @@
       </statement>
     </definition>
 
-    <exploration>
+    <project>
       <p>
         EXTRA<fn>For extra practice, create your own square matrix (2 by 2 or 3 by 3) and compute the determinant by hand. Then use <url href="http://www.wolframalpha.com">Wolfram Alpha</url> to check your work.  Do this until you feel comfortable taking determinants.</fn>
         Compute
@@ -115,7 +115,7 @@
         2\amp -3\amp 1
         \end{vmatrix}</m>.
       </p>
-    </exploration>
+    </project>
 
     <p>
       What good is the determinant?
@@ -169,7 +169,7 @@
       \end{bmatrix}</m>, then the volume doesn't change since the shape is still the same. However, the sign of the determinant is negative because if you point your index finger in the direction (0,2,0) and your middle finger in the direction (1,0,0), then your thumb points down in the direction (0,0,-3). If you repeat this with your left hand instead of right hand, then your thumb points up.
     </p>
 
-    <exploration>
+    <project>
       <ol>
         <li>
           <p>
@@ -183,6 +183,6 @@
           </p>
         </li>
       </ol>
-    </exploration>
+    </project>
   </subsection>
 </section>
