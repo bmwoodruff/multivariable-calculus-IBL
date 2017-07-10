@@ -12,9 +12,9 @@
     <ol>
     <li>
       <p>
-        \extrafn{See
+        <!-- \extrafn{See
         <url href="http://aleph.sagemath.org/?z=eJwti7sKwCAMAHe_IjglkqHY2b9wbgkiJVAfqP9PB7vdHVxE4VbyIxRQXGoTtzHI5d3U-juZPrQusBElnAQ6LcNm02VIyWtouvvbFu7MsFeGg8G7rkQfMv4giA">Sage</url>.
-        Click on the link to see how to check your answer in Sage.}Let <m>a=3</m> and then graph the curve <m>\vec T(3,\omega)=(3\cos\omega,9\sin\omega)</m> for <m>\omega\in[0,2\pi]</m>.
+        Click on the link to see how to check your answer in Sage.} -->Let <m>a=3</m> and then graph the curve <m>\vec T(3,\omega)=(3\cos\omega,9\sin\omega)</m> for <m>\omega\in[0,2\pi]</m>.
         <hint>
           <p>
             You can start by making a <m>\omega,x,y</m> table.
@@ -25,15 +25,15 @@
 
     <li>
       <p>
-        \extrafn{See
-        <url href="http://aleph.sagemath.org/?z=eJxlzEEKg0AMBdC9pwiukmmgRd3OLVxbgkgJqBNm5v5UTGmF7vKT9zOicNqWl1BECXMq6IlBpi4U3T-ZGsu6V2hHlNgTaGkZfP5dThpN78MXXFaNSZZtqVnnp62potcZHDE8GLpgSgQ3-LeXT0fF-UD0BkVHOdw">Sage</url>. Notice that you can add the two plots together to superimpose them on each other.}Let <m>\omega=\frac{\pi}{4}</m> and then, on the same axes as above, add the graph of 
+        <!-- \extrafn{See
+        <url href="http://aleph.sagemath.org/?z=eJxlzEEKg0AMBdC9pwiukmmgRd3OLVxbgkgJqBNm5v5UTGmF7vKT9zOicNqWl1BECXMq6IlBpi4U3T-ZGsu6V2hHlNgTaGkZfP5dThpN78MXXFaNSZZtqVnnp62potcZHDE8GLpgSgQ3-LeXT0fF-UD0BkVHOdw">Sage</url>. Notice that you can add the two plots together to superimpose them on each other.} -->Let <m>\omega=\frac{\pi}{4}</m> and then, on the same axes as above, add the graph of 
         <m>\vec T\left(a,\frac{\pi}{4}\right)=\left(a\frac{\sqrt 2}{2},a^2 \frac{\sqrt 2}{2}\right)</m> for <m>a\in[0,4]</m>.
       </p>
     </li>
 
     <li>
       <p>
-        \extrafn{Use Sage to check your answer.}To the same axes as above, add the graphs of:
+        <!-- \extrafn{Use Sage to check your answer.} -->To the same axes as above, add the graphs of:
       </p>
       <ol>
         <li>
@@ -131,21 +131,21 @@
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See page 893.} 
       \stewarts{See pages 827-833} 
       \larsonfive{See Larson 11.7.}
-      }Let <m>P=(x,y,z)</m> be a point in space. This point lies on a cylinder of radius <m>r</m>, where the cylinder has the <m>z</m> axis as its axis of symmetry. The height of the point is <m>z</m> units up from the <m>xy</m> plane. The point casts a shadow in the <m>xy</m> plane at <m>Q=(x,y,0)</m>. The angle between the ray <m>\vec{OQ}</m> and the <m>x</m>-axis is <m>\theta</m>. Construct a graph in 3D of this information, and use it to develop the equations for cylindrical coordinates given above.
+      } -->Let <m>P=(x,y,z)</m> be a point in space. This point lies on a cylinder of radius <m>r</m>, where the cylinder has the <m>z</m> axis as its axis of symmetry. The height of the point is <m>z</m> units up from the <m>xy</m> plane. The point casts a shadow in the <m>xy</m> plane at <m>Q=(x,y,0)</m>. The angle between the ray <m>\vec{OQ}</m> and the <m>x</m>-axis is <m>\theta</m>. Construct a graph in 3D of this information, and use it to develop the equations for cylindrical coordinates given above.
     </p>
   </exploration>
 
   <exploration xml:id="derive_spherical_coordinates">
     <p>
       Let
-      \extrafn{
+      <!-- \extrafn{
       \thomasee{See page 897.}
       \larsonfive{See Larson 11.7.}
-      }<m>P=(x,y,z)</m> be a point in space. This point lies on a sphere of
+      } --><m>P=(x,y,z)</m> be a point in space. This point lies on a sphere of
       radius <m>\rho</m> (<q>rho</q>), where the sphere's center is at the origin
       <m>O=(0,0,0)</m>. The point casts a shadow in the <m>xy</m> plane at
       <m>Q=(x,y,0)</m>. The angle between the ray <m>\vec{OQ}</m> and the <m>x</m>-axis
@@ -158,11 +158,11 @@
   </exploration>
 
   <p>
-    \extrafn{See the
+    <!-- \extrafn{See the
     <url href="http://en.wikipedia.org/wiki/Spherical_coordinate_system">Wikipedia</url>
     or
     <url href="http://mathworld.wolfram.com/SphericalCoordinates.html">MathWorld</url>
-    for a discussion of conventions in different disciplines.}
+    for a discussion of conventions in different disciplines.} -->
   </p>
 
   <p>
@@ -222,20 +222,20 @@
       <p>
         This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
-        \instructor{TeX files for these are included in a separate folder in the GitHub Project}
-        \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+        <!-- \instructor{TeX files for these are included in a separate folder in the GitHub Project} -->
+        <!-- \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all} -->
 
         <em>Review Guide Creation</em>
 
 
-        Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+        Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. <!-- \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } --> 
 
 
         As you create this review guide, consider the following:
         <ul>
           <li>
             <p>
-              Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+              Before each Celebration of Knowledge <!-- \instructor{This is just an exam} --> we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
             </p>
           </li>
 

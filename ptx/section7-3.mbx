@@ -84,11 +84,11 @@
   <exploration xml:id="prob_tangent_plane_downbowl">
     <title>Tangent Planes</title>
     <p>
-      \extrafn{See <url href="http://aleph.sagemath.org/?z=eJx9kUtvAiEYRff8CqImA8qYkUkTu2DdfbdNbSYMKOkIBFCH_voCPprax2YyX_Jx7uUg0UgiZo_1uKF13FBgA0OUrIjMX4wBmMqD5kEZDTvdQ2uUDsAyO5jQ9kiSdL5uSYsJipcfaGzHVYisWT5gYBesnEE2EMjNYByrnOgrAr36EIw2OQLygzsKX5Y71-1FcIq_5QyU-LlMZKkMgbe0b6iwU_xdC-9Zi-EUpt1fSZTERBoZLaR4R9o6IXSqdQdL67ngUfBgnAdyZHLZK5k4GMh4HeL5ojnmvIleVqQhciwWXzHxoXOBZQdf_PUtO4phMKfqJ6TJl49XCPyfYlynt6LKQu3QafGHznitNUdjTfHiwp-jWK_SdH73oropfpKp5u5d1yljF_YDmjyLHioPZ8n5jMCn7LDMSdtsgoHfmROy-BN9Vrcb">Sage</url> for a picture.}
+      <!-- \extrafn{See <url href="http://aleph.sagemath.org/?z=eJx9kUtvAiEYRff8CqImA8qYkUkTu2DdfbdNbSYMKOkIBFCH_voCPprax2YyX_Jx7uUg0UgiZo_1uKF13FBgA0OUrIjMX4wBmMqD5kEZDTvdQ2uUDsAyO5jQ9kiSdL5uSYsJipcfaGzHVYisWT5gYBesnEE2EMjNYByrnOgrAr36EIw2OQLygzsKX5Y71-1FcIq_5QyU-LlMZKkMgbe0b6iwU_xdC-9Zi-EUpt1fSZTERBoZLaR4R9o6IXSqdQdL67ngUfBgnAdyZHLZK5k4GMh4HeL5ojnmvIleVqQhciwWXzHxoXOBZQdf_PUtO4phMKfqJ6TJl49XCPyfYlynt6LKQu3QafGHznitNUdjTfHiwp-jWK_SdH73oropfpKp5u5d1yljF_YDmjyLHioPZ8n5jMCn7LDMSdtsgoHfmROy-BN9Vrcb">Sage</url> for a picture.} -->
     </p>
 
     <p>
-      \extrafn{\thomasee{See 14.6: 9-12 for more practice.}\larsonfive{See Larson 13.7:17<ndash />30 for more practice.}\stewarts{See 14.4:1-6 for more practice}}
+      <!-- \extrafn{\thomasee{See 14.6: 9-12 for more practice.}\larsonfive{See Larson 13.7:17<ndash />30 for more practice.}\stewarts{See 14.4:1-6 for more practice}} -->
     </p>
 
     <p>
@@ -116,7 +116,7 @@
 
         <li>
           <p>
-            Explain why an equation of the tangent plane is  \extrafn{We'll construct a graph of <m>f</m> and it's tangent plane in class.}
+            Explain why an equation of the tangent plane is  <!-- \extrafn{We'll construct a graph of <m>f</m> and it's tangent plane in class.} -->
             <me>
               z-4=\begin{bmatrix}-4 \amp  -2
               \end{bmatrix} \begin{bmatrix}x-2\\y-1
@@ -143,7 +143,7 @@
 
   <exploration>
     <p>
-      \extrafn{See <url href="http://aleph.sagemath.org/?z=eJx9kk-PwiAQxe_9FERNCu1oWusmXjjvfa8bNaQFJVsLAdSyn36havefuycCmfm9N28QuAdPaL9d5qusz3zut8tEO4ormJcghoOQJJmKU1c7qTrEugZpJTuXaDqcWDtAtWqVoanhTQrIyndOlwVJdE51q1zVYAFBqIAVAexhXkFJACnNauk8LRZPUQHVJ3Pmdmhihh25M7LexX4cegc3nkY3gO6sb7LuIOu3jltLK4KmKNY-ZFXgA6oPVZE0urmh9obzLszwgxbKo8Uzr50yNhE9FYtGisAhifD3ix9HxtdK_FoGp6K_5rghYB0zjsbEPgXWo7jnbasu6W9KAWF8P1LQ_xhlWLfnaQxVt6zjf0TqR2MZ7ucVye8KGfZ5Ga637X_J-9Hy1nCT1Sej20H24I4tnrzwBkmLZnETM0DPMdnhIYQ5m5DEHtQFa0DM6jDmzrDwv2gIrIRFuSEf2ELG4w">Sage</url>.}\extrafn{\thomasee{See 14.6: 9-12 for more practice.}\larsonfive{See Larson 13.7:17<ndash />30 for more practice.} \stewarts{See 14.4:1-6 for more practice}}Let <m>f(x,y)=x^2+4xy+y^2</m>. Give an equation of the tangent plane at <m>(3,-1)</m>.
+      <!-- \extrafn{See <url href="http://aleph.sagemath.org/?z=eJx9kk-PwiAQxe_9FERNCu1oWusmXjjvfa8bNaQFJVsLAdSyn36havefuycCmfm9N28QuAdPaL9d5qusz3zut8tEO4ormJcghoOQJJmKU1c7qTrEugZpJTuXaDqcWDtAtWqVoanhTQrIyndOlwVJdE51q1zVYAFBqIAVAexhXkFJACnNauk8LRZPUQHVJ3Pmdmhihh25M7LexX4cegc3nkY3gO6sb7LuIOu3jltLK4KmKNY-ZFXgA6oPVZE0urmh9obzLszwgxbKo8Uzr50yNhE9FYtGisAhifD3ix9HxtdK_FoGp6K_5rghYB0zjsbEPgXWo7jnbasu6W9KAWF8P1LQ_xhlWLfnaQxVt6zjf0TqR2MZ7ucVye8KGfZ5Ga637X_J-9Hy1nCT1Sej20H24I4tnrzwBkmLZnETM0DPMdnhIYQ5m5DEHtQFa0DM6jDmzrDwv2gIrIRFuSEf2ELG4w">Sage</url>.} --><!-- \extrafn{\thomasee{See 14.6: 9-12 for more practice.}\larsonfive{See Larson 13.7:17<ndash />30 for more practice.} \stewarts{See 14.4:1-6 for more practice}} -->Let <m>f(x,y)=x^2+4xy+y^2</m>. Give an equation of the tangent plane at <m>(3,-1)</m>.
     </p>
     <hint>
       <p>
@@ -165,7 +165,7 @@
     </p>
 
     <p>
-      \extrafn{See <url href="http://aleph.sagemath.org/?z=eJx9kUtvAiEYRff8CqImA8qYkUkTu2DdfbdNbSYMKOkIBFCH_voCPprax2YyX_Jx7uUg0UgiZo_1uKF13FBgA0OUrIjMX4wBmMqD5kEZDTvdQ2uUDsAyO5jQ9kiSdL5uSYsJipcfaGzHVYisWT5gYBesnEE2EMjNYByrnOgrAr36EIw2OQLygzsKX5Y71-1FcIq_5QyU-LlMZKkMgbe0b6iwU_xdC-9Zi-EUpt1fSZTERBoZLaR4R9o6IXSqdQdL67ngUfBgnAdyZHLZK5k4GMh4HeL5ojnmvIleVqQhciwWXzHxoXOBZQdf_PUtO4phMKfqJ6TJl49XCPyfYlynt6LKQu3QafGHznitNUdjTfHiwp-jWK_SdH73oropfpKp5u5d1yljF_YDmjyLHioPZ8n5jMCn7LDMSdtsgoHfmROy-BN9Vrcb">Sage</url> for a picture.}\extrafn{\thomasee{See 16.5: 27-30 for more practice.}\larsonfive{See Larson 15.5:35<ndash />38 for more practice.}\stewarts{See 16.6:33-38 for more practice}}
+      <!-- \extrafn{See <url href="http://aleph.sagemath.org/?z=eJx9kUtvAiEYRff8CqImA8qYkUkTu2DdfbdNbSYMKOkIBFCH_voCPprax2YyX_Jx7uUg0UgiZo_1uKF13FBgA0OUrIjMX4wBmMqD5kEZDTvdQ2uUDsAyO5jQ9kiSdL5uSYsJipcfaGzHVYisWT5gYBesnEE2EMjNYByrnOgrAr36EIw2OQLygzsKX5Y71-1FcIq_5QyU-LlMZKkMgbe0b6iwU_xdC-9Zi-EUpt1fSZTERBoZLaR4R9o6IXSqdQdL67ngUfBgnAdyZHLZK5k4GMh4HeL5ojnmvIleVqQhciwWXzHxoXOBZQdf_PUtO4phMKfqJ6TJl49XCPyfYlynt6LKQu3QafGHznitNUdjTfHiwp-jWK_SdH73oropfpKp5u5d1yljF_YDmjyLHioPZ8n5jMCn7LDMSdtsgoHfmROy-BN9Vrcb">Sage</url> for a picture.} --><!-- \extrafn{\thomasee{See 16.5: 27-30 for more practice.}\larsonfive{See Larson 15.5:35<ndash />38 for more practice.}\stewarts{See 16.6:33-38 for more practice}} -->
       <ol>
         <li>
           <p>
@@ -223,11 +223,11 @@
 
   <exploration>
     <p>
-      \extrafn{See <url href="http://aleph.sagemath.org/?z=eJx9kM1uwjAQhO95ihUgxQ4uhbSVevG5954rVZZjwMLY1voH0aevEwhEFerJu9buN7ODJLFMOUmNdIFkyiA1QdtLRSsfudEhEiQt8_q5pbSq5ttkZdTOgrAdeKdtrDwfXuIjA-mMQ16j6moGQf8o3q4Lacm9QHFUEbX89sYVKIOivmavRYvkUkDbeF0a54XU8czXq7deD2TCrMJDBMl88DVBTfXjXsuDVSHwFwpzuAw_BiXejj6uNq6gHSplyyl_WGW-95aVjA5DhYnjqtPbLSmxYR6bfLl8kEhjiCxEgZH3Yd2h7zfBszLGnerJZr5twv-rDoXdqbpPzRth1aNTU3N3sszNFD5mWFJ42rANZVesT-jNgN3HoyGzT9WBDrDI_KvfXDD46EMa_kouixmtwt6diKe_OvC8aA">Sage</url>.}
+      <!-- \extrafn{See <url href="http://aleph.sagemath.org/?z=eJx9kM1uwjAQhO95ihUgxQ4uhbSVevG5954rVZZjwMLY1voH0aevEwhEFerJu9buN7ODJLFMOUmNdIFkyiA1QdtLRSsfudEhEiQt8_q5pbSq5ttkZdTOgrAdeKdtrDwfXuIjA-mMQ16j6moGQf8o3q4Lacm9QHFUEbX89sYVKIOivmavRYvkUkDbeF0a54XU8czXq7deD2TCrMJDBMl88DVBTfXjXsuDVSHwFwpzuAw_BiXejj6uNq6gHSplyyl_WGW-95aVjA5DhYnjqtPbLSmxYR6bfLl8kEhjiCxEgZH3Yd2h7zfBszLGnerJZr5twv-rDoXdqbpPzRth1aNTU3N3sszNFD5mWFJ42rANZVesT-jNgN3HoyGzT9WBDrDI_KvfXDD46EMa_kouixmtwt6diKe_OvC8aA">Sage</url>.} -->
     </p>
 
     <p>
-      \extrafn{\thomasee{See 16.5: 27-30 for more practice.}\larsonfive{See Larson 15.5:35<ndash />38 for more practice.}\stewarts{See 16.6:33-38 for more practice}}Consider the cone parametrized by <m>\vec r(u,v)=(u\cos v, u\sin v,u)</m>.
+      <!-- \extrafn{\thomasee{See 16.5: 27-30 for more practice.}\larsonfive{See Larson 15.5:35<ndash />38 for more practice.}\stewarts{See 16.6:33-38 for more practice}} -->Consider the cone parametrized by <m>\vec r(u,v)=(u\cos v, u\sin v,u)</m>.
       <ol>
         <li>
           <p>

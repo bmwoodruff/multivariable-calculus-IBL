@@ -28,7 +28,7 @@
     <exploration>
       <title>Optional Proof of <xref ref="vector_valued_functions_of_constant_length">Theorem</xref></title>
       <p>
-        \extrafn{Watch a <url href="http://www.youtube.com/watch?v=08Ygw_M-4yM&amp;list=PL30EE81142B1ED1F0&amp;index=6&amp;feature=plpp_video">YouTube Video</url> for the answer.  }Prove the theorem above. Here are some hints [as an alternative to watching the YouTube video].
+        <!-- \extrafn{Watch a <url href="http://www.youtube.com/watch?v=08Ygw_M-4yM&amp;list=PL30EE81142B1ED1F0&amp;index=6&amp;feature=plpp_video">YouTube Video</url> for the answer.  } -->Prove the theorem above. Here are some hints [as an alternative to watching the YouTube video].
         <ul>
           <li>
             <p>
@@ -61,7 +61,7 @@
 
     <exploration xml:id="T_and_N_are_orthogonal">
       <p>
-        \extrafn{Watch a <url href="http://www.youtube.com/watch?v=aJttU3kS_p8&amp;list=PL30EE81142B1ED1F0&amp;index=7&amp;feature=plpp_video">YouTube Video</url>.  }Let <m>\vec r</m> be a smooth parametrization of a curve.
+        <!-- \extrafn{Watch a <url href="http://www.youtube.com/watch?v=aJttU3kS_p8&amp;list=PL30EE81142B1ED1F0&amp;index=7&amp;feature=plpp_video">YouTube Video</url>.  } -->Let <m>\vec r</m> be a smooth parametrization of a curve.
         <ol>
           <li>
             <p>
@@ -184,10 +184,10 @@
 
     <exploration xml:id="helix_example_of_T_N_and_B">
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See 13.4: 9-16 and 13.5: 9-16 (the relevant parts) for more practice.}
         \stewarts{See 13.3:47-48 for more practice, You can also go back and do 13.3:17-20, this time just do the unit normal vector}
-        }Consider the helix <m>\vec r(t) = (3\cos t,3\sin t, 4t)</m>. Find the unit tangent vector <m>\vec T(t)</m>, principle unit normal vector <m>\vec N(t)</m>, and the binormal vector <m>\vec B(t)</m>.
+        } -->Consider the helix <m>\vec r(t) = (3\cos t,3\sin t, 4t)</m>. Find the unit tangent vector <m>\vec T(t)</m>, principle unit normal vector <m>\vec N(t)</m>, and the binormal vector <m>\vec B(t)</m>.
       </p>
     </exploration>
   </introduction>
@@ -209,7 +209,7 @@
     <exploration>
       <title>Extra Practice</title>
       <p>
-        \extrafn{Use this <url href="\sageurlforcurvature">Sage link</url> to check your work, and see if your picture is correct. You'll have to type the appropriate function in, so use <q>[t,sin(t),cos(t)]</q> and <q>point=pi/2.</q>}Consider the helix <m>\vec r(t)=(t,\sin t,\cos t)</m>.
+        <!-- \extrafn{Use this <url href="\sageurlforcurvature">Sage link</url> to check your work, and see if your picture is correct. You'll have to type the appropriate function in, so use <q>[t,sin(t),cos(t)]</q> and <q>point=pi/2.</q>} -->Consider the helix <m>\vec r(t)=(t,\sin t,\cos t)</m>.
         <ol>
           <li>
             <p>

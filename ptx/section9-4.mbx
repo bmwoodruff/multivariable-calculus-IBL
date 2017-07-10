@@ -11,26 +11,26 @@
       <ol>
         <li>
           <p>
-            \extrafn{<m>\bar s=\frac{\sum \text{ values } }{\text{ number of values } }</m>}Compute the average by adding 11 numbers together and dividing by the number of scores.  Write down the whole computation before doing any arithmetic.
+            <!-- \extrafn{<m>\bar s=\frac{\sum \text{ values } }{\text{ number of values } }</m>} -->Compute the average by adding 11 numbers together and dividing by the number of scores.  Write down the whole computation before doing any arithmetic.
           </p>
         </li>
 
         <li>
           <p>
-            \extrafn{<m>\bar s=\frac{\sum (\text{ value } \cdot\text{ weight } )}{\sum \text{ weight } }</m>}Compute the numerator of the fraction in the previous part by multiplying each score by how many times it occurs, rather than adding it in the sum that many times.  Again, write down the calculation for <m>\bar s</m> before doing any arithmetic.
+            <!-- \extrafn{<m>\bar s=\frac{\sum (\text{ value } \cdot\text{ weight } )}{\sum \text{ weight } }</m>} -->Compute the numerator of the fraction in the previous part by multiplying each score by how many times it occurs, rather than adding it in the sum that many times.  Again, write down the calculation for <m>\bar s</m> before doing any arithmetic.
           </p>
         </li>
 
         <li>
           <p>
-            \extrafn{<m>\bar s=\sum (\text{ value } \cdot\text{ (\% of stuff) } )=\sum (\text{ value }  \cdot \frac{\text{ weight } }{\text{ \# of values } } )</m>}Compute <m>\bar s</m> by splitting up the fraction in the previous part into the sum of four numbers.  This is called a <q>weighted average</q> because we are multiplying each score value by a weight.
+            <!-- \extrafn{<m>\bar s=\sum (\text{ value } \cdot\text{ (\% of stuff) } )=\sum (\text{ value }  \cdot \frac{\text{ weight } }{\text{ \# of values } } )</m>} -->Compute <m>\bar s</m> by splitting up the fraction in the previous part into the sum of four numbers.  This is called a <q>weighted average</q> because we are multiplying each score value by a weight.
           </p>
         </li>
 
         <li>
           <p>
-            \extrafn{<m>\text{ (number of values) } \bar s = \sum \text{ values }</m>
-            <m>(\sum \text{ weight } )\bar s = \sum (\text{ value } \cdot\text{ weight } )</m>}Another way of thinking about the average <m>\bar s</m> is that <m>\bar s</m> is the number so that if all 11 scores were the same value <m>\bar s</m>, you'd have the same sum of scores.  Write this way of thinking about these computations by taking the formulas for <m>\bar s</m> in the first two parts and multiplying both sides by the denominator.
+            <!-- \extrafn{<m>\text{ (number of values) } \bar s = \sum \text{ values }</m>
+            <m>(\sum \text{ weight } )\bar s = \sum (\text{ value } \cdot\text{ weight } )</m>} -->Another way of thinking about the average <m>\bar s</m> is that <m>\bar s</m> is the number so that if all 11 scores were the same value <m>\bar s</m>, you'd have the same sum of scores.  Write this way of thinking about these computations by taking the formulas for <m>\bar s</m> in the first two parts and multiplying both sides by the denominator.
           </p>
         </li>
       </ol>
@@ -99,7 +99,7 @@
 
   <exploration xml:id="Average_Value_intro">
     <p>
-      \extrafn{<url href="http://www.youtube.com/watch?v=t7T0MzfgV0Q&amp;list=PL04DF68E73B7ECD54&amp;index=5&amp;feature=plpp_video">Watch a YouTube video.</url>}Consider the elliptical curve <m>C</m> given by the parametrization <m>\vec r(t) = (2\cos t, 3\sin t)</m>. Let <m>f</m> be the function <m>f(x,y)=9-x^2-y^2</m>.
+      <!-- \extrafn{<url href="http://www.youtube.com/watch?v=t7T0MzfgV0Q&amp;list=PL04DF68E73B7ECD54&amp;index=5&amp;feature=plpp_video">Watch a YouTube video.</url>} -->Consider the elliptical curve <m>C</m> given by the parametrization <m>\vec r(t) = (2\cos t, 3\sin t)</m>. Let <m>f</m> be the function <m>f(x,y)=9-x^2-y^2</m>.
     </p>
     <ol>
     <li>
@@ -123,14 +123,14 @@
 
     <li>
       <p>
-        What's the maximum height and minimum height of the sheet?  \extrafn{See <xref ref="horse_track_chain_rule_introduction">exercise</xref>.}
+        What's the maximum height and minimum height of the sheet?  <!-- \extrafn{See <xref ref="horse_track_chain_rule_introduction">exercise</xref>.} -->
       </p>
     </li>
 
     <li>
       <p>
         We'd like to find a constant height <m>\bar f</m> so that the area under <m>f</m>, above <m>C</m>, is the same as area under <m>\bar f</m>, above <m>C</m>. This height <m>\bar f</m> is called the average value of <m>f</m> along <m>C</m>. 
-        \extrafn{
+        <!-- \extrafn{
 
         <insight>
         <p>
@@ -148,7 +148,7 @@
         </p>
         </insight>
 
-        }Explain why the average value of <m>f</m> along <m>C</m> is
+        } -->Explain why the average value of <m>f</m> along <m>C</m> is
         <me>
           \bar f = \frac{\int_C f ds}{\int_C ds}.
         </me>
@@ -163,7 +163,7 @@
 
     <li>
       <p>
-        \extrafn{You can use the <url href="\sagelineintegral">Sage line integral calculator</url>.}Use a computer to evaluate the integrals <m>\int_C f ds</m> and <m>\int_C ds</m>, and then give an approximation to the average value of <m>f</m> along <m>C</m>. Is your average value between the maximum and minimum of <m>f</m> along <m>C</m>? Why should it be?
+        <!-- \extrafn{You can use the <url href="\sagelineintegral">Sage line integral calculator</url>.} -->Use a computer to evaluate the integrals <m>\int_C f ds</m> and <m>\int_C ds</m>, and then give an approximation to the average value of <m>f</m> along <m>C</m>. Is your average value between the maximum and minimum of <m>f</m> along <m>C</m>? Why should it be?
       </p>
     </li>
     </ol>

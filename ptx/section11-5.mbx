@@ -31,7 +31,7 @@
         <ul>
           <li>
             <p>
-              \extrafn{We will not prove that the partial derivative expressions <m>N_x-M_y</m> and <m>M_x+N_y</m> are actually equal to the limits given here. That is best left to an advanced course.}The circulation density of <m>\vec F</m> at <m>(x,y)</m> we define to be
+              <!-- \extrafn{We will not prove that the partial derivative expressions <m>N_x-M_y</m> and <m>M_x+N_y</m> are actually equal to the limits given here. That is best left to an advanced course.} -->The circulation density of <m>\vec F</m> at <m>(x,y)</m> we define to be
               <me>
                 \frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}=N_x-M_y = \lim_{a\to 0} \frac{1}{A_a}\oint_{C_a} \vec F \cdot  d\vec r = 
                 \lim_{a\to 0} \frac{1}{A_a}\oint_{C_a} Mdx+Ndy.
@@ -101,7 +101,7 @@
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
 
       <insight>
       <p>
@@ -109,7 +109,7 @@
       </p>
       </insight>
 
-      }Consider a rectangle <m>C</m> where the boundary of the rectangle are <m>2\leq x\leq 7</m> and <m>0\leq y\leq 3</m>. The rectangle is subject to a vector field <m>\vec F=(2x+3y,4x+5y)</m>.
+      } -->Consider a rectangle <m>C</m> where the boundary of the rectangle are <m>2\leq x\leq 7</m> and <m>0\leq y\leq 3</m>. The rectangle is subject to a vector field <m>\vec F=(2x+3y,4x+5y)</m>.
       <ol>
         <li>
           <p>
@@ -197,20 +197,20 @@
       <p>
         This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
-        \instructor{TeX files for these are included in a separate folder in the GitHub Project}
-        \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+        <!-- \instructor{TeX files for these are included in a separate folder in the GitHub Project} -->
+        <!-- \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all} -->
 
         <em>Review Guide Creation</em>
 
 
-        Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+        Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. <!-- \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } --> 
 
 
         As you create this review guide, consider the following:
         <ul>
           <li>
             <p>
-              Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+              Before each Celebration of Knowledge <!-- \instructor{This is just an exam} --> we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
             </p>
           </li>
 

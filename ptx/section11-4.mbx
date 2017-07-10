@@ -19,7 +19,7 @@
   <definition>
     <statement>
       <p>
-        Suppose <m>\vec T(u,v)=(x(u,v),y(u,v))</m> is a differentiable coordinate transformation. The Jacobian of the transformation <m>\vec T</m> is the absolute value of the determinant of the derivative. \extrafn{For a tongue twister, say <q>the absolute value of the determinant of the derivative</q> ten times really fast.}Notationally we write
+        Suppose <m>\vec T(u,v)=(x(u,v),y(u,v))</m> is a differentiable coordinate transformation. The Jacobian of the transformation <m>\vec T</m> is the absolute value of the determinant of the derivative. <!-- \extrafn{For a tongue twister, say <q>the absolute value of the determinant of the derivative</q> ten times really fast.} -->Notationally we write
         <me>
           J(u,v) = \frac{\partial (x,y)}{\partial (u,v)} = |\det(D\vec T(u,v))|.
         </me>
@@ -171,7 +171,7 @@
 
   <exploration>
     <p>
-      \extrafn{
+      <!-- \extrafn{
 
       <insight>
       <p>
@@ -179,7 +179,7 @@
       </p>
       </insight>
 
-      }Use the transformation <m>u=3x+2y</m> and <m>v=x+4y</m> to evaluate the integral
+      } -->Use the transformation <m>u=3x+2y</m> and <m>v=x+4y</m> to evaluate the integral
       <me>
         \iint_R (3x^2+14xy+8y^2)dxdy =\iint_R (3x+2y)(x+4y)dxdy
       </me>

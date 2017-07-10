@@ -15,7 +15,7 @@
 
     <exploration>
       <p>
-        \extrafn{You'll want a computer to help you construct the graphs, particularly <m>h</m>.
+        <!-- \extrafn{You'll want a computer to help you construct the graphs, particularly <m>h</m>.
 
         <insight>
         <p>
@@ -23,7 +23,7 @@
         </p>
         </insight>
 
-        You could use Wolfram Alpha (use the links in the function chapter if you forgot how to graph).}Consider three functions:
+        You could use Wolfram Alpha (use the links in the function chapter if you forgot how to graph).} -->Consider three functions:
         <ul>
           <li>
             <p>
@@ -52,7 +52,7 @@
       <ol>
         <li>
           <p>
-            Compute <m>\vec \nabla f(x,y)</m>.  Then draw both <m>\vec \nabla f</m> and several level curves of <m>f</m> on the same axes.  \extrafn{See <url href="http://aleph.sagemath.org/?z=eJxljLEOwiAURXe-oltBHybSyeFtjV_gXIIIEYM-QqmWvxejm8vNyc3J8XyFKvAg10nJOik2-u_Dpdqs0LWtgrGElh6FlqxTpMI9NEkOMAjg9Qc-xIhHE2cH9m4S9jdXerAUKZ9NxlNenGBpi5-AfjpbKGsfXLzw0UP312vubr7Si5s5NVlnUwLhXrwBPnA2AQ">Sage</url>.  You can modify these commands to help in the plots below too.}
+            Compute <m>\vec \nabla f(x,y)</m>.  Then draw both <m>\vec \nabla f</m> and several level curves of <m>f</m> on the same axes.  <!-- \extrafn{See <url href="http://aleph.sagemath.org/?z=eJxljLEOwiAURXe-oltBHybSyeFtjV_gXIIIEYM-QqmWvxejm8vNyc3J8XyFKvAg10nJOik2-u_Dpdqs0LWtgrGElh6FlqxTpMI9NEkOMAjg9Qc-xIhHE2cH9m4S9jdXerAUKZ9NxlNenGBpi5-AfjpbKGsfXLzw0UP312vubr7Si5s5NVlnUwLhXrwBPnA2AQ">Sage</url>.  You can modify these commands to help in the plots below too.} -->
           </p>
         </li>
 
@@ -415,8 +415,8 @@
 
           <li>
             <p>
-              \extrafn{If you're stuck, look at a contour plot of <m>f(x,y) = (x+1)^3-3(x+1)^2-y^2+2</m> in   
-              <url href="http://aleph.sagemath.org/?z=eJxL06jQqdS01ajQNtSMM9Y11oKwjHQr44y0jbiS8_NK8kuL4gty8ks00nSAinWNdIw0dRQ0KqGs5Pyc_KKkxCLbkKLSVE0AbVIWvQ">Sage</url>. Then make your own example.}Create you own topographical map to illustrate the ideas above. Just make sure your map has a section with some contours that are closely packed together, and some that are far apart, as well as a contour that intersects itself. Then on your topographical map, please add a few gradient vectors, where you emphasize which ones are long, and which ones are short. Show us how to find a peak, as well as what the gradient vector would be at the peak.
+              <!-- \extrafn{If you're stuck, look at a contour plot of <m>f(x,y) = (x+1)^3-3(x+1)^2-y^2+2</m> in   
+              <url href="http://aleph.sagemath.org/?z=eJxL06jQqdS01ajQNtSMM9Y11oKwjHQr44y0jbiS8_NK8kuL4gty8ks00nSAinWNdIw0dRQ0KqGs5Pyc_KKkxCLbkKLSVE0AbVIWvQ">Sage</url>. Then make your own example.} -->Create you own topographical map to illustrate the ideas above. Just make sure your map has a section with some contours that are closely packed together, and some that are far apart, as well as a contour that intersects itself. Then on your topographical map, please add a few gradient vectors, where you emphasize which ones are long, and which ones are short. Show us how to find a peak, as well as what the gradient vector would be at the peak.
             </p>
           </li>
         </ol>

@@ -30,7 +30,7 @@
       <me>
         \vec F = (4,-2) + (-4,-8).
       </me></fn>.
-      \extrafn{This is a good time to look back over the projection section from Unit 1: <xref ref="prob_force_intro"></xref>}
+      <!-- \extrafn{This is a good time to look back over the projection section from Unit 1: <xref ref="prob_force_intro"></xref>} -->
     </p>
 
     </review>
@@ -122,7 +122,7 @@
 
     <p>
       The scalars <m>a_T=\dfrac{d}{dt}|\vec v(t)|</m> and <m>a_N=\kappa |\vec v|^2</m>
-      \extrafn{Engineers often use the equivalent formula <m>a_N = \frac{|\vec v|^2}{\rho}</m>, as <m>\rho</m> is a physical distance that they can measure.}are the tangential and normal components of acceleration. All we have to do is write the vector <m>\vec a(t)</m> as the sum of a vector parallel to <m>\vec T</m> and a vector orthogonal to <m>\vec T</m>.
+      <!-- \extrafn{Engineers often use the equivalent formula <m>a_N = \frac{|\vec v|^2}{\rho}</m>, as <m>\rho</m> is a physical distance that they can measure.} -->are the tangential and normal components of acceleration. All we have to do is write the vector <m>\vec a(t)</m> as the sum of a vector parallel to <m>\vec T</m> and a vector orthogonal to <m>\vec T</m>.
     </p>
 
     <p>
@@ -167,7 +167,7 @@
 
     <exploration>
       <p>
-        \extrafn{Watch a <url href="http://www.youtube.com/watch?v=cSh2Bdd-yTg&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  }Prove that <m>\ds \vec a(t) = a_T\vec T+a_N\vec N=\frac{d}{dt}|\vec v| \vec T + \kappa |\vec v|^2 \vec N.</m> Here's some hints.
+        <!-- \extrafn{Watch a <url href="http://www.youtube.com/watch?v=cSh2Bdd-yTg&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  } -->Prove that <m>\ds \vec a(t) = a_T\vec T+a_N\vec N=\frac{d}{dt}|\vec v| \vec T + \kappa |\vec v|^2 \vec N.</m> Here's some hints.
         <ul>
           <li>
             <p>
@@ -229,7 +229,7 @@
 
     <exploration xml:id="formula_for_curvature">
       <p>
-        \extrafn{See 13.4: 5.}The function <m>y=f(x)</m> can be given the parametrization <m>\vec r(x) = (x,f(x))</m>. Use this parametrization (and the previous exercise) to show that the curvature is
+        <!-- \extrafn{See 13.4: 5.} -->The function <m>y=f(x)</m> can be given the parametrization <m>\vec r(x) = (x,f(x))</m>. Use this parametrization (and the previous exercise) to show that the curvature is
         <me>
           \kappa(x) = \frac{|f''(x)|}{(1+(f')^2)^{3/2}},
         </me>
@@ -259,7 +259,7 @@
         <p>
           Let <m>\vec r(t)</m> be a parametrization of a smooth curve <m>C</m> with unit tangent vector <m>\vec T(t)</m>.
           The derivative of <m>\vec B</m> with respect to <m>s</m> tells us how rapidly the plane containing <m>\vec T</m> and <m>\vec N</m> rotates. We'll define the torsion vector to be
-          \extrafn{Watch a <url href="http://www.youtube.com/watch?v=MVtUc2peJn0&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  }
+          <!-- \extrafn{Watch a <url href="http://www.youtube.com/watch?v=MVtUc2peJn0&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  } -->
           <me>
             \vec \tau = \dfrac{d\vec B}{ds} = \dfrac{d\vec B/dt}{ds/dt}=\dfrac{d\vec B/dt}{|d\vec r/dt|}.
           </me>
@@ -282,10 +282,10 @@
     <exploration>
       <title>Optional</title>
       <p>
-        \extrafn{
+        <!-- \extrafn{
         \thomasee{See 13.4: 9-16 and 13.5: 9-16 (the relevant parts) for more practice.}
         \stewarts{TBD?}
-        }Consider the helix <m>r(t)=(3\cos t, 3\sin t, 4t)</m>. In <xref ref="helix_example_of_T_N_and_B">exercise</xref> we found
+        } -->Consider the helix <m>r(t)=(3\cos t, 3\sin t, 4t)</m>. In <xref ref="helix_example_of_T_N_and_B">exercise</xref> we found
         <md>
           <mrow>\vec T \amp = (-\frac{3}{5}\sin t,\frac{3}{5}\cos t,\frac{4}{5})</mrow>
           <mrow>\vec N \amp = (-\cos t,-\sin t,0)</mrow>
@@ -320,7 +320,7 @@
     <exploration>
       <title>Optional</title>
       <p>
-        \extrafn{Watch a <url href="http://www.youtube.com/watch?v=MVtUc2peJn0&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  }Suppose a curve <m>\vec r(t)</m> has the frame <m>\vec T(t)</m>, <m>\vec N(t)</m>, and <m>\vec B(t)</m>. Prove that <m>\dfrac{d\vec B}{ds}</m> is either parallel to <m>\vec N</m>, or points opposite <m>\vec N</m>. Here are some steps.
+        <!-- \extrafn{Watch a <url href="http://www.youtube.com/watch?v=MVtUc2peJn0&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  } -->Suppose a curve <m>\vec r(t)</m> has the frame <m>\vec T(t)</m>, <m>\vec N(t)</m>, and <m>\vec B(t)</m>. Prove that <m>\dfrac{d\vec B}{ds}</m> is either parallel to <m>\vec N</m>, or points opposite <m>\vec N</m>. Here are some steps.
         <ul>
           <li>
             <p>
@@ -362,20 +362,20 @@
         <p>
           This concludes the \chaptername .  Look at the objectives at the beginning of the unit . Can you now do all the things you were promised? 
 
-          \instructor{TeX files for these are included in a separate folder in the GitHub Project}
-          \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all}
+          <!-- \instructor{TeX files for these are included in a separate folder in the GitHub Project} -->
+          <!-- \note{Those files should be cleaned up an generalized, i.e. remove specific instructor/course number from them. Possibly also make a master tex file to compile them all} -->
 
           <em>Review Guide Creation</em>
 
 
-          Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } 
+          Your assignment: organize what you've learned into a small collection of examples that illustrates the key concepts. I'll call this your unit<nbsp />review guide. I'll provide you with a template which includes the unit's key concepts from the objectives at the beginning. Once you finish your review guide, scan it into a PDF document (use any scanner on campus or photo software) and upload it to Gradescope. <!-- \instructor{Gradescope is a cool grading platform! \url{www.gradescope.com} } --> 
 
 
           As you create this review guide, consider the following:
           <ul>
             <li>
               <p>
-                Before each Celebration of Knowledge \instructor{This is just an exam} we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
+                Before each Celebration of Knowledge <!-- \instructor{This is just an exam} --> we will devote a class period to review. With well created lesson plans, you will have 4-8 pages(for 2-4 Chapters) to review for each, instead of 50-100 problems.
               </p>
             </li>
 

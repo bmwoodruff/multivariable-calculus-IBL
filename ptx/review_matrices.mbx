@@ -7,7 +7,7 @@
     </p>
 
     <p>
-      We perform matrix multiplication <q>row by column</q>. Wikipedia has an excellent visual illustration of how to do this. See \extrafn{
+      We perform matrix multiplication <q>row by column</q>. Wikipedia has an excellent visual illustration of how to do this. See <!-- \extrafn{
 
       <insight>
         <p>
@@ -21,12 +21,12 @@
         </p>
       </insight>
 
-      }<url href="http://en.wikipedia.org/wiki/Matrix_multiplication">Wikipedia</url> for an explanation. Alternatively see <url href="http://www.texample.net/tikz/examples/matrix-multiplication/">texample.net</url> for a visualization of the idea.
+      } --><url href="http://en.wikipedia.org/wiki/Matrix_multiplication">Wikipedia</url> for an explanation. Alternatively see <url href="http://www.texample.net/tikz/examples/matrix-multiplication/">texample.net</url> for a visualization of the idea.
     </p>
 
     <project>
       <p>
-        \extrafn{
+        <!-- \extrafn{
 
         <insight>
         <p>
@@ -50,7 +50,7 @@
         </p>
         </insight>
 
-        }Compute the following matrix products.
+        } -->Compute the following matrix products.
         <ul>
           <li>
             <p>
@@ -99,7 +99,7 @@
       <statement>
         <p>
           The determinant of a {<m>2\times 2</m>} matrix is the number
-          \extrafn{We use vertical bars next to a matrix to state we want the determinant, so <m>\det A = |A|</m>. }
+          <!-- \extrafn{We use vertical bars next to a matrix to state we want the determinant, so <m>\det A = |A|</m>. } -->
           <md>
             <mrow>\det\begin{bmatrix}a\amp b</mrow>
             <mrow>c\amp d\end{bmatrix} \amp =\begin{vmatrix}a\amp b</mrow>
@@ -109,7 +109,7 @@
 
         <p>
           The determinant of a {<m>3\times 3</m>} matrix is the number
-          \extrafn{Notice the negative sign on the middle term of the {<m>3 \times 3</m>} determinant. Also, notice that we had to compute three determinants of 2 by 2 matrices in order to find the determinant of a 3 by 3.}
+          <!-- \extrafn{Notice the negative sign on the middle term of the {<m>3 \times 3</m>} determinant. Also, notice that we had to compute three determinants of 2 by 2 matrices in order to find the determinant of a 3 by 3.} -->
           <md>
             <mrow>\begin{vmatrix}a\amp b\amp c</mrow>
             <mrow>d\amp e\amp f</mrow>
@@ -125,7 +125,7 @@
 
     <project>
       <p>
-        \extrafn{For extra practice, create your own square matrix (2 by 2 or 3 by 3) and compute the determinant by hand. Then use <url href="http://www.wolframalpha.com">Wolfram Alpha</url> to check your work.  Do this until you feel comfortable taking determinants.}Compute
+        <!-- \extrafn{For extra practice, create your own square matrix (2 by 2 or 3 by 3) and compute the determinant by hand. Then use <url href="http://www.wolframalpha.com">Wolfram Alpha</url> to check your work.  Do this until you feel comfortable taking determinants.} -->Compute
         <m>\begin{vmatrix}
         1\amp 2\\
         3\amp 4

@@ -39,7 +39,7 @@
 
   <exploration>
     <p>
-      \extrafn{The polynomial you are creating is often called a Taylor polynomial. (I'm giving you the name so that you can search online for more information if you are interested.)}Now let <m>f(x)=\sin x</m>. Find a 7th degree polynomial so that the function and the polynomial have the same value and same first seven derivatives when evaluated at <m>x=0</m>. Evaluate the polynomial at <m>x=0.3</m>. How close is this value to your calculator's estimate of <m>\sin(0.3)</m>? You may find it valuable to use the notation
+      <!-- \extrafn{The polynomial you are creating is often called a Taylor polynomial. (I'm giving you the name so that you can search online for more information if you are interested.)} -->Now let <m>f(x)=\sin x</m>. Find a 7th degree polynomial so that the function and the polynomial have the same value and same first seven derivatives when evaluated at <m>x=0</m>. Evaluate the polynomial at <m>x=0.3</m>. How close is this value to your calculator's estimate of <m>\sin(0.3)</m>? You may find it valuable to use the notation
       <me>
         P(x) = a_0+a_1x+a_2x^2+a_3x^3 +\cdots+a_7 x^7.
       </me>
@@ -70,7 +70,7 @@
             <me>
               S(x)=a+b(x-1)+c(x-1)^2
             </me>
-            \extrafn{Notice that we just replaced <m>x</m> with <m>x-1</m>. This centers, or shifts, the approximation to be at <m>x=1</m>. The first part will be much simpler now when you let <m>x=1</m>.}so that <m>S(1)=f(1)</m>, <m>S'(1)=f'(1)</m>, and <m>S''(1)=f''(1)</m>. In other words, find a quadratric that passes through the same point, has the same slope, and the same concavity as <m>f(x)=e^x</m> does at <m>x=1</m>.
+            <!-- \extrafn{Notice that we just replaced <m>x</m> with <m>x-1</m>. This centers, or shifts, the approximation to be at <m>x=1</m>. The first part will be much simpler now when you let <m>x=1</m>.} -->so that <m>S(1)=f(1)</m>, <m>S'(1)=f'(1)</m>, and <m>S''(1)=f''(1)</m>. In other words, find a quadratric that passes through the same point, has the same slope, and the same concavity as <m>f(x)=e^x</m> does at <m>x=1</m>.
           </p>
         </li>
 
@@ -245,7 +245,7 @@
     </p>
 
     <p>
-      \extrafn{As a challenge, try to draw a 3D graph which illustrates the volume added on by each successive approximation. If you have it before we get here as a class, let me know and I'll let you share what you have discovered with the class.}Suppose that the machine creates a cube with side length <m>2.3</m> units instead of 2 units. Note that the volume of the cube is <m>V=s^3</m>. Use a first, second, and third order approximation to estimate the increase in volume caused by the .3 increase in side length. Then compute the actual increase in volume <m>V(2.3)-V(2)</m>.
+      <!-- \extrafn{As a challenge, try to draw a 3D graph which illustrates the volume added on by each successive approximation. If you have it before we get here as a class, let me know and I'll let you share what you have discovered with the class.} -->Suppose that the machine creates a cube with side length <m>2.3</m> units instead of 2 units. Note that the volume of the cube is <m>V=s^3</m>. Use a first, second, and third order approximation to estimate the increase in volume caused by the .3 increase in side length. Then compute the actual increase in volume <m>V(2.3)-V(2)</m>.
     </p>
   </exploration>
 </section>

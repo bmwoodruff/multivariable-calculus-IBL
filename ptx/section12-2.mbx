@@ -52,9 +52,9 @@
         <ol type="a">
           <li>
             <p>
-              sketch a plot (you can graph it in Sage or WolframAlpha first)  \extrafn{See 
+              sketch a plot (you can graph it in Sage or WolframAlpha first)  <!-- \extrafn{See 
               <url href="http://aleph.sagemath.org/?z=eJxz06jQqdRUsFXQMNKq0K7UqdA20qrU5CrIyS-JL0tNLskvik_LTM1J0XDTUQAq1TU00DE00ASyK2FsTQCKaxIN">Sage</url> or
-              <url href="http://wolfr.am/y4gIgX">Wolfram Alpha</url> to plot the vector fields}
+              <url href="http://wolfr.am/y4gIgX">Wolfram Alpha</url> to plot the vector fields} -->
             </p>
           </li>
 
@@ -188,7 +188,7 @@
       </p>
 
       <p>
-        \extrafn{See <url href="http://mathinsight.org/curl_components">MathInsight.org</url> for a really nice animation of the curl of a vector field.}for each vector field:
+        <!-- \extrafn{See <url href="http://mathinsight.org/curl_components">MathInsight.org</url> for a really nice animation of the curl of a vector field.} -->for each vector field:
         <ol>
           <li>
             <p>

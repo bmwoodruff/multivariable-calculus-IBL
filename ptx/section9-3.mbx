@@ -22,8 +22,8 @@
     <title>Gradients and Potentials</title>
     <statement>
       <p>
-        \extrafn{<url href="http://www.youtube.com/watch?v=8Tk2pEIOnwg&amp;list=PL04DF68E73B7ECD54&amp;index=9&amp;feature=plpp_video">Watch a YouTube Video</url>.}Let <m>\vec F</m> be a vector field. A potential for the vector field is a function <m>f</m> whose derivative equals <m>\vec F</m>. So if <m>Df=\vec F</m>, then we say that <m>f</m> is a potential for <m>\vec F</m>. When we want to emphasize that the derivative of <m>f</m> is a vector field, we call <m>Df</m> the gradient of <m>f</m> and write <m>Df = \vec \nabla f</m>.
-        \extrafn{The symbol <m>\vec \nabla f</m> is read <q>the gradient of <m>f</m></q> or <q>del f.</q>}If <m>\vec F</m> has a potential, then we say that <m>\vec F</m> is a gradient field.
+        <!-- \extrafn{<url href="http://www.youtube.com/watch?v=8Tk2pEIOnwg&amp;list=PL04DF68E73B7ECD54&amp;index=9&amp;feature=plpp_video">Watch a YouTube Video</url>.} -->Let <m>\vec F</m> be a vector field. A potential for the vector field is a function <m>f</m> whose derivative equals <m>\vec F</m>. So if <m>Df=\vec F</m>, then we say that <m>f</m> is a potential for <m>\vec F</m>. When we want to emphasize that the derivative of <m>f</m> is a vector field, we call <m>Df</m> the gradient of <m>f</m> and write <m>Df = \vec \nabla f</m>.
+        <!-- \extrafn{The symbol <m>\vec \nabla f</m> is read <q>the gradient of <m>f</m></q> or <q>del f.</q>} -->If <m>\vec F</m> has a potential, then we say that <m>\vec F</m> is a gradient field.
       </p>
     </statement>
   </definition>
@@ -34,7 +34,7 @@
 
   <exploration>
     <p>
-      \extrafn{<url href="http://www.youtube.com/watch?v=8Tk2pEIOnwg&amp;list=PL04DF68E73B7ECD54&amp;index=9&amp;feature=plpp_video">Watch a YouTube Video</url>.}Let's practice finding gradients and potentials.
+      <!-- \extrafn{<url href="http://www.youtube.com/watch?v=8Tk2pEIOnwg&amp;list=PL04DF68E73B7ECD54&amp;index=9&amp;feature=plpp_video">Watch a YouTube Video</url>.} -->Let's practice finding gradients and potentials.
     </p>
     <hint>
       <p>
@@ -94,7 +94,7 @@
 
     <li>
       <p>
-        \extrafn{See <xref ref="second_partials_agree">exercise</xref>.}Consider the vector field <m>\vec F(x,y)=(2x+y,3x+4y)</m>.
+        <!-- \extrafn{See <xref ref="second_partials_agree">exercise</xref>.} -->Consider the vector field <m>\vec F(x,y)=(2x+y,3x+4y)</m>.
         <ol>
           <li>
             <p>
@@ -132,7 +132,7 @@
 
   <exploration>
     <p>
-      \extrafn{If you haven't yet, please watch this <url href="http://www.youtube.com/watch?v=8Tk2pEIOnwg&amp;list=PL04DF68E73B7ECD54&amp;index=9&amp;feature=plpp_video">YouTube video</url>.}For each of the following vector fields, find a potential, or explain why none exists.
+      <!-- \extrafn{If you haven't yet, please watch this <url href="http://www.youtube.com/watch?v=8Tk2pEIOnwg&amp;list=PL04DF68E73B7ECD54&amp;index=9&amp;feature=plpp_video">YouTube video</url>.} -->For each of the following vector fields, find a potential, or explain why none exists.
     </p>
     <hint>
       <p>
@@ -205,7 +205,7 @@
     <title>The Fundamental Theorem of Line Integrals</title>
     <statement>
       <p>
-        \extrafn{<url href="http://www.youtube.com/watch?v=5ZsCN6NN3yg&amp;list=PL04DF68E73B7ECD54&amp;index=11&amp;feature=plpp_video">Watch a YouTube video</url>.}Suppose <m>f</m> is a continuously differentiable function, defined along some open region containing the smooth curve <m>C</m>. Let <m>\vec r(t)</m> be a parametrization of the curve <m>C</m> for <m>t\in[a,b]</m>. Then we have
+        <!-- \extrafn{<url href="http://www.youtube.com/watch?v=5ZsCN6NN3yg&amp;list=PL04DF68E73B7ECD54&amp;index=11&amp;feature=plpp_video">Watch a YouTube video</url>.} -->Suppose <m>f</m> is a continuously differentiable function, defined along some open region containing the smooth curve <m>C</m>. Let <m>\vec r(t)</m> be a parametrization of the curve <m>C</m> for <m>t\in[a,b]</m>. Then we have
         <me>
           f(\vec r(b))-f(\vec r(a))=\int_a^b Df(\vec r(t))D\vec r(t)\ dt.
         </me>
@@ -232,7 +232,7 @@
   <exploration>
     <title>Proof of the Fundamental Theorem</title>
     <p>
-      \extrafn{The proof of the fundamental theorem of line integrals is quite short. All you need is the fundamental theorem of calculus, together with the chain rule (chain_rule_def).}Suppose <m>f(x,y)</m> is continuously differentiable, and suppose that <m>\vec r(t)</m> for <m>t\in[a,b]</m> is a parametrization of a smooth curve <m>C</m>. Prove that <m>f(\vec r(b))-f(\vec r(a)) = \int_a^b Df(\vec r(t))D\vec r(t)\ dt</m>.
+      <!-- \extrafn{The proof of the fundamental theorem of line integrals is quite short. All you need is the fundamental theorem of calculus, together with the chain rule (chain_rule_def).} -->Suppose <m>f(x,y)</m> is continuously differentiable, and suppose that <m>\vec r(t)</m> for <m>t\in[a,b]</m> is a parametrization of a smooth curve <m>C</m>. Prove that <m>f(\vec r(b))-f(\vec r(a)) = \int_a^b Df(\vec r(t))D\vec r(t)\ dt</m>.
       [If you do this exercise, skip <xref ref="prob_proof_of_fundamental_thm2">exercise</xref> ]
     </p>
   </exploration>
@@ -278,7 +278,7 @@
 
   <exploration>
     <p>
-      \extrafn{<url href="http://www.youtube.com/watch?v=5ZsCN6NN3yg&amp;list=PL04DF68E73B7ECD54&amp;index=11&amp;feature=plpp_video">Watch a YouTube video</url>.}For each vector field and curve below, find the work done by <m>\vec F</m> along <m>C</m>. In other words, compute the integral <m>\int_C Mdx+Ndy</m> or <m>\int_C Mdx+Ndy+Pdz</m>.
+      <!-- \extrafn{<url href="http://www.youtube.com/watch?v=5ZsCN6NN3yg&amp;list=PL04DF68E73B7ECD54&amp;index=11&amp;feature=plpp_video">Watch a YouTube video</url>.} -->For each vector field and curve below, find the work done by <m>\vec F</m> along <m>C</m>. In other words, compute the integral <m>\int_C Mdx+Ndy</m> or <m>\int_C Mdx+Ndy+Pdz</m>.
     </p>
     <hint>
       <p>
@@ -288,13 +288,13 @@
     <ol>
       <li>
         <p>
-          \extrafn{See <url href="http://aleph.sagemath.org/?z=eJxz06jQqdS01TDSqtCu1KnQNtGq1OQqyMkviS9LTS7JL4pPy0zNSdFw01EAKtQ11jHSBLIqdQx0LDU1tUHqNCx1K-KMdGCymgDJPhZ0">Sage</url> for a picture.}Let <m>\vec F(x,y) = (2x+y,x+4y)</m> and <m>C</m> be the parabolic path <m>y=9-x^2</m> for <m>x</m> from <m>-3</m> to <m>2</m>.
+          <!-- \extrafn{See <url href="http://aleph.sagemath.org/?z=eJxz06jQqdS01TDSqtCu1KnQNtGq1OQqyMkviS9LTS7JL4pPy0zNSdFw01EAKtQ11jHSBLIqdQx0LDU1tUHqNCx1K-KMdGCymgDJPhZ0">Sage</url> for a picture.} -->Let <m>\vec F(x,y) = (2x+y,x+4y)</m> and <m>C</m> be the parabolic path <m>y=9-x^2</m> for <m>x</m> from <m>-3</m> to <m>2</m>.
         </p>
       </li>
 
       <li>
         <p>
-          \extrafn{See <url href="http://aleph.sagemath.org/?z=eJwVi7EKgDAMRPd-hWPSRtCIo6s_IdJBKwhFRYo0_XrT6R5372bIJFRwArbZiS3Etris2bAVBUHzxDv5L2zpfv1xhrgPO8zU6LMnRgWhdqwEhToaEF08rwALcO27aqiow4rmBwN1HWM">Sage</url> for a picture.}Let <m>\vec F(x,y,z) = (2x+yz,2z+xz,2y+xy)</m> and <m>C</m> be the straight segment from <m>(2,-5,0)</m> to <m>(1,2,3)</m>.
+          <!-- \extrafn{See <url href="http://aleph.sagemath.org/?z=eJwVi7EKgDAMRPd-hWPSRtCIo6s_IdJBKwhFRYo0_XrT6R5372bIJFRwArbZiS3Etris2bAVBUHzxDv5L2zpfv1xhrgPO8zU6LMnRgWhdqwEhToaEF08rwALcO27aqiow4rmBwN1HWM">Sage</url> for a picture.} -->Let <m>\vec F(x,y,z) = (2x+yz,2z+xz,2y+xy)</m> and <m>C</m> be the straight segment from <m>(2,-5,0)</m> to <m>(1,2,3)</m>.
         </p>
       </li>
     </ol>
@@ -307,11 +307,11 @@
 
   <exploration>
     <p>
-      \extrafn{See <url href="http://aleph.sagemath.org/?z=eJytkM1uhCAUhfc-hTsueMmMYNOV23mJydQYpR1SK0TItPr0hVFbm5kumnQBl597zvngUg9APKHJAT5wxImWoU440sRY78pWNx78WTevvXKulDSxpe2Mry6q8WaonrXqWtnCAdOg4zkKGlYj8gILijAhl_hIgyorbT3Ub8oPuqmiA0BjHPjQ7nR_rXGAxz0KZjVFxiLBVdrpXsER8q-7FAQWKOkJ07UtzkfSmM4M5FSSQbVkI53bgy567Le6e2SCr0wFmykZ5Dzu5bJfUa3eiR-ov3oxwfzO6tVSsm-7B_YPhuFgLllnXiDPIrPns92SEzPnhzyJP-RlMe-qvX3CbWa-4G0-a3N4P9adzTtYmnwCd8u7lQ">Sage</url><mdash /><m>C_1</m> and <m>C_2</m> are in blue, and several possible <m>C_3</m> are shown in red.}Let <m>\vec F = (x,z,y)</m>. Let <m>C_1</m> be the curve which starts at <m>(1,0,0)</m> and follows a helical path <m>(\cos t, \sin t, t)</m> to <m>(1,0,2\pi)</m>. Let <m>C_2</m> be the curve which starts at <m>(1,0, 2\pi)</m> and follows a straight line path to <m>(2,4,3)</m>. Let <m>C_3</m> be any smooth curve that starts at <m>(2,4,3)</m> and ends at <m>(0,1,2)</m>.
+      <!-- \extrafn{See <url href="http://aleph.sagemath.org/?z=eJytkM1uhCAUhfc-hTsueMmMYNOV23mJydQYpR1SK0TItPr0hVFbm5kumnQBl597zvngUg9APKHJAT5wxImWoU440sRY78pWNx78WTevvXKulDSxpe2Mry6q8WaonrXqWtnCAdOg4zkKGlYj8gILijAhl_hIgyorbT3Ub8oPuqmiA0BjHPjQ7nR_rXGAxz0KZjVFxiLBVdrpXsER8q-7FAQWKOkJ07UtzkfSmM4M5FSSQbVkI53bgy567Le6e2SCr0wFmykZ5Dzu5bJfUa3eiR-ov3oxwfzO6tVSsm-7B_YPhuFgLllnXiDPIrPns92SEzPnhzyJP-RlMe-qvX3CbWa-4G0-a3N4P9adzTtYmnwCd8u7lQ">Sage</url><mdash /><m>C_1</m> and <m>C_2</m> are in blue, and several possible <m>C_3</m> are shown in red.} -->Let <m>\vec F = (x,z,y)</m>. Let <m>C_1</m> be the curve which starts at <m>(1,0,0)</m> and follows a helical path <m>(\cos t, \sin t, t)</m> to <m>(1,0,2\pi)</m>. Let <m>C_2</m> be the curve which starts at <m>(1,0, 2\pi)</m> and follows a straight line path to <m>(2,4,3)</m>. Let <m>C_3</m> be any smooth curve that starts at <m>(2,4,3)</m> and ends at <m>(0,1,2)</m>.
       <ol>
         <li>
           <p>
-            Find the work done by <m>\vec F</m> along each path <m>C_1</m>, <m>C_2</m>, <m>C_3</m>.  \extrafn{If you are parameterizing the curves, you're doing this the really hard way. Are you using the potential of the vector field?}
+            Find the work done by <m>\vec F</m> along each path <m>C_1</m>, <m>C_2</m>, <m>C_3</m>.  <!-- \extrafn{If you are parameterizing the curves, you're doing this the really hard way. Are you using the potential of the vector field?} -->
           </p>
         </li>
 
