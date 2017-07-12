@@ -17,3 +17,134 @@ To view a copy of this license, visit
 http://creativecommons.org/licenses/by-sa/3.0/us/
 or send a letter to Creative Commons, 171 Second Street, Suite 300, San Fran-
 cisco, California, 94105, USA.
+
+-->
+
+<frontmatter xml:id="authorstuff" xmlns:xi="http://www.w3.org/2001/Xinclude">
+
+	<titlepage>
+		<author>
+			<personname>Benjamin Woodruff</personname>
+			<department>Department of Mathematics</department>
+			<institution>Bringham Young University - Idaho</institution>
+			<email>woodruffb@byui.edu</email>
+		</author>
+
+		<author>
+			<personname>Karl R. B. Schmitt</personname>
+			<department>Department of Mathematics and Statistics</department>
+			<department>Department of Computing and Information Sciences</department>
+			<institution>Valparaiso University</institution>
+			<email>karl.schmitt@valpo.edu</email>
+		</author>
+
+		Typeset: <date><today /></date>
+
+	</titlepage>
+
+	<colophon>
+		<edition>Web-Enhanced Edition</edition>
+
+		<website>
+			<name><c>faculty.valpo.edu/calculus3ibl</c></name>
+			<address>http://faculty.valpo.edu/calculus3ibl</address>
+		</website>
+
+		<copyright>
+			<year>2012<ndash />2017</year>
+			<holder>Ben Woodruff, Karl R. B. Schmitt, Jason Grout</holder>
+			<minilicense>CC Attribution-ShareAlike 4.0 International</minilicense>
+			<shortlicense><url href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></url><br />This work is licensed under a <url href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</url>. You may copy, distribute, display, and perform this copyrighted work, but only if you give credit to Ben Woodruff and Karl R. B. Schmitt, and all derivative works based upon it must be published under the Creative Commons Attribution-Share Alike 4.0 International License (or an updated equivalent). Please attribute this work to Ben Woodruff, Mathematics Faculty at Brigham Young University--Idaho, <email>woodruffb@byui.edu</email> and Karl R. B. Schmitt, Mathematics and Statistics Faculty at Valparaiso University <email>karl.schmitt@valpo.edu</email>. 
+
+			
+
+			</shortlicense>
+		</copyright>
+
+	</colophon>
+
+	<section>
+		<title>Mathematical Truths</title>
+		  <p>
+		    From Dr. Woodruff:
+		  </p>
+
+		  <p>
+		    This course may be like no other course in mathematics you have ever taken. We'll discuss in class some of the key differences, and eventually this section will contain a complete description of how this course works. For now, it's just a skeleton.
+		  </p>
+
+		  <p>
+		    I received the following email about 6 months after a student took the course:
+		  </p>
+
+		  <blockquote>
+		  Hey Brother Woodruff,
+
+		  I was reading <em>Knowledge of Spiritual Things</em> by Elder Scott.
+		  I thought the following quote would be awesome to share with your
+		  students, especially those in Math 215 :)
+			  <blockquote>
+			  Profound [spiritual] truth cannot simply be poured
+			  from one mind and heart to another. It takes faith
+			  and diligent effort. Precious truth comes a small
+			  piece at a time through faith, with great exertion,
+			  and at times wrenching struggles.
+			  </blockquote>
+
+		  </blockquote>
+
+		  <p>
+		    Elder Scott's words perfectly describe how we acquire mathematical truth, as well as spiritual truth.
+		  </p>
+
+	</section>
+
+	<section>
+	  <title>Teaching philosophy</title>
+		  <p>
+		    From Dr. Schmitt:
+		  </p>
+
+		  <p>
+		    Over time, I've come to view teaching and learning as a shared journey on which my students and I
+		    embark each semester. I am the subject matter expert responsible for
+		    providing information and guidance, setting expectations, and
+		    assessing how well students meet those expectations. My students are
+		    responsible for much hard work, including preparing in advance for
+		    class, participating in class activities, and doing out-of-class
+		    assignments, regardless of whether or not they are graded. There is
+		    only so much that can be conveyed in <m>50</m> minutes, and my own personal
+		    experience and educational research agree that students get far less
+		    out of a <m>50</m>-minute lecture than their professors hope. Thus, I have
+		    chosen to take an approach that is more work both for you and for me
+		    but has been shown to produce better results. During class you
+		    will work on a carefully chosen series of problems designed to build
+		    the mathematical knowledge and experience you need to succeed. These
+		    problems will be done in a collaborative, small group setting where
+		    you can grapple with and truly understand the material. I'll be there to support, guide, and correct
+		    misconceptions. Sure, I could expect you to do this alone outside of
+		    class, but over time I've realized a few things about working in
+		    groups. As a student, I usually understood something better when I
+		    went over it with classmates, even if I was the one who thought I
+		    understood it completely and explained it to a peer. As a researcher,
+		    I am more productive and effective when I collaborate. Friends in
+		    industry report that teams are increasingly used to produce the best
+		    results. Furthermore, having me there to help in the early stages
+		    ensures that we're traveling together on this journey.
+		  </p>
+
+		  <p>
+		    -Dr. Karl Schmitt
+		  </p>
+
+		  <p>
+		    Modified with permission from Dr. Mitchel Keller at Washington <ampersand /> Lee University
+		  </p>
+	</section>
+
+	
+</frontmatter>
+
+
+
+
