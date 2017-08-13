@@ -1,5 +1,4 @@
 
-
 <section>
   <title>Polar Coordinates</title>
   <introduction>
@@ -13,21 +12,22 @@
         \thomasee{See 11.3:5-10.}
         } -->Consider the point <m>P</m> with Cartesian (rectangular) coordinates <m>(2,1)</m>.
       </p>
-      <task>
-        <p>
-          Find the distance <m>r</m> from <m>P</m> to the origin.
-        </p>
-      </task>
-      <task>
-        <p>
-          Consider the ray <m>\stackrel{\rightarrow}{OP}</m> from the origin through <m>P</m>. Find an angle between <m>\vec{OP}</m> and the <m>x</m>-axis.
-          <hint>
+        <task>
             <p>
-              Use a triangle and trigonometry
+              Find the distance <m>r</m> from <m>P</m> to the origin.
             </p>
-          </hint>
-        </p>
-      </task>
+        </task>
+
+        <task>
+            <p>
+              Consider the ray <m>\stackrel{\rightarrow}{OP}</m> from the origin through <m>P</m>. Find an angle between <m>\vec{OP}</m> and the <m>x</m>-axis.
+              <hint>
+                <p>
+                  Use a triangle and trigonometry
+                </p>
+              </hint>
+            </p>
+        </task>
     </exploration>
 
     <exploration>
@@ -68,29 +68,31 @@
         \thomasee{See page 647.}
         } -->Suppose that <m>Q</m> is a point in the plane with Cartesian coordinates <m>(x,y)</m> and polar coordinates <m>(r,\theta)</m>.
       </p>
-      <task>
-        <p>
-          Write formulas for <m>x</m> and <m>y</m> in terms of <m>r</m> and <m>\theta</m>.
-        </p>
-      </task>
-      <task>
-        <p>
-          Write a formula to find the distance <m>r</m> from <m>Q</m> to the origin (in terms of <m>x</m> and <m>y</m>)
-        </p>
-      </task>
-      <task>
-        <p>
-          Write a formula to find the angle <m>\theta</m> between the <m>x</m>-axis and a line connecting <m>Q</m> to the origin. 
-
-          <em>
-          <hint>
+        <task>
             <p>
-              A picture of a triangle will help here.
+              Write formulas for <m>x</m> and <m>y</m> in terms of <m>r</m> and <m>\theta</m>.
             </p>
-          </hint>
-          </em>
-        </p>
-      </task>
+        </task>
+
+        <task>
+            <p>
+              Write a formula to find the distance <m>r</m> from <m>Q</m> to the origin (in terms of <m>x</m> and <m>y</m>)
+            </p>
+        </task>
+
+        <task>
+            <p>
+              Write a formula to find the angle <m>\theta</m> between the <m>x</m>-axis and a line connecting <m>Q</m> to the origin. 
+
+              <em>
+              <hint>
+                <p>
+                  A picture of a triangle will help here.
+                </p>
+              </hint>
+              </em>
+            </p>
+        </task>
     </exploration>
 
     <p>
@@ -119,9 +121,9 @@
         <!-- \extrafn{For this problem, you are just drawing many parametric curves.
 
         <insight>
-          <p>
-            This is what we did in the previous chapter.
-          </p>
+        <p>
+          This is what we did in the previous chapter.
+        </p>
         </insight>
 
         } -->Consider the coordinate transformation
@@ -129,44 +131,49 @@
           \vec T(r,\theta) = (r\cos\theta,r\sin\theta).
         </me>
       </p>
-      <task>
-        <p>
-          Let <m>r=3</m> and then graph <m>\vec T(3,\theta)=(3\cos\theta,3\sin\theta)</m> for <m>\theta\in[0,2\pi]</m>.
-        </p>
-      </task>
-      <task>
-        <p>
-          Let <m>\theta=\frac{\pi}{4}</m> and then, on the same axes as above, add the graph of 
-          <m>\vec T\left(r,\frac{\pi}{4}\right)=\left(r\frac{\sqrt 2}{2},r \frac{\sqrt 2}{2}\right)</m> for <m>r\in[0,5]</m>.
-        </p>
-      </task>
-      <task>
-        <p>
-          To the same axes as above, add the graphs of 
-          <m>\vec T(1,\theta), \vec T(2,\theta), \vec T(4,\theta)</m>  for <m>\theta\in[0,2\pi]</m>
-        </p>
-      </task>
-      <task>
-        <p>
-          To the same axes as above, add the graphs of <m>\vec T(r,0), \vec T(r,\pi/2), \vec T(r,3\pi/4), \vec T(r,\pi)</m> for <m>r\in[0,5]</m>.
-        </p>
-      </task>
+        <task>
+            <p>
+              Let <m>r=3</m> and then graph <m>\vec T(3,\theta)=(3\cos\theta,3\sin\theta)</m> for <m>\theta\in[0,2\pi]</m>.
+            </p>
+        </task>
+
+        <task>
+            <p>
+              Let <m>\theta=\frac{\pi}{4}</m> and then, on the same axes as above, add the graph of 
+              <m>\vec T\left(r,\frac{\pi}{4}\right)=\left(r\frac{\sqrt 2}{2},r \frac{\sqrt 2}{2}\right)</m> for <m>r\in[0,5]</m>.
+            </p>
+        </task>
+
+        <task>
+            <p>
+              To the same axes as above, add the graphs of 
+              <m>\vec T(1,\theta), \vec T(2,\theta), \vec T(4,\theta)</m>  for <m>\theta\in[0,2\pi]</m>
+            </p>
+        </task>
+
+        <task>
+            <p>
+              To the same axes as above, add the graphs of <m>\vec T(r,0), \vec T(r,\pi/2), \vec T(r,3\pi/4), \vec T(r,\pi)</m> for <m>r\in[0,5]</m>.
+            </p>
+        </task>
     </exploration>
 
     <exploration>
       <p>
         In the plane,
       </p>
-      <task>
-        <p>
-          Graph the curve <m>y=\sin x</m> for <m>x\in[0,2\pi]</m> (make an <m>x,y</m> table)
-        </p>
-      </task>
-      <task>
-        <p>
-          Graph the curve <m>r=\sin\theta</m> for <m>\theta\in[0,2\pi]</m> (an <m>r,\theta</m> table).
-        </p>
-      </task>
+        <task>
+            <p>
+              Graph the curve <m>y=\sin x</m> for <m>x\in[0,2\pi]</m> (make an <m>x,y</m> table)
+            </p>
+        </task>
+
+        <task>
+            <p>
+              Graph the curve <m>r=\sin\theta</m> for <m>\theta\in[0,2\pi]</m> (an <m>r,\theta</m> table).
+            </p>
+        </task>
+
       <p>
         The graphs should look very different. If one looks like a circle, you're on the right track.
       </p>
@@ -178,21 +185,23 @@
         \thomasee{See 11.3: 53-66.}
         } -->Each of the following equations is written in the Cartesian (rectangular) coordinate system. Convert each to an equation in polar coordinates by substituting in the formulas from <xref ref="prob_polar_coordinate_equations"></xref>, and then solve for <m>r</m> so that the equation is in the form <m>r=f(\theta)</m>.
       </p>
-      <task>
-        <p>
-          <m>x^2+y^2=7</m>
-        </p>
-      </task>
-      <task>
-        <p>
-          <m>2x+3y=5</m>
-        </p>
-      </task>
-      <task>
-        <p>
-          <m>x^2=y</m>
-        </p>
-      </task>
+        <task>
+            <p>
+              <m>x^2+y^2=7</m>
+            </p>
+        </task>
+
+        <task>
+            <p>
+              <m>2x+3y=5</m>
+            </p>
+        </task>
+
+        <task>
+            <p>
+              <m>x^2=y</m>
+            </p>
+        </task>
     </exploration>
 
     <exploration>
@@ -201,21 +210,23 @@
         \thomasee{See 11.3: 27-52. I strongly suggest that you do many of these as practice.}
         } -->Each of the following equations is written in the polar coordinate system. Convert each to an equation in the Cartesian coordinates.
       </p>
-      <task>
-        <p>
-          <m>r=9\cos\theta</m>
-        </p>
-      </task>
-      <task>
-        <p>
-          <m>\ds r=\frac{4}{2\cos\theta+3\sin\theta}</m>
-        </p>
-      </task>
-      <task>
-        <p>
-          <m>\theta = 3\pi/4</m>
-        </p>
-      </task>
+        <task>
+            <p>
+              <m>r=9\cos\theta</m>
+            </p>
+        </task>
+
+        <task>
+            <p>
+              <m>\ds r=\frac{4}{2\cos\theta+3\sin\theta}</m>
+            </p>
+        </task>
+
+        <task>
+            <p>
+              <m>\theta = 3\pi/4</m>
+            </p>
+        </task>
     </exploration>
   </introduction>
 
@@ -276,21 +287,23 @@
         \thomasee{See 11.2: 1-14.}
         } -->Consider the polar curve <m>r=1+2\cos \theta</m>. (It wouldn't hurt to provide a quick sketch of the curve.)
       </p>
-      <task>
-        <p>
-          Compute both <m>dx/d\theta</m> and <m>dy/d\theta</m>.
-        </p>
-      </task>
-      <task>
-        <p>
-          Find the slope <m>dy/dx</m> of the curve at <m>\theta=\pi/2</m>.
-        </p>
-      </task>
-      <task>
-        <p>
-          Give both a vector equation of the tangent line, and a Cartesian equation of the tangent line at <m>\theta=\pi/2</m>.
-        </p>
-      </task>
+        <task>
+            <p>
+              Compute both <m>dx/d\theta</m> and <m>dy/d\theta</m>.
+            </p>
+        </task>
+
+        <task>
+            <p>
+              Find the slope <m>dy/dx</m> of the curve at <m>\theta=\pi/2</m>.
+            </p>
+        </task>
+
+        <task>
+            <p>
+              Give both a vector equation of the tangent line, and a Cartesian equation of the tangent line at <m>\theta=\pi/2</m>.
+            </p>
+        </task>
     </exploration>
 
     <p>
@@ -328,17 +341,17 @@
         \thomasee{See 11.5: 21-28.}
         } -->Set up <em>(do not evaluate)</em> an integral formula to compute the length of
       </p>
-      <task>
-        <p>
-          the rose <m>r=2\cos 3\theta</m>, and
-        </p>
-      </task>
-      <task>
-        <p>
-          the rose <m>r=3\sin 2\theta</m>.
-        </p>
-      </task>
+        <task>
+            <p>
+              the rose <m>r=2\cos 3\theta</m>, and
+            </p>
+        </task>
+
+        <task>
+            <p>
+              the rose <m>r=3\sin 2\theta</m>.
+            </p>
+        </task>
     </exploration>
   </subsection>
 </section>
-

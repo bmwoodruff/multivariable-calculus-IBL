@@ -1,5 +1,4 @@
 
-
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
   <title>Vectors</title>
   <introduction>
@@ -39,4 +38,3 @@
   <xi:include  href="section2-5.mbx" />
   <xi:include  href="section2-6.mbx" />
 </chapter>
-

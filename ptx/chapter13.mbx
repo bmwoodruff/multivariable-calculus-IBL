@@ -1,5 +1,4 @@
 
-
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
   <title>Triple Integrals</title>
   <introduction>
@@ -36,4 +35,3 @@
   <xi:include  href="section13-2.mbx" />
   <xi:include  href="section13-3.mbx" />
 </chapter>
-

@@ -1,5 +1,4 @@
 
-
 <section>
   <title>Changing Coordinate Systems: The Jacobian</title>
   <p>
@@ -51,30 +50,31 @@
         <mrow>\vec S(\rho,\phi,\theta) \amp = (\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi).</mrow>
       </md>
     </p>
-    <task>
-    <p>
-      Verify that the Jacobian of the cylindrical transformation is <m>\ds\frac{\partial(x,y,z)}{\partial(r,\theta,z)} = |r|</m>.
-      <ul>
-        <task>
+      <task>
           <p>
-            If you want to make sure you don't have to use absolute values, what must you require?
+            Verify that the Jacobian of the cylindrical transformation is <m>\ds\frac{\partial(x,y,z)}{\partial(r,\theta,z)} = |r|</m>.
+            <ul>
+            <task>
+                <p>
+                  If you want to make sure you don't have to use absolute values, what must you require?
+                </p>
+            </task>
+            </ul>
           </p>
-        </task>
-      </ul>
-    </p>
-    </task>
-    <task>
-    <p>
-      Verify that the Jacobian of the spherical transformation is <m>\ds\frac{\partial(x,y,z)}{\partial(\rho,\phi,\theta)} = |\rho^2\sin\phi|</m>.
-      <ul>
-        <task>
+      </task>
+
+      <task>
           <p>
-            If you want to make sure you don't have to use absolute values, what must you require?
+            Verify that the Jacobian of the spherical transformation is <m>\ds\frac{\partial(x,y,z)}{\partial(\rho,\phi,\theta)} = |\rho^2\sin\phi|</m>.
+            <ul>
+            <task>
+                <p>
+                  If you want to make sure you don't have to use absolute values, what must you require?
+                </p>
+            </task>
+            </ul>
           </p>
-        </task>
-      </ul>
-    </p>
-    </task>
+      </task>
   </exploration>
 
   <p>
@@ -135,9 +135,9 @@
       Set up an integral in the coordinate system of your choice that would give the volume of the solid ball that is inside the sphere <m>a^2=x^2+y^2+z^2</m>. Compute the integral to give a formula for the volume of a sphere of radius <m>a</m>.
 
       <insight>
-        <p>
-          Then set up (don't evaluate) an iterated integral that would give the moment of inertia <m>I_x</m> about the <m>x</m>-axis, if the density is a constant, so <m>\delta =c</m>.
-        </p>
+      <p>
+        Then set up (don't evaluate) an iterated integral that would give the moment of inertia <m>I_x</m> about the <m>x</m>-axis, if the density is a constant, so <m>\delta =c</m>.
+      </p>
       </insight>
 
     </p>
@@ -167,51 +167,54 @@
         Start by drawing the region.
       </p>
     </hint>
-    </p>
+  </p>
     <task>
-      <p>
-        Set up an iterated integral in Cartesian (rectangular) coordinates that would give the volume of <m>D</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Set up an iterated integral in cylindrical coordinates that would give the volume of <m>D</m>.
-      </p>
-    </task>
-    <p>
-    </exploration>
-
-    <exploration>
-      <p>
-        Consider the region <m>D</m> in space that is both inside the sphere <m>x^2+y^2+z^2=9</m> and yet outside the cylinder <m>x^2+y^2=4</m>.
-      </p>
-      <hint>
         <p>
-          Start by drawing the region.
+          Set up an iterated integral in Cartesian (rectangular) coordinates that would give the volume of <m>D</m>.
         </p>
-      </hint>
-    </p>
+    </task>
+
     <task>
+        <p>
+          Set up an iterated integral in cylindrical coordinates that would give the volume of <m>D</m>.
+        </p>
+    </task>
+  <p>
+  </exploration>
+
+  <exploration>
     <p>
-    Set up two iterated integrals in cylindrical coordinates that would give the volume of <m>D</m>.
-    <ol type="a">
-    <task>
+      Consider the region <m>D</m> in space that is both inside the sphere <m>x^2+y^2+z^2=9</m> and yet outside the cylinder <m>x^2+y^2=4</m>.
+    </p>
+    <hint>
       <p>
-        For the first integral use the order <m>dzdrd\theta</m>.
+        Start by drawing the region.
       </p>
-    </task>
-    <task>
+    </hint>
+  </p>
+  <task>
       <p>
-        For the second, use the order <m>d\theta dr dz</m>.
-      </p>
-    </task>
-    </task>
-    <task>
+        Set up two iterated integrals in cylindrical coordinates that would give the volume of <m>D</m>.
+        <ol type="a">
+        <task>
+            <p>
+              For the first integral use the order <m>dzdrd\theta</m>.
+            </p>
+        </task>
+
+        <task>
+            <p>
+              For the second, use the order <m>d\theta dr dz</m>.
+            </p>
+        </task>
+  </task>
+
+  <task>
       <p>
         Set up an iterated integral in spherical coordinates that would give the volume of <m>D</m>.
       </p>
-    </task>
-    <p>
+  </task>
+  <p>
   </exploration>
 
   <exploration>
@@ -226,4 +229,3 @@
     </p>
   </exploration>
 </section>
-

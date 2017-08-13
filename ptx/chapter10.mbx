@@ -1,5 +1,4 @@
 
-
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
   <title>Optimization</title>
   <introduction>
@@ -239,4 +238,3 @@
   <xi:include  href="section10-2.mbx" />
   <xi:include  href="section10-3.mbx" />
 </chapter>
-

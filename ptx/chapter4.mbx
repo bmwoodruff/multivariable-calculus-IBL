@@ -1,5 +1,4 @@
 
-
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
   <title>Parametric Equations</title>
   <introduction>
@@ -28,4 +27,3 @@
   </introduction>
   <xi:include  href="section4-1.mbx" />
 </chapter>
-

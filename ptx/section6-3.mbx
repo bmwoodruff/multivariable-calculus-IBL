@@ -1,5 +1,4 @@
 
-
 <section>
   <title>Parametric Surfaces:</title>
   <p>
@@ -16,60 +15,67 @@
     <p>
       The position of two of the many other jets is given by <m>\vec r_3(t)=(3\cos t, 3\sin t, t)</m> and <m>\vec r_4(t)=(4\cos t,4\sin t,t)</m>. A function which represents the smoke stream is <m>\vec r(a,t)=(a\cos t, a\sin t, t)</m> for <m>0\leq t\leq 4\pi</m> and <m>2\leq a\leq 4</m>.
     </p>
-    </p>
-    <task>
+  </p>
+  <task>
       <p>
         What are <m>n</m> (inputs) and <m>m</m> (outputs) when we write the function <m>\vec r(a,t)=(a\cos t, a\sin t, t)</m> in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
       </p>
-    </task>
-    <task>
-    <p>
-      Start by graphing the position of the three jets. For <m>t=0, \frac{\pi}{2}, \pi, \frac{3\pi}{2}</m> plot the position of each jet:
+  </task>
+
+  <task>
+      <p>
+        Start by graphing the position of the three jets. For <m>t=0, \frac{\pi}{2}, \pi, \frac{3\pi}{2}</m> plot the position of each jet:
+      </p>
     </p>
-    </p>
-    <task>
-      <p>
-        <m>\vec r_2(2,t)=(2\cos t, 2\sin t, t)</m>
-      </p>
-    </task>
-    <task>
-      <p>
-        <m>\vec r_3(3,t)=(3\cos t, 3\sin t, t)</m>
-      </p>
-    </task>
-    <task>
-      <p>
-        <m>\vec r_4(4,t)=(4\cos t, 4\sin t, t)</m>
-      </p>
-    </task>
+      <task>
+          <p>
+            <m>\vec r_2(2,t)=(2\cos t, 2\sin t, t)</m>
+          </p>
+      </task>
+
+      <task>
+          <p>
+            <m>\vec r_3(3,t)=(3\cos t, 3\sin t, t)</m>
+          </p>
+      </task>
+
+      <task>
+          <p>
+            <m>\vec r_4(4,t)=(4\cos t, 4\sin t, t)</m>
+          </p>
+      </task>
     <p>
-    </task>
-    <task>
-    <p>
-      We said in the initial problem statement that the smoke spreads and merges. So we really want to plot <m>\vec{r}(a,t)=(a\cos t, a\sin t, t)</m> for <m>2\leq a \leq 4</m> at each <m>t</m> value.
-    </p>
-    <task>
+  </task>
+
+  <task>
       <p>
-        Describe how would this modify your graph from the previous part?
+        We said in the initial problem statement that the smoke spreads and merges. So we really want to plot <m>\vec{r}(a,t)=(a\cos t, a\sin t, t)</m> for <m>2\leq a \leq 4</m> at each <m>t</m> value.
       </p>
-    </task>
-    <task>
-      <p>
-        Let <m>t=0</m> and graph the curve <m>r(a,0)=(a,0,0)</m> for <m>a\in[2,4]</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Repeat this for <m>t=\pi/2,\pi,3\pi/2</m>
-      </p>
-    </task>
-    </task>
-    <task>
+        <task>
+            <p>
+              Describe how would this modify your graph from the previous part?
+            </p>
+        </task>
+
+        <task>
+            <p>
+              Let <m>t=0</m> and graph the curve <m>r(a,0)=(a,0,0)</m> for <m>a\in[2,4]</m>.
+            </p>
+        </task>
+
+        <task>
+            <p>
+              Repeat this for <m>t=\pi/2,\pi,3\pi/2</m>
+            </p>
+        </task>
+  </task>
+
+  <task>
       <p>
         Describe the resulting surface.
       </p>
-    </task>
-    <p>
+  </task>
+  <p>
   </exploration>
 
   <p>
@@ -91,23 +97,25 @@
     <p>
       You'll need a graph of this function to complete this problem.
     </p>
-    <task>
-      <p>
-        Find the first and second derivative of <m>\vec r(t)</m>. 
+      <task>
+          <p>
+            Find the first and second derivative of <m>\vec r(t)</m>. 
 
-        Note that <m>\vec{v}(t) = \vec{r}'(t)</m> and <m>\vec{a}(t)=\vec{r}''(t)</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Compute the velocity and acceleration vectors at <m>t=\pi/2</m>. Place these vectors on your graph with their tails at the point corresponding to <m>t=\pi/2</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Give an equation of the tangent line to this curve at <m>t=\pi/2</m>.
-      </p>
-    </task>
+            Note that <m>\vec{v}(t) = \vec{r}'(t)</m> and <m>\vec{a}(t)=\vec{r}''(t)</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Compute the velocity and acceleration vectors at <m>t=\pi/2</m>. Place these vectors on your graph with their tails at the point corresponding to <m>t=\pi/2</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Give an equation of the tangent line to this curve at <m>t=\pi/2</m>.
+          </p>
+      </task>
   </exploration>
 
   <exploration>
@@ -119,47 +127,52 @@
       \stewarts{The text has more practice in 13.4:3-6}
       } -->Consider the pebble from <xref ref="prob_pebble">problem</xref>. The pebble's height was given by <m>y=64-16t^2</m>. The pebble also has some horizontal velocity (it's moving at 3 ft/s to the right). If we let the origin be the base of the 64 ft building, then the position of the pebble at time <m>t</m> is given by <m>\vec r(t) = (3t, 64-16t^2)</m>.
     </p>
-    <task>
-      <p>
-        What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
-      </p>
-    </task>
-    <task>
-      <p>
-        At what time does the pebble hit the ground (the height reaches zero)?
-      </p>
-    </task>
-    <task>
-      <p>
-        Construct a graph of the pebble's path from when it leaves the top of the building until it hits the ground.
-      </p>
-    </task>
-    <task>
-      <p>
-        <!-- \extrafn{See <xref ref="differentialtangentline">Section</xref> and <xref ref="def_velocity_acceleration">Definition</xref>.} -->Find the pebble's velocity and acceleration vectors at <m>t=1</m>? Draw these vectors on your graph with their base at the pebble's position at <m>t=1</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        At what speed is the pebble moving when it hits the ground?
-      </p>
-    </task>
+      <task>
+          <p>
+            What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            At what time does the pebble hit the ground (the height reaches zero)?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Construct a graph of the pebble's path from when it leaves the top of the building until it hits the ground.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            <!-- \extrafn{See <xref ref="differentialtangentline">Section</xref> and <xref ref="def_velocity_acceleration">Definition</xref>.} -->Find the pebble's velocity and acceleration vectors at <m>t=1</m>? Draw these vectors on your graph with their base at the pebble's position at <m>t=1</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            At what speed is the pebble moving when it hits the ground?
+          </p>
+      </task>
   </exploration>
 
   <exploration>
     <p>
       Go back to the table you started in <xref ref="prob_function_table">problem</xref>.
     </p>
-    <task>
-      <p>
-        Add in the new problems you've completed.
-      </p>
-    </task>
-    <task>
-      <p>
-        What do you observe about the domain (<m>n</m>), co-domain (<m>m</m>) and the dimensions required for plotting?
-      </p>
-    </task>
+      <task>
+          <p>
+            Add in the new problems you've completed.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            What do you observe about the domain (<m>n</m>), co-domain (<m>m</m>) and the dimensions required for plotting?
+          </p>
+      </task>
   </exploration>
 
   <p>
@@ -180,4 +193,3 @@
     </hint>
   </exploration>
 </section>
-

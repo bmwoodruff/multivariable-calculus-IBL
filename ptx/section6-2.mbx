@@ -1,5 +1,4 @@
 
-
 <section>
   <title>Parametric Curves:</title>
   <p>
@@ -29,31 +28,35 @@
       \stewarts{For review on parameterizing see 10.1 and 10.2. Find more practice in 13.4:3-6 }
       } -->A horse runs around an elliptical track. Its position at time <m>t</m> is given by the function <m>\vec r(t)=(2\cos t, 3\sin t).</m> We could alternatively write this as <m>x=2\cos t, y=3\sin t</m>.
     </p>
-    <task>
-      <p>
-        What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
-      </p>
-    </task>
-    <task>
-      <p>
-        Construct a graph of this function.
-      </p>
-    </task>
-    <task>
-      <p>
-        Next to a few points on your graph, include the time <m>t</m> at which the horse is at this point on the graph. Include an arrow for the horse's direction.
-      </p>
-    </task>
-    <task>
-      <p>
-        How many dimensions do you need to graph this function?
-      </p>
-    </task>
-    <task>
-      <p>
-        If we wanted to plot time (t) on its own axis, how many dimensions would we need?
-      </p>
-    </task>
+      <task>
+          <p>
+            What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Construct a graph of this function.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Next to a few points on your graph, include the time <m>t</m> at which the horse is at this point on the graph. Include an arrow for the horse's direction.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            How many dimensions do you need to graph this function?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            If we wanted to plot time (t) on its own axis, how many dimensions would we need?
+          </p>
+      </task>
   </exploration>
 
   <p>
@@ -74,57 +77,64 @@
       } -->A jet begins spiraling upwards to gain height. The position of the jet after <m>t</m> seconds is modeled by the equation
       <m>\vec r_2(t)=(2\cos t, 2\sin t, t).</m> We could alternatively write this as <m>x=2\cos t,\, y=2\sin t,\, z=t</m>.
     </p>
-    <task>
-      <p>
-        What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
-      </p>
-    </task>
-    <task>
-      <p>
-        Construct a graph of this function by picking several values of <m>t</m> and plotting the points resulting from <m>(2\cos t, 2\sin t, t)</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Next to a few points on your graph, include the time <m>t</m> at which the jet is at this point on the graph. Include an arrow for the jet's direction.
-      </p>
-    </task>
-    <task>
-      <p>
-        How many dimensions do you need to graph this function?
-      </p>
-    </task>
+      <task>
+          <p>
+            What are <m>n</m> and <m>m</m> when we write this function in the form  <m>\vec r\colon {\mathbb{R}}^n\to {\mathbb{R}}^m</m>?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Construct a graph of this function by picking several values of <m>t</m> and plotting the points resulting from <m>(2\cos t, 2\sin t, t)</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Next to a few points on your graph, include the time <m>t</m> at which the jet is at this point on the graph. Include an arrow for the jet's direction.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            How many dimensions do you need to graph this function?
+          </p>
+      </task>
   </exploration>
 
   <exploration xml:id="prob_function_table">
     <p>
       On a separate piece of paper (you'll be expanding this later) create a table with columns for:
       <ul>
-        <task>
+      <task>
           <p>
             problem number
           </p>
-        </task>
-        <task>
+      </task>
+
+      <task>
           <p>
             function
           </p>
-        </task>
-        <task>
+      </task>
+
+      <task>
           <p>
             <m>n</m>
           </p>
-        </task>
-        <task>
+      </task>
+
+      <task>
           <p>
             <m>m</m>
           </p>
-        </task>
-        <task>
+      </task>
+
+      <task>
           <p>
             number of dimensions required to graph
           </p>
-        </task>
+      </task>
       </ul>
     </p>
 
@@ -133,4 +143,3 @@
     </p>
   </exploration>
 </section>
-

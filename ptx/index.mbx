@@ -102,6 +102,7 @@
 
 <book>
 <title>Multivariable Calculus</title>
+
 <xi:include href="./frontmatter.ptx" />
 
 <!--<xi:include href="./chapter1x.mbx" />-->

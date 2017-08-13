@@ -1,5 +1,4 @@
 
-
 <section>
   <title>Arc Length and the Unit Tangent Vector</title>
   <p>
@@ -38,24 +37,27 @@
       <!-- \extrafn{Watch a <url href="http://www.youtube.com/watch?v=jZpAU2T6iI4&amp;list=PL30EE81142B1ED1F0&amp;index=3&amp;feature=plpp_video">YouTube video</url>.} -->A space ship travels through the galaxy. Let <m>\vec r(t) = (x,y,z)</m>
       <!-- \extrafn{Technically, we should write <m>\vec r(t) = (x(t),y(t),z(t))</m>. However, we already know that <m>x</m>, <m>y</m>, and <m>z</m> depend on <m>t</m>, hence we'll just leave the dependence on <m>t</m> off.} -->be the position of the space ship at time <m>t</m>, with the earth at the origin <m>(0,0,0)</m>.
     </p>
-    <task>
-      <p>
-        What are the velocity and speed of the space ship at time <m>t</m>? You answers should involve some derivatives (such as <m>\frac{dx}{dt}</m>).
-      </p>
-    </task>
-    <task>
-      <p>
-        If the space ship travels for a really small time <m>dt</m>, then the speed is about constant. Since distance is speed times time, about how much distance (we'll call it <m>ds</m>) will the space ship travel in this short amount of time?
-      </p>
-    </task>
-    <task xml:id="arc_length2" >
-      <p>
-        As the ship travels from time <m>t=a</m> to time <m>t=b</m>, explain why the distance traveled (the arc length of the path followed) is
-        <me>
-          s=\int_a^b |\vec r '(t)|\ dt = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2+\left(\frac{dz}{dt}\right)^2}\ dt .
-        </me>
-      </p>
-    </task>
+      <task>
+          <p>
+            What are the velocity and speed of the space ship at time <m>t</m>? You answers should involve some derivatives (such as <m>\frac{dx}{dt}</m>).
+          </p>
+      </task>
+
+      <task>
+          <p>
+            If the space ship travels for a really small time <m>dt</m>, then the speed is about constant. Since distance is speed times time, about how much distance (we'll call it <m>ds</m>) will the space ship travel in this short amount of time?
+          </p>
+      </task>
+
+      <task xml:id="arc_length2" >
+
+        <p>
+          As the ship travels from time <m>t=a</m> to time <m>t=b</m>, explain why the distance traveled (the arc length of the path followed) is
+          <me>
+            s=\int_a^b |\vec r '(t)|\ dt = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2+\left(\frac{dz}{dt}\right)^2}\ dt .
+          </me>
+        </p>
+      </task>
   </exploration>
 
   <p>
@@ -66,29 +68,32 @@
     <p>
       We've encountered the polar curve <m>r = 1-\sin\theta</m> before (we called it a cardioid, and it looked like heart). Recall that we can switch from polar to Cartesian using the coordinate transformation <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>.
     </p>
-    <task>
-      <p>
-        Draw the curve.
-      </p>
-    </task>
-    <task>
-      <p>
-        Give the parametrization of this curve: <m>\vec r(\theta) = ((1-\sin\theta)\cos\theta, ?)</m>.
-      </p>
-    </task>
+      <task>
+          <p>
+            Draw the curve.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Give the parametrization of this curve: <m>\vec r(\theta) = ((1-\sin\theta)\cos\theta, ?)</m>.
+          </p>
+      </task>
+
     <p>
-    The parametrization is completely differentiable.
-    <ol type="resume">
-    <task>
-      <p>
-        Find <m>\dfrac{d\vec r}{d\theta}</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        You should notice a sharp cusp in the graph. At what <m>\theta</m> does this cusp occur?  What is the value of the derivative <m>\dfrac{d\vec r}{d\theta}</m> at this value of <m>\theta</m>.
-      </p>
-    </task>
+      The parametrization is completely differentiable.
+      <ol type="resume">
+      <task>
+          <p>
+            Find <m>\dfrac{d\vec r}{d\theta}</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            You should notice a sharp cusp in the graph. At what <m>\theta</m> does this cusp occur?  What is the value of the derivative <m>\dfrac{d\vec r}{d\theta}</m> at this value of <m>\theta</m>.
+          </p>
+      </task>
   </exploration>
 
   <p>
@@ -111,31 +116,35 @@
       \stewarts{See 13.3:1-6 (finding length) and 13.3:17-20 (finding a unit tangent) for more practice. For 17-20, just find the unit tangent vector (for now)}
       } -->Consider the helical space curve <m>C</m> with parameterization <m>\vec r(t)=(\cos t, \sin t, t)</m>.
     </p>
-    <task>
-      <p>
-        Is C a smooth curve?
-      </p>
-    </task>
-    <task>
-      <p>
-        Find the length of this space curve for <m>t\in[0,2\pi]</m> using the formula in <xref ref="arc_length2"></xref>. Compute any integrals.
-      </p>
-    </task>
-    <task>
-      <p>
-        Now find the length of the space curve from <m>t=0</m> to time <m>t=t</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Give a vector tangent to the curve at <m>t=2\pi</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Now give a vector of length 1 that is tangent to the curve at <m>t=2\pi</m>.
-      </p>
-    </task>
+      <task>
+          <p>
+            Is C a smooth curve?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Find the length of this space curve for <m>t\in[0,2\pi]</m> using the formula in <xref ref="arc_length2"></xref>. Compute any integrals.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Now find the length of the space curve from <m>t=0</m> to time <m>t=t</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Give a vector tangent to the curve at <m>t=2\pi</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Now give a vector of length 1 that is tangent to the curve at <m>t=2\pi</m>.
+          </p>
+      </task>
   </exploration>
 
   <p>
@@ -158,16 +167,17 @@
     <p>
       <!-- \extrafn{You can remember <m>\ds\frac{ds}{dt} = \left|\frac {d\vec r}{dt} \right|</m> as follows. We use the differential <m>ds</m> to represents a change in distance, and <m>dt</m> represents a change in time. So the speed of an object is the change in distance <m>ds</m> over the change in time <m>dt</m>. } -->Let <m>\vec r(t)=(x,y,z)</m> be a parametrization of a smooth space curve. Let <m>\ds s(t)=\int_0^t \left|\frac {d\vec r}{d\tau} \right|\ d\tau</m>.
     </p>
-    <task>
-      <p>
-        Explain why <m>\ds\frac{ds}{dt} = \left|\frac {d\vec r}{dt} \right|</m>, the speed.
-      </p>
-    </task>
-    <task>
-      <p>
-        Now explain why <m>s(t)</m> is an increasing function.
-      </p>
-    </task>
+      <task>
+          <p>
+            Explain why <m>\ds\frac{ds}{dt} = \left|\frac {d\vec r}{dt} \right|</m>, the speed.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Now explain why <m>s(t)</m> is an increasing function.
+          </p>
+      </task>
     <hint>
       <p>
         Look up the fundamental theorem of calculus. To answer why is <m>s</m> increasing, what does <q>smooth</q> mean?
@@ -190,31 +200,35 @@
       \stewarts{TBD?}
       } -->Consider again the helical space curve <m>\vec r(t)=(\cos t, \sin t, t)</m>. We've shown that <m>s(t) = t\sqrt{2}</m> in <xref ref="prob_basic_helix"></xref>.
     </p>
-    <task>
-      <p>
-        Solve for <m>t</m> in terms of <m>s</m> (so find the inverse of <m>s(t)</m>).
-      </p>
-    </task>
-    <task>
-      <p>
-        Use your answer to determine how much time has elapsed if you've travelled 4 units of distance.
-      </p>
-    </task>
-    <task>
-      <p>
-        Compute <m>D\vec r(t)</m> and <m>Dt(s)</m>.  You should have a 2 by 1 matrix, and a 1 by 1 matrix.
-      </p>
-    </task>
-    <task>
-      <p>
-        Use the chain rule to compute the derivative of <m>\vec r(t(s))</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Compute the length <m>\left|\ds\frac{d\vec r}{ds}\right|</m>.
-      </p>
-    </task>
+      <task>
+          <p>
+            Solve for <m>t</m> in terms of <m>s</m> (so find the inverse of <m>s(t)</m>).
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Use your answer to determine how much time has elapsed if you've travelled 4 units of distance.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Compute <m>D\vec r(t)</m> and <m>Dt(s)</m>.  You should have a 2 by 1 matrix, and a 1 by 1 matrix.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Use the chain rule to compute the derivative of <m>\vec r(t(s))</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Compute the length <m>\left|\ds\frac{d\vec r}{ds}\right|</m>.
+          </p>
+      </task>
   </exploration>
 
   <p>
@@ -248,26 +262,28 @@
       \stewarts{TBD?}
       } -->Suppose an object moves along the space curve given by <m>\vec r(t)=(a\cos t,a\sin t,b t)</m>.
     </p>
-    <task>
-      <p>
-        Find the object's velocity and speed. What is <m>ds/dt</m>?
-      </p>
-    </task>
-    <task>
-      <p>
-        Compute <m>\frac{d\vec r}{ds}</m>, the derivative of <m>\vec r</m> with respect to arc length. Leave your answer in terms of <m>t</m>.
-        <hint>
+      <task>
           <p>
-            Divide the top and bottom by <m>dt</m> and then compute <m>d\vec r/dt</m> and <m>ds/dt</m>.
+            Find the object's velocity and speed. What is <m>ds/dt</m>?
           </p>
-        </hint>
-      </p>
-    </task>
-    <task>
-      <p>
-        State the unit tangent vector <m>\vec T(t)</m>.
-      </p>
-    </task>
+      </task>
+
+      <task>
+          <p>
+            Compute <m>\frac{d\vec r}{ds}</m>, the derivative of <m>\vec r</m> with respect to arc length. Leave your answer in terms of <m>t</m>.
+            <hint>
+              <p>
+                Divide the top and bottom by <m>dt</m> and then compute <m>d\vec r/dt</m> and <m>ds/dt</m>.
+              </p>
+            </hint>
+          </p>
+      </task>
+
+      <task>
+          <p>
+            State the unit tangent vector <m>\vec T(t)</m>.
+          </p>
+      </task>
   </exploration>
 
   <p>
@@ -289,4 +305,3 @@
 
   </review>
 </section>
-

@@ -1,5 +1,4 @@
 
-
 <section>
   <title>Switching Coordinates: The Generalized Jacobian</title>
   <p>
@@ -32,26 +31,29 @@
     <p>
       Consider the transformation <m>u=x+2y</m> and <m>v=2x-y</m>.
     </p>
-    <task>
-      <p>
-        Solve for <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Next compute the Jacobian <m>\frac{\partial (x,y)}{\partial (u,v)}</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        We were give <m>u</m> and <m>v</m> in terms of <m>x</m> and <m>y</m>, so we could have directly computed <m>\frac{\partial (u,v)}{\partial (x,y)}</m>. Do so now.
-      </p>
-    </task>
-    <task>
-      <p>
-        Make a conjecture about the relationship between <m>\frac{\partial (x,y)}{\partial (u,v)}</m> and <m>\frac{\partial (u,v)}{\partial (x,y)}</m>.
-      </p>
-    </task>
+      <task>
+          <p>
+            Solve for <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Next compute the Jacobian <m>\frac{\partial (x,y)}{\partial (u,v)}</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            We were give <m>u</m> and <m>v</m> in terms of <m>x</m> and <m>y</m>, so we could have directly computed <m>\frac{\partial (u,v)}{\partial (x,y)}</m>. Do so now.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Make a conjecture about the relationship between <m>\frac{\partial (x,y)}{\partial (u,v)}</m> and <m>\frac{\partial (u,v)}{\partial (x,y)}</m>.
+          </p>
+      </task>
   </exploration>
 
   <theorem>
@@ -80,41 +82,46 @@
     <p>
       Consider the region <m>R</m> inside the ellipse <m>\left(\dfrac{x}{a}\right)^2+\left(\dfrac{y}{b}\right)^2=1</m>. We'll consider the change of coordinates given by <m>u=(x/a)</m> and <m>v=(y/b)</m>.
     </p>
-    <task>
-      <p>
-        Draw the region <m>R</m> in the <m>xy</m>-plane.
-      </p>
-    </task>
-    <task>
-      <p>
-        After substituting <m>u=x/a</m> and <m>v=y/b</m>, draw the region <m>R_{uv}</m> in the <m>uv</m>-plane.  You should have a circle.
-      </p>
-    </task>
-    <task>
-      <p>
-        What is the area inside this circle in the <m>uv</m>-plane?
-      </p>
-    </task>
-    <task>
-      <p>
-        Solve for <m>x</m> and <m>y</m>, and then compute the Jacobian  <m>\dfrac{\partial (x,y)}{\partial (u,v)}</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Show how to get the same result from directly computing <m>\dfrac{\partial (u,v)}{\partial (x,y)}</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        We know the area in the <m>xy</m>-plane of the ellipse is <m>\iint_{R_{xy}} dxdy</m>. Use the previous theorem to switch to an integral over the region <m>R_{uv}</m>.  Then evaluate this integral by using facts about area to prove that the area in the <m>xy</m> plane is <m>\pi a b</m>.
-        <hint>
+      <task>
           <p>
-            you don't actually have to set up any bounds, rather just reduce this to an area integral over the region <m>R_{uv}</m>.
+            Draw the region <m>R</m> in the <m>xy</m>-plane.
           </p>
-        </hint>
-      </p>
-    </task>
+      </task>
+
+      <task>
+          <p>
+            After substituting <m>u=x/a</m> and <m>v=y/b</m>, draw the region <m>R_{uv}</m> in the <m>uv</m>-plane.  You should have a circle.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            What is the area inside this circle in the <m>uv</m>-plane?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Solve for <m>x</m> and <m>y</m>, and then compute the Jacobian  <m>\dfrac{\partial (x,y)}{\partial (u,v)}</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Show how to get the same result from directly computing <m>\dfrac{\partial (u,v)}{\partial (x,y)}</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            We know the area in the <m>xy</m>-plane of the ellipse is <m>\iint_{R_{xy}} dxdy</m>. Use the previous theorem to switch to an integral over the region <m>R_{uv}</m>.  Then evaluate this integral by using facts about area to prove that the area in the <m>xy</m> plane is <m>\pi a b</m>.
+            <hint>
+              <p>
+                you don't actually have to set up any bounds, rather just reduce this to an area integral over the region <m>R_{uv}</m>.
+              </p>
+            </hint>
+          </p>
+      </task>
   </exploration>
 
   <exploration>
@@ -131,26 +138,29 @@
     <p>
       We want to compute the integral <m>\iint_R xdxdy</m> using a change of coordinates. [Challenge: Try doing this without looking at the steps in the next paragraph]
     </p>
-    <task>
-      <p>
-        Draw the region <m>R</m> in the <m>xy</m>-plane.
-      </p>
-    </task>
-    <task>
-      <p>
-        Use the change of coordinates <m>u=x+2y</m> and <m>v=2x-y</m> to evaluate this integral.
-      </p>
-    </task>
-    <task>
-      <p>
-        What are the bounds for <m>u</m> and <m>v</m>?  You'll want to solve for <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m>, and then you'll need a Jacobian.
-      </p>
-    </task>
-    <task>
-      <p>
-        Make sure you provide a sketch of the region <m>R_{uv}</m> in the <m>uv</m>-plane (it should be a rectangle).
-      </p>
-    </task>
+      <task>
+          <p>
+            Draw the region <m>R</m> in the <m>xy</m>-plane.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Use the change of coordinates <m>u=x+2y</m> and <m>v=2x-y</m> to evaluate this integral.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            What are the bounds for <m>u</m> and <m>v</m>?  You'll want to solve for <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m>, and then you'll need a Jacobian.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Make sure you provide a sketch of the region <m>R_{uv}</m> in the <m>uv</m>-plane (it should be a rectangle).
+          </p>
+      </task>
   </exploration>
 
   <exploration>
@@ -158,9 +168,9 @@
       <!-- \extrafn{
 
       <insight>
-        <p>
-          This is problem 7 in section 15.8.
-        </p>
+      <p>
+        This is problem 7 in section 15.8.
+      </p>
       </insight>
 
       } -->Use the transformation <m>u=3x+2y</m> and <m>v=x+4y</m> to evaluate the integral
@@ -171,4 +181,3 @@
     </p>
   </exploration>
 </section>
-

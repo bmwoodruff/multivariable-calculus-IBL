@@ -1,5 +1,4 @@
 
-
 <section>
   <title>The Cross Product</title>
   <p>
@@ -34,21 +33,23 @@
       \stewarts{See 12.4:1-7}
       } -->Let <m>\vec u=\langle 1,-2,3\rangle</m> and <m>\vec v=\langle 2,0,-1\rangle</m>.
     </p>
-    <task>
-      <p>
-        Compute <m>\vec u\times \vec v</m> and <m>\vec v\times \vec u</m>.  How are they related?
-      </p>
-    </task>
-    <task>
-      <p>
-        Compute <m>\vec u \cdot (\vec u\times \vec v)</m> and <m>\vec v \cdot (\vec u\times \vec v)</m>. Why did you get the answer you got?
-      </p>
-    </task>
-    <task>
-      <p>
-        Compute <m>\vec u \times (2\vec u)</m>.  Why did you get the answer you got?
-      </p>
-    </task>
+      <task>
+          <p>
+            Compute <m>\vec u\times \vec v</m> and <m>\vec v\times \vec u</m>.  How are they related?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Compute <m>\vec u \cdot (\vec u\times \vec v)</m> and <m>\vec v \cdot (\vec u\times \vec v)</m>. Why did you get the answer you got?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Compute <m>\vec u \times (2\vec u)</m>.  Why did you get the answer you got?
+          </p>
+      </task>
   </exploration>
 
   <exploration>
@@ -57,21 +58,24 @@
       \thomasee{See 12.4: 9-14.} 
       } -->Consider the vectors <m>{\ii}=(1,0,0)</m>, <m>{2\jj}=(0,2,0)</m>, and <m>{3\kk}=(0,0,3)</m>.
     </p>
-    <task>
-      <p>
-        Compute <m>\ii\times {2\jj}</m> and <m>{2\jj}\times {\ii}</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Compute <m>{\ii}\times {3\kk}</m> and <m>{3\kk}\times {\ii}</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Compute <m>{2\jj}\times {3\kk}</m> and <m>{3\kk}\times {2\jj}</m>.
-      </p>
-    </task>
+      <task>
+          <p>
+            Compute <m>\ii\times {2\jj}</m> and <m>{2\jj}\times {\ii}</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Compute <m>{\ii}\times {3\kk}</m> and <m>{3\kk}\times {\ii}</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Compute <m>{2\jj}\times {3\kk}</m> and <m>{3\kk}\times {2\jj}</m>.
+          </p>
+      </task>
+
     <p>
       Give a geometric reason as to why some vectors above have a plus sign, and some have a minus sign.
     </p>
@@ -94,4 +98,3 @@
     </p>
   </exploration>
 </section>
-

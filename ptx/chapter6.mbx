@@ -1,5 +1,4 @@
 
-
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
   <title>Functions</title>
   <introduction>
@@ -62,4 +61,3 @@
   <xi:include  href="section6-5.mbx" />
   <xi:include  href="sec_functionlist.mbx" />
 </chapter>
-

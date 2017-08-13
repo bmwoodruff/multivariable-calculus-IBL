@@ -1,5 +1,4 @@
 
-
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
   <title>Review: Conic Sections</title>
   <introduction>
@@ -16,4 +15,3 @@
   </introduction>
   <xi:include  href="section3-1.mbx" />
 </chapter>
-

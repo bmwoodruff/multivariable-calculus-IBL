@@ -1,5 +1,4 @@
 
-
 <section>
   <title>Tangent Planes</title>
   <p>
@@ -22,51 +21,55 @@
     <p>
       Consider the function <m>y=f(x)=x^2</m>.
     </p>
+  </p>
+  <task>
+      <p>
+        The derivative is <m>f'(x) = ?</m>.
+      </p>
     </p>
-    <task>
+      <task>
+          <p>
+            At the point <m>x=3</m> the derivative is <m>f'(3)=?</m>
+          </p>
+      </task>
+
+      <task>
+          <p>
+            and the output <m>y</m> is <m>y=f(3)=?</m>.
+          </p>
+      </task>
     <p>
-      The derivative is <m>f'(x) = ?</m>.
-    </p>
-    </p>
-    <task>
-      <p>
-        At the point <m>x=3</m> the derivative is <m>f'(3)=?</m>
-      </p>
-    </task>
-    <task>
-      <p>
-        and the output <m>y</m> is <m>y=f(3)=?</m>.
-      </p>
-    </task>
+  </task>
+  <p>
     <p>
-    </task>
+      If we move from the point <m>(3,f(3))</m> to the point <m>(x,y)</m> along the tangent line, then a small change in <m>x</m> is <m>dx=x-3</m>.
+      <ol type="resume">
+      <task>
+          <p>
+            What is <m>dy</m> in terms of <m>y</m>?
+          </p>
+      </task>
+
     <p>
-    <p>
-    If we move from the point <m>(3,f(3))</m> to the point <m>(x,y)</m> along the tangent line, then a small change in <m>x</m> is <m>dx=x-3</m>.
-    <ol type="resume">
-    <task>
-      <p>
-        What is <m>dy</m> in terms of <m>y</m>?
-      </p>
-    </task>
-    <p>
-    Differential notation states that a change in the output <m>dy</m> equals the derivative times a change in the input <m>dx</m>, which gives us the equation <m>dy=f'(3)dx</m>.
-    <ol type="resume">
-    <task>
-      <p>
-        Replace <m>dx</m>, <m>dy</m>, and <m>f'(3)</m> with what we know they equal, to obtain an equation <m>y-?=?(x-?)</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        What does this equation represent?
-      </p>
-    </task>
-    <task>
-      <p>
-        Draw both <m>f</m> and the equation from the previous part on the same axes.
-      </p>
-    </task>
+      Differential notation states that a change in the output <m>dy</m> equals the derivative times a change in the input <m>dx</m>, which gives us the equation <m>dy=f'(3)dx</m>.
+      <ol type="resume">
+      <task>
+          <p>
+            Replace <m>dx</m>, <m>dy</m>, and <m>f'(3)</m> with what we know they equal, to obtain an equation <m>y-?=?(x-?)</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            What does this equation represent?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Draw both <m>f</m> and the equation from the previous part on the same axes.
+          </p>
+      </task>
   </exploration>
 
   <p>
@@ -87,40 +90,43 @@
     <p>
       Consider the function <m>z=f(x,y)=9-x^2-y^2</m>.
     </p>
-    <task>
-      <p>
-        The derivative is <m>Df(x,y) = \begin{bmatrix}-2x\amp ?
-        \end{bmatrix}</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        At the point <m>(x,y)=(2,1)</m>, the derivative is <m>Df(2,1) = \begin{bmatrix}-4\amp ?
-        \end{bmatrix}</m> and the output <m>z</m> is <m>z=f(2,1)=?</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        If we move from the point <m>(2,1,f(2,1))</m> to the point <m>(x,y,z)</m> along the tangent plane, then a small change in <m>x</m> is <m>dx=x-2</m>. What are <m>dy</m> and <m>dz</m> in terms of <m>y</m> and <m>z</m>?
-      </p>
-    </task>
-    <task>
-      <p>
-        Explain why an equation of the tangent plane is  <!-- \extrafn{We'll construct a graph of <m>f</m> and it's tangent plane in class.} -->
-        <me>
-          z-4=\begin{bmatrix}-4 \amp  -2
-          \end{bmatrix} \begin{bmatrix}x-2\\y-1
-          \end{bmatrix}  
-          \text{ or }  
-          z-4=-4(x-2)-2(y-1).
-        </me>
-        <hint>
+      <task>
           <p>
-            What does differential notation tell us?
+            The derivative is <m>Df(x,y) = \begin{bmatrix}-2x\amp ?
+            \end{bmatrix}</m>.
           </p>
-        </hint>
-      </p>
-    </task>
+      </task>
+
+      <task>
+          <p>
+            At the point <m>(x,y)=(2,1)</m>, the derivative is <m>Df(2,1) = \begin{bmatrix}-4\amp ?
+            \end{bmatrix}</m> and the output <m>z</m> is <m>z=f(2,1)=?</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            If we move from the point <m>(2,1,f(2,1))</m> to the point <m>(x,y,z)</m> along the tangent plane, then a small change in <m>x</m> is <m>dx=x-2</m>. What are <m>dy</m> and <m>dz</m> in terms of <m>y</m> and <m>z</m>?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Explain why an equation of the tangent plane is  <!-- \extrafn{We'll construct a graph of <m>f</m> and it's tangent plane in class.} -->
+            <me>
+              z-4=\begin{bmatrix}-4 \amp  -2
+              \end{bmatrix} \begin{bmatrix}x-2\\y-1
+              \end{bmatrix}  
+              \text{ or }  
+              z-4=-4(x-2)-2(y-1).
+            </me>
+            <hint>
+              <p>
+                What does differential notation tell us?
+              </p>
+            </hint>
+          </p>
+      </task>
   </exploration>
 
   <p>
@@ -155,46 +161,52 @@
     <p>
       <!-- \extrafn{See <url href="http://aleph.sagemath.org/?z=eJx9kUtvAiEYRff8CqImA8qYkUkTu2DdfbdNbSYMKOkIBFCH_voCPprax2YyX_Jx7uUg0UgiZo_1uKF13FBgA0OUrIjMX4wBmMqD5kEZDTvdQ2uUDsAyO5jQ9kiSdL5uSYsJipcfaGzHVYisWT5gYBesnEE2EMjNYByrnOgrAr36EIw2OQLygzsKX5Y71-1FcIq_5QyU-LlMZKkMgbe0b6iwU_xdC-9Zi-EUpt1fSZTERBoZLaR4R9o6IXSqdQdL67ngUfBgnAdyZHLZK5k4GMh4HeL5ojnmvIleVqQhciwWXzHxoXOBZQdf_PUtO4phMKfqJ6TJl49XCPyfYlynt6LKQu3QafGHznitNUdjTfHiwp-jWK_SdH73oropfpKp5u5d1yljF_YDmjyLHioPZ8n5jMCn7LDMSdtsgoHfmROy-BN9Vrcb">Sage</url> for a picture.} --><!-- \extrafn{\thomasee{See 16.5: 27-30 for more practice.}\larsonfive{See Larson 15.5:35<ndash />38 for more practice.}\stewarts{See 16.6:33-38 for more practice}} -->
     </p>
-    <task>
-      <p>
-        Compute <m>\ds \frac{\partial f}{\partial x}</m> and <m>\ds \frac{\partial f}{\partial y}</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Next evaluate these partials at <m>(x,y)=(2,1)</m>. You should have <m>f_x=-4</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        What does the number <m>-4</m> mean? What does the number <m>f_y</m> mean?
-      </p>
-    </task>
-    <task>
-      <p>
-        Compute <m>\ds \frac{\partial \vec r}{\partial x}</m> and <m>\ds \frac{\partial \vec r}{\partial y}</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Now evaluate these partials at <m>(x,y)=(2,1)</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        What do these vectors mean?
-        <hint>
+      <task>
           <p>
-            Draw the surface, and at the point <m>(2,1,4)</m>, draw these vectors. See the Sage plot.
+            Compute <m>\ds \frac{\partial f}{\partial x}</m> and <m>\ds \frac{\partial f}{\partial y}</m>.
           </p>
-        </hint>
-      </p>
-    </task>
-    <task>
-      <p>
-        The vectors above are tangent to the surface. Use them to obtain a normal vector to the tangent plane, and then given an equation of the tangent plane. (You should compare it to your equation from <xref ref="prob_tangent_plane_downbowl">exercise</xref>.)
-      </p>
-    </task>
+      </task>
+
+      <task>
+          <p>
+            Next evaluate these partials at <m>(x,y)=(2,1)</m>. You should have <m>f_x=-4</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            What does the number <m>-4</m> mean? What does the number <m>f_y</m> mean?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Compute <m>\ds \frac{\partial \vec r}{\partial x}</m> and <m>\ds \frac{\partial \vec r}{\partial y}</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Now evaluate these partials at <m>(x,y)=(2,1)</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            What do these vectors mean?
+            <hint>
+              <p>
+                Draw the surface, and at the point <m>(2,1,4)</m>, draw these vectors. See the Sage plot.
+              </p>
+            </hint>
+          </p>
+      </task>
+
+      <task>
+          <p>
+            The vectors above are tangent to the surface. Use them to obtain a normal vector to the tangent plane, and then given an equation of the tangent plane. (You should compare it to your equation from <xref ref="prob_tangent_plane_downbowl">exercise</xref>.)
+          </p>
+      </task>
   </exploration>
 
   <p>
@@ -209,21 +221,23 @@
     <p>
       <!-- \extrafn{\thomasee{See 16.5: 27-30 for more practice.}\larsonfive{See Larson 15.5:35<ndash />38 for more practice.}\stewarts{See 16.6:33-38 for more practice}} -->Consider the cone parametrized by <m>\vec r(u,v)=(u\cos v, u\sin v,u)</m>.
     </p>
-    <task>
-      <p>
-        Give vector equations of two tangent lines to the surface at <m>\vec r(2,\pi/2)</m> (so <m>u=2</m> and <m>v=\pi/2</m>).
-      </p>
-    </task>
-    <task>
-      <p>
-        Give a normal vector to the surface at <m>\vec r(2,\pi/2)</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Give an equation of the tangent plane at <m>\vec r(2,\pi/2)</m>.
-      </p>
-    </task>
+      <task>
+          <p>
+            Give vector equations of two tangent lines to the surface at <m>\vec r(2,\pi/2)</m> (so <m>u=2</m> and <m>v=\pi/2</m>).
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Give a normal vector to the surface at <m>\vec r(2,\pi/2)</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Give an equation of the tangent plane at <m>\vec r(2,\pi/2)</m>.
+          </p>
+      </task>
   </exploration>
 
   <p>
@@ -280,4 +294,3 @@
     </hint>
   </exploration>
 </section>
-

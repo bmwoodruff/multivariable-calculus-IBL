@@ -1,5 +1,4 @@
 
-
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
   <title>Line Integrals</title>
   <introduction>
@@ -385,4 +384,3 @@
   <xi:include  href="section9-4.mbx" />
   <xi:include  href="section9-5.mbx" />
 </chapter>
-

@@ -1,5 +1,4 @@
 
-
 <section>
   <title>Triple Integral Definition and Applications</title>
   <p>
@@ -37,26 +36,29 @@
         \ds \int_{-3}^3 (\int_0^{\sqrt{9-y^2}} (\int_0^{9-x^2-y^2} 1dz) dx ) dy.
       </me>
     </p>
-    <task>
-      <p>
-        State the bounds for each variable as inequalities.
-      </p>
-    </task>
-    <task>
-      <p>
-        Sketch the region <m>D</m> in space.
-      </p>
-    </task>
-    <task>
-      <p>
-        Compute the innermost integral, and compare the resulting/remaining double integral to the first exercise in the double integral unit.
-      </p>
-    </task>
-    <task>
-      <p>
-        Now evaluate the remaining integrals (though you might want to change coordinate systems before doing so).
-      </p>
-    </task>
+      <task>
+          <p>
+            State the bounds for each variable as inequalities.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Sketch the region <m>D</m> in space.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Compute the innermost integral, and compare the resulting/remaining double integral to the first exercise in the double integral unit.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Now evaluate the remaining integrals (though you might want to change coordinate systems before doing so).
+          </p>
+      </task>
   </exploration>
 
   <p>
@@ -94,24 +96,27 @@
     <p>
       The bounds for this integral describe a region in space which satisfies the 3 inequalities <m>-1\leq x\leq 1</m>, <m>0\leq y\leq 1-x^2</m>, and <m>0\leq z\leq y</m>.
     </p>
-    <task>
-      <p>
-        Draw the solid domain <m>D</m> in space described by the bounds of the iterated integral.
-      </p>
-    </task>
+      <task>
+          <p>
+            Draw the solid domain <m>D</m> in space described by the bounds of the iterated integral.
+          </p>
+      </task>
+
     <p>
-    There are 5 other iterated integrals equivalent to this one.
-    <ol type="resume">
-    <task>
-      <p>
-        Set up the integral that use the differential ordering: <m>dydxdz</m>
-      </p>
-    </task>
-    <task>
-      <p>
-        Set up the integral that use the differential ordering: <m>dxdzdy</m>.
-      </p>
-    </task>
+      There are 5 other iterated integrals equivalent to this one.
+      <ol type="resume">
+      <task>
+          <p>
+            Set up the integral that use the differential ordering: <m>dydxdz</m>
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Set up the integral that use the differential ordering: <m>dxdzdy</m>.
+          </p>
+      </task>
+
     <p>
       We'll create the other 3 in class (though you are welcome to include them as part of your presentation)
     </p>
@@ -122,120 +127,132 @@
       In each exercise below, you'll be given enough information to determine a solid domain <m>D</m> in space.
       <ol type="a">
       <task>
-        <p>
-          Draw the solid <m>D</m> and
-        </p>
+          <p>
+            Draw the solid <m>D</m> and
+          </p>
       </task>
+
       <task>
-        <p>
-          then set up an iterated integral (pick any order you want) that would give the volume of <m>D</m>.
-        </p>
+          <p>
+            then set up an iterated integral (pick any order you want) that would give the volume of <m>D</m>.
+          </p>
       </task>
-      <p>
-        Note: You don't need to evaluate the integral, rather you just need to set them up.
-      </p>
-      <task>
-        <p>
-          The region <m>D</m> under the surface <m>z=y^2</m>, above the <m>xy</m>-plane, and bounded by the planes <m>y=-1</m>, <m>y=1</m>, <m>x=0</m>, and <m>x=4</m>.
-        </p>
-      </task>
-      <task>
-        <p>
-          The region <m>D</m> in the first octant that is bounded by the coordinate planes, the plane <m>y+z=2</m>, and the surface <m>x=4-y^2</m>.
-        </p>
-      </task>
-      <task>
-        <p>
-          The pyramid <m>D</m> in the first octant that is below the planes <m>\ds\frac{x}{3}+\frac{z}{2}=1</m> and <m>\ds\frac{y}{5}+\frac{z}{2}=1</m>.
-          <hint>
-            <p>
-              Don't let <m>z</m> be the inside bound.
-            </p>
-          </hint>
-        </p>
-      </task>
-      <task>
-        <p>
-          The region <m>D</m> that is inside both right circular cylinders <m>x^2+z^2=1</m> and <m>y^2+z^2=1</m>.
-        </p>
-      </task>
-    </exploration>
 
     <p>
-      We can find average value, centroids, centers of mass, moments of inertia, and radii of gyration exactly as before. We just now need to integrate using three integrals, and replace <m>ds</m>, <m>dA</m> or <m>d\sigma</m>, with <m>dV</m>.
+      Note: You don't need to evaluate the integral, rather you just need to set them up.
     </p>
+      <task>
+          <p>
+            The region <m>D</m> under the surface <m>z=y^2</m>, above the <m>xy</m>-plane, and bounded by the planes <m>y=-1</m>, <m>y=1</m>, <m>x=0</m>, and <m>x=4</m>.
+          </p>
+      </task>
 
-    <exploration>
-      <p>
-        Consider the triangular wedge <m>D</m> that is in the first octant, bounded by the planes <m>\ds\frac{y}{7}+\frac{z}{5}=1</m> and <m>x=12</m>. In the <m>yz</m> plane, the wedge forms a triangle that passes through the points <m>(0,0,0)</m>, <m>(0,7,0)</m>, and <m>(0,0,5)</m>.
-      </p>
-      <hint>
-        <p>
-          It may help to sketch a picture first
-        </p>
-      </hint>
-    </p>
-    <task>
-      <p>
-        Set up integral formulas that would give the centroid <m>(\bar x,\bar y, \bar z)</m> of <m>D</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Actually compute the integrals for <m>\bar y</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Now state <m>\bar x</m> and <m>\bar z</m> by using symmetry arguments.
-      </p>
-    </task>
+      <task>
+          <p>
+            The region <m>D</m> in the first octant that is bounded by the coordinate planes, the plane <m>y+z=2</m>, and the surface <m>x=4-y^2</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            The pyramid <m>D</m> in the first octant that is below the planes <m>\ds\frac{x}{3}+\frac{z}{2}=1</m> and <m>\ds\frac{y}{5}+\frac{z}{2}=1</m>.
+            <hint>
+              <p>
+                Don't let <m>z</m> be the inside bound.
+              </p>
+            </hint>
+          </p>
+      </task>
+
+      <task>
+          <p>
+            The region <m>D</m> that is inside both right circular cylinders <m>x^2+z^2=1</m> and <m>y^2+z^2=1</m>.
+          </p>
+      </task>
+  </exploration>
+
+  <p>
+    We can find average value, centroids, centers of mass, moments of inertia, and radii of gyration exactly as before. We just now need to integrate using three integrals, and replace <m>ds</m>, <m>dA</m> or <m>d\sigma</m>, with <m>dV</m>.
+  </p>
+
+  <exploration>
     <p>
+      Consider the triangular wedge <m>D</m> that is in the first octant, bounded by the planes <m>\ds\frac{y}{7}+\frac{z}{5}=1</m> and <m>x=12</m>. In the <m>yz</m> plane, the wedge forms a triangle that passes through the points <m>(0,0,0)</m>, <m>(0,7,0)</m>, and <m>(0,0,5)</m>.
+    </p>
+    <hint>
+      <p>
+        It may help to sketch a picture first
+      </p>
+    </hint>
+  </p>
+    <task>
+        <p>
+          Set up integral formulas that would give the centroid <m>(\bar x,\bar y, \bar z)</m> of <m>D</m>.
+        </p>
+    </task>
+
+    <task>
+        <p>
+          Actually compute the integrals for <m>\bar y</m>.
+        </p>
+    </task>
+
+    <task>
+        <p>
+          Now state <m>\bar x</m> and <m>\bar z</m> by using symmetry arguments.
+        </p>
+    </task>
+  <p>
   </exploration>
 
   <exploration>
     <p>
-    Consider the tetrahedron <m>D</m> in the first octant that is underneath the plane that intersects the coordinate axes in the three point <m>(a,0,0)</m>, <m>(0,b,0)</m> and <m>(0,0,c)</m>, where you can assume that <m>a,b,c>0</m>.
-    <ol type="a">
-    <task>
-      <p>
-        An equation of an ellipse that passes through <m>(a,0)</m> and <m>(0,b)</m> is <m>\ds\frac{x^2}{a^2}+\frac{y^2}{b^2}=1</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        An equation of a line through these same two points is <m>\ds\frac{x}{a}+\frac{y}{b}=1</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        An equation of an ellipsoid through the three points <m>(a,0,0)</m>, <m>(0,b,0)</m>, and <m>(0,0,c)</m> is <m>\ds\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1</m>.
-      </p>
-    </task>
-    SQUASHEDLIST
-    <task>
-      <p>
-        Guess an equation of the plane through these same three points, and then verify that your guess is correct by plugging the 3 points into your equation. This will provide you with an extremely fast way to get an equation of a plane.
-      </p>
-    </task>
-    <task>
-      <p>
-        Set up an iterated integral that would give the volume of <m>D</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        If the density is <m>\delta(x,y,z) = 3x+2yz</m>, set up iterated integrals that would give the mass <m>m</m>
-
-        <insight>
+      Consider the tetrahedron <m>D</m> in the first octant that is underneath the plane that intersects the coordinate axes in the three point <m>(a,0,0)</m>, <m>(0,b,0)</m> and <m>(0,0,c)</m>, where you can assume that <m>a,b,c>0</m>.
+      <ol type="a">
+      <task>
           <p>
-            and moment of inertia <m>I_y</m> about the <m>y</m>-axis
+            An equation of an ellipse that passes through <m>(a,0)</m> and <m>(0,b)</m> is <m>\ds\frac{x^2}{a^2}+\frac{y^2}{b^2}=1</m>.
           </p>
-        </insight>
+      </task>
 
-        .
-      </p>
-    </task>
+      <task>
+          <p>
+            An equation of a line through these same two points is <m>\ds\frac{x}{a}+\frac{y}{b}=1</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            An equation of an ellipsoid through the three points <m>(a,0,0)</m>, <m>(0,b,0)</m>, and <m>(0,0,c)</m> is <m>\ds\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1</m>.
+          </p>
+      </task>
+
+        SQUASHEDLIST
+
+      <task>
+          <p>
+            Guess an equation of the plane through these same three points, and then verify that your guess is correct by plugging the 3 points into your equation. This will provide you with an extremely fast way to get an equation of a plane.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Set up an iterated integral that would give the volume of <m>D</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            If the density is <m>\delta(x,y,z) = 3x+2yz</m>, set up iterated integrals that would give the mass <m>m</m>
+
+            <insight>
+            <p>
+              and moment of inertia <m>I_y</m> about the <m>y</m>-axis
+            </p>
+            </insight>
+
+            .
+          </p>
+      </task>
   </exploration>
 </section>
-

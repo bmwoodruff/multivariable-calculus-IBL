@@ -1,5 +1,4 @@
 
-
 <section>
   <title>Vectors and Lines</title>
   <p>
@@ -28,31 +27,35 @@
     <p>
       To find the distance between two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> in the plane, we create a triangle connecting the two points. The base of the triangle has length <m>\Delta x=(x_2-x_1)</m> and the vertical side has length <m>\Delta y=(y_2-y_1)</m>. The Pythagorean theorem gives us the distance between the two points as <m>\sqrt{\Delta x^2+\Delta y^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}</m>.
     </p>
-    <task>
-      <p>
-        Draw a 3-D axis then plot the points <m>(1,5)</m> and <m>(2,3)</m>
-      </p>
-    </task>
-    <task>
-      <p>
-        Sketch the triangle that connects these two points and the origin <mdash /> <m>(0,0)</m>
-      </p>
-    </task>
-    <task>
-      <p>
-        Find <m>\Delta x</m> and <m>\Delta y</m>
-      </p>
-    </task>
-    <task>
-      <p>
-        Now extend your picture into 3 and use it to show that the distance between two points <m>(x_1,y_1,z_1)</m> and <m>(x_2,y_2,z_2)</m> in 3-dimensions is <m>\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Use this formula to find the distance between the points <m>(1,5,2)</m> and <m>(2,3,3)</m>
-      </p>
-    </task>
+      <task>
+          <p>
+            Draw a 3-D axis then plot the points <m>(1,5)</m> and <m>(2,3)</m>
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Sketch the triangle that connects these two points and the origin <mdash /> <m>(0,0)</m>
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Find <m>\Delta x</m> and <m>\Delta y</m>
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Now extend your picture into 3 and use it to show that the distance between two points <m>(x_1,y_1,z_1)</m> and <m>(x_2,y_2,z_2)</m> in 3-dimensions is <m>\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Use this formula to find the distance between the points <m>(1,5,2)</m> and <m>(2,3,3)</m>
+          </p>
+      </task>
   </exploration>
 
   <exploration>
@@ -62,23 +65,25 @@
       \stewarts{See 12.1:11-18}
       } -->Recall that a circle (or sphere in 3-D) is just a collection of points which are all equal distance away from a center point.
     </p>
-    <task>
-      <p>
-        If the center of a circle is the point <m>(1,5)</m> what is the equation for a circle which passes through the point <m>(2,3)</m>?
-      </p>
-    </task>
-    <task>
-      <p>
-        Find the distance between the two points <m>P=(2,3,-4)</m> and <m>Q=(0,-1,1)</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Now find an equation of the sphere passing though point <m>Q</m> whose center is at <m>P</m>. 
+      <task>
+          <p>
+            If the center of a circle is the point <m>(1,5)</m> what is the equation for a circle which passes through the point <m>(2,3)</m>?
+          </p>
+      </task>
 
-        Hint: Each point on the surface of a sphere is <m>r</m> distance away from the center.
-      </p>
-    </task>
+      <task>
+          <p>
+            Find the distance between the two points <m>P=(2,3,-4)</m> and <m>Q=(0,-1,1)</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Now find an equation of the sphere passing though point <m>Q</m> whose center is at <m>P</m>. 
+
+            Hint: Each point on the surface of a sphere is <m>r</m> distance away from the center.
+          </p>
+      </task>
   </exploration>
 
   <definition>
@@ -163,207 +168,223 @@
       \thomasee{See 11.1: 3,4.}
       } -->Consider the vector <m>\vec v=\langle 3,-1 \rangle</m>.
     </p>
-    <task>
-      <p>
-        Draw <m>\vec v</m>, <m>-\vec v</m>, and <m>3\vec v</m>.
-      </p>
-    </task>
+      <task>
+          <p>
+            Draw <m>\vec v</m>, <m>-\vec v</m>, and <m>3\vec v</m>.
+          </p>
+      </task>
+
     <p>
       Suppose a donkey travels along the path given by <m>(x,y)=\vec v t = (3t,-t)</m>, where <m>t</m> represents time.
     </p>
     <ol type="resume">
-    <task>
-    <p>
-      At the following times, where is the donkey?
+  <task>
+      <p>
+        At the following times, where is the donkey?
+      </p>
     </p>
-    </p>
-    <task>
-      <p>
-        <m>t=0</m> ?
-      </p>
-    </task>
-    <task>
-      <p>
-        <m>t=1</m> ?
-      </p>
-    </task>
-    <task>
-      <p>
-        <m>t=2</m> ?
-      </p>
-    </task>
+      <task>
+          <p>
+            <m>t=0</m> ?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            <m>t=1</m> ?
+          </p>
+      </task>
+
+      <task>
+          <p>
+            <m>t=2</m> ?
+          </p>
+      </task>
     <p>
-      </task>
-      <task>
-        <p>
-          Draw an axis, then sketch the path followed by the donkey.
-        </p>
-      </task>
-      <task>
-        <p>
-          Where is the donkey at time <m>t=0,1,2</m>? Put markers with labels on your graph to show the donkey's location.
-        </p>
-      </task>
-      <p>
-      </exploration>
+  </task>
 
+  <task>
       <p>
-        In a previous problem <xref ref="prob_donkey" /> you encountered <m>(x,y)=(3t,-t)</m>. This is an example of a function where the input is <m>t</m> and the output is a vector <m>(x,y)</m>. For each input <m>t</m>, you get a single vector output <m>(x,y)</m>. Such a function is called a parametrization of the donkey's path. Because the output is a vector, we call the function a vector-valued function. Often, we'll use the variable <m>\vec r</m> to represent the radial vector <m>(x,y)</m>, or <m>(x,y,z)</m> in 3D. So we could rewrite the position of the donkey as <m>\vec r(t)=(3,-1)t</m>. We use <m>\vec r</m> instead of <m>r</m> to remind us that the output is a vector.
+        Draw an axis, then sketch the path followed by the donkey.
       </p>
+  </task>
 
+  <task>
       <p>
-        Let's look at another, similar problem.
+        Where is the donkey at time <m>t=0,1,2</m>? Put markers with labels on your graph to show the donkey's location.
       </p>
+  </task>
+  <p>
+  </exploration>
 
-      <exploration xml:id="prob_horseline">
-        <p>
-          <!-- \extrafn{
-          \thomasee{See 12.2: 1.}
-          } -->Suppose a horse races down a path given by the vector-valued function <m>\vec r(t) = (1,2)t+(3,4)</m>. (Remember this is the same as writing <m>(x,y) =  (1,2)t+(3,4)</m> or similarly <m>(x,y)=(1t+3,2t+4)</m>.)
-        </p>
-        <task>
+  <p>
+    In a previous problem <xref ref="prob_donkey" /> you encountered <m>(x,y)=(3t,-t)</m>. This is an example of a function where the input is <m>t</m> and the output is a vector <m>(x,y)</m>. For each input <m>t</m>, you get a single vector output <m>(x,y)</m>. Such a function is called a parametrization of the donkey's path. Because the output is a vector, we call the function a vector-valued function. Often, we'll use the variable <m>\vec r</m> to represent the radial vector <m>(x,y)</m>, or <m>(x,y,z)</m> in 3D. So we could rewrite the position of the donkey as <m>\vec r(t)=(3,-1)t</m>. We use <m>\vec r</m> instead of <m>r</m> to remind us that the output is a vector.
+  </p>
+
+  <p>
+    Let's look at another, similar problem.
+  </p>
+
+  <exploration xml:id="prob_horseline">
+    <p>
+      <!-- \extrafn{
+      \thomasee{See 12.2: 1.}
+      } -->Suppose a horse races down a path given by the vector-valued function <m>\vec r(t) = (1,2)t+(3,4)</m>. (Remember this is the same as writing <m>(x,y) =  (1,2)t+(3,4)</m> or similarly <m>(x,y)=(1t+3,2t+4)</m>.)
+    </p>
+      <task>
           <p>
             Where is the horse at time <m>t=0,1,2</m>?
           </p>
-        </task>
-        <task>
+      </task>
+
+      <task>
           <p>
             Draw an set of axis and put markers on your graph to show the horse's location.
           </p>
-        </task>
-        <task>
+      </task>
+
+      <task>
           <p>
             Draw the path followed by the horse.
           </p>
-        </task>
-      </exploration>
+      </task>
+  </exploration>
 
+  <p>
+    In the last two problems we described the donkey and horse's paths using vectors. The use of vectors actually lets us do a lot more like give a generalized direction or easily compute their speed at any point along the path. To do that we need to define two more mathematical ideas, the magnitude and unit-vector.
+  </p>
+
+  <definition>
+    <statement>
       <p>
-        In the last two problems we described the donkey and horse's paths using vectors. The use of vectors actually lets us do a lot more like give a generalized direction or easily compute their speed at any point along the path. To do that we need to define two more mathematical ideas, the magnitude and unit-vector.
+        The magnitude, or length, or norm of a vector <m>\vec v = \left\lt v_1,v_2,v_3\right></m> is <m>|\vec v| = \sqrt{v_1^2+v_2^2+v_3^2}</m>. It is just the distance from the point <m>(v_1,v_2,v_3)</m> to the origin.
       </p>
 
-      <definition>
-        <statement>
-          <p>
-            The magnitude, or length, or norm of a vector <m>\vec v = \left\lt v_1,v_2,v_3\right></m> is <m>|\vec v| = \sqrt{v_1^2+v_2^2+v_3^2}</m>. It is just the distance from the point <m>(v_1,v_2,v_3)</m> to the origin.
-          </p>
-
-          <p>
-            Note that in 1D, the length of the vector <m>\left\lt -2\right></m> is simply <m>|-2|=\sqrt{(-2)^2}=2</m>, the distance to 0. Our use of the absolute value symbols is appropriate, as it generalizes the concept of absolute value (distance to zero) to all dimensions.
-          </p>
-        </statement>
-      </definition>
-
       <p>
-        In the special circumstance where a vector represents an object's velocity, the magnitude of the vector gives the objects <em>speed</em> or non-directional velocity.
+        Note that in 1D, the length of the vector <m>\left\lt -2\right></m> is simply <m>|-2|=\sqrt{(-2)^2}=2</m>, the distance to 0. Our use of the absolute value symbols is appropriate, as it generalizes the concept of absolute value (distance to zero) to all dimensions.
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    In the special circumstance where a vector represents an object's velocity, the magnitude of the vector gives the objects <em>speed</em> or non-directional velocity.
+  </p>
+
+  <definition>
+    <statement>
+      <p>
+        A unit vector is a vector whose length is one unit. The notation for a unit vector is generally a <q><m>\hat{\ }</m></q> or <term>bold face</term>. Equivalently, the unit vector of a vector <m>\vec{v}</m> is: <m>\hat{v}=\frac{\vec{v}}{|\vec{v}|}</m>
       </p>
 
-      <definition>
-        <statement>
-          <p>
-            A unit vector is a vector whose length is one unit. The notation for a unit vector is generally a <q><m>\hat{\ }</m></q> or <term>bold face</term>. Equivalently, the unit vector of a vector <m>\vec{v}</m> is: <m>\hat{v}=\frac{\vec{v}}{|\vec{v}|}</m>
-          </p>
+      <p>
+        The standard unit vectors are <m>\mathbf{i}=\left\lt 1,0,0\right></m>, <m>\mathbf{j}=\left\lt 0,1,0\right></m>, <m>\mathbf{k}=\left\lt 0,0,1\right></m>.
+      </p>
+    </statement>
+  </definition>
 
-          <p>
-            The standard unit vectors are <m>\mathbf{i}=\left\lt 1,0,0\right></m>, <m>\mathbf{j}=\left\lt 0,1,0\right></m>, <m>\mathbf{k}=\left\lt 0,0,1\right></m>.
-          </p>
-        </statement>
-      </definition>
-
-      <exploration>
-        <title>Magnitude and Unit Vector Practice</title>
-        <p>
-          For each of the following vectors, compute the magnitude and unit vector in the same direction.
-        </p>
-        <task>
+  <exploration>
+    <title>Magnitude and Unit Vector Practice</title>
+    <p>
+      For each of the following vectors, compute the magnitude and unit vector in the same direction.
+    </p>
+      <task>
           <p>
             <m>-3\ii + 7 \jj</m>
           </p>
-        </task>
-        <task>
+      </task>
+
+      <task>
           <p>
             <m>\lt -4,2,4></m>
           </p>
-        </task>
-        <task>
+      </task>
+
+      <task>
           <p>
             <m>8\ii - \jj + 4 \kk</m>
           </p>
-        </task>
-      </exploration>
+      </task>
+  </exploration>
 
-      <exploration>
-        <p>
-          <!-- \extrafn{
-          \thomasee{See 12.2: 9,17,25,33 and surrounding.} 
-          \stewarts{See 12.2: 23-26, 41, 42}
-          } -->Consider the two points <m>P=(1,2,3)</m> and <m>Q=(2,-1,0)</m>.
-        </p>
-        <task>
+  <exploration>
+    <p>
+      <!-- \extrafn{
+      \thomasee{See 12.2: 9,17,25,33 and surrounding.} 
+      \stewarts{See 12.2: 23-26, 41, 42}
+      } -->Consider the two points <m>P=(1,2,3)</m> and <m>Q=(2,-1,0)</m>.
+    </p>
+      <task>
           <p>
             Write the vector <m>\vec {PQ}</m> in component form <m>\lt a,b,c)\rangle</m>.
           </p>
-        </task>
-        <task>
+      </task>
+
+      <task>
           <p>
             Find the length (magnitude) of vector <m>\vec {PQ}</m>.
           </p>
-        </task>
-        <task>
+      </task>
+
+      <task>
           <p>
             Find a unit vector for <m>\vec{PQ}</m>.
           </p>
-        </task>
-        <task>
+      </task>
+
+      <task>
           <p>
             Finally, find a vector of length 7 units that points in the same direction as <m>\vec{PQ}</m>.
           </p>
-        </task>
-      </exploration>
+      </task>
+  </exploration>
 
-      <exploration>
-        <p>
-          Let's return to <xref ref="prob_donkey">problems</xref> and <xref ref="prob_horseline"></xref>. We now have the tools to determine the donkey's and horse's speed and direction.
-        </p>
-      </p>
-      <task>
+  <exploration>
+    <p>
+      Let's return to <xref ref="prob_donkey">problems</xref> and <xref ref="prob_horseline"></xref>. We now have the tools to determine the donkey's and horse's speed and direction.
+    </p>
+  </p>
+  <task>
       <p>
         The donkey's path was given by <m>(x,y)=\vec v t = (3t,-t)</m>. Find
       </p>
     </p>
-    <task>
-      <p>
-        The donkey's speed
-      </p>
-    </task>
-    <task>
-      <p>
-        A unit vector that gives the donkey's direction of travel.
-      </p>
-    </task>
+      <task>
+          <p>
+            The donkey's speed
+          </p>
+      </task>
+
+      <task>
+          <p>
+            A unit vector that gives the donkey's direction of travel.
+          </p>
+      </task>
     <p>
-    </task>
-    <task>
-    <p>
-      The horse's path was given by <m>\vec r(t) = (1,2)t + (3,4)</m>.
-    </p>
-    <task>
+  </task>
+
+  <task>
       <p>
-        State the part of <m>\vec r(t)</m> which gives the direction of travel.
+        The horse's path was given by <m>\vec r(t) = (1,2)t + (3,4)</m>.
       </p>
-    </task>
-    <task>
-      <p>
-        What is a unit vector in the same direction?
-      </p>
-    </task>
-    <task>
-      <p>
-        what is the speed of the horse?
-      </p>
-    </task>
-    </task>
-    <p>
+        <task>
+            <p>
+              State the part of <m>\vec r(t)</m> which gives the direction of travel.
+            </p>
+        </task>
+
+        <task>
+            <p>
+              What is a unit vector in the same direction?
+            </p>
+        </task>
+
+        <task>
+            <p>
+              what is the speed of the horse?
+            </p>
+        </task>
+  </task>
+  <p>
   </exploration>
 
   <exploration>
@@ -394,21 +415,22 @@
       \stewarts{12.5: 6-15}
       } -->Let <m>P=(3,1)</m> and <m>Q=(-1,4)</m>.
     </p>
-    <task>
-      <p>
-        Write a vector equation <m>\vec r(t)=(x,y)</m> for (i.e, give a parametrization of) the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> and <m>\vec r(1)=Q</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Write a vector equation for the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> but whose speed is twice the speed of the first line.
-      </p>
-    </task>
-    <task>
-      <p>
-        Write a vector equation for the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> but whose speed is one unit per second.
-      </p>
-    </task>
+      <task>
+          <p>
+            Write a vector equation <m>\vec r(t)=(x,y)</m> for (i.e, give a parametrization of) the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> and <m>\vec r(1)=Q</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Write a vector equation for the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> but whose speed is twice the speed of the first line.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Write a vector equation for the line that passes through <m>P</m> and <m>Q</m>, with <m>\vec r(0)=P</m> but whose speed is one unit per second.
+          </p>
+      </task>
   </exploration>
 </section>
-

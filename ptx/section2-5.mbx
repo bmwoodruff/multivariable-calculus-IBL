@@ -1,5 +1,4 @@
 
-
 <section>
   <title>The Cross Product and Planes</title>
   <p>
@@ -63,21 +62,23 @@
     <p>
       Consider the points <m>P=(2,-1,0)</m>, <m>Q=(0,2,3)</m>, and <m>R=(-1,2,-4)</m>.
     </p>
-    <task>
-      <p>
-        Give an equation <m>(x,y,z)=(?,?,?)</m> of the line through <m>P</m> and <m>Q</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Give an equation of the line through <m>P</m> and <m>R</m>.
-      </p>
-    </task>
-    <task>
-      <p>
-        Give an equation of the plane through <m>P</m>, <m>Q</m>, and <m>R</m>.
-      </p>
-    </task>
+      <task>
+          <p>
+            Give an equation <m>(x,y,z)=(?,?,?)</m> of the line through <m>P</m> and <m>Q</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Give an equation of the line through <m>P</m> and <m>R</m>.
+          </p>
+      </task>
+
+      <task>
+          <p>
+            Give an equation of the plane through <m>P</m>, <m>Q</m>, and <m>R</m>.
+          </p>
+      </task>
   </exploration>
 
   <exploration>
@@ -90,4 +91,3 @@
     </p>
   </exploration>
 </section>
-
