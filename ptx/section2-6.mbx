@@ -1,4 +1,5 @@
 
+
 <section>
   <title>Projections and Their Applications</title>
   <p>
@@ -23,48 +24,42 @@
     <p>
       We want to write <m>\vec F</m> as the sum of two vectors: <m>\vec F = \vec w+\vec n</m>
       <ul>
-        <li>
+        <task>
           <p>
             where <m>\vec w</m> is parallel to <m>\vec d</m>
           </p>
-        </li>
-
-        <li>
+        </task>
+        <task>
           <p>
             and <m>\vec n</m> is orthogonal to <m>\vec d</m>
           </p>
-        </li>
+        </task>
       </ul>
     </p>
 
     <p>
       Since <m>\vec w</m> is parallel to <m>\vec d</m>, we can write <m>\vec w=c\vec d</m> for some unknown scalar <m>c</m>.
-      <ol>
-        <li>
-          <p>
-            Rewrite <m>\vec F</m> in terms of <m>\vec d</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Take the dot-product of both sides with <m>\vec d</m>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Since <m>\vec n</m> is orthogonal to <m>\vec d</m> we know that <m>\vec n \cdot \vec d =</m> ?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Substitute and solve for the unknown <m>c</m>
-          </p>
-        </li>
-      </ol>
     </p>
+    <task>
+      <p>
+        Rewrite <m>\vec F</m> in terms of <m>\vec d</m>
+      </p>
+    </task>
+    <task>
+      <p>
+        Take the dot-product of both sides with <m>\vec d</m>
+      </p>
+    </task>
+    <task>
+      <p>
+        Since <m>\vec n</m> is orthogonal to <m>\vec d</m> we know that <m>\vec n \cdot \vec d =</m> ?
+      </p>
+    </task>
+    <task>
+      <p>
+        Substitute and solve for the unknown <m>c</m>
+      </p>
+    </task>
   </exploration>
 
   <p>
@@ -133,26 +128,22 @@
       \thomasee{See 12.3: 24, 41-44.} 
       \stewarts{See 12.3:49-52}
       } -->Find the amount of work done by the force <m>\vec F=\left\lt 0,-200\right></m> through the displacement <m>\vec d=\left\lt 6,-3\right></m>. Find this by doing the following:
-      <ol>
-        <li>
-          <p>
-            Find the projection of <m>\vec F</m> onto <m>\vec d</m>. This tells you how much force acts in the direction of the displacement. Find the magnitude of this projection.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Since work equals <m>W=Fd</m>, multiply your answer above by <m>|\vec {d}|</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Now compute <m>\vec F\cdot \vec d</m>. You have just shown that <m>W=\vec F\cdot \vec d</m> when <m>\vec F</m> and <m>\vec d</m> are not in the same direction.
-          </p>
-        </li>
-      </ol>
     </p>
+    <task>
+      <p>
+        Find the projection of <m>\vec F</m> onto <m>\vec d</m>. This tells you how much force acts in the direction of the displacement. Find the magnitude of this projection.
+      </p>
+    </task>
+    <task>
+      <p>
+        Since work equals <m>W=Fd</m>, multiply your answer above by <m>|\vec {d}|</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Now compute <m>\vec F\cdot \vec d</m>. You have just shown that <m>W=\vec F\cdot \vec d</m> when <m>\vec F</m> and <m>\vec d</m> are not in the same direction.
+      </p>
+    </task>
   </exploration>
 
   <exploration>
@@ -161,31 +152,27 @@
       <!-- \extrafn{
       \stewarts{See 12.5:69-72}
       } -->Consider the points <m>P=(2,4,5)</m>, <m>Q=(1,5,7)</m>, and <m>R=(-1,6,8)</m>.
-      <ol>
-        <li>
-          <p>
-            What is the area of the triangle <m>PQR</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Give a normal vector to the plane through these three points.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            What is the distance from the point <m>A=(1,2,3)</m> to the plane <m>PQR</m>.
-            <hint>
-              <p>
-                Compute the projection of <m>\vec {PA}</m> onto <m>\vec n</m>. How long is it?
-              </p>
-            </hint>
-          </p>
-        </li>
-      </ol>
     </p>
+    <task>
+      <p>
+        What is the area of the triangle <m>PQR</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Give a normal vector to the plane through these three points.
+      </p>
+    </task>
+    <task>
+      <p>
+        What is the distance from the point <m>A=(1,2,3)</m> to the plane <m>PQR</m>.
+        <hint>
+          <p>
+            Compute the projection of <m>\vec {PA}</m> onto <m>\vec n</m>. How long is it?
+          </p>
+        </hint>
+      </p>
+    </task>
   </exploration>
 
   <p>
@@ -230,3 +217,4 @@
 
   </p>
 </section>
+

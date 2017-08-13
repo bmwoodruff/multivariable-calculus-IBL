@@ -1,4 +1,5 @@
 
+
 <section>
   <title>Lagrange Multipliers</title>
   <p>
@@ -23,50 +24,42 @@
   <exploration>
     <p>
       Suppose an ant walks around the circle <m>g(x,y)=x^2+y^2=1</m>. As the ant walks around the circle, the temperature is <m>f(x,y) = x^2+y+4</m>. Our goal is to find the maximum and minimum temperatures reached by the ant as it walks around the circle. We want to optimize <m>f(x,y)</m> subject to the constraint <m>g(x,y)=1</m>.
-      <ol>
-        <li>
-          <p>
-            Draw the circle <m>g(x,y)=1</m>.  Then, on the same set of axes, draw several level curves of <m>f</m>. The level curves <m>f=3, 4, 5, 6</m> are a good start. Then add more (maybe at each 1/4th). If you make a careful, accurate graph, it will help a lot below.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Based solely on your graph, where does the minimum temperature occur?  What is the minimum temperature?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            If the ant is at the point <m>(0,1)</m>, and it moves left, will the temperature rise or fall?  What if the ant moves right?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            On your graph, place a dot(s) where you believe the ant reaches a maximum temperature (it may occur at more than one spot).
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Explain why you believe this is the spot where the maximum temperature occurs. What about the level curves tells you that these spots should be a maximum?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Draw the gradient of <m>f</m> at the places where the minimum and maximum temperatures occur. Also draw the gradient of <m>g</m> at these spots.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Explain how are gradients of <m>f</m> and <m>g</m> related at these spots.
-          </p>
-        </li>
-      </ol>
     </p>
+    <task>
+      <p>
+        Draw the circle <m>g(x,y)=1</m>.  Then, on the same set of axes, draw several level curves of <m>f</m>. The level curves <m>f=3, 4, 5, 6</m> are a good start. Then add more (maybe at each 1/4th). If you make a careful, accurate graph, it will help a lot below.
+      </p>
+    </task>
+    <task>
+      <p>
+        Based solely on your graph, where does the minimum temperature occur?  What is the minimum temperature?
+      </p>
+    </task>
+    <task>
+      <p>
+        If the ant is at the point <m>(0,1)</m>, and it moves left, will the temperature rise or fall?  What if the ant moves right?
+      </p>
+    </task>
+    <task>
+      <p>
+        On your graph, place a dot(s) where you believe the ant reaches a maximum temperature (it may occur at more than one spot).
+      </p>
+    </task>
+    <task>
+      <p>
+        Explain why you believe this is the spot where the maximum temperature occurs. What about the level curves tells you that these spots should be a maximum?
+      </p>
+    </task>
+    <task>
+      <p>
+        Draw the gradient of <m>f</m> at the places where the minimum and maximum temperatures occur. Also draw the gradient of <m>g</m> at these spots.
+      </p>
+    </task>
+    <task>
+      <p>
+        Explain how are gradients of <m>f</m> and <m>g</m> related at these spots.
+      </p>
+    </task>
   </exploration>
 
   <theorem>
@@ -85,36 +78,31 @@
   <exploration>
     <p>
       Suppose an ant walks around the circle <m>x^2+y^2=1</m>. As the ant walks around the circle, the temperature is <m>T(x,y) = x^2+y+4</m>. Our goal is to find the maximum and minimum temperatures <m>T</m> reached by the ant as it walks around the circle.
-      <ol>
-        <li>
-          <p>
-            What function <m>f(x,y)</m> do we wish to optimize? What is the constraint <m>g(x,y)=c</m>?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <!-- \extrafn{The most common error on this exercise is to divide both sides of an equation by <m>x</m>, which could be zero.  If you do this, you'll only get 2 ordered pairs.} -->Find the gradient of <m>f</m> and the gradient of <m>g</m>.  Then solve the system of equations that you get from the equations
-            <me>
-              \vec \nabla f = \lambda \vec \nabla g,   x^2+y^2=1.
-            </me>
-            You should obtain 4 ordered pairs <m>(x,y)</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            At each ordered pair, find the temperature.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            What is the maximum temperature obtained? What is the minimum temperature obtained? Do your results match the previous exercise?
-          </p>
-        </li>
-      </ol>
     </p>
+    <task>
+      <p>
+        What function <m>f(x,y)</m> do we wish to optimize? What is the constraint <m>g(x,y)=c</m>?
+      </p>
+    </task>
+    <task>
+      <p>
+        <!-- \extrafn{The most common error on this exercise is to divide both sides of an equation by <m>x</m>, which could be zero.  If you do this, you'll only get 2 ordered pairs.} -->Find the gradient of <m>f</m> and the gradient of <m>g</m>.  Then solve the system of equations that you get from the equations
+        <me>
+          \vec \nabla f = \lambda \vec \nabla g,   x^2+y^2=1.
+        </me>
+        You should obtain 4 ordered pairs <m>(x,y)</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        At each ordered pair, find the temperature.
+      </p>
+    </task>
+    <task>
+      <p>
+        What is the maximum temperature obtained? What is the minimum temperature obtained? Do your results match the previous exercise?
+      </p>
+    </task>
   </exploration>
 
   <exploration>
@@ -122,9 +110,9 @@
       <!-- \extrafn{
 
       <insight>
-      <p>
-        See 14.8 for more practice.
-      </p>
+        <p>
+          See 14.8 for more practice.
+        </p>
       </insight>
 
       } -->Consider the curve <m>xy^2=54</m> (draw it). The distance from each point on this curve to the origin is a function that must have a minimum value. Find a point <m>(a,b)</m> on the curve that is closest to the origin.
@@ -204,3 +192,4 @@
 
   </p>
 </section>
+

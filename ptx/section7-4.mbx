@@ -1,4 +1,5 @@
 
+
 <section>
   <title>The Chain Rule</title>
   <p>
@@ -42,26 +43,22 @@
   <exploration xml:id="prob_chain_rule_review">
     <p>
       Suppose we know that <m>\ds f'(x) = \frac{\sin(x)}{2x^2+3}</m> and <m>g(x)=\sqrt{x^2+1}</m>. Notice we don't know <m>f(x)</m>. <!-- \extrafn{ Not knowing a function <m>f</m> is actually quite common in real life. We can often measure how something changes (a derivative) without knowing the function itself.} -->
-      <ol>
-        <li>
-          <p>
-            State <m>f'(x)</m> and <m>g'(x)</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            State <m>f'(g(x))</m>, and explain the difference between <m>f'(x)</m> and <m>f'(g(x))</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Use the chain rule to compute <m>(f\circ g)'(x)</m>.
-          </p>
-        </li>
-      </ol>
     </p>
+    <task>
+      <p>
+        State <m>f'(x)</m> and <m>g'(x)</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        State <m>f'(g(x))</m>, and explain the difference between <m>f'(x)</m> and <m>f'(g(x))</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Use the chain rule to compute <m>(f\circ g)'(x)</m>.
+      </p>
+    </task>
   </exploration>
 
   <p>
@@ -83,55 +80,47 @@
 
     <p>
       Recall that to get this derivative we assumed that the radius and height are both changing with respect to time. Now we actually use functions for each letting <m>r=3t</m> and <m>h=t^2</m>. We'll write this parametrically as <m>\vec x (t) = (r,h)(t) = (3t, t^2)</m>.
-      <ol>
-        <li>
-          <p>
-            In <m>V=\pi r^2 h</m>, replace <m>r</m> and <m>h</m> with what they are in terms of <m>t</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Compute <m>\dfrac{dV}{dt}</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Find the derivative of <m>\vec x (t)</m>, i.e. the derivative of <m>(r,h)(t)</m>.
-            <hint>
-              <p>
-                The output should be a 2x1 matrix.
-              </p>
-            </hint>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            We know 
-            <m>DV(r,h)</m> and
-            <m>D(r,h)(t)</m>
-            In first semester calculus, the chain rule was the product of derivatives. Multiply these matrices together to get find <m>\frac{dV}{dt}</m>. I.E. computer:
-            <me>
-              \dfrac{dV}{dt}=DV((r,h)(t))\cdot D(r,h)(t).
-            </me>
-            (Did you get the same answer as the first part? )
-          </p>
-        </li>
-      </ol>
     </p>
-
+    <task>
+      <p>
+        In <m>V=\pi r^2 h</m>, replace <m>r</m> and <m>h</m> with what they are in terms of <m>t</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Compute <m>\dfrac{dV}{dt}</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Find the derivative of <m>\vec x (t)</m>, i.e. the derivative of <m>(r,h)(t)</m>.
+        <hint>
+          <p>
+            The output should be a 2x1 matrix.
+          </p>
+        </hint>
+      </p>
+    </task>
+    <task>
+      <p>
+        We know 
+        <m>DV(r,h)</m> and
+        <m>D(r,h)(t)</m>
+        In first semester calculus, the chain rule was the product of derivatives. Multiply these matrices together to get find <m>\frac{dV}{dt}</m>. I.E. computer:
+        <me>
+          \dfrac{dV}{dt}=DV((r,h)(t))\cdot D(r,h)(t).
+        </me>
+        (Did you get the same answer as the first part? )
+      </p>
+    </task>
     <p>
-      For the results in part 1 and 4 to match you had to replace <m>r</m> and <m>h</m> with what they equaled in terms of <m>t</m>.
-      <ol type="resume">
-        <li>
-          <p>
-            What part of the notation <m>\dfrac{dV}{dt}=DV((r,h)(t))\cdot D(r,h)(t)</m> tells you to replace <m>r</m> and <m>h</m> with what they equal in terms of <m>t</m>?
-          </p>
-        </li>
-      </ol>
-    </p>
+    For the results in part 1 and 4 to match you had to replace <m>r</m> and <m>h</m> with what they equaled in terms of <m>t</m>.
+    <ol type="resume">
+    <task>
+      <p>
+        What part of the notation <m>\dfrac{dV}{dt}=DV((r,h)(t))\cdot D(r,h)(t)</m> tells you to replace <m>r</m> and <m>h</m> with what they equal in terms of <m>t</m>?
+      </p>
+    </task>
   </exploration>
 
   <p>
@@ -141,128 +130,105 @@
   <exploration xml:id="prob_horse_track_chain">
     <p>
       Consider <m>f(x,y)=9-x^2-y^2</m> and <m>\vec r(t)=(2\cos t, 3\sin t)</m>. Imagine the following scenario. A horse runs around outside in the cold. The horse's position at time <m>t</m> is given parametrically by the elliptical path <m>\vec r(t)</m>. The function <m>T=f(x,y)</m> gives the temperature of the air at any point <m>(x,y)</m>.
-      <ol>
-        <li xml:id="item_1" >
-
-        <p>
-          At time <m>t=0</m>, what is the horse's position <m>\vec r(0)</m>, and what is the temperature <m>f(\vec r(0))</m> at that position?
-        </p>
-        </li>
-
-        <li>
-          <p>
-            Find the temperatures at <m>t=\pi/2</m>, <m>t=\pi</m>, and <m>t=3\pi/2</m> as well.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            In the plane, draw the path of the horse for <m>t\in [0,2\pi]</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            On the same 2D graph, include a contour plot of the temperature function <m>f</m>. Make sure you include the level curves that pass through the points in <xref ref="item_1">part</xref>, and write the temperature on each level curve you draw. 
-            <!-- \extrafn{If you end up with an ellipse and several concentric circles, then you've done this right.} -->
-          </p>
-        </li>
-
-        <li>
-          <p>
-            As the horse runs around, the temperature of the air around the horse is constantly changing. 
-            At which <m>t</m> does the temperature around the horse reach a maximum?  A minimum?  Explain, using your graph. 
-            <!-- \extrafn{This idea leads to an optimization technique, Lagrange multipliers, later in the semester.} -->
-          </p>
-        </li>
-
-        <li xml:id="item_2" >
-
-        <p>
-          As the horse moves past the point at <m>t=\pi/4</m>, is the temperature of the surrounding air increasing or decreasing? In other words, is <m>\dfrac{df}{dt}</m> positive or negative? Use your graph to explain.
-        </p>
-        </li>
-
-        <li>
-          <p>
-            We'll complete this part in class, but you're welcome to give it a try yourself. Draw the 3D surface plot of <m>f</m>. In the <m>xy</m>-plane of your 3D plot (so <m>z=0</m>) add the path of the horse. In class, we'll project the path of the horse up into the 3D surface.
-          </p>
-        </li>
-      </ol>
     </p>
+    <task xml:id="item_1" >
+      <p>
+        At time <m>t=0</m>, what is the horse's position <m>\vec r(0)</m>, and what is the temperature <m>f(\vec r(0))</m> at that position?
+      </p>
+    </task>
+    <task>
+      <p>
+        Find the temperatures at <m>t=\pi/2</m>, <m>t=\pi</m>, and <m>t=3\pi/2</m> as well.
+      </p>
+    </task>
+    <task>
+      <p>
+        In the plane, draw the path of the horse for <m>t\in [0,2\pi]</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        On the same 2D graph, include a contour plot of the temperature function <m>f</m>. Make sure you include the level curves that pass through the points in <xref ref="item_1">part</xref>, and write the temperature on each level curve you draw. 
+        <!-- \extrafn{If you end up with an ellipse and several concentric circles, then you've done this right.} -->
+      </p>
+    </task>
+    <task>
+      <p>
+        As the horse runs around, the temperature of the air around the horse is constantly changing. 
+        At which <m>t</m> does the temperature around the horse reach a maximum?  A minimum?  Explain, using your graph. 
+        <!-- \extrafn{This idea leads to an optimization technique, Lagrange multipliers, later in the semester.} -->
+      </p>
+    </task>
+    <task xml:id="item_2" >
+      <p>
+        As the horse moves past the point at <m>t=\pi/4</m>, is the temperature of the surrounding air increasing or decreasing? In other words, is <m>\dfrac{df}{dt}</m> positive or negative? Use your graph to explain.
+      </p>
+    </task>
+    <task>
+      <p>
+        We'll complete this part in class, but you're welcome to give it a try yourself. Draw the 3D surface plot of <m>f</m>. In the <m>xy</m>-plane of your 3D plot (so <m>z=0</m>) add the path of the horse. In class, we'll project the path of the horse up into the 3D surface.
+      </p>
+    </task>
   </exploration>
 
   <exploration>
     <p>
       Consider again <m>f(x,y)=9-x^2-y^2</m> and <m>\vec r(t)=(2\cos t, 3\sin t)</m>, which means <m>x=2\cos t</m> and <m>y=3\sin t</m>.
-      <ol>
-        <li>
-          <p>
-            At the point <m>\vec r(t)</m>, we'd like a formula for the temperature <m>f(\vec r(t))</m>. What is the temperature of the horse at any time <m>t</m>? [In <m>f(x,y)</m>, replace <m>x</m> and <m>y</m> with what they are in terms of <m>t</m>.]
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Compute <m>df/dt</m> (the derivative as you did in first-semester calculus).
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Construct a graph of <m>f(t)</m> (use software to draw this if you like). From your graph, at what time values do the maxima and minima occur?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            What is <m>df/dt</m> at <m>t=\pi/4</m>?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Compare your work with the previous exercise.
-          </p>
-        </li>
-      </ol>
     </p>
+    <task>
+      <p>
+        At the point <m>\vec r(t)</m>, we'd like a formula for the temperature <m>f(\vec r(t))</m>. What is the temperature of the horse at any time <m>t</m>? [In <m>f(x,y)</m>, replace <m>x</m> and <m>y</m> with what they are in terms of <m>t</m>.]
+      </p>
+    </task>
+    <task>
+      <p>
+        Compute <m>df/dt</m> (the derivative as you did in first-semester calculus).
+      </p>
+    </task>
+    <task>
+      <p>
+        Construct a graph of <m>f(t)</m> (use software to draw this if you like). From your graph, at what time values do the maxima and minima occur?
+      </p>
+    </task>
+    <task>
+      <p>
+        What is <m>df/dt</m> at <m>t=\pi/4</m>?
+      </p>
+    </task>
+    <task>
+      <p>
+        Compare your work with the previous exercise.
+      </p>
+    </task>
   </exploration>
 
   <exploration>
     <p>
       Consider again <m>f(x,y)=9-x^2-y^2</m> and <m>\vec r(t)=(2\cos t, 3\sin t)</m>.
-      <ol>
-        <li>
-          <p>
-            Compute both <m>Df(x,y)</m> and <m>D\vec r(t)</m> as matrices. One should have two columns.  The other should have one column (but two rows).
-          </p>
-        </li>
-      </ol>
     </p>
-
+    <task>
+      <p>
+        Compute both <m>Df(x,y)</m> and <m>D\vec r(t)</m> as matrices. One should have two columns.  The other should have one column (but two rows).
+      </p>
+    </task>
     <p>
-      We can write the temperature at any time <m>t</m> symbolically as <m>f(r(t))</m>. First semester calculus suggests the derivative should be the product <m>(f(\vec r(t))) ' = f'(\vec r(t))\vec r'(t)</m>.
-      <ol type="resume">
-        <li>
-          <p>
-            Write this using <m>D</m> notation instead of prime notation.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Compute the matrix product <m>DfD\vec r</m>, and then substitute <m>x=2\cos t</m> and <m>y=3\sin t</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            What is the change in temperature with respect to time at <m>t=\pi/4</m>? Is it positive or negative? Compare with the previous exercise.
-          </p>
-        </li>
-      </ol>
-    </p>
+    We can write the temperature at any time <m>t</m> symbolically as <m>f(r(t))</m>. First semester calculus suggests the derivative should be the product <m>(f(\vec r(t))) ' = f'(\vec r(t))\vec r'(t)</m>.
+    <ol type="resume">
+    <task>
+      <p>
+        Write this using <m>D</m> notation instead of prime notation.
+      </p>
+    </task>
+    <task>
+      <p>
+        Compute the matrix product <m>DfD\vec r</m>, and then substitute <m>x=2\cos t</m> and <m>y=3\sin t</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        What is the change in temperature with respect to time at <m>t=\pi/4</m>? Is it positive or negative? Compare with the previous exercise.
+      </p>
+    </task>
   </exploration>
 
   <p>
@@ -308,33 +274,27 @@
 
     <p>
       Suppose that <m>f(x,y) = x^2+xy</m> and that <m>x=2t+3</m> and <m>y=3t^2+4</m>.
-      <ol>
-        <li>
-          <p>
-            Rewrite the parametric equations <m>x=2t+3</m> and <m>y=3t^2+4</m> in vector form, so we can apply the chain rule. This means you need to create a function <m>\vec r(t) = (\blank{1in}, \blank{1in})</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Compute the derivatives <m>Df(x,y)</m> and <m>D\vec r(t)</m>, and then multiply the matrices together to obtain <m>\dfrac{df}{dt}</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            How can you make your answer only depend on <m>t</m> (not <m>x</m> or <m>y</m>)? Do so.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            The chain rule states that <m>D(f\circ \vec r)(t) = Df(\vec r(t))D\vec r(t)</m>. Explain why we write <m>Df(\vec r(t))</m> instead of <m>Df(x,y)</m>.
-          </p>
-        </li>
-      </ol>
     </p>
-
+    <task>
+      <p>
+        Rewrite the parametric equations <m>x=2t+3</m> and <m>y=3t^2+4</m> in vector form, so we can apply the chain rule. This means you need to create a function <m>\vec r(t) = (\blank{1in}, \blank{1in})</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Compute the derivatives <m>Df(x,y)</m> and <m>D\vec r(t)</m>, and then multiply the matrices together to obtain <m>\dfrac{df}{dt}</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        How can you make your answer only depend on <m>t</m> (not <m>x</m> or <m>y</m>)? Do so.
+      </p>
+    </task>
+    <task>
+      <p>
+        The chain rule states that <m>D(f\circ \vec r)(t) = Df(\vec r(t))D\vec r(t)</m>. Explain why we write <m>Df(\vec r(t))</m> instead of <m>Df(x,y)</m>.
+      </p>
+    </task>
     <p>
       If you'd like to make sure you are correct, try the following. Replace <m>x</m> and <m>y</m> in <m>f=x^2+xy</m> with what they are in terms of <m>t</m>, and then just use first-semester calculus to find <m>df/dt</m>. Is it the same?
     </p>
@@ -347,57 +307,48 @@
       \larsonfive{See Larson 13.5:7<ndash />10 for more practice (remember to use matrix multiplication, not the formulas from the book).}
       \stewarts{ See 14.5:1-12 for more practice.} 
       } -->Suppose <m>f(x,y,z) = x+2y+3z^2</m> and <m>x=u+v</m>, <m>y=2u-3v</m>, and <m>z=uv</m>. Our goal is to find how much <m>f</m> changes if we were to change <m>u</m> (so <m>\partial f/\partial u</m>) or if we were to change <m>v</m> (so <m>\partial f/\partial v</m>). Try doing this exercise without looking at the steps below, but instead try to follow the patterns in the previous exercise on your own.
-      <ol>
-        <li>
-          <p>
-            Rewrite the equations for <m>x,y,</m> and <m>z</m> in vector form <m>\vec r(u,v)=(x,y,z)</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Compute the derivatives <m>Df(x,y,z)</m> and <m>D\vec r(u,v)</m>, and then multiply them together. Notice that since this composite function has 2 inputs, namely <m>u</m> and <m>v</m>, we should expect to get two columns when we are done.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            What are <m>\partial f/\partial u</m> and <m>\partial f/\partial v</m>?
-            <hint>
-              <p>
-                remember, each input variable gets a column.
-              </p>
-            </hint>
-          </p>
-        </li>
-      </ol>
     </p>
+    <task>
+      <p>
+        Rewrite the equations for <m>x,y,</m> and <m>z</m> in vector form <m>\vec r(u,v)=(x,y,z)</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Compute the derivatives <m>Df(x,y,z)</m> and <m>D\vec r(u,v)</m>, and then multiply them together. Notice that since this composite function has 2 inputs, namely <m>u</m> and <m>v</m>, we should expect to get two columns when we are done.
+      </p>
+    </task>
+    <task>
+      <p>
+        What are <m>\partial f/\partial u</m> and <m>\partial f/\partial v</m>?
+        <hint>
+          <p>
+            remember, each input variable gets a column.
+          </p>
+        </hint>
+      </p>
+    </task>
   </exploration>
 
   <exploration>
     <p>
       Let <m>\vec F(s,t) = (2s+t,3s-4t,t)</m> and <m>s=3pq</m> and <m>t=2p+q^2</m>. This means that changing <m>p</m> and/or <m>q</m> should cause <m>\vec F</m> to change. Our goal is to find <m>\partial \vec F/\partial p</m> and <m>\partial \vec F/\partial q</m>. Note that since <m>\vec F</m> is a vector-valued function, the two partial derivatives should be vectors. Try doing this exercise without looking at the steps below, but instead try to follow the patterns in the previous exercises.
-      <ol>
-        <li xml:id="item_3" >
-
-        <p>
-          Rewrite the parametric equations for <m>s</m> and <m>t</m> in vector form.
-        </p>
-        </li>
-
-        <li>
-          <p>
-            Compute <m>D\vec F(s,t)</m> and the derivative of your vector function from <xref ref="item_3">part</xref>, and then multiply them together to find the derivative of <m>\vec F</m> with respect to <m>p</m> and <m>q</m>.  How many columns should we expect to have when we are done multiplying matrices?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            What are <m>\partial \vec F/\partial p</m> and <m>\partial \vec F/\partial q</m>?
-          </p>
-        </li>
-      </ol>
     </p>
+    <task xml:id="item_3" >
+      <p>
+        Rewrite the parametric equations for <m>s</m> and <m>t</m> in vector form.
+      </p>
+    </task>
+    <task>
+      <p>
+        Compute <m>D\vec F(s,t)</m> and the derivative of your vector function from <xref ref="item_3">part</xref>, and then multiply them together to find the derivative of <m>\vec F</m> with respect to <m>p</m> and <m>q</m>.  How many columns should we expect to have when we are done multiplying matrices?
+      </p>
+    </task>
+    <task>
+      <p>
+        What are <m>\partial \vec F/\partial p</m> and <m>\partial \vec F/\partial q</m>?
+      </p>
+    </task>
   </exploration>
 
   <review>
@@ -425,37 +376,34 @@
       \thomasee{See 14.4: 13-24 for more practice. Practice these exercises by using matrix multiplication. The example exercises in the text use a <q>branch diagram,</q> which is just a way to express matrix multiplication without having to introduce matrices.}
       \larsonfive{See Larson 13.5:7<ndash />10 for more practice.}
       } -->Complete the following:
-      <ol>
-        <li>
-          <p>
-            Suppose that <m>w=f(x,y,z)</m> and that <m>x,y,z</m> are all function of one variable <m>t</m> (so <m>x=g(t), y=h(t), z=k(t)</m>).  
-            Use the chain rule with matrix multiplication to explain why
-            <me>
-              \frac{dw}{dt} 
-              = \frac{\partial f}{\partial x}\frac{dg}{dt}+\frac{\partial f}{\partial y}\frac{dh}{dt}+\frac{\partial f}{\partial z}\frac{dk}{dt} 
-              .
-            </me>
-            which is equivalent to writing
-            <me>
-              \frac{dw}{dt} 
-              = \frac{\partial f}{\partial x}\frac{dx}{dt}+\frac{\partial f}{\partial y}\frac{dy}{dt}+\frac{\partial f}{\partial z}\frac{dz}{dt} 
-              .
-            </me>
-            <hint>
-              <p>
-                Rewrite the parametric equations for <m>x</m>, <m>y</m>, and <m>z</m> in vector form <m>\vec r(t) = (x,y,z)</m> and compute <m>Dw(x,y,z)</m> and <m>D\vec r(t)</m>.
-              </p>
-            </hint>
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Suppose that <m>R=f(V,T,n,P)</m>, and that <m>V,T,n,P</m> are all functions of <m>x</m>.  Give a formula (similar to the above) for <m>\dfrac{dR}{dx}.</m>
-          </p>
-        </li>
-      </ol>
     </p>
+    <task>
+      <p>
+        Suppose that <m>w=f(x,y,z)</m> and that <m>x,y,z</m> are all function of one variable <m>t</m> (so <m>x=g(t), y=h(t), z=k(t)</m>).  
+        Use the chain rule with matrix multiplication to explain why
+        <me>
+          \frac{dw}{dt} 
+          = \frac{\partial f}{\partial x}\frac{dg}{dt}+\frac{\partial f}{\partial y}\frac{dh}{dt}+\frac{\partial f}{\partial z}\frac{dk}{dt} 
+          .
+        </me>
+        which is equivalent to writing
+        <me>
+          \frac{dw}{dt} 
+          = \frac{\partial f}{\partial x}\frac{dx}{dt}+\frac{\partial f}{\partial y}\frac{dy}{dt}+\frac{\partial f}{\partial z}\frac{dz}{dt} 
+          .
+        </me>
+        <hint>
+          <p>
+            Rewrite the parametric equations for <m>x</m>, <m>y</m>, and <m>z</m> in vector form <m>\vec r(t) = (x,y,z)</m> and compute <m>Dw(x,y,z)</m> and <m>D\vec r(t)</m>.
+          </p>
+        </hint>
+      </p>
+    </task>
+    <task>
+      <p>
+        Suppose that <m>R=f(V,T,n,P)</m>, and that <m>V,T,n,P</m> are all functions of <m>x</m>.  Give a formula (similar to the above) for <m>\dfrac{dR}{dx}.</m>
+      </p>
+    </task>
   </exploration>
 
   <exploration>
@@ -517,33 +465,27 @@
 
     <p>
       Suppose <m>x=x</m> and <m>y=y(x)</m>, so <m>y</m> is a function of <m>x</m>. We can write this in parametric form as <m>\vec r(x) = (x,y(x))</m>. We now have <m>z=f(x,y)</m> and <m>\vec r(x)=(x,y(x))</m>.
-      <ol>
-        <li>
-          <p>
-            Compute both <m>Df(x,y)</m> and <m>D\vec r(x)</m> symbolically.  Don't use the function <m>f(x,y)=x^2+3xy-y^3</m> until the last step.
-          </p>
-        </li>
-
-        <li xml:id="item_4" >
-
-        <p>
-          Use the chain rule to compute <m>D(f(\vec r(x)))</m>. What is <m>dz/dx</m> (i.e., <m>df/dx</m>)?
-        </p>
-        </li>
-
-        <li>
-          <p>
-            Since <m>z</m> is held constant, we know that <m>dz/dx=0</m>. Use this fact, together with <xref ref="item_4">part</xref> to explain why <m>\ds \frac{dy}{dx} = -\frac{f_x}{f_y} = -\frac{\partial f/ \partial x}{\partial f/ \partial y}</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            For the curve <m>5=x^2+3xy-y^3</m>, use this formula to compute <m>dy/dx</m>.
-          </p>
-        </li>
-      </ol>
     </p>
+    <task>
+      <p>
+        Compute both <m>Df(x,y)</m> and <m>D\vec r(x)</m> symbolically.  Don't use the function <m>f(x,y)=x^2+3xy-y^3</m> until the last step.
+      </p>
+    </task>
+    <task xml:id="item_4" >
+      <p>
+        Use the chain rule to compute <m>D(f(\vec r(x)))</m>. What is <m>dz/dx</m> (i.e., <m>df/dx</m>)?
+      </p>
+    </task>
+    <task>
+      <p>
+        Since <m>z</m> is held constant, we know that <m>dz/dx=0</m>. Use this fact, together with <xref ref="item_4">part</xref> to explain why <m>\ds \frac{dy}{dx} = -\frac{f_x}{f_y} = -\frac{\partial f/ \partial x}{\partial f/ \partial y}</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        For the curve <m>5=x^2+3xy-y^3</m>, use this formula to compute <m>dy/dx</m>.
+      </p>
+    </task>
   </exploration>
 
   <p>
@@ -588,3 +530,4 @@
 
   </p>
 </section>
+

@@ -1,4 +1,5 @@
 
+
 <section>
   <title>Tangential And Normal Components</title>
   <introduction>
@@ -42,32 +43,27 @@
     <exploration>
       <p>
         Consider the parameterization <m>\vec r(t) = (t,9-t^2)</m> (it's a simplified version of tossing a pebble off a building). Our goal, at time <m>t=1</m>, is to write <m>\vec a</m> in the form <m>\vec a = a_T\vec T+a_N\vec N.</m> Follow the steps below.
-        <ol>
-          <li>
-            <p>
-              Compute <m>\vec v</m>, <m>\vec a</m>, and <m>\vec T</m> at time <m>t</m>, and then at time <m>t=1</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              At <m>t=1</m>, compute the projection of <m>\vec a</m> onto <m>\vec T</m>, i.e. compute <m>\proj_{\vec T(1)}\vec a(1)</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              State <m>\vec N(t)</m> (remember you can flip the order and change a sign), and then at <m>t=1</m> compute <m>\text{ proj } _{\vec N(1)}\vec a(1)</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              If we write <m>\vec a = a_T\vec T +a_N\vec N</m>, then what are <m>a_T</m> and <m>a_N</m>?
-            </p>
-          </li>
-        </ol>
       </p>
+      <task>
+        <p>
+          Compute <m>\vec v</m>, <m>\vec a</m>, and <m>\vec T</m> at time <m>t</m>, and then at time <m>t=1</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          At <m>t=1</m>, compute the projection of <m>\vec a</m> onto <m>\vec T</m>, i.e. compute <m>\proj_{\vec T(1)}\vec a(1)</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          State <m>\vec N(t)</m> (remember you can flip the order and change a sign), and then at <m>t=1</m> compute <m>\text{ proj } _{\vec N(1)}\vec a(1)</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          If we write <m>\vec a = a_T\vec T +a_N\vec N</m>, then what are <m>a_T</m> and <m>a_N</m>?
+        </p>
+      </task>
     </exploration>
 
     <definition>
@@ -90,26 +86,22 @@
       <title>Optional, we already basically did this</title>
       <p>
         Suppose that Sammy sits <m>\rho</m> feet away from the center of the merry-go-ground. His sister decides to spin him around at different speeds. Let <m>\vec r(t) = (\rho \cos \omega t, \rho \sin \omega t)</m> be a parametrization of Sammy's postion.
-        <ol>
-          <li>
-            <p>
-              Show that Sammy's speed is <m>|\vec v|=\rho \omega</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Find the curvature of Sammy's path at any time <m>t</m> (it happens to be constant - and we did this already when we computed the curvature along a circle).
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Find the acceleration vector, and show that <m>\ds |\vec a| = \kappa |\vec v|^2 = \frac{|\vec v|^2}{\rho}</m>.
-            </p>
-          </li>
-        </ol>
       </p>
+      <task>
+        <p>
+          Show that Sammy's speed is <m>|\vec v|=\rho \omega</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          Find the curvature of Sammy's path at any time <m>t</m> (it happens to be constant - and we did this already when we computed the curvature along a circle).
+        </p>
+      </task>
+      <task>
+        <p>
+          Find the acceleration vector, and show that <m>\ds |\vec a| = \kappa |\vec v|^2 = \frac{|\vec v|^2}{\rho}</m>.
+        </p>
+      </task>
     </exploration>
 
     <p>
@@ -132,66 +124,58 @@
     <exploration>
       <p>
         Imagine that you are riding as a passenger on a road and encounter a series of switchbacks (so the road starts to zigzag up the mountain). Right before each bend in the road, you see a yellow sign that tells you a U-turn is coming up, and that you should reduce your speed from 45 mi/hr to 15 mi/hr. Assume the largest curvature along the turn is <m>\kappa</m>. Recall that <m>a_N=\kappa |\vec v|^2</m>. The engineers of the road designed the road so that if you are moving at 15 mi/hr, then the normal acceleration will be at most <m>A</m> units.
-        <ol>
-          <li>
-            <p>
-              Suppose that your driver (Ben) ignores the suggestion to slow down to 15 mi/hr.  He keeps going 45 mi/hr through the turn. Had he slowed down, the max acceleration would be <m>A</m>.  You're traveling 3 times faster than suggested.  What will your maximum normal acceleration be?
-              <hint>
-                <p>
-                  It's more than <m>3A</m>.
-                </p>
-              </hint>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              You yell at Ben to slow down (you don't want to die). So Ben decides to only slow to 30 mi/hr. He figures this means you'll only feel twice as much acceleration as <m>A</m>.  Explain why this line of reasoning is flawed.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Ben gets frustrated by the fact that he has to slow down. He complains about the engineers who designed the road, and says, <q>they should have just built a larger corner so I could keep going 45.</q>  How much larger should the radius of the circle be so that you can travel 45 mi/hr instead of 15 mi/hr, and still feel the same acceleration <m>A</m>?
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Which will cause the normal acceleration to decrease more, halving your speed or halving the curvature (doubling the radius)?
-            </p>
-          </li>
-        </ol>
       </p>
+      <task>
+        <p>
+          Suppose that your driver (Ben) ignores the suggestion to slow down to 15 mi/hr.  He keeps going 45 mi/hr through the turn. Had he slowed down, the max acceleration would be <m>A</m>.  You're traveling 3 times faster than suggested.  What will your maximum normal acceleration be?
+          <hint>
+            <p>
+              It's more than <m>3A</m>.
+            </p>
+          </hint>
+        </p>
+      </task>
+      <task>
+        <p>
+          You yell at Ben to slow down (you don't want to die). So Ben decides to only slow to 30 mi/hr. He figures this means you'll only feel twice as much acceleration as <m>A</m>.  Explain why this line of reasoning is flawed.
+        </p>
+      </task>
+      <task>
+        <p>
+          Ben gets frustrated by the fact that he has to slow down. He complains about the engineers who designed the road, and says, <q>they should have just built a larger corner so I could keep going 45.</q>  How much larger should the radius of the circle be so that you can travel 45 mi/hr instead of 15 mi/hr, and still feel the same acceleration <m>A</m>?
+        </p>
+      </task>
+      <task>
+        <p>
+          Which will cause the normal acceleration to decrease more, halving your speed or halving the curvature (doubling the radius)?
+        </p>
+      </task>
     </exploration>
 
     <exploration>
       <p>
         <!-- \extrafn{Watch a <url href="http://www.youtube.com/watch?v=cSh2Bdd-yTg&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  } -->Prove that <m>\ds \vec a(t) = a_T\vec T+a_N\vec N=\frac{d}{dt}|\vec v| \vec T + \kappa |\vec v|^2 \vec N.</m> Here's some hints.
         <ul>
-          <li>
+          <task>
             <p>
               Rewrite the velocity <m>\vec v</m> as a magnitude <m>|\vec v|</m> times a direction <m>\vec T</m>, so <m>\vec v = |v|\vec T</m>.
             </p>
-          </li>
-
-          <li>
+          </task>
+          <task>
             <p>
               We know that <m>\vec a(t) = \frac{d}{dt}\vec v(t)</m>. Take the derivative of <m>\vec v = |\vec v|\vec T</m> by using the product rule (on the scalar product <m>|\vec v|\vec T</m>).
             </p>
-          </li>
-
-          <li>
+          </task>
+          <task>
             <p>
               You should encounter the quantity <m>d\vec T/dt</m>. We know that <m>\frac{d\vec T}{dt} = |\vec v|\frac{d\vec T}{ds}</m>. Why does <m>\ds d\vec T/dt=|\vec v|\kappa\vec N</m>?
             </p>
-          </li>
-
-          <li>
+          </task>
+          <task>
             <p>
               Conclude to explain why <m>a_N =\kappa |\vec v|^2</m>.
             </p>
-          </li>
+          </task>
         </ul>
       </p>
     </exploration>
@@ -322,7 +306,7 @@
       <p>
         <!-- \extrafn{Watch a <url href="http://www.youtube.com/watch?v=MVtUc2peJn0&amp;feature=bf_next&amp;list=PL30EE81142B1ED1F0&amp;lf=plpp_video">YouTube Video</url>.  } -->Suppose a curve <m>\vec r(t)</m> has the frame <m>\vec T(t)</m>, <m>\vec N(t)</m>, and <m>\vec B(t)</m>. Prove that <m>\dfrac{d\vec B}{ds}</m> is either parallel to <m>\vec N</m>, or points opposite <m>\vec N</m>. Here are some steps.
         <ul>
-          <li>
+          <task>
             <p>
               Why is <m>\dfrac{d\vec B}{ds}</m> orthogonal to <m>\vec B</m>?
               <hint>
@@ -331,19 +315,17 @@
                 </p>
               </hint>
             </p>
-          </li>
-
-          <li>
+          </task>
+          <task>
             <p>
               We know <m>\vec B=\vec T\times \vec N</m>. Compute the derivative of both sides using the product rule and explain why <m>\frac{d\vec T}{ds}\times \vec N</m> cancels out. Then explain why <m>\dfrac{d\vec B}{ds}</m> is orthogonal to <m>\vec T</m>.
             </p>
-          </li>
-
-          <li>
+          </task>
+          <task>
             <p>
               If <m>\dfrac{d\vec B}{ds}</m> is orthogonal to both <m>\vec B</m> and <m>\vec T</m> why must it be either parallel or anti-parallel to <m>\vec N</m>?
             </p>
-          </li>
+          </task>
         </ul>
       </p>
     </exploration>
@@ -391,3 +373,4 @@
     </p>
   </subsection>
 </section>
+

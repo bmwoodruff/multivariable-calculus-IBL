@@ -1,4 +1,5 @@
 
+
 <section>
   <title>Function Terminology</title>
   <p>
@@ -39,35 +40,31 @@
 
     <p>
       A pebble falls from a 64 ft tall building. Its height (in ft) above the ground <m>t</m> seconds after it drops is given by the function <m>y=f(t)=64-16t^2</m>.
-      <ol>
-        <li>
-          <p>
-            What is <m>n</m> (the number of inputs)?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            What is <m>m</m> (the number of outputs)?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Construct a graph of this function.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            How many dimensions do you need to graph this function?
-          </p>
-        </li>
-      </ol>
     </p>
+    <task>
+      <p>
+        What is <m>n</m> (the number of inputs)?
+      </p>
+    </task>
+    <task>
+      <p>
+        What is <m>m</m> (the number of outputs)?
+      </p>
+    </task>
+    <task>
+      <p>
+        Construct a graph of this function.
+      </p>
+    </task>
+    <task>
+      <p>
+        How many dimensions do you need to graph this function?
+      </p>
+    </task>
   </exploration>
 
   <p>
     The next several sections will explore different sorts of functions with a variety of <m>n</m> and <m>m</m> combinations. We will start with these same questions as we work to understand the functions. Later on in the semester, you can use these questions to help understand what sort of function you are studying.
   </p>
 </section>
+

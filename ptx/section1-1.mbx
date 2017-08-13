@@ -1,4 +1,5 @@
 
+
 <section>
   <title>Review of First Semester Calculus</title>
   <subsection>
@@ -19,9 +20,9 @@
         Then use a computer algebra system, such as <url href="http://http://www.wolframalpha.com/">Wolfram Alpha</url>, to verify your work. I suggest Wolfram Alpha, because it is now built into Mathematica 8.0+. If you can learn to use Wolfram Alpha, you will be able to use Mathematica. <!-- \extrafn{
 
         <insight>
-        <p>
-          You are also welcome to use Maple. On the surface both Mathematica and Maple are very similar.
-        </p>
+          <p>
+            You are also welcome to use Maple. On the surface both Mathematica and Maple are very similar.
+          </p>
         </insight>
 
         } -->
@@ -138,3 +139,4 @@
     </exploration>
   </subsection>
 </section>
+
