@@ -32,14 +32,12 @@
   <exploration>
     <p>
       Consider the exact same vector field and box as <xref ref="boxflux">exercise</xref>. We then have the vector field <m>\vec F=(x+y,y,z)</m> and <m>S</m> is the surface of the cube in the first quadrant bounded by {<m>x=2,y=3,z=5</m>}.
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             Compute the divergence of <m>\vec F</m>. I.E find <m>\text{ div } (\vec F) = M_x+N_y+P_z</m>.
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
 
     <p>
       The divergence theorem states that if <m>S</m> is a closed surface (has an inside and an outside), and the inside of the surface is the solid domain <m>D</m>, then the flux of <m>\vec F</m> outward across <m>S</m> equals the triple integral
@@ -47,7 +45,7 @@
         \iint_S\vec F\cdot \vec n\ d\sigma = \iint\int_D \text{ div } (\vec F)dV.
       </me>
       <ol type="resume">
-        <li>
+      <task>
           <p>
             Use the divergence theorem to compute the flux of <m>\vec F</m> across <m>S</m>.
             <hint>
@@ -56,9 +54,7 @@
               </p>
             </hint>
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
   </exploration>
 
   <exploration>

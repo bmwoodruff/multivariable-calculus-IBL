@@ -11,14 +11,14 @@
       <!-- \extrafn{Use <url href="http://aleph.sagemath.org/?z=eJxz06jQqdSp0lSwVdAA0joVmlwFOfkl8WWpySX5RfFpmak5KcYpGm46CkCFusY6xpo6IIUQlkYVhKEJAOGFExs">Sage</url> to plot your vector fields.  
 
       \thomasee{See 16.2: 39-44 for more practice.}\larsonfive{See Larson 15.1:1<ndash />19.}} -->Do the following:
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             Let <m>P=(x,y,z)</m> be a point in space. At that point, what is the <m>x</m>, <m>y</m>, and <m>z</m> distance to the origin?
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             At the point <m>P</m>, let <m>\vec F(x,y,z)</m> be the vector which points from <m>P</m> to the origin.  Give a formula for <m>\vec F(x,y,z)</m>
             <hint>
@@ -28,21 +28,19 @@
             </hint>
             .
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Give an equation of the vector field where at each point <m>P</m> in the plane, the vector <m>\vec F_2(P)</m> is a unit vector that points towards the origin.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Give an equation of the vector field where at each point <m>P</m> in the plane, the vector <m>\vec F_3(P)</m> is a vector of length 7 that points towards the origin.
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
   </exploration>
 
   <p>
@@ -99,8 +97,8 @@
       \larsonfive{See Larson 15.5:21<ndash />30 and 15.5, Example 3.}
       \stewarts{See section 16.6 for more examples}
       } -->Consider the surface <m>z=9-x^2-y^2</m> plotted in <xref ref="prob_3dsurface_plot">problem</xref>.
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             Using the rectangular coordinate transformation <m>\vec T(x,y,z)=(x,y,z)</m>, give a parametrization <m>\vec r\colon \mathbb{R}^2\to\mathbb{R}^3</m> of the surface. 
 
@@ -114,21 +112,19 @@
               </p>
             </hint>
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             What bounds must you place on <m>x</m> and <m>y</m> to obtain the portion of the surface above the plane <m>z=0</m>?
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             If <m>z=f(x,y)</m> is any surface, give a parametrization of the surface (i.e., <m>x=?, y=?, z=?</m> or <m>\vec r (?,?)=(?,?,?)</m>.)
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
   </exploration>
 
   <exploration>
@@ -138,20 +134,18 @@
       \thomasee{See 16.5: 1-16 for more practice.}
       \larsonfive{See Larson 15.5:1<ndash />10}
       } -->Again consider the surface <m>z=9-x^2-y^2</m>.
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             Using cylindrical coordinates, <m>\vec T(r,\theta,z) = (r\cos \theta, r\sin\theta, z)</m>, obtain a parametrization <m>\vec r(r,\theta)=(?,?,?)</m> of the surface using the input variables <m>r</m> and <m>\theta</m>. In other words, if we let <m>x=r\cos \theta, y=r\sin\theta, z=z</m>, write <m>z=9-x^2-y^2</m> in terms of <m>r</m> and <m>\theta</m>.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             What bounds must you place on <m>r</m> and <m>\theta</m> to obtain the portion of the surface above the plane <m>z=0</m>?
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
   </exploration>
 
   <exploration>
@@ -182,8 +176,6 @@
         </me>
       </p>
 
-      <p>
-      </p>
       </insight>
 
       \larsonfive{
@@ -194,14 +186,14 @@
 
     <p>
       }This is a function of the form <m>\vec T\colon \mathbb{R}^3\to\mathbb{R}^3</m>. If we hold one of the three inputs constant, then we have a function of the form <m>\vec r\colon \mathbb{R}^2\to\mathbb{R}^3</m>, which is a parametric surface.
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             <!-- \extrafn{Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://www.wolframalpha.com/">Wolfram Alpha</url> to plot each parametrization (<xref ref="x3d_parametric_plot">see</xref> for examples).} -->Give a parametrization of the sphere of radius 2, using <m>\phi</m> and <m>\theta</m> as your input variables.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             What bounds should you place on <m>\phi</m> and <m>\theta</m> if you want to hit each point on the sphere exactly once?
             <hint>
@@ -210,9 +202,9 @@
               </p>
             </hint>
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             What bounds should you place on <m>\phi</m> and <m>\theta</m> if you only want the portion of the sphere above the plane <m>z=1</m>?
             <hint>
@@ -221,9 +213,7 @@
               </p>
             </hint>
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
   </exploration>
 
   <p>
@@ -239,25 +229,25 @@
         read the paragraph above.
       </p>
     </hint>
-    <ol>
-      <li>
+  </p>
+    <task>
         <p>
           <!-- \extrafn{Use <url href="http://aleph.sagemath.org">Sage</url> or <url href="http://www.wolframalpha.com/">Wolfram Alpha</url> to plot each parametrization  (<xref ref="x3d_parametric_plot">see</xref> for examples).} -->What bounds should you use to obtain the portion of the surface between <m>y=-2</m> and <m>y=3</m>?
         </p>
-      </li>
+    </task>
 
-      <li>
+    <task>
         <p>
           What bounds should you use to obtain the portion of the surface above <m>z=0</m>?
         </p>
-      </li>
+    </task>
 
-      <li>
+    <task>
         <p>
           What bounds should you use to obtain the portion of the surface with <m>x\geq 0</m> and <m>y\in[2,5]</m>?
         </p>
-      </li>
-    </ol>
+    </task>
+  <p>
   </exploration>
 
   <exploration>

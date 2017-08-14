@@ -39,32 +39,30 @@
 
     <p>
       A pebble falls from a 64 ft tall building. Its height (in ft) above the ground <m>t</m> seconds after it drops is given by the function <m>y=f(t)=64-16t^2</m>.
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             What is <m>n</m> (the number of inputs)?
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             What is <m>m</m> (the number of outputs)?
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Construct a graph of this function.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             How many dimensions do you need to graph this function?
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
   </exploration>
 
   <p>

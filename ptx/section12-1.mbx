@@ -47,43 +47,41 @@
         <me>
           \vec r(x,y) = (x,y,9-x^2-y^2).
         </me>
-        <ol>
-          <li>
+      </p>
+        <task>
             <p>
               Draw the surface <m>S</m>.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Add to your surface plot the parabolas given by <m>\vec r(x,0)</m>, <m>\vec r(x,1)</m>, and <m>\vec r(x,2)</m>, as well as the parabolas given by <m>\vec r(0,y)</m>, <m>\vec r(1,y)</m>, and <m>\vec r(2,y)</m>.
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
 
       <p>
         You should have an upside down paraboloid, with at least 6 different parabolas drawn on the surface. These parabolas should divide the surface up into a bunch of different patches. Our goal is to find the area of each patch, where each patch is almost like a parallelogram.
         <ol type="resume">
-          <li>
+        <task>
             <p>
               Find <m>\ds \frac{\partial \vec r}{\partial x}</m> and <m>\ds\frac{\partial \vec r}{\partial y}</m>.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               At the point <m>(2,1)</m>, draw both vectors.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               These vectors form the edges of a parallelogram. Add that parallelogram to your picture.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Show that the area of a parallelogram whose edges are the vectors <m>\ds\frac{\partial \vec r}{\partial x}(x,y)</m> and <m>\ds\frac{\partial \vec r}{\partial y}</m> is <m>\sqrt{1+4x^2+4y^2}</m>.
               <hint>
@@ -92,15 +90,13 @@
                 </p>
               </hint>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Find the area of the parallelogram whose edges are the vectors <m>\ds\frac{\partial \vec r}{\partial x}dx</m> and <m>\ds\frac{\partial \vec r}{\partial y}dy</m>, where <m>dx</m> and <m>dy</m> are not yet determined.
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
     </exploration>
 
     <p>
@@ -174,32 +170,30 @@
         <me>
           \vec r(x,y) = (x,y,9-x^2-y^2), \text{ where }  9-x^2-y^2\geq 0.
         </me>
-        <ol>
-          <li>
+      </p>
+        <task>
             <p>
               Give a set of inequalities for <m>x</m> and <m>y</m> that describe the region <m>R</m> over which we need to integrate. The inequalities you give should be in a form that you can use them as the bounds of a double integral.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Find <m>d\sigma = \left|\vec r_x\times \vec r_y\right|dxdy</m>.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Set up the surface integral <m>\iint_S d\sigma</m> as an iterated double integral over <m>R</m>.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Convert the integral above to an integral in polar coordinates (don't forget the Jacobian).
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
     </exploration>
 
     <exploration>
@@ -208,26 +202,24 @@
         <me>
           \vec r(r,\theta) = (r\cos\theta,r\sin\theta,9-r^2), \text{ where }  9-r^2\geq 0.
         </me>
-        <ol>
-          <li>
+      </p>
+        <task>
             <p>
               Give a set of inequalities for <m>r</m> and <m>\theta</m> that describe the region <m>R_{r\theta}</m> over which we need to integrate. The inequalities you give should be in a form that you can use them as the bounds of a double integral.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Find <m>d\sigma = \left|\vec r_r\times \vec r_\theta \right|drd\theta</m>.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Set up the surface integral <m>\iint_S d\sigma</m> as an iterated double integral over <m>R_{r\theta}</m>.
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
     </exploration>
 
     <exploration>
@@ -237,50 +229,50 @@
     </exploration>
 
     <exploration>
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             If a surface <m>S</m> is parametrized by <m>\vec r(x,y) = (x,y,f(x,y))</m>, show that <m>d\sigma = \sqrt{1+f_x^2+f_y^2}\ dxdy</m> (compute a cross product).
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             If <m>\vec r(x,z) = (x,f(x,z),z)</m>, what does <m>d\sigma</m> equal (compute a cross product - you should see a pattern)?
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Use the pattern you've discovered to quickly compute <m>d\sigma</m> for the surface <m>x=4-y^2-z^2</m>.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Set up an iterated double integral that would give the surface area of <m>S</m> for <m>x\geq 0</m>.
           </p>
-        </li>
-      </ol>
+      </task>
+    <p>
     </exploration>
 
     <exploration xml:id="sphere_surface_area_element">
       <p>
         Consider the sphere <m>x^2+y^2+z^2=a^2</m>. We'll find <m>d\sigma</m> using two different parameterizations.
-        <ol>
-          <li>
+      </p>
+        <task>
             <p>
               If you use the rectangular parametrization <m>\vec r(x,y) = (x,y,\sqrt{a^2-x^2-y^2})</m>, what is <m>d\sigma</m>? [Hint, use the previous problem.]
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Why can this parametrization only be use if the surface has positive <m>z</m>-values?
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <!-- \extrafn{You'll want to memorize this result.} -->If you use the spherical parametrization
               <me>
@@ -295,9 +287,7 @@
                 \vec r_\phi\times \vec r_\theta = a^2\sin \phi (\sin\phi\cos\theta,\sin\phi\sin\theta,\cos\phi).
               </me>
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
     </exploration>
 
     <p>
@@ -307,26 +297,24 @@
     <exploration>
       <p>
         Consider the hemisphere <m>x^2+y^2+z^2=a^2</m> for <m>z\geq 0</m>.
-        <ol>
-          <li>
+      </p>
+        <task>
             <p>
               Set up a formula that would give <m>\bar z</m> for the centroid of the hemisphere. I suggest you use a spherical parametrization, as then the bounds are fairly simple, and we know <m>d\sigma = (a^2\sin\phi) d\phi d\theta</m> from the previous problem.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Compute the two integrals in your formula.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Set up an integral formula for <m>R_z</m>, the radius of gyration about the <m>z</m> axis, provided the density is constant.
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
     </exploration>
   </introduction>
 
@@ -360,45 +348,43 @@
       <p>
         Consider again the surface <m>z=9-x^2-y^2</m>.
       </p>
-      <ol>
-      <li>
+    </p>
+    <task>
         <p>
           Using the parametrization <m>\vec r(x,y) =(x,y,9-x^2-y^2)</m>
         </p>
-        <ol>
-          <li>
+      </p>
+        <task>
             <p>
               Find a unit normal vector <m>\vec n</m> to the surface so that <m>\vec n</m> points upwards away from the <m>z</m>-axis. Make sure you explain how you know the normal vector you give is pointing upwards away from the <m>z</m> axis.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               State what <m>d\sigma</m> equals, as well as <m>\vec n d\sigma</m>.
             </p>
-          </li>
-        </ol>
-      </li>
+        </task>
+      <p>
+    </task>
 
-      <li>
+    <task>
         <p>
           Using the parametrization <m>\vec r(r,\theta) =(r\cos \theta,r\sin\theta ,9-r^2)</m>
-          <ol>
-            <li>
+        </p>
+          <task>
               <p>
                 Find a unit normal vector <m>\vec n</m> to the surface so that <m>\vec n</m> points downwards towards the <m>z</m>-axis. Make sure you explain how you know the normal vector you give is pointing downwards towards the <m>z</m> axis.
               </p>
-            </li>
+          </task>
 
-            <li>
+          <task>
               <p>
                 State what <m>d\sigma</m> equals, as well as <m>\vec n d\sigma</m>.
               </p>
-            </li>
-          </ol>
-        </p>
-      </li>
-      </ol>
+          </task>
+    </task>
+    <p>
     </exploration>
 
     <p>
@@ -424,35 +410,33 @@
     <exploration>
       <p>
         Consider the cone <m>z^2=x^2+y^2</m> and vector field <m>\vec F = (2x+3y, x-2y, yz)</m>. We want to set up an iterated integral that would give the flux of <m>\vec F</m> outwards (away from the <m>z</m>-axis) for the portion of the cone between <m>z=1</m> and <m>z=3</m>.
-        <ol>
-          <li>
+      </p>
+        <task>
             <p>
               Start by  parameterizing the cone by using a polar parametrization
               <me>
                 x=r\cos\theta, y=r\sin\theta, z=?.
               </me>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Next obtain bounds for <m>r</m> and <m>\theta</m> that are constants.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Compute the normal vector and look at the third component to determine if it points up or down.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               Finally just plug everything into the formula.
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
     </exploration>
 
     <p>

@@ -49,34 +49,32 @@
         <mrow>\text{ or in vector form } \amp \</mrow>
         <mrow>\vec S(\rho,\phi,\theta) \amp = (\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi).</mrow>
       </md>
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             Verify that the Jacobian of the cylindrical transformation is <m>\ds\frac{\partial(x,y,z)}{\partial(r,\theta,z)} = |r|</m>.
             <ul>
-              <li>
+            <task>
                 <p>
                   If you want to make sure you don't have to use absolute values, what must you require?
                 </p>
-              </li>
+            </task>
             </ul>
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Verify that the Jacobian of the spherical transformation is <m>\ds\frac{\partial(x,y,z)}{\partial(\rho,\phi,\theta)} = |\rho^2\sin\phi|</m>.
             <ul>
-              <li>
+            <task>
                 <p>
                   If you want to make sure you don't have to use absolute values, what must you require?
                 </p>
-              </li>
+            </task>
             </ul>
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
   </exploration>
 
   <p>
@@ -169,19 +167,19 @@
         Start by drawing the region.
       </p>
     </hint>
-    <ol>
-      <li>
+  </p>
+    <task>
         <p>
           Set up an iterated integral in Cartesian (rectangular) coordinates that would give the volume of <m>D</m>.
         </p>
-      </li>
+    </task>
 
-      <li>
+    <task>
         <p>
           Set up an iterated integral in cylindrical coordinates that would give the volume of <m>D</m>.
         </p>
-      </li>
-    </ol>
+    </task>
+  <p>
   </exploration>
 
   <exploration>
@@ -193,32 +191,30 @@
         Start by drawing the region.
       </p>
     </hint>
-    <ol>
-    <li>
+  </p>
+  <task>
       <p>
         Set up two iterated integrals in cylindrical coordinates that would give the volume of <m>D</m>.
         <ol type="a">
-          <li>
+        <task>
             <p>
               For the first integral use the order <m>dzdrd\theta</m>.
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               For the second, use the order <m>d\theta dr dz</m>.
             </p>
-          </li>
-        </ol>
-      </p>
-    </li>
+        </task>
+  </task>
 
-    <li>
+  <task>
       <p>
         Set up an iterated integral in spherical coordinates that would give the volume of <m>D</m>.
       </p>
-    </li>
-    </ol>
+  </task>
+  <p>
   </exploration>
 
   <exploration>

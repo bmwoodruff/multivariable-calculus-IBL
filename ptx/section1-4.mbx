@@ -5,19 +5,19 @@
     <p>
       <!-- \extrafn{For additional practice, make up your own systems of equations. Use \wolfA<nbsp /> to check your work.} -->Solve the following linear systems of equations.
       <ul>
-        <li>
+      <task>
           <p>
             <m>\begin{cases}x+y\amp =3\\2x-y\amp =4
             \end{cases}</m>
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             <m>\begin{cases}-x + 4y\amp =8\\3x - 12y\amp =2
             \end{cases}</m>
           </p>
-        </li>
+      </task>
       </ul>
     </p>
   </exploration>
@@ -31,23 +31,23 @@
       \end{cases}</m>.
       Since there are more variables than equations, this suggests there is probably not just one solution, but perhaps infinitely many. One common way to deal with solving such a system is to let one variable equal <m>t</m>, and then solve for the other variables in terms of <m>t</m>. Do this three different ways.
       <ul>
-        <li>
+      <task>
           <p>
             If you let <m>x=t</m>, what are <m>y</m> and <m>z</m>.  Write your solution in the form <m>(x,y,z)</m> where you replace <m>x</m>, <m>y</m>, and <m>z</m> with what they are in terms of <m>t</m>.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             If you let <m>y=t</m>, what are <m>x</m> and <m>z</m> (in terms of <m>t</m>).
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             If you let <m>z=t</m>, what are <m>x</m> and <m>y</m>.
           </p>
-        </li>
+      </task>
       </ul>
     </p>
   </exploration>

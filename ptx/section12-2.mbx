@@ -50,50 +50,46 @@
       <p>
         For each vector field:
         <ol type="a">
-          <li>
+        <task>
             <p>
               sketch a plot (you can graph it in Sage or WolframAlpha first)  <!-- \extrafn{See 
               <url href="http://aleph.sagemath.org/?z=eJxz06jQqdRUsFXQMNKq0K7UqdA20qrU5CrIyS-JL0tNLskvik_LTM1J0XDTUQAq1TU00DE00ASyK2FsTQCKaxIN">Sage</url> or
               <url href="http://wolfr.am/y4gIgX">Wolfram Alpha</url> to plot the vector fields} -->
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               find the divergence
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
 
       <p>
         [Suggestion: Leave space after each sub-exercise for another computation (the curl).]
-        <ol>
-          <li>
+      </p>
+        <task>
             <p>
               <m>\vec{F}(x,y)=(x,y)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec{F}(x,y)=(y,x)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec{F}(x,y)=(x,x+y)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec{F}(x,y)=(x-y^2+2, xy+y)</m>
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
 
       <p>
         Can you make a general statement about how a 2-D vector field looks for it to have non-zero divergence?
@@ -107,32 +103,30 @@
     <exploration xml:id="x3d_div">
       <p>
         Compute the divergence for each of the following vector fields. [Suggestion: Again leave space]
-        <ol>
-          <li>
+      </p>
+        <task>
             <p>
               <m>\vec F(x,y,z) = \left(z,x,y \right)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec F(x,y,z) = \left(-y+x,x,z \right)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec F(x,y,z) = \left(x^2+y^2,x^2+z^2,y^2+z^2 \right)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec F(x,y,z) = \left(x^3+y,\tan^{-1}(1+y^2) + z^2,e^{z^2+\sin z} -2x\right)</m>
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
     </exploration>
   </subsection>
 
@@ -189,32 +183,30 @@
 
       <p>
         <!-- \extrafn{See <url href="http://mathinsight.org/curl_components">MathInsight.org</url> for a really nice animation of the curl of a vector field.} -->for each vector field:
-        <ol>
-          <li>
+      </p>
+        <task>
             <p>
               <m>\vec{F}(x,y)=(x,y)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec{F}(x,y)=(y,x)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec{F}(x,y)=(x,x+y)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec{F}(x,y)=(x-y^2+2, xy+y)</m>
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
     </exploration>
 
     <p>
@@ -238,32 +230,30 @@
     <exploration xml:id="x3dcurl">
       <p>
         Compute the curl for each of the following vector fields. You can add these in the spaces after <xref ref="x3d_div">Exercise</xref>.
-        <ol>
-          <li>
+      </p>
+        <task>
             <p>
               <m>\vec F(x,y,z) = \left(z,x,y \right)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec F(x,y,z) = \left(-y+x,x,z \right)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec F(x,y,z) = \left(x^2+y^2,x^2+z^2,y^2+z^2 \right)</m>
             </p>
-          </li>
+        </task>
 
-          <li>
+        <task>
             <p>
               <m>\vec F(x,y,z) = \left(x^3+y,\tan^{-1}(1+y^2) + z^2,e^{z^2+\sin z} -2x\right)</m>
             </p>
-          </li>
-        </ol>
-      </p>
+        </task>
     </exploration>
   </subsection>
 </section>

@@ -9,8 +9,8 @@
     <p>
       Consider the coordinate transformation <m>T(a,\omega)=(a\cos\omega,a^2\sin \omega)</m>.
     </p>
-    <ol>
-    <li>
+  </p>
+  <task>
       <p>
         <!-- \extrafn{See
         <url href="http://aleph.sagemath.org/?z=eJwti7sKwCAMAHe_IjglkqHY2b9wbgkiJVAfqP9PB7vdHVxE4VbyIxRQXGoTtzHI5d3U-juZPrQusBElnAQ6LcNm02VIyWtouvvbFu7MsFeGg8G7rkQfMv4giA">Sage</url>.
@@ -21,35 +21,35 @@
           </p>
         </hint>
       </p>
-    </li>
+  </task>
 
-    <li>
+  <task>
       <p>
         <!-- \extrafn{See
         <url href="http://aleph.sagemath.org/?z=eJxlzEEKg0AMBdC9pwiukmmgRd3OLVxbgkgJqBNm5v5UTGmF7vKT9zOicNqWl1BECXMq6IlBpi4U3T-ZGsu6V2hHlNgTaGkZfP5dThpN78MXXFaNSZZtqVnnp62potcZHDE8GLpgSgQ3-LeXT0fF-UD0BkVHOdw">Sage</url>. Notice that you can add the two plots together to superimpose them on each other.} -->Let <m>\omega=\frac{\pi}{4}</m> and then, on the same axes as above, add the graph of 
         <m>\vec T\left(a,\frac{\pi}{4}\right)=\left(a\frac{\sqrt 2}{2},a^2 \frac{\sqrt 2}{2}\right)</m> for <m>a\in[0,4]</m>.
       </p>
-    </li>
+  </task>
 
-    <li>
+  <task>
       <p>
         <!-- \extrafn{Use Sage to check your answer.} -->To the same axes as above, add the graphs of:
       </p>
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             <m>\vec T(1,\omega), \vec T(2,\omega), \vec T(4,\omega)</m>  for <m>\omega\in[0,2\pi]</m>
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             <m>\vec T(a,0), \vec T(a,\pi/2), \vec T(a,-\pi/6)</m> for <m>a\in[0,4]</m>.
           </p>
-        </li>
-      </ol>
-    </li>
-    </ol>
+      </task>
+    <p>
+  </task>
+  <p>
     <hint>
       <p>
         when you're done, you should have a bunch of parabolas and ellipses.
@@ -61,8 +61,6 @@
     In 3 dimensions, the most common coordinate systems are cylindrical and spherical. The equations for these coordinate systems are in the table below.
 
     <insight>
-      <p>
-      </p>
     </insight>
 
   </p>
@@ -91,8 +89,6 @@
   <p>
 
     <insight>
-      <p>
-      </p>
     </insight>
 
   </p>
@@ -180,8 +176,6 @@
   <p>
 
     <insight>
-      <p>
-      </p>
     </insight>
 
   </p>

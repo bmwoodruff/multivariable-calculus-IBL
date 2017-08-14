@@ -89,20 +89,20 @@
       \thomasee{You can practice finding position from velocity and acceleration with exercises 13.2: 11-18, and especially 13.2: 29.}
       \stewarts{You can practice finding various combinations of position, velocity and acceleration vectors with exercises: 13.4:9-18, particularly focus on 15-18}
       } -->Suppose a projectile is fired from the point <m>(x_0,y_0)</m> with an initial velocity <m>\vec v(0)=(v_{x_0},v_{y_0})</m>, and that gravity is the only force acting on the object. This means the acceleration on the object is <m>\vec a(t) = (0,-g)</m>.
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             Show that the velocity at any time <m>t</m> is <m>\vec v(t) = (c_1,-gt+c_2)</m>. What are <m>c_1</m> and <m>c_2</m>? Explain
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Show that the position at any time <m>t</m> is <m>\vec r(t) = (v_{x_0}t+c_3, -\frac{1}{2}gt^2+v_{y_0}t+c_4)</m>. What are <m>c_3</m> and <m>c_4</m>?
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Eliminate the parameter <m>t</m> to give a Cartesian equation of the projectile's path. This will prove that the path of the particle is parabolic.
             <hint>
@@ -111,9 +111,7 @@
               </p>
             </hint>
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
   </exploration>
 
   <p>
@@ -149,26 +147,24 @@
         \vec r(t) = (v_{x_0}t, -\frac12 gt^2+ v_{y_0}t)
         .
       </me>
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             What's the time to max height?  What's the flight time?
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Show why the maximum height is <m>\ds y_{\max}=\frac{v_{y_0}^2}{2g}</m> and the range is <m>\ds R=\frac{2v_{x_0}v_{y_0}}{g}</m>.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             If the initial speed is <m>v_0</m>, with a firing angle of <m>\alpha</m> above the horizontal, rewrite <m>v_{x_0}</m> and <m>v_{y_0}</m> in terms of <m>v_0</m> and <m>\alpha</m>, and then state the range in terms of <m>v_0</m> and <m>\alpha</m>.
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
   </exploration>
 
   <p>

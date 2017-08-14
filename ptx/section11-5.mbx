@@ -110,32 +110,30 @@
       </insight>
 
       } -->Consider a rectangle <m>C</m> where the boundary of the rectangle are <m>2\leq x\leq 7</m> and <m>0\leq y\leq 3</m>. The rectangle is subject to a vector field <m>\vec F=(2x+3y,4x+5y)</m>.
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             Compute <m>N_x-M_y</m>
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Compute <m>M_x+N_y</m>.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Find the circulation of <m>\vec F</m> along <m>C</m>
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Find the flux of <m>\vec F</m> along <m>C</m>
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
     <hint>
       <p>
         The last two should reduce to facts about area.
@@ -149,20 +147,18 @@
   <exploration>
     <p>
       Consider the vector field <m>\vec F=(x^2+y^2,3x+5y)</m> and <m>C</m>, the circle <m>(x-3)^2+(y+1)^2=4</m> (oriented counterclockwise).
-      <ol>
-        <li>
+    </p>
+      <task>
           <p>
             Start by computing <m>N_x-M_y</m> and <m>M_x+N_y</m>.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Now find both the circulation and flux of <m>\vec F</m> along <m>C</m>.
           </p>
-        </li>
-      </ol>
-    </p>
+      </task>
     <hint>
       <p>
         You should be able to reduce the integrals to facts about the area and centroid.

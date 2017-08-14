@@ -10,29 +10,29 @@
     <p>
       Let <m>f(x)=e^x</m>. You should find that your work on each step can be reused to do the next step.
       <ul>
-        <li>
+      <task>
           <p>
             Find a first degree polynomial <m>P_1(x)=a+bx</m> so that <m>P_1(0)=f(0)</m> and <m>P'_1(0)=f'(0)</m>. In other words, give me a line that passes through the same point and has the same slope as <m>f(x)=e^x</m> does at <m>x=0</m>. Set up a system of equations and then find the unknowns <m>a</m> and <m>b</m>. The next two are very similar.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Find a second degree polynomial <m>P_2(x)=a+bx+cx^2</m> so that <m>P_2(0)=f(0)</m>, <m>P'_2(0)=f'(0)</m>, and <m>P''_2(0)=f''(0)</m>. In other words, give me a parabola that passes through the same point, has the same slope, and has the same concavity as <m>f(x)=e^x</m> does at <m>x=0</m>.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Find a third degree polynomial <m>P_3(x)=a+bx+cx^2+dx^3</m> so that <m>P_3(0)=f(0)</m>, <m>P'_3(0)=f'(0)</m>, <m>P''_3(0)=f''(0)</m>, and <m>P'''_3(0)=f'''(0)</m>. In other words, give me a cubic that passes through the same point, has the same slope, the same concavity, and the same third derivative as <m>f(x)=e^x</m> does at <m>x=0</m>.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Now compute <m>e^{.1}</m> with a calculator.  Then compute <m>P_1(.1)</m>, <m>P_2(.1)</m>, and <m>P_3(.1)</m>. How accurate are the line, parabola, and cubic in approximating <m>e^{.1}</m>?
           </p>
-        </li>
+      </task>
       </ul>
     </p>
   </exploration>
@@ -54,7 +54,7 @@
     <p>
       Let <m>f(x)=e^x</m>.
       <ul>
-        <li>
+      <task>
           <p>
             Find a second degree polynomial
             <me>
@@ -62,9 +62,9 @@
             </me>
             so that <m>T(1)=f(1)</m>, <m>T'(1)=f'(1)</m>, and <m>T''(1)=f''(1)</m>. In other words, give me a parabola that passes through the same point, has the same slope, and the same concavity as <m>f(x)=e^x</m> does at <m>x=1</m>.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Find a second degree polynomial written in the form
             <me>
@@ -72,9 +72,9 @@
             </me>
             <!-- \extrafn{Notice that we just replaced <m>x</m> with <m>x-1</m>. This centers, or shifts, the approximation to be at <m>x=1</m>. The first part will be much simpler now when you let <m>x=1</m>.} -->so that <m>S(1)=f(1)</m>, <m>S'(1)=f'(1)</m>, and <m>S''(1)=f''(1)</m>. In other words, find a quadratric that passes through the same point, has the same slope, and the same concavity as <m>f(x)=e^x</m> does at <m>x=1</m>.
           </p>
-        </li>
+      </task>
 
-        <li>
+      <task>
           <p>
             Find a third degree polynomial written in the form
             <me>
@@ -82,7 +82,7 @@
             </me>
             so that <m>P(1)=f(1)</m>, <m>P'(1)=f'(1)</m>, <m>P''(1)=f''(1)</m>, and <m>P'''(1)=f'''(1)</m>. In other words, give me a cubic that passes through the same point, has the same slope, the same concavity, and the same third derivative as <m>f(x)=e^x</m> does at <m>x=1</m>.
           </p>
-        </li>
+      </task>
       </ul>
     </p>
   </exploration>
